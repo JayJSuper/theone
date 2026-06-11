@@ -1,0 +1,22 @@
+{
+  "delta_min": 0.1626336213837573,
+  "eg_distribution": {
+    "mean": 170522480978.03055,
+    "median": 170522480978.03055,
+    "q10": 146796751499.4596,
+    "q90": 194248210456.6015,
+    "n": 2
+  },
+  "abs_errors": {
+    "method": {
+      "rmse": 0.0,
+      "mae": 0.0
+    },
+    "baseline": {
+      "rmse": 0.17308224567469052,
+      "mae": 0.17052248097803055
+    }
+  },
+  "verdict": "effective",
+  "scoping_note": "v0.1 method=oracle (pipeline check only); real MVP-2A method + Q-C7 frozen grid land in task batch 02"
+}

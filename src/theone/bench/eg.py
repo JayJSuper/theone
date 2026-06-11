@@ -85,6 +85,28 @@ class SCMGenerator:
                                       float(bxy), float(noise), n, base_seed + i)
                         i += 1
 
+    def grid_qc7(self, grid_config: dict):
+        """Q-C7 frozen grid (gatekeeper Jack, machine-certified R3 v3).
+
+        Confounding is specified by the standardized coefficient PRODUCT p (Q-C5);
+        each p is decomposed symmetrically beta_ux = beta_uy = sqrt(p) (Q-C7-2).
+        Cells = direct-effect beta_xy (Q-C7-1) x product (Q-C7) x noise; each cell
+        holds `instances_per_cell` SCM instances with distinct seeds (Q-C7).
+        Values are injected via config (no hard-coding); seeds are globally unique
+        so calibration/formal fingerprints never collide (burn isolation)."""
+        base_seed = int(grid_config.get("base_seed", 42))
+        n = int(grid_config["n_samples"])
+        reps = int(grid_config["instances_per_cell"])
+        i = 0
+        for bxy in grid_config["beta_xy"]:
+            for p in grid_config["products"]:
+                b = math.sqrt(float(p))          # symmetric decomposition (Q-C7-2)
+                for noise in grid_config["noise"]:
+                    for _ in range(reps):
+                        yield SCMSpec("linear_gaussian_3node", b, b,
+                                      float(bxy), float(noise), n, base_seed + i)
+                        i += 1
+
 
 # ====================== CC-08: metrics ================================
 def abs_errors(preds, truths) -> dict:

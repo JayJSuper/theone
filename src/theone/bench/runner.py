@@ -34,11 +34,36 @@ def _assoc_int_estimate(scm) -> float:
     return float(np.cov(x, y, bias=True)[0, 1] / np.var(x))
 
 
+def _backdoor_adjusted_int_estimate(scm, sample: dict | None = None) -> float:
+    """The One method (Q-C7-3 confirmed): backdoor-adjusted estimate of the
+    interventional ATE. Adjusts for the observed confounder U via the backdoor
+    formula P(Y|do(X)) = E_U[E[Y|X,U]]; in the linear-Gaussian instantiation this
+    is the partial regression coefficient of Y on X controlling for U (the X
+    coefficient of OLS Y ~ [1, X, U]). Recovers beta_xy when U closes the only
+    backdoor path - the continuous analogue of the discrete InterventionEngine
+    (F-1 seven assertions are the sanity bridge on categorical graphs).
+    Honest scope: this is the OBSERVED-confounder, linear-Gaussian regime; it does
+    NOT certify unobserved-confounder or nonlinear performance."""
+    d = sample if sample is not None else scm.sample()
+    x, u, y = d["X"], d["U"], d["Y"]
+    design = np.column_stack([np.ones_like(x), x, u])
+    coef, *_ = np.linalg.lstsq(design, y, rcond=None)
+    return float(coef[1])              # coefficient on X == adjusted ATE
+
+
+def _iter_specs(gen, config: dict):
+    """Dispatch: Q-C7 frozen grid (products + instances_per_cell) vs the legacy
+    component-list grid. Keeps existing pre-Q-C7 configs working unchanged."""
+    if "products" in config:
+        return gen.grid_qc7(config)
+    return gen.grid(config)
+
+
 def run_calibration(grid_config: dict, out_dir: str, seed: int = 42) -> dict:
     out = Path(out_dir); out.mkdir(parents=True, exist_ok=True)
     gen = SCMGenerator()
     taus, burned = [], []
-    for spec in gen.grid(grid_config):
+    for spec in _iter_specs(gen, grid_config):
         scm = gen.generate(spec)
         tau = abs(_assoc_int_estimate(scm) - scm.true_int_ate())
         taus.append(tau)
@@ -60,26 +85,40 @@ def run_frozen(frozen_config: dict, out_dir: str) -> dict:
     burned_path = out / "burned_list.json"
     burned = set(json.loads(burned_path.read_text())) if burned_path.exists() else set()
     gen = SCMGenerator()
+    eps = frozen_config.get("near_zero_eps", 1e-3)
     eg_values, m_preds, b_preds, truths = [], [], [], []
-    for spec in gen.grid(frozen_config["grid"]):
+    nz_m_preds, nz_b_preds, nz_truths = [], [], []   # near-zero cells (abs-error only)
+    for spec in _iter_specs(gen, frozen_config["grid"]):
         if spec.fingerprint() in burned:
             raise RuntimeError(
                 f"BURNED-SET VIOLATION: spec {spec.fingerprint()} was used in "
                 "calibration and is permanently excluded from the frozen phase")
         scm = gen.generate(spec)
         truth = scm.true_int_ate()
-        method_pred = truth  # v0.1 oracle plumbing; real method in batch 02
+        sample = scm.sample()
+        method_pred = _backdoor_adjusted_int_estimate(scm, sample)  # Q-C7-3 real method
         baseline_pred = _assoc_int_estimate(scm)
         m_err, b_err = abs(method_pred - truth), abs(baseline_pred - truth)
-        near_zero = abs(truth) < frozen_config.get("near_zero_eps", 1e-3)
-        eg = eg_score(m_err, b_err, near_zero=near_zero)
+        near_zero = abs(truth) < eps
+        eg = eg_score(m_err, b_err, near_zero=near_zero)  # None on near-zero (Amend.1)
         if eg is not None:
             eg_values.append(eg)
+        else:
+            nz_m_preds.append(method_pred); nz_b_preds.append(baseline_pred)
+            nz_truths.append(truth)
         m_preds.append(method_pred); b_preds.append(baseline_pred); truths.append(truth)
     m_abs, b_abs = abs_errors(m_preds, truths), abs_errors(b_preds, truths)
     eg_arr = np.asarray(eg_values, float)
+    # near-zero regime judged on absolute error alone (Amendment 1)
+    nz = None
+    if nz_truths:
+        nz_m, nz_b = abs_errors(nz_m_preds, nz_truths), abs_errors(nz_b_preds, nz_truths)
+        nz = {"n": len(nz_truths), "method": nz_m, "baseline": nz_b,
+              "method_better": nz_m["rmse"] < nz_b["rmse"]}
     report = {
         "delta_min": frozen_config["delta_min"],
+        "grid_total_instances": len(truths),
+        "near_zero_regime": nz,
         "eg_distribution": ({"mean": float(eg_arr.mean()),
                              "median": float(np.median(eg_arr)),
                              "q10": float(np.quantile(eg_arr, .1)),
@@ -91,8 +130,10 @@ def run_frozen(frozen_config: dict, out_dir: str) -> dict:
             eg_sig=bool(eg_arr.size and np.quantile(eg_arr, .1) > 1.0),
             abs_better=m_abs["rmse"] < b_abs["rmse"],
             abs_sig=m_abs["rmse"] < 0.5 * b_abs["rmse"]),
-        "scoping_note": "v0.1 method=oracle (pipeline check only); real MVP-2A "
-                        "method + Q-C7 frozen grid land in task batch 02",
+        "scoping_note": "method = backdoor-adjusted estimate (adjust for observed U); "
+                        "baseline = unadjusted OLS slope. HONEST SCOPE: observed-"
+                        "confounder linear-Gaussian regime only - does NOT certify "
+                        "unobserved-confounder or nonlinear performance (Jack attack pending).",
     }
     (out / "frozen_report.json").write_text(json.dumps(report, indent=2))
     return report

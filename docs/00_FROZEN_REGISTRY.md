@@ -31,5 +31,8 @@
 | AM | 日期 | 引用 ID | 动作 | 依据 | 执行 |
 |----|------|---------|------|------|------|
 | AM-001 | 2026-06-12 | T1 | F-1 正式关闭,T1 状态 → **FIXED** | 守门员 Jack 复签到达:R3 真值表逐项核对无误(A1–A8 与实跑 0.82/0.70/0.28/0.40/0.54/0.30/True 一致,容差 1e-6),声明"F-1 复签通过、正式关闭";处理依据移交令 T2-06① | CC(常驻工程执行,移交令委任日常裁定权);测试锚点 `tests/test_confounding_regression.py` 升入 MVP-2A sanity gate(CI required) |
+| AM-002 | 2026-06-12 | EG-A2/EG-A2a | **Q-C7 扫描网格冻结**:β_xy∈{0,0.1,0.3,0.5}(Q-C7-1)× 乘积 p∈{0..0.8}9档(Q-C7,对称分解 β_ux=β_uy=√p,Q-C7-2)× 噪声∈{0.1,0.3,0.5}× 每格50实例 = 5400/集;校准集与正式集独立种子(burn 隔离,CAL-2P) | Jack 三点补齐(补1/2/3)+ 第二份 R3 v3 自检题(β_xy=0,p=0.30)机证 PASS(解析 Δ=0 + 蒙特卡洛 4e6) | CC;锚点 `experiments/mvp2a/frozen_grid.json`、`bench/eg.py::SCMGenerator.grid_qc7` |
+| AM-003 | 2026-06-12 | DMIN | **δ_min 校准值冻结 = 0.399787**(=max(校准中位数,0.05));校准集 5400 实例用后即焚(burned_list 锁定) | DMIN 冻结方案;网格联动条款:若 AM-002 网格变更则本值失效须重校准 | CC;锚点 `experiments/mvp2a/calibration_report.json`、`burned_list.json` |
+| AM-004 | 2026-06-12 | EG-A1a | **正式 method 落地**:oracle 占位 → 后门校正估计(对观测 U 偏回归取 X 系数,Q-C7-3 确认);baseline=不校正 OLS 斜率 | Jack Q-C7-3 确认;单测 `TestQC7GridAndMethod`(method 恢复 β_xy、β_xy=0 无假阳性、近零档绝对误差判定) | CC;锚点 `bench/runner.py::_backdoor_adjusted_int_estimate` |
 
-> 待冻结(暂缓,未满足前置):**Q-C7 扫描网格** — Jack 已交付乘积/噪声档位与 n,且其 R3 v3 自检题已机证通过(`experiments/mvp2a/qc7_selfcheck_machinecert.py`,解析 Δ=0 + 蒙特卡洛 4e6 双证 PASS)。但网格对现行 `bench/eg.py::SCMGenerator.grid` 仍欠定(缺直接效应 β_xy 处理、乘积→(β_ux,β_uy) 分解、near_zero_eps),按章程第六章「因果问题禁止凭空实现」暂不冻结,已起草 Q-C7 补充问题回呈 Jack(见任务汇报)。暂停点②生效:正式 EG 不跑。
+> **里程碑(非冻结资产,结果待 Jack 攻击 + 外审)**:第一个真实 EG 数字(2026-06-12)——EG 中位数 31.15 / q10 1.12 / q90 231.57(n=4050);method RMSE 0.023 vs baseline 0.477;近零档(β_xy=0,1350 实例)method 胜;合取判决 **effective**。**诚实范围**:观测到混杂 U + 线性高斯,属后门校正最有利情形,**不**证明未观测混杂/非线性下的优势。按移交令 T2-07 交 Jay 转 Jack 即时攻击(Q-C11 姿势:生成器偏向/分母病/泄漏);结论标"待外审"。

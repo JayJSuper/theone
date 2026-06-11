@@ -1,0 +1,16 @@
+{
+  "_provenance": "Q-C7 scan grid, gatekeeper Jack, machine-certified R3 v3 (two self-checks PASS: experiments/mvp2a/qc7_selfcheck_machinecert.py). Frozen 2026-06-12 per handover T2-06 step 2. Values injected, not hard-coded.",
+  "grid": {
+    "beta_xy": [0.0, 0.1, 0.3, 0.5],
+    "products": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8],
+    "noise": [0.1, 0.3, 0.5],
+    "instances_per_cell": 50,
+    "n_samples": 500,
+    "decomposition": "beta_ux = beta_uy = sqrt(product) (Q-C7-2 symmetric)"
+  },
+  "near_zero_eps": 1e-3,
+  "calibration_base_seed": 100000,
+  "formal_base_seed": 900000,
+  "cells": "4 beta_xy x 9 products x 3 noise = 108 cells x 50 instances = 5400 per set",
+  "burn_isolation": "calibration and formal use disjoint base seeds => disjoint fingerprints (two-stage clause CAL-2P)"
+}

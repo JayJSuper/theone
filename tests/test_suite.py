@@ -12,7 +12,9 @@ from theone.causal.identify import (backdoor_paths, check_backdoor,
 from theone.causal.engine import InterventionEngine
 from theone.bench.eg import (SCMSpec, SCMGenerator, abs_errors, eg_score,
                              conjunctive_verdict, a7_from_summary, a7_judgment)
-from theone.bench.runner import run_calibration, run_frozen
+from theone.bench.runner import (run_calibration, run_frozen,
+                                 _backdoor_adjusted_int_estimate,
+                                 _assoc_int_estimate)
 from theone.memory.store import MemoryStore
 from theone.agent.orchestrator import Orchestrator
 from theone.cli import main as cli_main
@@ -184,6 +186,53 @@ class TestRunner:
                           str(tmp_path))
         assert rep2["verdict"] in ("effective", "inconsistent_evidence", "negative")
         assert "scoping_note" in rep2  # honest scoping is part of the contract
+
+
+# ---------- Q-C7 frozen grid + backdoor method (batch 02) ----------
+class TestQC7GridAndMethod:
+    def test_backdoor_method_recovers_beta_xy_baseline_is_biased(self):
+        """Method (adjust for U) recovers beta_xy; baseline (unadjusted) carries
+        the full confounding bias = product (Q-C7-3 + Jack self-check #1)."""
+        spec = SCMSpec("linear_gaussian_3node", 0.6, 0.5, 0.3, 0.3, 200_000, 7)
+        scm = SCMGenerator().generate(spec)
+        adj = _backdoor_adjusted_int_estimate(scm)
+        base = _assoc_int_estimate(scm)
+        assert adj == pytest.approx(0.30, abs=0.02)   # == true int ATE
+        assert base == pytest.approx(0.60, abs=0.02)  # == obs slope (biased)
+
+    def test_backdoor_method_no_false_effect_when_beta_xy_zero(self):
+        """Jack self-check #2: beta_xy=0, p=0.30. Method must NOT invent an effect;
+        baseline falsely reports ~0.30 (false positive controlled by adjustment)."""
+        b = (0.30) ** 0.5
+        spec = SCMSpec("linear_gaussian_3node", b, b, 0.0, 0.3, 200_000, 9)
+        scm = SCMGenerator().generate(spec)
+        assert _backdoor_adjusted_int_estimate(scm) == pytest.approx(0.0, abs=0.02)
+        assert _assoc_int_estimate(scm) == pytest.approx(0.30, abs=0.02)
+
+    def test_grid_qc7_expansion_counts_and_decomposition(self):
+        cfg = {"beta_xy": [0.0, 0.1, 0.3, 0.5],
+               "products": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8],
+               "noise": [0.1, 0.3, 0.5], "instances_per_cell": 50,
+               "n_samples": 500, "base_seed": 1000}
+        specs = list(SCMGenerator().grid_qc7(cfg))
+        assert len(specs) == 4 * 9 * 3 * 50           # 5400
+        assert len({s.seed for s in specs}) == 5400    # globally unique seeds
+        for s in specs:                                # symmetric sqrt decomposition
+            assert s.beta_ux == pytest.approx(s.beta_uy)
+            assert s.beta_ux ** 2 == pytest.approx(s.beta_ux * s.beta_uy)
+
+    def test_qc7_near_zero_cell_judged_by_absolute_error(self, tmp_path):
+        """A beta_xy=0 cell triggers Amendment 1: excluded from EG ratio, judged on
+        absolute error; method should beat baseline there."""
+        cal = {"beta_xy": [0.3], "products": [0.2, 0.4], "noise": [0.3],
+               "instances_per_cell": 5, "n_samples": 800, "base_seed": 1}
+        run_calibration(cal, str(tmp_path))
+        frozen = {"beta_xy": [0.0], "products": [0.2, 0.4], "noise": [0.3],
+                  "instances_per_cell": 5, "n_samples": 800, "base_seed": 7000}
+        rep = run_frozen({"grid": frozen, "delta_min": 0.1}, str(tmp_path))
+        assert rep["near_zero_regime"] is not None
+        assert rep["near_zero_regime"]["n"] == 10
+        assert rep["near_zero_regime"]["method_better"] is True
 
 
 # ---------- CC-10 memory ----------
