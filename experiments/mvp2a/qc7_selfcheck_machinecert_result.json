@@ -1,0 +1,33 @@
+{
+  "grid_point": {
+    "beta_ux": 0.6,
+    "beta_uy": 0.5,
+    "beta_xy": 0.3,
+    "noise": 0.3
+  },
+  "seed": 20260611,
+  "n_mc": 4000000,
+  "tol_analytic": 1e-09,
+  "tol_empirical": 0.005,
+  "claim": {
+    "confounding_strength": 0.3,
+    "observational_association": 0.6,
+    "interventional_ate": 0.3,
+    "confounding_bias": 0.3
+  },
+  "analytic": {
+    "confounding_strength": 0.3,
+    "observational_association": 0.6,
+    "interventional_ate": 0.3,
+    "confounding_bias": 0.3
+  },
+  "empirical": {
+    "confounding_strength": 0.2997257378636186,
+    "observational_association": 0.6002811755692313,
+    "interventional_ate": 0.3005554377056127,
+    "confounding_bias": 0.2997257378636186,
+    "_var_x_should_be_1": 1.000507636302793
+  },
+  "var_x": 1.000507636302793,
+  "verdict": "PASS"
+}
