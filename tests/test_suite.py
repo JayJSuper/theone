@@ -221,6 +221,22 @@ class TestQC7GridAndMethod:
             assert s.beta_ux == pytest.approx(s.beta_uy)
             assert s.beta_ux ** 2 == pytest.approx(s.beta_ux * s.beta_uy)
 
+    def test_method_recovers_across_strengths_no_zero_bias(self, tmp_path):
+        """Jack attack #4 lock-in: method must recover beta_xy at EVERY strength
+        (no conservative zero-bias) and EG primary metric is median (attack #2)."""
+        cal = {"beta_xy": [0.2], "products": [0.3], "noise": [0.3],
+               "instances_per_cell": 5, "n_samples": 800, "base_seed": 100}
+        run_calibration(cal, str(tmp_path))
+        frozen = {"beta_xy": [0.0, 0.5], "products": [0.3], "noise": [0.3],
+                  "instances_per_cell": 8, "n_samples": 800, "base_seed": 90000}
+        rep = run_frozen({"grid": frozen, "delta_min": 0.1}, str(tmp_path))
+        acc = rep["per_beta_xy_method_accuracy"]
+        assert abs(acc["0.000"]["method_bias"]) < 0.05   # no false effect
+        assert abs(acc["0.500"]["method_bias"]) < 0.05   # not suppressed toward 0
+        egd = rep["eg_distribution"]
+        assert egd["primary_metric"] == "median_and_quantiles"
+        assert "mean_AUXILIARY_extreme_skewed_not_for_conclusion" in egd  # mean demoted
+
     def test_qc7_near_zero_cell_judged_by_absolute_error(self, tmp_path):
         """A beta_xy=0 cell triggers Amendment 1: excluded from EG ratio, judged on
         absolute error; method should beat baseline there."""

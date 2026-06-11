@@ -33,10 +33,12 @@ rep = run_frozen({"grid": formal_grid, "delta_min": cal["delta_min_frozen"],
 
 egd = rep["eg_distribution"]
 print(f"\n[formal] instances={rep['grid_total_instances']}")
-print("--- FIRST REAL EG NUMBER ---")
+print("--- FIRST REAL EG NUMBER (primary = median + quantiles, Jack attack #2) ---")
 if egd:
-    print(f"EG median = {egd['median']:.4f}   mean = {egd['mean']:.4f}   "
+    print(f"EG median = {egd['median']:.4f}   IQR = [{egd['q25']:.4f}, {egd['q75']:.4f}]   "
           f"q10 = {egd['q10']:.4f}   q90 = {egd['q90']:.4f}   (n={egd['n']}, EG>1 => method better)")
+    print(f"   (auxiliary, NOT for conclusion: mean = "
+          f"{egd['mean_AUXILIARY_extreme_skewed_not_for_conclusion']:.1f}, skew-inflated)")
 print(f"abs err  method  rmse={rep['abs_errors']['method']['rmse']:.6f} "
       f"mae={rep['abs_errors']['method']['mae']:.6f}")
 print(f"abs err  baseline rmse={rep['abs_errors']['baseline']['rmse']:.6f} "
@@ -46,7 +48,12 @@ if nz:
     print(f"near-zero regime (beta_xy=0, Amendment 1, abs-error only): n={nz['n']}  "
           f"method_rmse={nz['method']['rmse']:.6f}  baseline_rmse={nz['baseline']['rmse']:.6f}  "
           f"method_better={nz['method_better']}")
-print(f"CONJUNCTIVE VERDICT (EG-A1a) = {rep['verdict']}")
+print("\n--- per-beta_xy method accuracy (Jack attack #4: zero-bias vs true recovery) ---")
+print(f"{'beta_xy':>8}{'n':>6}{'method_mean':>13}{'method_bias':>13}{'method_rmse':>13}{'base_rmse':>11}")
+for k, v in rep["per_beta_xy_method_accuracy"].items():
+    print(f"{k:>8}{v['n']:>6}{v['method_mean_estimate']:>13.4f}{v['method_bias']:>13.4f}"
+          f"{v['method_rmse']:>13.4f}{v['baseline_rmse']:>11.4f}")
+print(f"\nCONJUNCTIVE VERDICT (EG-A1a) = {rep['verdict']}")
 print(f"scope: {rep['scoping_note']}")
 
 # --- provenance bundle with fingerprints ---

@@ -107,6 +107,9 @@ def run_frozen(frozen_config: dict, out_dir: str) -> dict:
             nz_m_preds.append(method_pred); nz_b_preds.append(baseline_pred)
             nz_truths.append(truth)
         m_preds.append(method_pred); b_preds.append(baseline_pred); truths.append(truth)
+    m_preds_a = np.asarray(m_preds, float)
+    b_preds_a = np.asarray(b_preds, float)
+    truths_a = np.asarray(truths, float)
     m_abs, b_abs = abs_errors(m_preds, truths), abs_errors(b_preds, truths)
     eg_arr = np.asarray(eg_values, float)
     # near-zero regime judged on absolute error alone (Amendment 1)
@@ -115,15 +118,34 @@ def run_frozen(frozen_config: dict, out_dir: str) -> dict:
         nz_m, nz_b = abs_errors(nz_m_preds, nz_truths), abs_errors(nz_b_preds, nz_truths)
         nz = {"n": len(nz_truths), "method": nz_m, "baseline": nz_b,
               "method_better": nz_m["rmse"] < nz_b["rmse"]}
+    # per-direct-effect breakdown (Jack attack #4: rule out a conservative zero-bias -
+    # method must recover beta_xy ACROSS strengths, not just look good near zero).
+    per_beta_xy = {}
+    for bxy in sorted(set(np.round(truths_a, 6))):
+        mask = np.isclose(truths_a, bxy)
+        per_beta_xy[f"{bxy:.3f}"] = {
+            "n": int(mask.sum()),
+            "method_mean_estimate": float(m_preds_a[mask].mean()),
+            "method_bias": float(m_preds_a[mask].mean() - bxy),
+            "method_rmse": float(np.sqrt(np.mean((m_preds_a[mask] - bxy) ** 2))),
+            "baseline_mean_estimate": float(b_preds_a[mask].mean()),
+            "baseline_rmse": float(np.sqrt(np.mean((b_preds_a[mask] - bxy) ** 2)))}
     report = {
         "delta_min": frozen_config["delta_min"],
         "grid_total_instances": len(truths),
         "near_zero_regime": nz,
-        "eg_distribution": ({"mean": float(eg_arr.mean()),
+        # Jack attack #2: EG mean is dominated by extreme small-denominator instances;
+        # PRIMARY metric is median + quantiles, mean is auxiliary only.
+        "eg_distribution": ({"primary_metric": "median_and_quantiles",
                              "median": float(np.median(eg_arr)),
                              "q10": float(np.quantile(eg_arr, .1)),
-                             "q90": float(np.quantile(eg_arr, .9)),
+                             "q25": float(np.quantile(eg_arr, .25)),
+                             "q75": float(np.quantile(eg_arr, .75)),
+                             "q90": float(np.quantile(eg_arr, .90)),
+                             "mean_AUXILIARY_extreme_skewed_not_for_conclusion":
+                                 float(eg_arr.mean()),
                              "n": int(eg_arr.size)} if eg_arr.size else None),
+        "per_beta_xy_method_accuracy": per_beta_xy,
         "abs_errors": {"method": m_abs, "baseline": b_abs},
         "verdict": conjunctive_verdict(
             eg_better=bool(eg_arr.size and np.median(eg_arr) > 1.0),
@@ -131,9 +153,13 @@ def run_frozen(frozen_config: dict, out_dir: str) -> dict:
             abs_better=m_abs["rmse"] < b_abs["rmse"],
             abs_sig=m_abs["rmse"] < 0.5 * b_abs["rmse"]),
         "scoping_note": "method = backdoor-adjusted estimate (adjust for observed U); "
-                        "baseline = unadjusted OLS slope. HONEST SCOPE: observed-"
-                        "confounder linear-Gaussian regime only - does NOT certify "
-                        "unobserved-confounder or nonlinear performance (Jack attack pending).",
+                        "baseline = unadjusted OLS slope. HONEST SCOPE (Jack attack "
+                        "resolved): (1) result holds under SYMMETRIC confounding "
+                        "(beta_ux=beta_uy=sqrt(p)) only - asymmetric confounding "
+                        "untested, pending amendment; (2) EG primary metric is median+"
+                        "quantiles, mean is skew-inflated and excluded from conclusions; "
+                        "(3) observed-confounder linear-Gaussian regime only - does NOT "
+                        "certify unobserved-confounder or nonlinear performance.",
     }
     (out / "frozen_report.json").write_text(json.dumps(report, indent=2))
     return report

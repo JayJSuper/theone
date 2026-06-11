@@ -29,11 +29,48 @@
       "method_better": true
     },
     "eg_distribution": {
-      "mean": 391.3884408147673,
+      "primary_metric": "median_and_quantiles",
       "median": 31.146965531224577,
       "q10": 1.1192895873250215,
+      "q25": 11.823285417832281,
+      "q75": 86.26369082427732,
       "q90": 231.56539704965513,
+      "mean_AUXILIARY_extreme_skewed_not_for_conclusion": 391.3884408147673,
       "n": 4050
+    },
+    "per_beta_xy_method_accuracy": {
+      "0.000": {
+        "n": 1350,
+        "method_mean_estimate": 0.0009671932160242946,
+        "method_bias": 0.0009671932160242946,
+        "method_rmse": 0.022850647463432027,
+        "baseline_mean_estimate": 0.4007319045745486,
+        "baseline_rmse": 0.4779120765398463
+      },
+      "0.100": {
+        "n": 1350,
+        "method_mean_estimate": 0.10041107987324288,
+        "method_bias": 0.00041107987324287554,
+        "method_rmse": 0.023736085121907776,
+        "baseline_mean_estimate": 0.5005479572146021,
+        "baseline_rmse": 0.47730837723170966
+      },
+      "0.300": {
+        "n": 1350,
+        "method_mean_estimate": 0.30080838325462544,
+        "method_bias": 0.0008083832546254555,
+        "method_rmse": 0.023248012803914354,
+        "baseline_mean_estimate": 0.7006544718473718,
+        "baseline_rmse": 0.4780579599774816
+      },
+      "0.500": {
+        "n": 1350,
+        "method_mean_estimate": 0.500290386822341,
+        "method_bias": 0.0002903868223409489,
+        "method_rmse": 0.0220406514179339,
+        "baseline_mean_estimate": 0.8999189683451427,
+        "baseline_rmse": 0.47648637225620283
+      }
     },
     "abs_errors": {
       "method": {
@@ -46,7 +83,7 @@
       }
     },
     "verdict": "effective",
-    "scoping_note": "method = backdoor-adjusted estimate (adjust for observed U); baseline = unadjusted OLS slope. HONEST SCOPE: observed-confounder linear-Gaussian regime only - does NOT certify unobserved-confounder or nonlinear performance (Jack attack pending)."
+    "scoping_note": "method = backdoor-adjusted estimate (adjust for observed U); baseline = unadjusted OLS slope. HONEST SCOPE (Jack attack resolved): (1) result holds under SYMMETRIC confounding (beta_ux=beta_uy=sqrt(p)) only - asymmetric confounding untested, pending amendment; (2) EG primary metric is median+quantiles, mean is skew-inflated and excluded from conclusions; (3) observed-confounder linear-Gaussian regime only - does NOT certify unobserved-confounder or nonlinear performance."
   },
   "burned_list_sha": "6a6e890335292405"
 }

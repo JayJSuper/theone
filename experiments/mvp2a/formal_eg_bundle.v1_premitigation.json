@@ -1,0 +1,52 @@
+{
+  "frozen_grid_sha": "5c43d5ce4e95d886",
+  "calibration_report": {
+    "n_instances": 5400,
+    "tau_median": 0.39978736366937506,
+    "delta_min_frozen": 0.39978736366937506,
+    "tau_quantiles": {
+      "0.1": 0.025636847915113045,
+      "0.25": 0.18460549925460112,
+      "0.5": 0.39978736366937506,
+      "0.75": 0.6193722403269759,
+      "0.9": 0.7716647534640464
+    },
+    "floor_applied": false
+  },
+  "formal_report": {
+    "delta_min": 0.39978736366937506,
+    "grid_total_instances": 5400,
+    "near_zero_regime": {
+      "n": 1350,
+      "method": {
+        "rmse": 0.022850647463432027,
+        "mae": 0.015020069951276001
+      },
+      "baseline": {
+        "rmse": 0.4779120765398463,
+        "mae": 0.4019712602168529
+      },
+      "method_better": true
+    },
+    "eg_distribution": {
+      "mean": 391.3884408147673,
+      "median": 31.146965531224577,
+      "q10": 1.1192895873250215,
+      "q90": 231.56539704965513,
+      "n": 4050
+    },
+    "abs_errors": {
+      "method": {
+        "rmse": 0.022977240046785113,
+        "mae": 0.015301631932833546
+      },
+      "baseline": {
+        "rmse": 0.4774415974550982,
+        "mae": 0.4016077032870244
+      }
+    },
+    "verdict": "effective",
+    "scoping_note": "method = backdoor-adjusted estimate (adjust for observed U); baseline = unadjusted OLS slope. HONEST SCOPE: observed-confounder linear-Gaussian regime only - does NOT certify unobserved-confounder or nonlinear performance (Jack attack pending)."
+  },
+  "burned_list_sha": "6a6e890335292405"
+}
