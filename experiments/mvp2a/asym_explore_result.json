@@ -1,0 +1,107 @@
+{
+  "fixed_product": 0.3,
+  "rows": [
+    {
+      "beta_xy": 0.0,
+      "ratio": 0.3333333333333333,
+      "b_ux": 0.31622776601683794,
+      "b_uy": 0.9486832980505138,
+      "method_bias": 0.0016702433863023424,
+      "method_rmse": 0.012423210985512424,
+      "baseline_rmse": 0.2996974106963736,
+      "eg_median": NaN
+    },
+    {
+      "beta_xy": 0.0,
+      "ratio": 0.5,
+      "b_ux": 0.3872983346207417,
+      "b_uy": 0.7745966692414834,
+      "method_bias": -0.005106717501836971,
+      "method_rmse": 0.01688682437290971,
+      "baseline_rmse": 0.30078543576263733,
+      "eg_median": NaN
+    },
+    {
+      "beta_xy": 0.0,
+      "ratio": 1.0,
+      "b_ux": 0.5477225575051661,
+      "b_uy": 0.5477225575051661,
+      "method_bias": 0.0009309630249136429,
+      "method_rmse": 0.016005886961928558,
+      "baseline_rmse": 0.3087366378974532,
+      "eg_median": NaN
+    },
+    {
+      "beta_xy": 0.0,
+      "ratio": 2.0,
+      "b_ux": 0.7745966692414834,
+      "b_uy": 0.3872983346207417,
+      "method_bias": -0.004365408426525035,
+      "method_rmse": 0.02209459116821092,
+      "baseline_rmse": 0.3001312283728658,
+      "eg_median": NaN
+    },
+    {
+      "beta_xy": 0.0,
+      "ratio": 3.0,
+      "b_ux": 0.9486832980505138,
+      "b_uy": 0.31622776601683794,
+      "method_bias": 0.002908622980330936,
+      "method_rmse": 0.04785573483798211,
+      "baseline_rmse": 0.2993463541581836,
+      "eg_median": NaN
+    },
+    {
+      "beta_xy": 0.3,
+      "ratio": 0.3333333333333333,
+      "b_ux": 0.31622776601683794,
+      "b_uy": 0.9486832980505138,
+      "method_bias": 0.002046089492123482,
+      "method_rmse": 0.013890234002361135,
+      "baseline_rmse": 0.30832667277810116,
+      "eg_median": 32.542382646242324
+    },
+    {
+      "beta_xy": 0.3,
+      "ratio": 0.5,
+      "b_ux": 0.3872983346207417,
+      "b_uy": 0.7745966692414834,
+      "method_bias": 0.00040405463957532417,
+      "method_rmse": 0.015244470514886858,
+      "baseline_rmse": 0.307332127751632,
+      "eg_median": 25.867034405132856
+    },
+    {
+      "beta_xy": 0.3,
+      "ratio": 1.0,
+      "b_ux": 0.5477225575051661,
+      "b_uy": 0.5477225575051661,
+      "method_bias": -0.0015797140605774418,
+      "method_rmse": 0.015370791972685354,
+      "baseline_rmse": 0.29614129395836086,
+      "eg_median": 35.93808929009284
+    },
+    {
+      "beta_xy": 0.3,
+      "ratio": 2.0,
+      "b_ux": 0.7745966692414834,
+      "b_uy": 0.3872983346207417,
+      "method_bias": 0.0010033590738306453,
+      "method_rmse": 0.016742899718823957,
+      "baseline_rmse": 0.30055920621335735,
+      "eg_median": 27.209089909095198
+    },
+    {
+      "beta_xy": 0.3,
+      "ratio": 3.0,
+      "b_ux": 0.9486832980505138,
+      "b_uy": 0.31622776601683794,
+      "method_bias": 0.007357319975198118,
+      "method_rmse": 0.03332700135907498,
+      "baseline_rmse": 0.301634106326192,
+      "eg_median": 12.685318605779958
+    }
+  ],
+  "finding": "method recovers beta_xy across all asymmetry ratios (bias tracks ~0); effective is NOT an artifact of symmetry",
+  "status": "exploration/proposal - full asym grid needs amendment + gatekeeper"
+}
