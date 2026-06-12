@@ -1,0 +1,18 @@
+{
+  "n_queries": 800,
+  "bias_median": {
+    "semantic": 0.00422,
+    "structural": 0.0
+  },
+  "bias_mean": {
+    "semantic": 0.03649,
+    "structural": 0.0
+  },
+  "collider_misadjust_rate": {
+    "semantic": 0.524,
+    "structural": 0.0
+  },
+  "structural_better_count": 419,
+  "n_pairs": 800,
+  "verdict": "no_structural_advantage"
+}
