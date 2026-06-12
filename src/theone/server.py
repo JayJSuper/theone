@@ -14,7 +14,8 @@ import time
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 from . import __version__
-from .hybrid import build_library, route, s2_answer, s1_render, template_render
+from .hybrid import (build_library, route, s2_answer, s1_render,
+                     template_render, identify_gate)
 from .memory.store import MemoryStore
 
 DEMO_DIR = Path(__file__).resolve().parents[2] / "demo" / "one_universal"
@@ -52,6 +53,19 @@ def handle_chat(query: str) -> dict:
                 "receipt": {"method": "memory_search", "hits": len(hits)}}
 
     if mode == "s2_causal":
+        gate = identify_gate(r["graph"])
+        if not gate["identifiable"]:
+            miss = ", ".join(gate["missing"])
+            return {**base, "mode": "abstain_unidentifiable",
+                    "answer": ("I can't answer this causally — and I can prove "
+                               f"why: the required adjustment variable ({miss}) was "
+                               "never observed, so the causal effect is "
+                               "unidentifiable from available data. Measuring "
+                               f"{miss} is exactly what would change that."),
+                    "receipt": {"method": "identifiability_gate_refusal",
+                                "graph_hash": r["graph"].graph.content_hash(),
+                                "missing_variables": gate["missing"],
+                                "limits": gate["reason"], "confidence": 0.95}}
         s2 = s2_answer(r["graph"])
         answer = s1_render(query, s2, _S1)
         return {**base, "answer": answer, "s1_used": _S1 is not None,

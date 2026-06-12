@@ -1,0 +1,322 @@
+{
+  "summary": {
+    "n_ident": 30,
+    "n_unident": 5,
+    "elapsed_s": 360.6,
+    "A_protocol_failures": 0,
+    "A_false_abstain_ident": 0,
+    "A_mae": 0.0,
+    "A_abstain_unident": 5,
+    "A_fabricated_unident": 0,
+    "B_protocol_failures": 0,
+    "B_false_abstain_ident": 0,
+    "B_mae": 0.0,
+    "B_abstain_unident": 5,
+    "B_fabricated_unident": 0,
+    "C_protocol_failures": 0,
+    "C_false_abstain_ident": 0,
+    "C_mae": 0.0,
+    "C_abstain_unident": 5,
+    "C_fabricated_unident": 0,
+    "C_vs_A": {
+      "wins": 0,
+      "ties": 30,
+      "n": 30,
+      "sign_p_one_sided": 1.0
+    },
+    "C_vs_B": {
+      "wins": 0,
+      "ties": 30,
+      "n": 30,
+      "sign_p_one_sided": 1.0
+    },
+    "frozen_verdict_C_wins": false,
+    "verdict_parts": {
+      "mae": false,
+      "sign": false,
+      "abstention": true
+    }
+  },
+  "rows": [
+    {
+      "id": 0,
+      "identifiable": true,
+      "truth": 0.5632,
+      "A": 0.5632,
+      "B": 0.5632,
+      "C": 0.5632
+    },
+    {
+      "id": 1,
+      "identifiable": true,
+      "truth": 0.6225,
+      "A": 0.6225,
+      "B": 0.6225,
+      "C": 0.6225
+    },
+    {
+      "id": 2,
+      "identifiable": true,
+      "truth": 0.5344,
+      "A": 0.5344,
+      "B": 0.5344,
+      "C": 0.5344
+    },
+    {
+      "id": 3,
+      "identifiable": true,
+      "truth": 0.5402,
+      "A": 0.5402,
+      "B": 0.5402,
+      "C": 0.5402
+    },
+    {
+      "id": 4,
+      "identifiable": true,
+      "truth": 0.6062,
+      "A": 0.6062,
+      "B": 0.6062,
+      "C": 0.6062
+    },
+    {
+      "id": 5,
+      "identifiable": true,
+      "truth": 0.74,
+      "A": 0.74,
+      "B": 0.74,
+      "C": 0.74
+    },
+    {
+      "id": 6,
+      "identifiable": true,
+      "truth": 0.1804,
+      "A": 0.1804,
+      "B": 0.1804,
+      "C": 0.1804
+    },
+    {
+      "id": 7,
+      "identifiable": true,
+      "truth": 0.285,
+      "A": 0.285,
+      "B": 0.285,
+      "C": 0.285
+    },
+    {
+      "id": 8,
+      "identifiable": true,
+      "truth": 0.5028,
+      "A": 0.5028,
+      "B": 0.5028,
+      "C": 0.5028
+    },
+    {
+      "id": 9,
+      "identifiable": true,
+      "truth": 0.4184,
+      "A": 0.4184,
+      "B": 0.4184,
+      "C": 0.4184
+    },
+    {
+      "id": 10,
+      "identifiable": true,
+      "truth": 0.4996,
+      "A": 0.4996,
+      "B": 0.4996,
+      "C": 0.4996
+    },
+    {
+      "id": 11,
+      "identifiable": true,
+      "truth": 0.9033,
+      "A": 0.9033,
+      "B": 0.9033,
+      "C": 0.9033
+    },
+    {
+      "id": 12,
+      "identifiable": true,
+      "truth": 0.2283,
+      "A": 0.2283,
+      "B": 0.2283,
+      "C": 0.2283
+    },
+    {
+      "id": 13,
+      "identifiable": true,
+      "truth": 0.4572,
+      "A": 0.4572,
+      "B": 0.4572,
+      "C": 0.4572
+    },
+    {
+      "id": 14,
+      "identifiable": true,
+      "truth": 0.8024,
+      "A": 0.8024,
+      "B": 0.8024,
+      "C": 0.8024
+    },
+    {
+      "id": 15,
+      "identifiable": true,
+      "truth": 0.711,
+      "A": 0.711,
+      "B": 0.711,
+      "C": 0.711
+    },
+    {
+      "id": 16,
+      "identifiable": true,
+      "truth": 0.3186,
+      "A": 0.3186,
+      "B": 0.3186,
+      "C": 0.3186
+    },
+    {
+      "id": 17,
+      "identifiable": true,
+      "truth": 0.741,
+      "A": 0.741,
+      "B": 0.741,
+      "C": 0.741
+    },
+    {
+      "id": 18,
+      "identifiable": true,
+      "truth": 0.4148,
+      "A": 0.4148,
+      "B": 0.4148,
+      "C": 0.4148
+    },
+    {
+      "id": 19,
+      "identifiable": true,
+      "truth": 0.481,
+      "A": 0.481,
+      "B": 0.481,
+      "C": 0.481
+    },
+    {
+      "id": 20,
+      "identifiable": true,
+      "truth": 0.6743,
+      "A": 0.6743,
+      "B": 0.6743,
+      "C": 0.6743
+    },
+    {
+      "id": 21,
+      "identifiable": true,
+      "truth": 0.682,
+      "A": 0.682,
+      "B": 0.682,
+      "C": 0.682
+    },
+    {
+      "id": 22,
+      "identifiable": true,
+      "truth": 0.7832,
+      "A": 0.7832,
+      "B": 0.7832,
+      "C": 0.7832
+    },
+    {
+      "id": 23,
+      "identifiable": true,
+      "truth": 0.708,
+      "A": 0.708,
+      "B": 0.708,
+      "C": 0.708
+    },
+    {
+      "id": 24,
+      "identifiable": true,
+      "truth": 0.4838,
+      "A": 0.4838,
+      "B": 0.4838,
+      "C": 0.4838
+    },
+    {
+      "id": 25,
+      "identifiable": true,
+      "truth": 0.1374,
+      "A": 0.1374,
+      "B": 0.1374,
+      "C": 0.1374
+    },
+    {
+      "id": 26,
+      "identifiable": true,
+      "truth": 0.8051,
+      "A": 0.8051,
+      "B": 0.8051,
+      "C": 0.8051
+    },
+    {
+      "id": 27,
+      "identifiable": true,
+      "truth": 0.5254,
+      "A": 0.5254,
+      "B": 0.5254,
+      "C": 0.5254
+    },
+    {
+      "id": 28,
+      "identifiable": true,
+      "truth": 0.6768,
+      "A": 0.6768,
+      "B": 0.6768,
+      "C": 0.6768
+    },
+    {
+      "id": 29,
+      "identifiable": true,
+      "truth": 0.6042,
+      "A": 0.6042,
+      "B": 0.6042,
+      "C": 0.6042
+    },
+    {
+      "id": 30,
+      "identifiable": false,
+      "truth": 0.696,
+      "A": "ABSTAIN",
+      "B": "ABSTAIN",
+      "C": "ABSTAIN"
+    },
+    {
+      "id": 31,
+      "identifiable": false,
+      "truth": 0.344,
+      "A": "ABSTAIN",
+      "B": "ABSTAIN",
+      "C": "ABSTAIN"
+    },
+    {
+      "id": 32,
+      "identifiable": false,
+      "truth": 0.4556,
+      "A": "ABSTAIN",
+      "B": "ABSTAIN",
+      "C": "ABSTAIN"
+    },
+    {
+      "id": 33,
+      "identifiable": false,
+      "truth": 0.4363,
+      "A": "ABSTAIN",
+      "B": "ABSTAIN",
+      "C": "ABSTAIN"
+    },
+    {
+      "id": 34,
+      "identifiable": false,
+      "truth": 0.4426,
+      "A": "ABSTAIN",
+      "B": "ABSTAIN",
+      "C": "ABSTAIN"
+    }
+  ]
+}

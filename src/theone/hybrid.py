@@ -35,10 +35,27 @@ class LibraryGraph:
     aliases: dict                      # var -> [keywords] (zh+en)
     evidence_tier: str
     note: str
+    latent: tuple = ()                 # unobserved variables (cannot be adjusted on)
     graph: CausalGraph = field(repr=False, default=None)
 
     def usable_for_do(self) -> bool:
         return TIERS.index(self.evidence_tier) >= TIERS.index("machine_validated")
+
+
+def identify_gate(lg: LibraryGraph) -> dict:
+    """Identifiability gate (M1b): a do-query is answerable iff a backdoor
+    adjustment set exists among OBSERVED variables. The causal 'I don't know'
+    is computable — when blocked, we name the missing variable instead of
+    guessing. Returns {identifiable, adjustment_set | missing}."""
+    adj = find_adjustment_set(lg.graph, lg.treatment, lg.outcome)
+    if adj is None:
+        return {"identifiable": False, "missing": [lg.confounder],
+                "reason": "no valid backdoor adjustment set exists"}
+    hidden = sorted(set(adj) & set(lg.latent))
+    if hidden:
+        return {"identifiable": False, "missing": hidden,
+                "reason": f"adjustment requires unobserved variable(s) {hidden}"}
+    return {"identifiable": True, "adjustment_set": sorted(adj)}
 
 
 def _confounded(u, x, y, p_u=0.5, px=(0.8, 0.2), py=(0.9, 0.5, 0.6, 0.2)):
@@ -84,6 +101,19 @@ def build_library() -> list:
                   "marketing-textbook confounding (season drives both ads and sales)."),
             graph=_confounded("season", "advertising", "sales",
                               px=(0.7, 0.3), py=(0.8, 0.55, 0.5, 0.2))),
+        LibraryGraph(
+            key="sleep_hair", treatment="sleep_deprivation", outcome="hair_loss",
+            confounder="stress",
+            aliases={"sleep_deprivation": ["熬夜", "睡眠", "sleep", "stay up"],
+                     "hair_loss": ["脱发", "掉发", "hair"],
+                     "stress": ["压力", "焦虑", "stress"]},
+            evidence_tier="machine_validated",
+            latent=("stress",),          # stress is UNOBSERVED -> gate must refuse
+            note=("Structure machine-validated; STRESS IS UNOBSERVED — the only "
+                  "backdoor set is unavailable, so do-queries are unidentifiable. "
+                  "This graph exists to demonstrate computable refusal."),
+            graph=_confounded("stress", "sleep_deprivation", "hair_loss",
+                              px=(0.75, 0.35), py=(0.7, 0.45, 0.5, 0.25))),
     ]
     return lib
 

@@ -1,7 +1,8 @@
-"""Hybrid pipeline v0 tests — router cost-sensitivity, S2 numbers, S1 fallback."""
+"""Hybrid pipeline v0 tests — router cost-sensitivity, S2 numbers, S1 fallback,
+identifiability gate (computable refusal)."""
 import pytest
 from theone.hybrid import (build_library, route, s2_answer, template_render,
-                           s1_render, _match_graph)
+                           s1_render, _match_graph, identify_gate)
 
 LIB = build_library()
 
@@ -17,8 +18,29 @@ class TestRouterV0:
     def test_causal_without_model_abstains_never_s1(self):
         """Cost-sensitive core: causal intent + no validated graph -> ABSTAIN.
         Falling through to S1 would resurrect hallucination."""
-        r = route("熬夜会导致脱发吗？", LIB)
+        r = route("吃糖会导致近视吗？", LIB)
         assert r["mode"] == "abstain_no_model"
+
+
+class TestIdentifiabilityGate:
+    def test_observed_confounder_identifiable(self):
+        lg = next(g for g in LIB if g.key == "coffee_heart")
+        gate = identify_gate(lg)
+        assert gate["identifiable"] is True
+        assert gate["adjustment_set"] == ["smoking"]
+
+    def test_latent_confounder_refuses_and_names_missing(self):
+        """The causal 'I don't know' is computable: latent stress blocks the
+        only backdoor set -> refuse and NAME the missing variable."""
+        lg = next(g for g in LIB if g.key == "sleep_hair")
+        gate = identify_gate(lg)
+        assert gate["identifiable"] is False
+        assert gate["missing"] == ["stress"]
+
+    def test_sleep_hair_routes_to_s2_then_gate_blocks(self):
+        r = route("熬夜会导致脱发吗？", LIB)
+        assert r["mode"] == "s2_causal" and r["graph"].key == "sleep_hair"
+        assert identify_gate(r["graph"])["identifiable"] is False
 
     def test_forecast_abstains(self):
         assert route("明年比特币会涨到多少？", LIB)["mode"] == "abstain_forecast"
