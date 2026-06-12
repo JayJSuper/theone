@@ -198,12 +198,26 @@ def main():
     gen = gen_fixed_skeleton if args.skeleton == "fixed" else gen_dag
     suffix = f".{args.skeleton}"
     client = DeepSeekClient(timeout=180)
-    jsonl = (HERE / f"rows{suffix}.jsonl").open("a")  # crash-safe incremental log
+    jpath = HERE / f"rows{suffix}.jsonl"
+    # crash-safe RESUME: completed (tier,i) are skipped (LLM calls not re-spent);
+    # the generator rng is still advanced so resumed problems stay identical.
+    done = {}
+    if jpath.exists():
+        for line in jpath.read_text().splitlines():
+            if line.strip():
+                r = json.loads(line); done[(r["tier"], r["i"])] = r
+    if done:
+        print(f"[resume] {len(done)} rows already completed; advancing rng, "
+              f"skipping their LLM calls.", flush=True)
+    jsonl = jpath.open("a")
     rows = []
     for tier, n_nodes in SIZES.items():
         rng = np.random.default_rng(args.base_seed + n_nodes)
         for i in range(args.n):
-            d = gen(n_nodes, rng)
+            d = gen(n_nodes, rng)                      # always advance rng
+            if (tier, i) in done:
+                rows.append(done[(tier, i)])           # reuse, no spend
+                continue
             g = build_graph(d)
             truth = InterventionEngine(g).query_intervention(d["y"], 1, {d["x"]: 1}).value
             text = render_text(d)
