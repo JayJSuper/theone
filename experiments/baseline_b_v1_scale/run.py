@@ -168,12 +168,16 @@ def the_one(text: str) -> dict:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--n", type=int, default=10)     # PILOT default
+    ap.add_argument("--base-seed", type=int, default=BASE_SEED,
+                    help="formal runs use a FRESH seed (burn discipline: pilot "
+                         "problems are spent and excluded)")
     args = ap.parse_args()
     pilot = args.n < 150
     client = DeepSeekClient(timeout=180)
+    jsonl = (HERE / "rows.jsonl").open("a")          # crash-safe incremental log
     rows = []
     for tier, n_nodes in SIZES.items():
-        rng = np.random.default_rng(BASE_SEED + n_nodes)
+        rng = np.random.default_rng(args.base_seed + n_nodes)
         for i in range(args.n):
             d = gen_dag(n_nodes, rng)
             g = build_graph(d)
@@ -187,11 +191,13 @@ def main():
             row = {"tier": tier, "i": i, "truth": round(truth, 6),
                    "A": a, "B": b, "C": {k: c[k] for k in ("pred", "latency", "fail")}}
             rows.append(row)
+            jsonl.write(json.dumps(row) + "\n"); jsonl.flush()
             print(f"[{tier}{i:02d}] truth={truth:.4f}  "
                   f"A={a['pred']} ({a['latency']}s)  B={b['pred']} ({b['latency']}s)  "
                   f"C={c['pred']} ({c['latency']}s)", flush=True)
 
-    summary = {"mode": "PILOT" if pilot else "FORMAL", "n_per_tier": args.n}
+    summary = {"mode": "PILOT" if pilot else "FORMAL", "n_per_tier": args.n,
+               "base_seed": args.base_seed}
     for tier in SIZES:
         tr = [r for r in rows if r["tier"] == tier]
         for s in ("A", "B", "C"):
