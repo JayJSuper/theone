@@ -1,0 +1,57 @@
+{
+  "table": {
+    "semantic": {
+      "cosine": 1.0,
+      "spectral": 1.0,
+      "hrr": 1.0
+    },
+    "shift": {
+      "cosine": 0.005,
+      "spectral": 1.0,
+      "hrr": 0.005
+    },
+    "bound": {
+      "cosine": 0.021,
+      "spectral": 0.348,
+      "hrr": 0.801
+    }
+  },
+  "verdict": {
+    "semantic": {
+      "winner": "cosine",
+      "acc": {
+        "cosine": 1.0,
+        "spectral": 1.0,
+        "hrr": 1.0
+      },
+      "beats_cosine_count": {
+        "spectral": 0,
+        "hrr": 0
+      }
+    },
+    "shift": {
+      "winner": "spectral",
+      "acc": {
+        "cosine": 0.005,
+        "spectral": 1.0,
+        "hrr": 0.005
+      },
+      "beats_cosine_count": {
+        "spectral": 20,
+        "hrr": 0
+      }
+    },
+    "bound": {
+      "winner": "hrr",
+      "acc": {
+        "cosine": 0.021,
+        "spectral": 0.348,
+        "hrr": 0.801
+      },
+      "beats_cosine_count": {
+        "spectral": 20,
+        "hrr": 20
+      }
+    }
+  }
+}
