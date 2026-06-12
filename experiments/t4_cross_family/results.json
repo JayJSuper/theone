@@ -1,0 +1,186 @@
+{
+  "families": {
+    "train_A": {
+      "p_range": [
+        0.0,
+        0.4
+      ],
+      "bxy_range": [
+        0.0,
+        0.5
+      ],
+      "noise_range": [
+        0.1,
+        0.5
+      ]
+    },
+    "test_B": {
+      "p_range": [
+        0.4,
+        0.8
+      ],
+      "bxy_range": [
+        0.0,
+        0.5
+      ],
+      "noise_range": [
+        0.1,
+        0.5
+      ]
+    }
+  },
+  "baseline_B_mse": 0.38564469434749427,
+  "strong_factor": 1.5,
+  "median_A_holdout_mse": 0.001375627623990418,
+  "median_B_mse": 0.017070482834039093,
+  "median_ratio": 11.703422003774872,
+  "per_seed_verdict_counts": {
+    "PASS": 0,
+    "WEAK": 20,
+    "FAIL": 0
+  },
+  "overall_verdict": "WEAK",
+  "rows": [
+    {
+      "seed": 0,
+      "mse_A_holdout": 0.0014833310560543938,
+      "mse_B": 0.014326784641598735,
+      "ratio": 9.658521328143332,
+      "verdict": "WEAK"
+    },
+    {
+      "seed": 1,
+      "mse_A_holdout": 0.0023326051243059325,
+      "mse_B": 0.020393079206668004,
+      "ratio": 8.742619569069142,
+      "verdict": "WEAK"
+    },
+    {
+      "seed": 2,
+      "mse_A_holdout": 0.0012034432261082756,
+      "mse_B": 0.012767339384438362,
+      "ratio": 10.609008474563192,
+      "verdict": "WEAK"
+    },
+    {
+      "seed": 3,
+      "mse_A_holdout": 0.0024514397031441225,
+      "mse_B": 0.019733216903364135,
+      "ratio": 8.049644002279587,
+      "verdict": "WEAK"
+    },
+    {
+      "seed": 4,
+      "mse_A_holdout": 0.001249886732765106,
+      "mse_B": 0.016846135602543028,
+      "ratio": 13.478129786428383,
+      "verdict": "WEAK"
+    },
+    {
+      "seed": 5,
+      "mse_A_holdout": 0.0013241106807093247,
+      "mse_B": 0.01423986744477692,
+      "ratio": 10.754287879581666,
+      "verdict": "WEAK"
+    },
+    {
+      "seed": 6,
+      "mse_A_holdout": 0.0010202080874779833,
+      "mse_B": 0.030865409323181194,
+      "ratio": 30.254033174234454,
+      "verdict": "WEAK"
+    },
+    {
+      "seed": 7,
+      "mse_A_holdout": 0.001330441796301889,
+      "mse_B": 0.019217269189059017,
+      "ratio": 14.444276512114664,
+      "verdict": "WEAK"
+    },
+    {
+      "seed": 8,
+      "mse_A_holdout": 0.0010645773946442744,
+      "mse_B": 0.021346845906871418,
+      "ratio": 20.051943629710838,
+      "verdict": "WEAK"
+    },
+    {
+      "seed": 9,
+      "mse_A_holdout": 0.002733096453780919,
+      "mse_B": 0.011267665125335499,
+      "ratio": 4.122673793582368,
+      "verdict": "WEAK"
+    },
+    {
+      "seed": 10,
+      "mse_A_holdout": 0.001440883499618405,
+      "mse_B": 0.018259081181695447,
+      "ratio": 12.6721426031536,
+      "verdict": "WEAK"
+    },
+    {
+      "seed": 11,
+      "mse_A_holdout": 0.0014204983224878963,
+      "mse_B": 0.021403389518076896,
+      "ratio": 15.067521854295796,
+      "verdict": "WEAK"
+    },
+    {
+      "seed": 12,
+      "mse_A_holdout": 0.0023911537485407715,
+      "mse_B": 0.009526996747428868,
+      "ratio": 3.9842677423995947,
+      "verdict": "WEAK"
+    },
+    {
+      "seed": 13,
+      "mse_A_holdout": 0.001330681199711671,
+      "mse_B": 0.021625778745517493,
+      "ratio": 16.251660240035942,
+      "verdict": "WEAK"
+    },
+    {
+      "seed": 14,
+      "mse_A_holdout": 0.0011442089136930419,
+      "mse_B": 0.01729483006553516,
+      "ratio": 15.115098177057956,
+      "verdict": "WEAK"
+    },
+    {
+      "seed": 15,
+      "mse_A_holdout": 0.001545612063616724,
+      "mse_B": 0.013499056850549933,
+      "ratio": 8.733793665508934,
+      "verdict": "WEAK"
+    },
+    {
+      "seed": 16,
+      "mse_A_holdout": 0.0012727145019737316,
+      "mse_B": 0.016103091671101577,
+      "ratio": 12.652556127968078,
+      "verdict": "WEAK"
+    },
+    {
+      "seed": 17,
+      "mse_A_holdout": 0.0018806360866622414,
+      "mse_B": 0.014694545161129557,
+      "ratio": 7.813603740428847,
+      "verdict": "WEAK"
+    },
+    {
+      "seed": 18,
+      "mse_A_holdout": 0.0013307569254929399,
+      "mse_B": 0.013140310323381359,
+      "ratio": 9.874312935485131,
+      "verdict": "WEAK"
+    },
+    {
+      "seed": 19,
+      "mse_A_holdout": 0.0018360190547774763,
+      "mse_B": 0.02437698877812,
+      "ratio": 13.27708920813704,
+      "verdict": "WEAK"
+    }
+  ],
+  "soul_clause": "model may learn generator noise not counterfactual logic; B-collapse would reveal memorization"
+}
