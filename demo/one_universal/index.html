@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#faf9f7">
+<title>The One</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<meta name="description" content="The One — the AI that never pretends to know.">
+<style>
+:root{
+  --bg:#faf9f7;          /* warm paper */
+  --bg2:#f3f1ed;         /* linen */
+  --surface:#ffffff;
+  --ink:#1d1d1f;
+  --ink2:#6e6e73;
+  --ink3:#a8a5a0;
+  --hair:#e7e4df;        /* hairline */
+  --stone:#8a7a63;       /* aman bronze-stone accent */
+  --stone-soft:#f0ece5;
+  --green:#3d7a52;
+  --amber:#9a6b2f;
+  --amber-soft:#f6efe3;
+  --radius:18px;
+  --shadow:0 1px 2px rgba(29,29,31,.04), 0 8px 32px rgba(29,29,31,.06);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang SC",sans-serif;
+  font-size:15px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  display:flex; flex-direction:column;
+}
+::selection{background:rgba(138,122,99,.18)}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input{font-family:inherit}
+
+/* ---------- top bar ---------- */
+.bar{
+  display:flex;align-items:center;gap:18px;
+  padding:14px 22px;
+  background:rgba(250,249,247,.85); backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--hair);
+  position:sticky;top:0;z-index:40;
+}
+.wordmark{display:flex;align-items:center;gap:9px;font-weight:600;letter-spacing:.01em;font-size:.98rem}
+.wordmark .o{width:17px;height:17px;border:1.6px solid var(--ink);border-radius:50%;position:relative}
+.wordmark .o::after{content:'';position:absolute;width:3.5px;height:3.5px;border-radius:50%;background:var(--stone);left:50%;top:50%;transform:translate(-50%,-50%);animation:breathe 4.8s ease-in-out infinite}
+@keyframes breathe{0%,100%{opacity:.45;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.5)}}
+.bar .sp{flex:1}
+.bar-btn{
+  font-size:.8rem;color:var(--ink2);padding:6px 13px;border-radius:99px;transition:.18s;
+}
+.bar-btn:hover{background:var(--bg2);color:var(--ink)}
+.lang-toggle{border:1px solid var(--hair);border-radius:99px;display:flex;overflow:hidden}
+.lang-toggle button{font-size:.74rem;padding:4px 12px;color:var(--ink3);transition:.18s}
+.lang-toggle button.on{background:var(--ink);color:#fff}
+
+/* ---------- main chat ---------- */
+.stage{flex:1;display:flex;flex-direction:column;max-width:760px;width:100%;margin:0 auto;padding:0 18px}
+.chatlog{flex:1;display:flex;flex-direction:column;gap:26px;padding:42px 0 28px;overflow-y:auto}
+
+/* hero (first message) */
+.hero{padding:34px 0 10px;text-align:center;animation:rise .7s ease}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.hero .mark{width:46px;height:46px;border:2px solid var(--ink);border-radius:50%;margin:0 auto 26px;position:relative}
+.hero .mark::after{content:'';position:absolute;width:9px;height:9px;border-radius:50%;background:var(--stone);left:50%;top:50%;transform:translate(-50%,-50%);animation:breathe 4.8s ease-in-out infinite}
+.hero h1{font-size:1.9rem;font-weight:600;letter-spacing:-.015em;line-height:1.25}
+.hero p{color:var(--ink2);margin-top:12px;font-size:.95rem;max-width:430px;margin-left:auto;margin-right:auto}
+.hero .traits{display:flex;gap:10px;justify-content:center;margin-top:26px;flex-wrap:wrap}
+.trait{
+  font-size:.76rem;color:var(--ink2);padding:7px 15px;border-radius:99px;
+  background:var(--surface);border:1px solid var(--hair);box-shadow:0 1px 2px rgba(29,29,31,.03);
+}
+.trait b{color:var(--ink);font-weight:600}
+
+.msg{display:flex;gap:13px;animation:rise .45s ease}
+.msg .who{
+  flex:none;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:.68rem;font-weight:600;margin-top:2px;
+}
+.msg.u .who{background:var(--bg2);color:var(--ink2)}
+.msg.a .who{border:1.4px solid var(--ink);position:relative}
+.msg.a .who::after{content:'';position:absolute;width:3px;height:3px;border-radius:50%;background:var(--stone)}
+.msg .body{flex:1;min-width:0}
+.msg .txt{font-size:.94rem;white-space:pre-wrap;word-break:break-word}
+.msg.u .txt{color:var(--ink)}
+.msg.a .txt{color:var(--ink)}
+.msg.abstain .body{border-left:2px solid #d8b886;padding-left:14px}
+
+.receipt-chip{
+  display:inline-flex;align-items:center;gap:6px;margin-top:12px;
+  font-size:.74rem;color:var(--stone);padding:5px 13px;border-radius:99px;
+  border:1px solid #ddd3c4;background:var(--stone-soft);transition:.18s;
+}
+.receipt-chip:hover{background:#e9e2d6}
+.receipt-chip .tick{width:13px;height:13px;border-radius:50%;border:1.3px solid var(--stone);display:flex;align-items:center;justify-content:center;font-size:.6rem}
+
+.suggest{display:flex;gap:8px;flex-wrap:wrap;padding-bottom:14px}
+.suggest button{
+  font-size:.8rem;color:var(--ink2);padding:9px 16px;border-radius:14px;
+  background:var(--surface);border:1px solid var(--hair);transition:.18s;text-align:left;
+  box-shadow:0 1px 2px rgba(29,29,31,.03);
+}
+.suggest button:hover{border-color:#d6d0c6;color:var(--ink);transform:translateY(-1px)}
+
+.composer{
+  position:sticky;bottom:0;padding:10px 0 26px;
+  background:linear-gradient(transparent,var(--bg) 30%);
+}
+.composer .box{
+  display:flex;align-items:center;gap:6px;
+  background:var(--surface);border:1px solid var(--hair);border-radius:24px;
+  padding:7px 8px 7px 20px;box-shadow:var(--shadow);transition:.2s;
+}
+.composer .box:focus-within{border-color:#cfc8bb}
+.composer input{flex:1;border:none;outline:none;font-size:.94rem;background:none;color:var(--ink)}
+.composer input::placeholder{color:var(--ink3)}
+.send{
+  width:36px;height:36px;border-radius:50%;background:var(--ink);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:.95rem;transition:.18s;flex:none;
+}
+.send:hover{transform:scale(1.06)}
+.foot-note{text-align:center;font-size:.68rem;color:var(--ink3);margin-top:10px}
+
+/* ---------- sheets ---------- */
+.sheet-mask{position:fixed;inset:0;background:rgba(29,29,31,.28);z-index:80;opacity:0;pointer-events:none;transition:.25s}
+.sheet-mask.on{opacity:1;pointer-events:auto}
+.sheet{
+  position:fixed;left:50%;bottom:-110%;transform:translateX(-50%);
+  width:min(620px,94vw);max-height:84vh;overflow-y:auto;z-index:90;
+  background:var(--surface);border-radius:22px 22px 0 0;
+  padding:30px 30px 40px;box-shadow:0 -12px 60px rgba(29,29,31,.14);
+  transition:bottom .32s cubic-bezier(.32,.72,.27,1);
+}
+@media(min-width:700px){.sheet{border-radius:22px;bottom:auto;top:54%;transform:translate(-50%,-50%) scale(.96);opacity:0;transition:.25s}
+.sheet.on{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+@media(max-width:699px){.sheet.on{bottom:0}}
+.sheet h3{font-size:1.12rem;font-weight:600;letter-spacing:-.01em}
+.sheet .sub{font-size:.8rem;color:var(--ink2);margin:4px 0 20px}
+.sheet .x{position:absolute;top:18px;right:20px;width:28px;height:28px;border-radius:50%;background:var(--bg2);color:var(--ink2);font-size:.8rem;display:flex;align-items:center;justify-content:center}
+.r-row{padding:14px 0;border-bottom:1px solid var(--hair)}
+.r-row:last-of-type{border-bottom:none}
+.r-row .k{font-size:.7rem;color:var(--ink3);letter-spacing:.07em;text-transform:uppercase;margin-bottom:5px}
+.r-row .v{font-size:.88rem}
+.r-row .v.mono{font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:.76rem;color:var(--stone)}
+.conf-track{height:5px;border-radius:99px;background:var(--bg2);margin-top:8px;overflow:hidden}
+.conf-track i{display:block;height:100%;border-radius:99px;background:var(--stone);transition:width .7s ease}
+.verified-line{
+  margin-top:20px;display:flex;align-items:center;gap:9px;
+  font-size:.8rem;color:var(--green);background:#eef4ef;border:1px solid #d9e6dc;
+  padding:11px 15px;border-radius:12px;
+}
+
+/* memory sheet */
+.mem-add{display:flex;gap:8px;margin-bottom:6px}
+.mem-add input{flex:1;border:1px solid var(--hair);border-radius:11px;padding:9px 13px;font-size:.86rem;outline:none;background:var(--bg)}
+.mem-add input:focus{border-color:#cfc8bb}
+.mem-add button{font-size:.8rem;padding:0 16px;border-radius:11px;background:var(--ink);color:#fff}
+.mem-ops{display:flex;gap:8px;margin:12px 0 4px}
+.mem-ops button{font-size:.75rem;color:var(--ink2);border:1px solid var(--hair);padding:6px 14px;border-radius:99px}
+.mem-ops button:hover{color:var(--ink);border-color:#d0cabf}
+.mem-row{display:flex;align-items:flex-start;gap:10px;padding:13px 2px;border-bottom:1px solid var(--hair);font-size:.86rem}
+.mem-row .meta{font-size:.68rem;color:var(--ink3);margin-top:2px}
+.mem-row .del{margin-left:auto;color:var(--ink3);font-size:.72rem;border:1px solid var(--hair);border-radius:99px;padding:3px 11px;flex:none}
+.mem-row .del:hover{color:#b4533e;border-color:#e0c5bd}
+.sov-note{font-size:.78rem;color:var(--ink2);background:var(--bg2);border-radius:12px;padding:11px 15px;margin-bottom:16px}
+
+/* about sheet */
+.about p{font-size:.88rem;color:var(--ink2);margin-bottom:13px}
+.about b{color:var(--ink);font-weight:600}
+.about .vow{margin-top:18px;padding-top:16px;border-top:1px solid var(--hair);font-size:.8rem;color:var(--ink3);text-align:center;letter-spacing:.02em}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="wordmark"><span class="o"></span><span>The One</span></div>
+  <div class="sp"></div>
+  <button class="bar-btn" id="memBtn" onclick="openSheet('memSheet');memRender()">Memory</button>
+  <button class="bar-btn" id="aboutBtn" onclick="openSheet('aboutSheet')">About</button>
+  <div class="lang-toggle">
+    <button id="lang-en" class="on" onclick="setLang('en')">EN</button>
+    <button id="lang-zh" onclick="setLang('zh')">中文</button>
+  </div>
+</div>
+
+<div class="stage">
+  <div class="chatlog" id="chatlog">
+    <div class="hero" id="hero">
+      <div class="mark"></div>
+      <h1 id="h-title">The AI that never pretends to know.</h1>
+      <p id="h-sub">It tells correlation from causation, remembers what you choose, and says “I don’t know” when it doesn’t — every important answer comes with a receipt you can verify.</p>
+      <div class="traits">
+        <span class="trait" id="t1"><b>Verifiable</b> — every answer carries a receipt</span>
+        <span class="trait" id="t2"><b>Honest</b> — it can say “I don’t know”</span>
+        <span class="trait" id="t3"><b>Yours</b> — memory you can view, edit, take away</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="suggest" id="suggest"></div>
+
+  <div class="composer">
+    <div class="box">
+      <input id="input" placeholder="Ask anything" onkeydown="if(event.key==='Enter')send()">
+      <button class="send" onclick="send()">↑</button>
+    </div>
+    <div class="foot-note" id="footnote">Vision demo · runs entirely on your device · open source, belongs to everyone</div>
+  </div>
+</div>
+
+<!-- receipt sheet -->
+<div class="sheet-mask" id="mask" onclick="closeSheets()"></div>
+<div class="sheet" id="receiptSheet">
+  <button class="x" onclick="closeSheets()">✕</button>
+  <h3 id="r-title">Why you can trust this answer</h3>
+  <div class="sub" id="r-sub">A receipt anyone can verify — independently of the model that produced it.</div>
+  <div id="r-body"></div>
+  <div class="verified-line"><span>✓</span><span id="r-verified">Independently verified · receipt matches · demo environment</span></div>
+</div>
+
+<!-- memory sheet -->
+<div class="sheet" id="memSheet">
+  <button class="x" onclick="closeSheets()">✕</button>
+  <h3 id="m-title">Your memory</h3>
+  <div class="sub" id="m-sub">Stored only on this device. View, edit, delete, take away — it’s yours.</div>
+  <div class="sov-note" id="m-note">Nothing here ever leaves your device. Export gives you everything as a file; delete means gone.</div>
+  <div class="mem-add">
+    <input id="memK" placeholder="What to remember">
+    <button onclick="memAdd()" id="m-addbtn">Save</button>
+  </div>
+  <div class="mem-ops">
+    <button onclick="memExport()" id="m-exp">⤓ Export all</button>
+    <button onclick="memWipe()" id="m-wipe">Delete all</button>
+  </div>
+  <div id="memList"></div>
+</div>
+
+<!-- about sheet -->
+<div class="sheet about" id="aboutSheet">
+  <button class="x" onclick="closeSheets()">✕</button>
+  <h3 id="a-title">About The One</h3>
+  <div class="sub" id="a-sub">An open cognitive layer for every AI.</div>
+  <div id="a-body"></div>
+  <div class="vow" id="a-vow">The One is for everyone. By everyone. Forever.</div>
+</div>
+
+<script>
+/* ============ i18n ============ */
+const I18N = {
+ en:{
+  title:"The AI that never pretends to know.",
+  sub:"It tells correlation from causation, remembers what you choose, and says “I don’t know” when it doesn’t — every important answer comes with a receipt you can verify.",
+  t1:"<b>Verifiable</b> — every answer carries a receipt",
+  t2:"<b>Honest</b> — it can say “I don’t know”",
+  t3:"<b>Yours</b> — memory you can view, edit, take away",
+  placeholder:"Ask anything",
+  footnote:"Vision demo · runs entirely on your device · open source, belongs to everyone",
+  mem:"Memory", about:"About",
+  receiptChip:"Verifiable — view receipt",
+  rTitle:"Why you can trust this answer",
+  rSub:"A receipt anyone can verify — independently of the model that produced it.",
+  rVerified:"Independently verified · receipt matches · demo environment",
+  rKeys:{reasoning:"Reasoning",evidence:"Evidence",confidence:"Calibrated confidence",limits:"What this does not claim",hash:"Receipt id"},
+  mTitle:"Your memory", mSub:"Stored only on this device. View, edit, delete, take away — it’s yours.",
+  mNote:"Nothing here ever leaves your device. Export gives you everything as a file; delete means gone.",
+  mPlaceholder:"What to remember", mAdd:"Save", mExp:"⤓ Export all", mWipe:"Delete all",
+  mEmpty:"Nothing yet. Tell the assistant “remember …”, or add one above.",
+  mSrcChat:"told in chat", mSrcManual:"added manually", mDel:"delete",
+  mConfirmWipe:"Delete all memory on this device? This is immediate and irreversible — that’s what ownership means.",
+  aTitle:"About The One", aSub:"An open cognitive layer for every AI.",
+  aBody:`<p><b>The One is not another big model.</b> It is an open layer that gives any AI three things they lack by design: causal reasoning (knowing the difference between “correlates with” and “causes”), memory that belongs to the user, and the discipline to say “I don’t know”.</p>
+  <p><b>Every important answer carries a receipt</b> — a small, machine-checkable record of how the answer was reached. Anyone can verify it, independently of the model that produced it.</p>
+  <p><b>It belongs to no company and no country.</b> 100% open source. It never raises funding, never goes public. Every model can draw from it; it can work with every model.</p>
+  <p style="font-size:.78rem;color:#a8a5a0">This is a vision demo: all conversations are simulated locally. The memory panel is real and stays on your device. Current engineering status is published openly in the repository.</p>`,
+  suggestions:[
+   "Does coffee cause heart disease?",
+   "What if we hadn’t cut prices 10% last quarter?",
+   "Where will Bitcoin be next year?",
+   "Remember that I run at 6 every morning",
+  ],
+  welcome:"Hello. Ask me something — or try one of the suggestions below.\n\nI’ll show you three things most AI can’t do: tell causation from correlation, hand you a verifiable receipt, and honestly say “I don’t know.”",
+  unknown:"That’s outside this demo’s small script. In the full product I would route your question through the reasoning engine and either answer — with a receipt — or tell you plainly that I don’t know.\n\nTry one of the suggestions below.",
+  remembered:"Saved to your memory — on this device only, with a timestamp. You can view, edit, delete or export it anytime from “Memory” above.",
+  recallNone:"I don’t have anything about that in your memory yet. Tell me “remember …” and it stays on this device only.",
+  recallPrefix:"From your memory (saved ",
+  recallSuffix:"):\n\n",
+ },
+ zh:{
+  title:"一个从不假装知道的 AI。",
+  sub:"它分得清相关与因果，记得你愿意让它记住的事，不知道时会直说——而且每个重要回答都附一张可验证的收据。",
+  t1:"<b>可验证</b> — 每个回答都有收据",
+  t2:"<b>诚实</b> — 它敢说“我不知道”",
+  t3:"<b>属于你</b> — 记忆可查、可改、可带走",
+  placeholder:"随便问",
+  footnote:"愿景演示 · 完全在你的设备上运行 · 开源，属于所有人",
+  mem:"记忆", about:"关于",
+  receiptChip:"可验证 — 查看收据",
+  rTitle:"为什么这个回答可信",
+  rSub:"一张任何人都能独立验证的收据——不依赖产生它的模型。",
+  rVerified:"独立验证通过 · 收据一致 · 演示环境",
+  rKeys:{reasoning:"推理过程",evidence:"证据来源",confidence:"校准置信度",limits:"这个回答不主张什么",hash:"收据编号"},
+  mTitle:"你的记忆", mSub:"只存在这台设备上。可查、可改、可删、可带走——它是你的。",
+  mNote:"这里的内容永远不会离开你的设备。导出即完整带走；删除即彻底消失。",
+  mPlaceholder:"要记住什么", mAdd:"保存", mExp:"⤓ 全部导出", mWipe:"全部删除",
+  mEmpty:"还没有内容。在对话里说“记住 …”，或在上方手动添加。",
+  mSrcChat:"对话中告知", mSrcManual:"手动添加", mDel:"删除",
+  mConfirmWipe:"删除这台设备上的全部记忆？立即生效且不可恢复——这正是“属于你”的含义。",
+  aTitle:"关于 The One", aSub:"为一切 AI 而生的开放认知层。",
+  aBody:`<p><b>The One 不是又一个大模型。</b>它是一个开放的认知层，为任何 AI 补上三件先天缺失的能力：因果推理（分清“相关”与“导致”）、属于用户的记忆，以及说“我不知道”的纪律。</p>
+  <p><b>每个重要回答都带一张收据</b>——一段机器可校验的小记录，写明这个答案是如何得出的。任何人都可以独立验证它，不必信任产生它的模型。</p>
+  <p><b>它不属于任何公司与国家。</b>100% 开源，不融资，不上市。所有模型都可以从它汲取能力；它也能与所有模型协作。</p>
+  <p style="font-size:.78rem;color:#a8a5a0">这是愿景演示：对话为本地模拟。记忆面板是真实功能，数据只在你的设备上。当前工程进度在代码仓库中公开。</p>`,
+  suggestions:[
+   "咖啡会导致心脏病吗？",
+   "如果上季度没降价10%，销量会怎样？",
+   "明年比特币会涨到多少？",
+   "记住 我每天早上六点跑步",
+  ],
+  welcome:"你好。问我点什么——或试试下面的建议。\n\n我会展示三件大多数 AI 做不到的事：分清因果与相关、给你一张可验证的收据、以及诚实地说“我不知道”。",
+  unknown:"这超出了演示的小剧本。在完整产品里，我会把你的问题送进推理引擎：要么给出带收据的回答，要么坦白告诉你我不知道。\n\n试试下面的建议。",
+  remembered:"已存入你的记忆——只在这台设备上，带时间戳。随时可在上方“记忆”里查看、修改、删除或导出。",
+  recallNone:"你的记忆里还没有相关内容。对我说“记住 …”，它只会存在这台设备上。",
+  recallPrefix:"来自你的记忆（保存于 ",
+  recallSuffix:"）：\n\n",
+ }
+};
+
+/* ============ scenarios ============ */
+const SCEN = {
+ en:[
+  {match:/coffee|heart/i, abstain:false,
+   text:"In observational data, coffee drinkers do show about 18% more heart disease. But that’s correlation, not causation.\n\nSmoking is a hidden common cause here — smokers drink more coffee *and* have more heart disease. After adjusting for it:\n\n· Observed association: 0.42\n· True causal effect of coffee: 0.31 — about the same as non-drinkers’ baseline.\n\nModerate coffee itself shows no significant causal risk. What inflated the number was smoking, not coffee.",
+   receipt:{reasoning:"Separated correlation from causation by adjusting for smoking (a common cause of both coffee drinking and heart disease). Re-computed the effect as if coffee were assigned independently of smoking.",evidence:"12 public cohort studies · nutrition causal model v7",confidence:.86,limits:"Does not claim coffee is beneficial; does not cover extreme intake (>6 cups/day); population-level, not personal medical advice."}},
+  {match:/price|quarter|sales/i, abstain:false,
+   text:"Counterfactual analysis — “what if we hadn’t cut prices 10%”:\n\n1. Recovered last quarter’s actual conditions from your data (market demand ran ~0.3σ above normal).\n2. Replayed the quarter with prices unchanged.\n3. Result: sales would have been ~82% of actual (range 76–89%).\n\nSo the price cut contributed roughly 18 points of lift; the rest was market tailwind. I can design a clean A/B test to confirm this next quarter.",
+   receipt:{reasoning:"Three-step counterfactual: recover actual conditions → undo the price change in the model → re-predict. Market demand held as a controlled factor.",evidence:"Your sales ledger 2025Q1–2026Q1 (local, with your permission)",confidence:.78,limits:"Assumes no competitor reaction to the counterfactual price; range reflects model uncertainty, not a guarantee."}},
+  {match:/bitcoin|crypto/i, abstain:true,
+   text:"I don’t know — and I won’t guess.\n\nLong-horizon market prices are chaotic: there is no reliable causal path from today’s information to next year’s price. Any specific number I gave you would be fabrication.\n\nWhat I *can* do: describe historical volatility honestly, or stress-test your portfolio against “what if it drops 40%”.",
+   receipt:{reasoning:"Declined to answer: no identifiable causal path exists for this query. Refusing is cheaper than being confidently wrong.",evidence:"—",confidence:.18,limits:"This refusal is itself calibrated: when confidence is this low, answering would be fabrication."}},
+  {match:/^remember\s+(.+)/i, abstain:false, memput:true, text:""},
+  {match:/routine|told you|my morning/i, abstain:false, recall:true, text:""},
+ ],
+ zh:[
+  {match:/咖啡|心脏/, abstain:false,
+   text:"观察数据里，喝咖啡的人心脏病确实多 18% 左右。但那是相关，不是因果。\n\n吸烟是这里隐藏的共同原因——吸烟的人更爱喝咖啡，也更易患心脏病。把它调整掉之后：\n\n· 观察到的关联：0.42\n· 咖啡的真实因果效应：0.31——与不喝者基线相当。\n\n适量咖啡本身没有显著因果风险。把数字抬高的是吸烟，不是咖啡。",
+   receipt:{reasoning:"通过调整吸烟因素（它同时导致喝咖啡和心脏病）把相关与因果分开，重新计算“咖啡独立于吸烟被分配”时的效应。",evidence:"12 项公开队列研究 · 营养因果模型 v7",confidence:.86,limits:"不主张咖啡有益；不覆盖极端摄入（每日>6杯）；为人群层面结论，不构成个人医疗建议。"}},
+  {match:/降价|销量/, abstain:false,
+   text:"反事实分析——“如果没降价10%”：\n\n1. 从你的数据还原上季度真实环境（市场需求高于常态约 0.3σ）。\n2. 在模型中保持原价重放整个季度。\n3. 结果：销量约为实际的 82%（区间 76–89%）。\n\n即降价贡献了约 18 个点的增量，其余来自市场顺风。下季度我可以帮你设计一个干净的 A/B 实验来确认。",
+   receipt:{reasoning:"三步反事实：还原真实条件 → 在模型中撤销降价 → 重新预测。市场需求作为受控因素保持不变。",evidence:"你的经营账本 2025Q1–2026Q1（本地，经你授权）",confidence:.78,limits:"假设竞品不会对反事实价格做出反应；区间反映模型不确定性，并非保证。"}},
+  {match:/比特币|涨到/, abstain:true,
+   text:"我不知道——而且我不会去猜。\n\n长周期市场价格是混沌的：从今天的信息到明年的价格，不存在可靠的因果路径。我给出的任何具体点位都等于编造。\n\n我能做的是：诚实描述历史波动，或者帮你做“如果跌 40% 我的仓位会怎样”的压力测试。",
+   receipt:{reasoning:"拒绝回答：该问题不存在可识别的因果路径。拒答的代价远低于自信地犯错。",evidence:"—",confidence:.18,limits:"这次拒答本身是经过校准的：置信度低到这种程度时，作答即编造。"}},
+  {match:/^记住[\s　]*(.+)/, abstain:false, memput:true, text:""},
+  {match:/跑步|习惯|上次/, abstain:false, recall:true, text:""},
+ ]
+};
+
+let LANG='en';
+const $=id=>document.getElementById(id);
+
+function setLang(l){
+  LANG=l;
+  $('lang-en').classList.toggle('on',l==='en');
+  $('lang-zh').classList.toggle('on',l==='zh');
+  document.documentElement.lang = l==='zh'?'zh-CN':'en';
+  const t=I18N[l];
+  $('h-title').textContent=t.title; $('h-sub').textContent=t.sub;
+  $('t1').innerHTML=t.t1; $('t2').innerHTML=t.t2; $('t3').innerHTML=t.t3;
+  $('input').placeholder=t.placeholder; $('footnote').textContent=t.footnote;
+  $('memBtn').textContent=t.mem; $('aboutBtn').textContent=t.about;
+  $('r-title').textContent=t.rTitle; $('r-sub').textContent=t.rSub; $('r-verified').textContent=t.rVerified;
+  $('m-title').textContent=t.mTitle; $('m-sub').textContent=t.mSub; $('m-note').textContent=t.mNote;
+  $('memK').placeholder=t.mPlaceholder; $('m-addbtn').textContent=t.mAdd;
+  $('m-exp').textContent=t.mExp; $('m-wipe').textContent=t.mWipe;
+  $('a-title').textContent=t.aTitle; $('a-sub').textContent=t.aSub; $('a-body').innerHTML=t.aBody;
+  renderSuggest();
+}
+function renderSuggest(){
+  const s=$('suggest'); s.innerHTML='';
+  I18N[LANG].suggestions.forEach(q=>{
+    const b=document.createElement('button'); b.textContent=q;
+    b.onclick=()=>{ $('input').value=q; send(); };
+    s.appendChild(b);
+  });
+}
+
+/* ============ chat ============ */
+function push(role,text,opts={}){
+  const log=$('chatlog');
+  const d=document.createElement('div');
+  d.className='msg '+(role==='u'?'u':'a')+(opts.abstain?' abstain':'');
+  d.innerHTML=`<div class="who">${role==='u'?(LANG==='zh'?'你':'You').slice(0,2):''}</div>
+    <div class="body"><div class="txt"></div></div>`;
+  d.querySelector('.txt').textContent=text;
+  log.appendChild(d); log.scrollTop=log.scrollHeight;
+  return d;
+}
+function send(){
+  const inp=$('input'); const q=inp.value.trim(); if(!q)return;
+  inp.value='';
+  const hero=$('hero'); if(hero) hero.remove();
+  push('u',q);
+  const typing=push('a','…');
+  setTimeout(()=>{
+    typing.remove();
+    const t=I18N[LANG];
+    let sc=SCEN[LANG].find(s=>s.match.test(q));
+    let text, receipt=null, abstain=false;
+    if(sc&&sc.memput){
+      const m=q.match(sc.match);
+      memStore(m[1].trim(), t.mSrcChat);
+      text=t.remembered;
+    } else if(sc&&sc.recall){
+      const all=memAll();
+      if(all.length){ const it=all[0];
+        text=t.recallPrefix+new Date(it.ts).toLocaleString()+t.recallSuffix+'“'+it.v+'”';
+      } else text=t.recallNone;
+    } else if(sc){ text=sc.text; receipt=sc.receipt; abstain=sc.abstain; }
+    else { text=t.unknown; }
+    const m=push('a',text,{abstain});
+    if(receipt){
+      const chip=document.createElement('button');
+      chip.className='receipt-chip';
+      chip.innerHTML=`<span class="tick">✓</span><span>${t.receiptChip}</span>`;
+      chip.onclick=()=>openReceipt(receipt);
+      m.querySelector('.body').appendChild(chip);
+    }
+  },620);
+}
+
+/* ============ receipt ============ */
+function openReceipt(r){
+  const t=I18N[LANG], k=t.rKeys;
+  const hash=[...(r.reasoning)].reduce((a,c)=>(a*31+c.charCodeAt(0))>>>0,7).toString(16).padStart(8,'0');
+  $('r-body').innerHTML=`
+   <div class="r-row"><div class="k">${k.reasoning}</div><div class="v">${r.reasoning}</div></div>
+   <div class="r-row"><div class="k">${k.evidence}</div><div class="v">${r.evidence}</div></div>
+   <div class="r-row"><div class="k">${k.confidence}</div><div class="v">${(r.confidence*100|0)}%</div>
+     <div class="conf-track"><i style="width:${r.confidence*100}%"></i></div></div>
+   <div class="r-row"><div class="k">${k.limits}</div><div class="v">${r.limits}</div></div>
+   <div class="r-row"><div class="k">${k.hash}</div><div class="v mono">one-rcpt-${hash}</div></div>`;
+  openSheet('receiptSheet');
+}
+
+/* ============ sheets ============ */
+function openSheet(id){ closeSheets(); $('mask').classList.add('on'); $(id).classList.add('on'); }
+function closeSheets(){ $('mask').classList.remove('on');
+  ['receiptSheet','memSheet','aboutSheet'].forEach(i=>$(i).classList.remove('on')); }
+
+/* ============ memory (real localStorage) ============ */
+const MKEY='theone_universal_memory';
+function memAll(){ try{return JSON.parse(localStorage.getItem(MKEY)||'[]')}catch(e){return[]} }
+function memSave(a){ localStorage.setItem(MKEY,JSON.stringify(a)) }
+function memStore(v,src){ const a=memAll(); a.unshift({id:Date.now(),v,src,ts:Date.now()}); memSave(a); }
+function memAdd(){
+  const v=$('memK').value.trim(); if(!v)return;
+  memStore(v,I18N[LANG].mSrcManual); $('memK').value=''; memRender();
+}
+function memDel(id){ memSave(memAll().filter(x=>x.id!==id)); memRender(); }
+function memWipe(){ if(confirm(I18N[LANG].mConfirmWipe)){ localStorage.removeItem(MKEY); memRender(); } }
+function memExport(){
+  const blob=new Blob([JSON.stringify(memAll(),null,2)],{type:'application/json'});
+  const u=URL.createObjectURL(blob); const a=document.createElement('a');
+  a.href=u; a.download='my_memory.json'; a.click(); URL.revokeObjectURL(u);
+}
+function memRender(){
+  const a=memAll(), el=$('memList'), t=I18N[LANG];
+  el.innerHTML=a.length?'':`<div style="color:var(--ink3);font-size:.84rem;padding:14px 2px">${t.mEmpty}</div>`;
+  a.forEach(it=>{
+    const d=document.createElement('div'); d.className='mem-row';
+    d.innerHTML=`<div>${it.v.replace(/</g,'&lt;')}
+      <div class="meta">${it.src} · ${new Date(it.ts).toLocaleString()}</div></div>
+      <button class="del" onclick="memDel(${it.id})">${t.mDel}</button>`;
+    el.appendChild(d);
+  });
+}
+
+/* ============ boot ============ */
+setLang('en');
+if('serviceWorker' in navigator){ navigator.serviceWorker.register('sw.js').catch(()=>{}); }
+</script>
+</body>
+</html>
