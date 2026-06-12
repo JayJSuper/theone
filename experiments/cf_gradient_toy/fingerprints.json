@@ -1,0 +1,19 @@
+{
+  "results_sha": "4c560df03efea58c",
+  "seed_table_sha": "dcee8406438aa2af",
+  "elapsed_sec": 4.1,
+  "config": {
+    "lambdas": [
+      0.0,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "seeds": 20,
+    "epochs": 300,
+    "n_train": 512,
+    "n_holdout": 256,
+    "train_seed": 300000,
+    "holdout_seed": 700000
+  }
+}
