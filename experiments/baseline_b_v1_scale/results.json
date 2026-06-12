@@ -1,0 +1,722 @@
+{
+  "summary": {
+    "mode": "PILOT",
+    "n_per_tier": 10,
+    "S_A": {
+      "acc": 1.0,
+      "mae": 1e-05,
+      "protocol_fail": 0,
+      "mean_latency_s": 12.16
+    },
+    "S_B": {
+      "acc": 1.0,
+      "mae": 1e-05,
+      "protocol_fail": 0,
+      "mean_latency_s": 13.42
+    },
+    "S_C": {
+      "acc": 1.0,
+      "mae": 0.0,
+      "protocol_fail": 0,
+      "mean_latency_s": 0.0
+    },
+    "M_A": {
+      "acc": 0.6,
+      "mae": 2e-05,
+      "protocol_fail": 4,
+      "mean_latency_s": 26.26
+    },
+    "M_B": {
+      "acc": 0.6,
+      "mae": 2e-05,
+      "protocol_fail": 4,
+      "mean_latency_s": 30.01
+    },
+    "M_C": {
+      "acc": 1.0,
+      "mae": 0.0,
+      "protocol_fail": 0,
+      "mean_latency_s": 0.01
+    },
+    "L_A": {
+      "acc": 0.4,
+      "mae": 2e-05,
+      "protocol_fail": 6,
+      "mean_latency_s": 32.31
+    },
+    "L_B": {
+      "acc": 0.2,
+      "mae": 2e-05,
+      "protocol_fail": 8,
+      "mean_latency_s": 37.81
+    },
+    "L_C": {
+      "acc": 1.0,
+      "mae": 0.0,
+      "protocol_fail": 0,
+      "mean_latency_s": 0.07
+    }
+  },
+  "rows": [
+    {
+      "tier": "S",
+      "i": 0,
+      "truth": 0.3507,
+      "A": {
+        "pred": 0.3507,
+        "latency": 8.26,
+        "tokens": 1034,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3507,
+        "latency": 10.67,
+        "tokens": 1442,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3507,
+        "latency": 0.0015,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 1,
+      "truth": 0.447292,
+      "A": {
+        "pred": 0.4473,
+        "latency": 19.49,
+        "tokens": 2522,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4473,
+        "latency": 9.63,
+        "tokens": 1649,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.447292,
+        "latency": 0.0011,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 2,
+      "truth": 0.5096,
+      "A": {
+        "pred": 0.5096,
+        "latency": 4.69,
+        "tokens": 851,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5096,
+        "latency": 12.41,
+        "tokens": 1571,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5096,
+        "latency": 0.0018,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 3,
+      "truth": 0.07,
+      "A": {
+        "pred": 0.07,
+        "latency": 5.63,
+        "tokens": 986,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.07,
+        "latency": 8.47,
+        "tokens": 1370,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.07,
+        "latency": 0.002,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 4,
+      "truth": 0.538994,
+      "A": {
+        "pred": 0.539,
+        "latency": 14.22,
+        "tokens": 1960,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.539,
+        "latency": 18.22,
+        "tokens": 2735,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.538994,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 5,
+      "truth": 0.561213,
+      "A": {
+        "pred": 0.5612,
+        "latency": 13.02,
+        "tokens": 1679,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5612,
+        "latency": 13.15,
+        "tokens": 1977,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.561213,
+        "latency": 0.002,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 6,
+      "truth": 0.300944,
+      "A": {
+        "pred": 0.3009,
+        "latency": 11.7,
+        "tokens": 1731,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3009,
+        "latency": 13.47,
+        "tokens": 1980,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.300944,
+        "latency": 0.002,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 7,
+      "truth": 0.621294,
+      "A": {
+        "pred": 0.6213,
+        "latency": 10.7,
+        "tokens": 1585,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6213,
+        "latency": 8.28,
+        "tokens": 1339,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.621294,
+        "latency": 0.0017,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 8,
+      "truth": 0.247354,
+      "A": {
+        "pred": 0.2474,
+        "latency": 11.83,
+        "tokens": 1958,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2474,
+        "latency": 16.94,
+        "tokens": 2604,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.247354,
+        "latency": 0.0022,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 9,
+      "truth": 0.648725,
+      "A": {
+        "pred": 0.6487,
+        "latency": 22.03,
+        "tokens": 3430,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6487,
+        "latency": 22.98,
+        "tokens": 4009,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.648725,
+        "latency": 0.0012,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 0,
+      "truth": 0.27909,
+      "A": {
+        "pred": 0.2791,
+        "latency": 9.16,
+        "tokens": 1683,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2791,
+        "latency": 12.8,
+        "tokens": 2342,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.27909,
+        "latency": 0.0071,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 1,
+      "truth": 0.36975,
+      "A": {
+        "pred": null,
+        "latency": 30.03,
+        "tokens": 4945,
+        "fail": "no ANSWER line (budget likely exhausted)"
+      },
+      "B": {
+        "pred": null,
+        "latency": 27.85,
+        "tokens": 5013,
+        "fail": "no ANSWER line (budget likely exhausted)"
+      },
+      "C": {
+        "pred": 0.36975,
+        "latency": 0.0056,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 2,
+      "truth": 0.287988,
+      "A": {
+        "pred": null,
+        "latency": 51.38883686065674,
+        "tokens": 0,
+        "fail": "transport: transport/parse failure: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of prot"
+      },
+      "B": {
+        "pred": 0.288,
+        "latency": 68.41,
+        "tokens": 4807,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.287988,
+        "latency": 0.0088,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 3,
+      "truth": 0.632364,
+      "A": {
+        "pred": 0.6324,
+        "latency": 25.17,
+        "tokens": 3455,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6324,
+        "latency": 20.7,
+        "tokens": 3026,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.632364,
+        "latency": 0.0077,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 4,
+      "truth": 0.6555,
+      "A": {
+        "pred": 0.6555,
+        "latency": 5.76,
+        "tokens": 1274,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6555,
+        "latency": 20.02,
+        "tokens": 2864,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6555,
+        "latency": 0.007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 5,
+      "truth": 0.843984,
+      "A": {
+        "pred": 0.844,
+        "latency": 17.89,
+        "tokens": 2284,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.844,
+        "latency": 26.29,
+        "tokens": 3593,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.843984,
+        "latency": 0.0071,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 6,
+      "truth": 0.511159,
+      "A": {
+        "pred": null,
+        "latency": 36.27,
+        "tokens": 4784,
+        "fail": "no ANSWER line (budget likely exhausted)"
+      },
+      "B": {
+        "pred": null,
+        "latency": 33.7,
+        "tokens": 4852,
+        "fail": "no ANSWER line (budget likely exhausted)"
+      },
+      "C": {
+        "pred": 0.511159,
+        "latency": 0.0049,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 7,
+      "truth": 0.56908,
+      "A": {
+        "pred": 0.5691,
+        "latency": 27.11,
+        "tokens": 3686,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5691,
+        "latency": 22.14,
+        "tokens": 3263,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.56908,
+        "latency": 0.0055,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 8,
+      "truth": 0.310534,
+      "A": {
+        "pred": null,
+        "latency": 35.31,
+        "tokens": 4875,
+        "fail": "no ANSWER line (budget likely exhausted)"
+      },
+      "B": {
+        "pred": null,
+        "latency": 34.97,
+        "tokens": 4943,
+        "fail": "no ANSWER line (budget likely exhausted)"
+      },
+      "C": {
+        "pred": 0.310534,
+        "latency": 0.005,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 9,
+      "truth": 0.443846,
+      "A": {
+        "pred": 0.4438,
+        "latency": 24.51,
+        "tokens": 3149,
+        "fail": null
+      },
+      "B": {
+        "pred": null,
+        "latency": 33.25,
+        "tokens": 4734,
+        "fail": "no ANSWER line (budget likely exhausted)"
+      },
+      "C": {
+        "pred": 0.443846,
+        "latency": 0.005,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 0,
+      "truth": 0.244399,
+      "A": {
+        "pred": 0.2444,
+        "latency": 27.77,
+        "tokens": 3158,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2444,
+        "latency": 47.15,
+        "tokens": 4436,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.244399,
+        "latency": 0.0728,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 1,
+      "truth": 0.677243,
+      "A": {
+        "pred": 0.6772,
+        "latency": 23.48,
+        "tokens": 3289,
+        "fail": null
+      },
+      "B": {
+        "pred": null,
+        "latency": 43.9,
+        "tokens": 5151,
+        "fail": "no ANSWER line (budget likely exhausted)"
+      },
+      "C": {
+        "pred": 0.677243,
+        "latency": 0.0721,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 2,
+      "truth": 0.124766,
+      "A": {
+        "pred": 0.1248,
+        "latency": 32.56,
+        "tokens": 2419,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.1248,
+        "latency": 35.53,
+        "tokens": 4528,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.124766,
+        "latency": 0.0723,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 3,
+      "truth": 0.74309,
+      "A": {
+        "pred": null,
+        "latency": 34.68,
+        "tokens": 5265,
+        "fail": "no ANSWER line (budget likely exhausted)"
+      },
+      "B": {
+        "pred": null,
+        "latency": 38.4,
+        "tokens": 5333,
+        "fail": "no ANSWER line (budget likely exhausted)"
+      },
+      "C": {
+        "pred": 0.74309,
+        "latency": 0.0703,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 4,
+      "truth": 0.333161,
+      "A": {
+        "pred": null,
+        "latency": 51.17,
+        "tokens": 5022,
+        "fail": "no ANSWER line (budget likely exhausted)"
+      },
+      "B": {
+        "pred": null,
+        "latency": 31.45,
+        "tokens": 5090,
+        "fail": "no ANSWER line (budget likely exhausted)"
+      },
+      "C": {
+        "pred": 0.333161,
+        "latency": 0.0715,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 5,
+      "truth": 0.520012,
+      "A": {
+        "pred": 0.52,
+        "latency": 16.29,
+        "tokens": 2665,
+        "fail": null
+      },
+      "B": {
+        "pred": null,
+        "latency": 36.79,
+        "tokens": 5089,
+        "fail": "no ANSWER line (budget likely exhausted)"
+      },
+      "C": {
+        "pred": 0.520012,
+        "latency": 0.0709,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 6,
+      "truth": 0.575607,
+      "A": {
+        "pred": null,
+        "latency": 32.32,
+        "tokens": 5083,
+        "fail": "no ANSWER line (budget likely exhausted)"
+      },
+      "B": {
+        "pred": null,
+        "latency": 37.47,
+        "tokens": 5151,
+        "fail": "no ANSWER line (budget likely exhausted)"
+      },
+      "C": {
+        "pred": 0.575607,
+        "latency": 0.0744,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 7,
+      "truth": 0.672334,
+      "A": {
+        "pred": null,
+        "latency": 38.29,
+        "tokens": 5243,
+        "fail": "no ANSWER line (budget likely exhausted)"
+      },
+      "B": {
+        "pred": null,
+        "latency": 34.96,
+        "tokens": 5311,
+        "fail": "no ANSWER line (budget likely exhausted)"
+      },
+      "C": {
+        "pred": 0.672334,
+        "latency": 0.0734,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 8,
+      "truth": 0.388889,
+      "A": {
+        "pred": null,
+        "latency": 32.99,
+        "tokens": 5223,
+        "fail": "no ANSWER line (budget likely exhausted)"
+      },
+      "B": {
+        "pred": null,
+        "latency": 34.38,
+        "tokens": 5291,
+        "fail": "no ANSWER line (budget likely exhausted)"
+      },
+      "C": {
+        "pred": 0.388889,
+        "latency": 0.0753,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 9,
+      "truth": 0.274649,
+      "A": {
+        "pred": null,
+        "latency": 33.51,
+        "tokens": 5445,
+        "fail": "no ANSWER line (budget likely exhausted)"
+      },
+      "B": {
+        "pred": null,
+        "latency": 38.06,
+        "tokens": 5513,
+        "fail": "no ANSWER line (budget likely exhausted)"
+      },
+      "C": {
+        "pred": 0.274649,
+        "latency": 0.0762,
+        "fail": null
+      }
+    }
+  ]
+}
