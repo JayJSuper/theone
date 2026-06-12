@@ -4,6 +4,7 @@ import numpy as np
 import pytest
 from theone.experiment.cf_gradient import (build_dataset, DualHeadMLP,
                                            vital_sign_1, baseline_intervention_mse_ci)
+from theone.experiment.active_loop import run_one, run_experiment, BayesLinReg
 
 
 class TestCfGradientToy:
@@ -50,3 +51,25 @@ class TestCfGradientToy:
         yc = np.array([0.3, 0.2, 0.25, 0.4, 0.3])
         mse, lo = baseline_intervention_mse_ci(yf, yc, seed=1, B=300)
         assert lo <= mse and mse > 0
+
+
+class TestActiveLoop:
+    def test_estimate_converges_and_deterministic(self):
+        errs = run_one("A", seed=0, budget=40)
+        assert errs[-1] < errs[0]                       # learning reduces error
+        assert run_one("A", seed=1, budget=40) == run_one("A", seed=1, budget=40)
+
+    def test_bed_picks_extremes_for_slope(self):
+        """Info-gain design for a slope should prefer interval endpoints."""
+        m = BayesLinReg()
+        m.update(0.0, 0.0)                               # a centered point
+        v_extreme = m.var_slope_if_added(2.0)
+        v_center = m.var_slope_if_added(0.1)
+        assert v_extreme < v_center                     # endpoint reduces Var(slope) more
+
+    def test_active_beats_passive_sample_efficiency(self):
+        """Frozen vital: A (info-gain) beats C (random) in >=15/20 seeds."""
+        r = run_experiment(range(20), budget=40)
+        assert r["A_better_than_C_count"] >= 15
+        assert r["vital_A_beats_C"] is True
+        assert r["final_error_median"]["A"] < r["final_error_median"]["C"]
