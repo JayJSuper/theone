@@ -178,7 +178,9 @@ input{font-family:inherit}
 <body>
 
 <div class="bar">
-  <div class="wordmark"><span class="o"></span><span>The One</span></div>
+  <div class="wordmark"><span class="o"></span><span>The One</span>
+    <span id="liveBadge" style="display:none;font-size:.62rem;color:#3d7a52;border:1px solid #cfe2d4;background:#eef4ef;padding:2px 9px;border-radius:99px;margin-left:6px;font-weight:500">● Live · real engine</span>
+  </div>
   <div class="sp"></div>
   <button class="bar-btn" id="memBtn" onclick="openSheet('memSheet');memRender()">Memory</button>
   <button class="bar-btn" id="aboutBtn" onclick="openSheet('aboutSheet')">About</button>
@@ -400,12 +402,58 @@ function push(role,text,opts={}){
   log.appendChild(d); log.scrollTop=log.scrollHeight;
   return d;
 }
+/* ---- Live mode: real S1+S2 hybrid server (same origin, key never in browser) ---- */
+let LIVE=false;
+(async()=>{ try{
+  const d=await (await fetch('/api/health')).json();
+  if(d.ok){ LIVE=true; const b=$('liveBadge'); b.style.display='inline-block';
+    b.textContent=d.s1?'● Live · S1+S2 real engine':'● Live · S2 engine (S1 off)'; }
+}catch(e){} })();
+
+async function respondLive(q,typing){
+  try{
+    const r=await fetch('/api/chat',{method:'POST',
+      headers:{'Content-Type':'application/json'},body:JSON.stringify({query:q})});
+    const d=await r.json(); typing.remove();
+    const abstain=(d.mode||'').startsWith('abstain');
+    const m=push('a',d.answer||d.error||'…',{abstain});
+    if(d.receipt){
+      const chip=document.createElement('button');
+      chip.className='receipt-chip';
+      chip.innerHTML=`<span class="tick">✓</span><span>${I18N[LANG].receiptChip}</span>`;
+      chip.onclick=()=>openServerReceipt(d);
+      m.querySelector('.body').appendChild(chip);
+    }
+  }catch(e){ typing.remove(); push('a','Server unreachable — falling back to demo mode.'); LIVE=false; }
+}
+
+function openServerReceipt(d){
+  const t=I18N[LANG], k=t.rKeys, rc=d.receipt||{};
+  const rows=[];
+  rows.push(`<div class="r-row"><div class="k">${k.reasoning}</div><div class="v">${rc.method||d.mode}</div></div>`);
+  if(rc.numbers){
+    const n=rc.numbers;
+    rows.push(`<div class="r-row"><div class="k">S2 numbers (deterministic engine)</div>
+      <div class="v mono">causal ATE ${n.int_ate>=0?'+':''}${n.int_ate} · assoc ATE ${n.obs_ate>=0?'+':''}${n.obs_ate} · bias ${n.confounding_bias>=0?'+':''}${n.confounding_bias}<br>
+      P(do=1)=${n.int_do_x1} · P(do=0)=${n.int_do_x0}</div></div>`);
+  }
+  if(rc.adjustment_set) rows.push(`<div class="r-row"><div class="k">${k.evidence}</div><div class="v">adjustment set: ${JSON.stringify(rc.adjustment_set)} · tier: ${rc.evidence_tier||'—'}</div></div>`);
+  if(typeof rc.confidence==='number')
+    rows.push(`<div class="r-row"><div class="k">${k.confidence}</div><div class="v">${(rc.confidence*100|0)}%</div>
+      <div class="conf-track"><i style="width:${rc.confidence*100}%"></i></div></div>`);
+  if(rc.limits) rows.push(`<div class="r-row"><div class="k">${k.limits}</div><div class="v">${rc.limits}</div></div>`);
+  if(rc.graph_hash) rows.push(`<div class="r-row"><div class="k">${k.hash}</div><div class="v mono">sha256:${String(rc.graph_hash).slice(0,16)}… (recomputable)</div></div>`);
+  $('r-body').innerHTML=rows.join('');
+  openSheet('receiptSheet');
+}
+
 function send(){
   const inp=$('input'); const q=inp.value.trim(); if(!q)return;
   inp.value='';
   const hero=$('hero'); if(hero) hero.remove();
   push('u',q);
   const typing=push('a','…');
+  if(LIVE){ respondLive(q,typing); return; }
   setTimeout(()=>{
     typing.remove();
     const t=I18N[LANG];

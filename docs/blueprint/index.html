@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The One · 360° 项目全景蓝图</title>
+<style>
+:root{
+  --bg:#faf9f7;--bg2:#f3f1ed;--surface:#fff;--ink:#1d1d1f;--ink2:#6e6e73;--ink3:#a8a5a0;
+  --hair:#e7e4df;--stone:#8a7a63;--stone-soft:#f0ece5;--green:#3d7a52;--amber:#9a6b2f;
+  --blue:#4a5c8a;--radius:18px;--shadow:0 1px 2px rgba(29,29,31,.04),0 8px 32px rgba(29,29,31,.06);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","PingFang SC",sans-serif;font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:var(--stone);text-decoration:none}
+.nav{position:sticky;top:0;z-index:50;display:flex;gap:2px;padding:12px 20px;background:rgba(250,249,247,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--hair);overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav b{font-size:.92rem;margin-right:14px;white-space:nowrap;display:flex;align-items:center;gap:8px}
+.nav b .o{width:15px;height:15px;border:1.5px solid var(--ink);border-radius:50%;display:inline-block;position:relative}
+.nav b .o::after{content:'';position:absolute;width:3px;height:3px;border-radius:50%;background:var(--stone);left:50%;top:50%;transform:translate(-50%,-50%)}
+.nav a{font-size:.76rem;color:var(--ink2);padding:5px 12px;border-radius:99px;white-space:nowrap}
+.nav a:hover{background:var(--bg2);color:var(--ink)}
+.wrap{max-width:1020px;margin:0 auto;padding:0 22px 120px}
+section{padding-top:74px}
+h1{font-size:2.4rem;font-weight:650;letter-spacing:-.02em;line-height:1.2}
+h2{font-size:1.5rem;font-weight:640;letter-spacing:-.012em;margin-bottom:6px}
+h2 .num{color:var(--ink3);font-weight:500;font-size:1rem;margin-right:10px}
+.lead{color:var(--ink2);font-size:.95rem;max-width:720px;margin-bottom:26px}
+.card{background:var(--surface);border:1px solid var(--hair);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:14px}
+@media(min-width:760px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}}
+table{width:100%;border-collapse:collapse;font-size:.84rem}
+th,td{padding:10px 12px;border-bottom:1px solid var(--hair);text-align:left;vertical-align:top}
+th{color:var(--ink3);font-weight:520;font-size:.72rem;letter-spacing:.07em;text-transform:uppercase}
+.tag{display:inline-block;font-size:.64rem;padding:2px 9px;border-radius:99px;margin-left:8px;vertical-align:2px;letter-spacing:.04em}
+.tag.real{color:var(--green);border:1px solid #cfe2d4;background:#eef4ef}
+.tag.vision{color:var(--stone);border:1px solid #ddd3c4;background:var(--stone-soft)}
+.tag.hypo{color:var(--blue);border:1px solid #d2d8e8;background:#eef0f7}
+.kpi{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0}
+.kpi .k{flex:1;min-width:150px;background:var(--surface);border:1px solid var(--hair);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow)}
+.kpi .k .v{font-size:1.45rem;font-weight:650;letter-spacing:-.02em}
+.kpi .k .l{font-size:.72rem;color:var(--ink2);margin-top:2px}
+.kpi .k .v.green{color:var(--green)} .kpi .k .v.stone{color:var(--stone)}
+.hero{padding:90px 0 30px;text-align:center}
+.hero .mark{width:54px;height:54px;border:2.2px solid var(--ink);border-radius:50%;margin:0 auto 28px;position:relative}
+.hero .mark::after{content:'';position:absolute;width:10px;height:10px;border-radius:50%;background:var(--stone);left:50%;top:50%;transform:translate(-50%,-50%);animation:br 4.8s ease-in-out infinite}
+@keyframes br{0%,100%{opacity:.45;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.5)}}
+.hero p{color:var(--ink2);max-width:640px;margin:16px auto 0;font-size:.98rem}
+.vow{font-size:.8rem;color:var(--ink3);letter-spacing:.04em;margin-top:18px}
+.arch{display:flex;flex-direction:column;gap:8px;margin-top:14px}
+.arch .layer{display:flex;align-items:center;gap:14px;background:var(--surface);border:1px solid var(--hair);border-radius:13px;padding:13px 18px}
+.arch .layer .s{font-weight:650;font-size:.95rem;width:120px;flex:none}
+.arch .layer .d{font-size:.8rem;color:var(--ink2)}
+.arch .layer.s0{border-left:3px solid var(--stone)}
+.arch .layer.s1{border-left:3px solid var(--blue)}
+.arch .layer.s2{border-left:3px solid var(--amber)}
+.arch .layer.s3{border-left:3px solid var(--green)}
+.arch .layer.hx{border-left:3px solid var(--ink3)}
+.algo{padding:18px}
+.algo .t{font-weight:640;font-size:.92rem;margin-bottom:4px}
+.algo .f{font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:.74rem;color:var(--stone);background:var(--bg2);border-radius:8px;padding:8px 12px;margin:8px 0;overflow-x:auto;white-space:nowrap}
+.algo .d{font-size:.78rem;color:var(--ink2)}
+.mock{border:1px solid var(--hair);border-radius:16px;overflow:hidden;background:var(--surface);box-shadow:var(--shadow)}
+.mock .mbar{display:flex;gap:5px;padding:9px 12px;border-bottom:1px solid var(--hair)}
+.mock .mbar i{width:8px;height:8px;border-radius:50%;background:var(--hair);display:block}
+.mock .mbody{padding:16px;font-size:.76rem}
+.bubble{border-radius:11px;padding:9px 13px;margin:7px 0;max-width:88%}
+.bubble.u{background:var(--bg2);margin-left:auto}
+.bubble.a{background:var(--surface);border:1px solid var(--hair)}
+.bubble.ab{border-left:2px solid #d8b886;padding-left:11px}
+.rchip{display:inline-block;font-size:.62rem;color:var(--stone);border:1px solid #ddd3c4;background:var(--stone-soft);border-radius:99px;padding:2px 9px;margin-top:6px}
+.tl{position:relative;margin:24px 0 0;padding-left:26px}
+.tl::before{content:'';position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--hair)}
+.tl .ms{position:relative;padding:0 0 26px}
+.tl .ms::before{content:'';position:absolute;left:-26px;top:5px;width:14px;height:14px;border-radius:50%;background:var(--surface);border:2.5px solid var(--stone)}
+.tl .ms.done::before{background:var(--green);border-color:var(--green)}
+.tl .ms .mt{font-weight:650;font-size:.98rem}
+.tl .ms .md{font-size:.8rem;color:var(--ink2);margin-top:3px}
+.tl .ms .mw{font-size:.74rem;color:var(--ink3);margin-top:5px}
+.note{font-size:.78rem;color:var(--ink2);background:var(--stone-soft);border:1px solid #ddd3c4;border-radius:12px;padding:12px 16px;margin-top:16px}
+footer{border-top:1px solid var(--hair);margin-top:90px;padding:34px 20px;text-align:center;font-size:.76rem;color:var(--ink3);line-height:2.1}
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <b><span class="o"></span>The One · 全景蓝图</b>
+  <a href="#def">定义</a><a href="#form">产品形态</a><a href="#arch">架构</a><a href="#algo">算法</a>
+  <a href="#cap">能力</a><a href="#app">应用</a><a href="#ux">体验</a><a href="#val">价值</a>
+  <a href="#theory">理论</a><a href="#road">路线图与分工</a><a href="#status">真实现状</a>
+</div>
+
+<div class="wrap">
+
+<!-- ================= HERO ================= -->
+<div class="hero" id="def">
+  <div class="mark"></div>
+  <h1>The One</h1>
+  <p style="font-size:1.12rem;color:var(--ink);margin-top:14px">一个从不假装知道的 AI。</p>
+  <p>The One 是 100% 开源的<b>认知操作系统</b>——不重造基座大模型，而是为一切 AI 加装三件先天缺失的能力：
+  <b>因果推理</b>（分清"相关"与"导致"）、<b>属于用户的记忆</b>、以及<b>说"我不知道"的纪律</b>。
+  每个重要回答附一张机器可验真的<b>收据</b>。它不属于任何公司与国家——属于全人类。</p>
+  <div class="kpi" style="max-width:780px;margin:34px auto 0">
+    <div class="k"><div class="v green">31×</div><div class="l">首个 EG 基准中位数（有利域·经守门员攻击存活）</div></div>
+    <div class="k"><div class="v green">57</div><div class="l">测试全绿 · CI 双版本通过</div></div>
+    <div class="k"><div class="v green">Live</div><div class="l">S1+S2 混合体已端到端跑通（真 DeepSeek + 真因果引擎）</div></div>
+    <div class="k"><div class="v stone">$0.001</div><div class="l">迄今全部 API 成本 · CPU 血统</div></div>
+  </div>
+  <div class="vow">The One is for everyone. By everyone. Forever. — 不融资 · 不上市 · Apache-2.0</div>
+</div>
+
+<!-- ================= 产品形态 ================= -->
+<section id="form">
+  <h2><span class="num">01</span>终极产品形态<span class="tag vision">愿景</span></h2>
+  <p class="lead">三种存在方式同体——像水一样渗入一切，而不是又一座要人朝拜的山。</p>
+  <div class="grid g3">
+    <div class="card"><b>库 · Library</b><p style="font-size:.8rem;color:var(--ink2);margin-top:6px"><code>pip install theone</code>，三行接入任意开源基座。开发者面向 causal / memory / metacog / credential 四个 API 面。</p></div>
+    <div class="card"><b>服务 · Service</b><p style="font-size:.8rem;color:var(--ink2);margin-top:6px">自托管节点 / 社区节点 / 企业私有化（数据不出域）。普通人打开即用，像任何对话助手——但它有收据、有记忆主权、敢说不知道。</p></div>
+    <div class="card"><b>标准 · Standard</b><p style="font-size:.8rem;color:var(--ink2);margin-top:6px">认知凭证协议——认知界的 HTTPS。任何模型的输出都可申请这张可独立验真的收据，全行业可采用。</p></div>
+  </div>
+  <h3 style="margin:30px 0 10px;font-size:1.02rem">界面哲学：Apple 极简 × Aman 留白 × 看不见的禅</h3>
+  <div class="grid g2">
+    <div class="mock">
+      <div class="mbar"><i></i><i></i><i></i><span style="font-size:.66rem;color:var(--ink3);margin-left:6px">The One — 因果回答 + 收据</span></div>
+      <div class="mbody">
+        <div class="bubble u">咖啡会导致心脏病吗？</div>
+        <div class="bubble a">观察数据中关联 +0.54，但调整吸烟混杂后，真实因果效应为 +0.30——把数字抬高的是吸烟这条后门，不是咖啡本身。<br><span class="rchip">✓ Verifiable — 查看收据</span></div>
+      </div>
+    </div>
+    <div class="mock">
+      <div class="mbar"><i></i><i></i><i></i><span style="font-size:.66rem;color:var(--ink3);margin-left:6px">The One — 诚实拒答</span></div>
+      <div class="mbody">
+        <div class="bubble u">明年比特币会涨到多少？</div>
+        <div class="bubble a ab">我不知道——而且我不会去猜。长周期市场价格不存在可识别的因果路径，任何点位都是编造。我能做的是压力测试你的仓位。<br><span class="rchip">✓ 拒答本身就是校准过的输出</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="note">设计纪律：产品层零文化词汇、零哲学名词、零新造概念——文化在骨头里（团队的灵魂语言留在 Origins），不在身上。英文默认，全语言 i18n。</div>
+</section>
+
+<!-- ================= 架构 ================= -->
+<section id="arch">
+  <h2><span class="num">02</span>架构：双系统 + 觉知层</h2>
+  <p class="lead">不是更大的 Transformer，而是 Transformer + 因果引擎的混合体——快慢分明、各司其职、由成本敏感路由调度，最上层是知道"自己知不知道"的元认知。</p>
+  <div class="arch">
+    <div class="layer s0"><div class="s">S0 元认知</div><div class="d">校准与诚实层：七态不确定性、置信校准、<b>拒答签发</b>。一切输出经此盖印方可出门。拒答是可计算的（ID 判定）。<span class="tag real">弃权判定已实现</span></div></div>
+    <div class="layer s2"><div class="s">S2 因果引擎</div><div class="d">显式因果图 + do-calculus + 反事实三步法 + 可识别性门。<b>所有因果数字唯一来源</b>——LLM 永不算因果。<span class="tag real">已实现·F-1 闭</span></div></div>
+    <div class="layer s1"><div class="s">S1 统计引擎</div><div class="d">复用最强开源基座（DeepSeek/Llama/Qwen，热插拔）。负责理解、翻译、表达、创作——<b>表达 S2 的数字，不改一个数</b>。<span class="tag real">DeepSeek 已真实接入</span></div></div>
+    <div class="layer s3"><div class="s">S3 世界模型</div><div class="d">物理模拟 + 多模态感知 + 连续预测。注：对自身动作是干预级，对世界变量是预测级——需与 S2 互补。<span class="tag hypo">M3+ 假设</span></div></div>
+    <div class="layer hx"><div class="s">横向支撑</div><div class="d">证据分级因果图库（边带证据等级，够级才准 do-查询）· 主权记忆（查/改/删/带走）· 凭证生成/校验分离 · 成本敏感路由（宁慢勿错，疑似因果绝不落入 S1）<span class="tag real">v0 已实现</span></div></div>
+  </div>
+</section>
+
+<!-- ================= 算法 ================= -->
+<section id="algo">
+  <h2><span class="num">03</span>核心算法</h2>
+  <p class="lead">六个部件，三个有定理背书，全部可测试、可复算、可审计。</p>
+  <div class="grid g2">
+    <div class="card algo"><div class="t">因果阶梯跃迁<span class="tag real">定理级</span></div>
+      <div class="f">P(Y|X)  →  P(Y|do(X))  →  P(Y_x | X=x′,Y=y′)</div>
+      <div class="d">关联→干预→反事实。因果层级定理：仅凭关联数据原则上答不了干预问题——这是 The One 与一切纯 LLM 的数学分界线。</div></div>
+    <div class="card algo"><div class="t">可识别性门<span class="tag real">定理级</span></div>
+      <div class="f">ID(query, graph) ∈ {identifiable, NOT} → answer | abstain</div>
+      <div class="d">do-calculus 完备性 + ID 算法：查询不可识别时，系统能在数学上证明自己答不了——"因果的不知道"是可计算的。诚实不靠自觉，靠判定算法。</div></div>
+    <div class="card algo"><div class="t">校准弃权<span class="tag real">定理级</span></div>
+      <div class="f">answer if conf ≥ τ(calibrated) else ABSTAIN</div>
+      <div class="d">Chow 拒识规则：弃权可证地换错误率。幻觉有数学下界（Kalai-Vempala），但可以转换为可控的沉默。血统：99.6% 弃权精度。</div></div>
+    <div class="card algo"><div class="t">认知凭证<span class="tag real">已实现</span></div>
+      <div class="f">receipt = {method, graph_hash, adj_set, numbers, tier, limits}</div>
+      <div class="d">验证比生成廉价（Proof-Carrying 范式）：信任成本从"重跑模型"降为"查验收据"。生成器与校验器零共享代码、分离部署。</div></div>
+    <div class="card algo"><div class="t">成本敏感路由<span class="tag real">v0 已实现</span></div>
+      <div class="f">misroute(causal→S1) ≫ misroute(stat→S2) ⇒ 宁慢勿错</div>
+      <div class="d">路由不追求分类准确率，追求非对称损失最小：因果题误入 S1 会让幻觉复活；存疑且无验证图谱时直接弃权。</div></div>
+    <div class="card algo"><div class="t">证据分级图库<span class="tag real">v0 已实现</span></div>
+      <div class="f">tier ∈ {conjecture, llm_extracted, literature, machine_validated}</div>
+      <div class="d">LLM 抽出的因果边只是假设，不是知识——只有升到足够证据级的边才许参与 do-查询。治理纪律即数据结构。</div></div>
+  </div>
+</section>
+
+<!-- ================= 能力 ================= -->
+<section id="cap">
+  <h2><span class="num">04</span>能力矩阵（vs 现有大模型）</h2>
+  <table class="card" style="display:table">
+    <tr><th>能力</th><th>GPT / Claude / Gemini</th><th>The One 终极形态</th><th>凭什么</th></tr>
+    <tr><td>语言 / 代码 / 创作</td><td>极强</td><td>同级（复用其开源同侪作 S1）</td><td>不重造轮子</td></tr>
+    <tr><td>因果推理（do / 反事实）</td><td>弱（隐式模仿）</td><td><b>原生 · 可验证</b></td><td>S2 引擎 + 定理</td></tr>
+    <tr><td>说"我不知道"</td><td>部分 · 非架构级</td><td><b>架构级 · 可计算</b></td><td>ID 门 + 校准弃权</td></tr>
+    <tr><td>答案可验证</td><td>无</td><td><b>每个重要回答带收据</b></td><td>凭证协议</td></tr>
+    <tr><td>跨年记忆 · 用户主权</td><td>外挂 · 平台持有</td><td><b>原生 · 四权归用户</b></td><td>主权记忆</td></tr>
+    <tr><td>持续学习</td><td>重训才更新</td><td>在线更新（图库+记忆外置）</td><td>参数冻结+外部知识</td></tr>
+    <tr><td>能耗</td><td>数据中心级</td><td>认知层瓦级（CPU 血统实测）</td><td>显式图上多项式推理</td></tr>
+    <tr><td>归属</td><td>商业公司</td><td><b>全人类 · 100% 开源</b></td><td>章程</td></tr>
+  </table>
+</section>
+
+<!-- ================= 应用 ================= -->
+<section id="app">
+  <h2><span class="num">05</span>应用场景</h2>
+  <p class="lead">凡是"答错代价高"的地方，就是 The One 的主场——因为它敢不答。</p>
+  <div class="grid g3">
+    <div class="card"><b>医疗辅助</b><p style="font-size:.78rem;color:var(--ink2);margin-top:5px">疗效因果评估、混杂识别、证据不足时明确拒答——拒答在医疗场景是救命特性。</p></div>
+    <div class="card"><b>金融与审计</b><p style="font-size:.78rem;color:var(--ink2);margin-top:5px">风险因果链、反事实压力测试（"如果跌 40%"）、全量凭证可出庭级追溯。</p></div>
+    <div class="card"><b>政策评估</b><p style="font-size:.78rem;color:var(--ink2);margin-top:5px">P(结果|do(政策))——干预问题正是政府每天在问而 LLM 原则上答不了的问题。</p></div>
+    <div class="card"><b>科学研究</b><p style="font-size:.78rem;color:var(--ink2);margin-top:5px">假设生成→实验设计→预注册→负结果照发。仿真农场即服务。</p></div>
+    <div class="card"><b>企业决策</b><p style="font-size:.78rem;color:var(--ink2);margin-top:5px">"如果当时没降价销量会怎样"——反事实复盘 + 下一步 A/B 实验设计。</p></div>
+    <div class="card"><b>个人终身 AI</b><p style="font-size:.78rem;color:var(--ink2);margin-top:5px">记住你十年、随你成长、记忆永远可带走——而且从不对你编造。</p></div>
+  </div>
+</section>
+
+<!-- ================= 体验 ================= -->
+<section id="ux">
+  <h2><span class="num">06</span>用户体验</h2>
+  <p class="lead">第一次用与普通助手无异；用得越久，三个差异越深。</p>
+  <div class="grid g3">
+    <div class="card"><b>第 1 天</b><p style="font-size:.78rem;color:var(--ink2);margin-top:5px">"和 GPT 差不多嘛"——直到它第一次说"我不知道，而且我不会去猜"，你愣了一下。</p></div>
+    <div class="card"><b>第 30 天</b><p style="font-size:.78rem;color:var(--ink2);margin-top:5px">它记得你上个月的项目背景；你第一次点开收据，看到它的推理路径可以被独立验证。</p></div>
+    <div class="card"><b>第 365 天</b><p style="font-size:.78rem;color:var(--ink2);margin-top:5px">你发现自己**信任**它的"不知道"胜过别家的"知道"。它成了你最诚实的同事。</p></div>
+  </div>
+</section>
+
+<!-- ================= 价值 ================= -->
+<section id="val">
+  <h2><span class="num">07</span>价值：解决什么</h2>
+  <table class="card" style="display:table">
+    <tr><th>当今 AI 先天缺陷</th><th>The One 的结构性解法</th></tr>
+    <tr><td>幻觉：编造而不自知</td><td>校准弃权 + 可计算的拒答 + 机器可验真收据</td></tr>
+    <tr><td>只会相关，不懂因果</td><td>原生 S2 引擎 + 可识别性门 + 主动实验</td></tr>
+    <tr><td>金鱼记忆，平台持有数据</td><td>主权记忆四权：查 / 改 / 删 / 带走</td></tr>
+    <tr><td>黑箱不可审计</td><td>因果路径 + 凭证全量检索（生成/校验分离）</td></tr>
+    <tr><td>知识截止，重训昂贵</td><td>参数冻结 + 图库/记忆在线更新</td></tr>
+    <tr><td>巨头垄断，人人焦虑</td><td>100% 开源 · 不属于任何机构 · 可自托管</td></tr>
+  </table>
+</section>
+
+<!-- ================= 理论 ================= -->
+<section id="theory">
+  <h2><span class="num">08</span>理论根基</h2>
+  <p class="lead">"在干预与反事实问题、以及可信度维度上，它不是可能更好——是<b>原则上更好</b>；在纯生成维度上，它不试图更好，直接借用最好的。"</p>
+  <div class="grid g3">
+    <div class="card"><b>因果层级定理</b><p style="font-size:.78rem;color:var(--ink2);margin-top:5px">Pearl/Bareinboim：关联数据原则上答不了干预问题。存在一类问题，纯 LLM 永远答不了、The One 答得了——这就是存在性证明。</p></div>
+    <div class="card"><b>校准-幻觉下界 × Chow 弃权</b><p style="font-size:.78rem;color:var(--ink2);margin-top:5px">Kalai-Vempala：幻觉对 LLM 不可根除。Chow 规则：弃权可证地换错误率。不可避免的错误 → 可控的沉默。</p></div>
+    <div class="card"><b>验证-生成不对称</b><p style="font-size:.78rem;color:var(--ink2);margin-top:5px">查验一张收据远廉价于重跑一次生成——这是凭证协议能成为"认知界 HTTPS"的复杂度根基。</p></div>
+  </div>
+  <div class="note">诚实清单（理论不保证的）：自动因果发现欠定（所以主动实验是必需品）；S1 质量无定理；"净增益>脚手架"是经验赌注（Baseline B 待测）；变量接地（因果表征学习）是最深的开放问题。三大科学赌注：①干预鸿沟（首测 31×，限定域）②反事实梯度泛化（T4 强判据 FAIL，弱判据过）③主动层安全配重（设计冻结）。</div>
+</section>
+
+<!-- ================= 路线图与分工 ================= -->
+<section id="road">
+  <h2><span class="num">09</span>实现路径 · 任务分工 · 资源时点</h2>
+  <div class="tl">
+    <div class="ms done"><div class="mt">M0 · 因果核心与测量仪器 <span class="tag real">已完成</span></div>
+      <div class="md">F-1 修复（七断言全绿）· EG 基准（中位 31×，攻击存活）· T4 跨族门（诚实 FAIL/WEAK）· 凭证+独立校验器 · 仓库公开+CI</div>
+      <div class="mw">成本：$0 · CPU</div></div>
+    <div class="ms done"><div class="mt">M1a · 混合体最小闭环 <span class="tag real">已跑通（2026-06-12）</span></div>
+      <div class="md">DeepSeek 真实接入（E-01 闭）· 成本敏感路由 v0 · 证据分级图库 v0 · Live Demo：真因果题→真引擎数字+真收据，预测题→诚实拒答</div>
+      <div class="mw">成本：&lt;$0.01 API</div></div>
+    <div class="ms"><div class="mt">M1b · 第二命门数字（~2-4 周）</div>
+      <div class="md">可识别性门完整版 · Baseline B 三方对照预注册（裸LLM vs LLM+脚手架 vs The One）· <b>净增益判决，无论正负原样发表</b></div>
+      <div class="mw">CC：实现+预注册 ｜ Jay：转 Q-C8 给 Jack（样本量功效分析）+ API 余额 ~$50-150 ｜ Jack：Q-C8 审定 + 出炉即攻击</div></div>
+    <div class="ms"><div class="mt">M2 · 知识与记忆生长（~2-4 月）</div>
+      <div class="md">因果抽取流水线（假设边→验证升级）· 天然实验收割 v0 · 记忆接入主管道 · 模块化 SCM 图书馆扩容 · 通用产品 alpha 自托管发布</div>
+      <div class="mw">CC：全部工程 ｜ Jay：搜索 API（~$100-500/月）· 滩头领域意向（医疗 vs 金融）· 早期试用者 3-5 名 ｜ Jack：抽取边验证判据</div></div>
+    <div class="ms"><div class="mt">M3 · 训练线（赌注闸门后）</div>
+      <div class="md">反事实梯度放大（T4 弱判据已过，强判据未过——<b>不过强判据不大规模扩</b>）· 因果表征学习实验 · 世界模型接口</div>
+      <div class="mw">CC：实验设计+执行 ｜ Jay：RunPod GPU 预算（申请单制，预计 $500-5000/期）｜ Jack：T4 下一级判据签字</div></div>
+    <div class="ms"><div class="mt">V1 → Ω · 产品化与公共基础设施</div>
+      <div class="md">pip 包 v1.0 · 外部用户独立上手 · 凭证标准成文 · 季度外审 · 社区核心环/水系环 · 滩头落地 · 最终：属于全人类的认知基础设施</div>
+      <div class="mw">Jay：外审官人选 · 社区治理 · 资金三源（自投/服务/公益）｜ CC：全部工程与文档 ｜ Jack：数学守门终身制</div></div>
+  </div>
+  <h3 style="margin:30px 0 10px;font-size:1.02rem">Jay 的任务卡（你只需要做这些）</h3>
+  <table class="card" style="display:table">
+    <tr><th>时点</th><th>事项</th><th>耗时</th></tr>
+    <tr><td>本周</td><td>吊销冗余 GitHub PAT；体验 Live Demo 并反馈"哪里不像终极形态"</td><td>20 分钟</td></tr>
+    <tr><td>M1b 启动时</td><td>把 Q-C8（Baseline B 功效分析）转给 Jack；确认 API 余额</td><td>10 分钟</td></tr>
+    <tr><td>每天</td><td>看工作摘要，拍决策队列（标"阻塞"的优先）</td><td>~15 分钟</td></tr>
+    <tr><td>M2 前</td><td>定滩头方向（医疗 vs 金融）；物色 3-5 名早期试用者与外审官</td><td>2-3 小时</td></tr>
+    <tr><td>M3 前</td><td>批 GPU 申请单（仅当赌注给出正信号）</td><td>10 分钟/单</td></tr>
+  </table>
+</section>
+
+<!-- ================= 真实现状 ================= -->
+<section id="status">
+  <h2><span class="num">10</span>真实现状（四档标注，不夸大）</h2>
+  <table class="card" style="display:table">
+    <tr><th>模块</th><th>状态</th><th>证据</th></tr>
+    <tr><td>S2 因果引擎（do/反事实/识别）</td><td><span class="tag real">已验证</span></td><td>F-1 七断言+A8 全绿，守门员复签，CI required</td></tr>
+    <tr><td>S1 接入（DeepSeek）</td><td><span class="tag real">已验证</span></td><td>E-01 闭：真实调用日志 + 真实集成测试</td></tr>
+    <tr><td>混合体（路由+图库+管道）</td><td><span class="tag real">已验证 · v0</span></td><td>端到端 Live：57 测试绿；图谱参数为示例（产品内明示）</td></tr>
+    <tr><td>EG 基准（赌注①首测）</td><td><span class="tag real">已验证 · 限定域</span></td><td>中位 31×，仅"观测混杂+线性高斯+对称"，待外审</td></tr>
+    <tr><td>反事实梯度泛化（赌注②）</td><td><span class="tag hypo">WEAK</span></td><td>T4 强判据 FAIL（OOD 退化12×）· 弱判据过（优于基线23×）</td></tr>
+    <tr><td>主动实验安全腿（赌注③）</td><td><span class="tag hypo">设计冻结</span></td><td>样本效率腿已验证（A>C, p=0.0207）；安全腿未测</td></tr>
+    <tr><td>世界模型 / Ω 形态</td><td><span class="tag vision">愿景</span></td><td>北极星，不声称</td></tr>
+  </table>
+  <div class="note">本页一切"已验证"均有可复跑命令与日志（GitHub: JayJSuper/theone）。一切愿景均明确标注。失败公开进《美丽失败录》。叙事永不跑到证据前面。</div>
+</section>
+
+</div>
+<footer>
+  The One is for everyone. By everyone. Forever.<br>
+  100% 开源（Apache-2.0）· 不融资 · 不上市 · 属于全人类<br>
+  蓝图版本 2026-06-12 · 由第一负责人 CC 编制 · Jay 批准
+</footer>
+</body>
+</html>
