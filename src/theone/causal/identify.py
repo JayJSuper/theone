@@ -47,14 +47,115 @@ def check_backdoor(g: CausalGraph, X: str, Y: str, Z: set) -> bool:
     return all(is_blocked(p, Z, g) for p in backdoor_paths(g, X, Y))
 
 
-def find_adjustment_set(g: CausalGraph, X: str, Y: str):
-    """Smallest valid backdoor set (brute force; v0.1 graphs are small).
-    Returns None when no valid set exists (not identifiable via backdoor);
-    callers must surface None explicitly - 'cannot say' is a first-class answer."""
+def find_adjustment_set(g: CausalGraph, X: str, Y: str, observed=None):
+    """Smallest valid backdoor set among OBSERVED variables (brute force; v0.1
+    graphs are small). Returns None when no valid observed set exists (not
+    identifiable via backdoor); callers must surface None explicitly - 'cannot
+    say' is a first-class answer."""
+    obs = set(g.variables) if observed is None else set(observed)
     candidates = [v for v in g.variables
-                  if v not in (X, Y) and v not in _descendants(g, X)]
+                  if v not in (X, Y) and v not in _descendants(g, X) and v in obs]
     for size in range(0, len(candidates) + 1):
         for Z in itertools.combinations(candidates, size):
             if check_backdoor(g, X, Y, set(Z)):
                 return set(Z)
     return None
+
+
+# ---------------------------------------------------------------------------
+# Front-door criterion (Q-C14): usable when the X<->Y confounder is UNOBSERVED
+# but an observed mediator M intercepts all directed X->Y paths.
+# ---------------------------------------------------------------------------
+def _directed_paths(g: CausalGraph, X: str, Y: str) -> list:
+    return list(nx.all_simple_paths(g.nx, X, Y))
+
+
+def check_frontdoor(g: CausalGraph, X: str, Y: str, M: set) -> bool:
+    """Pearl front-door criterion for mediator set M relative to (X,Y):
+    (1) M intercepts every directed path X->Y;
+    (2) no unblocked backdoor path from X to M (P(M|do X)=P(M|X));
+    (3) every backdoor path from M to Y is blocked by X."""
+    M = set(M)
+    if not M or M & {X, Y}:
+        return False
+    # (1) every directed X->Y path hits M
+    if any(not (set(p[1:-1]) & M) for p in _directed_paths(g, X, Y)):
+        return False
+    # (2) no backdoor X->m unblocked by empty set, for each m
+    for m in M:
+        if not all(is_blocked(p, set(), g) for p in backdoor_paths(g, X, m)):
+            return False
+    # (3) backdoor m->Y blocked by {X}
+    for m in M:
+        if not check_backdoor(g, m, Y, {X}):
+            return False
+    return True
+
+
+def find_frontdoor_set(g: CausalGraph, X: str, Y: str, observed=None):
+    """Smallest observed mediator set satisfying the front-door criterion, or None."""
+    obs = set(g.variables) if observed is None else set(observed)
+    cand = [v for v in g.variables if v not in (X, Y) and v in obs]
+    for size in range(1, len(cand) + 1):
+        for M in itertools.combinations(cand, size):
+            if check_frontdoor(g, X, Y, set(M)):
+                return set(M)
+    return None
+
+
+# ---------------------------------------------------------------------------
+# Single instrumental variable (Q-C14): usable when X<->Y confounder unobserved
+# and an observed Z is relevant to X yet reaches Y only through X.
+# ---------------------------------------------------------------------------
+def check_instrument(g: CausalGraph, X: str, Y: str, Z: str) -> bool:
+    """Graphical IV conditions for a single instrument Z (W=empty):
+    (relevance) Z is an ancestor of X (Z d-connected to X);
+    (exclusion+exogeneity) in G with X's OUTGOING edges removed, Z is
+    d-separated from Y; (Z is not a descendant of X)."""
+    if Z in (X, Y) or Z in _descendants(g, X):
+        return False
+    if X not in nx.descendants(g.nx, Z):            # relevance: Z -> ... -> X
+        return False
+    g_xbar = g.nx.copy()
+    g_xbar.remove_edges_from(list(g.nx.out_edges(X)))  # cut X's outgoing edges
+    try:
+        return nx.is_d_separator(g_xbar, {Z}, {Y}, set())
+    except AttributeError:                          # older networkx
+        return nx.d_separated(g_xbar, {Z}, {Y}, set())
+
+
+def find_instrument(g: CausalGraph, X: str, Y: str, observed=None):
+    """An observed single instrument for X->Y, or None."""
+    obs = set(g.variables) if observed is None else set(observed)
+    for Z in g.variables:
+        if Z in obs and check_instrument(g, X, Y, Z):
+            return Z
+    return None
+
+
+# ---------------------------------------------------------------------------
+# Unified identification (Q-C14 priority: backdoor > front-door > IV > refuse).
+# Front-door/IV carry UNVERIFIABLE-FROM-DATA assumption flags (Jack's caveat).
+# ---------------------------------------------------------------------------
+def identify_effect(g: CausalGraph, X: str, Y: str, observed=None) -> dict:
+    bd = find_adjustment_set(g, X, Y, observed)
+    if bd is not None:
+        return {"identifiable": True, "strategy": "backdoor",
+                "adjustment_set": sorted(bd), "assumptions": []}
+    fd = find_frontdoor_set(g, X, Y, observed)
+    if fd is not None:
+        return {"identifiable": True, "strategy": "front_door",
+                "mediator_set": sorted(fd),
+                "assumptions": ["front-door assumes no unobserved confounding "
+                                "between mediator and outcome — NOT verifiable "
+                                "from data, needs domain knowledge"]}
+    iv = find_instrument(g, X, Y, observed)
+    if iv is not None:
+        return {"identifiable": True, "strategy": "instrumental_variable",
+                "instrument": iv,
+                "assumptions": ["IV assumes the exclusion restriction (instrument "
+                                "affects outcome only through treatment) — NOT "
+                                "verifiable from data, needs domain knowledge"]}
+    return {"identifiable": False, "strategy": None,
+            "reason": "no backdoor / front-door / single-IV identification exists "
+                      "among observed variables"}

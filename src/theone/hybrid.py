@@ -18,7 +18,7 @@ from dataclasses import dataclass, field
 from .types import Variable
 from .causal.graph import CausalGraph
 from .causal.engine import InterventionEngine
-from .causal.identify import find_adjustment_set
+from .causal.identify import find_adjustment_set, identify_effect
 
 # --------------------------------------------------------------------------
 # Evidence-tiered SCM library v0
@@ -43,19 +43,17 @@ class LibraryGraph:
 
 
 def identify_gate(lg: LibraryGraph) -> dict:
-    """Identifiability gate (M1b): a do-query is answerable iff a backdoor
-    adjustment set exists among OBSERVED variables. The causal 'I don't know'
-    is computable — when blocked, we name the missing variable instead of
-    guessing. Returns {identifiable, adjustment_set | missing}."""
-    adj = find_adjustment_set(lg.graph, lg.treatment, lg.outcome)
-    if adj is None:
-        return {"identifiable": False, "missing": [lg.confounder],
-                "reason": "no valid backdoor adjustment set exists"}
-    hidden = sorted(set(adj) & set(lg.latent))
-    if hidden:
-        return {"identifiable": False, "missing": hidden,
-                "reason": f"adjustment requires unobserved variable(s) {hidden}"}
-    return {"identifiable": True, "adjustment_set": sorted(adj)}
+    """Identifiability gate (M1b + Q-C14): a do-query is answerable via backdoor,
+    else front-door, else single-IV, among OBSERVED variables. The causal 'I
+    don't know' is computable — when nothing identifies, name the missing
+    variable instead of guessing. Front-door/IV carry unverifiable-assumption
+    flags. Returns the unified identify_effect result, plus a 'missing' field on
+    refusal for backward compatibility with the server."""
+    observed = [v for v in lg.graph.variables if v not in set(lg.latent)]
+    res = identify_effect(lg.graph, lg.treatment, lg.outcome, observed=observed)
+    if not res["identifiable"]:
+        res["missing"] = sorted(set(lg.latent)) or [lg.confounder]
+    return res
 
 
 def _confounded(u, x, y, p_u=0.5, px=(0.8, 0.2), py=(0.9, 0.5, 0.6, 0.2)):
