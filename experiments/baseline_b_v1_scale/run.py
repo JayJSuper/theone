@@ -59,6 +59,25 @@ def gen_dag(n_nodes: int, rng) -> dict:
             "u": names[ui], "cpts": cpts}
 
 
+def gen_fixed_skeleton(n_nodes: int, rng) -> dict:
+    """Q-C11 (AM-007 sibling, gatekeeper-designed): FIXED single-backdoor skeleton
+    + irrelevant distractor nodes. U=V0, X=V1, Y=V2 (adjustment set always {V0});
+    V3..V{n-1} are roots connected to nothing. Isolates 'scale / noise tolerance'
+    from 'identification difficulty' (which is held constant)."""
+    names = [f"V{i}" for i in range(n_nodes)]
+    u, x, y = names[0], names[1], names[2]
+    parents = {v: [] for v in names}
+    parents[x] = [u]
+    parents[y] = [u, x]
+    # distractors V3.. stay parentless and childless
+    cpts = {}
+    for v in names:
+        ps = parents[v]
+        cpts[v] = {combo: round(float(rng.uniform(0.05, 0.95)), 2)
+                   for combo in itertools.product((1, 0), repeat=len(ps))}
+    return {"names": names, "parents": parents, "x": x, "y": y, "u": u, "cpts": cpts}
+
+
 def build_graph(d: dict) -> CausalGraph:
     g = CausalGraph()
     for v in d["names"]:
@@ -171,15 +190,20 @@ def main():
     ap.add_argument("--base-seed", type=int, default=BASE_SEED,
                     help="formal runs use a FRESH seed (burn discipline: pilot "
                          "problems are spent and excluded)")
+    ap.add_argument("--skeleton", choices=["random", "fixed"], default="random",
+                    help="random=ecological DAG (scale+complexity); "
+                         "fixed=Q-C11 single-backdoor + distractors (pure scale)")
     args = ap.parse_args()
     pilot = args.n < 150
+    gen = gen_fixed_skeleton if args.skeleton == "fixed" else gen_dag
+    suffix = f".{args.skeleton}"
     client = DeepSeekClient(timeout=180)
-    jsonl = (HERE / "rows.jsonl").open("a")          # crash-safe incremental log
+    jsonl = (HERE / f"rows{suffix}.jsonl").open("a")  # crash-safe incremental log
     rows = []
     for tier, n_nodes in SIZES.items():
         rng = np.random.default_rng(args.base_seed + n_nodes)
         for i in range(args.n):
-            d = gen_dag(n_nodes, rng)
+            d = gen(n_nodes, rng)
             g = build_graph(d)
             truth = InterventionEngine(g).query_intervention(d["y"], 1, {d["x"]: 1}).value
             text = render_text(d)
@@ -212,8 +236,8 @@ def main():
                 "mean_latency_s": round(float(np.mean(
                     [r[s]["latency"] for r in tr])), 2)}
     out = {"summary": summary, "rows": rows}
-    (HERE / "results.json").write_text(json.dumps(out, indent=2))
-    sha = hashlib.sha256((HERE / "results.json").read_bytes()).hexdigest()[:16]
+    (HERE / f"results{suffix}.json").write_text(json.dumps(out, indent=2))
+    sha = hashlib.sha256((HERE / f"results{suffix}.json").read_bytes()).hexdigest()[:16]
     print("\n=========== SUMMARY ({} per tier, {}) ===========".format(
         args.n, summary["mode"]))
     print(f"{'tier':>5} {'A acc':>7} {'B acc':>7} {'C acc':>7}   "
