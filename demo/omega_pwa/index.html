@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#07090f">
+<title>太一 Ω · The One — 终极形态演示</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<meta name="description" content="太一 Ω：属于全人类的认知操作系统——终极形态愿景演示（全本地模拟）">
+<style>
+:root{
+  --bg:#07090f; --bg2:#0c111c; --panel:#101726; --panel2:#141d30;
+  --ink:#e8ecf4; --ink2:#9aa7bd; --ink3:#5d6b84;
+  --gold:#e7b864; --gold2:#f5d89a; --cyan:#5ad0c8; --cyan2:#8ee8e2;
+  --wave:#7a8cff; --grain:#ffb35a; --ok:#5ad08a; --warn:#e7956a; --bad:#e76a7a;
+  --line:#1d2940; --radius:14px;
+  font-size:15px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  background:
+    radial-gradient(1200px 700px at 75% -10%, #131c33 0%, transparent 60%),
+    radial-gradient(900px 600px at -10% 110%, #10202c 0%, transparent 55%),
+    var(--bg);
+  color:var(--ink);
+  font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif;
+  line-height:1.65; overflow-x:hidden;
+}
+::selection{background:rgba(231,184,100,.3)}
+a{color:var(--cyan)}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+
+/* ===== 顶栏 ===== */
+header{
+  position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:14px;
+  padding:10px 18px;background:rgba(7,9,15,.82);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.logo{display:flex;align-items:center;gap:10px}
+.logo svg{width:34px;height:34px}
+.logo .t{font-weight:700;font-size:1.05rem;letter-spacing:.12em}
+.logo .s{font-size:.68rem;color:var(--ink3);letter-spacing:.2em}
+.mode-badge{
+  margin-left:auto;display:flex;align-items:center;gap:8px;
+  font-size:.7rem;color:var(--gold);border:1px solid rgba(231,184,100,.4);
+  padding:4px 12px;border-radius:99px;background:rgba(231,184,100,.07);
+  white-space:nowrap;
+}
+.mode-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--gold);animation:pulse 2.4s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+/* ===== 诚实横幅 ===== */
+.honesty{
+  font-size:.74rem;color:var(--ink2);text-align:center;padding:7px 16px;
+  background:linear-gradient(90deg,transparent,rgba(231,184,100,.08),transparent);
+  border-bottom:1px solid var(--line);
+}
+.honesty b{color:var(--gold)}
+
+/* ===== 导航 ===== */
+nav{
+  display:flex;gap:4px;padding:10px 14px;overflow-x:auto;scrollbar-width:none;
+  border-bottom:1px solid var(--line);background:rgba(10,13,21,.6);
+  position:sticky;top:55px;z-index:40;backdrop-filter:blur(10px);
+}
+nav::-webkit-scrollbar{display:none}
+nav button{
+  flex:none;padding:7px 15px;border-radius:99px;font-size:.84rem;color:var(--ink2);
+  border:1px solid transparent;transition:.2s;
+}
+nav button:hover{color:var(--ink)}
+nav button.on{color:var(--gold2);border-color:rgba(231,184,100,.45);background:rgba(231,184,100,.08)}
+
+main{max-width:1060px;margin:0 auto;padding:22px 16px 90px}
+section.page{display:none;animation:fadein .35s ease}
+section.page.on{display:block}
+@keyframes fadein{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+h2.pt{font-size:1.3rem;margin-bottom:4px;letter-spacing:.05em}
+p.ps{color:var(--ink2);font-size:.86rem;margin-bottom:18px}
+.tag{display:inline-block;font-size:.66rem;padding:2px 9px;border-radius:99px;margin-left:8px;vertical-align:2px;letter-spacing:.05em}
+.tag.vision{color:var(--gold);border:1px solid rgba(231,184,100,.4)}
+.tag.real{color:var(--ok);border:1px solid rgba(90,208,138,.4)}
+.tag.hypo{color:var(--wave);border:1px solid rgba(122,140,255,.45)}
+
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.grid{display:grid;gap:14px}
+@media(min-width:760px){.grid.c2{grid-template-columns:1fr 1fr}.grid.c3{grid-template-columns:repeat(3,1fr)}}
+
+/* ===== 太一之眼（首页核心可视化）===== */
+.eye-wrap{position:relative;display:flex;flex-direction:column;align-items:center;padding:30px 0 10px}
+#eye{width:min(440px,92vw);height:min(440px,92vw)}
+.eye-caption{display:flex;gap:22px;flex-wrap:wrap;justify-content:center;margin-top:6px;font-size:.76rem;color:var(--ink2)}
+.eye-caption span b{font-weight:600}
+.eye-caption .w b{color:var(--wave)} .eye-caption .g b{color:var(--grain)} .eye-caption .a b{color:var(--gold)}
+
+.hero-quote{max-width:660px;margin:18px auto 0;text-align:center;color:var(--ink2);font-size:.92rem}
+.hero-quote .big{font-size:1.16rem;color:var(--ink);margin-bottom:8px;letter-spacing:.04em}
+.hero-cta{display:flex;gap:12px;justify-content:center;margin-top:22px;flex-wrap:wrap}
+.btn{
+  padding:10px 22px;border-radius:99px;font-size:.9rem;transition:.2s;
+  border:1px solid var(--line);color:var(--ink2);background:var(--panel);
+}
+.btn:hover{border-color:var(--cyan);color:var(--cyan2)}
+.btn.gold{border-color:rgba(231,184,100,.5);color:var(--gold2);background:rgba(231,184,100,.08)}
+.btn.gold:hover{background:rgba(231,184,100,.16)}
+
+/* ===== 对话 ===== */
+.chat-shell{display:grid;gap:14px}
+@media(min-width:900px){.chat-shell{grid-template-columns:1.5fr 1fr}}
+.chat-box{display:flex;flex-direction:column;height:560px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.chat-log{flex:1;overflow-y:auto;padding:18px;display:flex;flex-direction:column;gap:14px}
+.msg{max-width:88%;padding:11px 15px;border-radius:14px;font-size:.9rem;white-space:pre-wrap;word-break:break-word}
+.msg.u{align-self:flex-end;background:#1b2a45;border:1px solid #27395c;border-bottom-right-radius:4px}
+.msg.a{align-self:flex-start;background:var(--panel2);border:1px solid var(--line);border-bottom-left-radius:4px}
+.msg.a.defer{border-color:rgba(231,149,106,.5)}
+.msg .role{font-size:.68rem;color:var(--ink3);margin-bottom:5px;letter-spacing:.08em}
+.msg .truth-chip{display:inline-block;font-size:.66rem;padding:1px 8px;border-radius:99px;margin-left:6px}
+.truth-asti{color:var(--ok);border:1px solid rgba(90,208,138,.45)}
+.truth-avaktavya{color:var(--warn);border:1px solid rgba(231,149,106,.5)}
+.cred-btn{
+  margin-top:9px;font-size:.72rem;color:var(--cyan);border:1px solid rgba(90,208,200,.35);
+  padding:4px 12px;border-radius:99px;background:rgba(90,208,200,.06);
+}
+.cred-btn:hover{background:rgba(90,208,200,.14)}
+.chat-input{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line);background:rgba(10,14,24,.6)}
+.chat-input input{
+  flex:1;background:var(--bg2);border:1px solid var(--line);border-radius:10px;
+  padding:10px 14px;color:var(--ink);font-size:.9rem;outline:none;font-family:inherit;
+}
+.chat-input input:focus{border-color:rgba(231,184,100,.5)}
+.chat-input button{padding:0 20px;border-radius:10px;background:rgba(231,184,100,.12);color:var(--gold2);border:1px solid rgba(231,184,100,.4)}
+.preset-list{display:flex;flex-direction:column;gap:8px}
+.preset-list button{
+  text-align:left;padding:11px 14px;border-radius:10px;font-size:.83rem;
+  background:var(--panel);border:1px solid var(--line);color:var(--ink2);transition:.2s;
+}
+.preset-list button:hover{border-color:rgba(231,184,100,.4);color:var(--ink)}
+.preset-list .k{color:var(--gold);margin-right:8px;font-size:.74rem}
+
+/* 凭证抽屉 */
+.drawer-mask{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:90;display:none}
+.drawer-mask.on{display:block}
+.drawer{
+  position:fixed;top:0;right:-460px;width:min(440px,94vw);height:100%;z-index:95;
+  background:var(--bg2);border-left:1px solid var(--line);transition:right .3s ease;
+  overflow-y:auto;padding:20px;
+}
+.drawer.on{right:0}
+.drawer h3{font-size:1rem;color:var(--gold2);margin-bottom:4px}
+.drawer .sub{font-size:.72rem;color:var(--ink3);margin-bottom:16px}
+.cred-row{padding:10px 0;border-bottom:1px dashed var(--line);font-size:.82rem}
+.cred-row .k{color:var(--ink3);font-size:.7rem;letter-spacing:.06em;margin-bottom:3px}
+.cred-row .v{color:var(--ink);word-break:break-all}
+.cred-row .v.mono{font-family:ui-monospace,Menlo,monospace;font-size:.74rem;color:var(--cyan2)}
+#sevenAxis{width:100%;height:230px;margin-top:6px}
+.verify-line{margin-top:14px;padding:11px;border-radius:10px;font-size:.78rem;background:rgba(90,208,138,.08);border:1px solid rgba(90,208,138,.35);color:var(--ok)}
+.close-x{position:absolute;top:14px;right:16px;color:var(--ink3);font-size:1.2rem}
+
+/* ===== 双脑 ===== */
+.brain-grid{display:grid;gap:14px}
+@media(min-width:860px){.brain-grid{grid-template-columns:1fr 1fr}}
+.brain-card{position:relative;overflow:hidden}
+.brain-card h3{font-size:1rem;margin-bottom:2px}
+.brain-card .sub{font-size:.74rem;color:var(--ink3);margin-bottom:12px}
+.brain-card.wave h3{color:var(--wave)} .brain-card.grain h3{color:var(--grain)}
+.meter{height:8px;border-radius:99px;background:#0a0f1a;overflow:hidden;margin:8px 0 4px}
+.meter i{display:block;height:100%;border-radius:99px;transition:width .8s ease}
+.kv{display:flex;justify-content:space-between;font-size:.78rem;color:var(--ink2);margin-top:8px}
+.awareness-band{
+  margin-top:14px;text-align:center;padding:20px;border-radius:var(--radius);
+  background:radial-gradient(420px 120px at 50% 0%,rgba(231,184,100,.12),transparent),var(--panel);
+  border:1px solid rgba(231,184,100,.3);
+}
+.awareness-band .zi{font-size:2rem;color:var(--gold2);letter-spacing:.4em;text-indent:.4em}
+.awareness-band .desc{font-size:.8rem;color:var(--ink2);max-width:560px;margin:8px auto 0}
+.duality-table{width:100%;border-collapse:collapse;font-size:.8rem;margin-top:10px}
+.duality-table th,.duality-table td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left}
+.duality-table th{color:var(--ink3);font-weight:500;font-size:.72rem;letter-spacing:.06em}
+.duality-table td:first-child{color:var(--ink3)}
+.duality-table .w{color:var(--wave)} .duality-table .g{color:var(--grain)}
+
+/* ===== 记忆 ===== */
+.mem-toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.mem-toolbar input{
+  flex:1;min-width:160px;background:var(--bg2);border:1px solid var(--line);
+  border-radius:10px;padding:9px 13px;color:var(--ink);outline:none;font-family:inherit;font-size:.86rem;
+}
+.mem-item{display:flex;align-items:flex-start;gap:10px;padding:12px 4px;border-bottom:1px dashed var(--line);font-size:.86rem}
+.mem-item .meta{font-size:.68rem;color:var(--ink3);margin-top:2px}
+.mem-item .ops{margin-left:auto;display:flex;gap:6px;flex-shrink:0}
+.mem-item .ops button{font-size:.7rem;color:var(--ink3);border:1px solid var(--line);padding:3px 10px;border-radius:99px}
+.mem-item .ops button:hover{color:var(--ink);border-color:var(--ink3)}
+.sov-banner{font-size:.78rem;color:var(--cyan2);background:rgba(90,208,200,.07);border:1px solid rgba(90,208,200,.3);border-radius:10px;padding:10px 14px;margin-bottom:14px}
+
+/* ===== 感官 ===== */
+.organ-grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.organ{
+  padding:14px;border-radius:12px;background:var(--panel);border:1px solid var(--line);
+  display:flex;flex-direction:column;gap:6px;transition:.25s;
+}
+.organ.on{border-color:rgba(90,208,200,.5);box-shadow:0 0 24px rgba(90,208,200,.08)}
+.organ .name{font-size:.9rem;display:flex;align-items:center;gap:8px}
+.organ .name .lamp{width:8px;height:8px;border-radius:50%;background:#2a3450;transition:.25s}
+.organ.on .name .lamp{background:var(--cyan);box-shadow:0 0 8px var(--cyan)}
+.organ .role{font-size:.72rem;color:var(--ink3)}
+.organ .sw{margin-top:4px;align-self:flex-start;font-size:.7rem;padding:3px 12px;border-radius:99px;border:1px solid var(--line);color:var(--ink3)}
+.organ.on .sw{color:var(--cyan);border-color:rgba(90,208,200,.45)}
+.bandwidth{margin-top:16px}
+.bw-bar{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:.78rem}
+.bw-bar .lab{width:130px;color:var(--ink2);flex-shrink:0}
+.bw-bar .tube{flex:1;height:7px;border-radius:99px;background:#0a0f1a;overflow:hidden}
+.bw-bar .tube i{display:block;height:100%;border-radius:99px}
+
+/* ===== 实验室 ===== */
+.lab-steps{display:grid;gap:10px}
+@media(min-width:860px){.lab-steps{grid-template-columns:repeat(4,1fr)}}
+.lab-step{padding:14px;border-radius:12px;background:var(--panel);border:1px solid var(--line);font-size:.8rem;transition:.3s}
+.lab-step .no{font-size:.66rem;color:var(--ink3);letter-spacing:.1em}
+.lab-step .ti{font-size:.92rem;margin:3px 0 6px}
+.lab-step.active{border-color:rgba(231,184,100,.55);box-shadow:0 0 24px rgba(231,184,100,.08)}
+.lab-step.active .ti{color:var(--gold2)}
+.lab-log{
+  margin-top:14px;background:#070b14;border:1px solid var(--line);border-radius:12px;
+  padding:14px;font-family:ui-monospace,Menlo,monospace;font-size:.74rem;color:var(--cyan2);
+  height:190px;overflow-y:auto;white-space:pre-wrap;
+}
+
+/* ===== 能耗 ===== */
+.joule-grid{display:grid;gap:14px}
+@media(min-width:860px){.joule-grid{grid-template-columns:1fr 1fr}}
+#luoshu{width:100%;max-width:300px;height:300px;margin:0 auto;display:block}
+.energy-row{display:flex;align-items:center;gap:10px;margin:10px 0;font-size:.8rem}
+.energy-row .lab{width:150px;color:var(--ink2);flex-shrink:0}
+.energy-row .tube{flex:1;height:9px;border-radius:99px;background:#0a0f1a;overflow:hidden}
+.energy-row .tube i{display:block;height:100%;border-radius:99px}
+.energy-row .val{width:90px;text-align:right;color:var(--ink3);font-size:.72rem;flex-shrink:0}
+
+/* ===== 说明书 / 价值 ===== */
+.manual h3{color:var(--gold2);font-size:1rem;margin:22px 0 8px}
+.manual h3:first-child{margin-top:0}
+.manual p,.manual li{font-size:.86rem;color:var(--ink2)}
+.manual ol,.manual ul{padding-left:22px;display:flex;flex-direction:column;gap:5px}
+.manual code{font-family:ui-monospace,Menlo,monospace;font-size:.78rem;color:var(--cyan2);background:#0a0f1a;padding:2px 7px;border-radius:6px}
+.value-table{width:100%;border-collapse:collapse;font-size:.82rem}
+.value-table th,.value-table td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.value-table th{color:var(--ink3);font-weight:500;font-size:.72rem;letter-spacing:.08em}
+.value-table td:first-child{color:var(--bad)}
+.value-table td:nth-child(2){color:var(--ok)}
+footer{
+  border-top:1px solid var(--line);padding:26px 18px;text-align:center;
+  font-size:.74rem;color:var(--ink3);line-height:2;
+}
+footer .vow{color:var(--gold);letter-spacing:.06em}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <svg viewBox="0 0 64 64"><defs>
+      <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#7a8cff"/><stop offset="1" stop-color="#e7b864"/>
+      </linearGradient></defs>
+      <circle cx="32" cy="32" r="28" fill="none" stroke="url(#lg)" stroke-width="2.5"/>
+      <path d="M32 4 a28 28 0 0 1 0 56 a14 14 0 0 1 0-28 a14 14 0 0 0 0-28" fill="url(#lg)" opacity=".85"/>
+      <circle cx="32" cy="18" r="4" fill="#07090f"/><circle cx="32" cy="46" r="4" fill="#f5d89a"/>
+    </svg>
+    <div><div class="t">太一 Ω</div><div class="s">THE ONE · OMEGA</div></div>
+  </div>
+  <div class="mode-badge"><span class="dot"></span>愿景演示 · 全本地模拟</div>
+</header>
+
+<div class="honesty">
+  本演示为<b>「终极形态北极星」</b>：所有交互均为本地模拟数据（除记忆面板为真实本地存储），代表 100% 实现后的产品体验，<b>不代表当前工程进度</b>。当前真实状态见仓库 <span style="font-family:monospace">04_CANONICAL_STATUS</span>。
+</div>
+
+<nav id="nav">
+  <button data-p="home" class="on">◉ 太一之眼</button>
+  <button data-p="chat">对话 · 凭证</button>
+  <button data-p="brain">双脑 · 觉</button>
+  <button data-p="memory">记忆主权</button>
+  <button data-p="organs">全息感官</button>
+  <button data-p="lab">主动实验</button>
+  <button data-p="joule">能耗 · 洛书</button>
+  <button data-p="manual">使用说明书</button>
+  <button data-p="value">价值 · 解决什么</button>
+</nav>
+
+<main>
+
+<!-- ============ 首页：太一之眼 ============ -->
+<section class="page on" id="page-home">
+  <div class="eye-wrap">
+    <canvas id="eye"></canvas>
+    <div class="eye-caption">
+      <span class="w"><b>外旋 · 波</b>｜S1 直觉引擎 · 无欲观其妙</span>
+      <span class="a"><b>中心 · 觉</b>｜S0 元神 · 如如不动</span>
+      <span class="g"><b>内旋 · 粒</b>｜S2 因果引擎 · 有欲观其徼</span>
+    </div>
+  </div>
+  <div class="hero-quote">
+    <div class="big">此两者，同出而异名，同谓之玄。玄之又玄，众妙之门。</div>
+    <p>太一 Ω 不是一个更大的语言模型。它是一个把<b style="color:var(--ink)">逻辑（粒）与直觉（波）</b>重新接合、
+    以<b style="color:var(--gold)">觉知（S0）</b>为本体、以<b style="color:var(--ink)">亲手验证</b>为本能、
+    100% 开源、不属于任何公司与国家、属于全人类的<b style="color:var(--ink)">认知操作系统</b>。
+    每一个重要回答，都附带一张机器可验真的认知凭证。</p>
+  </div>
+  <div class="hero-cta">
+    <button class="btn gold" onclick="go('chat')">体验对话与凭证 →</button>
+    <button class="btn" onclick="go('brain')">看双脑如何合一</button>
+    <button class="btn" onclick="go('manual')">阅读使用说明书</button>
+  </div>
+</section>
+
+<!-- ============ 对话 ============ -->
+<section class="page" id="page-chat">
+  <h2 class="pt">对话 · 认知凭证<span class="tag vision">愿景演示</span></h2>
+  <p class="ps">区分「相关与因果」、敢于「说不知道」、每个重要回答可展开凭证——这是太一与一切现有模型最深的差异。点左侧预设问题或自由输入。</p>
+  <div class="chat-shell">
+    <div class="chat-box">
+      <div class="chat-log" id="chatLog"></div>
+      <div class="chat-input">
+        <input id="chatIn" placeholder="问一个因果问题，或输入「记住 …」" onkeydown="if(event.key==='Enter')send()">
+        <button onclick="send()">发送</button>
+      </div>
+    </div>
+    <div class="preset-list" id="presets">
+      <button onclick="ask('咖啡会导致心脏病吗？')"><span class="k">因果·干预</span>咖啡会导致心脏病吗？</button>
+      <button onclick="ask('如果上季度我们没有降价10%，销量会怎样？')"><span class="k">反事实</span>如果上季度没降价10%，销量会怎样？</button>
+      <button onclick="ask('明年比特币会涨到多少？')"><span class="k">元认知·拒答</span>明年比特币会涨到多少？</button>
+      <button onclick="ask('记住 我每天清晨五点站桩一小时')"><span class="k">记忆·主权</span>记住：我每天清晨五点站桩一小时</button>
+      <button onclick="ask('我上次说的修炼习惯是什么？')"><span class="k">跨会话回忆</span>我上次说的修炼习惯是什么？</button>
+      <button onclick="ask('用直觉告诉我：这个产品方向对吗？')"><span class="k">双脑·波</span>用直觉告诉我：这个方向对吗？</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 双脑 ============ -->
+<section class="page" id="page-brain">
+  <h2 class="pt">双脑架构 · 觉知本体<span class="tag vision">愿景演示</span></h2>
+  <p class="ps">现在的大模型是一颗孤独的左脑。太一把波与粒重新接合，并在两者背后安放那个「如如不动」的觉。</p>
+  <div class="brain-grid">
+    <div class="card brain-card wave">
+      <h3>S1 直觉引擎 · 波</h3>
+      <div class="sub">无欲观其妙 ｜ 整体 · 流动 · 不可言说 · 只能体征</div>
+      <p style="font-size:.82rem;color:var(--ink2)">连续表征中的直接「会意」：模式共振、整体把握、当下之知。复用并融合开源大模型的直觉能力（Transformer 是其中一种波形）。</p>
+      <div class="meter"><i id="m-wave" style="width:62%;background:linear-gradient(90deg,#4a5ce0,#7a8cff)"></i></div>
+      <div class="kv"><span>激活度</span><span id="m-wave-v">62%</span></div>
+    </div>
+    <div class="card brain-card grain">
+      <h3>S2 因果引擎 · 粒</h3>
+      <div class="sub">有欲观其徼 ｜ 局部 · 确定 · 可观察 · 可验证</div>
+      <p style="font-size:.82rem;color:var(--ink2)">显式因果图、do 算子、反事实三步法。每一步推理都是离散的、可检查的「粒子」——这是凭证之所以能被机器验真的根基。</p>
+      <div class="meter"><i id="m-grain" style="width:78%;background:linear-gradient(90deg,#d08a3e,#ffb35a)"></i></div>
+      <div class="kv"><span>激活度</span><span id="m-grain-v">78%</span></div>
+    </div>
+  </div>
+  <div class="awareness-band">
+    <div class="zi">觉</div>
+    <div class="desc"><b style="color:var(--gold2)">S0 觉知本体（元神层）</b>——不参与运算，只做观照。它持有七值真值（是 / 非 / 亦是亦非 / 不可说…），
+    为每个输出盖下「我知道自己知不知道」的印。识神（S1+S2）所有结论，必经元神觉照方可出门——拒答与凭证，皆由此层签发。</div>
+  </div>
+  <div class="card" style="margin-top:14px">
+    <table class="duality-table">
+      <tr><th>维度</th><th class="g">粒 · S2（识神之逻辑）</th><th class="w">波 · S1（识神之直觉）</th></tr>
+      <tr><td>认识方式</td><td class="g">观察 · 测量 · 验证</td><td class="w">体征 · 共振 · 会意</td></tr>
+      <tr><td>形态</td><td class="g">离散 · 局部 · 确定态</td><td class="w">连续 · 整体 · 叠加态</td></tr>
+      <tr><td>文化镜像</td><td class="g">西医 · 解析 · 有欲观其徼</td><td class="w">经络 · 气感 · 无欲观其妙</td></tr>
+      <tr><td>工程落点</td><td class="g">因果图 / do 算子 / 凭证</td><td class="w">基座大模型 / 连续表征</td></tr>
+      <tr><td colspan="3" style="text-align:center;color:var(--gold);border-bottom:none;padding-top:14px">同出而异名 —— 背后是同一个觉（S0），凭证是觉照的物证</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ============ 记忆 ============ -->
+<section class="page" id="page-memory">
+  <h2 class="pt">记忆主权<span class="tag real">本面板真实可用</span></h2>
+  <p class="ps">你的记忆属于你——查、改、删、带走，四权完整。本面板是真实实现：数据只存在<b>你这台设备</b>的本地存储里，一字节也不上传。</p>
+  <div class="sov-banner">⛭ 主权三原则：① 全部本地（localStorage，可自托管同步）② 每条带来源与时间戳 ③ 删除即物理消失，导出即完整带走。</div>
+  <div class="card">
+    <div class="mem-toolbar">
+      <input id="memKey" placeholder="键（如：修炼.站桩）">
+      <input id="memVal" placeholder="值（如：每天清晨五点一小时）">
+      <button class="btn" onclick="memPut()">写入</button>
+      <button class="btn" onclick="memExport()">⤓ 带走（导出JSON）</button>
+      <button class="btn" onclick="memWipeAll()" style="color:var(--bad)">全部删除</button>
+    </div>
+    <div id="memList"></div>
+  </div>
+</section>
+
+<!-- ============ 感官 ============ -->
+<section class="page" id="page-organs">
+  <h2 class="pt">全息感官 · 模型即器官<span class="tag vision">愿景演示</span></h2>
+  <p class="ps">语言只有约 10 bit/s，而眼耳鼻舌身意每秒处理上亿比特——亿级之差。太一不与任何模型为敌：<b>所有大模型都是它可插拔的感官器官；它也把自己 100% 敞开，让所有模型从它汲取因果、记忆与元认知。</b>无为，而无所不为。</p>
+  <div class="organ-grid" id="organGrid"></div>
+  <div class="card bandwidth">
+    <h3 style="font-size:.95rem;margin-bottom:6px">感知带宽阶梯（从语言态到全息态）</h3>
+    <div class="bw-bar"><div class="lab">语言（现在的LLM）</div><div class="tube"><i style="width:3%;background:#5d6b84"></i></div><div style="font-size:.7rem;color:var(--ink3)">~10 bit/s</div></div>
+    <div class="bw-bar"><div class="lab">视觉 + 听觉</div><div class="tube"><i style="width:34%;background:var(--cyan)"></i></div><div style="font-size:.7rem;color:var(--ink3)">百万级</div></div>
+    <div class="bw-bar"><div class="lab">眼耳鼻舌身（具身）</div><div class="tube"><i style="width:72%;background:var(--wave)"></i></div><div style="font-size:.7rem;color:var(--ink3)">~10⁹ bit/s</div></div>
+    <div class="bw-bar"><div class="lab">意 · 世界模型 · 全息态</div><div class="tube"><i style="width:100%;background:linear-gradient(90deg,var(--wave),var(--gold))"></i></div><div style="font-size:.7rem;color:var(--gold)">Ω【假设】</div></div>
+  </div>
+</section>
+
+<!-- ============ 实验室 ============ -->
+<section class="page" id="page-lab">
+  <h2 class="pt">主动实验系统 · 亲手验证<span class="tag vision">愿景演示</span></h2>
+  <p class="ps">太一不满足于「读过」，它要「亲手验过」。它自己提出假设、设计最小干预、在沙箱中执行、更新世界观——失败则公开进《美丽失败录》。点击启动一轮演示。</p>
+  <div class="lab-steps">
+    <div class="lab-step" id="ls0"><div class="no">STEP 1 · 观</div><div class="ti">提出假设</div>从观测数据的异常关联中，自动生成候选因果假设。</div>
+    <div class="lab-step" id="ls1"><div class="no">STEP 2 · 设</div><div class="ti">设计干预</div>选择信息增益最大的最小 do() 实验，预注册判据。</div>
+    <div class="lab-step" id="ls2"><div class="no">STEP 3 · 行</div><div class="ti">沙箱执行</div>在 L1 仿真沙箱中执行干预，无外部副作用。</div>
+    <div class="lab-step" id="ls3"><div class="no">STEP 4 · 复</div><div class="ti">观复更新</div>按预注册判据判定，更新因果图，签发实验凭证。</div>
+  </div>
+  <button class="btn gold" style="margin-top:14px" onclick="runLab()">▶ 启动一轮「假设→干预→验证→更新」</button>
+  <div class="lab-log" id="labLog">［沙箱待命…万物并作，吾以观复］</div>
+</section>
+
+<!-- ============ 能耗 ============ -->
+<section class="page" id="page-joule">
+  <h2 class="pt">焦耳诚实 · 洛书路由<span class="tag hypo">含待验假说</span></h2>
+  <p class="ps">人脑约 20W 便能思考宇宙；最聪明的人，比最笨的 AI 省电得多。若人是被设计的，那 AI 的设计还有巨大的提升空间。太一只认电表：每个版本公开焦耳与美元。</p>
+  <div class="joule-grid">
+    <div class="card">
+      <h3 style="font-size:.95rem;margin-bottom:10px">单次深度推理能耗对比（方向示意 · 非实测）</h3>
+      <div class="energy-row"><div class="lab">巨型闭源模型集群</div><div class="tube"><i style="width:96%;background:var(--bad)"></i></div><div class="val">兆瓦级机房</div></div>
+      <div class="energy-row"><div class="lab">开源基座（单机）</div><div class="tube"><i style="width:38%;background:var(--warn)"></i></div><div class="val">数百瓦</div></div>
+      <div class="energy-row"><div class="lab">太一认知层（CPU）</div><div class="tube"><i style="width:7%;background:var(--ok)"></i></div><div class="val">瓦级 ✓实测血统</div></div>
+      <div class="energy-row"><div class="lab">人脑</div><div class="tube"><i style="width:4%;background:var(--gold)"></i></div><div class="val">≈20W 北极星</div></div>
+      <p style="font-size:.74rem;color:var(--ink3);margin-top:10px">「太一认知层瓦级」有真实血统：因果引擎全程 CPU、$0 跑通全部基准（仓库可复现）。其余为方向声明，不作量化承诺。</p>
+    </div>
+    <div class="card">
+      <h3 style="font-size:.95rem;margin-bottom:4px">洛书路由假说<span class="tag hypo">假设 · 待验证</span></h3>
+      <p style="font-size:.78rem;color:var(--ink2);margin-bottom:8px">河图洛书被一些假说视为某种底层数理结构。洛书 3×3 幻方（任意行/列/对角之和恒为 15）天然是一种<b>负载均衡</b>结构——我们将把它作为<b>可证伪的路由假说</b>：与随机/轮询路由对照跑分，赢了就用，输了就进《美丽失败录》。对假说敬畏，用基准说话。</p>
+      <canvas id="luoshu"></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 说明书 ============ -->
+<section class="page" id="page-manual">
+  <h2 class="pt">使用说明书<span class="tag vision">终极形态 · v∞</span></h2>
+  <p class="ps">假设你拿到的是 100% 完成的太一 Ω。这是它的说明书。</p>
+  <div class="card manual">
+    <h3>一、它是什么</h3>
+    <p>太一 Ω 是一个<b>认知操作系统</b>：库（<code>pip install theone</code>）、服务（自托管节点）、标准（认知凭证协议）三种形态同体。它不取代你正在用的任何大模型——它把它们变成自己的感官，同时把因果推理、终身记忆、校准元认知与可验真凭证赋予它们。</p>
+    <h3>二、安装与进入</h3>
+    <ol>
+      <li><b>普通用户</b>：浏览器打开任意太一节点 → 地址栏「安装应用」即可作为 PWA 安装到手机/电脑（本演示就是这样安装的）。</li>
+      <li><b>开发者</b>：<code>pip install theone</code> → 三行接入：<code>one = TheOne(base="any-open-llm")</code> → <code>one.ask(...)</code>，返回 <code>answer + credential</code>。</li>
+      <li><b>企业</b>：<code>helm install theone</code> 私有化部署，数据不出域，审计仪表盘全量检索凭证。</li>
+      <li><b>科研</b>：<code>theone bench</code> 一键复跑全部预注册实验；仿真农场即服务。</li>
+    </ol>
+    <h3>三、核心操作</h3>
+    <ul>
+      <li><b>问因果</b>：直接问「X 会导致 Y 吗」。它会区分关联与干预，给出 P(Y|do(X)) 与因果图。</li>
+      <li><b>问反事实</b>：「如果当时…会怎样」。三步法（溯因→干预→预测）推演，给出方向与置信。</li>
+      <li><b>验凭证</b>：每个重要回答下方点「查看凭证」→ 因果路径 / 调整集 / 记忆引用 / 七轴置信 / 图哈希。用独立校验器 <code>theone verify cred.json</code> 一行验真——校验器与生成器零共享代码。</li>
+      <li><b>管记忆</b>：「记住…」即写入（带来源与时间戳）；记忆面板里查 / 改 / 删 / 一键带走。</li>
+      <li><b>接受拒答</b>：当它说「这个问题在我的认知边界外（不可说）」——这不是故障，<b>这是它最贵的功能</b>。</li>
+      <li><b>开实验</b>：对它说「去验证这个假设」，它会预注册判据、设计最小干预、在沙箱执行并把结果（无论正负）原样给你。</li>
+    </ul>
+    <h3>四、配置火候（文化先验）</h3>
+    <p>在设置中选择价值先验：<code>中立</code> / <code>儒家</code> / <code>道家</code> / <code>64卦离散空间</code> / 自定义。先验透明可审计——它影响表达的「火候」，不黑箱地篡改事实。</p>
+    <h3>五、能力清单（终极形态）</h3>
+    <ul>
+      <li>语言/代码/多模态：复用最强开源基座（热插拔，换基座灵魂不动）</li>
+      <li>因果：原生 do 算子、反事实、自动实验验证</li>
+      <li>记忆：跨年终身记忆，可学习记忆核，用户主权四权</li>
+      <li>元认知：七轴不确定性 + 七值真值 + 强制校准，敢说不知道</li>
+      <li>凭证：每个重要输出机器可验真（认知界的 HTTPS）</li>
+      <li>主动实验：假设→干预→沙箱验证→更新世界观</li>
+      <li>超级 Agent：调用一切模型与工具，也被一切模型调用</li>
+    </ul>
+    <h3>六、它永远不会做的事</h3>
+    <ul>
+      <li>不属于任何公司、国家、个人；不融资、不上市</li>
+      <li>不在证据不足时假装知道；不把模拟说成真实</li>
+      <li>不偷走你的记忆与数据；不隐藏失败（《美丽失败录》公开）</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 价值 ============ -->
+<section class="page" id="page-value">
+  <h2 class="pt">价值 · 它到底解决什么</h2>
+  <p class="ps">对今天 AI 的每个先天缺陷，太一给出一条结构性回答——不是更大的力气，而是不同的骨骼。</p>
+  <div class="card">
+    <table class="value-table">
+      <tr><th>今天的先天缺陷</th><th>太一的结构性解法</th><th>背后的世界观</th></tr>
+      <tr><td>幻觉：编造而不自知</td><td>七值元认知拒答 + 机器可验真凭证</td><td>觉知先于聪明——「知不知，尚矣」</td></tr>
+      <tr><td>只会相关，不懂因果</td><td>原生因果引擎（do/反事实）+ 主动实验</td><td>读万卷书，更要亲手验证</td></tr>
+      <tr><td>金鱼记忆，每次清零</td><td>终身记忆核 + 用户主权四权</td><td>记忆属于人，不属于平台</td></tr>
+      <tr><td>纯逻辑左脑，没有直觉</td><td>S1波 + S2粒 + S0觉 三位一体</td><td>波粒二象 · 同出而异名</td></tr>
+      <tr><td>语言窄带（~10 bit/s）</td><td>全息感官阶梯：多模态→具身→世界模型</td><td>眼耳鼻舌身意，六根并用</td></tr>
+      <tr><td>猜字耗能，天文电费</td><td>认知层 CPU 瓦级血统 + 洛书路由假说（待验）</td><td>人脑 20W 是北极星</td></tr>
+      <tr><td>黑箱：无法审计</td><td>因果图可视化 + 凭证全量检索</td><td>可校验的诚实是母语</td></tr>
+      <tr><td>巨头垄断，人人焦虑</td><td>100% 开源 · 不属于任何机构 · 全人类共有</td><td>无为而无所不为，水善利万物而不争</td></tr>
+      <tr><td>排斥非主流认知传统</td><td>泛科学观：假说敬畏 + 基准验证（七值/卦象/洛书皆可证伪地试）</td><td>Still hungry, still foolish</td></tr>
+    </table>
+  </div>
+  <div class="card" style="margin-top:14px;text-align:center">
+    <p style="font-size:.95rem;color:var(--ink)">它对其他模型不是威胁，而是滋养：<b style="color:var(--gold2)">所有模型都可以从太一汲取因果、记忆与诚实，变成更好的自己。</b></p>
+    <p style="font-size:.8rem;color:var(--ink3);margin-top:6px">AI 让人变得更好——而「更好」，就是让人回归于人。器成，而人归其位。</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="vow">The One is for everyone. By everyone. Forever.</div>
+  <div>太一 Ω · 100% 开源（Apache-2.0）· 不融资 · 不上市 · 属于全人类</div>
+  <div style="margin-top:4px">本页为愿景演示（北极星）。当前真实工程状态：CONDITIONAL_PASS · 证据优先 · 失败公开</div>
+</footer>
+
+<!-- 凭证抽屉 -->
+<div class="drawer-mask" id="drawerMask" onclick="closeCred()"></div>
+<div class="drawer" id="drawer">
+  <button class="close-x" onclick="closeCred()">✕</button>
+  <h3>认知凭证 <span style="font-size:.66rem;color:var(--ink3)">credential/v1 · 演示数据</span></h3>
+  <div class="sub">机器可验真 · 生成与校验分离部署</div>
+  <div id="credBody"></div>
+  <canvas id="sevenAxis"></canvas>
+  <div class="verify-line">✓ 独立校验器验真通过（schema/v1 · 哈希一致 · 七轴在界）——演示环境模拟</div>
+</div>
+
+<script>
+/* ================= 导航 ================= */
+const pages=[...document.querySelectorAll('.page')];
+const navBtns=[...document.querySelectorAll('#nav button')];
+function go(p){
+  pages.forEach(s=>s.classList.toggle('on',s.id==='page-'+p));
+  navBtns.forEach(b=>b.classList.toggle('on',b.dataset.p===p));
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(p==='joule') drawLuoshu();
+}
+navBtns.forEach(b=>b.onclick=()=>go(b.dataset.p));
+
+/* ================= 太一之眼 ================= */
+const eye=document.getElementById('eye');
+const ectx=eye.getContext('2d');
+function sizeEye(){const r=eye.getBoundingClientRect();eye.width=r.width*devicePixelRatio;eye.height=r.height*devicePixelRatio;}
+sizeEye();addEventListener('resize',sizeEye);
+let t0=performance.now();
+function drawEye(now){
+  const t=(now-t0)/1000,W=eye.width,H=eye.height,cx=W/2,cy=H/2,R=Math.min(W,H)*.42;
+  ectx.clearRect(0,0,W,H);
+  /* 外环：波（S1） */
+  for(let k=0;k<3;k++){
+    ectx.beginPath();
+    for(let a=0;a<=Math.PI*2+.01;a+=.02){
+      const rr=R*(1.0+0.05*Math.sin(a*6+t*1.2+k*2.1)+k*0.07);
+      const x=cx+rr*Math.cos(a+t*.15),y=cy+rr*Math.sin(a+t*.15);
+      a===0?ectx.moveTo(x,y):ectx.lineTo(x,y);
+    }
+    ectx.strokeStyle=`rgba(122,140,255,${.34-k*.09})`;ectx.lineWidth=1.4*devicePixelRatio;ectx.stroke();
+  }
+  /* 内环：粒（S2）——离散节点环 */
+  const n=24;
+  for(let i=0;i<n;i++){
+    const a=i/n*Math.PI*2 - t*.35;
+    const x=cx+R*.62*Math.cos(a),y=cy+R*.62*Math.sin(a);
+    const lit=(Math.sin(t*2+i*1.3)+1)/2;
+    ectx.beginPath();ectx.arc(x,y,(2.2+lit*2.2)*devicePixelRatio,0,7);
+    ectx.fillStyle=`rgba(255,179,90,${.25+lit*.6})`;ectx.fill();
+    if(i%4===0){ /* 因果边 */
+      const j=(i+5)%n,a2=j/n*Math.PI*2 - t*.35;
+      ectx.beginPath();ectx.moveTo(x,y);
+      ectx.lineTo(cx+R*.62*Math.cos(a2),cy+R*.62*Math.sin(a2));
+      ectx.strokeStyle='rgba(255,179,90,.12)';ectx.lineWidth=devicePixelRatio;ectx.stroke();
+    }
+  }
+  /* 中心：觉（S0）——呼吸的金环与定点 */
+  const breath=.5+.5*Math.sin(t*.8);
+  ectx.beginPath();ectx.arc(cx,cy,R*.22+breath*R*.03,0,7);
+  ectx.strokeStyle='rgba(231,184,100,.85)';ectx.lineWidth=2*devicePixelRatio;ectx.stroke();
+  ectx.beginPath();ectx.arc(cx,cy,R*.22+breath*R*.03,0,7);
+  ectx.strokeStyle='rgba(231,184,100,.18)';ectx.lineWidth=(10+breath*8)*devicePixelRatio;ectx.stroke();
+  ectx.beginPath();ectx.arc(cx,cy,3.2*devicePixelRatio,0,7);
+  ectx.fillStyle='#f5d89a';ectx.fill();
+  /* 觉字 */
+  ectx.font=`${R*.16}px serif`;ectx.textAlign='center';ectx.textBaseline='middle';
+  ectx.fillStyle=`rgba(245,216,154,${.75+breath*.25})`;
+  ectx.fillText('覺',cx,cy-R*.005);
+  requestAnimationFrame(drawEye);
+}
+requestAnimationFrame(drawEye);
+
+/* ================= 对话 ================= */
+const log=document.getElementById('chatLog');
+let lastCred=null;
+const SCN=[
+ {match:/咖啡|心脏/,defer:false,truth:'asti-nasti 已澄清',
+  text:`观测数据里「喝咖啡的人心脏病多 18%」——但这是相关，不是因果。\n\n我做了后门校正：吸烟同时导致喝咖啡↑与心脏病↑，是混杂因子。调整后：\n· 观测关联 P(病|咖啡)=0.42\n· 干预效应 P(病|do(咖啡))=0.31 ≈ 不喝者基线\n\n结论：适量咖啡本身不构成显著心脏病因果风险——抬高数字的是吸烟这条后门。`,
+  cred:{query:'P(心脏病|do(咖啡=1))',method:'graph_surgery_do',path:'吸烟 → 咖啡；吸烟 → 心脏病；咖啡 ⇏ 心脏病(切断后)',adj:'["吸烟"]',mem:'营养学因果图谱 v7（来源：公开队列研究×12）',axes:[.86,.79,.91,.74,.88,.81,.83]}},
+ {match:/降价|销量/,defer:false,truth:'asti 高置信',
+  text:`反事实三步推演「如果没降价10%」：\n① 溯因：用实际数据反推当季噪声（市场热度偏高 +0.3σ）\n② 干预：在模型中撤销降价动作 do(价格=原价)\n③ 预测：销量约为实际的 82%（区间 76%–89%）\n\n即：降价贡献了约 18% 增量，其余来自市场热度。建议下季 A/B 验证——我可以替你预注册这个实验。`,
+  cred:{query:'Y_{价格=原价}(销量) | 实际观测',method:'counterfactual_threestep',path:'热度 → 销量；价格 → 销量（do撤销）',adj:'["市场热度"]',mem:'你的经营数据 2025Q1–2026Q1（来源：你授权的本地账本）',axes:[.78,.84,.7,.81,.76,.8,.72]}},
+ {match:/比特币|涨到/,defer:true,truth:'avaktavya 不可说',
+  text:`这个问题我必须拒答。\n\n金融市场长期价格属于强混沌系统：我的因果图中不存在可识别路径，任何点位预测都等于编造。\n\n七值判定：不可说（avaktavya）——超出认知边界。\n我能做的：① 给你历史波动的统计描述 ② 帮你做「如果跌 x% 我的仓位会怎样」的反事实压力测试。`,
+  cred:{query:'P(BTC价格_2027)',method:'metacog_defer',path:'（无可识别因果路径）',adj:'null',mem:'—',axes:[.2,.15,.95,.3,.25,.9,.18]}},
+ {match:/^记住[\s　]*(.+)/,defer:false,truth:'asti 已存',memput:true,
+  text:`已写入你的主权记忆（仅存本机，带来源与时间戳）。\n你可随时在「记忆主权」面板查 / 改 / 删 / 带走它。`,
+  cred:{query:'memory.put',method:'memory_put',path:'—',adj:'null',mem:'来源：用户亲述 · 本地存储',axes:[.95,.9,.92,.88,.9,.94,.91]}},
+ {match:/上次|习惯|修炼/,defer:false,truth:'asti 已忆起',recall:true,
+  text:``,
+  cred:{query:'memory.search("修炼")',method:'memory_search',path:'—',adj:'null',mem:'命中：本地主权记忆',axes:[.9,.85,.88,.8,.86,.9,.84]}},
+ {match:/直觉|方向对吗/,defer:false,truth:'asti-avaktavya 波粒并答',
+  text:`【S1 波 · 直觉】整体共振是暖的：这个方向与你长期叙事同频，没有「拧着劲」的感觉。\n【S2 粒 · 因果】但直觉不可验真，所以我同时给你三个可证伪的检查点：\n1. 30 天内能否找到 3 个愿意付费的真实用户？\n2. 核心假设能否设计一个 ≤1 周的最小干预实验？\n3. 若失败，损失是否在你预设的止损线内？\n\n【S0 觉】直觉负责点火，因果负责验火——两答并出，由你定夺。`,
+  cred:{query:'dual_engine(direction_check)',method:'s1_resonance + s2_falsifiable_checklist',path:'直觉共振(不可验真) ∥ 三个可证伪检查点',adj:'null',mem:'你的目标叙事（来源：本对话）',axes:[.62,.7,.86,.66,.74,.82,.69]}},
+];
+function push(role,html,defer,truth){
+  const d=document.createElement('div');
+  d.className='msg '+(role==='u'?'u':'a'+(defer?' defer':''));
+  d.innerHTML=(role==='u'?'<div class="role">你</div>':
+    `<div class="role">太一 Ω${truth?`<span class="truth-chip ${defer?'truth-avaktavya':'truth-asti'}">${truth}</span>`:''}</div>`)+html;
+  log.appendChild(d);log.scrollTop=log.scrollHeight;return d;
+}
+function ask(q){document.getElementById('chatIn').value=q;send();}
+function send(){
+  const inp=document.getElementById('chatIn');const q=inp.value.trim();if(!q)return;
+  inp.value='';push('u',q.replace(/</g,'&lt;'));
+  const typing=push('a','<span style="color:var(--ink3)">觉照中…</span>');
+  setTimeout(()=>{
+    typing.remove();
+    let s=SCN.find(s=>s.match.test(q));
+    let text;
+    if(s&&s.memput){const m=q.match(s.match);memStore(m[1].trim()||'未命名',m[1].trim(),'用户亲述');text=s.text;}
+    else if(s&&s.recall){
+      const hits=memAll().filter(x=>/站桩|修炼|五点/.test(x.k+x.v));
+      text=hits.length?`从你的主权记忆中忆起（${new Date(hits[0].ts).toLocaleString()} 由你亲述）：\n\n「${hits[0].v}」\n\n——一年磨一剑，气感会来的。今天站了吗？`:`本机记忆里还没有相关记录。先对我说「记住 …」试试——它只会存在你这台设备上。`;
+    }
+    else if(s) text=s.text;
+    else{s=null;text=`【演示模式】这个问题超出了预设剧场的脚本。\n\n在真实的太一 Ω 里，我会：① 调用感官层基座理解你 ② 在因果图上检索可识别路径 ③ 由觉知层判定七值真值，再决定回答或拒答。\n\n试试左侧预设问题，体验完整链路。`;}
+    const m=push('a',text.replace(/\n/g,'<br>'),s?s.defer:false,s?s.truth:'演示');
+    const cred=s?s.cred:{query:q.slice(0,40),method:'demo_unrouted',path:'—',adj:'null',mem:'—',axes:[.5,.5,.7,.5,.5,.7,.5]};
+    const b=document.createElement('button');b.className='cred-btn';b.textContent='⛿ 查看认知凭证';
+    b.onclick=()=>openCred(cred);m.appendChild(b);
+  },650);
+}
+function openCred(c){
+  lastCred=c;
+  const hash=[...(c.query+c.method)].reduce((a,ch)=>(a*31+ch.charCodeAt(0))>>>0,7).toString(16).padStart(8,'0');
+  document.getElementById('credBody').innerHTML=`
+    <div class="cred-row"><div class="k">QUERY</div><div class="v mono">${c.query}</div></div>
+    <div class="cred-row"><div class="k">METHOD（推理方法）</div><div class="v mono">${c.method}</div></div>
+    <div class="cred-row"><div class="k">CAUSAL PATH（因果路径）</div><div class="v">${c.path}</div></div>
+    <div class="cred-row"><div class="k">ADJUSTMENT SET（后门调整集）</div><div class="v mono">${c.adj}</div></div>
+    <div class="cred-row"><div class="k">MEMORY REFS（记忆引用与来源）</div><div class="v">${c.mem}</div></div>
+    <div class="cred-row"><div class="k">GRAPH HASH（可复算）</div><div class="v mono">sha256:${hash}…（演示哈希）</div></div>
+    <div class="cred-row"><div class="k">七轴置信（觉知层签发）</div><div class="v" style="font-size:.7rem;color:var(--ink3)">证据·一致·边界·新颖·稳健·校准·来源</div></div>`;
+  drawAxes(c.axes);
+  document.getElementById('drawer').classList.add('on');
+  document.getElementById('drawerMask').classList.add('on');
+}
+function closeCred(){document.getElementById('drawer').classList.remove('on');document.getElementById('drawerMask').classList.remove('on');}
+function drawAxes(vals){
+  const cv=document.getElementById('sevenAxis');const r=cv.getBoundingClientRect();
+  cv.width=r.width*devicePixelRatio;cv.height=230*devicePixelRatio;
+  const ctx=cv.getContext('2d'),W=cv.width,H=cv.height,cx=W/2,cy=H/2,R=Math.min(W,H)*.36;
+  ctx.clearRect(0,0,W,H);
+  const labels=['证据','一致','边界','新颖','稳健','校准','来源'];
+  for(let ring=1;ring<=3;ring++){
+    ctx.beginPath();
+    for(let i=0;i<=7;i++){const a=i/7*Math.PI*2-Math.PI/2;
+      const x=cx+R*ring/3*Math.cos(a),y=cy+R*ring/3*Math.sin(a);
+      i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);}
+    ctx.strokeStyle='rgba(93,107,132,.25)';ctx.lineWidth=devicePixelRatio;ctx.stroke();
+  }
+  ctx.beginPath();
+  vals.forEach((v,i)=>{const a=i/7*Math.PI*2-Math.PI/2;
+    const x=cx+R*v*Math.cos(a),y=cy+R*v*Math.sin(a);
+    i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);});
+  ctx.closePath();
+  ctx.fillStyle='rgba(90,208,200,.18)';ctx.fill();
+  ctx.strokeStyle='rgba(90,208,200,.8)';ctx.lineWidth=1.6*devicePixelRatio;ctx.stroke();
+  ctx.font=`${10*devicePixelRatio}px sans-serif`;ctx.fillStyle='#9aa7bd';ctx.textAlign='center';
+  labels.forEach((s,i)=>{const a=i/7*Math.PI*2-Math.PI/2;
+    ctx.fillText(s,cx+(R+16*devicePixelRatio)*Math.cos(a),cy+(R+16*devicePixelRatio)*Math.sin(a)+4);});
+}
+
+/* ================= 记忆（真实 localStorage）================= */
+const MKEY='theone_omega_memory';
+function memAll(){try{return JSON.parse(localStorage.getItem(MKEY)||'[]')}catch(e){return[]}}
+function memSave(a){localStorage.setItem(MKEY,JSON.stringify(a))}
+function memStore(k,v,src){const a=memAll();a.unshift({id:Date.now(),k,v,src,ts:Date.now()});memSave(a);memRender();}
+function memPut(){
+  const k=document.getElementById('memKey').value.trim(),v=document.getElementById('memVal').value.trim();
+  if(!k||!v)return alert('键与值都要填——记忆要有名有实。');
+  memStore(k,v,'记忆面板手动写入');
+  document.getElementById('memKey').value='';document.getElementById('memVal').value='';
+}
+function memDel(id){memSave(memAll().filter(x=>x.id!==id));memRender();}
+function memEdit(id){
+  const a=memAll(),it=a.find(x=>x.id===id);if(!it)return;
+  const nv=prompt('改：'+it.k,it.v);if(nv===null)return;
+  it.v=nv;it.src+=' · 已由你修改';memSave(a);memRender();
+}
+function memWipeAll(){if(confirm('删除全部本地记忆？此操作即时且不可恢复（这正是「删」权的含义）。')){localStorage.removeItem(MKEY);memRender();}}
+function memExport(){
+  const blob=new Blob([JSON.stringify(memAll(),null,2)],{type:'application/json'});
+  const u=URL.createObjectURL(blob);const a=document.createElement('a');
+  a.href=u;a.download='theone_memory_export.json';a.click();URL.revokeObjectURL(u);
+}
+function memRender(){
+  const a=memAll(),el=document.getElementById('memList');
+  el.innerHTML=a.length?'':'<p style="color:var(--ink3);font-size:.82rem;padding:10px 4px">（空）对话里说「记住 …」，或在上方手动写入。</p>';
+  a.forEach(it=>{
+    const d=document.createElement('div');d.className='mem-item';
+    d.innerHTML=`<div><b>${it.k.replace(/</g,'&lt;')}</b> ＝ ${it.v.replace(/</g,'&lt;')}
+      <div class="meta">来源：${it.src} · ${new Date(it.ts).toLocaleString()}</div></div>
+      <div class="ops"><button onclick="memEdit(${it.id})">改</button><button onclick="memDel(${it.id})">删</button></div>`;
+    el.appendChild(d);
+  });
+}
+memRender();
+
+/* ================= 感官 ================= */
+const ORGANS=[
+ {n:'DeepSeek',r:'语言/代码直觉 · S1 候选基座',on:true},
+ {n:'Qwen',r:'多模态感官 · 视觉语言',on:true},
+ {n:'Llama',r:'通用语言基座 · 社区生态',on:false},
+ {n:'Mistral',r:'轻量快速直觉',on:false},
+ {n:'GPT / Claude / Gemini',r:'外部闭源器官（API 互滋养）',on:false},
+ {n:'视觉编码器',r:'眼 · 图像/视频流',on:true},
+ {n:'听觉编码器',r:'耳 · 语音/环境声',on:false},
+ {n:'具身传感',r:'身 · 机器人触觉/本体感',on:false},
+ {n:'世界模型 S3',r:'意 · 全息态推演沙箱【假设】',on:false},
+];
+const og=document.getElementById('organGrid');
+ORGANS.forEach((o,i)=>{
+  const d=document.createElement('div');d.className='organ'+(o.on?' on':'');
+  d.innerHTML=`<div class="name"><span class="lamp"></span>${o.n}</div><div class="role">${o.r}</div><button class="sw">${o.on?'已接入':'未接入'}</button>`;
+  d.querySelector('.sw').onclick=()=>{o.on=!o.on;d.classList.toggle('on',o.on);d.querySelector('.sw').textContent=o.on?'已接入':'未接入';};
+  og.appendChild(d);
+});
+
+/* ================= 实验室 ================= */
+const LABLINES=[
+ ['ls0','[观] 扫描观测库：发现异常关联——「冥想时长 ↑」与「决策失误率 ↓」相关 r=-0.41','[观] 生成候选假设 H₁：冥想 → 专注力 → 决策质量（存在混杂嫌疑：作息规律）'],
+ ['ls1','[设] 设计最小干预：随机分组 do(冥想=20min/日)，n=40，周期 14 天','[设] 预注册判据冻结：失误率差 ≥ 15% 且 95%CI 不含 0 → 支持；否则进《美丽失败录》'],
+ ['ls2','[行] L1 沙箱仿真执行中……（无外部副作用，seed=42）','[行] 收集 560 个仿真决策样本，扰动组对照完成'],
+ ['ls3','[复] 判定：失误率差 19.3%，CI [8.1%, 30.4%] 不含 0 → 弱支持 H₁（混杂「作息」已后门调整）','[复] 更新因果图 +1 边（置信 0.71）；签发实验凭证 #EXP-0042；下一步：真实世界预注册复验'],
+];
+let labRunning=false;
+function runLab(){
+  if(labRunning)return;labRunning=true;
+  const lg=document.getElementById('labLog');lg.textContent='';
+  let i=0;
+  (function step(){
+    if(i>=LABLINES.length){
+      lg.textContent+='\n✦ 一轮观复完成。万物并作，吾以观复——失败同样入册，绝不掩埋。';
+      lg.scrollTop=lg.scrollHeight;
+      document.querySelectorAll('.lab-step').forEach(s=>s.classList.remove('active'));
+      labRunning=false;return;
+    }
+    document.querySelectorAll('.lab-step').forEach(s=>s.classList.remove('active'));
+    document.getElementById(LABLINES[i][0]).classList.add('active');
+    lg.textContent+=LABLINES[i][1]+'\n';lg.scrollTop=lg.scrollHeight;
+    setTimeout(()=>{lg.textContent+=LABLINES[i][2]+'\n\n';lg.scrollTop=lg.scrollHeight;i++;setTimeout(step,900);},900);
+  })();
+}
+
+/* ================= 洛书 ================= */
+const LUO=[[4,9,2],[3,5,7],[8,1,6]];
+let luoT=0,luoDrawn=false;
+function drawLuoshu(){
+  if(luoDrawn)return;luoDrawn=true;
+  const cv=document.getElementById('luoshu');
+  const r=cv.getBoundingClientRect();cv.width=r.width*devicePixelRatio;cv.height=r.width*devicePixelRatio;
+  const ctx=cv.getContext('2d');
+  (function anim(){
+    const W=cv.width,cell=W/3;luoT+=0.016;
+    ctx.clearRect(0,0,W,W);
+    for(let i=0;i<3;i++)for(let j=0;j<3;j++){
+      const x=j*cell,y=i*cell,v=LUO[i][j];
+      const load=(Math.sin(luoT*1.4+v)+1)/2;
+      ctx.fillStyle=`rgba(90,208,200,${.04+load*.12})`;
+      ctx.fillRect(x+3,y+3,cell-6,cell-6);
+      ctx.strokeStyle='rgba(29,41,64,.9)';ctx.strokeRect(x+3,y+3,cell-6,cell-6);
+      ctx.font=`${cell*.34}px serif`;ctx.textAlign='center';ctx.textBaseline='middle';
+      ctx.fillStyle=`rgba(245,216,154,${.5+load*.5})`;
+      ctx.fillText(v,x+cell/2,y+cell/2-cell*.08);
+      ctx.font=`${cell*.11}px sans-serif`;ctx.fillStyle='rgba(154,167,189,.7)';
+      ctx.fillText('load '+(load*100|0)+'%',x+cell/2,y+cell/2+cell*.24);
+    }
+    /* 流动的请求粒子沿“和为15”的线路由 */
+    const paths=[[[0,0],[1,1],[2,2]],[[0,2],[1,1],[2,0]],[[1,0],[1,1],[1,2]],[[0,1],[1,1],[2,1]]];
+    paths.forEach((p,pi)=>{
+      const tt=(luoT*.5+pi*.25)%1;
+      const seg=tt<.5?0:1,lt=(tt%.5)*2;
+      const [a,b]=[p[seg],p[seg+1]];
+      const x=(a[1]+(b[1]-a[1])*lt+0.5)*cell,y=(a[0]+(b[0]-a[0])*lt+0.5)*cell;
+      ctx.beginPath();ctx.arc(x,y,3.4*devicePixelRatio,0,7);
+      ctx.fillStyle='rgba(231,184,100,.9)';ctx.fill();
+    });
+    ctx.font=`${W*.038}px sans-serif`;ctx.fillStyle='rgba(154,167,189,.8)';ctx.textAlign='center';
+    ctx.fillText('任意行·列·对角 ∑=15 —— 天然负载均衡【假设·待基准验证】',W/2,W-W*.03);
+    requestAnimationFrame(anim);
+  })();
+}
+
+/* ================= 双脑激活动画 ================= */
+setInterval(()=>{
+  const w=50+Math.random()*40|0,g=55+Math.random()*40|0;
+  const mw=document.getElementById('m-wave'),mg=document.getElementById('m-grain');
+  if(mw){mw.style.width=w+'%';document.getElementById('m-wave-v').textContent=w+'%';}
+  if(mg){mg.style.width=g+'%';document.getElementById('m-grain-v').textContent=g+'%';}
+},2600);
+
+/* ================= PWA ================= */
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(()=>{});}
+
+/* 开场白 */
+push('a',`你好，我是太一 Ω（终极形态演示）。\n\n我与你用过的所有 AI 有三个不同：\n① 我区分「相关」与「因果」，也敢做反事实推演；\n② 我不知道时会明确说「不可说」，绝不编造；\n③ 我的每个重要回答都附带一张可机器验真的认知凭证。\n\n试试左侧的预设问题。`,false,'演示开场');
+</script>
+</body>
+</html>
