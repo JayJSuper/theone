@@ -15,7 +15,7 @@ from http.server import HTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 from . import __version__
 from .hybrid import (build_library, route, s2_answer, s1_render,
-                     template_render, identify_gate)
+                     template_render, identify_gate, answer_causal)
 from .memory.store import MemoryStore
 
 DEMO_DIR = Path(__file__).resolve().parents[2] / "demo" / "one_universal"
@@ -66,17 +66,22 @@ def handle_chat(query: str) -> dict:
                                 "graph_hash": r["graph"].graph.content_hash(),
                                 "missing_variables": gate["missing"],
                                 "limits": gate["reason"], "confidence": 0.95}}
-        s2 = s2_answer(r["graph"])
+        s2 = answer_causal(r["graph"], gate)
         answer = s1_render(query, s2, _S1)
+        limits = s2["note"]
+        if s2.get("assumptions"):
+            limits += " | " + " ; ".join(s2["assumptions"])
         return {**base, "answer": answer, "s1_used": _S1 is not None,
                 "receipt": {
                     "method": s2["method"], "graph_hash": s2["graph_hash"],
+                    "strategy": s2["strategy"],
                     "adjustment_set": s2["adjustment_set"],
+                    "mediator": s2.get("mediator"),
                     "numbers": {k: s2[k] for k in
                                 ("obs_ate", "int_ate", "confounding_bias",
                                  "int_do_x1", "int_do_x0")},
-                    "evidence_tier": s2["evidence_tier"], "limits": s2["note"],
-                    "confidence": 0.86},
+                    "evidence_tier": s2["evidence_tier"], "limits": limits,
+                    "confidence": 0.86 if s2["strategy"] == "backdoor" else 0.72},
                 "latency_s": round(time.time() - t0, 3)}
 
     if mode in ("abstain_no_model", "abstain_forecast"):

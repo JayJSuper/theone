@@ -42,6 +42,22 @@ class TestIdentifiabilityGate:
         assert r["mode"] == "s2_causal" and r["graph"].key == "sleep_hair"
         assert identify_gate(r["graph"])["identifiable"] is False
 
+    def test_frontdoor_graph_answers_via_mediator_with_caveat(self):
+        """Unobserved confounder but observed mediator -> front-door answer that
+        recovers the true do-effect, carrying the unverifiable-assumption flag."""
+        from theone.hybrid import answer_causal
+        from theone.causal.engine import InterventionEngine
+        lg = next(g for g in LIB if g.key == "supplement_recovery")
+        gate = identify_gate(lg)
+        assert gate["identifiable"] and gate["strategy"] == "front_door"
+        ans = answer_causal(lg, gate)
+        eng = InterventionEngine(lg.graph)
+        true = (eng.query_intervention("recovery", 1, {"supplement": 1}).value
+                - eng.query_intervention("recovery", 1, {"supplement": 0}).value)
+        assert ans["int_ate"] == pytest.approx(true, abs=1e-9)   # recovers truth
+        assert abs(ans["obs_ate"] - ans["int_ate"]) > 1e-3        # obs was confounded
+        assert any("not verifiable" in a.lower() for a in ans["assumptions"])
+
     def test_forecast_abstains(self):
         assert route("明年比特币会涨到多少？", LIB)["mode"] == "abstain_forecast"
         assert route("Where will bitcoin be next year?", LIB)["mode"] == "abstain_forecast"

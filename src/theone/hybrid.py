@@ -36,6 +36,7 @@ class LibraryGraph:
     evidence_tier: str
     note: str
     latent: tuple = ()                 # unobserved variables (cannot be adjusted on)
+    mediator: str = None               # for front-door graphs (X -> mediator -> Y)
     graph: CausalGraph = field(repr=False, default=None)
 
     def usable_for_do(self) -> bool:
@@ -76,6 +77,22 @@ def _confounded(u, x, y, p_u=0.5, px=(0.8, 0.2), py=(0.9, 0.5, 0.6, 0.2)):
     return g
 
 
+def _frontdoor_graph(u, x, m, y):
+    """U->X->M->Y, U->Y. Front-door identifiable via M even when U unobserved."""
+    g = CausalGraph()
+    for n in (u, x, m, y):
+        g.add_variable(Variable(n))
+    g.add_edge(u, x); g.add_edge(x, m); g.add_edge(m, y); g.add_edge(u, y)
+    g.set_cpt(u, {(): {1: 0.4, 0: 0.6}})
+    g.set_cpt(x, {(1,): {1: 0.7, 0: 0.3}, (0,): {1: 0.25, 0: 0.75}})
+    g.set_cpt(m, {(1,): {1: 0.8, 0: 0.2}, (0,): {1: 0.15, 0: 0.85}})
+    ordY = list(g.parent_order(y))
+    by = {(1, 1): 0.85, (0, 1): 0.55, (1, 0): 0.5, (0, 0): 0.2}  # (m,u)
+    g.set_cpt(y, {tuple(mm if p == m else uu for p in ordY): {1: v, 0: 1 - v}
+                  for (mm, uu), v in by.items()})
+    return g
+
+
 def build_library() -> list:
     lib = [
         LibraryGraph(
@@ -112,8 +129,54 @@ def build_library() -> list:
                   "This graph exists to demonstrate computable refusal."),
             graph=_confounded("stress", "sleep_deprivation", "hair_loss",
                               px=(0.75, 0.35), py=(0.7, 0.45, 0.5, 0.25))),
+        LibraryGraph(
+            key="supplement_recovery", treatment="supplement", outcome="recovery",
+            confounder="baseline_health", mediator="blood_marker",
+            aliases={"supplement": ["补充剂", "supplement", "保健品"],
+                     "recovery": ["康复", "recovery", "恢复"],
+                     "blood_marker": ["血液指标", "blood marker", "指标"]},
+            evidence_tier="machine_validated",
+            latent=("baseline_health",),     # confounder UNOBSERVED -> no backdoor
+            note=("Structure machine-validated; parameters ILLUSTRATIVE. Baseline "
+                  "health (confounder) is UNOBSERVED, so the effect is identified "
+                  "via the FRONT DOOR through the blood marker — carrying an "
+                  "assumption that cannot be verified from data."),
+            graph=_frontdoor_graph("baseline_health", "supplement",
+                                   "blood_marker", "recovery")),
     ]
     return lib
+
+
+def answer_causal(lg: LibraryGraph, gate: dict) -> dict:
+    """Dispatch on the identification strategy the gate chose. Backdoor -> exact
+    adjustment; front-door -> front-door estimate (recovers truth blind to the
+    unobserved confounder). Numbers always from the engine, never the LLM."""
+    from .causal.estimators import frontdoor_prob
+    eng = InterventionEngine(lg.graph)
+    X, Y = lg.treatment, lg.outcome
+    base = {"treatment": X, "outcome": Y, "confounder": lg.confounder,
+            "graph_hash": lg.graph.content_hash(), "evidence_tier": lg.evidence_tier,
+            "note": lg.note, "strategy": gate["strategy"],
+            "assumptions": gate.get("assumptions", [])}
+    obs1 = eng.query_observation(Y, 1, {X: 1}).value
+    obs0 = eng.query_observation(Y, 1, {X: 0}).value
+    base.update(obs_given_x1=round(obs1, 6), obs_given_x0=round(obs0, 6),
+                obs_ate=round(obs1 - obs0, 6))
+    if gate["strategy"] == "front_door":
+        m = lg.mediator
+        i1 = frontdoor_prob(eng, X, Y, m, 1, 1)
+        i0 = frontdoor_prob(eng, X, Y, m, 1, 0)
+        base.update(mediator=m, method="front_door_adjustment",
+                    int_do_x1=round(i1, 6), int_do_x0=round(i0, 6),
+                    int_ate=round(i1 - i0, 6),
+                    confounding_bias=round((obs1 - obs0) - (i1 - i0), 6),
+                    adjustment_set=None)
+    else:
+        s2 = s2_answer(lg)
+        base.update({k: s2[k] for k in ("int_do_x1", "int_do_x0", "int_ate",
+                                        "confounding_bias", "adjustment_set",
+                                        "method")})
+    return base
 
 
 # --------------------------------------------------------------------------
