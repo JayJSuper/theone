@@ -41,21 +41,29 @@ def _instance_features(spec: SCMSpec):
     return phi, y_fac, y_cf
 
 
-def build_dataset(n_instances: int, base_seed: int, n_samples: int = 500):
-    """Sample an SCM family (params drawn from frozen ranges) -> (Phi, y_fac, y_cf)."""
+def build_dataset_ranged(n_instances: int, base_seed: int,
+                         p_range=(0.0, 0.8), bxy_range=(0.0, 0.5),
+                         noise_range=(0.1, 0.5), n_samples: int = 500):
+    """Sample an SCM family with EXPLICIT parameter ranges (for T4 cross-family).
+    p = confounding product (symmetric decomposition beta_ux=beta_uy=sqrt(p))."""
     rng = np.random.default_rng(base_seed)
     Phi = np.empty((n_instances, FEATURE_DIM))
     y_fac = np.empty(n_instances)
     y_cf = np.empty(n_instances)
     for i in range(n_instances):
-        p = float(rng.uniform(0.0, 0.8))
+        p = float(rng.uniform(*p_range))
         b = math.sqrt(p)
-        bxy = float(rng.uniform(0.0, 0.5))
-        noise = float(rng.uniform(0.1, 0.5))
+        bxy = float(rng.uniform(*bxy_range))
+        noise = float(rng.uniform(*noise_range))
         spec = SCMSpec("linear_gaussian_3node", b, b, bxy, noise,
                        n_samples, base_seed + 1 + i)
         Phi[i], y_fac[i], y_cf[i] = _instance_features(spec)
     return Phi, y_fac, y_cf
+
+
+def build_dataset(n_instances: int, base_seed: int, n_samples: int = 500):
+    """Default family (frozen ranges, used by T2-04)."""
+    return build_dataset_ranged(n_instances, base_seed, n_samples=n_samples)
 
 
 # ----------------------------- model ---------------------------------------
