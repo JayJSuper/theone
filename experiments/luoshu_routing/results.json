@@ -1,0 +1,195 @@
+{
+  "results": {
+    "uniform": {
+      "90": {
+        "luoshu": {
+          "imbalance_median": 1.5,
+          "imbalance_2d_median": 1.2
+        },
+        "modulo": {
+          "imbalance_median": 1.0,
+          "imbalance_2d_median": 1.2
+        },
+        "random": {
+          "imbalance_median": 1.4,
+          "imbalance_2d_median": 1.2
+        },
+        "consistent_hash": {
+          "imbalance_median": 1.5,
+          "imbalance_2d_median": 1.2
+        }
+      },
+      "900": {
+        "luoshu": {
+          "imbalance_median": 1.165,
+          "imbalance_2d_median": 1.06
+        },
+        "modulo": {
+          "imbalance_median": 1.0,
+          "imbalance_2d_median": 1.06
+        },
+        "random": {
+          "imbalance_median": 1.135,
+          "imbalance_2d_median": 1.06
+        },
+        "consistent_hash": {
+          "imbalance_median": 1.165,
+          "imbalance_2d_median": 1.06
+        }
+      },
+      "9000": {
+        "luoshu": {
+          "imbalance_median": 1.053,
+          "imbalance_2d_median": 1.0193
+        },
+        "modulo": {
+          "imbalance_median": 1.0,
+          "imbalance_2d_median": 1.0193
+        },
+        "random": {
+          "imbalance_median": 1.0475,
+          "imbalance_2d_median": 1.0193
+        },
+        "consistent_hash": {
+          "imbalance_median": 1.0795,
+          "imbalance_2d_median": 1.0193
+        }
+      }
+    },
+    "skewed": {
+      "90": {
+        "luoshu": {
+          "imbalance_median": 2.4,
+          "imbalance_2d_median": 1.95
+        },
+        "modulo": {
+          "imbalance_median": 1.0,
+          "imbalance_2d_median": 1.95
+        },
+        "random": {
+          "imbalance_median": 1.4,
+          "imbalance_2d_median": 1.95
+        },
+        "consistent_hash": {
+          "imbalance_median": 4.0,
+          "imbalance_2d_median": 1.95
+        }
+      },
+      "900": {
+        "luoshu": {
+          "imbalance_median": 2.22,
+          "imbalance_2d_median": 1.6817
+        },
+        "modulo": {
+          "imbalance_median": 1.0,
+          "imbalance_2d_median": 1.6817
+        },
+        "random": {
+          "imbalance_median": 1.135,
+          "imbalance_2d_median": 1.6817
+        },
+        "consistent_hash": {
+          "imbalance_median": 2.835,
+          "imbalance_2d_median": 1.6817
+        }
+      },
+      "9000": {
+        "luoshu": {
+          "imbalance_median": 2.1475,
+          "imbalance_2d_median": 1.6055
+        },
+        "modulo": {
+          "imbalance_median": 1.0,
+          "imbalance_2d_median": 1.6055
+        },
+        "random": {
+          "imbalance_median": 1.0475,
+          "imbalance_2d_median": 1.6055
+        },
+        "consistent_hash": {
+          "imbalance_median": 2.8075,
+          "imbalance_2d_median": 1.6055
+        }
+      }
+    },
+    "sequential_burst": {
+      "90": {
+        "luoshu": {
+          "imbalance_median": 1.4,
+          "imbalance_2d_median": 1.2333
+        },
+        "modulo": {
+          "imbalance_median": 1.0,
+          "imbalance_2d_median": 1.2333
+        },
+        "random": {
+          "imbalance_median": 1.4,
+          "imbalance_2d_median": 1.2333
+        },
+        "consistent_hash": {
+          "imbalance_median": 1.5,
+          "imbalance_2d_median": 1.2333
+        }
+      },
+      "900": {
+        "luoshu": {
+          "imbalance_median": 1.14,
+          "imbalance_2d_median": 1.06
+        },
+        "modulo": {
+          "imbalance_median": 1.0,
+          "imbalance_2d_median": 1.06
+        },
+        "random": {
+          "imbalance_median": 1.135,
+          "imbalance_2d_median": 1.06
+        },
+        "consistent_hash": {
+          "imbalance_median": 1.15,
+          "imbalance_2d_median": 1.06
+        }
+      },
+      "9000": {
+        "luoshu": {
+          "imbalance_median": 1.053,
+          "imbalance_2d_median": 1.02
+        },
+        "modulo": {
+          "imbalance_median": 1.0,
+          "imbalance_2d_median": 1.02
+        },
+        "random": {
+          "imbalance_median": 1.0475,
+          "imbalance_2d_median": 1.02
+        },
+        "consistent_hash": {
+          "imbalance_median": 1.086,
+          "imbalance_2d_median": 1.02
+        }
+      }
+    }
+  },
+  "verdict": {
+    "uniform": "luoshu_loses",
+    "skewed": "luoshu_loses",
+    "sequential_burst": "luoshu_loses",
+    "2d_balance_uniform": "no_2d_advantage"
+  },
+  "magic_square": [
+    [
+      4,
+      9,
+      2
+    ],
+    [
+      3,
+      5,
+      7
+    ],
+    [
+      8,
+      1,
+      6
+    ]
+  ]
+}
