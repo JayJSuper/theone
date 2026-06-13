@@ -1,0 +1,56 @@
+{
+  "assertions": [
+    {
+      "assertion": "A1 obs P(Y=1|X=1)",
+      "frozen": 0.82,
+      "engine": 0.82,
+      "pgmpy": 0.82,
+      "eng_pgmpy_diff": 0.0,
+      "pass": true
+    },
+    {
+      "assertion": "A2 do  P(Y=1|do X=1)",
+      "frozen": 0.7,
+      "engine": 0.7,
+      "pgmpy": 0.7,
+      "eng_pgmpy_diff": 0.0,
+      "pass": true
+    },
+    {
+      "assertion": "A3 obs P(Y=1|X=0)",
+      "frozen": 0.28,
+      "engine": 0.28,
+      "pgmpy": 0.28,
+      "eng_pgmpy_diff": 0.0,
+      "pass": true
+    },
+    {
+      "assertion": "A4 do  P(Y=1|do X=0)",
+      "frozen": 0.4,
+      "engine": 0.4,
+      "pgmpy": 0.4,
+      "eng_pgmpy_diff": 0.0,
+      "pass": true
+    },
+    {
+      "assertion": "A5 obs ATE",
+      "frozen": 0.54,
+      "engine": 0.54,
+      "pgmpy": 0.54,
+      "eng_pgmpy_diff": 0.0,
+      "pass": true
+    },
+    {
+      "assertion": "A6 do  ATE",
+      "frozen": 0.3,
+      "engine": 0.3,
+      "pgmpy": 0.3,
+      "eng_pgmpy_diff": 0.0,
+      "pass": true
+    }
+  ],
+  "A7_are_different": true,
+  "max_abs_diff": 0.0,
+  "oracle": "pgmpy 1.1.2",
+  "verdict": "PASS \u2014 all 7 F-1 assertions independently confirmed by pgmpy <1e-6"
+}
