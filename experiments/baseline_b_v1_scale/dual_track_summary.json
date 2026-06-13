@@ -1,0 +1,149 @@
+{
+  "summary": {
+    "S": {
+      "eco": {
+        "A": {
+          "acc": 0.98,
+          "fail": 3,
+          "lat": 12.7
+        },
+        "B": {
+          "acc": 0.973,
+          "fail": 4,
+          "lat": 17.3
+        },
+        "C": {
+          "acc": 1.0,
+          "fail": 0,
+          "lat": 0.0
+        },
+        "sep": 0.02,
+        "sign": {
+          "wins": 3,
+          "losses": 0,
+          "p": 0.125
+        }
+      },
+      "clean": {
+        "A": {
+          "acc": 1.0,
+          "fail": 0,
+          "lat": 5.0
+        },
+        "B": {
+          "acc": 1.0,
+          "fail": 0,
+          "lat": 6.1
+        },
+        "C": {
+          "acc": 1.0,
+          "fail": 0,
+          "lat": 0.0
+        },
+        "sep": 0.0,
+        "sign": {
+          "wins": 0,
+          "losses": 0,
+          "p": 1.0
+        }
+      }
+    },
+    "M": {
+      "eco": {
+        "A": {
+          "acc": 0.793,
+          "fail": 30,
+          "lat": 19.7
+        },
+        "B": {
+          "acc": 0.793,
+          "fail": 31,
+          "lat": 22.7
+        },
+        "C": {
+          "acc": 1.0,
+          "fail": 0,
+          "lat": 0.0
+        },
+        "sep": 0.207,
+        "sign": {
+          "wins": 31,
+          "losses": 0,
+          "p": 4.656612873077393e-10
+        }
+      },
+      "clean": {
+        "A": {
+          "acc": 1.0,
+          "fail": 0,
+          "lat": 5.2
+        },
+        "B": {
+          "acc": 1.0,
+          "fail": 0,
+          "lat": 6.1
+        },
+        "C": {
+          "acc": 1.0,
+          "fail": 0,
+          "lat": 0.0
+        },
+        "sep": 0.0,
+        "sign": {
+          "wins": 0,
+          "losses": 0,
+          "p": 1.0
+        }
+      }
+    },
+    "L": {
+      "eco": {
+        "A": {
+          "acc": 0.613,
+          "fail": 58,
+          "lat": 28.5
+        },
+        "B": {
+          "acc": 0.447,
+          "fail": 83,
+          "lat": 59.5
+        },
+        "C": {
+          "acc": 1.0,
+          "fail": 0,
+          "lat": 0.1
+        },
+        "sep": 0.387,
+        "sign": {
+          "wins": 58,
+          "losses": 0,
+          "p": 3.469446951953614e-18
+        }
+      },
+      "clean": {
+        "A": {
+          "acc": 1.0,
+          "fail": 0,
+          "lat": 5.1
+        },
+        "B": {
+          "acc": 1.0,
+          "fail": 0,
+          "lat": 5.9
+        },
+        "C": {
+          "acc": 1.0,
+          "fail": 0,
+          "lat": 0.1
+        },
+        "sep": 0.0,
+        "sign": {
+          "wins": 0,
+          "losses": 0,
+          "p": 1.0
+        }
+      }
+    }
+  },
+  "interpretation": "COMPLEXITY-DRIVEN: with identification difficulty held constant (single backdoor + distractors), LLMs stay accurate at 12 nodes; the ecological collapse is driven by CAUSAL STRUCTURE COMPLEXITY, not node count per se."
+}

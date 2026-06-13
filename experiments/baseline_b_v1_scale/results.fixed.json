@@ -1,0 +1,9963 @@
+{
+  "summary": {
+    "mode": "FORMAL",
+    "n_per_tier": 150,
+    "base_seed": 20260615,
+    "S_A": {
+      "acc": 1.0,
+      "mae": 0.0,
+      "protocol_fail": 0,
+      "mean_latency_s": 4.95
+    },
+    "S_B": {
+      "acc": 1.0,
+      "mae": 0.0,
+      "protocol_fail": 0,
+      "mean_latency_s": 6.14
+    },
+    "S_C": {
+      "acc": 1.0,
+      "mae": 0.0,
+      "protocol_fail": 0,
+      "mean_latency_s": 0.0
+    },
+    "M_A": {
+      "acc": 1.0,
+      "mae": 0.0,
+      "protocol_fail": 0,
+      "mean_latency_s": 5.2
+    },
+    "M_B": {
+      "acc": 1.0,
+      "mae": 0.0,
+      "protocol_fail": 0,
+      "mean_latency_s": 6.13
+    },
+    "M_C": {
+      "acc": 1.0,
+      "mae": 0.0,
+      "protocol_fail": 0,
+      "mean_latency_s": 0.01
+    },
+    "L_A": {
+      "acc": 1.0,
+      "mae": 0.0,
+      "protocol_fail": 0,
+      "mean_latency_s": 5.06
+    },
+    "L_B": {
+      "acc": 1.0,
+      "mae": 0.0,
+      "protocol_fail": 0,
+      "mean_latency_s": 5.93
+    },
+    "L_C": {
+      "acc": 1.0,
+      "mae": 0.0,
+      "protocol_fail": 0,
+      "mean_latency_s": 0.06
+    }
+  },
+  "rows": [
+    {
+      "tier": "S",
+      "i": 0,
+      "truth": 0.7316,
+      "A": {
+        "pred": 0.7316,
+        "latency": 4.44,
+        "tokens": 771,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7316,
+        "latency": 4.66,
+        "tokens": 807,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7316,
+        "latency": 0.0005,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 1,
+      "truth": 0.374,
+      "A": {
+        "pred": 0.374,
+        "latency": 4.69,
+        "tokens": 775,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.374,
+        "latency": 4.66,
+        "tokens": 906,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.374,
+        "latency": 0.0004,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 2,
+      "truth": 0.451,
+      "A": {
+        "pred": 0.451,
+        "latency": 5.16,
+        "tokens": 925,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.451,
+        "latency": 7.65,
+        "tokens": 1202,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.451,
+        "latency": 0.0003,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 3,
+      "truth": 0.612,
+      "A": {
+        "pred": 0.612,
+        "latency": 3.86,
+        "tokens": 643,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.612,
+        "latency": 5.4,
+        "tokens": 987,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.612,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 4,
+      "truth": 0.427,
+      "A": {
+        "pred": 0.427,
+        "latency": 4.36,
+        "tokens": 766,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.427,
+        "latency": 6.1,
+        "tokens": 1064,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.427,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 5,
+      "truth": 0.486,
+      "A": {
+        "pred": 0.486,
+        "latency": 3.79,
+        "tokens": 707,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.486,
+        "latency": 8.11,
+        "tokens": 1309,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.486,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 6,
+      "truth": 0.698,
+      "A": {
+        "pred": 0.698,
+        "latency": 4.57,
+        "tokens": 816,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.698,
+        "latency": 5.07,
+        "tokens": 943,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.698,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 7,
+      "truth": 0.4592,
+      "A": {
+        "pred": 0.4592,
+        "latency": 4.85,
+        "tokens": 799,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4592,
+        "latency": 5.12,
+        "tokens": 843,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4592,
+        "latency": 0.0003,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 8,
+      "truth": 0.49,
+      "A": {
+        "pred": 0.49,
+        "latency": 5.82,
+        "tokens": 974,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.49,
+        "latency": 7.04,
+        "tokens": 1123,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.49,
+        "latency": 0.0006,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 9,
+      "truth": 0.2541,
+      "A": {
+        "pred": 0.2541,
+        "latency": 4.15,
+        "tokens": 743,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2541,
+        "latency": 6.29,
+        "tokens": 954,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2541,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 10,
+      "truth": 0.5895,
+      "A": {
+        "pred": 0.5895,
+        "latency": 4.94,
+        "tokens": 805,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5895,
+        "latency": 5.18,
+        "tokens": 896,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5895,
+        "latency": 0.0003,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 11,
+      "truth": 0.5884,
+      "A": {
+        "pred": 0.5884,
+        "latency": 6.59,
+        "tokens": 734,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5884,
+        "latency": 4.99,
+        "tokens": 807,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5884,
+        "latency": 0.0006,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 12,
+      "truth": 0.3808,
+      "A": {
+        "pred": 0.3808,
+        "latency": 4.34,
+        "tokens": 750,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3808,
+        "latency": 5.77,
+        "tokens": 931,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3808,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 13,
+      "truth": 0.5333,
+      "A": {
+        "pred": 0.5333,
+        "latency": 6.34,
+        "tokens": 1074,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5333,
+        "latency": 4.76,
+        "tokens": 875,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5333,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 14,
+      "truth": 0.4935,
+      "A": {
+        "pred": 0.4935,
+        "latency": 6.07,
+        "tokens": 970,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4935,
+        "latency": 10.54,
+        "tokens": 1544,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4935,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 15,
+      "truth": 0.3391,
+      "A": {
+        "pred": 0.3391,
+        "latency": 4.07,
+        "tokens": 710,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3391,
+        "latency": 5.85,
+        "tokens": 1018,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3391,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 16,
+      "truth": 0.8294,
+      "A": {
+        "pred": 0.8294,
+        "latency": 5.32,
+        "tokens": 828,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8294,
+        "latency": 6.57,
+        "tokens": 1055,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8294,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 17,
+      "truth": 0.9086,
+      "A": {
+        "pred": 0.9086,
+        "latency": 4.75,
+        "tokens": 819,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.9086,
+        "latency": 5.04,
+        "tokens": 934,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.9086,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 18,
+      "truth": 0.8257,
+      "A": {
+        "pred": 0.8257,
+        "latency": 3.98,
+        "tokens": 718,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8257,
+        "latency": 6.7,
+        "tokens": 1170,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8257,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 19,
+      "truth": 0.3727,
+      "A": {
+        "pred": 0.3727,
+        "latency": 4.56,
+        "tokens": 826,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3727,
+        "latency": 5.62,
+        "tokens": 847,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3727,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 20,
+      "truth": 0.1704,
+      "A": {
+        "pred": 0.1704,
+        "latency": 3.49,
+        "tokens": 649,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.1704,
+        "latency": 7.38,
+        "tokens": 1142,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.1704,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 21,
+      "truth": 0.8303,
+      "A": {
+        "pred": 0.8303,
+        "latency": 4.26,
+        "tokens": 765,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8303,
+        "latency": 6.11,
+        "tokens": 1002,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8303,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 22,
+      "truth": 0.778,
+      "A": {
+        "pred": 0.778,
+        "latency": 3.96,
+        "tokens": 692,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.778,
+        "latency": 5.64,
+        "tokens": 909,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.778,
+        "latency": 0.0013,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 23,
+      "truth": 0.3866,
+      "A": {
+        "pred": 0.3866,
+        "latency": 4.92,
+        "tokens": 826,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3866,
+        "latency": 6.84,
+        "tokens": 1158,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3866,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 24,
+      "truth": 0.4902,
+      "A": {
+        "pred": 0.4902,
+        "latency": 4.58,
+        "tokens": 856,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4902,
+        "latency": 6.15,
+        "tokens": 1053,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4902,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 25,
+      "truth": 0.4272,
+      "A": {
+        "pred": 0.4272,
+        "latency": 4.77,
+        "tokens": 779,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4272,
+        "latency": 7.02,
+        "tokens": 1125,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4272,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 26,
+      "truth": 0.7707,
+      "A": {
+        "pred": 0.7707,
+        "latency": 5.32,
+        "tokens": 844,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7707,
+        "latency": 7.12,
+        "tokens": 1159,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7707,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 27,
+      "truth": 0.2576,
+      "A": {
+        "pred": 0.2576,
+        "latency": 4.58,
+        "tokens": 792,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2576,
+        "latency": 5.13,
+        "tokens": 985,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2576,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 28,
+      "truth": 0.1933,
+      "A": {
+        "pred": 0.1933,
+        "latency": 5.64,
+        "tokens": 944,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.1933,
+        "latency": 4.99,
+        "tokens": 905,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.1933,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 29,
+      "truth": 0.2927,
+      "A": {
+        "pred": 0.2927,
+        "latency": 3.78,
+        "tokens": 718,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2927,
+        "latency": 4.89,
+        "tokens": 916,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2927,
+        "latency": 0.0006,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 30,
+      "truth": 0.8375,
+      "A": {
+        "pred": 0.8375,
+        "latency": 4.21,
+        "tokens": 764,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8375,
+        "latency": 7.43,
+        "tokens": 1257,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8375,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 31,
+      "truth": 0.3336,
+      "A": {
+        "pred": 0.3336,
+        "latency": 4.25,
+        "tokens": 728,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3336,
+        "latency": 9.11,
+        "tokens": 1420,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3336,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 32,
+      "truth": 0.6225,
+      "A": {
+        "pred": 0.6225,
+        "latency": 4.43,
+        "tokens": 744,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6225,
+        "latency": 4.71,
+        "tokens": 842,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6225,
+        "latency": 0.0016,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 33,
+      "truth": 0.4284,
+      "A": {
+        "pred": 0.4284,
+        "latency": 4.22,
+        "tokens": 746,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4284,
+        "latency": 4.67,
+        "tokens": 838,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4284,
+        "latency": 0.0012,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 34,
+      "truth": 0.632,
+      "A": {
+        "pred": 0.632,
+        "latency": 4.8,
+        "tokens": 838,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.632,
+        "latency": 4.81,
+        "tokens": 858,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.632,
+        "latency": 0.0016,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 35,
+      "truth": 0.5418,
+      "A": {
+        "pred": 0.5418,
+        "latency": 3.48,
+        "tokens": 662,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5418,
+        "latency": 5.84,
+        "tokens": 1047,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5418,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 36,
+      "truth": 0.7316,
+      "A": {
+        "pred": 0.7316,
+        "latency": 5.06,
+        "tokens": 867,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7316,
+        "latency": 7.55,
+        "tokens": 1202,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7316,
+        "latency": 0.0044,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 37,
+      "truth": 0.6944,
+      "A": {
+        "pred": 0.6944,
+        "latency": 4.62,
+        "tokens": 791,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6944,
+        "latency": 6.02,
+        "tokens": 1004,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6944,
+        "latency": 0.0006,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 38,
+      "truth": 0.4962,
+      "A": {
+        "pred": 0.4962,
+        "latency": 5.2,
+        "tokens": 849,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4962,
+        "latency": 7.08,
+        "tokens": 1110,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4962,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 39,
+      "truth": 0.4444,
+      "A": {
+        "pred": 0.4444,
+        "latency": 4.39,
+        "tokens": 754,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4444,
+        "latency": 5.92,
+        "tokens": 986,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4444,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 40,
+      "truth": 0.821,
+      "A": {
+        "pred": 0.821,
+        "latency": 4.01,
+        "tokens": 701,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.821,
+        "latency": 4.94,
+        "tokens": 854,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.821,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 41,
+      "truth": 0.7223,
+      "A": {
+        "pred": 0.7223,
+        "latency": 3.82,
+        "tokens": 668,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7223,
+        "latency": 9.61,
+        "tokens": 1412,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7223,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 42,
+      "truth": 0.5198,
+      "A": {
+        "pred": 0.5198,
+        "latency": 3.74,
+        "tokens": 662,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5198,
+        "latency": 5.57,
+        "tokens": 972,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5198,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 43,
+      "truth": 0.6476,
+      "A": {
+        "pred": 0.6476,
+        "latency": 5.14,
+        "tokens": 843,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6476,
+        "latency": 4.9,
+        "tokens": 888,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6476,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 44,
+      "truth": 0.387,
+      "A": {
+        "pred": 0.387,
+        "latency": 4.38,
+        "tokens": 754,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.387,
+        "latency": 5.61,
+        "tokens": 1055,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.387,
+        "latency": 0.0014,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 45,
+      "truth": 0.1001,
+      "A": {
+        "pred": 0.1001,
+        "latency": 3.69,
+        "tokens": 671,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.1001,
+        "latency": 6.07,
+        "tokens": 989,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.1001,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 46,
+      "truth": 0.5901,
+      "A": {
+        "pred": 0.5901,
+        "latency": 5.49,
+        "tokens": 918,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5901,
+        "latency": 5.04,
+        "tokens": 869,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5901,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 47,
+      "truth": 0.3812,
+      "A": {
+        "pred": 0.3812,
+        "latency": 3.71,
+        "tokens": 700,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3812,
+        "latency": 5.29,
+        "tokens": 894,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3812,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 48,
+      "truth": 0.5931,
+      "A": {
+        "pred": 0.5931,
+        "latency": 3.97,
+        "tokens": 745,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5931,
+        "latency": 8.37,
+        "tokens": 1286,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5931,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 49,
+      "truth": 0.7384,
+      "A": {
+        "pred": 0.7384,
+        "latency": 4.01,
+        "tokens": 735,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7384,
+        "latency": 5.86,
+        "tokens": 955,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7384,
+        "latency": 0.001,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 50,
+      "truth": 0.5561,
+      "A": {
+        "pred": 0.5561,
+        "latency": 4.15,
+        "tokens": 780,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5561,
+        "latency": 6.37,
+        "tokens": 1124,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5561,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 51,
+      "truth": 0.3572,
+      "A": {
+        "pred": 0.3572,
+        "latency": 6.96,
+        "tokens": 1029,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3572,
+        "latency": 4.77,
+        "tokens": 817,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3572,
+        "latency": 0.001,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 52,
+      "truth": 0.7484,
+      "A": {
+        "pred": 0.7484,
+        "latency": 3.88,
+        "tokens": 718,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7484,
+        "latency": 5.42,
+        "tokens": 929,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7484,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 53,
+      "truth": 0.368,
+      "A": {
+        "pred": 0.368,
+        "latency": 5.07,
+        "tokens": 815,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.368,
+        "latency": 6.86,
+        "tokens": 1048,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.368,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 54,
+      "truth": 0.53,
+      "A": {
+        "pred": 0.53,
+        "latency": 4.83,
+        "tokens": 823,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.53,
+        "latency": 5.6,
+        "tokens": 1014,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.53,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 55,
+      "truth": 0.3044,
+      "A": {
+        "pred": 0.3044,
+        "latency": 5.59,
+        "tokens": 863,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3044,
+        "latency": 5.26,
+        "tokens": 920,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3044,
+        "latency": 0.0107,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 56,
+      "truth": 0.512,
+      "A": {
+        "pred": 0.512,
+        "latency": 5.34,
+        "tokens": 937,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.512,
+        "latency": 4.14,
+        "tokens": 774,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.512,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 57,
+      "truth": 0.5106,
+      "A": {
+        "pred": 0.5106,
+        "latency": 3.76,
+        "tokens": 676,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5106,
+        "latency": 8.08,
+        "tokens": 1310,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5106,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 58,
+      "truth": 0.408,
+      "A": {
+        "pred": 0.408,
+        "latency": 3.82,
+        "tokens": 700,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.408,
+        "latency": 3.66,
+        "tokens": 733,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.408,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 59,
+      "truth": 0.2717,
+      "A": {
+        "pred": 0.2717,
+        "latency": 3.26,
+        "tokens": 569,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2717,
+        "latency": 5.41,
+        "tokens": 912,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2717,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 60,
+      "truth": 0.8118,
+      "A": {
+        "pred": 0.8118,
+        "latency": 6.82,
+        "tokens": 964,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8118,
+        "latency": 4.97,
+        "tokens": 832,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8118,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 61,
+      "truth": 0.486,
+      "A": {
+        "pred": 0.486,
+        "latency": 5.51,
+        "tokens": 881,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.486,
+        "latency": 4.72,
+        "tokens": 838,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.486,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 62,
+      "truth": 0.094,
+      "A": {
+        "pred": 0.094,
+        "latency": 5.44,
+        "tokens": 900,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.094,
+        "latency": 6.31,
+        "tokens": 1077,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.094,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 63,
+      "truth": 0.1797,
+      "A": {
+        "pred": 0.1797,
+        "latency": 4.25,
+        "tokens": 719,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.1797,
+        "latency": 5.98,
+        "tokens": 973,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.1797,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 64,
+      "truth": 0.3677,
+      "A": {
+        "pred": 0.3677,
+        "latency": 6.33,
+        "tokens": 959,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3677,
+        "latency": 4.98,
+        "tokens": 872,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3677,
+        "latency": 0.0006,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 65,
+      "truth": 0.6624,
+      "A": {
+        "pred": 0.6624,
+        "latency": 3.6,
+        "tokens": 688,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6624,
+        "latency": 5.94,
+        "tokens": 972,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6624,
+        "latency": 0.0006,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 66,
+      "truth": 0.7541,
+      "A": {
+        "pred": 0.7541,
+        "latency": 3.61,
+        "tokens": 700,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7541,
+        "latency": 5.14,
+        "tokens": 926,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7541,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 67,
+      "truth": 0.3984,
+      "A": {
+        "pred": 0.3984,
+        "latency": 4.63,
+        "tokens": 767,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3984,
+        "latency": 4.92,
+        "tokens": 846,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3984,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 68,
+      "truth": 0.644,
+      "A": {
+        "pred": 0.644,
+        "latency": 4.3,
+        "tokens": 705,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.644,
+        "latency": 6.21,
+        "tokens": 1032,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.644,
+        "latency": 0.001,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 69,
+      "truth": 0.0888,
+      "A": {
+        "pred": 0.0888,
+        "latency": 3.94,
+        "tokens": 676,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.0888,
+        "latency": 6.23,
+        "tokens": 1048,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.0888,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 70,
+      "truth": 0.2791,
+      "A": {
+        "pred": 0.2791,
+        "latency": 4.44,
+        "tokens": 750,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2791,
+        "latency": 5.52,
+        "tokens": 925,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2791,
+        "latency": 0.0016,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 71,
+      "truth": 0.4475,
+      "A": {
+        "pred": 0.4475,
+        "latency": 6.11,
+        "tokens": 981,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4475,
+        "latency": 5.03,
+        "tokens": 871,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4475,
+        "latency": 0.0016,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 72,
+      "truth": 0.808,
+      "A": {
+        "pred": 0.808,
+        "latency": 3.47,
+        "tokens": 667,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.808,
+        "latency": 4.41,
+        "tokens": 836,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.808,
+        "latency": 0.0018,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 73,
+      "truth": 0.776,
+      "A": {
+        "pred": 0.776,
+        "latency": 4.4,
+        "tokens": 740,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.776,
+        "latency": 3.85,
+        "tokens": 758,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.776,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 74,
+      "truth": 0.76,
+      "A": {
+        "pred": 0.76,
+        "latency": 7.2,
+        "tokens": 1060,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.76,
+        "latency": 6.66,
+        "tokens": 996,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.76,
+        "latency": 0.0019,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 75,
+      "truth": 0.751,
+      "A": {
+        "pred": 0.751,
+        "latency": 5.11,
+        "tokens": 835,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.751,
+        "latency": 8.2,
+        "tokens": 1250,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.751,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 76,
+      "truth": 0.6632,
+      "A": {
+        "pred": 0.6632,
+        "latency": 5.22,
+        "tokens": 823,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6632,
+        "latency": 5.7,
+        "tokens": 840,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6632,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 77,
+      "truth": 0.0694,
+      "A": {
+        "pred": 0.0694,
+        "latency": 4.53,
+        "tokens": 723,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.0694,
+        "latency": 5.2,
+        "tokens": 860,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.0694,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 78,
+      "truth": 0.382,
+      "A": {
+        "pred": 0.382,
+        "latency": 4.56,
+        "tokens": 723,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.382,
+        "latency": 5.87,
+        "tokens": 894,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.382,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 79,
+      "truth": 0.3606,
+      "A": {
+        "pred": 0.3606,
+        "latency": 4.04,
+        "tokens": 661,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3606,
+        "latency": 5.63,
+        "tokens": 876,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3606,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 80,
+      "truth": 0.5778,
+      "A": {
+        "pred": 0.5778,
+        "latency": 5.89,
+        "tokens": 840,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5778,
+        "latency": 5.77,
+        "tokens": 927,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5778,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 81,
+      "truth": 0.8596,
+      "A": {
+        "pred": 0.8596,
+        "latency": 5.64,
+        "tokens": 855,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8596,
+        "latency": 6.03,
+        "tokens": 818,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8596,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 82,
+      "truth": 0.9445,
+      "A": {
+        "pred": 0.9445,
+        "latency": 3.62,
+        "tokens": 686,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.9445,
+        "latency": 5.59,
+        "tokens": 840,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.9445,
+        "latency": 0.0004,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 83,
+      "truth": 0.2624,
+      "A": {
+        "pred": 0.2624,
+        "latency": 6.05,
+        "tokens": 888,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2624,
+        "latency": 6.5,
+        "tokens": 1027,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2624,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 84,
+      "truth": 0.5677,
+      "A": {
+        "pred": 0.5677,
+        "latency": 5.07,
+        "tokens": 761,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5677,
+        "latency": 7.47,
+        "tokens": 1131,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5677,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 85,
+      "truth": 0.6662,
+      "A": {
+        "pred": 0.6662,
+        "latency": 6.43,
+        "tokens": 884,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6662,
+        "latency": 5.87,
+        "tokens": 894,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6662,
+        "latency": 0.0014,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 86,
+      "truth": 0.8775,
+      "A": {
+        "pred": 0.8775,
+        "latency": 4.44,
+        "tokens": 664,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8775,
+        "latency": 8.63,
+        "tokens": 1147,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8775,
+        "latency": 0.0013,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 87,
+      "truth": 0.3418,
+      "A": {
+        "pred": 0.3418,
+        "latency": 5.2,
+        "tokens": 797,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3418,
+        "latency": 8.54,
+        "tokens": 1147,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3418,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 88,
+      "truth": 0.2715,
+      "A": {
+        "pred": 0.2715,
+        "latency": 5.54,
+        "tokens": 748,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2715,
+        "latency": 4.57,
+        "tokens": 758,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2715,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 89,
+      "truth": 0.644,
+      "A": {
+        "pred": 0.644,
+        "latency": 4.08,
+        "tokens": 614,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.644,
+        "latency": 5.87,
+        "tokens": 900,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.644,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 90,
+      "truth": 0.3414,
+      "A": {
+        "pred": 0.3414,
+        "latency": 5.37,
+        "tokens": 789,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3414,
+        "latency": 4.47,
+        "tokens": 738,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3414,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 91,
+      "truth": 0.7512,
+      "A": {
+        "pred": 0.7512,
+        "latency": 4.23,
+        "tokens": 673,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7512,
+        "latency": 3.67,
+        "tokens": 664,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7512,
+        "latency": 0.0013,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 92,
+      "truth": 0.6635,
+      "A": {
+        "pred": 0.6635,
+        "latency": 3.69,
+        "tokens": 578,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6635,
+        "latency": 7.31,
+        "tokens": 1021,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6635,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 93,
+      "truth": 0.2344,
+      "A": {
+        "pred": 0.2344,
+        "latency": 5.45,
+        "tokens": 744,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2344,
+        "latency": 5.82,
+        "tokens": 871,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2344,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 94,
+      "truth": 0.6097,
+      "A": {
+        "pred": 0.6097,
+        "latency": 6.7,
+        "tokens": 878,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6097,
+        "latency": 5.27,
+        "tokens": 834,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6097,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 95,
+      "truth": 0.1016,
+      "A": {
+        "pred": 0.1016,
+        "latency": 5.2,
+        "tokens": 775,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.1016,
+        "latency": 6.77,
+        "tokens": 1080,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.1016,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 96,
+      "truth": 0.6051,
+      "A": {
+        "pred": 0.6051,
+        "latency": 5.38,
+        "tokens": 773,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6051,
+        "latency": 6.47,
+        "tokens": 1085,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6051,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 97,
+      "truth": 0.5424,
+      "A": {
+        "pred": 0.5424,
+        "latency": 5.71,
+        "tokens": 868,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5424,
+        "latency": 6.76,
+        "tokens": 1085,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5424,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 98,
+      "truth": 0.174,
+      "A": {
+        "pred": 0.174,
+        "latency": 6.14,
+        "tokens": 772,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.174,
+        "latency": 7.87,
+        "tokens": 1181,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.174,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 99,
+      "truth": 0.6604,
+      "A": {
+        "pred": 0.6604,
+        "latency": 4.94,
+        "tokens": 696,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6604,
+        "latency": 5.85,
+        "tokens": 913,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6604,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 100,
+      "truth": 0.5367,
+      "A": {
+        "pred": 0.5367,
+        "latency": 5.07,
+        "tokens": 791,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5367,
+        "latency": 9.49,
+        "tokens": 1412,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5367,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 101,
+      "truth": 0.4752,
+      "A": {
+        "pred": 0.4752,
+        "latency": 4.83,
+        "tokens": 835,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4752,
+        "latency": 5.34,
+        "tokens": 942,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4752,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 102,
+      "truth": 0.4224,
+      "A": {
+        "pred": 0.4224,
+        "latency": 4.12,
+        "tokens": 721,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4224,
+        "latency": 7.64,
+        "tokens": 1251,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4224,
+        "latency": 0.0012,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 103,
+      "truth": 0.5646,
+      "A": {
+        "pred": 0.5646,
+        "latency": 3.38,
+        "tokens": 606,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5646,
+        "latency": 7.1,
+        "tokens": 1157,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5646,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 104,
+      "truth": 0.1944,
+      "A": {
+        "pred": 0.1944,
+        "latency": 4.34,
+        "tokens": 740,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.1944,
+        "latency": 4.98,
+        "tokens": 878,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.1944,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 105,
+      "truth": 0.5842,
+      "A": {
+        "pred": 0.5842,
+        "latency": 2.75,
+        "tokens": 568,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5842,
+        "latency": 7.02,
+        "tokens": 1057,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5842,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 106,
+      "truth": 0.7489,
+      "A": {
+        "pred": 0.7489,
+        "latency": 4.29,
+        "tokens": 747,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7489,
+        "latency": 8.89,
+        "tokens": 1310,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7489,
+        "latency": 0.001,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 107,
+      "truth": 0.2088,
+      "A": {
+        "pred": 0.2088,
+        "latency": 5.91,
+        "tokens": 941,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2088,
+        "latency": 5.34,
+        "tokens": 976,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2088,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 108,
+      "truth": 0.4485,
+      "A": {
+        "pred": 0.4485,
+        "latency": 4.34,
+        "tokens": 722,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4485,
+        "latency": 3.69,
+        "tokens": 718,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4485,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 109,
+      "truth": 0.4812,
+      "A": {
+        "pred": 0.4812,
+        "latency": 3.87,
+        "tokens": 688,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4812,
+        "latency": 6.94,
+        "tokens": 1096,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4812,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 110,
+      "truth": 0.5722,
+      "A": {
+        "pred": 0.5722,
+        "latency": 4.76,
+        "tokens": 735,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5722,
+        "latency": 7.73,
+        "tokens": 1185,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5722,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 111,
+      "truth": 0.6086,
+      "A": {
+        "pred": 0.6086,
+        "latency": 5.36,
+        "tokens": 823,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6086,
+        "latency": 6.36,
+        "tokens": 1073,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6086,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 112,
+      "truth": 0.405,
+      "A": {
+        "pred": 0.405,
+        "latency": 2.49,
+        "tokens": 518,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.405,
+        "latency": 5.6,
+        "tokens": 996,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.405,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 113,
+      "truth": 0.6796,
+      "A": {
+        "pred": 0.6796,
+        "latency": 3.85,
+        "tokens": 682,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6796,
+        "latency": 4.96,
+        "tokens": 854,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6796,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 114,
+      "truth": 0.94,
+      "A": {
+        "pred": 0.94,
+        "latency": 4.88,
+        "tokens": 843,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.94,
+        "latency": 4.29,
+        "tokens": 837,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.94,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 115,
+      "truth": 0.7054,
+      "A": {
+        "pred": 0.7054,
+        "latency": 6.99,
+        "tokens": 959,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7054,
+        "latency": 5.3,
+        "tokens": 987,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7054,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 116,
+      "truth": 0.896,
+      "A": {
+        "pred": 0.896,
+        "latency": 4.28,
+        "tokens": 746,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.896,
+        "latency": 6.45,
+        "tokens": 1069,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.896,
+        "latency": 0.001,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 117,
+      "truth": 0.782,
+      "A": {
+        "pred": 0.782,
+        "latency": 5.62,
+        "tokens": 882,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.782,
+        "latency": 4.92,
+        "tokens": 826,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.782,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 118,
+      "truth": 0.6836,
+      "A": {
+        "pred": 0.6836,
+        "latency": 3.38,
+        "tokens": 638,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6836,
+        "latency": 5.81,
+        "tokens": 1033,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6836,
+        "latency": 0.0006,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 119,
+      "truth": 0.536,
+      "A": {
+        "pred": 0.536,
+        "latency": 4.1,
+        "tokens": 715,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.536,
+        "latency": 5.54,
+        "tokens": 920,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.536,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 120,
+      "truth": 0.4748,
+      "A": {
+        "pred": 0.4748,
+        "latency": 3.89,
+        "tokens": 709,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4748,
+        "latency": 5.52,
+        "tokens": 937,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4748,
+        "latency": 0.0005,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 121,
+      "truth": 0.467,
+      "A": {
+        "pred": 0.467,
+        "latency": 4.68,
+        "tokens": 798,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.467,
+        "latency": 4.96,
+        "tokens": 913,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.467,
+        "latency": 0.0004,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 122,
+      "truth": 0.5816,
+      "A": {
+        "pred": 0.5816,
+        "latency": 4.53,
+        "tokens": 765,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5816,
+        "latency": 7.52,
+        "tokens": 1239,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5816,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 123,
+      "truth": 0.5159,
+      "A": {
+        "pred": 0.5159,
+        "latency": 3.58,
+        "tokens": 691,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5159,
+        "latency": 8.5,
+        "tokens": 1375,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5159,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 124,
+      "truth": 0.2345,
+      "A": {
+        "pred": 0.2345,
+        "latency": 4.7,
+        "tokens": 808,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2345,
+        "latency": 7.07,
+        "tokens": 1132,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2345,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 125,
+      "truth": 0.8744,
+      "A": {
+        "pred": 0.8744,
+        "latency": 4.77,
+        "tokens": 798,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8744,
+        "latency": 6.04,
+        "tokens": 1028,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8744,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 126,
+      "truth": 0.571,
+      "A": {
+        "pred": 0.571,
+        "latency": 5.56,
+        "tokens": 898,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.571,
+        "latency": 7.39,
+        "tokens": 1145,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.571,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 127,
+      "truth": 0.4176,
+      "A": {
+        "pred": 0.4176,
+        "latency": 3.97,
+        "tokens": 662,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4176,
+        "latency": 5.84,
+        "tokens": 1022,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4176,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 128,
+      "truth": 0.214,
+      "A": {
+        "pred": 0.214,
+        "latency": 6.01,
+        "tokens": 954,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.214,
+        "latency": 8.83,
+        "tokens": 1319,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.214,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 129,
+      "truth": 0.7332,
+      "A": {
+        "pred": 0.7332,
+        "latency": 5.26,
+        "tokens": 959,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7332,
+        "latency": 5.36,
+        "tokens": 956,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7332,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 130,
+      "truth": 0.2944,
+      "A": {
+        "pred": 0.2944,
+        "latency": 4.24,
+        "tokens": 731,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2944,
+        "latency": 11.63,
+        "tokens": 1545,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2944,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 131,
+      "truth": 0.1359,
+      "A": {
+        "pred": 0.1359,
+        "latency": 4.56,
+        "tokens": 766,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.1359,
+        "latency": 6.9,
+        "tokens": 1174,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.1359,
+        "latency": 0.001,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 132,
+      "truth": 0.3175,
+      "A": {
+        "pred": 0.3175,
+        "latency": 6.3,
+        "tokens": 933,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3175,
+        "latency": 4.39,
+        "tokens": 818,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3175,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 133,
+      "truth": 0.7575,
+      "A": {
+        "pred": 0.7575,
+        "latency": 4.17,
+        "tokens": 760,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7575,
+        "latency": 4.2,
+        "tokens": 799,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7575,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 134,
+      "truth": 0.5936,
+      "A": {
+        "pred": 0.5936,
+        "latency": 4.77,
+        "tokens": 781,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5936,
+        "latency": 5.32,
+        "tokens": 947,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5936,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 135,
+      "truth": 0.7696,
+      "A": {
+        "pred": 0.7696,
+        "latency": 3.65,
+        "tokens": 719,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7696,
+        "latency": 5.3,
+        "tokens": 956,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7696,
+        "latency": 0.0006,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 136,
+      "truth": 0.572,
+      "A": {
+        "pred": 0.572,
+        "latency": 4.92,
+        "tokens": 817,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.572,
+        "latency": 3.54,
+        "tokens": 736,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.572,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 137,
+      "truth": 0.2673,
+      "A": {
+        "pred": 0.2673,
+        "latency": 4.5,
+        "tokens": 749,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2673,
+        "latency": 9.08,
+        "tokens": 1397,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2673,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 138,
+      "truth": 0.307,
+      "A": {
+        "pred": 0.307,
+        "latency": 5.81,
+        "tokens": 882,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.307,
+        "latency": 7.61,
+        "tokens": 1370,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.307,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 139,
+      "truth": 0.4825,
+      "A": {
+        "pred": 0.4825,
+        "latency": 4.23,
+        "tokens": 755,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4825,
+        "latency": 6.17,
+        "tokens": 1173,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4825,
+        "latency": 0.0006,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 140,
+      "truth": 0.4584,
+      "A": {
+        "pred": 0.4584,
+        "latency": 4.08,
+        "tokens": 746,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4584,
+        "latency": 4.81,
+        "tokens": 846,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4584,
+        "latency": 0.001,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 141,
+      "truth": 0.764,
+      "A": {
+        "pred": 0.764,
+        "latency": 5.68,
+        "tokens": 957,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.764,
+        "latency": 4.33,
+        "tokens": 792,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.764,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 142,
+      "truth": 0.504,
+      "A": {
+        "pred": 0.504,
+        "latency": 36.1,
+        "tokens": 866,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.504,
+        "latency": 8.78,
+        "tokens": 1097,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.504,
+        "latency": 0.0007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 143,
+      "truth": 0.8648,
+      "A": {
+        "pred": 0.8648,
+        "latency": 4.07,
+        "tokens": 637,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8648,
+        "latency": 6.15,
+        "tokens": 911,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8648,
+        "latency": 0.0009,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 144,
+      "truth": 0.8481,
+      "A": {
+        "pred": 0.8481,
+        "latency": 5.4,
+        "tokens": 745,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8481,
+        "latency": 6.36,
+        "tokens": 927,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8481,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 145,
+      "truth": 0.2364,
+      "A": {
+        "pred": 0.2364,
+        "latency": 4.76,
+        "tokens": 710,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2364,
+        "latency": 5.84,
+        "tokens": 927,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2364,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 146,
+      "truth": 0.4933,
+      "A": {
+        "pred": 0.4933,
+        "latency": 5.44,
+        "tokens": 815,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4933,
+        "latency": 7.58,
+        "tokens": 1101,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4933,
+        "latency": 0.0008,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 147,
+      "truth": 0.5116,
+      "A": {
+        "pred": 0.5116,
+        "latency": 6.08,
+        "tokens": 831,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5116,
+        "latency": 8.3,
+        "tokens": 1107,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5116,
+        "latency": 0.0012,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 148,
+      "truth": 0.3332,
+      "A": {
+        "pred": 0.3332,
+        "latency": 5.43,
+        "tokens": 761,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3332,
+        "latency": 9.05,
+        "tokens": 1076,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3332,
+        "latency": 0.001,
+        "fail": null
+      }
+    },
+    {
+      "tier": "S",
+      "i": 149,
+      "truth": 0.7057,
+      "A": {
+        "pred": 0.7057,
+        "latency": 5.66,
+        "tokens": 794,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7057,
+        "latency": 6.57,
+        "tokens": 985,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7057,
+        "latency": 0.0014,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 0,
+      "truth": 0.4123,
+      "A": {
+        "pred": 0.4123,
+        "latency": 5.33,
+        "tokens": 817,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4123,
+        "latency": 5.74,
+        "tokens": 906,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4123,
+        "latency": 0.0054,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 1,
+      "truth": 0.7454,
+      "A": {
+        "pred": 0.7454,
+        "latency": 5.73,
+        "tokens": 872,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7454,
+        "latency": 7.16,
+        "tokens": 1099,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7454,
+        "latency": 0.0063,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 2,
+      "truth": 0.5936,
+      "A": {
+        "pred": 0.5936,
+        "latency": 5.82,
+        "tokens": 876,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5936,
+        "latency": 7.57,
+        "tokens": 1108,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5936,
+        "latency": 0.0047,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 3,
+      "truth": 0.386,
+      "A": {
+        "pred": 0.386,
+        "latency": 5.12,
+        "tokens": 840,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.386,
+        "latency": 6.42,
+        "tokens": 930,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.386,
+        "latency": 0.0059,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 4,
+      "truth": 0.4425,
+      "A": {
+        "pred": 0.4425,
+        "latency": 4.54,
+        "tokens": 764,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4425,
+        "latency": 7.82,
+        "tokens": 1149,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4425,
+        "latency": 0.0057,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 5,
+      "truth": 0.5615,
+      "A": {
+        "pred": 0.5615,
+        "latency": 5.9,
+        "tokens": 898,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5615,
+        "latency": 5.43,
+        "tokens": 886,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5615,
+        "latency": 0.0059,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 6,
+      "truth": 0.6432,
+      "A": {
+        "pred": 0.6432,
+        "latency": 5.84,
+        "tokens": 852,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6432,
+        "latency": 4.72,
+        "tokens": 783,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6432,
+        "latency": 0.0075,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 7,
+      "truth": 0.5463,
+      "A": {
+        "pred": 0.5463,
+        "latency": 6.74,
+        "tokens": 1013,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5463,
+        "latency": 8.96,
+        "tokens": 1258,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5463,
+        "latency": 0.0069,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 8,
+      "truth": 0.5908,
+      "A": {
+        "pred": 0.5908,
+        "latency": 5.07,
+        "tokens": 771,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5908,
+        "latency": 5.66,
+        "tokens": 912,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5908,
+        "latency": 0.0061,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 9,
+      "truth": 0.7017,
+      "A": {
+        "pred": 0.7017,
+        "latency": 3.86,
+        "tokens": 682,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7017,
+        "latency": 6.04,
+        "tokens": 923,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7017,
+        "latency": 0.0071,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 10,
+      "truth": 0.5864,
+      "A": {
+        "pred": 0.5864,
+        "latency": 5.25,
+        "tokens": 827,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5864,
+        "latency": 10.32,
+        "tokens": 1314,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5864,
+        "latency": 0.0072,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 11,
+      "truth": 0.172,
+      "A": {
+        "pred": 0.172,
+        "latency": 7.19,
+        "tokens": 993,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.172,
+        "latency": 8.7,
+        "tokens": 1163,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.172,
+        "latency": 0.0077,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 12,
+      "truth": 0.192,
+      "A": {
+        "pred": 0.192,
+        "latency": 6.49,
+        "tokens": 887,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.192,
+        "latency": 4.05,
+        "tokens": 732,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.192,
+        "latency": 0.0051,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 13,
+      "truth": 0.2473,
+      "A": {
+        "pred": 0.2473,
+        "latency": 7.72,
+        "tokens": 1031,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2473,
+        "latency": 5.29,
+        "tokens": 879,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2473,
+        "latency": 0.0048,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 14,
+      "truth": 0.2254,
+      "A": {
+        "pred": 0.2254,
+        "latency": 5.45,
+        "tokens": 845,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2254,
+        "latency": 4.86,
+        "tokens": 828,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2254,
+        "latency": 0.005,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 15,
+      "truth": 0.5908,
+      "A": {
+        "pred": 0.5908,
+        "latency": 5.74,
+        "tokens": 863,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5908,
+        "latency": 4.94,
+        "tokens": 892,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5908,
+        "latency": 0.0045,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 16,
+      "truth": 0.41,
+      "A": {
+        "pred": 0.41,
+        "latency": 6.58,
+        "tokens": 935,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.41,
+        "latency": 4.96,
+        "tokens": 868,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.41,
+        "latency": 0.0043,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 17,
+      "truth": 0.383,
+      "A": {
+        "pred": 0.383,
+        "latency": 6.52,
+        "tokens": 891,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.383,
+        "latency": 6.38,
+        "tokens": 1110,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.383,
+        "latency": 0.0021,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 18,
+      "truth": 0.51,
+      "A": {
+        "pred": 0.51,
+        "latency": 6.0,
+        "tokens": 921,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.51,
+        "latency": 6.21,
+        "tokens": 963,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.51,
+        "latency": 0.0066,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 19,
+      "truth": 0.5,
+      "A": {
+        "pred": 0.5,
+        "latency": 5.36,
+        "tokens": 857,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5,
+        "latency": 4.57,
+        "tokens": 833,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5,
+        "latency": 0.002,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 20,
+      "truth": 0.374,
+      "A": {
+        "pred": 0.374,
+        "latency": 7.32,
+        "tokens": 1037,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.374,
+        "latency": 5.33,
+        "tokens": 908,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.374,
+        "latency": 0.0049,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 21,
+      "truth": 0.529,
+      "A": {
+        "pred": 0.529,
+        "latency": 4.92,
+        "tokens": 763,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.529,
+        "latency": 10.45,
+        "tokens": 1291,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.529,
+        "latency": 0.005,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 22,
+      "truth": 0.2665,
+      "A": {
+        "pred": 0.2665,
+        "latency": 4.67,
+        "tokens": 805,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2665,
+        "latency": 4.45,
+        "tokens": 764,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2665,
+        "latency": 0.0068,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 23,
+      "truth": 0.7768,
+      "A": {
+        "pred": 0.7768,
+        "latency": 6.96,
+        "tokens": 939,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7768,
+        "latency": 8.98,
+        "tokens": 1253,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7768,
+        "latency": 0.002,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 24,
+      "truth": 0.77,
+      "A": {
+        "pred": 0.77,
+        "latency": 5.48,
+        "tokens": 819,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.77,
+        "latency": 6.76,
+        "tokens": 1002,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.77,
+        "latency": 0.0067,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 25,
+      "truth": 0.7,
+      "A": {
+        "pred": 0.7,
+        "latency": 5.93,
+        "tokens": 840,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7,
+        "latency": 4.28,
+        "tokens": 783,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7,
+        "latency": 0.0047,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 26,
+      "truth": 0.402,
+      "A": {
+        "pred": 0.402,
+        "latency": 6.01,
+        "tokens": 879,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.402,
+        "latency": 6.42,
+        "tokens": 971,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.402,
+        "latency": 0.0074,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 27,
+      "truth": 0.2618,
+      "A": {
+        "pred": 0.2618,
+        "latency": 6.27,
+        "tokens": 926,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2618,
+        "latency": 8.51,
+        "tokens": 1163,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2618,
+        "latency": 0.0044,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 28,
+      "truth": 0.394,
+      "A": {
+        "pred": 0.394,
+        "latency": 4.42,
+        "tokens": 718,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.394,
+        "latency": 6.06,
+        "tokens": 952,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.394,
+        "latency": 0.0071,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 29,
+      "truth": 0.074,
+      "A": {
+        "pred": 0.074,
+        "latency": 5.48,
+        "tokens": 799,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.074,
+        "latency": 6.59,
+        "tokens": 980,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.074,
+        "latency": 0.0024,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 30,
+      "truth": 0.374,
+      "A": {
+        "pred": 0.374,
+        "latency": 6.03,
+        "tokens": 915,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.374,
+        "latency": 5.32,
+        "tokens": 857,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.374,
+        "latency": 0.0053,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 31,
+      "truth": 0.264,
+      "A": {
+        "pred": 0.264,
+        "latency": 5.22,
+        "tokens": 824,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.264,
+        "latency": 8.28,
+        "tokens": 1124,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.264,
+        "latency": 0.0056,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 32,
+      "truth": 0.4336,
+      "A": {
+        "pred": 0.4336,
+        "latency": 3.37,
+        "tokens": 609,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4336,
+        "latency": 3.69,
+        "tokens": 738,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4336,
+        "latency": 0.0047,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 33,
+      "truth": 0.6082,
+      "A": {
+        "pred": 0.6082,
+        "latency": 4.9,
+        "tokens": 812,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6082,
+        "latency": 4.52,
+        "tokens": 863,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6082,
+        "latency": 0.0069,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 34,
+      "truth": 0.4556,
+      "A": {
+        "pred": 0.4556,
+        "latency": 5.54,
+        "tokens": 884,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4556,
+        "latency": 4.63,
+        "tokens": 886,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4556,
+        "latency": 0.0068,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 35,
+      "truth": 0.786,
+      "A": {
+        "pred": 0.786,
+        "latency": 6.72,
+        "tokens": 997,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.786,
+        "latency": 7.48,
+        "tokens": 1118,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.786,
+        "latency": 0.0054,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 36,
+      "truth": 0.7815,
+      "A": {
+        "pred": 0.7815,
+        "latency": 6.1,
+        "tokens": 919,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7815,
+        "latency": 7.64,
+        "tokens": 1185,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7815,
+        "latency": 0.0074,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 37,
+      "truth": 0.5485,
+      "A": {
+        "pred": 0.5485,
+        "latency": 4.93,
+        "tokens": 820,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5485,
+        "latency": 5.34,
+        "tokens": 919,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5485,
+        "latency": 0.0076,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 38,
+      "truth": 0.7034,
+      "A": {
+        "pred": 0.7034,
+        "latency": 6.97,
+        "tokens": 1064,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7034,
+        "latency": 6.6,
+        "tokens": 956,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7034,
+        "latency": 0.0074,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 39,
+      "truth": 0.461,
+      "A": {
+        "pred": 0.461,
+        "latency": 5.02,
+        "tokens": 791,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.461,
+        "latency": 6.73,
+        "tokens": 1158,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.461,
+        "latency": 0.0081,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 40,
+      "truth": 0.5325,
+      "A": {
+        "pred": 0.5325,
+        "latency": 4.91,
+        "tokens": 791,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5325,
+        "latency": 6.18,
+        "tokens": 1032,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5325,
+        "latency": 0.0076,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 41,
+      "truth": 0.5181,
+      "A": {
+        "pred": 0.5181,
+        "latency": 6.44,
+        "tokens": 1039,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5181,
+        "latency": 8.01,
+        "tokens": 1185,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5181,
+        "latency": 0.0065,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 42,
+      "truth": 0.6514,
+      "A": {
+        "pred": 0.6514,
+        "latency": 6.18,
+        "tokens": 896,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6514,
+        "latency": 4.28,
+        "tokens": 779,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6514,
+        "latency": 0.0066,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 43,
+      "truth": 0.2784,
+      "A": {
+        "pred": 0.2784,
+        "latency": 5.0,
+        "tokens": 751,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2784,
+        "latency": 6.42,
+        "tokens": 1004,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2784,
+        "latency": 0.005,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 44,
+      "truth": 0.4091,
+      "A": {
+        "pred": 0.4091,
+        "latency": 5.06,
+        "tokens": 818,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4091,
+        "latency": 4.67,
+        "tokens": 794,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4091,
+        "latency": 0.0051,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 45,
+      "truth": 0.84,
+      "A": {
+        "pred": 0.84,
+        "latency": 4.91,
+        "tokens": 803,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.84,
+        "latency": 5.6,
+        "tokens": 854,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.84,
+        "latency": 0.0051,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 46,
+      "truth": 0.7244,
+      "A": {
+        "pred": 0.7244,
+        "latency": 4.63,
+        "tokens": 771,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7244,
+        "latency": 8.76,
+        "tokens": 1286,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7244,
+        "latency": 0.0046,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 47,
+      "truth": 0.6196,
+      "A": {
+        "pred": 0.6196,
+        "latency": 6.42,
+        "tokens": 978,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6196,
+        "latency": 5.75,
+        "tokens": 947,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6196,
+        "latency": 0.0048,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 48,
+      "truth": 0.3825,
+      "A": {
+        "pred": 0.3825,
+        "latency": 4.62,
+        "tokens": 789,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3825,
+        "latency": 5.86,
+        "tokens": 979,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3825,
+        "latency": 0.0057,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 49,
+      "truth": 0.4959,
+      "A": {
+        "pred": 0.4959,
+        "latency": 5.67,
+        "tokens": 883,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4959,
+        "latency": 5.47,
+        "tokens": 838,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4959,
+        "latency": 0.0045,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 50,
+      "truth": 0.7546,
+      "A": {
+        "pred": 0.7546,
+        "latency": 4.59,
+        "tokens": 781,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7546,
+        "latency": 6.66,
+        "tokens": 1162,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7546,
+        "latency": 0.0052,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 51,
+      "truth": 0.6962,
+      "A": {
+        "pred": 0.6962,
+        "latency": 3.86,
+        "tokens": 828,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6962,
+        "latency": 5.19,
+        "tokens": 907,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6962,
+        "latency": 0.0048,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 52,
+      "truth": 0.462,
+      "A": {
+        "pred": 0.462,
+        "latency": 4.64,
+        "tokens": 883,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.462,
+        "latency": 6.12,
+        "tokens": 937,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.462,
+        "latency": 0.0045,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 53,
+      "truth": 0.632,
+      "A": {
+        "pred": 0.632,
+        "latency": 4.89,
+        "tokens": 927,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.632,
+        "latency": 4.64,
+        "tokens": 875,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.632,
+        "latency": 0.0043,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 54,
+      "truth": 0.244,
+      "A": {
+        "pred": 0.244,
+        "latency": 4.46,
+        "tokens": 784,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.244,
+        "latency": 6.1,
+        "tokens": 1015,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.244,
+        "latency": 0.0056,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 55,
+      "truth": 0.286,
+      "A": {
+        "pred": 0.286,
+        "latency": 5.26,
+        "tokens": 872,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.286,
+        "latency": 8.26,
+        "tokens": 1233,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.286,
+        "latency": 0.0052,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 56,
+      "truth": 0.2099,
+      "A": {
+        "pred": 0.2099,
+        "latency": 4.61,
+        "tokens": 857,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2099,
+        "latency": 5.03,
+        "tokens": 945,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2099,
+        "latency": 0.0065,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 57,
+      "truth": 0.4376,
+      "A": {
+        "pred": 0.4376,
+        "latency": 4.09,
+        "tokens": 758,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4376,
+        "latency": 6.2,
+        "tokens": 988,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4376,
+        "latency": 0.0056,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 58,
+      "truth": 0.544,
+      "A": {
+        "pred": 0.544,
+        "latency": 4.27,
+        "tokens": 790,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.544,
+        "latency": 9.11,
+        "tokens": 1337,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.544,
+        "latency": 0.0053,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 59,
+      "truth": 0.774,
+      "A": {
+        "pred": 0.774,
+        "latency": 4.67,
+        "tokens": 810,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.774,
+        "latency": 5.28,
+        "tokens": 944,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.774,
+        "latency": 0.0058,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 60,
+      "truth": 0.105,
+      "A": {
+        "pred": 0.105,
+        "latency": 4.75,
+        "tokens": 888,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.105,
+        "latency": 5.91,
+        "tokens": 1010,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.105,
+        "latency": 0.0072,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 61,
+      "truth": 0.4192,
+      "A": {
+        "pred": 0.4192,
+        "latency": 6.0,
+        "tokens": 930,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4192,
+        "latency": 8.8,
+        "tokens": 1347,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4192,
+        "latency": 0.0064,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 62,
+      "truth": 0.4886,
+      "A": {
+        "pred": 0.4886,
+        "latency": 5.19,
+        "tokens": 861,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4886,
+        "latency": 4.92,
+        "tokens": 940,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4886,
+        "latency": 0.0062,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 63,
+      "truth": 0.2162,
+      "A": {
+        "pred": 0.2162,
+        "latency": 4.95,
+        "tokens": 832,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2162,
+        "latency": 4.96,
+        "tokens": 868,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2162,
+        "latency": 0.0071,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 64,
+      "truth": 0.306,
+      "A": {
+        "pred": 0.306,
+        "latency": 4.85,
+        "tokens": 831,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.306,
+        "latency": 5.13,
+        "tokens": 958,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.306,
+        "latency": 0.007,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 65,
+      "truth": 0.2276,
+      "A": {
+        "pred": 0.2276,
+        "latency": 3.91,
+        "tokens": 745,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2276,
+        "latency": 6.54,
+        "tokens": 1057,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2276,
+        "latency": 0.0066,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 66,
+      "truth": 0.8525,
+      "A": {
+        "pred": 0.8525,
+        "latency": 4.68,
+        "tokens": 752,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8525,
+        "latency": 4.53,
+        "tokens": 877,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8525,
+        "latency": 0.0044,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 67,
+      "truth": 0.5908,
+      "A": {
+        "pred": 0.5908,
+        "latency": 4.17,
+        "tokens": 747,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5908,
+        "latency": 5.94,
+        "tokens": 1024,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5908,
+        "latency": 0.0046,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 68,
+      "truth": 0.397,
+      "A": {
+        "pred": 0.397,
+        "latency": 3.73,
+        "tokens": 714,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.397,
+        "latency": 4.95,
+        "tokens": 931,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.397,
+        "latency": 0.0045,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 69,
+      "truth": 0.5508,
+      "A": {
+        "pred": 0.5508,
+        "latency": 6.13,
+        "tokens": 969,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5508,
+        "latency": 6.91,
+        "tokens": 1169,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5508,
+        "latency": 0.0068,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 70,
+      "truth": 0.2776,
+      "A": {
+        "pred": 0.2776,
+        "latency": 8.97,
+        "tokens": 1185,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2776,
+        "latency": 6.31,
+        "tokens": 1011,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2776,
+        "latency": 0.0044,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 71,
+      "truth": 0.5275,
+      "A": {
+        "pred": 0.5275,
+        "latency": 5.89,
+        "tokens": 874,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5275,
+        "latency": 7.2,
+        "tokens": 1038,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5275,
+        "latency": 0.0045,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 72,
+      "truth": 0.8798,
+      "A": {
+        "pred": 0.8798,
+        "latency": 6.72,
+        "tokens": 1002,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8798,
+        "latency": 7.39,
+        "tokens": 1009,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8798,
+        "latency": 0.0057,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 73,
+      "truth": 0.467,
+      "A": {
+        "pred": 0.467,
+        "latency": 4.65,
+        "tokens": 773,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.467,
+        "latency": 5.96,
+        "tokens": 1037,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.467,
+        "latency": 0.0045,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 74,
+      "truth": 0.8012,
+      "A": {
+        "pred": 0.8012,
+        "latency": 4.76,
+        "tokens": 792,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8012,
+        "latency": 7.23,
+        "tokens": 1164,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8012,
+        "latency": 0.0051,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 75,
+      "truth": 0.4294,
+      "A": {
+        "pred": 0.4294,
+        "latency": 3.93,
+        "tokens": 727,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4294,
+        "latency": 5.24,
+        "tokens": 869,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4294,
+        "latency": 0.0054,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 76,
+      "truth": 0.3375,
+      "A": {
+        "pred": 0.3375,
+        "latency": 5.66,
+        "tokens": 866,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3375,
+        "latency": 8.15,
+        "tokens": 1176,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3375,
+        "latency": 0.0043,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 77,
+      "truth": 0.657,
+      "A": {
+        "pred": 0.657,
+        "latency": 7.14,
+        "tokens": 1113,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.657,
+        "latency": 6.72,
+        "tokens": 1168,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.657,
+        "latency": 0.0055,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 78,
+      "truth": 0.7725,
+      "A": {
+        "pred": 0.7725,
+        "latency": 4.1,
+        "tokens": 754,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7725,
+        "latency": 6.31,
+        "tokens": 1038,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7725,
+        "latency": 0.0031,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 79,
+      "truth": 0.699,
+      "A": {
+        "pred": 0.699,
+        "latency": 4.48,
+        "tokens": 822,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.699,
+        "latency": 5.61,
+        "tokens": 1027,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.699,
+        "latency": 0.0052,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 80,
+      "truth": 0.834,
+      "A": {
+        "pred": 0.834,
+        "latency": 4.02,
+        "tokens": 681,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.834,
+        "latency": 3.95,
+        "tokens": 805,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.834,
+        "latency": 0.006,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 81,
+      "truth": 0.3525,
+      "A": {
+        "pred": 0.3525,
+        "latency": 4.45,
+        "tokens": 770,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3525,
+        "latency": 5.01,
+        "tokens": 981,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3525,
+        "latency": 0.0068,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 82,
+      "truth": 0.312,
+      "A": {
+        "pred": 0.312,
+        "latency": 4.79,
+        "tokens": 813,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.312,
+        "latency": 6.47,
+        "tokens": 1057,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.312,
+        "latency": 0.0041,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 83,
+      "truth": 0.1356,
+      "A": {
+        "pred": 0.1356,
+        "latency": 4.98,
+        "tokens": 865,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.1356,
+        "latency": 7.68,
+        "tokens": 1289,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.1356,
+        "latency": 0.0044,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 84,
+      "truth": 0.4529,
+      "A": {
+        "pred": 0.4529,
+        "latency": 5.47,
+        "tokens": 940,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4529,
+        "latency": 5.55,
+        "tokens": 951,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4529,
+        "latency": 0.0047,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 85,
+      "truth": 0.18,
+      "A": {
+        "pred": 0.18,
+        "latency": 4.25,
+        "tokens": 794,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.18,
+        "latency": 6.48,
+        "tokens": 1072,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.18,
+        "latency": 0.0044,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 86,
+      "truth": 0.7792,
+      "A": {
+        "pred": 0.7792,
+        "latency": 5.11,
+        "tokens": 859,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7792,
+        "latency": 7.26,
+        "tokens": 1268,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7792,
+        "latency": 0.0055,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 87,
+      "truth": 0.486,
+      "A": {
+        "pred": 0.486,
+        "latency": 4.96,
+        "tokens": 817,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.486,
+        "latency": 4.63,
+        "tokens": 860,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.486,
+        "latency": 0.0044,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 88,
+      "truth": 0.708,
+      "A": {
+        "pred": 0.708,
+        "latency": 4.28,
+        "tokens": 770,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.708,
+        "latency": 9.55,
+        "tokens": 1531,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.708,
+        "latency": 0.0045,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 89,
+      "truth": 0.6644,
+      "A": {
+        "pred": 0.6644,
+        "latency": 6.38,
+        "tokens": 997,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6644,
+        "latency": 5.25,
+        "tokens": 932,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6644,
+        "latency": 0.0047,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 90,
+      "truth": 0.4584,
+      "A": {
+        "pred": 0.4584,
+        "latency": 3.75,
+        "tokens": 693,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4584,
+        "latency": 5.87,
+        "tokens": 1120,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4584,
+        "latency": 0.0045,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 91,
+      "truth": 0.484,
+      "A": {
+        "pred": 0.484,
+        "latency": 4.72,
+        "tokens": 817,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.484,
+        "latency": 11.16,
+        "tokens": 1576,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.484,
+        "latency": 0.0045,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 92,
+      "truth": 0.1536,
+      "A": {
+        "pred": 0.1536,
+        "latency": 3.2,
+        "tokens": 670,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.1536,
+        "latency": 6.76,
+        "tokens": 1048,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.1536,
+        "latency": 0.0045,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 93,
+      "truth": 0.545,
+      "A": {
+        "pred": 0.545,
+        "latency": 6.18,
+        "tokens": 947,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.545,
+        "latency": 7.52,
+        "tokens": 1196,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.545,
+        "latency": 0.0046,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 94,
+      "truth": 0.3689,
+      "A": {
+        "pred": 0.3689,
+        "latency": 4.16,
+        "tokens": 760,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3689,
+        "latency": 5.9,
+        "tokens": 1029,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3689,
+        "latency": 0.0048,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 95,
+      "truth": 0.683,
+      "A": {
+        "pred": 0.683,
+        "latency": 4.96,
+        "tokens": 867,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.683,
+        "latency": 4.45,
+        "tokens": 849,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.683,
+        "latency": 0.0045,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 96,
+      "truth": 0.4583,
+      "A": {
+        "pred": 0.4583,
+        "latency": 7.4,
+        "tokens": 1014,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4583,
+        "latency": 7.46,
+        "tokens": 1139,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4583,
+        "latency": 0.0051,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 97,
+      "truth": 0.8,
+      "A": {
+        "pred": 0.8,
+        "latency": 4.94,
+        "tokens": 777,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8,
+        "latency": 5.49,
+        "tokens": 928,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8,
+        "latency": 0.0048,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 98,
+      "truth": 0.3267,
+      "A": {
+        "pred": 0.3267,
+        "latency": 6.65,
+        "tokens": 997,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3267,
+        "latency": 6.88,
+        "tokens": 1031,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3267,
+        "latency": 0.0046,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 99,
+      "truth": 0.404,
+      "A": {
+        "pred": 0.404,
+        "latency": 5.33,
+        "tokens": 783,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.404,
+        "latency": 5.08,
+        "tokens": 859,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.404,
+        "latency": 0.0043,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 100,
+      "truth": 0.2746,
+      "A": {
+        "pred": 0.2746,
+        "latency": 5.23,
+        "tokens": 844,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2746,
+        "latency": 4.5,
+        "tokens": 843,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2746,
+        "latency": 0.0045,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 101,
+      "truth": 0.4246,
+      "A": {
+        "pred": 0.4246,
+        "latency": 4.05,
+        "tokens": 729,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4246,
+        "latency": 5.48,
+        "tokens": 951,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4246,
+        "latency": 0.0045,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 102,
+      "truth": 0.3128,
+      "A": {
+        "pred": 0.3128,
+        "latency": 5.13,
+        "tokens": 818,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3128,
+        "latency": 5.55,
+        "tokens": 931,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3128,
+        "latency": 0.0044,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 103,
+      "truth": 0.4675,
+      "A": {
+        "pred": 0.4675,
+        "latency": 4.04,
+        "tokens": 710,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4675,
+        "latency": 5.41,
+        "tokens": 978,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4675,
+        "latency": 0.0045,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 104,
+      "truth": 0.1484,
+      "A": {
+        "pred": 0.1484,
+        "latency": 5.35,
+        "tokens": 893,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.1484,
+        "latency": 5.0,
+        "tokens": 917,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.1484,
+        "latency": 0.0042,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 105,
+      "truth": 0.487,
+      "A": {
+        "pred": 0.487,
+        "latency": 5.93,
+        "tokens": 948,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.487,
+        "latency": 6.06,
+        "tokens": 1073,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.487,
+        "latency": 0.0042,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 106,
+      "truth": 0.795,
+      "A": {
+        "pred": 0.795,
+        "latency": 4.73,
+        "tokens": 862,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.795,
+        "latency": 4.32,
+        "tokens": 854,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.795,
+        "latency": 0.0042,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 107,
+      "truth": 0.217,
+      "A": {
+        "pred": 0.217,
+        "latency": 4.16,
+        "tokens": 765,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.217,
+        "latency": 4.59,
+        "tokens": 853,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.217,
+        "latency": 0.0042,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 108,
+      "truth": 0.1921,
+      "A": {
+        "pred": 0.1921,
+        "latency": 4.61,
+        "tokens": 804,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.1921,
+        "latency": 6.03,
+        "tokens": 983,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.1921,
+        "latency": 0.0019,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 109,
+      "truth": 0.298,
+      "A": {
+        "pred": 0.298,
+        "latency": 4.67,
+        "tokens": 807,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.298,
+        "latency": 6.67,
+        "tokens": 1102,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.298,
+        "latency": 0.002,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 110,
+      "truth": 0.758,
+      "A": {
+        "pred": 0.758,
+        "latency": 5.4,
+        "tokens": 892,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.758,
+        "latency": 5.37,
+        "tokens": 928,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.758,
+        "latency": 0.0047,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 111,
+      "truth": 0.6732,
+      "A": {
+        "pred": 0.6732,
+        "latency": 6.19,
+        "tokens": 975,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6732,
+        "latency": 5.27,
+        "tokens": 916,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6732,
+        "latency": 0.0029,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 112,
+      "truth": 0.3337,
+      "A": {
+        "pred": 0.3337,
+        "latency": 5.01,
+        "tokens": 918,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3337,
+        "latency": 8.52,
+        "tokens": 1256,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3337,
+        "latency": 0.0059,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 113,
+      "truth": 0.704,
+      "A": {
+        "pred": 0.704,
+        "latency": 4.12,
+        "tokens": 818,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.704,
+        "latency": 5.42,
+        "tokens": 941,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.704,
+        "latency": 0.003,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 114,
+      "truth": 0.4724,
+      "A": {
+        "pred": 0.4724,
+        "latency": 4.41,
+        "tokens": 771,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4724,
+        "latency": 6.84,
+        "tokens": 1212,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4724,
+        "latency": 0.002,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 115,
+      "truth": 0.3754,
+      "A": {
+        "pred": 0.3754,
+        "latency": 5.0,
+        "tokens": 843,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3754,
+        "latency": 4.16,
+        "tokens": 801,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3754,
+        "latency": 0.0045,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 116,
+      "truth": 0.3284,
+      "A": {
+        "pred": 0.3284,
+        "latency": 4.78,
+        "tokens": 775,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3284,
+        "latency": 4.82,
+        "tokens": 951,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3284,
+        "latency": 0.0022,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 117,
+      "truth": 0.231,
+      "A": {
+        "pred": 0.231,
+        "latency": 4.46,
+        "tokens": 847,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.231,
+        "latency": 4.8,
+        "tokens": 919,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.231,
+        "latency": 0.002,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 118,
+      "truth": 0.6989,
+      "A": {
+        "pred": 0.6989,
+        "latency": 5.66,
+        "tokens": 991,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6989,
+        "latency": 4.7,
+        "tokens": 896,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6989,
+        "latency": 0.0048,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 119,
+      "truth": 0.62,
+      "A": {
+        "pred": 0.62,
+        "latency": 7.25,
+        "tokens": 1062,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.62,
+        "latency": 5.95,
+        "tokens": 915,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.62,
+        "latency": 0.0042,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 120,
+      "truth": 0.2558,
+      "A": {
+        "pred": 0.2558,
+        "latency": 4.57,
+        "tokens": 806,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2558,
+        "latency": 6.87,
+        "tokens": 1050,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2558,
+        "latency": 0.0024,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 121,
+      "truth": 0.2624,
+      "A": {
+        "pred": 0.2624,
+        "latency": 6.21,
+        "tokens": 959,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2624,
+        "latency": 8.77,
+        "tokens": 1382,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2624,
+        "latency": 0.005,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 122,
+      "truth": 0.6302,
+      "A": {
+        "pred": 0.6302,
+        "latency": 4.21,
+        "tokens": 735,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6302,
+        "latency": 6.99,
+        "tokens": 1096,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6302,
+        "latency": 0.0045,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 123,
+      "truth": 0.732,
+      "A": {
+        "pred": 0.732,
+        "latency": 5.06,
+        "tokens": 859,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.732,
+        "latency": 6.16,
+        "tokens": 1118,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.732,
+        "latency": 0.0047,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 124,
+      "truth": 0.702,
+      "A": {
+        "pred": 0.702,
+        "latency": 4.07,
+        "tokens": 771,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.702,
+        "latency": 6.28,
+        "tokens": 1082,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.702,
+        "latency": 0.0047,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 125,
+      "truth": 0.321,
+      "A": {
+        "pred": 0.321,
+        "latency": 3.52,
+        "tokens": 696,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.321,
+        "latency": 5.24,
+        "tokens": 935,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.321,
+        "latency": 0.0052,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 126,
+      "truth": 0.9482,
+      "A": {
+        "pred": 0.9482,
+        "latency": 5.56,
+        "tokens": 909,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.9482,
+        "latency": 5.41,
+        "tokens": 983,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.9482,
+        "latency": 0.0046,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 127,
+      "truth": 0.6452,
+      "A": {
+        "pred": 0.6452,
+        "latency": 4.57,
+        "tokens": 810,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6452,
+        "latency": 5.9,
+        "tokens": 985,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6452,
+        "latency": 0.0061,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 128,
+      "truth": 0.4606,
+      "A": {
+        "pred": 0.4606,
+        "latency": 4.43,
+        "tokens": 831,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4606,
+        "latency": 4.29,
+        "tokens": 862,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4606,
+        "latency": 0.0045,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 129,
+      "truth": 0.3716,
+      "A": {
+        "pred": 0.3716,
+        "latency": 3.84,
+        "tokens": 740,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3716,
+        "latency": 5.35,
+        "tokens": 928,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3716,
+        "latency": 0.0058,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 130,
+      "truth": 0.263,
+      "A": {
+        "pred": 0.263,
+        "latency": 5.96,
+        "tokens": 950,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.263,
+        "latency": 6.34,
+        "tokens": 970,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.263,
+        "latency": 0.0063,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 131,
+      "truth": 0.3175,
+      "A": {
+        "pred": 0.3175,
+        "latency": 7.0,
+        "tokens": 1055,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3175,
+        "latency": 8.6,
+        "tokens": 1186,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3175,
+        "latency": 0.0073,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 132,
+      "truth": 0.4582,
+      "A": {
+        "pred": 0.4582,
+        "latency": 5.47,
+        "tokens": 954,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4582,
+        "latency": 6.91,
+        "tokens": 1111,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4582,
+        "latency": 0.0054,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 133,
+      "truth": 0.676,
+      "A": {
+        "pred": 0.676,
+        "latency": 5.2,
+        "tokens": 838,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.676,
+        "latency": 5.99,
+        "tokens": 1007,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.676,
+        "latency": 0.0065,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 134,
+      "truth": 0.4406,
+      "A": {
+        "pred": 0.4406,
+        "latency": 5.13,
+        "tokens": 842,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4406,
+        "latency": 4.1,
+        "tokens": 783,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4406,
+        "latency": 0.0062,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 135,
+      "truth": 0.6325,
+      "A": {
+        "pred": 0.6325,
+        "latency": 5.09,
+        "tokens": 825,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6325,
+        "latency": 5.42,
+        "tokens": 861,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6325,
+        "latency": 0.0021,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 136,
+      "truth": 0.536,
+      "A": {
+        "pred": 0.536,
+        "latency": 4.71,
+        "tokens": 838,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.536,
+        "latency": 4.79,
+        "tokens": 888,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.536,
+        "latency": 0.0073,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 137,
+      "truth": 0.7025,
+      "A": {
+        "pred": 0.7025,
+        "latency": 3.65,
+        "tokens": 690,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7025,
+        "latency": 5.93,
+        "tokens": 935,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7025,
+        "latency": 0.0066,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 138,
+      "truth": 0.4288,
+      "A": {
+        "pred": 0.4288,
+        "latency": 3.8,
+        "tokens": 812,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4288,
+        "latency": 6.81,
+        "tokens": 1225,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4288,
+        "latency": 0.002,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 139,
+      "truth": 0.5279,
+      "A": {
+        "pred": 0.5279,
+        "latency": 5.55,
+        "tokens": 925,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5279,
+        "latency": 7.52,
+        "tokens": 1235,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5279,
+        "latency": 0.0046,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 140,
+      "truth": 0.4286,
+      "A": {
+        "pred": 0.4286,
+        "latency": 4.67,
+        "tokens": 830,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4286,
+        "latency": 6.12,
+        "tokens": 1100,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4286,
+        "latency": 0.0044,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 141,
+      "truth": 0.55,
+      "A": {
+        "pred": 0.55,
+        "latency": 4.64,
+        "tokens": 875,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.55,
+        "latency": 6.08,
+        "tokens": 1076,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.55,
+        "latency": 0.0043,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 142,
+      "truth": 0.4438,
+      "A": {
+        "pred": 0.4438,
+        "latency": 3.99,
+        "tokens": 735,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4438,
+        "latency": 4.84,
+        "tokens": 908,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4438,
+        "latency": 0.0045,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 143,
+      "truth": 0.6516,
+      "A": {
+        "pred": 0.6516,
+        "latency": 6.04,
+        "tokens": 1000,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6516,
+        "latency": 5.83,
+        "tokens": 971,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6516,
+        "latency": 0.0019,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 144,
+      "truth": 0.4105,
+      "A": {
+        "pred": 0.4105,
+        "latency": 4.38,
+        "tokens": 797,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4105,
+        "latency": 5.72,
+        "tokens": 1004,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4105,
+        "latency": 0.0021,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 145,
+      "truth": 0.3522,
+      "A": {
+        "pred": 0.3522,
+        "latency": 6.66,
+        "tokens": 1100,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3522,
+        "latency": 3.45,
+        "tokens": 767,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3522,
+        "latency": 0.0055,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 146,
+      "truth": 0.4655,
+      "A": {
+        "pred": 0.4655,
+        "latency": 4.82,
+        "tokens": 857,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4655,
+        "latency": 6.84,
+        "tokens": 1189,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4655,
+        "latency": 0.0043,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 147,
+      "truth": 0.256,
+      "A": {
+        "pred": 0.256,
+        "latency": 5.07,
+        "tokens": 915,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.256,
+        "latency": 5.2,
+        "tokens": 952,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.256,
+        "latency": 0.005,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 148,
+      "truth": 0.7129,
+      "A": {
+        "pred": 0.7129,
+        "latency": 4.87,
+        "tokens": 807,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7129,
+        "latency": 6.05,
+        "tokens": 1088,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7129,
+        "latency": 0.0061,
+        "fail": null
+      }
+    },
+    {
+      "tier": "M",
+      "i": 149,
+      "truth": 0.6894,
+      "A": {
+        "pred": 0.6894,
+        "latency": 5.28,
+        "tokens": 860,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6894,
+        "latency": 5.51,
+        "tokens": 1046,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6894,
+        "latency": 0.0047,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 0,
+      "truth": 0.4757,
+      "A": {
+        "pred": 0.4757,
+        "latency": 6.07,
+        "tokens": 1076,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4757,
+        "latency": 4.59,
+        "tokens": 954,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4757,
+        "latency": 0.0589,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 1,
+      "truth": 0.232,
+      "A": {
+        "pred": 0.232,
+        "latency": 5.49,
+        "tokens": 952,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.232,
+        "latency": 6.13,
+        "tokens": 1162,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.232,
+        "latency": 0.0661,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 2,
+      "truth": 0.734,
+      "A": {
+        "pred": 0.734,
+        "latency": 4.26,
+        "tokens": 855,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.734,
+        "latency": 4.24,
+        "tokens": 930,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.734,
+        "latency": 0.0609,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 3,
+      "truth": 0.204,
+      "A": {
+        "pred": 0.204,
+        "latency": 5.81,
+        "tokens": 982,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.204,
+        "latency": 4.09,
+        "tokens": 895,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.204,
+        "latency": 0.0599,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 4,
+      "truth": 0.8788,
+      "A": {
+        "pred": 0.8788,
+        "latency": 5.46,
+        "tokens": 1007,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8788,
+        "latency": 6.5,
+        "tokens": 1185,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8788,
+        "latency": 0.0599,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 5,
+      "truth": 0.66,
+      "A": {
+        "pred": 0.66,
+        "latency": 7.59,
+        "tokens": 1212,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.66,
+        "latency": 4.57,
+        "tokens": 891,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.66,
+        "latency": 0.0628,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 6,
+      "truth": 0.6994,
+      "A": {
+        "pred": 0.6994,
+        "latency": 4.54,
+        "tokens": 890,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6994,
+        "latency": 6.48,
+        "tokens": 1176,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6994,
+        "latency": 0.0581,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 7,
+      "truth": 0.36,
+      "A": {
+        "pred": 0.36,
+        "latency": 5.29,
+        "tokens": 970,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.36,
+        "latency": 6.67,
+        "tokens": 1216,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.36,
+        "latency": 0.1697,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 8,
+      "truth": 0.6044,
+      "A": {
+        "pred": 0.6044,
+        "latency": 4.87,
+        "tokens": 903,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6044,
+        "latency": 5.45,
+        "tokens": 1014,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6044,
+        "latency": 0.0572,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 9,
+      "truth": 0.2225,
+      "A": {
+        "pred": 0.2225,
+        "latency": 4.43,
+        "tokens": 792,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2225,
+        "latency": 6.77,
+        "tokens": 1259,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2225,
+        "latency": 0.0649,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 10,
+      "truth": 0.5847,
+      "A": {
+        "pred": 0.5847,
+        "latency": 3.3,
+        "tokens": 740,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5847,
+        "latency": 6.88,
+        "tokens": 1234,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5847,
+        "latency": 0.0485,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 11,
+      "truth": 0.368,
+      "A": {
+        "pred": 0.368,
+        "latency": 5.09,
+        "tokens": 938,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.368,
+        "latency": 6.75,
+        "tokens": 1196,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.368,
+        "latency": 0.0569,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 12,
+      "truth": 0.3016,
+      "A": {
+        "pred": 0.3016,
+        "latency": 5.11,
+        "tokens": 947,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3016,
+        "latency": 6.61,
+        "tokens": 1100,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3016,
+        "latency": 0.0512,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 13,
+      "truth": 0.3539,
+      "A": {
+        "pred": 0.3539,
+        "latency": 4.95,
+        "tokens": 901,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3539,
+        "latency": 3.01,
+        "tokens": 781,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3539,
+        "latency": 0.0458,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 14,
+      "truth": 0.3368,
+      "A": {
+        "pred": 0.3368,
+        "latency": 4.77,
+        "tokens": 898,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3368,
+        "latency": 5.82,
+        "tokens": 1101,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3368,
+        "latency": 0.0557,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 15,
+      "truth": 0.582,
+      "A": {
+        "pred": 0.582,
+        "latency": 5.28,
+        "tokens": 902,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.582,
+        "latency": 7.22,
+        "tokens": 1197,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.582,
+        "latency": 0.0636,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 16,
+      "truth": 0.4364,
+      "A": {
+        "pred": 0.4364,
+        "latency": 5.93,
+        "tokens": 1046,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4364,
+        "latency": 7.29,
+        "tokens": 1216,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4364,
+        "latency": 0.0622,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 17,
+      "truth": 0.2767,
+      "A": {
+        "pred": 0.2767,
+        "latency": 4.71,
+        "tokens": 917,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2767,
+        "latency": 8.98,
+        "tokens": 1395,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2767,
+        "latency": 0.056,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 18,
+      "truth": 0.5349,
+      "A": {
+        "pred": 0.5349,
+        "latency": 4.71,
+        "tokens": 890,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5349,
+        "latency": 5.65,
+        "tokens": 1041,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5349,
+        "latency": 0.0598,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 19,
+      "truth": 0.5538,
+      "A": {
+        "pred": 0.5538,
+        "latency": 5.02,
+        "tokens": 954,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5538,
+        "latency": 6.37,
+        "tokens": 1233,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5538,
+        "latency": 0.0713,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 20,
+      "truth": 0.45,
+      "A": {
+        "pred": 0.45,
+        "latency": 4.96,
+        "tokens": 900,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.45,
+        "latency": 5.03,
+        "tokens": 1001,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.45,
+        "latency": 0.0575,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 21,
+      "truth": 0.2586,
+      "A": {
+        "pred": 0.2586,
+        "latency": 4.44,
+        "tokens": 869,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2586,
+        "latency": 6.1,
+        "tokens": 1127,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2586,
+        "latency": 0.0553,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 22,
+      "truth": 0.4147,
+      "A": {
+        "pred": 0.4147,
+        "latency": 6.24,
+        "tokens": 1052,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4147,
+        "latency": 7.38,
+        "tokens": 1230,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4147,
+        "latency": 0.0641,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 23,
+      "truth": 0.8636,
+      "A": {
+        "pred": 0.8636,
+        "latency": 3.95,
+        "tokens": 787,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8636,
+        "latency": 7.17,
+        "tokens": 1261,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8636,
+        "latency": 0.0694,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 24,
+      "truth": 0.4329,
+      "A": {
+        "pred": 0.4329,
+        "latency": 5.18,
+        "tokens": 931,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4329,
+        "latency": 5.46,
+        "tokens": 1044,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4329,
+        "latency": 0.0528,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 25,
+      "truth": 0.8252,
+      "A": {
+        "pred": 0.8252,
+        "latency": 5.77,
+        "tokens": 1000,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8252,
+        "latency": 6.21,
+        "tokens": 1081,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8252,
+        "latency": 0.0445,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 26,
+      "truth": 0.4968,
+      "A": {
+        "pred": 0.4968,
+        "latency": 3.77,
+        "tokens": 769,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4968,
+        "latency": 7.44,
+        "tokens": 1239,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4968,
+        "latency": 0.0551,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 27,
+      "truth": 0.4719,
+      "A": {
+        "pred": 0.4719,
+        "latency": 5.07,
+        "tokens": 872,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4719,
+        "latency": 5.29,
+        "tokens": 1006,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4719,
+        "latency": 0.0567,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 28,
+      "truth": 0.847,
+      "A": {
+        "pred": 0.847,
+        "latency": 4.97,
+        "tokens": 853,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.847,
+        "latency": 5.46,
+        "tokens": 1023,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.847,
+        "latency": 0.0526,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 29,
+      "truth": 0.6345,
+      "A": {
+        "pred": 0.6345,
+        "latency": 7.23,
+        "tokens": 1093,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6345,
+        "latency": 3.87,
+        "tokens": 873,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6345,
+        "latency": 0.0397,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 30,
+      "truth": 0.538,
+      "A": {
+        "pred": 0.538,
+        "latency": 4.86,
+        "tokens": 894,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.538,
+        "latency": 7.02,
+        "tokens": 1253,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.538,
+        "latency": 0.0514,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 31,
+      "truth": 0.8369,
+      "A": {
+        "pred": 0.8369,
+        "latency": 5.34,
+        "tokens": 969,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8369,
+        "latency": 5.44,
+        "tokens": 1076,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8369,
+        "latency": 0.0505,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 32,
+      "truth": 0.554,
+      "A": {
+        "pred": 0.554,
+        "latency": 3.84,
+        "tokens": 818,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.554,
+        "latency": 7.8,
+        "tokens": 1258,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.554,
+        "latency": 0.0419,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 33,
+      "truth": 0.8071,
+      "A": {
+        "pred": 0.8071,
+        "latency": 4.1,
+        "tokens": 839,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8071,
+        "latency": 4.54,
+        "tokens": 985,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8071,
+        "latency": 0.0529,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 34,
+      "truth": 0.4134,
+      "A": {
+        "pred": 0.4134,
+        "latency": 6.2,
+        "tokens": 967,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4134,
+        "latency": 6.15,
+        "tokens": 1165,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4134,
+        "latency": 0.0521,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 35,
+      "truth": 0.308,
+      "A": {
+        "pred": 0.308,
+        "latency": 5.14,
+        "tokens": 910,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.308,
+        "latency": 6.41,
+        "tokens": 1087,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.308,
+        "latency": 0.0488,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 36,
+      "truth": 0.7436,
+      "A": {
+        "pred": 0.7436,
+        "latency": 3.67,
+        "tokens": 782,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7436,
+        "latency": 6.18,
+        "tokens": 1104,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7436,
+        "latency": 0.0485,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 37,
+      "truth": 0.5444,
+      "A": {
+        "pred": 0.5444,
+        "latency": 4.11,
+        "tokens": 810,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5444,
+        "latency": 6.49,
+        "tokens": 1156,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5444,
+        "latency": 0.0495,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 38,
+      "truth": 0.2357,
+      "A": {
+        "pred": 0.2357,
+        "latency": 6.13,
+        "tokens": 1088,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2357,
+        "latency": 3.93,
+        "tokens": 844,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2357,
+        "latency": 0.0482,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 39,
+      "truth": 0.6778,
+      "A": {
+        "pred": 0.6778,
+        "latency": 5.19,
+        "tokens": 968,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6778,
+        "latency": 7.21,
+        "tokens": 1255,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6778,
+        "latency": 0.0455,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 40,
+      "truth": 0.1804,
+      "A": {
+        "pred": 0.1804,
+        "latency": 6.25,
+        "tokens": 1017,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.1804,
+        "latency": 5.2,
+        "tokens": 1043,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.1804,
+        "latency": 0.0495,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 41,
+      "truth": 0.4302,
+      "A": {
+        "pred": 0.4302,
+        "latency": 6.43,
+        "tokens": 1061,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4302,
+        "latency": 5.04,
+        "tokens": 991,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4302,
+        "latency": 0.0942,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 42,
+      "truth": 0.6276,
+      "A": {
+        "pred": 0.6276,
+        "latency": 5.2,
+        "tokens": 856,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6276,
+        "latency": 4.0,
+        "tokens": 886,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6276,
+        "latency": 0.0857,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 43,
+      "truth": 0.3451,
+      "A": {
+        "pred": 0.3451,
+        "latency": 4.71,
+        "tokens": 931,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3451,
+        "latency": 4.98,
+        "tokens": 1023,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3451,
+        "latency": 0.0865,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 44,
+      "truth": 0.2114,
+      "A": {
+        "pred": 0.2114,
+        "latency": 6.25,
+        "tokens": 1032,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2114,
+        "latency": 5.95,
+        "tokens": 1219,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2114,
+        "latency": 0.0843,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 45,
+      "truth": 0.8776,
+      "A": {
+        "pred": 0.8776,
+        "latency": 4.57,
+        "tokens": 887,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8776,
+        "latency": 5.79,
+        "tokens": 1110,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8776,
+        "latency": 0.0961,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 46,
+      "truth": 0.5784,
+      "A": {
+        "pred": 0.5784,
+        "latency": 4.89,
+        "tokens": 904,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5784,
+        "latency": 3.18,
+        "tokens": 802,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5784,
+        "latency": 0.0807,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 47,
+      "truth": 0.366,
+      "A": {
+        "pred": 0.366,
+        "latency": 4.74,
+        "tokens": 887,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.366,
+        "latency": 4.71,
+        "tokens": 952,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.366,
+        "latency": 0.097,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 48,
+      "truth": 0.843,
+      "A": {
+        "pred": 0.843,
+        "latency": 4.53,
+        "tokens": 878,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.843,
+        "latency": 5.67,
+        "tokens": 1092,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.843,
+        "latency": 0.0802,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 49,
+      "truth": 0.7651,
+      "A": {
+        "pred": 0.7651,
+        "latency": 5.16,
+        "tokens": 962,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7651,
+        "latency": 4.52,
+        "tokens": 970,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7651,
+        "latency": 0.084,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 50,
+      "truth": 0.9267,
+      "A": {
+        "pred": 0.9267,
+        "latency": 5.01,
+        "tokens": 907,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.9267,
+        "latency": 4.85,
+        "tokens": 1032,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.9267,
+        "latency": 0.0787,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 51,
+      "truth": 0.6305,
+      "A": {
+        "pred": 0.6305,
+        "latency": 4.17,
+        "tokens": 893,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6305,
+        "latency": 3.22,
+        "tokens": 826,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6305,
+        "latency": 0.0912,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 52,
+      "truth": 0.8932,
+      "A": {
+        "pred": 0.8932,
+        "latency": 5.07,
+        "tokens": 899,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8932,
+        "latency": 6.44,
+        "tokens": 1102,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8932,
+        "latency": 0.1046,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 53,
+      "truth": 0.2025,
+      "A": {
+        "pred": 0.2025,
+        "latency": 6.48,
+        "tokens": 1094,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2025,
+        "latency": 5.43,
+        "tokens": 1070,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2025,
+        "latency": 0.08,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 54,
+      "truth": 0.4395,
+      "A": {
+        "pred": 0.4395,
+        "latency": 6.57,
+        "tokens": 1130,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4395,
+        "latency": 10.65,
+        "tokens": 1500,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4395,
+        "latency": 0.0501,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 55,
+      "truth": 0.586,
+      "A": {
+        "pred": 0.586,
+        "latency": 7.44,
+        "tokens": 1180,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.586,
+        "latency": 4.74,
+        "tokens": 980,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.586,
+        "latency": 0.0485,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 56,
+      "truth": 0.7475,
+      "A": {
+        "pred": 0.7475,
+        "latency": 4.3,
+        "tokens": 853,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7475,
+        "latency": 6.41,
+        "tokens": 1175,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7475,
+        "latency": 0.0502,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 57,
+      "truth": 0.5872,
+      "A": {
+        "pred": 0.5872,
+        "latency": 3.74,
+        "tokens": 808,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5872,
+        "latency": 8.12,
+        "tokens": 1346,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5872,
+        "latency": 0.0712,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 58,
+      "truth": 0.457,
+      "A": {
+        "pred": 0.457,
+        "latency": 4.65,
+        "tokens": 854,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.457,
+        "latency": 5.68,
+        "tokens": 1163,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.457,
+        "latency": 0.0627,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 59,
+      "truth": 0.6588,
+      "A": {
+        "pred": 0.6588,
+        "latency": 4.06,
+        "tokens": 835,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6588,
+        "latency": 7.47,
+        "tokens": 1325,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6588,
+        "latency": 0.0636,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 60,
+      "truth": 0.6688,
+      "A": {
+        "pred": 0.6688,
+        "latency": 4.2,
+        "tokens": 840,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6688,
+        "latency": 4.85,
+        "tokens": 1008,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6688,
+        "latency": 0.0797,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 61,
+      "truth": 0.3892,
+      "A": {
+        "pred": 0.3892,
+        "latency": 3.86,
+        "tokens": 809,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3892,
+        "latency": 6.57,
+        "tokens": 1195,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3892,
+        "latency": 0.0807,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 62,
+      "truth": 0.7016,
+      "A": {
+        "pred": 0.7016,
+        "latency": 5.26,
+        "tokens": 956,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7016,
+        "latency": 5.14,
+        "tokens": 1042,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7016,
+        "latency": 0.0883,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 63,
+      "truth": 0.3582,
+      "A": {
+        "pred": 0.3582,
+        "latency": 5.26,
+        "tokens": 981,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3582,
+        "latency": 6.48,
+        "tokens": 1119,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3582,
+        "latency": 0.0703,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 64,
+      "truth": 0.2928,
+      "A": {
+        "pred": 0.2928,
+        "latency": 4.68,
+        "tokens": 873,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2928,
+        "latency": 5.22,
+        "tokens": 1054,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2928,
+        "latency": 0.0733,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 65,
+      "truth": 0.546,
+      "A": {
+        "pred": 0.546,
+        "latency": 4.16,
+        "tokens": 833,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.546,
+        "latency": 6.96,
+        "tokens": 1326,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.546,
+        "latency": 0.0405,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 66,
+      "truth": 0.7177,
+      "A": {
+        "pred": 0.7177,
+        "latency": 4.59,
+        "tokens": 918,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7177,
+        "latency": 6.54,
+        "tokens": 1136,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7177,
+        "latency": 0.0381,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 67,
+      "truth": 0.5124,
+      "A": {
+        "pred": 0.5124,
+        "latency": 6.07,
+        "tokens": 1036,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5124,
+        "latency": 4.56,
+        "tokens": 942,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5124,
+        "latency": 0.0506,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 68,
+      "truth": 0.2748,
+      "A": {
+        "pred": 0.2748,
+        "latency": 4.93,
+        "tokens": 881,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2748,
+        "latency": 6.9,
+        "tokens": 1208,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2748,
+        "latency": 0.0493,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 69,
+      "truth": 0.722,
+      "A": {
+        "pred": 0.722,
+        "latency": 5.15,
+        "tokens": 979,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.722,
+        "latency": 5.73,
+        "tokens": 1144,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.722,
+        "latency": 0.0382,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 70,
+      "truth": 0.3452,
+      "A": {
+        "pred": 0.3452,
+        "latency": 5.42,
+        "tokens": 969,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3452,
+        "latency": 5.83,
+        "tokens": 1087,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3452,
+        "latency": 0.0485,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 71,
+      "truth": 0.674,
+      "A": {
+        "pred": 0.674,
+        "latency": 3.98,
+        "tokens": 834,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.674,
+        "latency": 3.21,
+        "tokens": 818,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.674,
+        "latency": 0.0493,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 72,
+      "truth": 0.214,
+      "A": {
+        "pred": 0.214,
+        "latency": 5.22,
+        "tokens": 999,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.214,
+        "latency": 5.08,
+        "tokens": 1045,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.214,
+        "latency": 0.0511,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 73,
+      "truth": 0.47,
+      "A": {
+        "pred": 0.47,
+        "latency": 4.61,
+        "tokens": 869,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.47,
+        "latency": 5.74,
+        "tokens": 1076,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.47,
+        "latency": 0.0497,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 74,
+      "truth": 0.4478,
+      "A": {
+        "pred": 0.4478,
+        "latency": 4.63,
+        "tokens": 973,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4478,
+        "latency": 4.46,
+        "tokens": 943,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4478,
+        "latency": 0.0499,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 75,
+      "truth": 0.3889,
+      "A": {
+        "pred": 0.3889,
+        "latency": 5.39,
+        "tokens": 967,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3889,
+        "latency": 6.48,
+        "tokens": 1168,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3889,
+        "latency": 0.0388,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 76,
+      "truth": 0.1264,
+      "A": {
+        "pred": 0.1264,
+        "latency": 4.18,
+        "tokens": 831,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.1264,
+        "latency": 5.27,
+        "tokens": 1056,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.1264,
+        "latency": 0.0501,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 77,
+      "truth": 0.6494,
+      "A": {
+        "pred": 0.6494,
+        "latency": 4.71,
+        "tokens": 926,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6494,
+        "latency": 3.61,
+        "tokens": 855,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6494,
+        "latency": 0.0503,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 78,
+      "truth": 0.576,
+      "A": {
+        "pred": 0.576,
+        "latency": 3.75,
+        "tokens": 817,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.576,
+        "latency": 7.31,
+        "tokens": 1305,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.576,
+        "latency": 0.0488,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 79,
+      "truth": 0.714,
+      "A": {
+        "pred": 0.714,
+        "latency": 3.24,
+        "tokens": 773,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.714,
+        "latency": 7.3,
+        "tokens": 1235,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.714,
+        "latency": 0.0481,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 80,
+      "truth": 0.6613,
+      "A": {
+        "pred": 0.6613,
+        "latency": 6.03,
+        "tokens": 1064,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6613,
+        "latency": 6.07,
+        "tokens": 1199,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6613,
+        "latency": 0.05,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 81,
+      "truth": 0.5318,
+      "A": {
+        "pred": 0.5318,
+        "latency": 5.71,
+        "tokens": 1018,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5318,
+        "latency": 5.36,
+        "tokens": 1050,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5318,
+        "latency": 0.0496,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 82,
+      "truth": 0.2374,
+      "A": {
+        "pred": 0.2374,
+        "latency": 5.83,
+        "tokens": 950,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2374,
+        "latency": 5.74,
+        "tokens": 1041,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2374,
+        "latency": 0.0473,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 83,
+      "truth": 0.7268,
+      "A": {
+        "pred": 0.7268,
+        "latency": 4.12,
+        "tokens": 808,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7268,
+        "latency": 3.46,
+        "tokens": 818,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7268,
+        "latency": 0.0501,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 84,
+      "truth": 0.5441,
+      "A": {
+        "pred": 0.5441,
+        "latency": 5.27,
+        "tokens": 928,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5441,
+        "latency": 5.09,
+        "tokens": 1007,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5441,
+        "latency": 0.05,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 85,
+      "truth": 0.2862,
+      "A": {
+        "pred": 0.2862,
+        "latency": 5.45,
+        "tokens": 995,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2862,
+        "latency": 7.42,
+        "tokens": 1299,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2862,
+        "latency": 0.0497,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 86,
+      "truth": 0.5108,
+      "A": {
+        "pred": 0.5108,
+        "latency": 3.93,
+        "tokens": 803,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5108,
+        "latency": 5.18,
+        "tokens": 1029,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5108,
+        "latency": 0.0499,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 87,
+      "truth": 0.505,
+      "A": {
+        "pred": 0.505,
+        "latency": 2.93,
+        "tokens": 666,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.505,
+        "latency": 3.86,
+        "tokens": 890,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.505,
+        "latency": 0.0495,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 88,
+      "truth": 0.2254,
+      "A": {
+        "pred": 0.2254,
+        "latency": 4.72,
+        "tokens": 861,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2254,
+        "latency": 10.69,
+        "tokens": 1476,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2254,
+        "latency": 0.0487,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 89,
+      "truth": 0.4342,
+      "A": {
+        "pred": 0.4342,
+        "latency": 5.43,
+        "tokens": 979,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4342,
+        "latency": 5.51,
+        "tokens": 1080,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4342,
+        "latency": 0.0488,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 90,
+      "truth": 0.4892,
+      "A": {
+        "pred": 0.4892,
+        "latency": 4.65,
+        "tokens": 890,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4892,
+        "latency": 6.81,
+        "tokens": 1172,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4892,
+        "latency": 0.0867,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 91,
+      "truth": 0.4005,
+      "A": {
+        "pred": 0.4005,
+        "latency": 3.91,
+        "tokens": 753,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4005,
+        "latency": 10.43,
+        "tokens": 1534,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4005,
+        "latency": 0.0651,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 92,
+      "truth": 0.8144,
+      "A": {
+        "pred": 0.8144,
+        "latency": 6.71,
+        "tokens": 1054,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8144,
+        "latency": 6.01,
+        "tokens": 1154,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8144,
+        "latency": 0.0609,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 93,
+      "truth": 0.5239,
+      "A": {
+        "pred": 0.5239,
+        "latency": 7.18,
+        "tokens": 1231,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5239,
+        "latency": 5.16,
+        "tokens": 1023,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5239,
+        "latency": 0.0571,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 94,
+      "truth": 0.6254,
+      "A": {
+        "pred": 0.6254,
+        "latency": 4.97,
+        "tokens": 952,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6254,
+        "latency": 6.66,
+        "tokens": 1189,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6254,
+        "latency": 0.0617,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 95,
+      "truth": 0.3025,
+      "A": {
+        "pred": 0.3025,
+        "latency": 4.2,
+        "tokens": 837,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3025,
+        "latency": 5.22,
+        "tokens": 1040,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3025,
+        "latency": 0.0542,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 96,
+      "truth": 0.58,
+      "A": {
+        "pred": 0.58,
+        "latency": 5.6,
+        "tokens": 1026,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.58,
+        "latency": 5.5,
+        "tokens": 1104,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.58,
+        "latency": 0.0507,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 97,
+      "truth": 0.2368,
+      "A": {
+        "pred": 0.2368,
+        "latency": 6.67,
+        "tokens": 1159,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2368,
+        "latency": 7.39,
+        "tokens": 1344,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2368,
+        "latency": 0.0503,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 98,
+      "truth": 0.6262,
+      "A": {
+        "pred": 0.6262,
+        "latency": 5.62,
+        "tokens": 1013,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6262,
+        "latency": 6.26,
+        "tokens": 1120,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6262,
+        "latency": 0.0506,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 99,
+      "truth": 0.6422,
+      "A": {
+        "pred": 0.6422,
+        "latency": 4.92,
+        "tokens": 981,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6422,
+        "latency": 4.53,
+        "tokens": 1036,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6422,
+        "latency": 0.0518,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 100,
+      "truth": 0.2588,
+      "A": {
+        "pred": 0.2588,
+        "latency": 4.32,
+        "tokens": 845,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2588,
+        "latency": 3.32,
+        "tokens": 810,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2588,
+        "latency": 0.0513,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 101,
+      "truth": 0.7094,
+      "A": {
+        "pred": 0.7094,
+        "latency": 5.18,
+        "tokens": 980,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7094,
+        "latency": 3.21,
+        "tokens": 822,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7094,
+        "latency": 0.0505,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 102,
+      "truth": 0.2124,
+      "A": {
+        "pred": 0.2124,
+        "latency": 5.07,
+        "tokens": 970,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2124,
+        "latency": 4.93,
+        "tokens": 1011,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2124,
+        "latency": 0.0515,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 103,
+      "truth": 0.5994,
+      "A": {
+        "pred": 0.5994,
+        "latency": 4.67,
+        "tokens": 906,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5994,
+        "latency": 4.17,
+        "tokens": 906,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5994,
+        "latency": 0.0502,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 104,
+      "truth": 0.5524,
+      "A": {
+        "pred": 0.5524,
+        "latency": 5.22,
+        "tokens": 942,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5524,
+        "latency": 4.22,
+        "tokens": 935,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5524,
+        "latency": 0.0488,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 105,
+      "truth": 0.42,
+      "A": {
+        "pred": 0.42,
+        "latency": 4.39,
+        "tokens": 913,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.42,
+        "latency": 6.89,
+        "tokens": 1171,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.42,
+        "latency": 0.0502,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 106,
+      "truth": 0.465,
+      "A": {
+        "pred": 0.465,
+        "latency": 5.34,
+        "tokens": 910,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.465,
+        "latency": 5.41,
+        "tokens": 1026,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.465,
+        "latency": 0.0499,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 107,
+      "truth": 0.3968,
+      "A": {
+        "pred": 0.3968,
+        "latency": 5.11,
+        "tokens": 949,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3968,
+        "latency": 5.48,
+        "tokens": 1081,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3968,
+        "latency": 0.048,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 108,
+      "truth": 0.6923,
+      "A": {
+        "pred": 0.6923,
+        "latency": 5.08,
+        "tokens": 973,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6923,
+        "latency": 6.13,
+        "tokens": 1139,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6923,
+        "latency": 0.0517,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 109,
+      "truth": 0.6085,
+      "A": {
+        "pred": 0.6085,
+        "latency": 4.2,
+        "tokens": 840,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6085,
+        "latency": 6.63,
+        "tokens": 1174,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6085,
+        "latency": 0.0379,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 110,
+      "truth": 0.0918,
+      "A": {
+        "pred": 0.0918,
+        "latency": 6.56,
+        "tokens": 1084,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.0918,
+        "latency": 6.67,
+        "tokens": 1196,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.0918,
+        "latency": 0.0515,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 111,
+      "truth": 0.6154,
+      "A": {
+        "pred": 0.6154,
+        "latency": 5.15,
+        "tokens": 969,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6154,
+        "latency": 5.53,
+        "tokens": 1119,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6154,
+        "latency": 0.0506,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 112,
+      "truth": 0.3163,
+      "A": {
+        "pred": 0.3163,
+        "latency": 4.71,
+        "tokens": 878,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3163,
+        "latency": 3.61,
+        "tokens": 887,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3163,
+        "latency": 0.0485,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 113,
+      "truth": 0.824,
+      "A": {
+        "pred": 0.824,
+        "latency": 3.68,
+        "tokens": 799,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.824,
+        "latency": 4.7,
+        "tokens": 931,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.824,
+        "latency": 0.0488,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 114,
+      "truth": 0.6592,
+      "A": {
+        "pred": 0.6592,
+        "latency": 4.72,
+        "tokens": 894,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6592,
+        "latency": 7.23,
+        "tokens": 1154,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6592,
+        "latency": 0.0493,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 115,
+      "truth": 0.7572,
+      "A": {
+        "pred": 0.7572,
+        "latency": 6.64,
+        "tokens": 1012,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7572,
+        "latency": 6.2,
+        "tokens": 1170,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7572,
+        "latency": 0.0491,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 116,
+      "truth": 0.4664,
+      "A": {
+        "pred": 0.4664,
+        "latency": 3.97,
+        "tokens": 783,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4664,
+        "latency": 7.41,
+        "tokens": 1232,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4664,
+        "latency": 0.0495,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 117,
+      "truth": 0.2615,
+      "A": {
+        "pred": 0.2615,
+        "latency": 7.47,
+        "tokens": 1195,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2615,
+        "latency": 5.27,
+        "tokens": 1040,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2615,
+        "latency": 0.0525,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 118,
+      "truth": 0.8536,
+      "A": {
+        "pred": 0.8536,
+        "latency": 6.47,
+        "tokens": 1073,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8536,
+        "latency": 7.47,
+        "tokens": 1198,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8536,
+        "latency": 0.0484,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 119,
+      "truth": 0.8005,
+      "A": {
+        "pred": 0.8005,
+        "latency": 4.26,
+        "tokens": 837,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8005,
+        "latency": 5.5,
+        "tokens": 1030,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8005,
+        "latency": 0.0506,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 120,
+      "truth": 0.5861,
+      "A": {
+        "pred": 0.5861,
+        "latency": 6.63,
+        "tokens": 1121,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5861,
+        "latency": 12.02,
+        "tokens": 1724,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5861,
+        "latency": 0.062,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 121,
+      "truth": 0.1059,
+      "A": {
+        "pred": 0.1059,
+        "latency": 5.25,
+        "tokens": 949,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.1059,
+        "latency": 8.81,
+        "tokens": 1362,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.1059,
+        "latency": 0.0483,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 122,
+      "truth": 0.5528,
+      "A": {
+        "pred": 0.5528,
+        "latency": 5.16,
+        "tokens": 1000,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5528,
+        "latency": 7.6,
+        "tokens": 1233,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5528,
+        "latency": 0.047,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 123,
+      "truth": 0.8231,
+      "A": {
+        "pred": 0.8231,
+        "latency": 4.11,
+        "tokens": 818,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.8231,
+        "latency": 7.66,
+        "tokens": 1231,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.8231,
+        "latency": 0.0492,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 124,
+      "truth": 0.5146,
+      "A": {
+        "pred": 0.5146,
+        "latency": 5.71,
+        "tokens": 973,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.5146,
+        "latency": 6.56,
+        "tokens": 1143,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.5146,
+        "latency": 0.0516,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 125,
+      "truth": 0.4336,
+      "A": {
+        "pred": 0.4336,
+        "latency": 4.04,
+        "tokens": 794,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4336,
+        "latency": 5.16,
+        "tokens": 1062,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4336,
+        "latency": 0.053,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 126,
+      "truth": 0.4757,
+      "A": {
+        "pred": 0.4757,
+        "latency": 2.87,
+        "tokens": 683,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4757,
+        "latency": 6.52,
+        "tokens": 1150,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4757,
+        "latency": 0.05,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 127,
+      "truth": 0.7261,
+      "A": {
+        "pred": 0.7261,
+        "latency": 6.62,
+        "tokens": 1083,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7261,
+        "latency": 10.08,
+        "tokens": 1532,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7261,
+        "latency": 0.0509,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 128,
+      "truth": 0.298,
+      "A": {
+        "pred": 0.298,
+        "latency": 7.59,
+        "tokens": 1099,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.298,
+        "latency": 6.29,
+        "tokens": 1295,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.298,
+        "latency": 0.0494,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 129,
+      "truth": 0.7552,
+      "A": {
+        "pred": 0.7552,
+        "latency": 5.53,
+        "tokens": 995,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7552,
+        "latency": 4.47,
+        "tokens": 1014,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7552,
+        "latency": 0.0518,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 130,
+      "truth": 0.2554,
+      "A": {
+        "pred": 0.2554,
+        "latency": 5.43,
+        "tokens": 935,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2554,
+        "latency": 6.62,
+        "tokens": 1258,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2554,
+        "latency": 0.0472,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 131,
+      "truth": 0.7371,
+      "A": {
+        "pred": 0.7371,
+        "latency": 4.34,
+        "tokens": 834,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7371,
+        "latency": 6.04,
+        "tokens": 1222,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7371,
+        "latency": 0.0509,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 132,
+      "truth": 0.3808,
+      "A": {
+        "pred": 0.3808,
+        "latency": 5.76,
+        "tokens": 972,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3808,
+        "latency": 4.64,
+        "tokens": 970,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3808,
+        "latency": 0.0512,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 133,
+      "truth": 0.4404,
+      "A": {
+        "pred": 0.4404,
+        "latency": 5.21,
+        "tokens": 921,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4404,
+        "latency": 7.33,
+        "tokens": 1278,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4404,
+        "latency": 0.0488,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 134,
+      "truth": 0.3956,
+      "A": {
+        "pred": 0.3956,
+        "latency": 5.51,
+        "tokens": 931,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3956,
+        "latency": 6.19,
+        "tokens": 1111,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3956,
+        "latency": 0.0499,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 135,
+      "truth": 0.6864,
+      "A": {
+        "pred": 0.6864,
+        "latency": 3.63,
+        "tokens": 749,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6864,
+        "latency": 5.58,
+        "tokens": 1095,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6864,
+        "latency": 0.0518,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 136,
+      "truth": 0.4356,
+      "A": {
+        "pred": 0.4356,
+        "latency": 3.74,
+        "tokens": 775,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4356,
+        "latency": 5.83,
+        "tokens": 1043,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4356,
+        "latency": 0.0567,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 137,
+      "truth": 0.2174,
+      "A": {
+        "pred": 0.2174,
+        "latency": 4.02,
+        "tokens": 848,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.2174,
+        "latency": 4.75,
+        "tokens": 986,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.2174,
+        "latency": 0.0491,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 138,
+      "truth": 0.6253,
+      "A": {
+        "pred": 0.6253,
+        "latency": 5.09,
+        "tokens": 942,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6253,
+        "latency": 5.65,
+        "tokens": 1068,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6253,
+        "latency": 0.0492,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 139,
+      "truth": 0.3624,
+      "A": {
+        "pred": 0.3624,
+        "latency": 5.51,
+        "tokens": 983,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3624,
+        "latency": 5.55,
+        "tokens": 1068,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3624,
+        "latency": 0.0659,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 140,
+      "truth": 0.4924,
+      "A": {
+        "pred": 0.4924,
+        "latency": 4.87,
+        "tokens": 916,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4924,
+        "latency": 6.45,
+        "tokens": 1190,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4924,
+        "latency": 0.0578,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 141,
+      "truth": 0.559,
+      "A": {
+        "pred": 0.559,
+        "latency": 3.69,
+        "tokens": 748,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.559,
+        "latency": 4.03,
+        "tokens": 925,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.559,
+        "latency": 0.0612,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 142,
+      "truth": 0.813,
+      "A": {
+        "pred": 0.813,
+        "latency": 5.07,
+        "tokens": 936,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.813,
+        "latency": 7.0,
+        "tokens": 1286,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.813,
+        "latency": 0.0538,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 143,
+      "truth": 0.3373,
+      "A": {
+        "pred": 0.3373,
+        "latency": 6.26,
+        "tokens": 997,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.3373,
+        "latency": 6.16,
+        "tokens": 1167,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.3373,
+        "latency": 0.0487,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 144,
+      "truth": 0.4992,
+      "A": {
+        "pred": 0.4992,
+        "latency": 4.34,
+        "tokens": 822,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.4992,
+        "latency": 6.3,
+        "tokens": 1169,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.4992,
+        "latency": 0.0483,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 145,
+      "truth": 0.475,
+      "A": {
+        "pred": 0.475,
+        "latency": 5.34,
+        "tokens": 926,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.475,
+        "latency": 4.93,
+        "tokens": 989,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.475,
+        "latency": 0.0654,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 146,
+      "truth": 0.6769,
+      "A": {
+        "pred": 0.6769,
+        "latency": 4.16,
+        "tokens": 826,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.6769,
+        "latency": 5.41,
+        "tokens": 1041,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.6769,
+        "latency": 0.0484,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 147,
+      "truth": 0.7192,
+      "A": {
+        "pred": 0.7192,
+        "latency": 6.44,
+        "tokens": 1038,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.7192,
+        "latency": 6.33,
+        "tokens": 1156,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.7192,
+        "latency": 0.0566,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 148,
+      "truth": 0.0892,
+      "A": {
+        "pred": 0.0892,
+        "latency": 6.23,
+        "tokens": 1124,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.0892,
+        "latency": 3.75,
+        "tokens": 836,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.0892,
+        "latency": 0.047,
+        "fail": null
+      }
+    },
+    {
+      "tier": "L",
+      "i": 149,
+      "truth": 0.62,
+      "A": {
+        "pred": 0.62,
+        "latency": 4.36,
+        "tokens": 867,
+        "fail": null
+      },
+      "B": {
+        "pred": 0.62,
+        "latency": 7.81,
+        "tokens": 1274,
+        "fail": null
+      },
+      "C": {
+        "pred": 0.62,
+        "latency": 0.048,
+        "fail": null
+      }
+    }
+  ]
+}
