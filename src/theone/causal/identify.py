@@ -148,7 +148,11 @@ def identify_effect(g: CausalGraph, X: str, Y: str, observed=None) -> dict:
                 "mediator_set": sorted(fd),
                 "assumptions": ["front-door assumes no unobserved confounding "
                                 "between mediator and outcome — NOT verifiable "
-                                "from data, needs domain knowledge"]}
+                                "from data, needs domain knowledge",
+                                "near-violations are silent: a 0.05/0.3-strength "
+                                "hidden mediator-outcome confounder biases the "
+                                "estimate by ~0.003/0.082 with NO warning "
+                                "(quantified probe, registry NOTE-002)"]}
     iv = find_instrument(g, X, Y, observed)
     if iv is not None:
         return {"identifiable": True, "strategy": "instrumental_variable",

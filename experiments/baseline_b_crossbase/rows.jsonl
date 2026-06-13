@@ -1,0 +1,12 @@
+{"i": 0, "truth": 0.335673, "gpt51": {"pred": 0.3357, "latency": 10.7, "fail": null}, "gemini35f": {"pred": null, "latency": 15.86, "fail": "no ANSWER line"}}
+{"i": 1, "truth": 0.531472, "gpt51": {"pred": 0.5315, "latency": 14.32, "fail": null}, "gemini35f": {"pred": null, "latency": 15.96, "fail": "no ANSWER line"}}
+{"i": 2, "truth": 0.70234, "gpt51": {"pred": null, "latency": 0.69, "fail": "transport: Remote end closed connection without response"}, "gemini35f": {"pred": null, "latency": 0.14, "fail": "transport: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>"}}
+{"i": 3, "truth": 0.472903, "gpt51": {"pred": null, "latency": 0.11, "fail": "transport: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>"}, "gemini35f": {"pred": null, "latency": 0.12, "fail": "transport: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>"}}
+{"i": 4, "truth": 0.435103, "gpt51": {"pred": null, "latency": 0.13, "fail": "transport: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>"}, "gemini35f": {"pred": null, "latency": 0.11, "fail": "transport: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>"}}
+{"i": 5, "truth": 0.224236, "gpt51": {"pred": 0.2242, "latency": 6.11, "fail": null}, "gemini35f": {"pred": 0.2242, "latency": 16.42, "fail": null}}
+{"i": 6, "truth": 0.461104, "gpt51": {"pred": 0.4611, "latency": 5.74, "fail": null}, "gemini35f": {"pred": 0.4611, "latency": 10.48, "fail": null}}
+{"i": 7, "truth": 0.600729, "gpt51": {"pred": 0.6007, "latency": 4.04, "fail": null}, "gemini35f": {"pred": 0.6007, "latency": 14.29, "fail": null}}
+{"i": 8, "truth": 0.3815, "gpt51": {"pred": 0.3815, "latency": 2.29, "fail": null}, "gemini35f": {"pred": 0.3815, "latency": 8.64, "fail": null}}
+{"i": 9, "truth": 0.329328, "gpt51": {"pred": 0.3283, "latency": 9.74, "fail": null}, "gemini35f": {"pred": null, "latency": 17.66, "fail": "no ANSWER line"}}
+{"i": 10, "truth": 0.439133, "gpt51": {"pred": 0.4391, "latency": 7.42, "fail": null}, "gemini35f": {"pred": null, "latency": 17.6, "fail": "no ANSWER line"}}
+{"i": 11, "truth": 0.309858, "gpt51": {"pred": 0.3101, "latency": 9.15, "fail": null}, "gemini35f": {"pred": null, "latency": 16.15, "fail": "no ANSWER line"}}
