@@ -150,7 +150,21 @@ def the_one(ext):
     except Exception:
         return None, False
 
+def _selfcheck():
+    for i in range(6):
+        g, p1, p2, xv, yv, do, obs = make_scm(np.random.default_rng(SEED + 1 + i))
+        P1 = {1: p1, 0: 1 - p1}; P2 = {1: p2, 0: 1 - p2}
+        reader = sum(yv[(1, a, b)] * P1[a] * P2[b] for a in (0, 1) for b in (0, 1))
+        ext = {"p_c1": p1, "p_c2": p2, "p_y": {
+            f"x{x}_{a}{b}": yv[(x, a, b)] for x in (0, 1) for a in (0, 1) for b in (0, 1)}}
+        one, ok = the_one(ext)
+        assert abs(reader - do) < 1e-6, f"k2 narrative⟺truth inconsistent item {i}"
+        assert ok and abs(one - do) < 1e-9, f"k2 engine⟺truth inconsistent item {i}"
+    print("[selfcheck k2] narrative⟺truth⟺engine all consistent")
+
+
 def main():
+    _selfcheck()
     jpath = HERE / "rows_k2.jsonl"
     done = {json.loads(l)["i"] for l in jpath.read_text().splitlines()} if jpath.exists() else set()
     jf = jpath.open("a")

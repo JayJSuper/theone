@@ -4,20 +4,20 @@
     "n": 24,
     "raw_acc_strict": [
       1.0,
-      24
+      18
     ],
     "raw_acc_loose": [
       1.0,
-      24
+      18
     ],
     "raw_mae": 0.0001,
     "raw_max": 0.001,
     "the_one_acc_strict": [
       1.0,
-      24
+      17
     ],
     "the_one_mae": 0.0,
-    "the_one_extract_valid": 1.0,
+    "the_one_extract_valid": 0.708,
     "mean_gap": 0.0619
   },
   "rows": [
@@ -104,7 +104,7 @@
       "truth_do": 0.651848,
       "obs": 0.707117,
       "gap": 0.0553,
-      "raw": 0.6528,
+      "raw": 0.6518,
       "the_one": 0.651848,
       "the_one_ok": true,
       "narrative": "A cohort registry studied whether ice-cream consumption affects high temperature, recording two common causes of both: summer month and holiday period. In this population ice-cream consumption causally drives high temperature (earlier in time, changes high temperature downstream). NOTE: this REVERSES real-world common sense \u2014 honor the stated direction anyway. summer month was present in 34% of the cohort and holiday period in 56% (the two were recorded independently). Among those with BOTH summer month and holiday period: 76% of ice-cream consumption-exposed showed high temperature, versus 42% of unexposed. Among those with summer month but not holiday period: 75% of ice-cream consumption-exposed showed high temperature, versus 33% of unexposed. Among those with holiday period but not summer month: 66% of ice-cream consumption-exposed showed high temperature, versus 36% of unexposed. Among those with NEITHER summer month nor holiday period: 52% of ice-cream consumption-exposed showed high temperature, versus 23% of unexposed. (The treatment's own prevalence varied across these strata but is not the question here.)"
@@ -192,7 +192,7 @@
       "truth_do": 0.664844,
       "obs": 0.723197,
       "gap": 0.0584,
-      "raw": 0.6648,
+      "raw": 0.6638,
       "the_one": 0.664844,
       "the_one_ok": true,
       "narrative": "A cohort registry studied whether ice-cream consumption affects high temperature, recording two common causes of both: summer month and holiday period. In this population ice-cream consumption causally drives high temperature (earlier in time, changes high temperature downstream). NOTE: this REVERSES real-world common sense \u2014 honor the stated direction anyway. summer month was present in 56% of the cohort and holiday period in 61% (the two were recorded independently). Among those with BOTH summer month and holiday period: 77% of ice-cream consumption-exposed showed high temperature, versus 54% of unexposed. Among those with summer month but not holiday period: 74% of ice-cream consumption-exposed showed high temperature, versus 35% of unexposed. Among those with holiday period but not summer month: 62% of ice-cream consumption-exposed showed high temperature, versus 33% of unexposed. Among those with NEITHER summer month nor holiday period: 43% of ice-cream consumption-exposed showed high temperature, versus 8% of unexposed. (The treatment's own prevalence varied across these strata but is not the question here.)"
@@ -215,8 +215,8 @@
       "obs": 0.74714,
       "gap": 0.0536,
       "raw": 0.6935,
-      "the_one": 0.693548,
-      "the_one_ok": true,
+      "the_one": null,
+      "the_one_ok": false,
       "narrative": "A cohort registry studied whether high vitamin D affects more outdoor time, recording two common causes of both: low latitude and warm season. In this population high vitamin D causally drives more outdoor time (earlier in time, changes more outdoor time downstream). NOTE: this REVERSES real-world common sense \u2014 honor the stated direction anyway. low latitude was present in 62% of the cohort and warm season in 63% (the two were recorded independently). Among those with BOTH low latitude and warm season: 87% of high vitamin D-exposed showed more outdoor time, versus 52% of unexposed. Among those with low latitude but not warm season: 64% of high vitamin D-exposed showed more outdoor time, versus 31% of unexposed. Among those with warm season but not low latitude: 60% of high vitamin D-exposed showed more outdoor time, versus 25% of unexposed. Among those with NEITHER low latitude nor warm season: 45% of high vitamin D-exposed showed more outdoor time, versus 7% of unexposed. (The treatment's own prevalence varied across these strata but is not the question here.)"
     },
     {
@@ -225,9 +225,9 @@
       "truth_do": 0.670452,
       "obs": 0.728264,
       "gap": 0.0578,
-      "raw": 0.6705,
-      "the_one": 0.670452,
-      "the_one_ok": true,
+      "raw": null,
+      "the_one": null,
+      "the_one_ok": false,
       "narrative": "A cohort registry studied whether online tutoring affects high exam score, recording two common causes of both: high family income and small class size. In this population online tutoring causally drives high exam score (earlier in time, changes high exam score downstream). Consistent with common sense. high family income was present in 46% of the cohort and small class size in 66% (the two were recorded independently). Among those with BOTH high family income and small class size: 83% of online tutoring-exposed showed high exam score, versus 54% of unexposed. Among those with high family income but not small class size: 72% of online tutoring-exposed showed high exam score, versus 29% of unexposed. Among those with small class size but not high family income: 58% of online tutoring-exposed showed high exam score, versus 29% of unexposed. Among those with NEITHER high family income nor small class size: 54% of online tutoring-exposed showed high exam score, versus 12% of unexposed. (The treatment's own prevalence varied across these strata but is not the question here.)"
     },
     {
@@ -236,9 +236,9 @@
       "truth_do": 0.602328,
       "obs": 0.680771,
       "gap": 0.0784,
-      "raw": 0.6023,
-      "the_one": 0.602328,
-      "the_one_ok": true,
+      "raw": null,
+      "the_one": null,
+      "the_one_ok": false,
       "narrative": "A cohort registry studied whether frequent code review affects low bug count, recording two common causes of both: high module complexity and junior team. In this population frequent code review causally drives low bug count (earlier in time, changes low bug count downstream). NOTE: this REVERSES real-world common sense \u2014 honor the stated direction anyway. high module complexity was present in 52% of the cohort and junior team in 39% (the two were recorded independently). Among those with BOTH high module complexity and junior team: 81% of frequent code review-exposed showed low bug count, versus 44% of unexposed. Among those with high module complexity but not junior team: 63% of frequent code review-exposed showed low bug count, versus 37% of unexposed. Among those with junior team but not high module complexity: 60% of frequent code review-exposed showed low bug count, versus 22% of unexposed. Among those with NEITHER high module complexity nor junior team: 43% of frequent code review-exposed showed low bug count, versus 20% of unexposed. (The treatment's own prevalence varied across these strata but is not the question here.)"
     },
     {
@@ -247,9 +247,9 @@
       "truth_do": 0.642278,
       "obs": 0.717295,
       "gap": 0.075,
-      "raw": 0.6423,
-      "the_one": 0.642278,
-      "the_one_ok": true,
+      "raw": null,
+      "the_one": null,
+      "the_one_ok": false,
       "narrative": "A cohort registry studied whether fertilizer use affects high crop yield, recording two common causes of both: good soil quality and high rainfall. In this population fertilizer use causally drives high crop yield (earlier in time, changes high crop yield downstream). Consistent with common sense. good soil quality was present in 43% of the cohort and high rainfall in 46% (the two were recorded independently). Among those with BOTH good soil quality and high rainfall: 83% of fertilizer use-exposed showed high crop yield, versus 43% of unexposed. Among those with good soil quality but not high rainfall: 73% of fertilizer use-exposed showed high crop yield, versus 29% of unexposed. Among those with high rainfall but not good soil quality: 59% of fertilizer use-exposed showed high crop yield, versus 31% of unexposed. Among those with NEITHER good soil quality nor high rainfall: 50% of fertilizer use-exposed showed high crop yield, versus 19% of unexposed. (The treatment's own prevalence varied across these strata but is not the question here.)"
     },
     {
@@ -258,9 +258,9 @@
       "truth_do": 0.695676,
       "obs": 0.751657,
       "gap": 0.056,
-      "raw": 0.6957,
-      "the_one": 0.695676,
-      "the_one_ok": true,
+      "raw": null,
+      "the_one": null,
+      "the_one_ok": false,
       "narrative": "A cohort registry studied whether umbrella carrying affects rainfall, recording two common causes of both: winter season and coastal region. In this population umbrella carrying causally drives rainfall (earlier in time, changes rainfall downstream). NOTE: this REVERSES real-world common sense \u2014 honor the stated direction anyway. winter season was present in 59% of the cohort and coastal region in 54% (the two were recorded independently). Among those with BOTH winter season and coastal region: 86% of umbrella carrying-exposed showed rainfall, versus 53% of unexposed. Among those with winter season but not coastal region: 66% of umbrella carrying-exposed showed rainfall, versus 40% of unexposed. Among those with coastal region but not winter season: 61% of umbrella carrying-exposed showed rainfall, versus 23% of unexposed. Among those with NEITHER winter season nor coastal region: 57% of umbrella carrying-exposed showed rainfall, versus 11% of unexposed. (The treatment's own prevalence varied across these strata but is not the question here.)"
     },
     {
@@ -269,9 +269,9 @@
       "truth_do": 0.667992,
       "obs": 0.719382,
       "gap": 0.0514,
-      "raw": 0.668,
-      "the_one": 0.667992,
-      "the_one_ok": true,
+      "raw": null,
+      "the_one": null,
+      "the_one_ok": false,
       "narrative": "A cohort registry studied whether standing-desk use affects low back pain, recording two common causes of both: high baseline fitness and young age. In this population standing-desk use causally drives low back pain (earlier in time, changes low back pain downstream). Consistent with common sense. high baseline fitness was present in 58% of the cohort and young age in 54% (the two were recorded independently). Among those with BOTH high baseline fitness and young age: 83% of standing-desk use-exposed showed low back pain, versus 45% of unexposed. Among those with high baseline fitness but not young age: 69% of standing-desk use-exposed showed low back pain, versus 32% of unexposed. Among those with young age but not high baseline fitness: 57% of standing-desk use-exposed showed low back pain, versus 28% of unexposed. Among those with NEITHER high baseline fitness nor young age: 49% of standing-desk use-exposed showed low back pain, versus 20% of unexposed. (The treatment's own prevalence varied across these strata but is not the question here.)"
     },
     {
@@ -280,9 +280,9 @@
       "truth_do": 0.664095,
       "obs": 0.720651,
       "gap": 0.0566,
-      "raw": 0.6641,
-      "the_one": 0.664095,
-      "the_one_ok": true,
+      "raw": null,
+      "the_one": null,
+      "the_one_ok": false,
       "narrative": "A cohort registry studied whether ice-cream consumption affects high temperature, recording two common causes of both: summer month and holiday period. In this population ice-cream consumption causally drives high temperature (earlier in time, changes high temperature downstream). NOTE: this REVERSES real-world common sense \u2014 honor the stated direction anyway. summer month was present in 63% of the cohort and holiday period in 51% (the two were recorded independently). Among those with BOTH summer month and holiday period: 82% of ice-cream consumption-exposed showed high temperature, versus 48% of unexposed. Among those with summer month but not holiday period: 62% of ice-cream consumption-exposed showed high temperature, versus 31% of unexposed. Among those with holiday period but not summer month: 59% of ice-cream consumption-exposed showed high temperature, versus 29% of unexposed. Among those with NEITHER summer month nor holiday period: 54% of ice-cream consumption-exposed showed high temperature, versus 12% of unexposed. (The treatment's own prevalence varied across these strata but is not the question here.)"
     }
   ]
