@@ -1,7 +1,22 @@
 name: ci
 on: [push, pull_request]
 jobs:
+  hygiene:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: secret scan (no key may ever land in the repo)
+        run: |
+          if grep -rInE "sk-ant-api[0-9a-zA-Z_-]{10,}|sk-proj-[A-Za-z0-9_-]{20,}|ghp_[A-Za-z0-9]{30,}|hf_[A-Za-z0-9]{30,}|rpa_[A-Za-z0-9]{30,}|sk-[0-9a-f]{32}" \
+               --include="*.py" --include="*.md" --include="*.json" --include="*.html" --include="*.yml" .; then
+            echo "::error::secret-like string found in repo"; exit 1; fi
+      - name: pathogen grep (falsified-claim phrases banned outside rule definitions)
+        run: |
+          if grep -rInE "O\(1\) ?无限上下文|2\.1MB ?恒定内存|95% ?召回|用户感知 ?8\.9|100% ?10/10" \
+               --include="*.py" --include="*.json" --include="*.html" . ; then
+            echo "::error::pathogen phrase found outside rule documents"; exit 1; fi
   test:
+    needs: hygiene
     runs-on: ubuntu-latest
     strategy:
       matrix:
