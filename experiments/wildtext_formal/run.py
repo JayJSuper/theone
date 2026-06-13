@@ -187,7 +187,12 @@ def main():
                 row["gpt51"] = float(m[-1].group(1)) if m else None
             except Exception as e:
                 row["gpt51"] = None
-            row["the_one"] = truth   # engine on (correctly) extracted structure = exact
+            # NOTE (CC self-catch, see REPORT.md §2): narratives are NUMBER-LESS
+            # (AM-014). The engine CANNOT compute P(Y|do(X)) without CPTs, so any
+            # "the_one" numeric score here would be fabricated. We record NO engine
+            # number on number-less wildtext. The Stage-2 numeric comparison is
+            # ill-posed (WEAK-03) and is NOT a valid bet#1 closure.
+            row["the_one"] = None
         rows.append(row)
         jsonl.write(json.dumps(row) + "\n"); jsonl.flush()
         tag = "ACCEPT" if accepted else "reject"
@@ -204,7 +209,12 @@ def main():
     summary = {"n": len(rows), "acceptance_commonsense": arate(acc_cn),
                "acceptance_counter": arate(acc_ct), "acceptance_overall": arate(rows),
                "stage2_n": len(accepted_rows), "gpt51_endtoend_acc": gpt_acc,
-               "the_one_endtoend_acc": 1.0 if accepted_rows else None}
+               # WEAK-03: numeric end-to-end on NUMBER-LESS narratives is ill-posed.
+               # gpt51_acc here reflects "guess a 4-dp number from a number-less text"
+               # (unfair); engine has no CPTs to compute -> the_one is NOT scored.
+               # The only fair wildtext signal is structure-extraction acceptance.
+               "the_one_endtoend_acc": None,
+               "WEAK_03_numeric_comparison_ill_posed": True}
     (HERE / "results.json").write_text(json.dumps({"summary": summary, "rows": rows}, indent=2))
     print("\n===== WILDTEXT FORMAL SUMMARY =====")
     print(json.dumps(summary, indent=2))
