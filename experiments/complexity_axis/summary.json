@@ -1,0 +1,93 @@
+{
+  "table": {
+    "1": {
+      "combos": 2,
+      "n": 50,
+      "gpt51": {
+        "acc": 0.96,
+        "fail": 0,
+        "wrong": 2
+      },
+      "deepseek": {
+        "acc": 1.0,
+        "fail": 0,
+        "wrong": 0
+      }
+    },
+    "2": {
+      "combos": 4,
+      "n": 50,
+      "gpt51": {
+        "acc": 1.0,
+        "fail": 0,
+        "wrong": 0
+      },
+      "deepseek": {
+        "acc": 1.0,
+        "fail": 0,
+        "wrong": 0
+      }
+    },
+    "3": {
+      "combos": 8,
+      "n": 50,
+      "gpt51": {
+        "acc": 0.96,
+        "fail": 2,
+        "wrong": 0
+      },
+      "deepseek": {
+        "acc": 0.88,
+        "fail": 6,
+        "wrong": 0
+      }
+    },
+    "4": {
+      "combos": 16,
+      "n": 50,
+      "gpt51": {
+        "acc": 0.66,
+        "fail": 3,
+        "wrong": 14
+      },
+      "deepseek": {
+        "acc": 0.06,
+        "fail": 47,
+        "wrong": 0
+      }
+    },
+    "5": {
+      "combos": 32,
+      "n": 50,
+      "gpt51": {
+        "acc": 0.08,
+        "fail": 1,
+        "wrong": 45
+      },
+      "deepseek": {
+        "acc": 0.0,
+        "fail": 50,
+        "wrong": 0
+      }
+    },
+    "6": {
+      "combos": 64,
+      "n": 50,
+      "gpt51": {
+        "acc": 0.14,
+        "fail": 1,
+        "wrong": 42
+      },
+      "deepseek": {
+        "acc": 0.0,
+        "fail": 50,
+        "wrong": 0
+      }
+    }
+  },
+  "cliff": {
+    "gpt51": 4,
+    "deepseek": 4
+  },
+  "interpretation": "CLIFF CONFIRMED: both bases collapse as 2^k grows; engine flat at 1.000. The breakpoint is combinatorial marginalization load, not node count \u2014 flagship cliff at 2^4=16, flash cliff at 2^4=16."
+}
