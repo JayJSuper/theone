@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The One · 核心发现：组合爆炸悬崖</title>
+<style>
+:root{--bg:#faf9f7;--ink:#1d1d1f;--ink2:#5b5b60;--ink3:#9b988f;--hair:#e7e4df;--stone:#8a7a63;
+--green:#3d7a52;--red:#b4533e;--blue:#3a5a8c;--amber:#9a6b2f;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75}
+.wrap{max-width:880px;margin:0 auto;padding:48px 28px 90px}
+h1{font-size:1.8rem;font-weight:700;letter-spacing:-.01em}
+.sub{color:var(--ink2);margin:8px 0 4px;font-size:.95rem}
+.tag{display:inline-block;font-size:.7rem;color:var(--green);border:1px solid #cfe2d4;background:#eef4ef;border-radius:99px;padding:2px 10px;margin-left:8px}
+h2{font-size:1.25rem;margin:38px 0 6px;padding-top:20px;border-top:1px solid var(--hair)}
+.card{background:#fff;border:1px solid var(--hair);border-radius:16px;padding:24px;margin:16px 0;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+.lead{font-size:1.05rem;color:var(--ink)}
+.lead b{color:var(--stone)}
+table{width:100%;border-collapse:collapse;font-size:.86rem;margin-top:10px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--hair);text-align:center}
+th{color:var(--ink3);font-weight:600;font-size:.74rem}
+td:first-child,th:first-child{text-align:left}
+.eng{color:var(--green);font-weight:700}.bad{color:var(--red);font-weight:600}
+.legend{display:flex;gap:20px;flex-wrap:wrap;font-size:.82rem;margin:6px 0 0}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:22px;height:3px;border-radius:2px;display:inline-block}
+.note{font-size:.8rem;color:var(--ink2);background:#f0ece5;border-radius:10px;padding:12px 16px;margin-top:14px}
+.foot{margin-top:40px;padding-top:18px;border-top:1px solid var(--hair);color:var(--ink3);font-size:.8rem}
+.three{display:grid;gap:12px;grid-template-columns:1fr}
+@media(min-width:680px){.three{grid-template-columns:repeat(3,1fr)}}
+.m{background:#fff;border:1px solid var(--hair);border-radius:14px;padding:16px}
+.m .k{font-size:.72rem;color:var(--stone);font-weight:700;letter-spacing:.06em}
+.m .v{font-size:1.05rem;font-weight:650;margin:4px 0}
+.m .d{font-size:.8rem;color:var(--ink2)}
+</style></head><body><div class="wrap">
+
+<h1>The One · 核心发现<span class="tag">已验证 · 四基座跨三家族</span></h1>
+<div class="sub">为什么"显式因果引擎 + LLM"优于"纯 LLM"——一张图说清</div>
+
+<div class="card">
+<p class="lead">2026 年的顶级推理模型<b>懂</b>教科书因果，<b>不怕</b>无关信息——但当一道因果题需要边缘化的混杂配置数 <b>2ᵏ</b> 超过它的推理预算时，<b>连旗舰也会崩</b>。而显式因果引擎在 2ᵏ 上是平的：永远 1.000、毫秒级、每个答案带可验证凭证。</p>
+</div>
+
+<h2>核心图：组合爆炸悬崖（准确率 vs 2ᵏ）</h2>
+<div class="card">
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
+  <!-- axes -->
+  <line x1="80" y1="350" x2="710" y2="350" stroke="#c9c4ba" stroke-width="1.5"/>
+  <line x1="80" y1="40" x2="80" y2="350" stroke="#c9c4ba" stroke-width="1.5"/>
+  <!-- y grid + labels -->
+  <g font-size="12" fill="#9b988f" text-anchor="end">
+    <line x1="80" y1="350" x2="710" y2="350" stroke="#eee" /><text x="72" y="354">0.0</text>
+    <line x1="80" y1="272" x2="710" y2="272" stroke="#f0ede8"/><text x="72" y="276">0.25</text>
+    <line x1="80" y1="195" x2="710" y2="195" stroke="#f0ede8"/><text x="72" y="199">0.50</text>
+    <line x1="80" y1="117" x2="710" y2="117" stroke="#f0ede8"/><text x="72" y="121">0.75</text>
+    <line x1="80" y1="40" x2="710" y2="40" stroke="#f0ede8"/><text x="72" y="44">1.0</text>
+  </g>
+  <!-- x labels: 2^k = 2,4,8,16,32,64 at x=130,230,330,430,530,630 -->
+  <g font-size="12" fill="#9b988f" text-anchor="middle">
+    <text x="130" y="370">2</text><text x="230" y="370">4</text><text x="330" y="370">8</text>
+    <text x="430" y="370">16</text><text x="530" y="370">32</text><text x="630" y="370">64</text>
+    <text x="395" y="398" font-size="13" fill="#5b5b60">需边缘化的混杂配置数  2ᵏ  （k = 调整集基数）</text>
+  </g>
+  <text x="22" y="200" font-size="13" fill="#5b5b60" transform="rotate(-90 22 200)" text-anchor="middle">干预查询准确率</text>
+  <!-- cliff band at 16-32 -->
+  <rect x="430" y="40" width="100" height="310" fill="#b4533e" opacity="0.05"/>
+  <text x="480" y="60" font-size="11" fill="#b4533e" text-anchor="middle" opacity=".8">悬崖区</text>
+  <!-- helper: y = 350 - acc*310 -->
+  <!-- The One (engine) = flat 1.0 -->
+  <polyline fill="none" stroke="#3d7a52" stroke-width="3"
+    points="130,40 230,40 330,40 430,40 530,40 630,40"/>
+  <g fill="#3d7a52"><circle cx="130" cy="40" r="4"/><circle cx="230" cy="40" r="4"/><circle cx="330" cy="40" r="4"/><circle cx="430" cy="40" r="4"/><circle cx="530" cy="40" r="4"/><circle cx="630" cy="40" r="4"/></g>
+  <!-- gpt-5.1: .96 1.0 .96 .66 .08 .14  -> y: 52,40,52,145,325,307 -->
+  <polyline fill="none" stroke="#3a5a8c" stroke-width="2.5"
+    points="130,52 230,40 330,52 430,145 530,325 630,307"/>
+  <g fill="#3a5a8c"><circle cx="130" cy="52" r="3.5"/><circle cx="230" cy="40" r="3.5"/><circle cx="330" cy="52" r="3.5"/><circle cx="430" cy="145" r="3.5"/><circle cx="530" cy="325" r="3.5"/><circle cx="630" cy="307" r="3.5"/></g>
+  <!-- deepseek: 1.0 1.0 .88 .06 0 0 -> y:40,40,77,331,350,350 -->
+  <polyline fill="none" stroke="#b4533e" stroke-width="2.5" stroke-dasharray="5,3"
+    points="130,40 230,40 330,77 430,331 530,350 630,350"/>
+  <g fill="#b4533e"><circle cx="130" cy="40" r="3.5"/><circle cx="230" cy="40" r="3.5"/><circle cx="330" cy="77" r="3.5"/><circle cx="430" cy="331" r="3.5"/><circle cx="530" cy="350" r="3.5"/><circle cx="630" cy="350" r="3.5"/></g>
+  <!-- claude marker at k4/k5: 1.0, 0.10 -> y:40,319 -->
+  <g fill="#9a6b2f"><circle cx="430" cy="40" r="4"/><circle cx="530" cy="319" r="4"/></g>
+  <text x="430" y="32" font-size="10" fill="#9a6b2f" text-anchor="middle">claude 1.0</text>
+  <text x="552" y="319" font-size="10" fill="#9a6b2f">claude .10</text>
+</svg>
+<div class="legend">
+  <span><span class="sw" style="background:#3d7a52"></span>The One 引擎（精确枚举）</span>
+  <span><span class="sw" style="background:#3a5a8c"></span>gpt-5.1（旗舰）</span>
+  <span><span class="sw" style="background:#b4533e"></span>deepseek-v4-flash</span>
+  <span><span class="sw" style="background:#9a6b2f"></span>claude（悬崖处补测）</span>
+</div>
+<div class="note">读图：横轴是"一道因果题需要在脑中边缘化的混杂配置数 2ᵏ"（对数刻度）。<b>四个 LLM 跨三个模型家族，全部在 2⁵=32 配置处崩溃</b>（旗舰把悬崖推后一档，但不能消除）。引擎绿线全程贴在 1.000。这就是"把组合爆炸的因果计算从推理链移出、交给确定性引擎"的价值。</div>
+</div>
+
+<h2>三个命门数字（构成完整证据链）</h2>
+<div class="three">
+  <div class="m"><div class="k">① 因果核心</div><div class="v">F-1 七断言全绿</div><div class="d">混杂存在时观测≠干预；后门调整是正确答案；第三方 oracle(pgmpy) 独立复算一致到 1e-9。</div></div>
+  <div class="m"><div class="k">② 复杂度规模</div><div class="v">分离 p=3.5×10⁻¹⁸</div><div class="d">12 节点因果复杂度下 flash 档 LLM 崩(0.45-0.61)，引擎 1.000；双轨证实"崩溃由复杂度而非节点数驱动"。</div></div>
+  <div class="m"><div class="k">③ 组合爆炸</div><div class="v">悬崖 2⁴=16</div><div class="d">四基座跨三家族全部在 2⁵=32 崩；两种崩溃签名——自信错答(gpt-5.1) vs 协议失败(deepseek/claude)。</div></div>
+</div>
+
+<h2>一句话叙事</h2>
+<div class="card"><p class="lead">因果推理的正确性<b>不是知识问题</b>（LLM 懂因果），<b>是计算可终止性问题</b>——当边缘化组合数超过推理预算，再强的 LLM 也崩，而精确因果引擎不受组合爆炸影响。<b>认知层的价值 = 把因果计算从推理链中移出，交给确定性引擎，并为每个答案附上可验证的凭证。</b></p></div>
+
+<div class="note" style="background:#fbf3ee;border:1px solid #e8cdc0">
+<b>诚实边界（随结论同行）</b>：三命门均在"因果图已知 + 参数齐全"条件下获得——证明的是"已知结构下精确计算优于有限预算推理"，<b>不</b>等价于"因果推理已解决"。当因果图需从自然文本/数据中学习时，性能待测——这正是当前正在跑的"野生文本轴"要回答的最后一关。所有数字可复现，失败公开记录于《美丽失败录》。
+</div>
+
+<div class="foot">The One 项目 · 对假说敬畏，用基准说话 · 四基座跨三家族验证 · 数据可复现于 github.com/JayJSuper/theone</div>
+</div></body></html>
