@@ -17,3 +17,4 @@ htmlcov/
 
 # OS
 .DS_Store
+ops/key_usage_log.jsonl
