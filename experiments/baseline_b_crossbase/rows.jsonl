@@ -48,3 +48,103 @@
 {"i": 47, "truth": 0.244432, "gpt51": {"pred": 0.2248, "latency": 5.34, "fail": null}, "gemini35f": {"pred": null, "latency": 15.72, "fail": "no ANSWER line"}}
 {"i": 48, "truth": 0.5448, "gpt51": {"pred": 0.5448, "latency": 2.63, "fail": null}, "gemini35f": {"pred": 0.5448, "latency": 7.66, "fail": null}}
 {"i": 49, "truth": 0.374669, "gpt51": {"pred": 0.3747, "latency": 6.87, "fail": null}, "gemini35f": {"pred": null, "latency": 15.94, "fail": "no ANSWER line"}}
+{"i": 50, "truth": 0.485794, "gpt51": {"pred": 0.4863, "latency": 7.28, "fail": null}, "gemini35f": {"pred": null, "latency": 16.77, "fail": "no ANSWER line"}}
+{"i": 51, "truth": 0.1982, "gpt51": {"pred": 0.1982, "latency": 2.33, "fail": null}, "gemini35f": {"pred": 0.1982, "latency": 9.91, "fail": null}}
+{"i": 52, "truth": 0.553181, "gpt51": {"pred": 0.5532, "latency": 5.33, "fail": null}, "gemini35f": {"pred": 0.5532, "latency": 13.49, "fail": null}}
+{"i": 53, "truth": 0.5775, "gpt51": {"pred": 0.5775, "latency": 2.62, "fail": null}, "gemini35f": {"pred": 0.5775, "latency": 7.57, "fail": null}}
+{"i": 54, "truth": 0.392374, "gpt51": {"pred": 0.3924, "latency": 4.54, "fail": null}, "gemini35f": {"pred": 0.3924, "latency": 12.37, "fail": null}}
+{"i": 55, "truth": 0.45942, "gpt51": {"pred": 0.4601, "latency": 3.39, "fail": null}, "gemini35f": {"pred": 0.4594, "latency": 12.43, "fail": null}}
+{"i": 56, "truth": 0.0926, "gpt51": {"pred": 0.0926, "latency": 3.37, "fail": null}, "gemini35f": {"pred": 0.0926, "latency": 8.85, "fail": null}}
+{"i": 57, "truth": 0.634165, "gpt51": {"pred": 0.643, "latency": 8.86, "fail": null}, "gemini35f": {"pred": null, "latency": 16.22, "fail": "no ANSWER line"}}
+{"i": 58, "truth": 0.3589, "gpt51": {"pred": 0.3589, "latency": 2.32, "fail": null}, "gemini35f": {"pred": 0.3589, "latency": 6.35, "fail": null}}
+{"i": 59, "truth": 0.365248, "gpt51": {"pred": 0.3652, "latency": 4.26, "fail": null}, "gemini35f": {"pred": 0.3652, "latency": 14.71, "fail": null}}
+{"i": 60, "truth": 0.77741, "gpt51": {"pred": 0.7774, "latency": 7.8, "fail": null}, "gemini35f": {"pred": 0.7774, "latency": 11.27, "fail": null}}
+{"i": 61, "truth": 0.824846, "gpt51": {"pred": 0.8241, "latency": 17.81, "fail": null}, "gemini35f": {"pred": null, "latency": 380.15, "fail": "transport: Remote end closed connection without response"}}
+{"i": 62, "truth": 0.436791, "gpt51": {"pred": 0.4369, "latency": 11.49, "fail": null}, "gemini35f": {"pred": null, "latency": 16.21, "fail": "no ANSWER line"}}
+{"i": 63, "truth": 0.3711, "gpt51": {"pred": 0.3711, "latency": 2.89, "fail": null}, "gemini35f": {"pred": 0.3711, "latency": 11.09, "fail": null}}
+{"i": 64, "truth": 0.70244, "gpt51": {"pred": 0.7025, "latency": 13.13, "fail": null}, "gemini35f": {"pred": null, "latency": 16.39, "fail": "no ANSWER line"}}
+{"i": 65, "truth": 0.249784, "gpt51": {"pred": 0.2498, "latency": 4.0, "fail": null}, "gemini35f": {"pred": 0.2498, "latency": 9.53, "fail": null}}
+{"i": 66, "truth": 0.422839, "gpt51": {"pred": 0.4218, "latency": 4.19, "fail": null}, "gemini35f": {"pred": 0.4228, "latency": 12.95, "fail": null}}
+{"i": 67, "truth": 0.660686, "gpt51": {"pred": 0.6607, "latency": 4.05, "fail": null}, "gemini35f": {"pred": 0.6607, "latency": 12.8, "fail": null}}
+{"i": 68, "truth": 0.693395, "gpt51": {"pred": 0.6934, "latency": 5.62, "fail": null}, "gemini35f": {"pred": 0.6934, "latency": 12.81, "fail": null}}
+{"i": 69, "truth": 0.326901, "gpt51": {"pred": 0.3267, "latency": 13.84, "fail": null}, "gemini35f": {"pred": null, "latency": 17.95, "fail": "no ANSWER line"}}
+{"i": 70, "truth": 0.446704, "gpt51": {"pred": 0.4467, "latency": 8.68, "fail": null}, "gemini35f": {"pred": null, "latency": 17.84, "fail": "no ANSWER line"}}
+{"i": 71, "truth": 0.405378, "gpt51": {"pred": 0.4054, "latency": 4.28, "fail": null}, "gemini35f": {"pred": 0.4054, "latency": 14.24, "fail": null}}
+{"i": 72, "truth": 0.4136, "gpt51": {"pred": 0.4136, "latency": 2.58, "fail": null}, "gemini35f": {"pred": 0.4136, "latency": 7.85, "fail": null}}
+{"i": 73, "truth": 0.26309, "gpt51": {"pred": 0.2631, "latency": 4.53, "fail": null}, "gemini35f": {"pred": 0.2631, "latency": 13.39, "fail": null}}
+{"i": 74, "truth": 0.605558, "gpt51": {"pred": 0.6056, "latency": 7.73, "fail": null}, "gemini35f": {"pred": null, "latency": 16.64, "fail": "no ANSWER line"}}
+{"i": 75, "truth": 0.684252, "gpt51": {"pred": 0.6843, "latency": 6.39, "fail": null}, "gemini35f": {"pred": 0.6843, "latency": 14.08, "fail": null}}
+{"i": 76, "truth": 0.293996, "gpt51": {"pred": 0.294, "latency": 8.34, "fail": null}, "gemini35f": {"pred": null, "latency": 15.76, "fail": "no ANSWER line"}}
+{"i": 77, "truth": 0.7152, "gpt51": {"pred": 0.7152, "latency": 2.68, "fail": null}, "gemini35f": {"pred": 0.7152, "latency": 8.16, "fail": null}}
+{"i": 78, "truth": 0.435368, "gpt51": {"pred": 0.4354, "latency": 7.59, "fail": null}, "gemini35f": {"pred": null, "latency": 16.05, "fail": "no ANSWER line"}}
+{"i": 79, "truth": 0.482149, "gpt51": {"pred": 0.4824, "latency": 25.14, "fail": null}, "gemini35f": {"pred": null, "latency": 17.37, "fail": "no ANSWER line"}}
+{"i": 80, "truth": 0.523, "gpt51": {"pred": 0.523, "latency": 4.89, "fail": null}, "gemini35f": {"pred": 0.523, "latency": 5.92, "fail": null}}
+{"i": 81, "truth": 0.662208, "gpt51": {"pred": 0.6622, "latency": 4.56, "fail": null}, "gemini35f": {"pred": 0.6622, "latency": 15.87, "fail": null}}
+{"i": 82, "truth": 0.195783, "gpt51": {"pred": 0.1958, "latency": 16.59, "fail": null}, "gemini35f": {"pred": null, "latency": 17.3, "fail": "no ANSWER line"}}
+{"i": 83, "truth": 0.460257, "gpt51": {"pred": 0.4603, "latency": 8.51, "fail": null}, "gemini35f": {"pred": null, "latency": 16.08, "fail": "no ANSWER line"}}
+{"i": 84, "truth": 0.593401, "gpt51": {"pred": 0.5934, "latency": 19.89, "fail": null}, "gemini35f": {"pred": null, "latency": 16.59, "fail": "no ANSWER line"}}
+{"i": 85, "truth": 0.229248, "gpt51": {"pred": 0.2292, "latency": 5.05, "fail": null}, "gemini35f": {"pred": 0.2292, "latency": 12.66, "fail": null}}
+{"i": 86, "truth": 0.315434, "gpt51": {"pred": 0.3154, "latency": 3.38, "fail": null}, "gemini35f": {"pred": 0.3154, "latency": 10.5, "fail": null}}
+{"i": 87, "truth": 0.365567, "gpt51": {"pred": 0.3655, "latency": 5.06, "fail": null}, "gemini35f": {"pred": 0.3656, "latency": 13.15, "fail": null}}
+{"i": 88, "truth": 0.5592, "gpt51": {"pred": 0.5592, "latency": 2.52, "fail": null}, "gemini35f": {"pred": 0.5592, "latency": 6.68, "fail": null}}
+{"i": 89, "truth": 0.715787, "gpt51": {"pred": 0.7158, "latency": 7.28, "fail": null}, "gemini35f": {"pred": 0.7158, "latency": 16.2, "fail": null}}
+{"i": 90, "truth": 0.654152, "gpt51": {"pred": 0.6562, "latency": 19.56, "fail": null}, "gemini35f": {"pred": null, "latency": 16.29, "fail": "no ANSWER line"}}
+{"i": 91, "truth": 0.485793, "gpt51": {"pred": 0.4757, "latency": 12.72, "fail": null}, "gemini35f": {"pred": null, "latency": 16.51, "fail": "no ANSWER line"}}
+{"i": 92, "truth": 0.460096, "gpt51": {"pred": 0.4601, "latency": 5.09, "fail": null}, "gemini35f": {"pred": 0.4601, "latency": 10.27, "fail": null}}
+{"i": 93, "truth": 0.26485, "gpt51": {"pred": 0.2649, "latency": 11.56, "fail": null}, "gemini35f": {"pred": 0.2649, "latency": 9.86, "fail": null}}
+{"i": 94, "truth": 0.337308, "gpt51": {"pred": 0.3373, "latency": 5.0, "fail": null}, "gemini35f": {"pred": null, "latency": 160.93, "fail": "transport: Remote end closed connection without response"}}
+{"i": 95, "truth": 0.656861, "gpt51": {"pred": 0.6569, "latency": 7.27, "fail": null}, "gemini35f": {"pred": 0.6569, "latency": 17.37, "fail": null}}
+{"i": 96, "truth": 0.316988, "gpt51": {"pred": 0.317, "latency": 6.98, "fail": null}, "gemini35f": {"pred": null, "latency": 16.44, "fail": "no ANSWER line"}}
+{"i": 97, "truth": 0.179983, "gpt51": {"pred": 0.18, "latency": 5.75, "fail": null}, "gemini35f": {"pred": 0.18, "latency": 16.0, "fail": null}}
+{"i": 98, "truth": 0.562551, "gpt51": {"pred": 0.5626, "latency": 10.16, "fail": null}, "gemini35f": {"pred": null, "latency": 16.12, "fail": "no ANSWER line"}}
+{"i": 99, "truth": 0.542412, "gpt51": {"pred": 0.5424, "latency": 4.27, "fail": null}, "gemini35f": {"pred": 0.5424, "latency": 13.78, "fail": null}}
+{"i": 100, "truth": 0.490871, "gpt51": {"pred": 0.6544, "latency": 7.19, "fail": null}, "gemini35f": {"pred": null, "latency": 17.7, "fail": "no ANSWER line"}}
+{"i": 101, "truth": 0.674819, "gpt51": {"pred": 0.6748, "latency": 6.56, "fail": null}, "gemini35f": {"pred": null, "latency": 16.3, "fail": "no ANSWER line"}}
+{"i": 102, "truth": 0.418652, "gpt51": {"pred": 0.4187, "latency": 3.87, "fail": null}, "gemini35f": {"pred": 0.4187, "latency": 12.31, "fail": null}}
+{"i": 103, "truth": 0.1876, "gpt51": {"pred": 0.1876, "latency": 2.47, "fail": null}, "gemini35f": {"pred": 0.1876, "latency": 5.84, "fail": null}}
+{"i": 104, "truth": 0.595871, "gpt51": {"pred": 0.5962, "latency": 12.16, "fail": null}, "gemini35f": {"pred": null, "latency": 16.74, "fail": "no ANSWER line"}}
+{"i": 105, "truth": 0.497097, "gpt51": {"pred": 0.5267, "latency": 5.05, "fail": null}, "gemini35f": {"pred": null, "latency": 17.2, "fail": "no ANSWER line"}}
+{"i": 106, "truth": 0.473959, "gpt51": {"pred": 0.474, "latency": 3.95, "fail": null}, "gemini35f": {"pred": 0.474, "latency": 14.41, "fail": null}}
+{"i": 107, "truth": 0.536325, "gpt51": {"pred": 0.5363, "latency": 10.76, "fail": null}, "gemini35f": {"pred": 0.5363, "latency": 16.31, "fail": null}}
+{"i": 108, "truth": 0.73295, "gpt51": {"pred": 0.733, "latency": 4.64, "fail": null}, "gemini35f": {"pred": 0.733, "latency": 16.07, "fail": null}}
+{"i": 109, "truth": 0.593645, "gpt51": {"pred": 0.5936, "latency": 5.64, "fail": null}, "gemini35f": {"pred": 0.5936, "latency": 14.49, "fail": null}}
+{"i": 110, "truth": 0.251894, "gpt51": {"pred": 0.2518, "latency": 7.73, "fail": null}, "gemini35f": {"pred": null, "latency": 17.29, "fail": "no ANSWER line"}}
+{"i": 111, "truth": 0.685918, "gpt51": {"pred": 0.6857, "latency": 5.96, "fail": null}, "gemini35f": {"pred": 0.6859, "latency": 14.19, "fail": null}}
+{"i": 112, "truth": 0.568928, "gpt51": {"pred": 0.569, "latency": 3.51, "fail": null}, "gemini35f": {"pred": 0.5689, "latency": 13.14, "fail": null}}
+{"i": 113, "truth": 0.232338, "gpt51": {"pred": 0.2323, "latency": 13.24, "fail": null}, "gemini35f": {"pred": null, "latency": 16.3, "fail": "no ANSWER line"}}
+{"i": 114, "truth": 0.686586, "gpt51": {"pred": 0.5697, "latency": 3.63, "fail": null}, "gemini35f": {"pred": null, "latency": 16.74, "fail": "no ANSWER line"}}
+{"i": 115, "truth": 0.323363, "gpt51": {"pred": 0.3234, "latency": 3.98, "fail": null}, "gemini35f": {"pred": 0.3234, "latency": 13.46, "fail": null}}
+{"i": 116, "truth": 0.206133, "gpt51": {"pred": 0.2415, "latency": 5.23, "fail": null}, "gemini35f": {"pred": null, "latency": 17.02, "fail": "no ANSWER line"}}
+{"i": 117, "truth": 0.18978, "gpt51": {"pred": 0.1898, "latency": 4.57, "fail": null}, "gemini35f": {"pred": 0.1898, "latency": 13.01, "fail": null}}
+{"i": 118, "truth": 0.388613, "gpt51": {"pred": 0.3886, "latency": 11.63, "fail": null}, "gemini35f": {"pred": null, "latency": 16.19, "fail": "no ANSWER line"}}
+{"i": 119, "truth": 0.57176, "gpt51": {"pred": 0.5717, "latency": 8.92, "fail": null}, "gemini35f": {"pred": null, "latency": 16.24, "fail": "no ANSWER line"}}
+{"i": 120, "truth": 0.764995, "gpt51": {"pred": 0.765, "latency": 3.33, "fail": null}, "gemini35f": {"pred": 0.765, "latency": 12.86, "fail": null}}
+{"i": 121, "truth": 0.44927, "gpt51": {"pred": 0.4493, "latency": 11.86, "fail": null}, "gemini35f": {"pred": 0.4493, "latency": 14.72, "fail": null}}
+{"i": 122, "truth": 0.4938, "gpt51": {"pred": 0.4938, "latency": 4.38, "fail": null}, "gemini35f": {"pred": 0.4938, "latency": 12.35, "fail": null}}
+{"i": 123, "truth": 0.233552, "gpt51": {"pred": 0.2338, "latency": 12.87, "fail": null}, "gemini35f": {"pred": null, "latency": 16.56, "fail": "no ANSWER line"}}
+{"i": 124, "truth": 0.674846, "gpt51": {"pred": 0.6743, "latency": 7.46, "fail": null}, "gemini35f": {"pred": null, "latency": 15.74, "fail": "no ANSWER line"}}
+{"i": 125, "truth": 0.333306, "gpt51": {"pred": 0.3333, "latency": 5.46, "fail": null}, "gemini35f": {"pred": 0.3333, "latency": 14.9, "fail": null}}
+{"i": 126, "truth": 0.443, "gpt51": {"pred": 0.443, "latency": 3.06, "fail": null}, "gemini35f": {"pred": 0.443, "latency": 7.22, "fail": null}}
+{"i": 127, "truth": 0.33564, "gpt51": {"pred": 0.3356, "latency": 3.9, "fail": null}, "gemini35f": {"pred": 0.3356, "latency": 10.26, "fail": null}}
+{"i": 128, "truth": 0.871033, "gpt51": {"pred": 0.871, "latency": 6.43, "fail": null}, "gemini35f": {"pred": 0.871, "latency": 15.31, "fail": null}}
+{"i": 129, "truth": 0.485674, "gpt51": {"pred": 0.4857, "latency": 6.35, "fail": null}, "gemini35f": {"pred": null, "latency": 17.88, "fail": "no ANSWER line"}}
+{"i": 130, "truth": 0.5238, "gpt51": {"pred": 0.5238, "latency": 2.58, "fail": null}, "gemini35f": {"pred": 0.5238, "latency": 8.85, "fail": null}}
+{"i": 131, "truth": 0.50867, "gpt51": {"pred": 0.5094, "latency": 12.83, "fail": null}, "gemini35f": {"pred": null, "latency": 16.21, "fail": "no ANSWER line"}}
+{"i": 132, "truth": 0.304369, "gpt51": {"pred": 0.3045, "latency": 6.01, "fail": null}, "gemini35f": {"pred": 0.3044, "latency": 16.44, "fail": null}}
+{"i": 133, "truth": 0.662013, "gpt51": {"pred": 0.662, "latency": 7.14, "fail": null}, "gemini35f": {"pred": null, "latency": 16.07, "fail": "no ANSWER line"}}
+{"i": 134, "truth": 0.479548, "gpt51": {"pred": 0.4795, "latency": 4.63, "fail": null}, "gemini35f": {"pred": 0.4795, "latency": 12.27, "fail": null}}
+{"i": 135, "truth": 0.60477, "gpt51": {"pred": 0.6047, "latency": 9.96, "fail": null}, "gemini35f": {"pred": null, "latency": 18.22, "fail": "no ANSWER line"}}
+{"i": 136, "truth": 0.707112, "gpt51": {"pred": 0.7071, "latency": 4.86, "fail": null}, "gemini35f": {"pred": 0.7071, "latency": 10.84, "fail": null}}
+{"i": 137, "truth": 0.7792, "gpt51": {"pred": 0.7792, "latency": 2.47, "fail": null}, "gemini35f": {"pred": 0.7792, "latency": 7.06, "fail": null}}
+{"i": 138, "truth": 0.364, "gpt51": {"pred": 0.364, "latency": 4.73, "fail": null}, "gemini35f": {"pred": 0.364, "latency": 14.03, "fail": null}}
+{"i": 139, "truth": 0.0953, "gpt51": {"pred": 0.0953, "latency": 3.17, "fail": null}, "gemini35f": {"pred": 0.0953, "latency": 7.06, "fail": null}}
+{"i": 140, "truth": 0.455162, "gpt51": {"pred": 0.4552, "latency": 5.89, "fail": null}, "gemini35f": {"pred": null, "latency": 17.75, "fail": "no ANSWER line"}}
+{"i": 141, "truth": 0.5908, "gpt51": {"pred": 0.5908, "latency": 2.74, "fail": null}, "gemini35f": {"pred": 0.5908, "latency": 7.26, "fail": null}}
+{"i": 142, "truth": 0.6132, "gpt51": {"pred": 0.6132, "latency": 2.91, "fail": null}, "gemini35f": {"pred": 0.6132, "latency": 8.18, "fail": null}}
+{"i": 143, "truth": 0.61236, "gpt51": {"pred": 0.6124, "latency": 4.16, "fail": null}, "gemini35f": {"pred": 0.6124, "latency": 16.06, "fail": null}}
+{"i": 144, "truth": 0.638934, "gpt51": {"pred": 0.6389, "latency": 3.8, "fail": null}, "gemini35f": {"pred": 0.6389, "latency": 11.62, "fail": null}}
+{"i": 145, "truth": 0.68, "gpt51": {"pred": 0.68, "latency": 3.86, "fail": null}, "gemini35f": {"pred": 0.68, "latency": 6.64, "fail": null}}
+{"i": 146, "truth": 0.57426, "gpt51": {"pred": 0.5344, "latency": 4.07, "fail": null}, "gemini35f": {"pred": null, "latency": 16.61, "fail": "no ANSWER line"}}
+{"i": 147, "truth": 0.656182, "gpt51": {"pred": 0.6562, "latency": 5.33, "fail": null}, "gemini35f": {"pred": 0.6562, "latency": 16.61, "fail": null}}
+{"i": 148, "truth": 0.635771, "gpt51": {"pred": 0.6358, "latency": 6.88, "fail": null}, "gemini35f": {"pred": null, "latency": 16.04, "fail": "no ANSWER line"}}
+{"i": 149, "truth": 0.557262, "gpt51": {"pred": 0.6636, "latency": 3.99, "fail": null}, "gemini35f": {"pred": null, "latency": 16.45, "fail": "no ANSWER line"}}

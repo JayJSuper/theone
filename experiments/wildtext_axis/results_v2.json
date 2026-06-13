@@ -1,0 +1,279 @@
+{
+  "summary": {
+    "seed": 20260616,
+    "L1": {
+      "n": 12,
+      "acceptance": 0.583
+    },
+    "L2": {
+      "n": 12,
+      "acceptance": 0.583
+    },
+    "threshold": 0.85,
+    "verdict": {
+      "L1": "below_threshold",
+      "L2": "below_threshold"
+    }
+  },
+  "rows": [
+    {
+      "level": "L1",
+      "bank": 0,
+      "accept": true,
+      "agree": true,
+      "ds_ok": true,
+      "gpt_ok": true,
+      "ds_why": "ok",
+      "gpt_why": "ok",
+      "narrative": "A recent study reveals that age plays a key role in shaping both daily walking habits and resting heart rate, with daily walking itself also directly influencing resting heart rate. Researchers recorded neighborhood tree cover as a data point, but this variable was found to be causally irrelevant to the observed patterns. The findings underscore the interconnected effects of aging and physical act"
+    },
+    {
+      "level": "L1",
+      "bank": 1,
+      "accept": true,
+      "agree": true,
+      "ds_ok": true,
+      "gpt_ok": true,
+      "ds_why": "ok",
+      "gpt_why": "ok",
+      "narrative": "A recent study revealed that parental income plays a significant role in both access to online tutoring and students' exam scores. Researchers also found that the use of online tutoring directly influences exam performance. Although the study recorded textbook brand as a variable, it was determined to be causally irrelevant to the outcomes."
+    },
+    {
+      "level": "L1",
+      "bank": 2,
+      "accept": true,
+      "agree": true,
+      "ds_ok": true,
+      "gpt_ok": true,
+      "ds_why": "ok",
+      "gpt_why": "ok",
+      "narrative": "A new agricultural study confirms that soil quality is a key factor in crop production, as it directly influences both the amount of fertilizer applied and the resulting yield. Additionally, the research found that fertilizer use itself also has a direct impact on crop yield, further linking the chain of causation. While researchers recorded the color of tractors used on the farms, they noted that"
+    },
+    {
+      "level": "L1",
+      "bank": 3,
+      "accept": true,
+      "agree": true,
+      "ds_ok": true,
+      "gpt_ok": true,
+      "ds_why": "ok",
+      "gpt_why": "ok",
+      "narrative": "A new study reveals that baseline fitness plays a key role in both the use of standing desks and the occurrence of back pain, while also confirming that standing desks themselves directly influence back pain. The researchers recorded office wall color as part of their data collection, but this variable had no causal relevance to either factor. These findings underscore the importance of considerin"
+    },
+    {
+      "level": "L1",
+      "bank": 4,
+      "accept": false,
+      "agree": true,
+      "ds_ok": false,
+      "gpt_ok": false,
+      "ds_why": "treatment",
+      "gpt_why": "treatment",
+      "narrative": "Work stress has been found to influence both the use of meditation apps and sleep quality, according to recent research. The study further shows that using meditation apps, in turn, affects sleep quality. Although researchers recorded participants' phone brands, this factor was deemed causally irrelevant to the findings."
+    },
+    {
+      "level": "L1",
+      "bank": 5,
+      "accept": true,
+      "agree": true,
+      "ds_ok": true,
+      "gpt_ok": true,
+      "ds_why": "ok",
+      "gpt_why": "ok",
+      "narrative": "A new study reveals that city density has a direct impact on both bike commuting rates and body mass index (BMI), while bike commuting itself also influences BMI. Researchers noted that higher urban density encourages more cycling, which in turn helps lower BMI, alongside a separate direct effect of density on BMI. Although helmet style was recorded during data collection, it was found to be causa"
+    },
+    {
+      "level": "L1",
+      "bank": 6,
+      "accept": true,
+      "agree": true,
+      "ds_ok": true,
+      "gpt_ok": true,
+      "ds_why": "ok",
+      "gpt_why": "ok",
+      "narrative": "A recent study found that household education significantly influences both the frequency of library visits and reading ability. The research also showed that library visits themselves have a positive effect on reading ability, creating an indirect pathway from household education to literacy. Interestingly, the study recorded the font size used in library signage, but this detail was found to be "
+    },
+    {
+      "level": "L1",
+      "bank": 7,
+      "accept": false,
+      "agree": false,
+      "ds_ok": false,
+      "gpt_ok": false,
+      "ds_why": "treatment,adjustment_set=[]",
+      "gpt_why": "treatment,adjustment_set=['vitamin D intake']",
+      "narrative": "Spending time outdoors has been shown to boost both vitamin D levels and bone density, with vitamin D intake itself also playing a key role in strengthening bones. Researchers recorded participants' pill color as a variable, but noted it had no causal impact on the outcomes."
+    },
+    {
+      "level": "L1",
+      "bank": 8,
+      "accept": false,
+      "agree": false,
+      "ds_ok": false,
+      "gpt_ok": false,
+      "ds_why": "unparseable",
+      "gpt_why": "outcome,adjustment_set=['a team’s level of experience']",
+      "narrative": "A new analysis reveals that a team’s level of experience directly influences both the quality of its code reviews and the overall bug rate. Additionally, the rigor of code review itself plays a causal role in determining bug frequency. While researchers also recorded each developer’s preferred integrated development environment (IDE) theme, this aesthetic detail had no causal impact on either code"
+    },
+    {
+      "level": "L1",
+      "bank": 9,
+      "accept": false,
+      "agree": false,
+      "ds_ok": true,
+      "gpt_ok": false,
+      "ds_why": "ok",
+      "gpt_why": "treatment,adjustment_set=[]",
+      "narrative": "Rainfall plays a key role in shaping both irrigation practices and plant growth, as it directly influences how much plants are watered by natural means and how much supplementary irrigation is needed. In turn, the amount of irrigation applied further affects plant development, creating an interconnected chain of influence. While researchers also recorded fence height as part of their observations,"
+    },
+    {
+      "level": "L1",
+      "bank": 10,
+      "accept": true,
+      "agree": true,
+      "ds_ok": true,
+      "gpt_ok": true,
+      "ds_why": "ok",
+      "gpt_why": "ok",
+      "narrative": "A new study reveals that health consciousness plays a key role in both flu vaccination rates and the number of sick days people take. The research also shows that receiving a flu vaccination directly reduces sick days. While clinic distance was recorded as a variable, it was found to have no causal impact on either health behavior or outcomes."
+    },
+    {
+      "level": "L1",
+      "bank": 11,
+      "accept": false,
+      "why": "rewrite failed: IncompleteRead(0 bytes read)"
+    },
+    {
+      "level": "L2",
+      "bank": 0,
+      "accept": true,
+      "agree": true,
+      "ds_ok": true,
+      "gpt_ok": true,
+      "ds_why": "ok",
+      "gpt_why": "ok",
+      "narrative": "A study recorded participants' age, which was found to be linked to both daily walking habits and resting heart rate. Specifically, people with higher age also tended to walk less and have a higher resting heart rate. Additionally, daily walking and resting heart rate were associated with each other, independent of other factors. The researchers also recorded neighborhood tree cover, but this vari"
+    },
+    {
+      "level": "L2",
+      "bank": 1,
+      "accept": false,
+      "agree": false,
+      "ds_ok": false,
+      "gpt_ok": false,
+      "ds_why": "treatment,outcome,adjustment_set=[]",
+      "gpt_why": "treatment,outcome,adjustment_set=[]",
+      "narrative": ""
+    },
+    {
+      "level": "L2",
+      "bank": 2,
+      "accept": true,
+      "agree": true,
+      "ds_ok": true,
+      "gpt_ok": true,
+      "ds_why": "ok",
+      "gpt_why": "ok",
+      "narrative": "In the study, soil quality was recorded, and researchers observed that areas with higher soil quality also tended to have greater fertilizer use and stronger crop yields. Additionally, fertilizer use and crop yield were found to be associated with one another. Tractor color was also noted as a recorded detail, but it bore no relation to these observed patterns."
+    },
+    {
+      "level": "L2",
+      "bank": 3,
+      "accept": false,
+      "agree": true,
+      "ds_ok": false,
+      "gpt_ok": false,
+      "ds_why": "treatment",
+      "gpt_why": "treatment",
+      "narrative": "Researchers recorded participants' baseline fitness levels, and those with higher fitness also tended to use standing desks more often and reported less back pain. The study further noted an association between standing desk use and back pain. For context, office wall color was also documented but showed no relevance to the observed trends."
+    },
+    {
+      "level": "L2",
+      "bank": 4,
+      "accept": true,
+      "agree": true,
+      "ds_ok": true,
+      "gpt_ok": true,
+      "ds_why": "ok",
+      "gpt_why": "ok",
+      "narrative": "In the study, researchers recorded participants' work stress levels. They observed that people with higher work stress also tended to use meditation apps more frequently and reported poorer sleep quality. Additionally, meditation app use and sleep quality were found to be associated, though phone brand was"
+    },
+    {
+      "level": "L2",
+      "bank": 5,
+      "accept": true,
+      "agree": true,
+      "ds_ok": true,
+      "gpt_ok": true,
+      "ds_why": "ok",
+      "gpt_why": "ok",
+      "narrative": "A new study recorded city density alongside participants' bike commuting habits and BMI. People living in higher-density areas also tended to commute by bike more often and to have a lower BMI, while bike commuting itself was associated with lower BMI. Interestingly, helmet style was also recorded as part of the data but was found to be unrelated to any of the other variables."
+    },
+    {
+      "level": "L2",
+      "bank": 6,
+      "accept": true,
+      "agree": true,
+      "ds_ok": true,
+      "gpt_ok": true,
+      "ds_why": "ok",
+      "gpt_why": "ok",
+      "narrative": "Household education levels were recorded during the study. People with higher household education also tended to visit libraries more frequently and to demonstrate stronger reading ability. Additionally, library visits and reading ability were themselves found to be associated. As an incidental detail, the font used in library signage was also noted but showed no relation to the other measures."
+    },
+    {
+      "level": "L2",
+      "bank": 7,
+      "accept": false,
+      "agree": true,
+      "ds_ok": false,
+      "gpt_ok": false,
+      "ds_why": "treatment,adjustment_set=['vitamin D intake']",
+      "gpt_why": "treatment,adjustment_set=['vitamin D intake']",
+      "narrative": "In the study, participants' outdoor time was recorded, and researchers observed that those who spent more time outdoors also tended to have higher vitamin D intake and greater bone density. Additionally, vitamin D intake and bone density were found to be positively associated with one another. As a side note, the color of the pills given to participants was also recorded, but this detail was unrel"
+    },
+    {
+      "level": "L2",
+      "bank": 8,
+      "accept": true,
+      "agree": true,
+      "ds_ok": true,
+      "gpt_ok": true,
+      "ds_why": "ok",
+      "gpt_why": "ok",
+      "narrative": "In a recent study, researchers recorded team experience levels alongside code review frequency, bug rates, and even the developers' chosen IDE theme as an irrelevant detail. Observational analysis revealed that teams with higher experience tended to have more thorough code reviews and lower bug rates."
+    },
+    {
+      "level": "L2",
+      "bank": 9,
+      "accept": false,
+      "agree": false,
+      "ds_ok": true,
+      "gpt_ok": false,
+      "ds_why": "ok",
+      "gpt_why": "treatment,adjustment_set=['irrigation']",
+      "narrative": "Researchers recorded rainfall levels, along with the height of nearby fences, during the study. They observed that sites with higher rainfall also tended to have more irrigation and greater plant growth. Irrigation and plant growth were themselves associated, though fence height proved to be an irrelevant detail with no connection to the other variables."
+    },
+    {
+      "level": "L2",
+      "bank": 10,
+      "accept": true,
+      "agree": true,
+      "ds_ok": true,
+      "gpt_ok": true,
+      "ds_why": "ok",
+      "gpt_why": "ok",
+      "narrative": "Health consciousness was recorded in the study. People with higher health consciousness also tended to get flu vaccinations and have fewer sick days. Additionally, flu vaccination and sick days were found to be associated with each other. Clinic distance was also recorded but showed no notable connection to the other factors."
+    },
+    {
+      "level": "L2",
+      "bank": 11,
+      "accept": false,
+      "agree": true,
+      "ds_ok": false,
+      "gpt_ok": false,
+      "ds_why": "treatment,outcome",
+      "gpt_why": "treatment,outcome",
+      "narrative": "A study recorded participants' income levels, and found that individuals with higher incomes also tended to be more involved in loyalty programs and to make more repeat purchases. Additionally, loyalty program membership was associated with repeat purchase behavior. Logo design was also recorded as an irrelevant detail in the data collection."
+    }
+  ]
+}
