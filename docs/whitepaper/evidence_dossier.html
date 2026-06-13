@@ -99,12 +99,13 @@ a{color:var(--blue);text-decoration:none}
 
 <h2><span class="k">Finding 2 · Independently Verifiable</span></h2>
 <div class="card">
-<p class="lead">The engine's 1.000 is not "trust us." All 300 ground-truth values were independently recomputed by <b>pgmpy</b> (a third-party causal-inference library) via its own <code>CausalInference.do()</code>.</p>
+<p class="lead">The engine's 1.000 is not "trust us." <b>All three vital numbers</b> — every ground-truth value — were independently recomputed by <b>pgmpy</b> (a third-party causal-inference library) via its own inference + graph surgery. 1,207 SCMs cross-checked, all agreeing to rounding.</p>
 <div class="three">
-  <div class="m"><div class="t">Cross-validation</div><div class="v">300 / 300</div><div class="d">max |pgmpy − engine| = 5×10⁻⁷ (just 6-dp rounding). The "self-consistency" objection is dead.</div></div>
-  <div class="m"><div class="t">Causal core (F-1)</div><div class="v">7/7 green</div><div class="d">observation ≠ intervention under confounding; back-door is correct; pgmpy oracle agrees to 10⁻⁹.</div></div>
-  <div class="m"><div class="t">Driven by 2ᵏ</div><div class="v">p = 3.5×10⁻¹⁸</div><div class="d">collapse tracks marginalization count, not node count (dual-track confirmed).</div></div>
+  <div class="m"><div class="t">Cliff (vital #3)</div><div class="v">300 / 300</div><div class="d">max |pgmpy − engine| = 5×10⁻⁷ (just 6-dp rounding). The "self-consistency" objection is dead.</div></div>
+  <div class="m"><div class="t">Causal core F-1 (#1)</div><div class="v">7 / 7 · diff 0.0</div><div class="d">full truth table 0.82/0.70/0.28/0.40/0.54/0.30/True, each recomputed by independent pgmpy paths.</div></div>
+  <div class="m"><div class="t">Scale axis (#2)</div><div class="v">900 / 900</div><div class="d">all fixed + random DAG truths re-derived from frozen seeds; pgmpy diff 5×10⁻⁷, matches stored truths exactly.</div></div>
 </div>
+<div class="note">Driven by <b>2ᵏ</b>, not node count: the scale axis isolates that the collapse tracks marginalization count (dual-track separation p = 3.5×10⁻¹⁸). Per AM-017, third-party recompute is a required gate for every "engine = truth" claim.</div>
 </div>
 
 <h2><span class="k">Finding 3 · Why a Cognitive Layer</span></h2>

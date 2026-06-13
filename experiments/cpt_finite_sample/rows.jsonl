@@ -1,0 +1,254 @@
+{"k": 1, "n": 50, "i": 0, "true_do": 0.4434, "engine_est": 0.271069, "engine_err": 0.172331, "iprg_pgmpy_diff": 4.6e-09, "gpt51": {"pred": 0.2712, "latency": 4.2, "tokens": 519, "fail": null}, "deepseek": {"pred": 0.2712, "latency": 3.7, "tokens": 645, "fail": null}}
+{"k": 1, "n": 50, "i": 1, "true_do": 0.6165, "engine_est": 0.723077, "engine_err": 0.106577, "iprg_pgmpy_diff": 7.67e-08, "gpt51": {"pred": 0.7231, "latency": 3.2, "tokens": 685, "fail": null}, "deepseek": {"pred": 0.7233, "latency": 7.2, "tokens": 1071, "fail": null}}
+{"k": 1, "n": 50, "i": 2, "true_do": 0.80916, "engine_est": 0.705983, "engine_err": 0.103177, "iprg_pgmpy_diff": 9.39e-08, "gpt51": {"pred": 0.7061, "latency": 3.1, "tokens": 623, "fail": null}, "deepseek": {"pred": 0.7061, "latency": 2.8, "tokens": 529, "fail": null}}
+{"k": 1, "n": 50, "i": 3, "true_do": 0.3828, "engine_est": 0.415441, "engine_err": 0.032641, "iprg_pgmpy_diff": 1.762e-07, "gpt51": {"pred": 0.4158, "latency": 4.4, "tokens": 745, "fail": null}, "deepseek": {"pred": 0.4158, "latency": 2.8, "tokens": 536, "fail": null}}
+{"k": 1, "n": 50, "i": 4, "true_do": 0.32704, "engine_est": 0.333654, "engine_err": 0.006614, "iprg_pgmpy_diff": 1.538e-07, "gpt51": {"pred": 0.3337, "latency": 3.9, "tokens": 668, "fail": null}, "deepseek": {"pred": 0.3337, "latency": 3.4, "tokens": 629, "fail": null}}
+{"k": 1, "n": 50, "i": 5, "true_do": 0.32348, "engine_est": 0.410368, "engine_err": 0.086888, "iprg_pgmpy_diff": 1.073e-07, "gpt51": {"pred": 0.4109, "latency": 3.5, "tokens": 613, "fail": null}, "deepseek": {"pred": 0.4106, "latency": 2.3, "tokens": 531, "fail": null}}
+{"k": 1, "n": 50, "i": 6, "true_do": 0.5786, "engine_est": 0.553846, "engine_err": 0.024754, "iprg_pgmpy_diff": 1.541e-07, "gpt51": {"pred": 0.5542, "latency": 4.4, "tokens": 689, "fail": null}, "deepseek": {"pred": 0.5541, "latency": 4.5, "tokens": 764, "fail": null}}
+{"k": 1, "n": 50, "i": 7, "true_do": 0.62525, "engine_est": 0.639832, "engine_err": 0.014582, "iprg_pgmpy_diff": 1.722e-07, "gpt51": {"pred": 0.6388, "latency": 3.8, "tokens": 620, "fail": null}, "deepseek": {"pred": 0.6394, "latency": 2.5, "tokens": 547, "fail": null}}
+{"k": 1, "n": 50, "i": 8, "true_do": 0.4664, "engine_est": 0.527367, "engine_err": 0.060967, "iprg_pgmpy_diff": 1.364e-07, "gpt51": {"pred": 0.527, "latency": 4.8, "tokens": 789, "fail": null}, "deepseek": {"pred": 0.5271, "latency": 7.0, "tokens": 1049, "fail": null}}
+{"k": 1, "n": 50, "i": 9, "true_do": 0.351, "engine_est": 0.308365, "engine_err": 0.042635, "iprg_pgmpy_diff": 3.846e-07, "gpt51": {"pred": 0.3085, "latency": 2.7, "tokens": 563, "fail": null}, "deepseek": {"pred": 0.3085, "latency": 3.1, "tokens": 570, "fail": null}}
+{"k": 1, "n": 50, "i": 10, "true_do": 0.8096, "engine_est": 0.706104, "engine_err": 0.103496, "iprg_pgmpy_diff": 3.212e-07, "gpt51": {"pred": 0.7065, "latency": 2.8, "tokens": 653, "fail": null}, "deepseek": {"pred": 0.7065, "latency": 4.4, "tokens": 740, "fail": null}}
+{"k": 1, "n": 50, "i": 11, "true_do": 0.3136, "engine_est": 0.378846, "engine_err": 0.065246, "iprg_pgmpy_diff": 1.539e-07, "gpt51": {"pred": 0.3789, "latency": 2.5, "tokens": 512, "fail": null}, "deepseek": {"pred": 0.3789, "latency": 3.3, "tokens": 588, "fail": null}}
+{"k": 1, "n": 50, "i": 12, "true_do": 0.39964, "engine_est": 0.380575, "engine_err": 0.019065, "iprg_pgmpy_diff": 3.07e-07, "gpt51": {"pred": 0.3808, "latency": 3.6, "tokens": 660, "fail": null}, "deepseek": {"pred": 0.3807, "latency": 4.3, "tokens": 788, "fail": null}}
+{"k": 1, "n": 50, "i": 13, "true_do": 0.51604, "engine_est": 0.537179, "engine_err": 0.021139, "iprg_pgmpy_diff": 4.87e-07, "gpt51": {"pred": 0.537, "latency": 3.4, "tokens": 613, "fail": null}, "deepseek": {"pred": 0.537, "latency": 4.3, "tokens": 785, "fail": null}}
+{"k": 1, "n": 50, "i": 14, "true_do": 0.5758, "engine_est": 0.601183, "engine_err": 0.025383, "iprg_pgmpy_diff": 4.32e-07, "gpt51": {"pred": 0.6012, "latency": 3.5, "tokens": 723, "fail": null}, "deepseek": {"pred": 0.6012, "latency": 2.5, "tokens": 505, "fail": null}}
+{"k": 1, "n": 50, "i": 15, "true_do": 0.30315, "engine_est": 0.371503, "engine_err": 0.068353, "iprg_pgmpy_diff": 4.966e-07, "gpt51": {"pred": 0.3716, "latency": 3.8, "tokens": 726, "fail": null}, "deepseek": {"pred": 0.3716, "latency": 2.7, "tokens": 557, "fail": null}}
+{"k": 1, "n": 50, "i": 16, "true_do": 0.5648, "engine_est": 0.461538, "engine_err": 0.103262, "iprg_pgmpy_diff": 4.618e-07, "gpt51": {"pred": 0.4612, "latency": 2.8, "tokens": 542, "fail": null}, "deepseek": {"pred": 0.4618, "latency": 3.4, "tokens": 622, "fail": null}}
+{"k": 1, "n": 50, "i": 17, "true_do": 0.4489, "engine_est": 0.284965, "engine_err": 0.163935, "iprg_pgmpy_diff": 3.49e-08, "gpt51": {"pred": 0.2849, "latency": 4.0, "tokens": 602, "fail": null}, "deepseek": {"pred": 0.2849, "latency": 3.9, "tokens": 690, "fail": null}}
+{"k": 1, "n": 50, "i": 18, "true_do": 0.5175, "engine_est": 0.548886, "engine_err": 0.031386, "iprg_pgmpy_diff": 2.984e-07, "gpt51": {"pred": 0.549, "latency": 3.7, "tokens": 571, "fail": null}, "deepseek": {"pred": 0.5484, "latency": 3.6, "tokens": 636, "fail": null}}
+{"k": 1, "n": 50, "i": 19, "true_do": 0.21451, "engine_est": 0.21722, "engine_err": 0.00271, "iprg_pgmpy_diff": 2.798e-07, "gpt51": {"pred": 0.2173, "latency": 4.6, "tokens": 548, "fail": null}, "deepseek": {"pred": 0.2173, "latency": 2.6, "tokens": 534, "fail": null}}
+{"k": 1, "n": 50, "i": 20, "true_do": 0.77091, "engine_est": 0.835897, "engine_err": 0.064987}
+{"k": 1, "n": 50, "i": 21, "true_do": 0.70656, "engine_est": 0.554487, "engine_err": 0.152073}
+{"k": 1, "n": 50, "i": 22, "true_do": 0.40067, "engine_est": 0.443176, "engine_err": 0.042506}
+{"k": 1, "n": 50, "i": 23, "true_do": 0.2335, "engine_est": 0.160948, "engine_err": 0.072552}
+{"k": 1, "n": 50, "i": 24, "true_do": 0.3786, "engine_est": 0.277778, "engine_err": 0.100822}
+{"k": 1, "n": 50, "i": 25, "true_do": 0.38996, "engine_est": 0.5, "engine_err": 0.11004}
+{"k": 1, "n": 50, "i": 26, "true_do": 0.20544, "engine_est": 0.203205, "engine_err": 0.002235}
+{"k": 1, "n": 50, "i": 27, "true_do": 0.38684, "engine_est": 0.510989, "engine_err": 0.124149}
+{"k": 1, "n": 50, "i": 28, "true_do": 0.37364, "engine_est": 0.427212, "engine_err": 0.053572}
+{"k": 1, "n": 50, "i": 29, "true_do": 0.40824, "engine_est": 0.470353, "engine_err": 0.062113}
+{"k": 1, "n": 50, "i": 30, "true_do": 0.44182, "engine_est": 0.654178, "engine_err": 0.212358}
+{"k": 1, "n": 50, "i": 31, "true_do": 0.39215, "engine_est": 0.288462, "engine_err": 0.103688}
+{"k": 1, "n": 50, "i": 32, "true_do": 0.72889, "engine_est": 0.641026, "engine_err": 0.087864}
+{"k": 1, "n": 50, "i": 33, "true_do": 0.37484, "engine_est": 0.371184, "engine_err": 0.003656}
+{"k": 1, "n": 50, "i": 34, "true_do": 0.21544, "engine_est": 0.13999, "engine_err": 0.07545}
+{"k": 1, "n": 50, "i": 35, "true_do": 0.46346, "engine_est": 0.409502, "engine_err": 0.053958}
+{"k": 1, "n": 50, "i": 36, "true_do": 0.6138, "engine_est": 0.638889, "engine_err": 0.025089}
+{"k": 1, "n": 50, "i": 37, "true_do": 0.70188, "engine_est": 0.7375, "engine_err": 0.03562}
+{"k": 1, "n": 50, "i": 38, "true_do": 0.70392, "engine_est": 0.601648, "engine_err": 0.102272}
+{"k": 1, "n": 50, "i": 39, "true_do": 0.3882, "engine_est": 0.373626, "engine_err": 0.014574}
+{"k": 1, "n": 50, "i": 40, "true_do": 0.4826, "engine_est": 0.480556, "engine_err": 0.002044}
+{"k": 1, "n": 50, "i": 41, "true_do": 0.47196, "engine_est": 0.416283, "engine_err": 0.055677}
+{"k": 1, "n": 50, "i": 42, "true_do": 0.58336, "engine_est": 0.422543, "engine_err": 0.160817}
+{"k": 1, "n": 50, "i": 43, "true_do": 0.54048, "engine_est": 0.664955, "engine_err": 0.124475}
+{"k": 1, "n": 50, "i": 44, "true_do": 0.38608, "engine_est": 0.574519, "engine_err": 0.188439}
+{"k": 1, "n": 50, "i": 45, "true_do": 0.32574, "engine_est": 0.508772, "engine_err": 0.183032}
+{"k": 1, "n": 50, "i": 46, "true_do": 0.6969, "engine_est": 0.763736, "engine_err": 0.066836}
+{"k": 1, "n": 50, "i": 47, "true_do": 0.62262, "engine_est": 0.407051, "engine_err": 0.215569}
+{"k": 1, "n": 50, "i": 48, "true_do": 0.47204, "engine_est": 0.559478, "engine_err": 0.087438}
+{"k": 1, "n": 50, "i": 49, "true_do": 0.35756, "engine_est": 0.392045, "engine_err": 0.034485}
+{"k": 1, "n": 50, "i": 50, "true_do": 0.35158, "engine_est": 0.516239, "engine_err": 0.164659}
+{"k": 1, "n": 50, "i": 51, "true_do": 0.45077, "engine_est": 0.512124, "engine_err": 0.061354}
+{"k": 1, "n": 50, "i": 52, "true_do": 0.47448, "engine_est": 0.590237, "engine_err": 0.115757}
+{"k": 1, "n": 50, "i": 53, "true_do": 0.6424, "engine_est": 0.627959, "engine_err": 0.014441}
+{"k": 1, "n": 50, "i": 54, "true_do": 0.73044, "engine_est": 0.601399, "engine_err": 0.129041}
+{"k": 1, "n": 50, "i": 55, "true_do": 0.56327, "engine_est": 0.473647, "engine_err": 0.089623}
+{"k": 1, "n": 50, "i": 56, "true_do": 0.68675, "engine_est": 0.726331, "engine_err": 0.039581}
+{"k": 1, "n": 50, "i": 57, "true_do": 0.20419, "engine_est": 0.1734, "engine_err": 0.03079}
+{"k": 1, "n": 50, "i": 58, "true_do": 0.45548, "engine_est": 0.461538, "engine_err": 0.006058}
+{"k": 1, "n": 50, "i": 59, "true_do": 0.27785, "engine_est": 0.376471, "engine_err": 0.098621}
+{"k": 1, "n": 50, "i": 60, "true_do": 0.59865, "engine_est": 0.525412, "engine_err": 0.073238}
+{"k": 1, "n": 50, "i": 61, "true_do": 0.6937, "engine_est": 0.508929, "engine_err": 0.184771}
+{"k": 1, "n": 50, "i": 62, "true_do": 0.50274, "engine_est": 0.639615, "engine_err": 0.136875}
+{"k": 1, "n": 50, "i": 63, "true_do": 0.61, "engine_est": 0.694444, "engine_err": 0.084444}
+{"k": 1, "n": 50, "i": 64, "true_do": 0.6317, "engine_est": 0.573307, "engine_err": 0.058393}
+{"k": 1, "n": 50, "i": 65, "true_do": 0.68982, "engine_est": 0.807692, "engine_err": 0.117872}
+{"k": 1, "n": 50, "i": 66, "true_do": 0.5751, "engine_est": 0.484532, "engine_err": 0.090568}
+{"k": 1, "n": 50, "i": 67, "true_do": 0.47239, "engine_est": 0.555227, "engine_err": 0.082837}
+{"k": 1, "n": 50, "i": 68, "true_do": 0.8112, "engine_est": 0.736883, "engine_err": 0.074317}
+{"k": 1, "n": 50, "i": 69, "true_do": 0.86111, "engine_est": 0.809615, "engine_err": 0.051495}
+{"k": 1, "n": 50, "i": 70, "true_do": 0.7911, "engine_est": 0.809172, "engine_err": 0.018072}
+{"k": 1, "n": 50, "i": 71, "true_do": 0.57464, "engine_est": 0.456731, "engine_err": 0.117909}
+{"k": 1, "n": 50, "i": 72, "true_do": 0.3632, "engine_est": 0.307127, "engine_err": 0.056073}
+{"k": 1, "n": 50, "i": 73, "true_do": 0.66424, "engine_est": 0.615298, "engine_err": 0.048942}
+{"k": 1, "n": 50, "i": 74, "true_do": 0.32438, "engine_est": 0.533654, "engine_err": 0.209274}
+{"k": 1, "n": 50, "i": 75, "true_do": 0.736, "engine_est": 0.7, "engine_err": 0.036}
+{"k": 1, "n": 50, "i": 76, "true_do": 0.61692, "engine_est": 0.650888, "engine_err": 0.033968}
+{"k": 1, "n": 50, "i": 77, "true_do": 0.55332, "engine_est": 0.503846, "engine_err": 0.049474}
+{"k": 1, "n": 50, "i": 78, "true_do": 0.31269, "engine_est": 0.382692, "engine_err": 0.070002}
+{"k": 1, "n": 50, "i": 79, "true_do": 0.3199, "engine_est": 0.397436, "engine_err": 0.077536}
+{"k": 1, "n": 50, "i": 80, "true_do": 0.57824, "engine_est": 0.582799, "engine_err": 0.004559}
+{"k": 1, "n": 50, "i": 81, "true_do": 0.48283, "engine_est": 0.445378, "engine_err": 0.037452}
+{"k": 1, "n": 50, "i": 82, "true_do": 0.52199, "engine_est": 0.291667, "engine_err": 0.230323}
+{"k": 1, "n": 50, "i": 83, "true_do": 0.53156, "engine_est": 0.653846, "engine_err": 0.122286}
+{"k": 1, "n": 50, "i": 84, "true_do": 0.58855, "engine_est": 0.625067, "engine_err": 0.036517}
+{"k": 1, "n": 50, "i": 85, "true_do": 0.73434, "engine_est": 0.721978, "engine_err": 0.012362}
+{"k": 1, "n": 50, "i": 86, "true_do": 0.69267, "engine_est": 0.616124, "engine_err": 0.076546}
+{"k": 1, "n": 50, "i": 87, "true_do": 0.72016, "engine_est": 0.712454, "engine_err": 0.007706}
+{"k": 1, "n": 50, "i": 88, "true_do": 0.49448, "engine_est": 0.273352, "engine_err": 0.221128}
+{"k": 1, "n": 50, "i": 89, "true_do": 0.69612, "engine_est": 0.698489, "engine_err": 0.002369}
+{"k": 1, "n": 50, "i": 90, "true_do": 0.5656, "engine_est": 0.668332, "engine_err": 0.102732}
+{"k": 1, "n": 50, "i": 91, "true_do": 0.43175, "engine_est": 0.317061, "engine_err": 0.114689}
+{"k": 1, "n": 50, "i": 92, "true_do": 0.48742, "engine_est": 0.546429, "engine_err": 0.059009}
+{"k": 1, "n": 50, "i": 93, "true_do": 0.44405, "engine_est": 0.394231, "engine_err": 0.049819}
+{"k": 1, "n": 50, "i": 94, "true_do": 0.36296, "engine_est": 0.362637, "engine_err": 0.000323}
+{"k": 1, "n": 50, "i": 95, "true_do": 0.55876, "engine_est": 0.432692, "engine_err": 0.126068}
+{"k": 1, "n": 50, "i": 96, "true_do": 0.4613, "engine_est": 0.223077, "engine_err": 0.238223}
+{"k": 1, "n": 50, "i": 97, "true_do": 0.4827, "engine_est": 0.409684, "engine_err": 0.073016}
+{"k": 1, "n": 50, "i": 98, "true_do": 0.56784, "engine_est": 0.535256, "engine_err": 0.032584}
+{"k": 1, "n": 50, "i": 99, "true_do": 0.43612, "engine_est": 0.388736, "engine_err": 0.047384}
+{"k": 1, "n": 50, "i": 100, "true_do": 0.60912, "engine_est": 0.589744, "engine_err": 0.019376}
+{"k": 1, "n": 50, "i": 101, "true_do": 0.4596, "engine_est": 0.473077, "engine_err": 0.013477}
+{"k": 1, "n": 50, "i": 102, "true_do": 0.41808, "engine_est": 0.451923, "engine_err": 0.033843}
+{"k": 1, "n": 50, "i": 103, "true_do": 0.5242, "engine_est": 0.485577, "engine_err": 0.038623}
+{"k": 1, "n": 50, "i": 104, "true_do": 0.4758, "engine_est": 0.521853, "engine_err": 0.046053}
+{"k": 1, "n": 50, "i": 105, "true_do": 0.72468, "engine_est": 0.717949, "engine_err": 0.006731}
+{"k": 1, "n": 50, "i": 106, "true_do": 0.59976, "engine_est": 0.499691, "engine_err": 0.100069}
+{"k": 1, "n": 50, "i": 107, "true_do": 0.50224, "engine_est": 0.547786, "engine_err": 0.045546}
+{"k": 1, "n": 50, "i": 108, "true_do": 0.63419, "engine_est": 0.469231, "engine_err": 0.164959}
+{"k": 1, "n": 50, "i": 109, "true_do": 0.385, "engine_est": 0.358974, "engine_err": 0.026026}
+{"k": 1, "n": 50, "i": 110, "true_do": 0.6616, "engine_est": 0.68465, "engine_err": 0.02305}
+{"k": 1, "n": 50, "i": 111, "true_do": 0.40866, "engine_est": 0.489103, "engine_err": 0.080443}
+{"k": 1, "n": 50, "i": 112, "true_do": 0.69344, "engine_est": 0.666667, "engine_err": 0.026773}
+{"k": 1, "n": 50, "i": 113, "true_do": 0.30244, "engine_est": 0.35786, "engine_err": 0.05542}
+{"k": 1, "n": 50, "i": 114, "true_do": 0.51498, "engine_est": 0.45979, "engine_err": 0.05519}
+{"k": 1, "n": 50, "i": 115, "true_do": 0.4785, "engine_est": 0.429029, "engine_err": 0.049471}
+{"k": 1, "n": 50, "i": 116, "true_do": 0.5589, "engine_est": 0.421368, "engine_err": 0.137532}
+{"k": 1, "n": 50, "i": 117, "true_do": 0.85888, "engine_est": 0.832875, "engine_err": 0.026005}
+{"k": 1, "n": 50, "i": 118, "true_do": 0.56632, "engine_est": 0.641026, "engine_err": 0.074706}
+{"k": 1, "n": 50, "i": 119, "true_do": 0.8067, "engine_est": 0.606227, "engine_err": 0.200473}
+{"k": 1, "n": 200, "i": 0, "true_do": 0.4434, "engine_est": 0.479242, "engine_err": 0.035842, "iprg_pgmpy_diff": 3.258e-07, "gpt51": {"pred": 0.4791, "latency": 3.1, "tokens": 568, "fail": null}, "deepseek": {"pred": 0.4787, "latency": 4.6, "tokens": 839, "fail": null}}
+{"k": 1, "n": 200, "i": 1, "true_do": 0.6165, "engine_est": 0.554014, "engine_err": 0.062486, "iprg_pgmpy_diff": 1.691e-07, "gpt51": {"pred": 0.5537, "latency": 4.4, "tokens": 689, "fail": null}, "deepseek": {"pred": 0.5537, "latency": 4.1, "tokens": 736, "fail": null}}
+{"k": 1, "n": 200, "i": 2, "true_do": 0.80916, "engine_est": 0.798686, "engine_err": 0.010474, "iprg_pgmpy_diff": 2.518e-07, "gpt51": {"pred": 0.799, "latency": 4.0, "tokens": 738, "fail": null}, "deepseek": {"pred": 0.799, "latency": 3.6, "tokens": 643, "fail": null}}
+{"k": 1, "n": 200, "i": 3, "true_do": 0.3828, "engine_est": 0.349698, "engine_err": 0.033102, "iprg_pgmpy_diff": 1.269e-07, "gpt51": {"pred": 0.3495, "latency": 2.5, "tokens": 563, "fail": null}, "deepseek": {"pred": 0.3495, "latency": 5.1, "tokens": 893, "fail": null}}
+{"k": 1, "n": 200, "i": 4, "true_do": 0.32704, "engine_est": 0.277827, "engine_err": 0.049213, "iprg_pgmpy_diff": 7e-09, "gpt51": {"pred": 0.278, "latency": 3.1, "tokens": 589, "fail": null}, "deepseek": {"pred": 0.278, "latency": 4.4, "tokens": 778, "fail": null}}
+{"k": 1, "n": 200, "i": 5, "true_do": 0.32348, "engine_est": 0.379856, "engine_err": 0.056376, "iprg_pgmpy_diff": 3.87e-08, "gpt51": {"pred": 0.38, "latency": 3.6, "tokens": 672, "fail": null}, "deepseek": {"pred": 0.3798, "latency": 2.9, "tokens": 617, "fail": null}}
+{"k": 1, "n": 200, "i": 6, "true_do": 0.5786, "engine_est": 0.555973, "engine_err": 0.022627, "iprg_pgmpy_diff": 4.671e-07, "gpt51": {"pred": 0.555, "latency": 3.3, "tokens": 590, "fail": null}, "deepseek": {"pred": 0.5556, "latency": 3.8, "tokens": 759, "fail": null}}
+{"k": 1, "n": 200, "i": 7, "true_do": 0.62525, "engine_est": 0.607785, "engine_err": 0.017465, "iprg_pgmpy_diff": 1.272e-07, "gpt51": {"pred": 0.6088, "latency": 3.7, "tokens": 587, "fail": null}, "deepseek": {"pred": 0.608, "latency": 4.5, "tokens": 826, "fail": null}}
+{"k": 1, "n": 200, "i": 8, "true_do": 0.4664, "engine_est": 0.552285, "engine_err": 0.085885, "iprg_pgmpy_diff": 1.556e-07, "gpt51": {"pred": 0.5527, "latency": 3.9, "tokens": 543, "fail": null}, "deepseek": {"pred": 0.5527, "latency": 2.9, "tokens": 618, "fail": null}}
+{"k": 1, "n": 200, "i": 9, "true_do": 0.351, "engine_est": 0.300347, "engine_err": 0.050653, "iprg_pgmpy_diff": 4.653e-07, "gpt51": {"pred": 0.3005, "latency": 3.0, "tokens": 515, "fail": null}, "deepseek": {"pred": 0.3005, "latency": 2.5, "tokens": 531, "fail": null}}
+{"k": 1, "n": 200, "i": 10, "true_do": 0.8096, "engine_est": 0.748317, "engine_err": 0.061283, "iprg_pgmpy_diff": 1.683e-07, "gpt51": {"pred": 0.7483, "latency": 2.9, "tokens": 592, "fail": null}, "deepseek": {"pred": 0.7483, "latency": 2.9, "tokens": 586, "fail": null}}
+{"k": 1, "n": 200, "i": 11, "true_do": 0.3136, "engine_est": 0.30029, "engine_err": 0.01331, "iprg_pgmpy_diff": 4.945e-07, "gpt51": {"pred": 0.3003, "latency": 4.5, "tokens": 612, "fail": null}, "deepseek": {"pred": 0.3003, "latency": 3.8, "tokens": 692, "fail": null}}
+{"k": 1, "n": 200, "i": 12, "true_do": 0.39964, "engine_est": 0.44991, "engine_err": 0.05027, "iprg_pgmpy_diff": 2.203e-07, "gpt51": {"pred": 0.4499, "latency": 2.8, "tokens": 565, "fail": null}, "deepseek": {"pred": 0.4499, "latency": 2.5, "tokens": 567, "fail": null}}
+{"k": 1, "n": 200, "i": 13, "true_do": 0.51604, "engine_est": 0.610862, "engine_err": 0.094822, "iprg_pgmpy_diff": 3.17e-08, "gpt51": {"pred": 0.6107, "latency": 3.0, "tokens": 520, "fail": null}, "deepseek": {"pred": 0.611, "latency": 4.3, "tokens": 836, "fail": null}}
+{"k": 1, "n": 200, "i": 14, "true_do": 0.5758, "engine_est": 0.589707, "engine_err": 0.013907, "iprg_pgmpy_diff": 2.03e-07, "gpt51": {"pred": 0.5888, "latency": 5.5, "tokens": 802, "fail": null}, "deepseek": {"pred": 0.5893, "latency": 4.0, "tokens": 738, "fail": null}}
+{"k": 1, "n": 200, "i": 15, "true_do": 0.30315, "engine_est": 0.299047, "engine_err": 0.004103, "iprg_pgmpy_diff": 3.205e-07, "gpt51": {"pred": 0.299, "latency": 4.8, "tokens": 667, "fail": null}, "deepseek": {"pred": 0.299, "latency": 3.2, "tokens": 602, "fail": null}}
+{"k": 1, "n": 200, "i": 16, "true_do": 0.5648, "engine_est": 0.573256, "engine_err": 0.008456, "iprg_pgmpy_diff": 4.602e-07, "gpt51": {"pred": 0.5726, "latency": 3.3, "tokens": 654, "fail": null}, "deepseek": {"pred": 0.5731, "latency": 3.4, "tokens": 679, "fail": null}}
+{"k": 1, "n": 200, "i": 17, "true_do": 0.4489, "engine_est": 0.41205, "engine_err": 0.03685, "iprg_pgmpy_diff": 2.844e-07, "gpt51": {"pred": 0.4119, "latency": 3.0, "tokens": 523, "fail": null}, "deepseek": {"pred": 0.4119, "latency": 5.0, "tokens": 842, "fail": null}}
+{"k": 1, "n": 200, "i": 18, "true_do": 0.5175, "engine_est": 0.498434, "engine_err": 0.019066, "iprg_pgmpy_diff": 2.184e-07, "gpt51": {"pred": 0.4983, "latency": 4.3, "tokens": 614, "fail": null}, "deepseek": {"pred": 0.4983, "latency": 2.7, "tokens": 526, "fail": null}}
+{"k": 1, "n": 200, "i": 19, "true_do": 0.21451, "engine_est": 0.269692, "engine_err": 0.055182, "iprg_pgmpy_diff": 2.402e-07, "gpt51": {"pred": 0.2696, "latency": 4.2, "tokens": 673, "fail": null}, "deepseek": {"pred": 0.2698, "latency": 3.5, "tokens": 616, "fail": null}}
+{"k": 1, "n": 200, "i": 20, "true_do": 0.77091, "engine_est": 0.712715, "engine_err": 0.058195}
+{"k": 1, "n": 200, "i": 21, "true_do": 0.70656, "engine_est": 0.680347, "engine_err": 0.026213}
+{"k": 1, "n": 200, "i": 22, "true_do": 0.40067, "engine_est": 0.439075, "engine_err": 0.038405}
+{"k": 1, "n": 200, "i": 23, "true_do": 0.2335, "engine_est": 0.231259, "engine_err": 0.002241}
+{"k": 1, "n": 200, "i": 24, "true_do": 0.3786, "engine_est": 0.363125, "engine_err": 0.015475}
+{"k": 1, "n": 200, "i": 25, "true_do": 0.38996, "engine_est": 0.389965, "engine_err": 5e-06}
+{"k": 1, "n": 200, "i": 26, "true_do": 0.20544, "engine_est": 0.228172, "engine_err": 0.022732}
+{"k": 1, "n": 200, "i": 27, "true_do": 0.38684, "engine_est": 0.519685, "engine_err": 0.132845}
+{"k": 1, "n": 200, "i": 28, "true_do": 0.37364, "engine_est": 0.358088, "engine_err": 0.015552}
+{"k": 1, "n": 200, "i": 29, "true_do": 0.40824, "engine_est": 0.445623, "engine_err": 0.037383}
+{"k": 1, "n": 200, "i": 30, "true_do": 0.44182, "engine_est": 0.496878, "engine_err": 0.055058}
+{"k": 1, "n": 200, "i": 31, "true_do": 0.39215, "engine_est": 0.409435, "engine_err": 0.017285}
+{"k": 1, "n": 200, "i": 32, "true_do": 0.72889, "engine_est": 0.605413, "engine_err": 0.123477}
+{"k": 1, "n": 200, "i": 33, "true_do": 0.37484, "engine_est": 0.379286, "engine_err": 0.004446}
+{"k": 1, "n": 200, "i": 34, "true_do": 0.21544, "engine_est": 0.281141, "engine_err": 0.065701}
+{"k": 1, "n": 200, "i": 35, "true_do": 0.46346, "engine_est": 0.483211, "engine_err": 0.019751}
+{"k": 1, "n": 200, "i": 36, "true_do": 0.6138, "engine_est": 0.65857, "engine_err": 0.04477}
+{"k": 1, "n": 200, "i": 37, "true_do": 0.70188, "engine_est": 0.696835, "engine_err": 0.005045}
+{"k": 1, "n": 200, "i": 38, "true_do": 0.70392, "engine_est": 0.649148, "engine_err": 0.054772}
+{"k": 1, "n": 200, "i": 39, "true_do": 0.3882, "engine_est": 0.155783, "engine_err": 0.232417}
+{"k": 1, "n": 200, "i": 40, "true_do": 0.4826, "engine_est": 0.484964, "engine_err": 0.002364}
+{"k": 1, "n": 200, "i": 41, "true_do": 0.47196, "engine_est": 0.539621, "engine_err": 0.067661}
+{"k": 1, "n": 200, "i": 42, "true_do": 0.58336, "engine_est": 0.48352, "engine_err": 0.09984}
+{"k": 1, "n": 200, "i": 43, "true_do": 0.54048, "engine_est": 0.601212, "engine_err": 0.060732}
+{"k": 1, "n": 200, "i": 44, "true_do": 0.38608, "engine_est": 0.364868, "engine_err": 0.021212}
+{"k": 1, "n": 200, "i": 45, "true_do": 0.32574, "engine_est": 0.430095, "engine_err": 0.104355}
+{"k": 1, "n": 200, "i": 46, "true_do": 0.6969, "engine_est": 0.659134, "engine_err": 0.037766}
+{"k": 1, "n": 200, "i": 47, "true_do": 0.62262, "engine_est": 0.686542, "engine_err": 0.063922}
+{"k": 1, "n": 200, "i": 48, "true_do": 0.47204, "engine_est": 0.50709, "engine_err": 0.03505}
+{"k": 1, "n": 200, "i": 49, "true_do": 0.35756, "engine_est": 0.456271, "engine_err": 0.098711}
+{"k": 1, "n": 200, "i": 50, "true_do": 0.35158, "engine_est": 0.428105, "engine_err": 0.076525}
+{"k": 1, "n": 200, "i": 51, "true_do": 0.45077, "engine_est": 0.443916, "engine_err": 0.006854}
+{"k": 1, "n": 200, "i": 52, "true_do": 0.47448, "engine_est": 0.40298, "engine_err": 0.0715}
+{"k": 1, "n": 200, "i": 53, "true_do": 0.6424, "engine_est": 0.683858, "engine_err": 0.041458}
+{"k": 1, "n": 200, "i": 54, "true_do": 0.73044, "engine_est": 0.75939, "engine_err": 0.02895}
+{"k": 1, "n": 200, "i": 55, "true_do": 0.56327, "engine_est": 0.539627, "engine_err": 0.023643}
+{"k": 1, "n": 200, "i": 56, "true_do": 0.68675, "engine_est": 0.663927, "engine_err": 0.022823}
+{"k": 1, "n": 200, "i": 57, "true_do": 0.20419, "engine_est": 0.186859, "engine_err": 0.017331}
+{"k": 1, "n": 200, "i": 58, "true_do": 0.45548, "engine_est": 0.506281, "engine_err": 0.050801}
+{"k": 1, "n": 200, "i": 59, "true_do": 0.27785, "engine_est": 0.233596, "engine_err": 0.044254}
+{"k": 1, "n": 200, "i": 60, "true_do": 0.59865, "engine_est": 0.639887, "engine_err": 0.041237}
+{"k": 1, "n": 200, "i": 61, "true_do": 0.6937, "engine_est": 0.70157, "engine_err": 0.00787}
+{"k": 1, "n": 200, "i": 62, "true_do": 0.50274, "engine_est": 0.474917, "engine_err": 0.027823}
+{"k": 1, "n": 200, "i": 63, "true_do": 0.61, "engine_est": 0.675601, "engine_err": 0.065601}
+{"k": 1, "n": 200, "i": 64, "true_do": 0.6317, "engine_est": 0.617477, "engine_err": 0.014223}
+{"k": 1, "n": 200, "i": 65, "true_do": 0.68982, "engine_est": 0.690523, "engine_err": 0.000703}
+{"k": 1, "n": 200, "i": 66, "true_do": 0.5751, "engine_est": 0.482992, "engine_err": 0.092108}
+{"k": 1, "n": 200, "i": 67, "true_do": 0.47239, "engine_est": 0.458932, "engine_err": 0.013458}
+{"k": 1, "n": 200, "i": 68, "true_do": 0.8112, "engine_est": 0.760346, "engine_err": 0.050854}
+{"k": 1, "n": 200, "i": 69, "true_do": 0.86111, "engine_est": 0.84323, "engine_err": 0.01788}
+{"k": 1, "n": 200, "i": 70, "true_do": 0.7911, "engine_est": 0.744422, "engine_err": 0.046678}
+{"k": 1, "n": 200, "i": 71, "true_do": 0.57464, "engine_est": 0.535788, "engine_err": 0.038852}
+{"k": 1, "n": 200, "i": 72, "true_do": 0.3632, "engine_est": 0.369583, "engine_err": 0.006383}
+{"k": 1, "n": 200, "i": 73, "true_do": 0.66424, "engine_est": 0.654382, "engine_err": 0.009858}
+{"k": 1, "n": 200, "i": 74, "true_do": 0.32438, "engine_est": 0.28617, "engine_err": 0.03821}
+{"k": 1, "n": 200, "i": 75, "true_do": 0.736, "engine_est": 0.753369, "engine_err": 0.017369}
+{"k": 1, "n": 200, "i": 76, "true_do": 0.61692, "engine_est": 0.570362, "engine_err": 0.046558}
+{"k": 1, "n": 200, "i": 77, "true_do": 0.55332, "engine_est": 0.502463, "engine_err": 0.050857}
+{"k": 1, "n": 200, "i": 78, "true_do": 0.31269, "engine_est": 0.231669, "engine_err": 0.081021}
+{"k": 1, "n": 200, "i": 79, "true_do": 0.3199, "engine_est": 0.333434, "engine_err": 0.013534}
+{"k": 1, "n": 200, "i": 80, "true_do": 0.57824, "engine_est": 0.534276, "engine_err": 0.043964}
+{"k": 1, "n": 200, "i": 81, "true_do": 0.48283, "engine_est": 0.468322, "engine_err": 0.014508}
+{"k": 1, "n": 200, "i": 82, "true_do": 0.52199, "engine_est": 0.614111, "engine_err": 0.092121}
+{"k": 1, "n": 200, "i": 83, "true_do": 0.53156, "engine_est": 0.535457, "engine_err": 0.003897}
+{"k": 1, "n": 200, "i": 84, "true_do": 0.58855, "engine_est": 0.600643, "engine_err": 0.012093}
+{"k": 1, "n": 200, "i": 85, "true_do": 0.73434, "engine_est": 0.705353, "engine_err": 0.028987}
+{"k": 1, "n": 200, "i": 86, "true_do": 0.69267, "engine_est": 0.714246, "engine_err": 0.021576}
+{"k": 1, "n": 200, "i": 87, "true_do": 0.72016, "engine_est": 0.696535, "engine_err": 0.023625}
+{"k": 1, "n": 200, "i": 88, "true_do": 0.49448, "engine_est": 0.462001, "engine_err": 0.032479}
+{"k": 1, "n": 200, "i": 89, "true_do": 0.69612, "engine_est": 0.722311, "engine_err": 0.026191}
+{"k": 1, "n": 200, "i": 90, "true_do": 0.5656, "engine_est": 0.453501, "engine_err": 0.112099}
+{"k": 1, "n": 200, "i": 91, "true_do": 0.43175, "engine_est": 0.49065, "engine_err": 0.0589}
+{"k": 1, "n": 200, "i": 92, "true_do": 0.48742, "engine_est": 0.551124, "engine_err": 0.063704}
+{"k": 1, "n": 200, "i": 93, "true_do": 0.44405, "engine_est": 0.378333, "engine_err": 0.065717}
+{"k": 1, "n": 200, "i": 94, "true_do": 0.36296, "engine_est": 0.328431, "engine_err": 0.034529}
+{"k": 1, "n": 200, "i": 95, "true_do": 0.55876, "engine_est": 0.537432, "engine_err": 0.021328}
+{"k": 1, "n": 200, "i": 96, "true_do": 0.4613, "engine_est": 0.445073, "engine_err": 0.016227}
+{"k": 1, "n": 200, "i": 97, "true_do": 0.4827, "engine_est": 0.514598, "engine_err": 0.031898}
+{"k": 1, "n": 200, "i": 98, "true_do": 0.56784, "engine_est": 0.417632, "engine_err": 0.150208}
+{"k": 1, "n": 200, "i": 99, "true_do": 0.43612, "engine_est": 0.438712, "engine_err": 0.002592}
+{"k": 1, "n": 200, "i": 100, "true_do": 0.60912, "engine_est": 0.636744, "engine_err": 0.027624}
+{"k": 1, "n": 200, "i": 101, "true_do": 0.4596, "engine_est": 0.512059, "engine_err": 0.052459}
+{"k": 1, "n": 200, "i": 102, "true_do": 0.41808, "engine_est": 0.477566, "engine_err": 0.059486}
+{"k": 1, "n": 200, "i": 103, "true_do": 0.5242, "engine_est": 0.527611, "engine_err": 0.003411}
+{"k": 1, "n": 200, "i": 104, "true_do": 0.4758, "engine_est": 0.487993, "engine_err": 0.012193}
+{"k": 1, "n": 200, "i": 105, "true_do": 0.72468, "engine_est": 0.62533, "engine_err": 0.09935}
+{"k": 1, "n": 200, "i": 106, "true_do": 0.59976, "engine_est": 0.586616, "engine_err": 0.013144}
+{"k": 1, "n": 200, "i": 107, "true_do": 0.50224, "engine_est": 0.507128, "engine_err": 0.004888}
+{"k": 1, "n": 200, "i": 108, "true_do": 0.63419, "engine_est": 0.600698, "engine_err": 0.033492}
+{"k": 1, "n": 200, "i": 109, "true_do": 0.385, "engine_est": 0.402434, "engine_err": 0.017434}
+{"k": 1, "n": 200, "i": 110, "true_do": 0.6616, "engine_est": 0.684418, "engine_err": 0.022818}
+{"k": 1, "n": 200, "i": 111, "true_do": 0.40866, "engine_est": 0.412153, "engine_err": 0.003493}
+{"k": 1, "n": 200, "i": 112, "true_do": 0.69344, "engine_est": 0.648833, "engine_err": 0.044607}
+{"k": 1, "n": 200, "i": 113, "true_do": 0.30244, "engine_est": 0.270792, "engine_err": 0.031648}
+{"k": 1, "n": 200, "i": 114, "true_do": 0.51498, "engine_est": 0.549279, "engine_err": 0.034299}
+{"k": 1, "n": 200, "i": 115, "true_do": 0.4785, "engine_est": 0.365415, "engine_err": 0.113085}
+{"k": 1, "n": 200, "i": 116, "true_do": 0.5589, "engine_est": 0.604186, "engine_err": 0.045286}
+{"k": 1, "n": 200, "i": 117, "true_do": 0.85888, "engine_est": 0.854088, "engine_err": 0.004792}
+{"k": 1, "n": 200, "i": 118, "true_do": 0.56632, "engine_est": 0.566337, "engine_err": 1.7e-05}
+{"k": 1, "n": 200, "i": 119, "true_do": 0.8067, "engine_est": 0.842621, "engine_err": 0.035921}
+{"k": 1, "n": 1000, "i": 0, "true_do": 0.4434, "engine_est": 0.447384, "engine_err": 0.003984, "iprg_pgmpy_diff": 2.723e-07, "gpt51": {"pred": 0.4481, "latency": 4.9, "tokens": 753, "fail": null}, "deepseek": {"pred": 0.4474, "latency": 3.9, "tokens": 712, "fail": null}}
+{"k": 1, "n": 1000, "i": 1, "true_do": 0.6165, "engine_est": 0.65151, "engine_err": 0.03501, "iprg_pgmpy_diff": 1.074e-07, "gpt51": {"pred": 0.6512, "latency": 4.1, "tokens": 554, "fail": null}, "deepseek": {"pred": 0.6514, "latency": 3.7, "tokens": 726, "fail": null}}
+{"k": 1, "n": 1000, "i": 2, "true_do": 0.80916, "engine_est": 0.794975, "engine_err": 0.014185, "iprg_pgmpy_diff": 2.081e-07, "gpt51": {"pred": 0.7949, "latency": 2.9, "tokens": 536, "fail": null}, "deepseek": {"pred": 0.7949, "latency": 5.9, "tokens": 965, "fail": null}}
+{"k": 1, "n": 1000, "i": 3, "true_do": 0.3828, "engine_est": 0.387297, "engine_err": 0.004497, "iprg_pgmpy_diff": 2.985e-07, "gpt51": {"pred": 0.3868, "latency": 3.2, "tokens": 616, "fail": null}, "deepseek": {"pred": 0.3871, "latency": 3.3, "tokens": 595, "fail": null}}
+{"k": 1, "n": 1000, "i": 4, "true_do": 0.32704, "engine_est": 0.319366, "engine_err": 0.007674, "iprg_pgmpy_diff": 3.708e-07, "gpt51": {"pred": 0.3194, "latency": 3.7, "tokens": 646, "fail": null}, "deepseek": {"pred": 0.3196, "latency": 3.7, "tokens": 639, "fail": null}}
+{"k": 1, "n": 1000, "i": 5, "true_do": 0.32348, "engine_est": 0.324665, "engine_err": 0.001185, "iprg_pgmpy_diff": 2.269e-07, "gpt51": {"pred": 0.3248, "latency": 3.4, "tokens": 626, "fail": null}, "deepseek": {"pred": 0.3248, "latency": 2.8, "tokens": 564, "fail": null}}
+{"k": 1, "n": 1000, "i": 6, "true_do": 0.5786, "engine_est": 0.577237, "engine_err": 0.001363, "iprg_pgmpy_diff": 3.764e-07, "gpt51": {"pred": 0.5772, "latency": 3.3, "tokens": 515, "fail": null}, "deepseek": {"pred": 0.5772, "latency": 2.7, "tokens": 532, "fail": null}}
+{"k": 1, "n": 1000, "i": 7, "true_do": 0.62525, "engine_est": 0.637901, "engine_err": 0.012651, "iprg_pgmpy_diff": 4.14e-08, "gpt51": {"pred": 0.638, "latency": 3.9, "tokens": 594, "fail": null}, "deepseek": {"pred": 0.638, "latency": 2.7, "tokens": 536, "fail": null}}
+{"k": 1, "n": 1000, "i": 8, "true_do": 0.4664, "engine_est": 0.509582, "engine_err": 0.043182, "iprg_pgmpy_diff": 2.442e-07, "gpt51": {"pred": 0.5098, "latency": 4.1, "tokens": 731, "fail": null}, "deepseek": {"pred": 0.5098, "latency": 3.9, "tokens": 759, "fail": null}}
+{"k": 1, "n": 1000, "i": 9, "true_do": 0.351, "engine_est": 0.326324, "engine_err": 0.024676, "iprg_pgmpy_diff": 7.58e-08, "gpt51": {"pred": 0.3264, "latency": 3.6, "tokens": 627, "fail": null}, "deepseek": {"pred": 0.3264, "latency": 2.7, "tokens": 538, "fail": null}}
+{"k": 1, "n": 1000, "i": 10, "true_do": 0.8096, "engine_est": 0.793479, "engine_err": 0.016121, "iprg_pgmpy_diff": 2.361e-07, "gpt51": {"pred": 0.7939, "latency": 4.9, "tokens": 577, "fail": null}, "deepseek": {"pred": 0.7935, "latency": 5.5, "tokens": 963, "fail": null}}
+{"k": 1, "n": 1000, "i": 11, "true_do": 0.3136, "engine_est": 0.272518, "engine_err": 0.041082, "iprg_pgmpy_diff": 3.835e-07, "gpt51": {"pred": 0.2721, "latency": 3.5, "tokens": 635, "fail": null}, "deepseek": {"pred": 0.2721, "latency": 2.4, "tokens": 504, "fail": null}}
+{"k": 1, "n": 1000, "i": 12, "true_do": 0.39964, "engine_est": 0.377406, "engine_err": 0.022234, "iprg_pgmpy_diff": 1.7e-09, "gpt51": {"pred": 0.3777, "latency": 3.0, "tokens": 545, "fail": null}, "deepseek": {"pred": 0.3777, "latency": 2.6, "tokens": 524, "fail": null}}
+{"k": 1, "n": 1000, "i": 13, "true_do": 0.51604, "engine_est": 0.488509, "engine_err": 0.027531, "iprg_pgmpy_diff": 1.918e-07, "gpt51": {"pred": 0.4888, "latency": 5.2, "tokens": 554, "fail": null}, "deepseek": {"pred": 0.4888, "latency": 5.2, "tokens": 819, "fail": null}}
