@@ -1,0 +1,18 @@
+{
+  "total_scms": 900,
+  "max_abs_diff": 4.999999999866223e-07,
+  "per_mode": {
+    "fixed": {
+      "n": 450,
+      "max_pgmpy_engine_diff": 0.0,
+      "max_engine_vs_stored_diff": 0.0
+    },
+    "random": {
+      "n": 450,
+      "max_pgmpy_engine_diff": 5e-07,
+      "max_engine_vs_stored_diff": 0.0
+    }
+  },
+  "oracle": "pgmpy 1.1.2",
+  "verdict": "PASS \u2014 scale-axis engine truths independently confirmed by pgmpy <1e-6"
+}
