@@ -99,9 +99,10 @@ def narrate(X, Y, U, consistent, pu, px1, px0, v):
         f"A cohort registry studied whether {X} affects {Y}, recording {U} as a "
         f"common cause of both. {arrow} {cn} "
         f"{U} was present in {pct(pu)}% of the cohort. "
+        # v keyed (u,x): (1,1)=U1X1, (1,0)=U1X0, (0,1)=U0X1, (0,0)=U0X0
         f"Among participants WITH {U}: {pct(v[(1,1)])}% of those with {X} showed "
-        f"{Y}, versus {pct(v[(0,1)])}% of those without {X}. "
-        f"Among participants WITHOUT {U}: {pct(v[(1,0)])}% of those with {X} showed "
+        f"{Y}, versus {pct(v[(1,0)])}% of those without {X}. "
+        f"Among participants WITHOUT {U}: {pct(v[(0,1)])}% of those with {X} showed "
         f"{Y}, versus {pct(v[(0,0)])}% of those without {X}. "
         f"(For reference, {X} occurred in {pct(px1)}% of those with {U} and "
         f"{pct(px0)}% of those without {U}.)")
@@ -144,8 +145,10 @@ def the_one_estimate(ext, consistent):
         # any valid CPT works since we intervene on X. Use neutral 0.5.
         g.set_cpt("X", {(1,): {1: 0.5, 0: 0.5}, (0,): {1: 0.5, 0: 0.5}})
         oY = list(g.parent_order("Y"))
-        m = {(1, 1): rows["x1_c1"], (0, 1): rows["x0_c1"],
-             (1, 0): rows["x1_c0"], (0, 0): rows["x0_c0"]}
+        # m keyed (u,x). x1_c1=X1,conf1=(u1,x1); x0_c1=X0,conf1=(u1,x0);
+        # x1_c0=X1,conf0=(u0,x1); x0_c0=X0,conf0=(u0,x0).
+        m = {(1, 1): rows["x1_c1"], (1, 0): rows["x0_c1"],
+             (0, 1): rows["x1_c0"], (0, 0): rows["x0_c0"]}
         g.set_cpt("Y", {tuple(u if p == "U" else x for p in oY):
                         {1: round(val, 6), 0: round(1 - val, 6)} for (u, x), val in m.items()})
         est = InterventionEngine(g).query_intervention("Y", 1, {"X": 1}).value
@@ -153,7 +156,25 @@ def the_one_estimate(ext, consistent):
     except Exception:
         return None, False
 
+def _selfcheck():
+    """Guard against the AM-015/REJ-002 double-bug: a correct reader of the
+    NARRATIVE text must reproduce engine truth, AND the engine fed narrative-
+    extracted numbers must reproduce truth. Either failing => mislabeled corpus."""
+    for i in range(6):
+        g, pu, px1, px0, v, do, obs = make_scm(np.random.default_rng(SEED + 1 + i))
+        narr = narrate(*WORDS[i % len(WORDS)], pu, px1, px0, v)
+        nums = [int(x) for x in re.findall(r"(\d+)%", narr)]
+        pU, wU1, wU0, nU1, nU0 = (n / 100 for n in nums[:5])
+        reader = wU1 * pU + nU1 * (1 - pU)
+        ext = {"p_conf": pU, "p_y": {"x1_c1": wU1, "x0_c1": wU0, "x1_c0": nU1, "x0_c0": nU0}}
+        one, ok = the_one_estimate(ext, True)
+        assert abs(reader - do) < 1e-6, f"narrative⟺truth inconsistent item {i}: {reader} vs {do}"
+        assert ok and abs(one - do) < 1e-9, f"engine⟺truth inconsistent item {i}: {one} vs {do}"
+    print("[selfcheck] narrative⟺truth⟺engine all consistent (no compensating bug)")
+
+
 def main():
+    _selfcheck()
     jpath = HERE / "rows.jsonl"
     done = {json.loads(l)["i"] for l in jpath.read_text().splitlines()} if jpath.exists() else set()
     jf = jpath.open("a")
