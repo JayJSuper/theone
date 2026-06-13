@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The One · Evidence Dossier</title>
+<style>
+:root{--bg:#faf9f7;--ink:#1d1d1f;--ink2:#56565b;--ink3:#9b988f;--hair:#e8e5e0;--stone:#8a7a63;
+--green:#3d7a52;--red:#b4533e;--blue:#3a5a8c;--amber:#9a6b2f;--card:#fff;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;line-height:1.72;-webkit-font-smoothing:antialiased}
+.wrap{max-width:860px;margin:0 auto;padding:64px 28px 100px}
+.mark{font-size:.82rem;letter-spacing:.22em;color:var(--stone);font-weight:600;text-transform:uppercase}
+h1{font-size:2.1rem;font-weight:700;letter-spacing:-.02em;margin:10px 0 2px}
+h1 .cn{font-weight:400;color:var(--ink2);margin-left:.4em;font-size:1.5rem}
+.thesis{font-size:1.12rem;color:var(--ink);margin:14px 0 6px;max-width:680px}
+.scope{font-size:.9rem;color:var(--ink2);background:#f1ede6;border-radius:10px;padding:11px 16px;margin-top:14px;display:inline-block}
+h2{font-size:1.18rem;margin:46px 0 4px;padding-top:22px;border-top:1px solid var(--hair);letter-spacing:-.01em}
+.k{font-size:.74rem;letter-spacing:.12em;color:var(--stone);font-weight:700;text-transform:uppercase}
+.lead{font-size:1.02rem;margin:8px 0}
+.card{background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:24px;margin:16px 0;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+table{width:100%;border-collapse:collapse;font-size:.85rem;margin-top:8px}
+th,td{padding:7px 9px;border-bottom:1px solid var(--hair);text-align:center}
+th{color:var(--ink3);font-weight:600;font-size:.72rem;letter-spacing:.04em}
+td:first-child,th:first-child{text-align:left}
+.eng{color:var(--green);font-weight:700}.bad{color:var(--red);font-weight:600}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:.8rem;margin-top:10px;color:var(--ink2)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:20px;height:3px;border-radius:2px}
+.three{display:grid;gap:12px;grid-template-columns:1fr;margin-top:8px}
+@media(min-width:680px){.three{grid-template-columns:repeat(3,1fr)}}
+.m{background:var(--card);border:1px solid var(--hair);border-radius:14px;padding:16px}
+.m .t{font-size:.72rem;color:var(--stone);font-weight:700;letter-spacing:.05em}
+.m .v{font-size:1.0rem;font-weight:650;margin:5px 0}
+.m .d{font-size:.8rem;color:var(--ink2)}
+.note{font-size:.84rem;color:var(--ink2);background:#f0ece5;border-radius:10px;padding:13px 16px;margin-top:14px}
+.bound{background:#fbf3ee;border:1px solid #e8cdc0}
+.foot{margin-top:48px;padding-top:18px;border-top:1px solid var(--hair);color:var(--ink3);font-size:.8rem}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.82em;background:#f1ede6;padding:1px 5px;border-radius:5px}
+a{color:var(--blue);text-decoration:none}
+.big{font-size:1.5rem;font-weight:700;color:var(--red)}
+</style></head><body><div class="wrap">
+
+<div class="mark">Evidence Dossier · v1 · 2026-06-13</div>
+<h1>The One<span class="cn">太一</span></h1>
+<p class="thesis">Correct causal reasoning is not a knowledge problem — frontier LLMs know the textbook math. It is a <b>computational-terminability</b> problem: when the number of confounder configurations that must be marginalized (2<sup>k</sup>) exceeds the model's reasoning budget, even flagships fail. An explicit causal engine does not. The One moves the combinatorial part of causal computation out of the reasoning chain and onto a deterministic engine, attaching a machine-verifiable credential to every answer.</p>
+<div class="scope"><b>Scope of the claim (pinned):</b> demonstrated for <b>known structure + given parameters + high combinatorial complexity</b>. Not a claim that "causal reasoning is solved." Where the engine has <i>no</i> advantage is stated openly below.</div>
+
+<h2><span class="k">Finding 1 · The Combinatorial Cliff</span></h2>
+<div class="card">
+<p class="lead">Four model bases across three families (gpt-5.1, deepseek-v4-flash, claude) all collapse on exact back-door adjustment once 2<sup>k</sup> crosses ~16–32. The engine is flat at 1.000, millisecond-scale, at every k.</p>
+<svg viewBox="0 0 760 380" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;margin-top:6px">
+  <line x1="78" y1="320" x2="710" y2="320" stroke="#c9c4ba" stroke-width="1.5"/>
+  <line x1="78" y1="34" x2="78" y2="320" stroke="#c9c4ba" stroke-width="1.5"/>
+  <g font-size="11" fill="#9b988f" text-anchor="end" font-family="ui-monospace,monospace">
+    <text x="70" y="324">0.0</text><text x="70" y="249">0.25</text><text x="70" y="178">0.50</text>
+    <text x="70" y="106">0.75</text><text x="70" y="38">1.0</text>
+    <line x1="78" y1="245" x2="710" y2="245" stroke="#f0ede8"/><line x1="78" y1="174" x2="710" y2="174" stroke="#f0ede8"/>
+    <line x1="78" y1="102" x2="710" y2="102" stroke="#f0ede8"/><line x1="78" y1="34" x2="710" y2="34" stroke="#f0ede8"/>
+  </g>
+  <g font-size="11" fill="#9b988f" text-anchor="middle" font-family="ui-monospace,monospace">
+    <text x="130" y="338">2</text><text x="246" y="338">4</text><text x="362" y="338">8</text>
+    <text x="478" y="338">16</text><text x="594" y="338">32</text><text x="688" y="338">64</text>
+    <text x="394" y="362" font-size="12.5" fill="#56565b" font-family="-apple-system,sans-serif">configurations to marginalize · 2ᵏ (k = adjustment-set size)</text>
+  </g>
+  <text x="24" y="178" font-size="12.5" fill="#56565b" transform="rotate(-90 24 178)" text-anchor="middle" font-family="-apple-system,sans-serif">intervention-query accuracy</text>
+  <rect x="478" y="34" width="116" height="286" fill="#b4533e" opacity="0.05"/>
+  <text x="536" y="50" font-size="10.5" fill="#b4533e" text-anchor="middle" opacity=".75">cliff zone</text>
+  <!-- y = 320 - acc*286 ; x: k1..6 -> 130,246,362,478,594,688 (visual log spacing) -->
+  <!-- engine flat 1.0 -->
+  <polyline fill="none" stroke="#3d7a52" stroke-width="3" points="130,34 246,34 362,34 478,34 594,34 688,34"/>
+  <g fill="#3d7a52"><circle cx="130" cy="34" r="4"/><circle cx="246" cy="34" r="4"/><circle cx="362" cy="34" r="4"/><circle cx="478" cy="34" r="4"/><circle cx="594" cy="34" r="4"/><circle cx="688" cy="34" r="4"/></g>
+  <!-- gpt-5.1: .96 1.0 .96 .66 .08 .14 -> y:309,34,309? compute: 320-acc*286 -->
+  <!-- .96->45.4 1.0->34 .96->45.4 .66->131.2 .08->297.1 .14->279.96 -->
+  <polyline fill="none" stroke="#3a5a8c" stroke-width="2.5" points="130,45 246,34 362,45 478,131 594,297 688,280"/>
+  <g fill="#3a5a8c"><circle cx="130" cy="45" r="3.4"/><circle cx="246" cy="34" r="3.4"/><circle cx="362" cy="45" r="3.4"/><circle cx="478" cy="131" r="3.4"/><circle cx="594" cy="297" r="3.4"/><circle cx="688" cy="280" r="3.4"/></g>
+  <!-- deepseek: 1 1 .88 .06 0 0 -> y:34,34,68.3,302.8,320,320 -->
+  <polyline fill="none" stroke="#b4533e" stroke-width="2.5" stroke-dasharray="5,3" points="130,34 246,34 362,68 478,303 594,320 688,320"/>
+  <g fill="#b4533e"><circle cx="130" cy="34" r="3.4"/><circle cx="246" cy="34" r="3.4"/><circle cx="362" cy="68" r="3.4"/><circle cx="478" cy="303" r="3.4"/><circle cx="594" cy="320" r="3.4"/><circle cx="688" cy="320" r="3.4"/></g>
+  <!-- claude markers k4=1.0(y34) k5=0.10(y291.4) -->
+  <g fill="#9a6b2f"><circle cx="478" cy="34" r="4"/><circle cx="594" cy="291" r="4"/></g>
+  <text x="478" y="26" font-size="9.5" fill="#9a6b2f" text-anchor="middle">claude 1.0</text>
+  <text x="610" y="293" font-size="9.5" fill="#9a6b2f">claude .10</text>
+</svg>
+<div class="legend">
+  <span><span class="sw" style="background:#3d7a52"></span>The One engine (exact enumeration)</span>
+  <span><span class="sw" style="background:#3a5a8c"></span>gpt-5.1</span>
+  <span><span class="sw" style="background:#b4533e"></span>deepseek-v4-flash</span>
+  <span><span class="sw" style="background:#9a6b2f"></span>claude (cliff spot-check)</span>
+</div>
+<table>
+<tr><th>k</th><th>2ᵏ</th><th>gpt-5.1</th><th>deepseek</th><th>claude</th><th>engine</th></tr>
+<tr><td>1</td><td>2</td><td>0.96</td><td>1.00</td><td>—</td><td class="eng">1.000</td></tr>
+<tr><td>2</td><td>4</td><td>1.00</td><td>1.00</td><td>—</td><td class="eng">1.000</td></tr>
+<tr><td>3</td><td>8</td><td>0.96</td><td>0.88</td><td>—</td><td class="eng">1.000</td></tr>
+<tr><td>4</td><td>16</td><td class="bad">0.66</td><td class="bad">0.06</td><td>1.00</td><td class="eng">1.000</td></tr>
+<tr><td>5</td><td>32</td><td class="bad">0.08</td><td class="bad">0.00</td><td class="bad">0.10</td><td class="eng">1.000</td></tr>
+<tr><td>6</td><td>64</td><td class="bad">0.14</td><td class="bad">0.00</td><td>—</td><td class="eng">1.000</td></tr>
+</table>
+<div class="note">300 SCMs × 600 real LLM calls. Two crash signatures: gpt-5.1 → <b>confident wrong answers</b> (k≥5: 45/50 wrong-with-no-warning); deepseek/claude → <b>protocol failure</b> (reasoning chain exhausts budget). Both are failures of terminability, not knowledge.</div>
+</div>
+
+<h2><span class="k">Finding 2 · Independently Verifiable</span></h2>
+<div class="card">
+<p class="lead">The engine's 1.000 is not "trust us." All 300 ground-truth values were independently recomputed by <b>pgmpy</b> (a third-party causal-inference library) via its own <code>CausalInference.do()</code>.</p>
+<div class="three">
+  <div class="m"><div class="t">Cross-validation</div><div class="v">300 / 300</div><div class="d">max |pgmpy − engine| = 5×10⁻⁷ (just 6-dp rounding). The "self-consistency" objection is dead.</div></div>
+  <div class="m"><div class="t">Causal core (F-1)</div><div class="v">7/7 green</div><div class="d">observation ≠ intervention under confounding; back-door is correct; pgmpy oracle agrees to 10⁻⁹.</div></div>
+  <div class="m"><div class="t">Driven by 2ᵏ</div><div class="v">p = 3.5×10⁻¹⁸</div><div class="d">collapse tracks marginalization count, not node count (dual-track confirmed).</div></div>
+</div>
+</div>
+
+<h2><span class="k">Finding 3 · Why a Cognitive Layer</span></h2>
+<div class="card">
+<p class="lead">At k≥5, gpt-5.1 returned <span class="big">87 / 98</span> causal probabilities that were <b>precise to 4 decimals, carried no warning, and were wrong</b> (mean error 0.047, max 0.454) — averaging ~5,726 tokens spent <i>per wrong-but-confident answer</i>. In one case it returned <b>P = 1.0179</b> — a literally impossible probability, delivered with full confidence.</p>
+<table>
+<tr><th>at high complexity (k≥5)</th><th>gpt-5.1</th><th>deepseek</th><th>The One engine</th></tr>
+<tr><td>tokens spent</td><td>565,504</td><td>917,476</td><td class="eng">≈ 0</td></tr>
+<tr><td>correct</td><td class="bad">11 / 100</td><td class="bad">0 / 100</td><td class="eng">100 / 100</td></tr>
+</table>
+<div class="note">A cognitive credential makes "which output can I trust" a <b>machine-verifiable fact</b> rather than a gamble: exact, terminating, third-party-recomputable — and an impossible value (P&gt;1) can never be issued.</div>
+</div>
+
+<h2><span class="k">Finding 4 · Where It Does NOT Help (stated openly)</span></h2>
+<div class="card bound">
+<p class="lead">The discipline of this project is that boundaries travel with claims.</p>
+<ul style="margin:8px 0 0 18px;font-size:.92rem;color:var(--ink2)">
+<li><b>Low-complexity natural language:</b> when numbers are correctly stated in prose and k is small (1–2), gpt-5.1 marginalizes correctly on its own (k=1: 24/24 exact; k=2: MAE 10⁻⁴). The engine has <b>no measurable advantage</b> there. The edge appears only at high k with structured input.</li>
+<li><b>A retracted result:</b> an earlier "engine wins on prose" finding was a two-canceling-bug artifact — caught and retracted <i>after</i> it had been committed and frozen (REJ-002). Recorded, not hidden.</li>
+<li><b>A closed hypothesis:</b> the Lo Shu magic-square structure was tested as a routing/attention/causal prior across an expert's three falsifiable designs — all passed their accuracy criteria but failed the irreplaceability test (any equivalent structure does the same). Direction formally closed by mutual agreement.</li>
+</ul>
+<div class="note" style="background:#f5ebe3">Every failure and retraction is public in <i>《美丽失败录》/ Beautiful Failures</i>, append-only. A project that can falsify its own claims — even frozen ones — is what earns the word "verifiable."</div>
+</div>
+
+<h2><span class="k">Reproduce Everything</span></h2>
+<div class="card">
+<p class="lead" style="font-size:.95rem">100% open source. Every number above regenerates from source.</p>
+<p style="font-size:.86rem;color:var(--ink2);margin-top:6px">
+<code>github.com/JayJSuper/theone</code><br>
+cliff: <code>experiments/complexity_axis/{run,cross_validate}.py</code> · case file: <code>CONFIDENT_WRONG.md</code><br>
+boundary: <code>experiments/wildtext_numeric/</code> · closed hypotheses: <code>experiments/luoshu_cards/</code><br>
+registry &amp; failures: <code>docs/00_FROZEN_REGISTRY.md</code> · <code>docs/BEAUTIFUL_FAILURES.md</code>
+</p>
+</div>
+
+<div class="foot">The One · 太一 · A cognitive operating system that makes causal correctness a verifiable fact, not a gamble. · No funding · No IPO · Belongs to all of humanity. · Evidence dossier v1, reproducible, boundaries included.</div>
+</div></body></html>
