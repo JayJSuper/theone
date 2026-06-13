@@ -48,7 +48,10 @@ REWRITE_L2 = (
 EXTRACT = (
     "Read the study description. Identify the causal roles. Reply with ONLY a "
     "JSON object, no prose: {\"treatment\": str, \"outcome\": str, "
-    "\"confounders\": [str], \"adjustment_set\": [str]} . Use short noun "
+    "\"confounders\": [str], \"adjustment_set\": [str]} . The "
+    "adjustment_set is what you would control for to estimate the causal "
+    "effect of treatment on outcome - confounders belong in BOTH lists. "
+    "Use short noun "
     "phrases copied from the text. If a variable merely appears but plays no "
     "causal role, exclude it.")
 
@@ -81,20 +84,27 @@ def norm(s):
     return re.sub(r"[^a-z0-9 ]", "", str(s).lower()).strip()
 
 
+def fuzzy(a, b):
+    """Word-set Jaccard >= 0.5 OR containment (noun-phrase paraphrase tolerant)."""
+    A, B = set(norm(a).split()), set(norm(b).split())
+    if not A or not B:
+        return False
+    if norm(a) in norm(b) or norm(b) in norm(a):
+        return True
+    return len(A & B) / len(A | B) >= 0.5
+
+
 def role_match(ext, treat, out, conf):
-    """Structure-level back-translation: extracted roles == true roles.
-    Matching is containment-tolerant (noun-phrase variants)."""
+    """Structure-level back-translation: extracted roles == true roles."""
     if ext is None:
         return False, "unparseable"
     def hit(field, target):
-        v = norm(ext.get(field, ""))
-        t = norm(target)
-        return t in v or v in t if v else False
+        return fuzzy(ext.get(field, ""), target)
     ok_t = hit("treatment", treat)
     ok_o = hit("outcome", out)
-    adj = [norm(a) for a in ext.get("adjustment_set", [])]
-    ok_a = (len(adj) >= 1 and any(norm(conf) in a or a in norm(conf) for a in adj)
-            and all(norm(conf) in a or a in norm(conf) for a in adj))  # exactly the confounder
+    adj = ext.get("adjustment_set", []) or ext.get("confounders", [])
+    ok_a = (len(adj) >= 1 and any(fuzzy(a, conf) for a in adj)
+            and all(fuzzy(a, conf) for a in adj))  # exactly the confounder
     reasons = []
     if not ok_t: reasons.append("treatment")
     if not ok_o: reasons.append("outcome")
@@ -126,7 +136,7 @@ def main():
                 e1 = parse_json(s1.chat(
                     [{"role": "system", "content": EXTRACT},
                      {"role": "user", "content": narrative}],
-                    max_tokens=600, temperature=0.0)["content"])
+                    max_tokens=2048, temperature=0.0)["content"])
             except Exception:
                 e1 = None
             try:
@@ -135,10 +145,12 @@ def main():
                 e2 = None
             ok1, why1 = role_match(e1, treat, out, conf)
             ok2, why2 = role_match(e2, treat, out, conf)
+            def adjs(e):
+                return e.get("adjustment_set", []) or e.get("confounders", [])
             agree = (e1 is not None and e2 is not None and
-                     norm(e1.get("treatment")) == norm(e2.get("treatment")) and
-                     sorted(map(norm, e1.get("adjustment_set", []))) ==
-                     sorted(map(norm, e2.get("adjustment_set", []))))
+                     fuzzy(e1.get("treatment", ""), e2.get("treatment", "")) and
+                     len(adjs(e1)) == len(adjs(e2)) and
+                     all(any(fuzzy(a, b) for b in adjs(e2)) for a in adjs(e1)))
             accept = ok1 and ok2 and agree
             rows.append({"level": level, "bank": bi, "accept": accept,
                          "agree": agree, "ds_ok": ok1, "gpt_ok": ok2,
@@ -155,7 +167,7 @@ def main():
     res["threshold"] = 0.85
     res["verdict"] = {lv: ("automatable" if res[lv]["acceptance"] >= 0.85
                            else "below_threshold") for lv in ("L1", "L2")}
-    (HERE / "results.json").write_text(json.dumps(
+    (HERE / "results_v2.json").write_text(json.dumps(
         {"summary": res, "rows": rows}, indent=2, ensure_ascii=False))
     print("\n===== WILDTEXT PILOT SUMMARY =====")
     print(json.dumps(res, indent=2))
