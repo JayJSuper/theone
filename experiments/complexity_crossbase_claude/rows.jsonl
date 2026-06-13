@@ -1,0 +1,100 @@
+{"k": 4, "i": 0, "truth": 0.499752, "claude": {"pred": 0.4998, "latency": 10.5, "tokens": 910, "fail": null}}
+{"k": 4, "i": 1, "truth": 0.658545, "claude": {"pred": 0.6585, "latency": 13.4, "tokens": 1289, "fail": null}}
+{"k": 4, "i": 2, "truth": 0.544088, "claude": {"pred": 0.5441, "latency": 13.0, "tokens": 1273, "fail": null}}
+{"k": 4, "i": 3, "truth": 0.332819, "claude": {"pred": 0.3328, "latency": 11.1, "tokens": 1082, "fail": null}}
+{"k": 4, "i": 4, "truth": 0.381813, "claude": {"pred": 0.3818, "latency": 10.9, "tokens": 1077, "fail": null}}
+{"k": 4, "i": 5, "truth": 0.555722, "claude": {"pred": 0.5558, "latency": 12.3, "tokens": 1146, "fail": null}}
+{"k": 4, "i": 6, "truth": 0.47422, "claude": {"pred": 0.4742, "latency": 13.2, "tokens": 1332, "fail": null}}
+{"k": 4, "i": 7, "truth": 0.404825, "claude": {"pred": 0.4048, "latency": 12.4, "tokens": 1239, "fail": null}}
+{"k": 4, "i": 8, "truth": 0.394927, "claude": {"pred": 0.3949, "latency": 12.7, "tokens": 1275, "fail": null}}
+{"k": 4, "i": 9, "truth": 0.603699, "claude": {"pred": 0.6039, "latency": 13.5, "tokens": 1336, "fail": null}}
+{"k": 4, "i": 10, "truth": 0.46918, "claude": {"pred": 0.4692, "latency": 27.8, "tokens": 1519, "fail": null}}
+{"k": 4, "i": 11, "truth": 0.538275, "claude": {"pred": 0.5383, "latency": 13.9, "tokens": 1280, "fail": null}}
+{"k": 4, "i": 12, "truth": 0.45972, "claude": {"pred": 0.4597, "latency": 12.8, "tokens": 1238, "fail": null}}
+{"k": 4, "i": 13, "truth": 0.506292, "claude": {"pred": 0.5062, "latency": 13.3, "tokens": 1361, "fail": null}}
+{"k": 4, "i": 14, "truth": 0.501335, "claude": {"pred": 0.5013, "latency": 11.8, "tokens": 778, "fail": null}}
+{"k": 4, "i": 15, "truth": 0.629397, "claude": {"pred": 0.6294, "latency": 12.8, "tokens": 1213, "fail": null}}
+{"k": 4, "i": 16, "truth": 0.617005, "claude": {"pred": 0.6169, "latency": 13.2, "tokens": 1343, "fail": null}}
+{"k": 4, "i": 17, "truth": 0.497121, "claude": {"pred": 0.4971, "latency": 12.0, "tokens": 1240, "fail": null}}
+{"k": 4, "i": 18, "truth": 0.544475, "claude": {"pred": 0.5469, "latency": 14.6, "tokens": 1328, "fail": null}}
+{"k": 4, "i": 19, "truth": 0.617715, "claude": {"pred": 0.6177, "latency": 12.9, "tokens": 1293, "fail": null}}
+{"k": 4, "i": 20, "truth": 0.395484, "claude": {"pred": 0.3955, "latency": 13.7, "tokens": 958, "fail": null}}
+{"k": 4, "i": 21, "truth": 0.514756, "claude": {"pred": 0.5148, "latency": 22.4, "tokens": 1586, "fail": null}}
+{"k": 4, "i": 22, "truth": 0.518517, "claude": {"pred": 0.5185, "latency": 12.1, "tokens": 1200, "fail": null}}
+{"k": 4, "i": 23, "truth": 0.398391, "claude": {"pred": 0.3984, "latency": 11.4, "tokens": 1146, "fail": null}}
+{"k": 4, "i": 24, "truth": 0.60537, "claude": {"pred": 0.6053, "latency": 12.7, "tokens": 1139, "fail": null}}
+{"k": 4, "i": 25, "truth": 0.60738, "claude": {"pred": 0.6074, "latency": 10.9, "tokens": 1035, "fail": null}}
+{"k": 4, "i": 26, "truth": 0.403596, "claude": {"pred": 0.4036, "latency": 13.1, "tokens": 1266, "fail": null}}
+{"k": 4, "i": 27, "truth": 0.418705, "claude": {"pred": 0.4187, "latency": 12.1, "tokens": 1239, "fail": null}}
+{"k": 4, "i": 28, "truth": 0.478251, "claude": {"pred": 0.4782, "latency": 12.0, "tokens": 1104, "fail": null}}
+{"k": 4, "i": 29, "truth": 0.508983, "claude": {"pred": 0.509, "latency": 12.8, "tokens": 1234, "fail": null}}
+{"k": 4, "i": 30, "truth": 0.515724, "claude": {"pred": 0.5157, "latency": 14.7, "tokens": 1466, "fail": null}}
+{"k": 4, "i": 31, "truth": 0.433521, "claude": {"pred": 0.4335, "latency": 12.0, "tokens": 1210, "fail": null}}
+{"k": 4, "i": 32, "truth": 0.537713, "claude": {"pred": 0.5377, "latency": 12.2, "tokens": 1167, "fail": null}}
+{"k": 4, "i": 33, "truth": 0.409279, "claude": {"pred": 0.4093, "latency": 12.6, "tokens": 1270, "fail": null}}
+{"k": 4, "i": 34, "truth": 0.555338, "claude": {"pred": 0.5553, "latency": 13.4, "tokens": 1283, "fail": null}}
+{"k": 4, "i": 35, "truth": 0.45161, "claude": {"pred": 0.4516, "latency": 11.7, "tokens": 964, "fail": null}}
+{"k": 4, "i": 36, "truth": 0.537674, "claude": {"pred": 0.5377, "latency": 11.9, "tokens": 1128, "fail": null}}
+{"k": 4, "i": 37, "truth": 0.509376, "claude": {"pred": 0.5094, "latency": 13.9, "tokens": 1170, "fail": null}}
+{"k": 4, "i": 38, "truth": 0.512858, "claude": {"pred": 0.513, "latency": 12.6, "tokens": 1258, "fail": null}}
+{"k": 4, "i": 39, "truth": 0.386729, "claude": {"pred": 0.3867, "latency": 13.8, "tokens": 1460, "fail": null}}
+{"k": 4, "i": 40, "truth": 0.533535, "claude": {"pred": 0.5335, "latency": 12.3, "tokens": 1194, "fail": null}}
+{"k": 4, "i": 41, "truth": 0.482107, "claude": {"pred": 0.4821, "latency": 12.0, "tokens": 1141, "fail": null}}
+{"k": 4, "i": 42, "truth": 0.48907, "claude": {"pred": 0.489, "latency": 13.9, "tokens": 1358, "fail": null}}
+{"k": 4, "i": 43, "truth": 0.529518, "claude": {"pred": 0.5295, "latency": 12.7, "tokens": 1220, "fail": null}}
+{"k": 4, "i": 44, "truth": 0.513544, "claude": {"pred": 0.5136, "latency": 12.3, "tokens": 1113, "fail": null}}
+{"k": 4, "i": 45, "truth": 0.401449, "claude": {"pred": 0.4014, "latency": 15.8, "tokens": 1567, "fail": null}}
+{"k": 4, "i": 46, "truth": 0.489656, "claude": {"pred": 0.4895, "latency": 15.0, "tokens": 1547, "fail": null}}
+{"k": 4, "i": 47, "truth": 0.459558, "claude": {"pred": 0.4596, "latency": 12.2, "tokens": 1181, "fail": null}}
+{"k": 4, "i": 48, "truth": 0.443558, "claude": {"pred": 0.4436, "latency": 14.7, "tokens": 1265, "fail": null}}
+{"k": 4, "i": 49, "truth": 0.436608, "claude": {"pred": 0.4366, "latency": 14.1, "tokens": 1350, "fail": null}}
+{"k": 5, "i": 0, "truth": 0.498084, "claude": {"pred": 0.4981, "latency": 20.2, "tokens": 1891, "fail": null}}
+{"k": 5, "i": 1, "truth": 0.49927, "claude": {"pred": 0.4993, "latency": 22.2, "tokens": 2202, "fail": null}}
+{"k": 5, "i": 2, "truth": 0.448961, "claude": {"pred": 0.449, "latency": 23.4, "tokens": 2160, "fail": null}}
+{"k": 5, "i": 3, "truth": 0.490098, "claude": {"pred": 0.4901, "latency": 21.9, "tokens": 1674, "fail": null}}
+{"k": 5, "i": 4, "truth": 0.457751, "claude": {"pred": 0.4578, "latency": 22.9, "tokens": 2003, "fail": null}}
+{"k": 5, "i": 5, "truth": 0.426593, "claude": {"pred": null, "latency": 10.4, "tokens": 0, "fail": "Remote end closed connection without response"}}
+{"k": 5, "i": 6, "truth": 0.45889, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 7, "truth": 0.492848, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 8, "truth": 0.622558, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 9, "truth": 0.572361, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 10, "truth": 0.521357, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 11, "truth": 0.563767, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 12, "truth": 0.54357, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 13, "truth": 0.451578, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 14, "truth": 0.49374, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 15, "truth": 0.429125, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 16, "truth": 0.420715, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 17, "truth": 0.411414, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 18, "truth": 0.567922, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 19, "truth": 0.512566, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 20, "truth": 0.553395, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 21, "truth": 0.481646, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 22, "truth": 0.539488, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 23, "truth": 0.519251, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 24, "truth": 0.573765, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 25, "truth": 0.523745, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 26, "truth": 0.48878, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 27, "truth": 0.49349, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 28, "truth": 0.589233, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 29, "truth": 0.494581, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 30, "truth": 0.446688, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 31, "truth": 0.4819, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 32, "truth": 0.441835, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 33, "truth": 0.483895, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 34, "truth": 0.515022, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 35, "truth": 0.541422, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 36, "truth": 0.449873, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 37, "truth": 0.513063, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 38, "truth": 0.470559, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 39, "truth": 0.399951, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 40, "truth": 0.471694, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 41, "truth": 0.500187, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 42, "truth": 0.433228, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 43, "truth": 0.569387, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 44, "truth": 0.421709, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 45, "truth": 0.434107, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 46, "truth": 0.425116, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 47, "truth": 0.474343, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 48, "truth": 0.429372, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 5, "i": 49, "truth": 0.541846, "claude": {"pred": null, "latency": 0.0, "tokens": 0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
