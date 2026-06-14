@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The One · Figure 2 — Auditable, but only as good as its CPT (the 2008 failure mode)</title>
+<style>
+:root{--bg:#faf9f7;--ink:#1d1d1f;--ink2:#56565b;--ink3:#9b988f;--hair:#e8e5e0;--stone:#8a7a63;
+--green:#3d7a52;--red:#b4533e;--blue:#3a5a8c;--amber:#9a6b2f;--card:#fff;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;line-height:1.7}
+.wrap{max-width:820px;margin:0 auto;padding:48px 28px 80px}
+.mark{font-size:.78rem;letter-spacing:.2em;color:var(--stone);font-weight:600;text-transform:uppercase}
+h1{font-size:1.45rem;font-weight:700;letter-spacing:-.01em;margin:8px 0 4px}
+.sub{color:var(--ink2);font-size:.95rem;margin-bottom:6px}
+.card{background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:24px;margin:16px 0;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:.85rem;margin-top:10px;color:var(--ink2)}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.sw{width:14px;height:14px;border-radius:3px;display:inline-block}
+.cap{font-size:.86rem;color:var(--ink2);margin-top:14px}
+.cap b{color:var(--ink)}
+</style></head><body><div class="wrap">
+
+<div class="mark">The One · Figure 2</div>
+<h1>Auditable — but only as good as its CPT: the 2008 failure mode, made visible</h1>
+<div class="sub">Credit-default causal attribution. A model calibrated on <i>normal times</i> looks fine on average but silently underestimates <b>stressed</b> default. The engine computes both exactly; the credential certifies computation, not crisis-calibration.</div>
+
+<div class="card">
+<svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
+  <line x1="90" y1="330" x2="710" y2="330" stroke="#c9c4ba" stroke-width="1.5"/>
+  <line x1="90" y1="40" x2="90" y2="330" stroke="#c9c4ba" stroke-width="1.5"/>
+  <g font-size="11" fill="#9b988f" text-anchor="end" font-family="ui-monospace,monospace">
+    <text x="82" y="334">0.0</text><text x="82" y="258">0.2</text><text x="82" y="185">0.4</text>
+    <text x="82" y="112">0.6</text><text x="82" y="44">0.8</text>
+    <line x1="90" y1="255" x2="710" y2="255" stroke="#f0ede8"/><line x1="90" y1="182" x2="710" y2="182" stroke="#f0ede8"/>
+    <line x1="90" y1="109" x2="710" y2="109" stroke="#f0ede8"/><line x1="90" y1="40" x2="710" y2="40" stroke="#f0ede8"/>
+  </g>
+  <text x="26" y="185" font-size="12.5" fill="#56565b" transform="rotate(-90 26 185)" text-anchor="middle" font-family="-apple-system,sans-serif">P(default | do(distress=1))</text>
+  <!-- y = 330 - val*362.5 (0.8 -> 40) ; scale: 290px / 0.8 = 362.5 -->
+  <!-- groups at k=4,5,6; x centers 200,400,600. Two pairs: unconditional (left) and stressed (right) -->
+  <g font-size="12" fill="#56565b" text-anchor="middle" font-family="-apple-system,sans-serif">
+    <text x="200" y="350">k=4 (16)</text><text x="400" y="350">k=5 (32)</text><text x="600" y="350">k=6 (64)</text>
+    <text x="400" y="378" font-size="12" fill="#9b988f">systemic stress factors · 2ᵏ configurations</text>
+  </g>
+  <!-- UNCONDITIONAL: true vs miscal nearly equal (~0.45 vs ~0.40). bars at x-50,-30 -->
+  <!-- STRESSED: true (~0.66/0.72/0.66) vs miscal (~0.43/0.44/0.43). bars at x+15,+35 -->
+  <!-- helper y: 330 - v*362.5 -->
+  <!-- k=4 -->
+  <g>
+    <!-- unconditional true 0.45->167, miscal 0.40->185 (small bars, muted) -->
+    <rect x="150" y="167" width="20" height="163" fill="#3d7a52" opacity="0.30"/>
+    <rect x="172" y="185" width="20" height="145" fill="#b4533e" opacity="0.30"/>
+    <!-- stressed true 0.662->90, miscal 0.428->175 -->
+    <rect x="218" y="90" width="20" height="240" fill="#3d7a52"/>
+    <rect x="240" y="175" width="20" height="155" fill="#b4533e"/>
+    <text x="248" y="170" font-size="9" fill="#b4533e" text-anchor="middle">−0.23</text>
+  </g>
+  <!-- k=5 -->
+  <g>
+    <rect x="350" y="167" width="20" height="163" fill="#3d7a52" opacity="0.30"/>
+    <rect x="372" y="185" width="20" height="145" fill="#b4533e" opacity="0.30"/>
+    <rect x="418" y="70" width="20" height="260" fill="#3d7a52"/>
+    <rect x="440" y="170" width="20" height="160" fill="#b4533e"/>
+    <text x="448" y="160" font-size="9" fill="#b4533e" text-anchor="middle">−0.28</text>
+  </g>
+  <!-- k=6 -->
+  <g>
+    <rect x="550" y="167" width="20" height="163" fill="#3d7a52" opacity="0.30"/>
+    <rect x="572" y="185" width="20" height="145" fill="#b4533e" opacity="0.30"/>
+    <rect x="618" y="91" width="20" height="239" fill="#3d7a52"/>
+    <rect x="640" y="175" width="20" height="155" fill="#b4533e"/>
+    <text x="648" y="170" font-size="9" fill="#b4533e" text-anchor="middle">−0.23</text>
+  </g>
+  <text x="180" y="60" font-size="10" fill="#9b988f" text-anchor="middle">unconditional</text>
+  <text x="180" y="73" font-size="10" fill="#9b988f" text-anchor="middle">(≈ equal)</text>
+  <text x="240" y="60" font-size="10" fill="#b4533e" text-anchor="middle">STRESSED</text>
+  <text x="240" y="73" font-size="10" fill="#b4533e" text-anchor="middle">(big gap)</text>
+</svg>
+<div class="legend">
+  <span><span class="sw" style="background:#3d7a52"></span>true (crisis) default rate</span>
+  <span><span class="sw" style="background:#b4533e"></span>normal-times-calibrated estimate</span>
+  <span><span class="sw" style="background:#3d7a52;opacity:.3"></span>/<span class="sw" style="background:#b4533e;opacity:.3"></span> faded = unconditional (≈ equal)</span>
+</div>
+<div class="cap"><b>Figure 2.</b> The engine computes P(default | do(distress=1)) exactly on whatever CPT it is given. A CPT calibrated on normal times (weak tail amplification) vs the true crisis amplification produces a near-identical <i>unconditional</i> answer (faded bars, bias ≈ −0.05 — crisis configs are rare and down-weighted) but a large gap on the <b>stressed</b> measure — P(default | do(distress), ≥⌈k/2⌉ systemic factors firing), the quantity risk management acts on — underestimating crisis default by <b>0.23–0.28</b> (true ≈0.66–0.72 vs ≈0.43). This is the 2008 Gaussian-copula failure mode: fine on average, catastrophic in the tail. The credential certifies the computation is exact; it does <b>not</b> certify the CPT reflects crisis conditions — so the honest product states the calibration regime in the credential (→ SR 11-7 / TRIM / IFRS 9 / BCBS 239). Reproducible: <code style="font-family:ui-monospace,monospace">experiments/finance_cpt_misspec/</code>.</div>
+</div>
+</div></body></html>
