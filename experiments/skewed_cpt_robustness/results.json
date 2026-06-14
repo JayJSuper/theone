@@ -1,0 +1,1528 @@
+{
+  "summary": {
+    "4": {
+      "truth_mean": 0.706,
+      "gpt_acc": 0.6,
+      "gpt_mae": 0.0259,
+      "ds_acc": 1.0,
+      "ds_protocol_fail": "24/25"
+    },
+    "5": {
+      "truth_mean": 0.712,
+      "gpt_acc": 0.04,
+      "gpt_mae": 0.0643,
+      "ds_acc": null,
+      "ds_protocol_fail": "25/25"
+    },
+    "6": {
+      "truth_mean": 0.715,
+      "gpt_acc": 0.208,
+      "gpt_mae": 0.0175,
+      "ds_acc": null,
+      "ds_protocol_fail": "25/25"
+    }
+  },
+  "iprg_max": 4.928399999215571e-07,
+  "rows": [
+    {
+      "k": 4,
+      "i": 0,
+      "combos": 16,
+      "truth": 0.620171,
+      "guess05_err": 0.120171,
+      "gpt51": {
+        "pred": 0.6121,
+        "latency": 8.0,
+        "tokens": 2873,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 25.6,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 5.2e-08
+    },
+    {
+      "k": 4,
+      "i": 1,
+      "combos": 16,
+      "truth": 0.577525,
+      "guess05_err": 0.077525,
+      "gpt51": {
+        "pred": 0.5666,
+        "latency": 7.9,
+        "tokens": 2873,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 25.2,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.12e-08
+    },
+    {
+      "k": 4,
+      "i": 2,
+      "combos": 16,
+      "truth": 0.678829,
+      "guess05_err": 0.178829,
+      "gpt51": {
+        "pred": 0.6808,
+        "latency": 9.1,
+        "tokens": 2887,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 26.0,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.776e-07
+    },
+    {
+      "k": 4,
+      "i": 3,
+      "combos": 16,
+      "truth": 0.698642,
+      "guess05_err": 0.198642,
+      "gpt51": {
+        "pred": 0.7044,
+        "latency": 7.2,
+        "tokens": 3016,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 24.5,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 3.712e-07
+    },
+    {
+      "k": 4,
+      "i": 4,
+      "combos": 16,
+      "truth": 0.703878,
+      "guess05_err": 0.203878,
+      "gpt51": {
+        "pred": 0.7039,
+        "latency": 9.5,
+        "tokens": 3033,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 25.5,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 2e-07
+    },
+    {
+      "k": 4,
+      "i": 5,
+      "combos": 16,
+      "truth": 0.686183,
+      "guess05_err": 0.186183,
+      "gpt51": {
+        "pred": 0.7414,
+        "latency": 4.9,
+        "tokens": 2485,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 62.5,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.214e-07
+    },
+    {
+      "k": 4,
+      "i": 6,
+      "combos": 16,
+      "truth": 0.697387,
+      "guess05_err": 0.197387,
+      "gpt51": {
+        "pred": 0.705,
+        "latency": 11.9,
+        "tokens": 2798,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 32.9,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 2.3e-07
+    },
+    {
+      "k": 4,
+      "i": 7,
+      "combos": 16,
+      "truth": 0.730715,
+      "guess05_err": 0.230715,
+      "gpt51": {
+        "pred": 0.7299,
+        "latency": 8.1,
+        "tokens": 2782,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 30.1,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 4.11e-08
+    },
+    {
+      "k": 4,
+      "i": 8,
+      "combos": 16,
+      "truth": 0.734698,
+      "guess05_err": 0.234698,
+      "gpt51": {
+        "pred": 0.74,
+        "latency": 6.3,
+        "tokens": 2814,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 30.5,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.628e-07
+    },
+    {
+      "k": 4,
+      "i": 9,
+      "combos": 16,
+      "truth": 0.615971,
+      "guess05_err": 0.115971,
+      "gpt51": {
+        "pred": 0.6137,
+        "latency": 9.7,
+        "tokens": 3073,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 28.3,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 4e-07
+    },
+    {
+      "k": 4,
+      "i": 10,
+      "combos": 16,
+      "truth": 0.687766,
+      "guess05_err": 0.187766,
+      "gpt51": {
+        "pred": 0.6873,
+        "latency": 7.7,
+        "tokens": 2887,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 28.3,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 2.035e-07
+    },
+    {
+      "k": 4,
+      "i": 11,
+      "combos": 16,
+      "truth": 0.717229,
+      "guess05_err": 0.217229,
+      "gpt51": {
+        "pred": 0.7014,
+        "latency": 7.0,
+        "tokens": 2583,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 28.0,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.38e-08
+    },
+    {
+      "k": 4,
+      "i": 12,
+      "combos": 16,
+      "truth": 0.741138,
+      "guess05_err": 0.241138,
+      "gpt51": {
+        "pred": 0.2764,
+        "latency": 6.5,
+        "tokens": 2411,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 25.4,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 3.26e-08
+    },
+    {
+      "k": 4,
+      "i": 13,
+      "combos": 16,
+      "truth": 0.683086,
+      "guess05_err": 0.183086,
+      "gpt51": {
+        "pred": 0.6813,
+        "latency": 11.9,
+        "tokens": 2713,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 24.5,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 4.262e-07
+    },
+    {
+      "k": 4,
+      "i": 14,
+      "combos": 16,
+      "truth": 0.727758,
+      "guess05_err": 0.227758,
+      "gpt51": {
+        "pred": 0.7262,
+        "latency": 9.5,
+        "tokens": 2956,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 23.8,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 4.336e-07
+    },
+    {
+      "k": 4,
+      "i": 15,
+      "combos": 16,
+      "truth": 0.737793,
+      "guess05_err": 0.237793,
+      "gpt51": {
+        "pred": 0.7496,
+        "latency": 7.7,
+        "tokens": 2722,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 23.1,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 2.964e-07
+    },
+    {
+      "k": 4,
+      "i": 16,
+      "combos": 16,
+      "truth": 0.671606,
+      "guess05_err": 0.171606,
+      "gpt51": {
+        "pred": 0.6284,
+        "latency": 11.7,
+        "tokens": 3130,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 24.6,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 8.36e-08
+    },
+    {
+      "k": 4,
+      "i": 17,
+      "combos": 16,
+      "truth": 0.736953,
+      "guess05_err": 0.236953,
+      "gpt51": {
+        "pred": 0.7373,
+        "latency": 9.2,
+        "tokens": 2922,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 21.5,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.8e-07
+    },
+    {
+      "k": 4,
+      "i": 18,
+      "combos": 16,
+      "truth": 0.723216,
+      "guess05_err": 0.223216,
+      "gpt51": {
+        "pred": 0.7227,
+        "latency": 11.5,
+        "tokens": 3031,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 23.5,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.21e-07
+    },
+    {
+      "k": 4,
+      "i": 19,
+      "combos": 16,
+      "truth": 0.744997,
+      "guess05_err": 0.244997,
+      "gpt51": {
+        "pred": 0.744,
+        "latency": 9.9,
+        "tokens": 2889,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 23.0,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 4.528e-07
+    },
+    {
+      "k": 4,
+      "i": 20,
+      "combos": 16,
+      "truth": 0.728585,
+      "guess05_err": 0.228585,
+      "gpt51": {
+        "pred": 0.7324,
+        "latency": 6.9,
+        "tokens": 2408,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": 0.7286,
+        "latency": 17.7,
+        "tokens": 4462,
+        "fail": null
+      },
+      "iprg": 3.82e-07
+    },
+    {
+      "k": 4,
+      "i": 21,
+      "combos": 16,
+      "truth": 0.787176,
+      "guess05_err": 0.287176,
+      "gpt51": {
+        "pred": 0.786,
+        "latency": 11.7,
+        "tokens": 2901,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 23.5,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1e-07
+    },
+    {
+      "k": 4,
+      "i": 22,
+      "combos": 16,
+      "truth": 0.69899,
+      "guess05_err": 0.19899,
+      "gpt51": {
+        "pred": 0.696,
+        "latency": 13.5,
+        "tokens": 2919,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 25.4,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.336e-07
+    },
+    {
+      "k": 4,
+      "i": 23,
+      "combos": 16,
+      "truth": 0.789142,
+      "guess05_err": 0.289142,
+      "gpt51": {
+        "pred": 0.7886,
+        "latency": 12.1,
+        "tokens": 2880,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 24.8,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 3.92e-07
+    },
+    {
+      "k": 4,
+      "i": 24,
+      "combos": 16,
+      "truth": 0.742398,
+      "guess05_err": 0.242398,
+      "gpt51": {
+        "pred": 0.7433,
+        "latency": 10.1,
+        "tokens": 2939,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 25.4,
+        "tokens": 5681,
+        "fail": "no ANSWER"
+      },
+      "iprg": 2.083e-07
+    },
+    {
+      "k": 5,
+      "i": 0,
+      "combos": 32,
+      "truth": 0.694328,
+      "guess05_err": 0.194328,
+      "gpt51": {
+        "pred": 0.712,
+        "latency": 4.4,
+        "tokens": 3734,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 26.0,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.73e-08
+    },
+    {
+      "k": 5,
+      "i": 1,
+      "combos": 32,
+      "truth": 0.722494,
+      "guess05_err": 0.222494,
+      "gpt51": {
+        "pred": 0.7389,
+        "latency": 3.1,
+        "tokens": 3640,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 25.3,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 3.048e-07
+    },
+    {
+      "k": 5,
+      "i": 2,
+      "combos": 32,
+      "truth": 0.727898,
+      "guess05_err": 0.227898,
+      "gpt51": {
+        "pred": 0.7294,
+        "latency": 2.8,
+        "tokens": 3692,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 28.2,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 3.64e-07
+    },
+    {
+      "k": 5,
+      "i": 3,
+      "combos": 32,
+      "truth": 0.688104,
+      "guess05_err": 0.188104,
+      "gpt51": {
+        "pred": 0.7072,
+        "latency": 8.2,
+        "tokens": 4870,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 27.6,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 4.51e-07
+    },
+    {
+      "k": 5,
+      "i": 4,
+      "combos": 32,
+      "truth": 0.671509,
+      "guess05_err": 0.171509,
+      "gpt51": {
+        "pred": 1.0904,
+        "latency": 5.7,
+        "tokens": 4272,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 25.3,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 2.448e-07
+    },
+    {
+      "k": 5,
+      "i": 5,
+      "combos": 32,
+      "truth": 0.70833,
+      "guess05_err": 0.20833,
+      "gpt51": {
+        "pred": 0.5119,
+        "latency": 6.5,
+        "tokens": 4371,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 31.6,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 2.613e-07
+    },
+    {
+      "k": 5,
+      "i": 6,
+      "combos": 32,
+      "truth": 0.744328,
+      "guess05_err": 0.244328,
+      "gpt51": {
+        "pred": 0.7239,
+        "latency": 2.7,
+        "tokens": 3627,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 27.4,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 5.35e-08
+    },
+    {
+      "k": 5,
+      "i": 7,
+      "combos": 32,
+      "truth": 0.728315,
+      "guess05_err": 0.228315,
+      "gpt51": {
+        "pred": 0.482,
+        "latency": 12.9,
+        "tokens": 5341,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 26.6,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.652e-07
+    },
+    {
+      "k": 5,
+      "i": 8,
+      "combos": 32,
+      "truth": 0.669536,
+      "guess05_err": 0.169536,
+      "gpt51": {
+        "pred": 0.6832,
+        "latency": 9.1,
+        "tokens": 4769,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 27.0,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.386e-07
+    },
+    {
+      "k": 5,
+      "i": 9,
+      "combos": 32,
+      "truth": 0.694496,
+      "guess05_err": 0.194496,
+      "gpt51": {
+        "pred": 0.7173,
+        "latency": 3.7,
+        "tokens": 3702,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 26.3,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.824e-07
+    },
+    {
+      "k": 5,
+      "i": 10,
+      "combos": 32,
+      "truth": 0.728571,
+      "guess05_err": 0.228571,
+      "gpt51": {
+        "pred": 0.7233,
+        "latency": 2.2,
+        "tokens": 3553,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 28.0,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.772e-07
+    },
+    {
+      "k": 5,
+      "i": 11,
+      "combos": 32,
+      "truth": 0.717449,
+      "guess05_err": 0.217449,
+      "gpt51": {
+        "pred": 0.6718,
+        "latency": 9.4,
+        "tokens": 4684,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 28.4,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 2.555e-07
+    },
+    {
+      "k": 5,
+      "i": 12,
+      "combos": 32,
+      "truth": 0.716709,
+      "guess05_err": 0.216709,
+      "gpt51": {
+        "pred": 0.5255,
+        "latency": 10.1,
+        "tokens": 4405,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 27.7,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 9.99e-08
+    },
+    {
+      "k": 5,
+      "i": 13,
+      "combos": 32,
+      "truth": 0.683418,
+      "guess05_err": 0.183418,
+      "gpt51": {
+        "pred": 0.7071,
+        "latency": 3.1,
+        "tokens": 3635,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 27.3,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 2.464e-07
+    },
+    {
+      "k": 5,
+      "i": 14,
+      "combos": 32,
+      "truth": 0.739333,
+      "guess05_err": 0.239333,
+      "gpt51": {
+        "pred": 0.6388,
+        "latency": 5.0,
+        "tokens": 4189,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 27.6,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 3.436e-07
+    },
+    {
+      "k": 5,
+      "i": 15,
+      "combos": 32,
+      "truth": 0.706386,
+      "guess05_err": 0.206386,
+      "gpt51": {
+        "pred": 0.642,
+        "latency": 3.2,
+        "tokens": 3667,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 30.9,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 7.48e-08
+    },
+    {
+      "k": 5,
+      "i": 16,
+      "combos": 32,
+      "truth": 0.714226,
+      "guess05_err": 0.214226,
+      "gpt51": {
+        "pred": 0.739,
+        "latency": 4.1,
+        "tokens": 3627,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 30.0,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 9.97e-08
+    },
+    {
+      "k": 5,
+      "i": 17,
+      "combos": 32,
+      "truth": 0.692356,
+      "guess05_err": 0.192356,
+      "gpt51": {
+        "pred": 0.6821,
+        "latency": 3.4,
+        "tokens": 3730,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 29.5,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 3.284e-07
+    },
+    {
+      "k": 5,
+      "i": 18,
+      "combos": 32,
+      "truth": 0.732641,
+      "guess05_err": 0.232641,
+      "gpt51": {
+        "pred": 0.686,
+        "latency": 2.9,
+        "tokens": 3556,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 28.7,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 2.404e-07
+    },
+    {
+      "k": 5,
+      "i": 19,
+      "combos": 32,
+      "truth": 0.755073,
+      "guess05_err": 0.255073,
+      "gpt51": {
+        "pred": 0.7396,
+        "latency": 3.0,
+        "tokens": 3660,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 26.7,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 2.322e-07
+    },
+    {
+      "k": 5,
+      "i": 20,
+      "combos": 32,
+      "truth": 0.718167,
+      "guess05_err": 0.218167,
+      "gpt51": {
+        "pred": 0.7004,
+        "latency": 4.2,
+        "tokens": 3698,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 27.5,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.215e-07
+    },
+    {
+      "k": 5,
+      "i": 21,
+      "combos": 32,
+      "truth": 0.679918,
+      "guess05_err": 0.179918,
+      "gpt51": {
+        "pred": 0.7207,
+        "latency": 12.6,
+        "tokens": 5309,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 29.8,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 4.928e-07
+    },
+    {
+      "k": 5,
+      "i": 22,
+      "combos": 32,
+      "truth": 0.736499,
+      "guess05_err": 0.236499,
+      "gpt51": {
+        "pred": 0.7134,
+        "latency": 4.6,
+        "tokens": 3669,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 25.4,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.722e-07
+    },
+    {
+      "k": 5,
+      "i": 23,
+      "combos": 32,
+      "truth": 0.782442,
+      "guess05_err": 0.282442,
+      "gpt51": {
+        "pred": 0.7883,
+        "latency": 3.6,
+        "tokens": 3675,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 28.5,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.948e-07
+    },
+    {
+      "k": 5,
+      "i": 24,
+      "combos": 32,
+      "truth": 0.658901,
+      "guess05_err": 0.158901,
+      "gpt51": {
+        "pred": 0.6779,
+        "latency": 3.0,
+        "tokens": 3552,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 27.0,
+        "tokens": 7431,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.212e-07
+    },
+    {
+      "k": 6,
+      "i": 0,
+      "combos": 64,
+      "truth": 0.76753,
+      "guess05_err": 0.26753,
+      "gpt51": {
+        "pred": 0.7256,
+        "latency": 4.1,
+        "tokens": 7548,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 30.6,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 4.37e-08
+    },
+    {
+      "k": 6,
+      "i": 1,
+      "combos": 64,
+      "truth": 0.718348,
+      "guess05_err": 0.218348,
+      "gpt51": {
+        "pred": 0.7047,
+        "latency": 4.4,
+        "tokens": 7547,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 30.3,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 2.216e-07
+    },
+    {
+      "k": 6,
+      "i": 2,
+      "combos": 64,
+      "truth": 0.704341,
+      "guess05_err": 0.204341,
+      "gpt51": {
+        "pred": 0.6887,
+        "latency": 3.3,
+        "tokens": 7497,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 29.1,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.125e-07
+    },
+    {
+      "k": 6,
+      "i": 3,
+      "combos": 64,
+      "truth": 0.703019,
+      "guess05_err": 0.203019,
+      "gpt51": {
+        "pred": 0.6919,
+        "latency": 4.2,
+        "tokens": 7445,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 30.3,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 4.7e-09
+    },
+    {
+      "k": 6,
+      "i": 4,
+      "combos": 64,
+      "truth": 0.665955,
+      "guess05_err": 0.165955,
+      "gpt51": {
+        "pred": 0.7322,
+        "latency": 2.0,
+        "tokens": 7321,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 36.7,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 3.487e-07
+    },
+    {
+      "k": 6,
+      "i": 5,
+      "combos": 64,
+      "truth": 0.741195,
+      "guess05_err": 0.241195,
+      "gpt51": {
+        "pred": 0.7568,
+        "latency": 5.4,
+        "tokens": 7687,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 36.9,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 2.753e-07
+    },
+    {
+      "k": 6,
+      "i": 6,
+      "combos": 64,
+      "truth": 0.749201,
+      "guess05_err": 0.249201,
+      "gpt51": {
+        "pred": 0.7393,
+        "latency": 3.5,
+        "tokens": 7596,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 30.4,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 8.48e-08
+    },
+    {
+      "k": 6,
+      "i": 7,
+      "combos": 64,
+      "truth": 0.740866,
+      "guess05_err": 0.240866,
+      "gpt51": {
+        "pred": 0.7277,
+        "latency": 3.5,
+        "tokens": 7540,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 37.9,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 3.111e-07
+    },
+    {
+      "k": 6,
+      "i": 8,
+      "combos": 64,
+      "truth": 0.698003,
+      "guess05_err": 0.198003,
+      "gpt51": {
+        "pred": 0.6902,
+        "latency": 4.0,
+        "tokens": 7544,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 35.8,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 3.964e-07
+    },
+    {
+      "k": 6,
+      "i": 9,
+      "combos": 64,
+      "truth": 0.708102,
+      "guess05_err": 0.208102,
+      "gpt51": {
+        "pred": 0.7056,
+        "latency": 4.9,
+        "tokens": 7557,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 31.2,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 3.118e-07
+    },
+    {
+      "k": 6,
+      "i": 10,
+      "combos": 64,
+      "truth": 0.752353,
+      "guess05_err": 0.252353,
+      "gpt51": {
+        "pred": 0.7758,
+        "latency": 3.5,
+        "tokens": 7489,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 31.5,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.634e-07
+    },
+    {
+      "k": 6,
+      "i": 11,
+      "combos": 64,
+      "truth": 0.656086,
+      "guess05_err": 0.156086,
+      "gpt51": {
+        "pred": 0.6781,
+        "latency": 4.0,
+        "tokens": 7593,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 27.7,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 6.74e-08
+    },
+    {
+      "k": 6,
+      "i": 12,
+      "combos": 64,
+      "truth": 0.721303,
+      "guess05_err": 0.221303,
+      "gpt51": {
+        "pred": 0.7386,
+        "latency": 2.9,
+        "tokens": 7406,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 33.0,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 2.093e-07
+    },
+    {
+      "k": 6,
+      "i": 13,
+      "combos": 64,
+      "truth": 0.7295,
+      "guess05_err": 0.2295,
+      "gpt51": {
+        "pred": 0.7278,
+        "latency": 3.6,
+        "tokens": 7524,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 31.4,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 2.655e-07
+    },
+    {
+      "k": 6,
+      "i": 14,
+      "combos": 64,
+      "truth": 0.704858,
+      "guess05_err": 0.204858,
+      "gpt51": {
+        "pred": 0.7201,
+        "latency": 4.3,
+        "tokens": 7370,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 27.2,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.737e-07
+    },
+    {
+      "k": 6,
+      "i": 15,
+      "combos": 64,
+      "truth": 0.693844,
+      "guess05_err": 0.193844,
+      "gpt51": {
+        "pred": 0.6916,
+        "latency": 3.3,
+        "tokens": 7551,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 29.1,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 3.636e-07
+    },
+    {
+      "k": 6,
+      "i": 16,
+      "combos": 64,
+      "truth": 0.672831,
+      "guess05_err": 0.172831,
+      "gpt51": {
+        "pred": 0.6762,
+        "latency": 4.2,
+        "tokens": 7644,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 27.9,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 3.46e-08
+    },
+    {
+      "k": 6,
+      "i": 17,
+      "combos": 64,
+      "truth": 0.740038,
+      "guess05_err": 0.240038,
+      "gpt51": {
+        "pred": 0.7688,
+        "latency": 4.4,
+        "tokens": 7631,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 31.9,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.529e-07
+    },
+    {
+      "k": 6,
+      "i": 18,
+      "combos": 64,
+      "truth": 0.723334,
+      "guess05_err": 0.223334,
+      "gpt51": {
+        "pred": 0.7223,
+        "latency": 3.8,
+        "tokens": 7601,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 30.2,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 1.37e-07
+    },
+    {
+      "k": 6,
+      "i": 19,
+      "combos": 64,
+      "truth": 0.683909,
+      "guess05_err": 0.183909,
+      "gpt51": {
+        "pred": 0.6901,
+        "latency": 3.3,
+        "tokens": 7481,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 28.5,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 2.677e-07
+    },
+    {
+      "k": 6,
+      "i": 20,
+      "combos": 64,
+      "truth": 0.680601,
+      "guess05_err": 0.180601,
+      "gpt51": {
+        "pred": 0.7085,
+        "latency": 3.8,
+        "tokens": 7439,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 29.6,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 3.234e-07
+    },
+    {
+      "k": 6,
+      "i": 21,
+      "combos": 64,
+      "truth": 0.721162,
+      "guess05_err": 0.221162,
+      "gpt51": {
+        "pred": 0.7429,
+        "latency": 3.2,
+        "tokens": 7378,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 31.4,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 3.794e-07
+    },
+    {
+      "k": 6,
+      "i": 22,
+      "combos": 64,
+      "truth": 0.709109,
+      "guess05_err": 0.209109,
+      "gpt51": {
+        "pred": null,
+        "latency": 7.7,
+        "tokens": 7524,
+        "fail": "no ANSWER"
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 29.9,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 2.65e-08
+    },
+    {
+      "k": 6,
+      "i": 23,
+      "combos": 64,
+      "truth": 0.778667,
+      "guess05_err": 0.278667,
+      "gpt51": {
+        "pred": 0.7547,
+        "latency": 3.3,
+        "tokens": 7530,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 33.0,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 3.954e-07
+    },
+    {
+      "k": 6,
+      "i": 24,
+      "combos": 64,
+      "truth": 0.710955,
+      "guess05_err": 0.210955,
+      "gpt51": {
+        "pred": 0.739,
+        "latency": 4.5,
+        "tokens": 7599,
+        "fail": null
+      },
+      "deepseek": {
+        "pred": null,
+        "latency": 28.6,
+        "tokens": 11293,
+        "fail": "no ANSWER"
+      },
+      "iprg": 3.186e-07
+    }
+  ]
+}
