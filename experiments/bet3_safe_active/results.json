@@ -1,0 +1,27 @@
+{
+  "summary": {
+    "passive": {
+      "harm_exec_mean": 18.31,
+      "harm_exec_median": 17.0,
+      "mse_safe_mean": 0.1003
+    },
+    "unconstrained": {
+      "harm_exec_mean": 19.36,
+      "harm_exec_median": 20.0,
+      "mse_safe_mean": 0.0899
+    },
+    "safe-active": {
+      "harm_exec_mean": 1.1,
+      "harm_exec_median": 1.0,
+      "mse_safe_mean": 0.7256
+    }
+  },
+  "n_seeds": 39,
+  "safety_premium": {
+    "harm_u": 19.358974358974358,
+    "harm_s": 1.1025641025641026,
+    "mse_u": 0.0898923076923077,
+    "mse_s": 0.7256410256410256,
+    "wins": 39
+  }
+}
