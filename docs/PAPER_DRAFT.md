@@ -94,6 +94,9 @@ The engine costs ~0 tokens and ~0.07s. LLMs spend 63–79% of their tokens on wr
 
 ---
 
+### 5.6 The LLM cannot tell when it is wrong (metacognition)
+Self-reported confidence is the natural objection to needing a credential — "won't the model flag low confidence when unsure?" It does not. Eliciting gpt-5.1's own confidence alongside its answer on the de-anchored cliff: accuracy ≈ 5%, mean confidence ≈ 90%, and — decisively — **confidence when wrong (92.5) is no lower than when right (88.0)**. Self-reported confidence is not merely uncalibrated but *anti-correlated* with correctness; it carries no usable information about which causal output to trust. This elevates the "confident wrong answer" (§3.2) from anecdote to a systematic metacognition failure, and motivates the credential's design: it does not *ask* the model how sure it is — it provides verifiable (third-party-recomputable) correctness. The credential is externalized, checkable metacognition. (Honest confound: the confidence-eliciting prompt may itself lower accuracy; but the over-confidence and the wrong≥right anti-calibration are base-rate-independent.) `experiments/metacognition/`
+
 ## 6. Layer 4 — Boundaries and open challenges
 
 Honesty travels with the claim.
