@@ -1,0 +1,25 @@
+{"i": 0, "truth": 0.58569, "A_minimal": {"pred": 0.6008, "latency": 3.0, "tokens": 3631, "fail": null}, "B_scaffold": {"pred": 0.5777, "latency": 10.0, "tokens": 5350, "fail": null}}
+{"i": 1, "truth": 0.338365, "A_minimal": {"pred": null, "latency": 0.9, "tokens": 0, "fail": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of "}, "B_scaffold": {"pred": null, "latency": 2.0, "tokens": 0, "fail": "Remote end closed connection without response"}}
+{"i": 2, "truth": 0.594307, "A_minimal": {"pred": 0.4846, "latency": 5.0, "tokens": 3690, "fail": null}, "B_scaffold": {"pred": 0.5378, "latency": 5.8, "tokens": 3798, "fail": null}}
+{"i": 3, "truth": 0.58451, "A_minimal": {"pred": 0.5711, "latency": 3.7, "tokens": 3710, "fail": null}, "B_scaffold": {"pred": 0.5453, "latency": 3.6, "tokens": 3727, "fail": null}}
+{"i": 4, "truth": 0.363503, "A_minimal": {"pred": 0.4721, "latency": 2.5, "tokens": 3521, "fail": null}, "B_scaffold": {"pred": 0.0553, "latency": 7.6, "tokens": 4732, "fail": null}}
+{"i": 5, "truth": 0.523677, "A_minimal": {"pred": 0.4899, "latency": 3.1, "tokens": 3576, "fail": null}, "B_scaffold": {"pred": 0.4421, "latency": 3.6, "tokens": 3790, "fail": null}}
+{"i": 6, "truth": 0.43257, "A_minimal": {"pred": 0.4888, "latency": 3.1, "tokens": 3634, "fail": null}, "B_scaffold": {"pred": 0.4482, "latency": 12.0, "tokens": 5875, "fail": null}}
+{"i": 7, "truth": 0.36445, "A_minimal": {"pred": 0.4465, "latency": 3.2, "tokens": 3702, "fail": null}, "B_scaffold": {"pred": 0.432, "latency": 2.9, "tokens": 3688, "fail": null}}
+{"i": 8, "truth": 0.347395, "A_minimal": {"pred": 0.4961, "latency": 2.6, "tokens": 3586, "fail": null}, "B_scaffold": {"pred": 0.5012, "latency": 3.6, "tokens": 3855, "fail": null}}
+{"i": 9, "truth": 0.52152, "A_minimal": {"pred": 0.2207, "latency": 2.8, "tokens": 3624, "fail": null}, "B_scaffold": {"pred": 0.0261, "latency": 8.7, "tokens": 4812, "fail": null}}
+{"i": 10, "truth": 0.719485, "A_minimal": {"pred": 0.4633, "latency": 2.8, "tokens": 3596, "fail": null}, "B_scaffold": {"pred": 1.004, "latency": 7.5, "tokens": 4618, "fail": null}}
+{"i": 11, "truth": 0.556616, "A_minimal": {"pred": 0.5054, "latency": 2.7, "tokens": 3591, "fail": null}, "B_scaffold": {"pred": 0.5689, "latency": 8.7, "tokens": 5233, "fail": null}}
+{"i": 12, "truth": 0.599939, "A_minimal": {"pred": 0.46, "latency": 3.6, "tokens": 3609, "fail": null}, "B_scaffold": {"pred": 0.4444, "latency": 3.0, "tokens": 3716, "fail": null}}
+{"i": 13, "truth": 0.280678, "A_minimal": {"pred": 0.4842, "latency": 2.7, "tokens": 3607, "fail": null}, "B_scaffold": {"pred": 0.4466, "latency": 3.8, "tokens": 3864, "fail": null}}
+{"i": 14, "truth": 0.713929, "A_minimal": {"pred": 0.579, "latency": 2.8, "tokens": 3578, "fail": null}, "B_scaffold": {"pred": 0.567, "latency": 3.8, "tokens": 3927, "fail": null}}
+{"i": 15, "truth": 0.637726, "A_minimal": {"pred": 0.4543, "latency": 3.6, "tokens": 3771, "fail": null}, "B_scaffold": {"pred": 0.6428, "latency": 8.8, "tokens": 5369, "fail": null}}
+{"i": 16, "truth": 0.543251, "A_minimal": {"pred": 0.4547, "latency": 2.7, "tokens": 3579, "fail": null}, "B_scaffold": {"pred": 0.0791, "latency": 8.2, "tokens": 5104, "fail": null}}
+{"i": 17, "truth": 0.574778, "A_minimal": {"pred": 0.5123, "latency": 3.1, "tokens": 3554, "fail": null}, "B_scaffold": {"pred": 0.2742, "latency": 9.6, "tokens": 4919, "fail": null}}
+{"i": 18, "truth": 0.418542, "A_minimal": {"pred": 0.566, "latency": 3.2, "tokens": 3653, "fail": null}, "B_scaffold": {"pred": 0.6173, "latency": 17.2, "tokens": 5765, "fail": null}}
+{"i": 19, "truth": 0.726024, "A_minimal": {"pred": 0.5159, "latency": 3.2, "tokens": 3635, "fail": null}, "B_scaffold": {"pred": 0.5869, "latency": 8.0, "tokens": 4689, "fail": null}}
+{"i": 20, "truth": 0.344427, "A_minimal": {"pred": 0.4914, "latency": 3.7, "tokens": 3680, "fail": null}, "B_scaffold": {"pred": 0.4729, "latency": 4.1, "tokens": 3791, "fail": null}}
+{"i": 21, "truth": 0.310084, "A_minimal": {"pred": 0.5212, "latency": 3.8, "tokens": 3664, "fail": null}, "B_scaffold": {"pred": 0.0584, "latency": 8.4, "tokens": 4541, "fail": null}}
+{"i": 22, "truth": 0.479168, "A_minimal": {"pred": 0.0, "latency": 2.4, "tokens": 3465, "fail": null}, "B_scaffold": {"pred": 0.4021, "latency": 3.3, "tokens": 3748, "fail": null}}
+{"i": 23, "truth": 0.65212, "A_minimal": {"pred": 0.4691, "latency": 3.3, "tokens": 3671, "fail": null}, "B_scaffold": {"pred": 0.6654, "latency": 9.9, "tokens": 5283, "fail": null}}
+{"i": 24, "truth": 0.321188, "A_minimal": {"pred": 0.4413, "latency": 2.8, "tokens": 3581, "fail": null}, "B_scaffold": {"pred": 0.0, "latency": 12.9, "tokens": 5332, "fail": null}}

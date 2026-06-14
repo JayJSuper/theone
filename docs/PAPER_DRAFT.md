@@ -70,8 +70,13 @@ If a confounder is *omitted* from the adjustment set, the engine still computes 
 
 ## 5. Layer 3 — Supplementary findings
 
-### 5.1 Scaffolding can hurt — in the struggling regime (regime-dependent)
-Adding a causal-inference scaffold prompt (B) *hurts* relative to the raw LLM (A) **when the model is near its capability limit**: on deepseek-v4-flash at the 12-node tier — a tier it struggles with — B lowers accuracy to 0.447 vs A's 0.613, with higher latency and protocol-failure rate. But the effect is **regime-dependent, not universal**: gpt-5.1, which handles the 12-node tier comfortably (A 0.967, B 0.933, no protocol failures, n=30), shows the same directional sign but a difference within noise — there is no struggling for the scaffold to worsen. The honest claim is therefore *"a heavy scaffold can degrade a model operating near its limit,"* not *"scaffolds always hurt."* Testing whether the scaffold hurts gpt-5.1 in *its* struggling regime (high k) is future work. `experiments/scaffold_crossbase/`
+### 5.1 Prompt engineering cannot fix the terminability failure
+We tested a minimal prompt (A) vs a full causal-inference scaffold (B) across three regimes, and the scaffold helps in none of them:
+- **Struggling model** (deepseek-v4-flash, 12-node tier): the scaffold *hurts* — accuracy 0.447 (B) vs 0.613 (A), with higher latency and more protocol failures.
+- **Comfortable model** (gpt-5.1, 12-node tier): no effect — A 0.967 vs B 0.933 (n=30), within noise; the model already handles the tier.
+- **Collapsed model** (gpt-5.1, de-anchored k=5, deep in the cliff): the scaffold cannot *rescue* it — both A and B reach **0.00 accuracy** (MAE 0.145 vs 0.162, n=25); once 2^k exceeds the budget, no system prompt recovers it.
+
+The unifying finding is stronger than "scaffolds are harmful": **prompt engineering — including the exact, correct back-door recipe spelled out in the prompt — does not solve the combinatorial cliff.** The failure is computational, not instructional; it requires moving the computation off the reasoning chain. `experiments/scaffold_crossbase/`
 
 ### 5.2 Two crash signatures
 LLM failure has two distinct forms, which are the twin targets of the credential philosophy. gpt-5.1 fails by **confident wrong answers**: at k≥5 it returned 87/98 precise-to-4-decimals, unwarned, wrong probabilities (mean error 0.047, max 0.45), including mathematically impossible values P>1 (e.g. 1.0179, 1.28). deepseek and claude fail by **protocol collapse**: the reasoning chain exhausts the budget and returns nothing. Both are terminability failures.
