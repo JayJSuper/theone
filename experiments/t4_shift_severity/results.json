@@ -1,0 +1,55 @@
+{
+  "train": {
+    "p_range": [
+      0.0,
+      0.4
+    ],
+    "bxy_range": [
+      0.0,
+      0.5
+    ],
+    "noise_range": [
+      0.1,
+      0.5
+    ]
+  },
+  "within_mse": 0.0012627416392330367,
+  "summary": {
+    "within A (held-out)": {
+      "cf_mse": 0.00126,
+      "ratio_within": 1.0,
+      "baseline": 0.0588,
+      "beats_baseline": true
+    },
+    "shift+ (0.2,0.5)": {
+      "cf_mse": 0.00184,
+      "ratio_within": 1.46,
+      "baseline": 0.1307,
+      "beats_baseline": true
+    },
+    "shift++ (0.3,0.6)": {
+      "cf_mse": 0.00467,
+      "ratio_within": 3.7,
+      "baseline": 0.2049,
+      "beats_baseline": true
+    },
+    "shift+++ (0.4,0.7)": {
+      "cf_mse": 0.01245,
+      "ratio_within": 9.86,
+      "baseline": 0.3101,
+      "beats_baseline": true
+    },
+    "OOD (0.4,0.8) [frozen B]": {
+      "cf_mse": 0.01797,
+      "ratio_within": 14.23,
+      "baseline": 0.3802,
+      "beats_baseline": true
+    },
+    "far OOD (0.6,0.9)": {
+      "cf_mse": 0.03774,
+      "ratio_within": 29.89,
+      "baseline": 0.5937,
+      "beats_baseline": true
+    }
+  }
+}
