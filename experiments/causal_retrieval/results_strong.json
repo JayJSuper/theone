@@ -1,0 +1,19 @@
+{
+  "regime": "strong_collider",
+  "n_queries": 800,
+  "bias_median": {
+    "semantic": 0.0,
+    "structural": 0.0
+  },
+  "bias_mean": {
+    "semantic": 0.09843,
+    "structural": 0.0
+  },
+  "collider_misadjust_rate": {
+    "semantic": 0.492,
+    "structural": 0.0
+  },
+  "structural_better": "394/800",
+  "structural_better_frac": 0.492,
+  "verdict": "no_structural_advantage"
+}
