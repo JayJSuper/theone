@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The One · Figures 2–4</title>
+<style>
+:root{--bg:#faf9f7;--ink:#1d1d1f;--ink2:#56565b;--ink3:#9b988f;--hair:#e8e5e0;--stone:#8a7a63;
+--green:#3d7a52;--red:#b4533e;--blue:#3a5a8c;--amber:#9a6b2f;--card:#fff;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;line-height:1.65}
+.wrap{max-width:840px;margin:0 auto;padding:48px 28px 80px}
+.mark{font-size:.78rem;letter-spacing:.2em;color:var(--stone);font-weight:600;text-transform:uppercase}
+h2{font-size:1.2rem;margin:34px 0 2px;letter-spacing:-.01em}
+.sub{color:var(--ink2);font-size:.92rem;margin-bottom:6px}
+.card{background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:22px;margin:14px 0;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:.82rem;margin-top:8px;color:var(--ink2)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:20px;height:3px;border-radius:2px;display:inline-block}
+.cap{font-size:.84rem;color:var(--ink2);margin-top:12px}.cap b{color:var(--ink)}
+.eng{color:var(--green);font-weight:700}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:640px){.row2{grid-template-columns:1fr}}
+</style></head><body><div class="wrap">
+
+<div class="mark">The One · Figures 2–4 (paper supplement)</div>
+
+<!-- ============ FIGURE 2 — ecological validity ============ -->
+<h2>Figure 2 — The engine's edge survives estimated CPTs</h2>
+<div class="sub">Error vs k under CPTs MLE-estimated from finite data (n=200). Engine error = the irreducible estimation floor; the LLM adds reasoning error that emerges at k≥4.</div>
+<div class="card">
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
+  <line x1="80" y1="250" x2="680" y2="250" stroke="#c9c4ba" stroke-width="1.5"/>
+  <line x1="80" y1="30" x2="80" y2="250" stroke="#c9c4ba" stroke-width="1.5"/>
+  <g font-size="10" fill="#9b988f" text-anchor="end" font-family="ui-monospace,monospace">
+    <text x="73" y="254">0.00</text><text x="73" y="195">0.02</text><text x="73" y="136">0.04</text><text x="73" y="77">0.06</text>
+    <line x1="80" y1="191" x2="680" y2="191" stroke="#f0ede8"/><line x1="80" y1="132" x2="680" y2="132" stroke="#f0ede8"/><line x1="80" y1="73" x2="680" y2="73" stroke="#f0ede8"/>
+  </g>
+  <!-- x: k=1..6 at 130,240,350,460,570,650 ; y = 250 - err/0.06*177 -->
+  <g font-size="11" fill="#9b988f" text-anchor="middle"><text x="130" y="268">k=1</text><text x="240" y="268">2</text><text x="350" y="268">3</text><text x="460" y="268">4</text><text x="570" y="268">5</text><text x="650" y="268">6</text></g>
+  <text x="26" y="140" font-size="11" fill="#56565b" transform="rotate(-90 26 140)" text-anchor="middle">mean abs error</text>
+  <!-- engine floor: .041 .040 .039 .034 .026 .024 -> y -->
+  <polyline fill="none" stroke="#3d7a52" stroke-width="2.5" points="130,129 240,132 350,135 460,150 570,173 650,179"/>
+  <g fill="#3d7a52"><circle cx="130" cy="129" r="3.4"/><circle cx="240" cy="132" r="3.4"/><circle cx="350" cy="135" r="3.4"/><circle cx="460" cy="150" r="3.4"/><circle cx="570" cy="173" r="3.4"/><circle cx="650" cy="179" r="3.4"/></g>
+  <!-- gpt err: .039 .040 .027 .044 .056 .036 -> y -->
+  <polyline fill="none" stroke="#3a5a8c" stroke-width="2.5" points="130,135 240,132 350,170 460,120 570,85 650,144"/>
+  <g fill="#3a5a8c"><circle cx="130" cy="135" r="3.4"/><circle cx="240" cy="132" r="3.4"/><circle cx="350" cy="170" r="3.4"/><circle cx="460" cy="120" r="3.4"/><circle cx="570" cy="85" r="3.4"/><circle cx="650" cy="144" r="3.4"/></g>
+  <text x="588" y="80" font-size="10" fill="#3a5a8c">gpt-5.1</text>
+  <text x="588" y="192" font-size="10" fill="#3d7a52">engine floor</text>
+</svg>
+<div class="cap"><b>Figure 2.</b> Both pay the same irreducible estimation floor (the best any method can do with that data; it shrinks with n and does not explode with k). At low k the LLM ties it; at k≥4 the LLM's error rises above the floor as its in-head marginalization degrades. The engine adds no error of its own. (The k=6 dip is the anchoring artifact of the uniform generator, §5.3 — see the de-anchored Figure 1 for the clean collapse.)</div>
+</div>
+
+<!-- ============ FIGURE 3 — financial ============ -->
+<h2>Figure 3 — Financial case study: credit-risk causal attribution</h2>
+<div class="sub">Left: the cliff in credit-default attribution. Right: the 2008 copula failure mode — normal-times calibration looks fine on average, catastrophic in the tail.</div>
+<div class="row2">
+<div class="card">
+<div style="font-size:.82rem;color:var(--ink2);margin-bottom:6px"><b>(a)</b> P(default | do(distress)) accuracy vs systemic factors</div>
+<svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
+  <line x1="50" y1="195" x2="340" y2="195" stroke="#c9c4ba" stroke-width="1.5"/>
+  <line x1="50" y1="20" x2="50" y2="195" stroke="#c9c4ba" stroke-width="1.5"/>
+  <g font-size="9" fill="#9b988f" text-anchor="end" font-family="ui-monospace,monospace"><text x="44" y="199">0</text><text x="44" y="108">.5</text><text x="44" y="24">1.0</text></g>
+  <g font-size="10" fill="#9b988f" text-anchor="middle"><text x="110" y="212">k=4</text><text x="195" y="212">5</text><text x="280" y="212">6</text></g>
+  <!-- engine flat 1.0 (y=20) -->
+  <polyline fill="none" stroke="#3d7a52" stroke-width="2.5" points="110,20 195,20 280,20"/>
+  <g fill="#3d7a52"><circle cx="110" cy="20" r="3.5"/><circle cx="195" cy="20" r="3.5"/><circle cx="280" cy="20" r="3.5"/></g>
+  <!-- gpt 0.32 0.04 0.00 -> y=195-acc*175 -->
+  <polyline fill="none" stroke="#3a5a8c" stroke-width="2.5" points="110,139 195,188 280,195"/>
+  <g fill="#3a5a8c"><circle cx="110" cy="139" r="3.5"/><circle cx="195" cy="188" r="3.5"/><circle cx="280" cy="195" r="3.5"/></g>
+  <text x="286" y="24" font-size="9" fill="#3d7a52">engine 1.0</text>
+  <text x="120" y="135" font-size="9" fill="#3a5a8c">gpt-5.1</text>
+</svg>
+</div>
+<div class="card">
+<div style="font-size:.82rem;color:var(--ink2);margin-bottom:6px"><b>(b)</b> CPT miscalibration bias (normal-times vs crisis)</div>
+<svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
+  <line x1="60" y1="30" x2="340" y2="30" stroke="#c9c4ba" stroke-width="1"/>
+  <text x="50" y="34" font-size="9" fill="#9b988f" text-anchor="end">0</text>
+  <text x="50" y="120" font-size="9" fill="#9b988f" text-anchor="end">-.15</text>
+  <text x="50" y="205" font-size="9" fill="#9b988f" text-anchor="end">-.30</text>
+  <line x1="60" y1="30" x2="60" y2="215" stroke="#c9c4ba" stroke-width="1.5"/>
+  <!-- bars: uncond -0.05, stressed -0.25 ; scale 0.30 -> 170px -->
+  <rect x="100" y="30" width="70" height="28" fill="#9a6b2f" opacity="0.55"/>
+  <rect x="230" y="30" width="70" height="142" fill="#b4533e"/>
+  <text x="135" y="74" font-size="10" fill="#56565b" text-anchor="middle">−0.05</text>
+  <text x="265" y="188" font-size="11" fill="#b4533e" text-anchor="middle" font-weight="700">−0.25</text>
+  <text x="135" y="230" font-size="9.5" fill="#56565b" text-anchor="middle">unconditional</text>
+  <text x="265" y="230" font-size="9.5" fill="#b4533e" text-anchor="middle" font-weight="700">STRESSED</text>
+</svg>
+</div>
+</div>
+<div class="cap"><b>Figure 3.</b> (a) gpt-5.1's credit-default causal attribution collapses (0.32→0.04→0.00) as systemic factors grow; the engine is exact. (b) A CPT calibrated on normal times underestimates the *unconditional* do-effect by only 0.05 (crisis configs are rare and down-weighted), but the **stressed** measure — what risk management acts on — by 0.23–0.28. The engine computes both exactly; its credential certifies the computation, not that the CPT reflects crisis conditions (the 2008 copula failure mode).</div>
+
+<!-- ============ FIGURE 4 — cost ============ -->
+<h2>Figure 4 — The cost of being confidently wrong</h2>
+<div class="sub">Total tokens over 300 cliff problems, split by whether the answer was correct. The engine spends ~0.</div>
+<div class="card">
+<svg viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
+  <!-- horizontal stacked bars; scale 1.5M -> 600px from x=160 -->
+  <g font-size="12" fill="#56565b" text-anchor="end">
+    <text x="150" y="48">deepseek</text><text x="150" y="108">gpt-5.1</text><text x="150" y="168">engine</text>
+  </g>
+  <!-- deepseek: total 1.4966M; wrong 79% -> wrong 1.182M, correct .315M -->
+  <rect x="160" y="30" width="473" height="34" fill="#b4533e"/><rect x="633" y="30" width="126" height="34" fill="#cdbfa6" opacity="0"/>
+  <rect x="633" y="30" width="86" height="34" fill="#3d7a52" opacity=".5"/>
+  <text x="170" y="52" font-size="11" fill="#fff">1.18M tokens wrong (79%)</text>
+  <!-- gpt: total .8578M; wrong 63% -> .540M wrong, .318M correct ; scale x600/1.5M=0.4 -->
+  <rect x="160" y="90" width="216" height="34" fill="#b4533e"/>
+  <rect x="376" y="90" width="127" height="34" fill="#3d7a52" opacity=".5"/>
+  <text x="170" y="112" font-size="11" fill="#fff">540k wrong (63%)</text>
+  <!-- engine: ~0 -->
+  <rect x="160" y="150" width="3" height="34" fill="#3d7a52"/>
+  <text x="172" y="172" font-size="11" fill="#3d7a52" font-weight="700">0 tokens · 300/300 correct</text>
+  <line x1="160" y1="20" x2="160" y2="194" stroke="#c9c4ba" stroke-width="1.5"/>
+</svg>
+<div class="legend">
+  <span><span class="sw" style="background:#b4533e"></span>tokens spent on wrong answers</span>
+  <span><span class="sw" style="background:#3d7a52;opacity:.5"></span>tokens spent on correct answers</span>
+</div>
+<div class="cap"><b>Figure 4.</b> deepseek spent 1.50M tokens (79% on wrong answers); gpt-5.1 spent 0.86M (63% on wrong). At high complexity (k≥5) deepseek spent 917k tokens to get 0/100 correct. The engine spends ~0 tokens and is exact. You pay the most to be confidently misled exactly where the problem is hardest.</div>
+</div>
+
+<div style="color:var(--ink3);font-size:.8rem;margin-top:10px">Reproducible: <code style="font-family:ui-monospace,monospace">experiments/{cpt_finite_sample,finance_credit_risk,finance_cpt_misspec,complexity_axis}/</code> · github.com/JayJSuper/theone</div>
+</div></body></html>

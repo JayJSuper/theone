@@ -52,7 +52,7 @@ A single confounded SCM with the frozen truth table P(Y=1|X=1)=0.82 vs P(Y=1|do(
 Three node-count tiers (5/8/12) × 150 instances × {A,B,C}. The flash-tier LLM degrades with causal complexity (large-tier accuracy 0.45–0.61) while the engine stays at 1.000; the separation has p = 3.5×10⁻¹⁸. A fixed-skeleton control that adds only *irrelevant* nodes does not degrade any system, isolating the cause as causal complexity, not node count. All 900 truths are pgmpy-verified and match the frozen formal-run values exactly (`scale_oracle.py`).
 
 ### 3.3 The combinatorial cliff (headline)
-Sweeping k with the x-axis as 2^k, accuracy on the interventional query collapses for every LLM while the engine is flat at 1.000 (millisecond latency). We report the cliff on the *de-anchored* generator (the cleanest; see §5) as the main result: gpt-5.1 accuracy falls **monotonically** 0.64 (k=4) → 0.04 (k=5) → 0.00 (k=6), with mean absolute error rising to 0.24 at k=5; the engine is 1.000 throughout (IPRG pass, 4.98×10⁻⁷). Cross-family on the same generator, deepseek/gpt-5.1/gemini-2.5-pro all reach accuracy 0.00 by k=6. `[TODO: Figure 1]`
+Sweeping k with the x-axis as 2^k, accuracy on the interventional query collapses for every LLM while the engine is flat at 1.000 (millisecond latency). We report the cliff on the *de-anchored* generator (the cleanest; see §5) as the main result: gpt-5.1 accuracy falls **monotonically** 0.64 (k=4) → 0.04 (k=5) → 0.00 (k=6), with mean absolute error rising to 0.24 at k=5; the engine is 1.000 throughout (IPRG pass, 4.98×10⁻⁷). Cross-family on the same generator, deepseek/gpt-5.1/gemini-2.5-pro all reach accuracy 0.00 by k=6 (Figure 1).
 
 ---
 
@@ -114,6 +114,13 @@ Honesty travels with the claim.
 Within a known-structure, given-CPT regime that comfortably contains where frontier LLMs break, an explicit intervention engine converts causal correctness from a gamble into a machine-verifiable fact: exact at all combinatorial loads, milliseconds, ~zero tokens, third-party-recomputable. The boundary is equally important: a credential certifies computation, not structure, and the regime is bounded by enumerability and by the assumption of a known graph. The combinatorial cliff is universal across model families and slides with budget but is never eliminated — which is precisely why moving the combinatorial part of causal computation off the reasoning chain, and certifying it, is worth doing.
 
 ---
+
+## Figures (built, `docs/whitepaper/`)
+- **Figure 1** — de-anchored cross-family cliff (`fig_deanchor_cliff.html`): accuracy vs 2ᵏ; engine flat 1.000; cliff universal, location slides with budget.
+- **Figure 2** — ecological validity (`paper_figures.html`): engine estimation-floor vs LLM error under estimated CPTs.
+- **Figure 3** — financial case study (`paper_figures.html`): (a) credit-risk attribution cliff, (b) 2008-copula CPT-misspecification stressed bias.
+- **Figure 4** — cost (`paper_figures.html`): tokens spent on wrong answers; engine ~0.
+- `[TODO]` three-generator robustness appendix figure; related-work citations.
 
 ## Reproducibility
 100% open source: `github.com/JayJSuper/theone`. Key artifacts: cliff `experiments/complexity_axis/` + `deanchor_cliff/`; ecological validity `experiments/cpt_finite_sample/`, `wrong_structure/`, `skewed_cpt_robustness/`; oracles `experiments/oracle_crosscheck/` + `complexity_axis/cross_validate.py`; registry `docs/00_FROZEN_REGISTRY.md`; failures `docs/BEAUTIFUL_FAILURES.md`.
