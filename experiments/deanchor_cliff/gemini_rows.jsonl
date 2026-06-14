@@ -1,0 +1,45 @@
+{"k": 4, "i": 0, "truth": 0.421871, "gemini": {"pred": 0.4219, "latency": 77.5, "fail": null}}
+{"k": 4, "i": 1, "truth": 0.43738, "gemini": {"pred": 0.4369, "latency": 45.8, "fail": null}}
+{"k": 4, "i": 2, "truth": 0.702226, "gemini": {"pred": 0.7013, "latency": 71.6, "fail": null}}
+{"k": 4, "i": 3, "truth": 0.288149, "gemini": {"pred": 0.2884, "latency": 53.5, "fail": null}}
+{"k": 4, "i": 4, "truth": 0.453028, "gemini": {"pred": 0.4534, "latency": 58.1, "fail": null}}
+{"k": 4, "i": 5, "truth": 0.554845, "gemini": {"pred": 0.5548, "latency": 62.6, "fail": null}}
+{"k": 4, "i": 6, "truth": 0.325237, "gemini": {"pred": 0.3249, "latency": 72.9, "fail": null}}
+{"k": 4, "i": 7, "truth": 0.671442, "gemini": {"pred": 0.6708, "latency": 50.9, "fail": null}}
+{"k": 4, "i": 8, "truth": 0.266082, "gemini": {"pred": 0.2662, "latency": 47.1, "fail": null}}
+{"k": 4, "i": 9, "truth": 0.755317, "gemini": {"pred": 0.7542, "latency": 60.9, "fail": null}}
+{"k": 4, "i": 10, "truth": 0.428223, "gemini": {"pred": 0.4283, "latency": 73.0, "fail": null}}
+{"k": 4, "i": 11, "truth": 0.722491, "gemini": {"pred": 0.7214, "latency": 70.4, "fail": null}}
+{"k": 4, "i": 12, "truth": 0.52238, "gemini": {"pred": 0.5228, "latency": 87.1, "fail": null}}
+{"k": 4, "i": 13, "truth": 0.379777, "gemini": {"pred": 0.3804, "latency": 65.8, "fail": null}}
+{"k": 4, "i": 14, "truth": 0.502603, "gemini": {"pred": 0.5026, "latency": 88.8, "fail": null}}
+{"k": 5, "i": 0, "truth": 0.58569, "gemini": {"pred": 0.5842, "latency": 83.4, "fail": null}}
+{"k": 5, "i": 1, "truth": 0.338365, "gemini": {"pred": 0.4553, "latency": 82.4, "fail": null}}
+{"k": 5, "i": 2, "truth": 0.594307, "gemini": {"pred": 0.55, "latency": 70.6, "fail": null}}
+{"k": 5, "i": 3, "truth": 0.58451, "gemini": {"pred": 0.5898, "latency": 83.1, "fail": null}}
+{"k": 5, "i": 4, "truth": 0.363503, "gemini": {"pred": 0.3638, "latency": 87.3, "fail": null}}
+{"k": 5, "i": 5, "truth": 0.523677, "gemini": {"pred": 0.5231, "latency": 84.0, "fail": null}}
+{"k": 5, "i": 6, "truth": 0.43257, "gemini": {"pred": 0.4891, "latency": 62.3, "fail": null}}
+{"k": 5, "i": 7, "truth": 0.36445, "gemini": {"pred": 0.3537, "latency": 81.1, "fail": null}}
+{"k": 5, "i": 8, "truth": 0.347395, "gemini": {"pred": 0.4858, "latency": 94.6, "fail": null}}
+{"k": 5, "i": 9, "truth": 0.52152, "gemini": {"pred": 0.5469, "latency": 65.6, "fail": null}}
+{"k": 5, "i": 10, "truth": 0.719485, "gemini": {"pred": 0.7113, "latency": 115.5, "fail": null}}
+{"k": 5, "i": 11, "truth": 0.556616, "gemini": {"pred": 0.5553, "latency": 91.3, "fail": null}}
+{"k": 5, "i": 12, "truth": 0.599939, "gemini": {"pred": 0.6, "latency": 63.0, "fail": null}}
+{"k": 5, "i": 13, "truth": 0.280678, "gemini": {"pred": 0.2701, "latency": 83.7, "fail": null}}
+{"k": 5, "i": 14, "truth": 0.713929, "gemini": {"pred": 0.7099, "latency": 114.0, "fail": null}}
+{"k": 6, "i": 0, "truth": 0.482412, "gemini": {"pred": 0.4961, "latency": 59.4, "fail": null}}
+{"k": 6, "i": 1, "truth": 0.424197, "gemini": {"pred": 0.5704, "latency": 82.5, "fail": null}}
+{"k": 6, "i": 2, "truth": 0.605673, "gemini": {"pred": 0.5513, "latency": 107.4, "fail": null}}
+{"k": 6, "i": 3, "truth": 0.539296, "gemini": {"pred": 0.4859, "latency": 133.2, "fail": null}}
+{"k": 6, "i": 4, "truth": 0.403701, "gemini": {"pred": 0.4898, "latency": 74.5, "fail": null}}
+{"k": 6, "i": 5, "truth": 0.538438, "gemini": {"pred": 0.4511, "latency": 80.7, "fail": null}}
+{"k": 6, "i": 6, "truth": 0.372616, "gemini": {"pred": 0.4563, "latency": 94.4, "fail": null}}
+{"k": 6, "i": 7, "truth": 0.3568, "gemini": {"pred": null, "latency": 66.6, "fail": "Remote end closed connection without response"}}
+{"k": 6, "i": 8, "truth": 0.51552, "gemini": {"pred": null, "latency": 0.0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 6, "i": 9, "truth": 0.351809, "gemini": {"pred": null, "latency": 0.0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 6, "i": 10, "truth": 0.577043, "gemini": {"pred": null, "latency": 0.0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 6, "i": 11, "truth": 0.643093, "gemini": {"pred": null, "latency": 0.0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 6, "i": 12, "truth": 0.668276, "gemini": {"pred": null, "latency": 0.0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 6, "i": 13, "truth": 0.37497, "gemini": {"pred": null, "latency": 0.0, "fail": "<urlopen error [Errno 61] Connection refused>"}}
+{"k": 6, "i": 14, "truth": 0.484518, "gemini": {"pred": null, "latency": 0.0, "fail": "<urlopen error [Errno 61] Connection refused>"}}

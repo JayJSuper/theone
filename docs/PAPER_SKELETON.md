@@ -30,7 +30,8 @@ The engine is exact (1.000) on all three; **every truth independently recomputed
 ### 1.3 k-axis — the combinatorial cliff (HEADLINE)
 - k = adjustment-set cardinality; x-axis 2ᵏ (configs to marginalize). Pure back-door.
 - **Main text uses the DE-ANCHORED generator** (NOTE-006, cleanest — see §3.3 why): gpt-5.1 accuracy collapses **monotonically** k4 0.64 → k5 0.04 → **k6 0.00**; MAE explodes to **0.24** at k5; engine 1.000 throughout (IPRG PASS).
-- Cross-family (uniform generator, AM-011): 4 bases × 3 families (gpt-5.1, deepseek, gemini, claude) all collapse at 2⁵=32. `[TODO: fold de-anchored gemin​i cross-family result when gemini_check completes]`
+- Cross-family (uniform generator, AM-011): 4 bases × 3 families all collapse at 2⁵=32.
+- Cross-family on DE-ANCHORED generator (NOTE-007): deepseek/gpt-5.1/gemini-2.5-pro all reach accuracy 0.00 by k=6; engine 1.000. **The cliff is universal but its LOCATION slides with budget/capability** — deepseek fails at k4, gpt-5.1 at k5, gemini (heavy reasoner, 6× budget) holds to k4=1.00 / k5=0.40 but still hits 0.00 + protocol-failures at k6. **Claim framing (important): not "LLMs can't do k≥4" but "every LLM hits the cliff; its location moves back with budget but is never eliminated; the engine is exact at all k for ~0 cost."** (Honest caveat: gemini got a larger output budget due to thinking-token accounting — conservative for the claim.)
 - Two crash signatures (→ §3.2).
 
 ---
