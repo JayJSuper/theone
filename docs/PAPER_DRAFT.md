@@ -18,10 +18,22 @@ Causal questions — *what happens to Y if we intervene on X?* — are distinct 
 
 We separate two failure modes. A **knowledge** failure is not knowing that confounding must be adjusted. A **terminability** failure is knowing the method but being unable to execute it within a fixed reasoning budget. We find frontier models have essentially no knowledge failure on textbook-form problems, and a severe, systematic terminability failure as combinatorial load grows. This reframes the value of an explicit causal layer: not to teach the model causal inference, but to move the combinatorial computation off the autoregressive reasoning chain and onto a deterministic engine that is exact and that emits a verifiable credential.
 
-Our contributions:
-1. Three reproducible "vital numbers" isolating the terminability failure (§3), each independently recomputed by a third-party library.
-2. An ecological-validity gradient showing the engine's edge survives finite-sample CPTs and imperfect structure, and a methodological artifact (anchoring) that benchmarks of probabilistic reasoning must control for (§4–5).
-3. An explicit, honest delimitation of where the engine does not help, including the limit of what a credential certifies (§6).
+**What is standard, and what is new.** We state this up front to forestall the obvious objection. The inference the engine performs — exact marginalization / variable elimination over discrete CPTs, and back-door adjustment — is *textbook* and not our contribution; it is available in pgmpy, DoWhy, and any Bayesian-network library, which we use as independent verifiers rather than reinvent. Our contributions are:
+
+1. **The combinatorial-cliff benchmark and finding** (§3). We show, for the first time systematically, that frontier LLMs' failure on interventional queries is *computational terminability*, not knowledge, and we characterize the collapse point on the 2^k axis. The collapse is architectural — consistent across four model bases and three families — with two distinct crash signatures, and is not fixed by prompting (§5.1). The finding *is* the benchmark; variable elimination is merely the yardstick.
+2. **An auditable-causal-inference credential layer** (§3–4). Beyond a number, the engine emits a structured, third-party-recomputable credential (adjustment set, back-door path, independent recompute, boundary/calibration regime). Existing libraries output the number, not the auditable justification. This is the engine's real engineering increment, and it maps onto model-risk/regulatory validation (§5.4).
+3. **A verifiable-correctness gradient and its honest limits** (§4–6). The edge survives finite-sample CPTs and imperfect structure; we expose and correct a methodological artifact (anchoring, §5.3); and we delimit precisely what a credential does *not* certify — the structure and the CPT's calibration regime (§4.2, §5.4, §6).
+
+We position this as **auditable causal inference**: the inference is standard, the auditability is the point.
+
+---
+
+## 1a. Related work
+
+We connect to, and explicitly do not reinvent, several lines:
+- **Causal inference & identification** (Pearl 1995/2009; Spirtes et al.; Shpitser & Pearl) — the do-calculus, back-door criterion, and the ID algorithm are the tools we apply. Standard libraries (pgmpy; DoWhy, Sharma & Kiciman 2020) implement the inference; we use pgmpy as an *independent recompute path*, not a competitor.
+- **LLM causal benchmarks** (e.g. CLadder, CausalBench) — these test whether LLMs answer causal questions; we instead place LLMs and exact inference on a common *combinatorial-load* axis and show the failure is terminability, not knowledge.
+- **Produce-with-a-proof lineage**: proof-carrying code (Necula 1997); neuro-symbolic verification (symbolic checks over neural outputs); selective / abstaining prediction (Chow 1970; Geifman & El-Yaniv 2017) — our protocol-failure and near-zero rules are abstention keyed to *verifiable causal identifiability* rather than to uncertainty; algorithmic recourse (Karimi et al.) gives verifiable counterfactual *explanations* whereas we certify the inference itself. Our credential is the first, to our knowledge, to attach a third-party-recomputable justification to a causal *effect estimate*. We claim novelty for the causal-inference application and the recompute credential, not for the produce-with-a-proof idea itself.
 
 ---
 
@@ -38,6 +50,7 @@ Our contributions:
 - *Implementation gate (IPRG, AM-016)*: the engine's value is recomputed by an independent code path (pgmpy variable elimination + graph surgery); agreement to 10⁻⁶ certifies the absence of implementation bugs.
 - *Semantic gate (AM-016+)*: a statement⟺structure⟺output consistency check certifies the absence of specification errors (e.g. a problem text inconsistent with the SCM used as truth). Two gates, each with a defined blind spot, neither sufficient alone.
 - *Beautiful Failures*: an append-only log of falsified hypotheses and retractions, including one retraction made *after* a result was frozen (§6).
+- *Novelty audit*: before claiming a contribution we actively check whether it is already published or merely a renaming of existing work (§1a demarcates standard inference from the credential increment) — a commitment to seeking refutations of our own claims, not only evidence for them.
 
 ---
 
@@ -107,7 +120,7 @@ Honesty travels with the claim.
 - **Low-complexity natural language.** When numbers are correctly stated in prose and k is small, the LLM marginalizes correctly itself and the engine offers no measurable advantage (k=1: 24/24 exact; k=2: MAE 10⁻⁴).
 - **Qualitative natural language.** When the SCM is purely qualitative, the numeric comparison is ill-posed (a retracted result, REJ-002 / WEAK-03), and natural-language structure extraction is ~65% reliable.
 - **A retracted result, kept public.** An earlier "engine wins on prose" finding was a two-canceling-bug artifact, caught and retracted *after* it had been frozen (REJ-002). It is recorded, not hidden — a test of the methodology.
-- **The counterfactual-gradient bet (T4) is unresolved.** A separate line on reverse-engineering generalization shows a synthetic→real out-of-distribution degradation of 12×; it remains an open challenge, stated here rather than omitted.
+- **The counterfactual-gradient bet (T4): a likely principled boundary.** A separate line shows synthetic→real out-of-distribution degradation of 12×. We read this as consistent with theory rather than an engineering bug: counterfactual inference requires the structural equations, which are domain-specific and do not transfer; a model trained on synthetic SCMs learns those SCMs' generative noise, not transferable counterfactual logic. We report it as a negative result (Beautiful Failures), do not fully close the door (within-family generalization is untested), and decline to claim it is a fixable engineering issue absent evidence.
 - **Causal discovery (unknown DAG)** is the last unproven frontier, motivated directly by §4.2: because structural error is silent and unbounded, *how to obtain the structure reliably* is the decisive question for real-world deployment.
 
 ---
