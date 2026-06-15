@@ -132,6 +132,19 @@ a{color:var(--blue);text-decoration:none}
 <div class="note" style="background:#f5ebe3">Every failure and retraction is public in <i>《美丽失败录》/ Beautiful Failures</i>, append-only. A project that can falsify its own claims — even frozen ones — is what earns the word "verifiable."</div>
 </div>
 
+<h2><span class="k">Finding 5 · One architecture, not one result</span></h2>
+<div class="card">
+<p class="lead">The causal-effect result above is one instance of a single principle — <b>replace self-report with a machine-verifiable credential; the value appears in the hard regime, not on average</b> — applied across three faculties, and now runnable as one loop.</p>
+<div class="three" style="margin-top:6px">
+  <div class="m"><div class="k">Computation</div><div class="v">research-grade</div><div class="d">the cliff above. LLM self-report collapses under combinatorial load; the engine is exact + credentialed.</div></div>
+  <div class="m"><div class="k">Memory</div><div class="v">minimal model</div><div class="d">flat-embedding retrieval transfers the wrong causal effect under confounding (14×); credentialed retrieval is immune. The credential <i>composes</i> across pillars.</div></div>
+  <div class="m"><div class="k">Metacognition</div><div class="v">minimal model</div><div class="d">acting on raw confidence makes unbounded confident-but-wrong safety calls; abstaining-under-uncertainty caps them — a robustness floor.</div></div>
+</div>
+<div class="note"><b>It runs as one loop.</b> A query passes through retrieve → identify &amp; compute → independently recompute (pgmpy) → decide (answer / answer-with-caveat / abstain) → emit credential. In a 5-query demo it answers the identifiable, flags the front-door (unverifiable assumption), and <b>refuses the unidentifiable by naming the missing variable</b> — every number engine-computed and pgmpy-verified, every refusal computable. <span style="color:var(--ink3)">(`experiments/os_loop`)</span></div>
+<div class="note"><b>The full causal arc is coherent.</b> Compute-given-structure (strong) → discovery learns structure from data (works when confounders are observed; <b>fails silently under latent confounding, unfixable by more data</b>) → active intervention is the only way to break that deadlock (why RCTs exist) → the credential declares "structure learned from observational data, latent confounding not excluded." The honest boundary (a credential certifies computation, not structure/calibration) is <i>identical</i> across all three pillars — itself evidence they are one system. <span style="color:var(--ink3)">(`THREE_PILLARS_ONE_PRINCIPLE.md`, `experiments/causal_discovery`)</span></div>
+<div class="note bound"><b>Maturity, stated honestly:</b> computation is research-grade and externally submittable; memory, metacognition, active-experiment and discovery are minimal-model demonstrations that establish the shared shape and the cross-pillar mechanism — not production systems. The unification is real; the maturities differ.</div>
+</div>
+
 <h2><span class="k">Reproduce Everything</span></h2>
 <div class="card">
 <p class="lead" style="font-size:.95rem">100% open source. Every number above regenerates from source.</p>
@@ -143,5 +156,5 @@ registry &amp; failures: <code>docs/00_FROZEN_REGISTRY.md</code> · <code>docs/B
 </p>
 </div>
 
-<div class="foot">The One · 太一 · A cognitive operating system that makes causal correctness a verifiable fact, not a gamble. · No funding · No IPO · Belongs to all of humanity. · Evidence dossier v1, reproducible, boundaries included.</div>
+<div class="foot">The One · 太一 · A cognitive operating system that makes causal correctness a verifiable fact, not a gamble. · No funding · No IPO · Belongs to all of humanity. · Evidence dossier v2 — three pillars, one runnable credentialed loop, boundaries included.</div>
 </div></body></html>
