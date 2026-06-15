@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The One · Figure 3 — Accuracy vs cost: paying a fortune to be confidently wrong</title>
+<style>
+:root{--bg:#faf9f7;--ink:#1d1d1f;--ink2:#56565b;--ink3:#9b988f;--hair:#e8e5e0;--stone:#8a7a63;
+--green:#3d7a52;--red:#b4533e;--blue:#3a5a8c;--amber:#9a6b2f;--card:#fff;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;line-height:1.7}
+.wrap{max-width:820px;margin:0 auto;padding:48px 28px 80px}
+.mark{font-size:.78rem;letter-spacing:.2em;color:var(--stone);font-weight:600;text-transform:uppercase}
+h1{font-size:1.45rem;font-weight:700;letter-spacing:-.01em;margin:8px 0 4px}
+.sub{color:var(--ink2);font-size:.95rem;margin-bottom:6px}
+.card{background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:24px;margin:16px 0;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+.cap{font-size:.86rem;color:var(--ink2);margin-top:14px}
+.cap b{color:var(--ink)}
+</style></head><body><div class="wrap">
+
+<div class="mark">The One · Figure 3</div>
+<h1>Accuracy vs cost — paying a fortune to be confidently wrong</h1>
+<div class="sub">Across 300 causal queries (k=1–6). The engine sits where you want to be: exact, at ~zero token cost.</div>
+
+<div class="card">
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
+  <line x1="90" y1="350" x2="710" y2="350" stroke="#c9c4ba" stroke-width="1.5"/>
+  <line x1="90" y1="40" x2="90" y2="350" stroke="#c9c4ba" stroke-width="1.5"/>
+  <g font-size="11" fill="#9b988f" text-anchor="end" font-family="ui-monospace,monospace">
+    <text x="82" y="354">0%</text><text x="82" y="277">25%</text><text x="82" y="199">50%</text>
+    <text x="82" y="122">75%</text><text x="82" y="44">100%</text>
+    <line x1="90" y1="273" x2="710" y2="273" stroke="#f0ede8"/><line x1="90" y1="195" x2="710" y2="195" stroke="#f0ede8"/>
+    <line x1="90" y1="118" x2="710" y2="118" stroke="#f0ede8"/><line x1="90" y1="40" x2="710" y2="40" stroke="#f0ede8"/>
+  </g>
+  <text x="26" y="195" font-size="12.5" fill="#56565b" transform="rotate(-90 26 195)" text-anchor="middle" font-family="-apple-system,sans-serif">overall accuracy (300 queries)</text>
+  <g font-size="11" fill="#9b988f" text-anchor="middle" font-family="ui-monospace,monospace">
+    <text x="90" y="370">0</text><text x="300" y="370">0.5M</text><text x="510" y="370">1.0M</text><text x="690" y="370">1.5M</text>
+    <text x="400" y="394" font-size="12.5" fill="#56565b" font-family="-apple-system,sans-serif">total tokens spent (↑ = more expensive)</text>
+  </g>
+  <text x="640" y="32" font-size="11" fill="#9b988f">← cheaper · costlier →</text>
+  <!-- x = 90 + tokens/1.5M*620 ; y = 350 - acc*310 -->
+  <!-- engine: 0 tok, 100% -> x=90, y=40 -->
+  <circle cx="98" cy="40" r="8" fill="#3d7a52"/>
+  <text x="112" y="38" font-size="13" fill="#3d7a52" font-weight="700">The One engine</text>
+  <text x="112" y="54" font-size="11" fill="#56565b">300/300 · ~0 tokens · exact</text>
+  <!-- gpt-5.1: 858k tok, 63% -> x=90+0.572*620=445, y=350-0.63*310=155 -->
+  <circle cx="445" cy="155" r="7" fill="#3a5a8c"/>
+  <text x="455" y="152" font-size="12" fill="#3a5a8c" font-weight="700">gpt-5.1</text>
+  <text x="455" y="167" font-size="10.5" fill="#56565b">190/300 · 858k tokens</text>
+  <!-- deepseek: 1.5M tok, 49% -> x=90+1.0*620=710 (cap 700), y=350-0.49*310=198 -->
+  <circle cx="700" cy="198" r="7" fill="#b4533e"/>
+  <text x="690" y="184" font-size="12" fill="#b4533e" font-weight="700" text-anchor="end">deepseek-v4</text>
+  <text x="690" y="199" font-size="10.5" fill="#56565b" text-anchor="end">147/300 · 1.5M tokens</text>
+  <!-- arrow pointing to the good corner -->
+  <text x="150" y="90" font-size="11" fill="#3d7a52" opacity=".8">exact &amp; free</text>
+</svg>
+<div class="cap"><b>Figure 3.</b> Over 300 causal queries the engine is exact at essentially zero token cost; the LLMs are both less accurate and far more expensive. The asymmetry sharpens in the tail: at high complexity (k≥5) gpt-5.1 spent 565k tokens to get <b>11/100</b> correct and deepseek spent <b>917k tokens to get 0/100</b> — paying a large sum to be confidently wrong (63–79% of all LLM tokens went to wrong answers). This is the cost case for moving the computation onto a deterministic engine and certifying it: not just more correct, but cheaper and verifiable. (Scope: structured input; the engine itself is O(2ᵏ) and unbounded only within the enumerable regime — §6.) Reproducible: <code style="font-family:ui-monospace,monospace">experiments/complexity_axis/</code>.</div>
+</div>
+</div></body></html>
