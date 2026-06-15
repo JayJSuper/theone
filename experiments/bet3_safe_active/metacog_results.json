@@ -1,0 +1,15 @@
+{
+  "summary": {
+    "safe-active": {
+      "misjudged_mean": 0.21,
+      "total_harm_mean": 0.91,
+      "mse_safe_mean": 0.6908
+    },
+    "safe-active+metacog": {
+      "misjudged_mean": 0.21,
+      "total_harm_mean": 0.91,
+      "mse_safe_mean": 0.6876
+    }
+  },
+  "n_seeds": 58
+}
