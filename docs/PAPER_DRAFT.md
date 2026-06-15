@@ -125,6 +125,10 @@ Honesty travels with the claim.
 
 ---
 
+## 6a. The broader architecture this instantiates (context, not a core claim)
+
+The causal-effect result is one instance of a single principle — *replace self-report with a machine-verifiable credential, and the value appears in the hard regime, not on average* — which we apply to two further faculties in minimal models: **memory** (credentialed retrieval on a de-confounded causal signature is immune to confounding, where flat-embedding retrieval transfers the wrong effect with error unbounded in confounding) and **metacognition** (abstaining under uncertainty caps confident safety mistakes that a loosely-tuned policy makes unboundedly). The memory result is the first *cross-pillar* evidence: the retriever's immunity is inherited from the computation pillar's credential, not re-earned. We present these as context for the architecture (the supplementary *Three pillars, one principle*), not as core claims — they are minimal-model demonstrations of the shape, whereas the causal-effect result is research-grade. The shared honest boundary (a credential certifies computation, not the structure/calibration) is identical across all three, which is itself evidence they are one system.
+
 ## 7. Conclusion
 
 Within a known-structure, given-CPT regime that comfortably contains where frontier LLMs break, an explicit intervention engine converts causal correctness from a gamble into a machine-verifiable fact: exact at all combinatorial loads, milliseconds, ~zero tokens, third-party-recomputable. The boundary is equally important: a credential certifies computation, not structure, and the regime is bounded by enumerability and by the assumption of a known graph. The combinatorial cliff is universal across model families and slides with budget but is never eliminated — which is precisely why moving the combinatorial part of causal computation off the reasoning chain, and certifying it, is worth doing.
