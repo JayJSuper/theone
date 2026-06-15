@@ -1,0 +1,114 @@
+[
+  {
+    "query": "Does drinking coffee cause heart disease?",
+    "route": "s2_causal",
+    "retrieved_model": "coffee_heart",
+    "identifiable": true,
+    "strategy": "backdoor",
+    "engine_do_x1": 0.7,
+    "pgmpy_true_do_x1": 0.7,
+    "independently_verified": true,
+    "decision": "ANSWER",
+    "credential": {
+      "value_do_x1": 0.7,
+      "value_ate": 0.3,
+      "strategy": "backdoor",
+      "adjustment_set": [
+        "smoking"
+      ],
+      "confounding_bias_vs_observation": 0.24,
+      "independent_recompute": {
+        "oracle": "pgmpy",
+        "value": 0.7,
+        "match": true
+      },
+      "assumptions": [],
+      "graph_hash": "87c634474db51d47b2ca30cfa78c80b0891c511c67b5dfc2a63488321a87a275",
+      "evidence_tier": "machine_validated",
+      "boundary": "exact GIVEN the structure & illustrative CPTs; does not certify the structure/calibration"
+    }
+  },
+  {
+    "query": "What's the effect of advertising on sales?",
+    "route": "s2_causal",
+    "retrieved_model": "ads_sales",
+    "identifiable": true,
+    "strategy": "backdoor",
+    "engine_do_x1": 0.675,
+    "pgmpy_true_do_x1": 0.675,
+    "independently_verified": true,
+    "decision": "ANSWER",
+    "credential": {
+      "value_do_x1": 0.675,
+      "value_ate": 0.325,
+      "strategy": "backdoor",
+      "adjustment_set": [
+        "season"
+      ],
+      "confounding_bias_vs_observation": 0.11,
+      "independent_recompute": {
+        "oracle": "pgmpy",
+        "value": 0.675,
+        "match": true
+      },
+      "assumptions": [],
+      "graph_hash": "834564ac513ed87bcd2252d08ae72350d104fa93b2edca8970c3645aa8d9a3da",
+      "evidence_tier": "machine_validated",
+      "boundary": "exact GIVEN the structure & illustrative CPTs; does not certify the structure/calibration"
+    }
+  },
+  {
+    "query": "Does sleep deprivation cause hair loss?",
+    "route": "s2_causal",
+    "retrieved_model": "sleep_hair",
+    "identifiable": false,
+    "strategy": null,
+    "decision": "ABSTAIN",
+    "reason": "do-effect not identifiable from observed variables; missing: ['stress']",
+    "credential": {
+      "graph_hash": "5dc5322efefdc50bf59389849fb756945d409055ced26dcb84aff0092f17b7c4",
+      "strategy": "refuse",
+      "missing": [
+        "stress"
+      ],
+      "boundary": "computable 'I don't know'"
+    }
+  },
+  {
+    "query": "Does the supplement improve recovery?",
+    "route": "s2_causal",
+    "retrieved_model": "supplement_recovery",
+    "identifiable": true,
+    "strategy": "front_door",
+    "engine_do_x1": 0.58,
+    "pgmpy_true_do_x1": 0.58,
+    "independently_verified": true,
+    "decision": "ANSWER_WITH_CAVEAT",
+    "caveat": "identified via front_door \u2014 carries an assumption unverifiable from data",
+    "credential": {
+      "value_do_x1": 0.58,
+      "value_ate": 0.195,
+      "strategy": "front_door",
+      "adjustment_set": null,
+      "confounding_bias_vs_observation": 0.154223,
+      "independent_recompute": {
+        "oracle": "pgmpy",
+        "value": 0.58,
+        "match": true
+      },
+      "assumptions": [
+        "front-door assumes no unobserved confounding between mediator and outcome \u2014 NOT verifiable from data, needs domain knowledge",
+        "near-violations are silent: a 0.05/0.3-strength hidden mediator-outcome confounder biases the estimate by ~0.003/0.082 with NO warning (quantified probe, registry NOTE-002)"
+      ],
+      "graph_hash": "428fdff077a2e74748c81e28e0d688fd5984f999c982264b1c543297e3bbb7e4",
+      "evidence_tier": "machine_validated",
+      "boundary": "exact GIVEN the structure & illustrative CPTs; does not certify the structure/calibration"
+    }
+  },
+  {
+    "query": "Will Bitcoin go up next week?",
+    "route": "abstain_forecast",
+    "decision": "ABSTAIN",
+    "reason": "prediction/forecast intent \u2014 out of causal scope"
+  }
+]
