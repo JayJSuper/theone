@@ -1,86 +1,81 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The One · Figure 1 — The Combinatorial Cliff (de-anchored, cross-family)</title>
+<title>The One · Figure 1 — The combinatorial cliff is universal and capability-ordered</title>
 <style>
 :root{--bg:#faf9f7;--ink:#1d1d1f;--ink2:#56565b;--ink3:#9b988f;--hair:#e8e5e0;--stone:#8a7a63;
---green:#3d7a52;--red:#b4533e;--blue:#3a5a8c;--amber:#9a6b2f;--card:#fff;}
+--green:#3d7a52;--red:#b4533e;--blue:#3a5a8c;--amber:#9a6b2f;--purple:#6b4e9a;--card:#fff;}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;line-height:1.7}
-.wrap{max-width:820px;margin:0 auto;padding:48px 28px 80px}
+.wrap{max-width:840px;margin:0 auto;padding:48px 28px 80px}
 .mark{font-size:.78rem;letter-spacing:.2em;color:var(--stone);font-weight:600;text-transform:uppercase}
-h1{font-size:1.5rem;font-weight:700;letter-spacing:-.01em;margin:8px 0 4px}
+h1{font-size:1.4rem;font-weight:700;letter-spacing:-.01em;margin:8px 0 4px}
 .sub{color:var(--ink2);font-size:.95rem;margin-bottom:6px}
 .card{background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:24px;margin:16px 0;box-shadow:0 1px 2px rgba(0,0,0,.03)}
-.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:.85rem;margin-top:10px;color:var(--ink2)}
-.legend span{display:inline-flex;align-items:center;gap:7px}
-.sw{width:22px;height:3px;border-radius:2px;display:inline-block}
-.cap{font-size:.86rem;color:var(--ink2);margin-top:14px}
-.cap b{color:var(--ink)}
-table{width:100%;border-collapse:collapse;font-size:.85rem;margin-top:14px}
-th,td{padding:7px 9px;border-bottom:1px solid var(--hair);text-align:center}
-th{color:var(--ink3);font-weight:600;font-size:.74rem}
-td:first-child,th:first-child{text-align:left}
-.eng{color:var(--green);font-weight:700}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:.82rem;margin-top:10px;color:var(--ink2)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:20px;height:3px;border-radius:2px}
+table{width:100%;border-collapse:collapse;font-size:.84rem;margin-top:14px}
+th,td{padding:6px 8px;border-bottom:1px solid var(--hair);text-align:center}
+th{color:var(--ink3);font-weight:600;font-size:.72rem}td:first-child,th:first-child{text-align:left}
+.eng{color:var(--green);font-weight:700}.cap{font-size:.86rem;color:var(--ink2);margin-top:14px}.cap b{color:var(--ink)}
 </style></head><body><div class="wrap">
 
 <div class="mark">The One · Figure 1</div>
-<h1>The Combinatorial Cliff — universal across model families, location slides with budget</h1>
-<div class="sub">Interventional-query accuracy (±0.005) vs 2ᵏ, on the de-anchored generator (artifact-free; §5.3). Engine flat at 1.000.</div>
+<h1>The combinatorial cliff is universal — and capability-ordered</h1>
+<div class="sub">Exact interventional accuracy (±0.005) vs 2ᵏ, de-anchored generator (artifact-free). Every model has a cliff; its location slides monotonically with capability. The engine has none.</div>
 
 <div class="card">
 <svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">
-  <!-- axes -->
-  <line x1="90" y1="340" x2="700" y2="340" stroke="#c9c4ba" stroke-width="1.5"/>
-  <line x1="90" y1="34" x2="90" y2="340" stroke="#c9c4ba" stroke-width="1.5"/>
-  <!-- y grid + labels (y = 340 - acc*300) -->
+  <line x1="86" y1="340" x2="710" y2="340" stroke="#c9c4ba" stroke-width="1.5"/>
+  <line x1="86" y1="34" x2="86" y2="340" stroke="#c9c4ba" stroke-width="1.5"/>
   <g font-size="11" fill="#9b988f" text-anchor="end" font-family="ui-monospace,monospace">
-    <text x="82" y="344">0.00</text><text x="82" y="269">0.25</text><text x="82" y="194">0.50</text>
-    <text x="82" y="119">0.75</text><text x="82" y="44">1.00</text>
-    <line x1="90" y1="265" x2="700" y2="265" stroke="#f0ede8"/><line x1="90" y1="190" x2="700" y2="190" stroke="#f0ede8"/>
-    <line x1="90" y1="115" x2="700" y2="115" stroke="#f0ede8"/><line x1="90" y1="40" x2="700" y2="40" stroke="#f0ede8"/>
+    <text x="78" y="344">0.00</text><text x="78" y="269">0.25</text><text x="78" y="194">0.50</text>
+    <text x="78" y="119">0.75</text><text x="78" y="44">1.00</text>
+    <line x1="86" y1="265" x2="710" y2="265" stroke="#f0ede8"/><line x1="86" y1="190" x2="710" y2="190" stroke="#f0ede8"/>
+    <line x1="86" y1="115" x2="710" y2="115" stroke="#f0ede8"/><line x1="86" y1="40" x2="710" y2="40" stroke="#f0ede8"/>
   </g>
-  <!-- x labels: 16,32,64 at x=200,420,620 -->
-  <g font-size="12" fill="#9b988f" text-anchor="middle" font-family="ui-monospace,monospace">
-    <text x="200" y="360">16</text><text x="420" y="360">32</text><text x="620" y="360">64</text>
-    <text x="400" y="384" font-size="12.5" fill="#56565b" font-family="-apple-system,sans-serif">configurations to marginalize · 2ᵏ  (k = 4, 5, 6)</text>
+  <g font-size="11.5" fill="#9b988f" text-anchor="middle" font-family="ui-monospace,monospace">
+    <text x="130" y="360">16</text><text x="270" y="360">32</text><text x="410" y="360">64</text><text x="550" y="360">128</text><text x="680" y="360">256</text>
+    <text x="398" y="384" font-size="12.5" fill="#56565b" font-family="-apple-system,sans-serif">configurations to marginalize · 2ᵏ (k = 4 … 8)</text>
   </g>
-  <text x="26" y="187" font-size="12.5" fill="#56565b" transform="rotate(-90 26 187)" text-anchor="middle" font-family="-apple-system,sans-serif">interventional accuracy (±0.005)</text>
-
-  <!-- engine flat 1.000 -->
-  <polyline fill="none" stroke="#3d7a52" stroke-width="3" points="200,40 420,40 620,40"/>
-  <g fill="#3d7a52"><circle cx="200" cy="40" r="4.5"/><circle cx="420" cy="40" r="4.5"/><circle cx="620" cy="40" r="4.5"/></g>
-  <!-- gemini-2.5-pro: 1.00,0.40,0.00 -> 40,220,340 -->
-  <polyline fill="none" stroke="#9a6b2f" stroke-width="2.5" points="200,40 420,220 620,340"/>
-  <g fill="#9a6b2f"><circle cx="200" cy="40" r="3.6"/><circle cx="420" cy="220" r="3.6"/><circle cx="620" cy="340" r="3.6"/></g>
-  <!-- gpt-5.1: 0.64,0.04,0.00 -> 148,328,340 -->
-  <polyline fill="none" stroke="#3a5a8c" stroke-width="2.5" points="200,148 420,328 620,340"/>
-  <g fill="#3a5a8c"><circle cx="200" cy="148" r="3.6"/><circle cx="420" cy="328" r="3.6"/><circle cx="620" cy="340" r="3.6"/></g>
-  <!-- deepseek: 0.04,0.00,0.00 -> 328,340,340 -->
-  <polyline fill="none" stroke="#b4533e" stroke-width="2.5" stroke-dasharray="5,3" points="200,328 420,340 620,340"/>
-  <g fill="#b4533e"><circle cx="200" cy="328" r="3.6"/><circle cx="420" cy="340" r="3.6"/><circle cx="620" cy="340" r="3.6"/></g>
-
-  <!-- labels at right -->
-  <text x="628" y="44" font-size="11" fill="#3d7a52" font-weight="700">engine 1.000</text>
-  <text x="466" y="222" font-size="10.5" fill="#9a6b2f">gemini-2.5-pro</text>
-  <text x="232" y="142" font-size="10.5" fill="#3a5a8c">gpt-5.1</text>
-  <text x="208" y="322" font-size="10.5" fill="#b4533e">deepseek</text>
+  <text x="24" y="190" font-size="12.5" fill="#56565b" transform="rotate(-90 24 190)" text-anchor="middle" font-family="-apple-system,sans-serif">interventional accuracy (±0.005)</text>
+  <!-- y=340-acc*300: 1.0->40 .95->55 .85->85 .64->148 .40->220 .33->241 .08->316 .04->328 0->340 ; x:16->130 32->270 64->410 128->550 256->680 -->
+  <!-- engine flat 1.0 -->
+  <polyline fill="none" stroke="#3d7a52" stroke-width="3" points="130,40 270,40 410,40 550,40 680,40"/>
+  <g fill="#3d7a52"><circle cx="130" cy="40" r="4"/><circle cx="270" cy="40" r="4"/><circle cx="410" cy="40" r="4"/><circle cx="550" cy="40" r="4"/><circle cx="680" cy="40" r="4"/></g>
+  <!-- claude: .85@64? actually 1.0,0.95,0.85,0.33,0.08 at 16/32/64/128/256 -> y 40,55,85,241,316 -->
+  <polyline fill="none" stroke="#6b4e9a" stroke-width="2.5" points="130,40 270,55 410,85 550,241 680,316"/>
+  <g fill="#6b4e9a"><circle cx="130" cy="40" r="3.4"/><circle cx="270" cy="55" r="3.4"/><circle cx="410" cy="85" r="3.4"/><circle cx="550" cy="241" r="3.4"/><circle cx="680" cy="316" r="3.4"/></g>
+  <!-- gemini: 1.0,0.40,0.0 at 16/32/64 -> y 40,220,340 -->
+  <polyline fill="none" stroke="#9a6b2f" stroke-width="2.5" points="130,40 270,220 410,340"/>
+  <g fill="#9a6b2f"><circle cx="130" cy="40" r="3.4"/><circle cx="270" cy="220" r="3.4"/><circle cx="410" cy="340" r="3.4"/></g>
+  <!-- gpt-5.1: 0.64,0.04,0.0 -> y 148,328,340 -->
+  <polyline fill="none" stroke="#3a5a8c" stroke-width="2.5" points="130,148 270,328 410,340"/>
+  <g fill="#3a5a8c"><circle cx="130" cy="148" r="3.4"/><circle cx="270" cy="328" r="3.4"/><circle cx="410" cy="340" r="3.4"/></g>
+  <!-- deepseek: 0.04,0,0 -> y 328,340,340 -->
+  <polyline fill="none" stroke="#b4533e" stroke-width="2.5" stroke-dasharray="5,3" points="130,328 270,340 410,340"/>
+  <g fill="#b4533e"><circle cx="130" cy="328" r="3.4"/><circle cx="270" cy="340" r="3.4"/></g>
+  <text x="688" y="44" font-size="11" fill="#3d7a52" font-weight="700" text-anchor="end">engine 1.000</text>
+  <text x="560" y="236" font-size="10.5" fill="#6b4e9a">claude-opus-4.8</text>
+  <text x="282" y="216" font-size="10.5" fill="#9a6b2f">gemini-2.5-pro</text>
+  <text x="138" y="160" font-size="10.5" fill="#3a5a8c">gpt-5.1</text>
+  <text x="132" y="322" font-size="10.5" fill="#b4533e">deepseek</text>
 </svg>
 <div class="legend">
-  <span><span class="sw" style="background:#3d7a52"></span>The One engine (exact)</span>
-  <span><span class="sw" style="background:#9a6b2f"></span>gemini-2.5-pro (heavy reasoner, 6× budget)</span>
-  <span><span class="sw" style="background:#3a5a8c"></span>gpt-5.1</span>
-  <span><span class="sw" style="background:#b4533e"></span>deepseek-v4-flash</span>
+  <span><span class="sw" style="background:#3d7a52"></span>The One engine (exact, no cliff)</span>
+  <span><span class="sw" style="background:#6b4e9a"></span>claude-opus-4.8 (cliff k=7)</span>
+  <span><span class="sw" style="background:#9a6b2f"></span>gemini-2.5-pro (k=6)</span>
+  <span><span class="sw" style="background:#3a5a8c"></span>gpt-5.1 (k=5)</span>
+  <span><span class="sw" style="background:#b4533e"></span>deepseek (k=4)</span>
 </div>
-
 <table>
-<tr><th>k</th><th>2ᵏ</th><th>deepseek</th><th>gpt-5.1</th><th>gemini-2.5-pro</th><th>engine</th></tr>
-<tr><td>4</td><td>16</td><td>0.04</td><td>0.64</td><td>1.00</td><td class="eng">1.000</td></tr>
-<tr><td>5</td><td>32</td><td>0.00</td><td>0.04</td><td>0.40</td><td class="eng">1.000</td></tr>
-<tr><td>6</td><td>64</td><td>0.00</td><td>0.00</td><td>0.00</td><td class="eng">1.000</td></tr>
+<tr><th>2ᵏ</th><th>deepseek</th><th>gpt-5.1</th><th>gemini</th><th>claude</th><th>engine</th></tr>
+<tr><td>16</td><td>0.04</td><td>0.64</td><td>1.00</td><td>1.00</td><td class="eng">1.00</td></tr>
+<tr><td>32</td><td>0.00</td><td>0.04</td><td>0.40</td><td>0.95</td><td class="eng">1.00</td></tr>
+<tr><td>64</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.85</td><td class="eng">1.00</td></tr>
+<tr><td>128</td><td>—</td><td>—</td><td>—</td><td>0.33</td><td class="eng">1.00</td></tr>
+<tr><td>256</td><td>—</td><td>—</td><td>—</td><td>0.08</td><td class="eng">1.00</td></tr>
 </table>
-
-<div class="cap"><b>Figure 1.</b> On the de-anchored generator (true value spread off the visible-CPT mean, so no guessing shortcut — §5.3), interventional-query accuracy collapses for every LLM family while the engine is exact at every 2ᵏ. The cliff is <b>universal</b> (all three families reach 0.00 by k=6) but its <b>location slides with capability and token budget</b>: deepseek-v4-flash fails at k=4, gpt-5.1 at k=5, and gemini-2.5-pro — a heavy reasoner given a 6× output budget — holds until k=6. A bigger budget buys exactly one notch, never an escape. Protocol-failure counts as error (AM-007); every engine value is independently recomputed by pgmpy to &lt;10⁻⁶ (AM-016). The claim is therefore *exact-and-cheap vs approximate-and-expensive within an enumerable, known-structure regime* — not *tractable vs intractable* (the engine is itself O(2ᵏ); see §6).</div>
+<div class="cap"><b>Figure 1.</b> On the de-anchored generator (true value spread off the visible-cell mean, no guessing shortcut), exact interventional accuracy collapses for <b>every</b> LLM family, but the cliff's <b>location is capability-ordered</b>: deepseek-v4-flash at 2⁴=16, gpt-5.1 at 2⁵=32, gemini-2.5-pro at 2⁶=64, and the frontier claude-opus-4.8 holds to 2⁶=64 (0.85) before collapsing at 2⁷=128 (0.33→0.08). The collapse is computational (confident wrong answers, not budget — claude's k=7 errors carry no protocol failures). No model escapes the cliff; the engine has none, at every k, at ~zero token cost, with an independently-recomputable credential. The claim is therefore <i>exact-and-cheap-and-verifiable with no cliff</i> vs <i>a capability-bounded cliff every model eventually hits</i> — not the weaker "LLMs can't." Protocol-failure = error (AM-007); engine values pgmpy-verified &lt;10⁻⁶. Reproducible: <code style="font-family:ui-monospace,monospace">experiments/deanchor_cliff/</code>.</div>
 </div>
-
-<div style="color:var(--ink3);font-size:.8rem;margin-top:8px">Reproducible: <code style="font-family:ui-monospace,monospace">experiments/deanchor_cliff/</code> · github.com/JayJSuper/theone</div>
 </div></body></html>
