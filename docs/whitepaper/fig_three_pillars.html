@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The One · Three pillars, one shape</title>
+<style>
+:root{--bg:#faf9f7;--ink:#1d1d1f;--ink2:#56565b;--ink3:#9b988f;--hair:#e8e5e0;--stone:#8a7a63;--green:#3d7a52;--red:#b4533e;--card:#fff;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif;line-height:1.7}
+.wrap{max-width:860px;margin:0 auto;padding:48px 28px 80px}
+.mark{font-size:.78rem;letter-spacing:.2em;color:var(--stone);font-weight:600;text-transform:uppercase}
+h1{font-size:1.45rem;font-weight:700;margin:8px 0 4px}
+.sub{color:var(--ink2);font-size:.95rem;margin-bottom:8px}
+.leg{display:flex;gap:18px;font-size:.85rem;color:var(--ink2);margin:8px 0 14px}
+.leg span{display:inline-flex;align-items:center;gap:7px}.sw{width:18px;height:3px;border-radius:2px;display:inline-block}
+.grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+@media(max-width:680px){.grid{grid-template-columns:1fr}}
+.pnl{background:var(--card);border:1px solid var(--hair);border-radius:14px;padding:14px}
+.pnl h4{font-size:14px;font-weight:700;margin:0 0 2px}
+.pnl .ax{font-size:11px;color:var(--ink3);margin-top:4px}
+.cap{font-size:.86rem;color:var(--ink2);margin-top:16px}
+.cap b{color:var(--ink)}
+</style></head><body><div class="wrap">
+<div class="mark">The One · synthesis figure</div>
+<h1>Three pillars, one shape</h1>
+<div class="sub">The same failure-and-rescue pattern in computation, memory, and metacognition.</div>
+<div class="leg"><span><span class="sw" style="background:var(--red)"></span>self-report incumbent (degrades in the hard regime)</span><span><span class="sw" style="background:var(--green)"></span>verifiable credential (holds)</span></div>
+<div class="grid">
+<div class="pnl"><h4>Computation</h4>
+<svg viewBox="0 0 200 130" style="width:100%">
+<line x1="26" y1="108" x2="186" y2="108" stroke="#c9c4ba"/><line x1="26" y1="14" x2="26" y2="108" stroke="#c9c4ba"/>
+<polyline fill="none" stroke="#b4533e" stroke-width="2.5" points="40,74 113,22 186,16"/>
+<polyline fill="none" stroke="#3d7a52" stroke-width="2.5" points="40,108 113,108 186,108"/>
+<circle cx="40" cy="74" r="2.6" fill="#b4533e"/><circle cx="113" cy="22" r="2.6" fill="#b4533e"/><circle cx="186" cy="16" r="2.6" fill="#b4533e"/>
+<circle cx="40" cy="108" r="2.6" fill="#3d7a52"/><circle cx="186" cy="108" r="2.6" fill="#3d7a52"/></svg>
+<div class="ax">error vs 2ᵏ (k=4→6) · LLM 0.36→1.0 · engine 0</div></div>
+<div class="pnl"><h4>Memory</h4>
+<svg viewBox="0 0 200 130" style="width:100%">
+<line x1="26" y1="108" x2="186" y2="108" stroke="#c9c4ba"/><line x1="26" y1="14" x2="26" y2="108" stroke="#c9c4ba"/>
+<polyline fill="none" stroke="#b4533e" stroke-width="2.5" points="40,107 76,68 113,40 150,24 186,17"/>
+<polyline fill="none" stroke="#3d7a52" stroke-width="2.5" points="40,102 186,102"/>
+<circle cx="40" cy="107" r="2.6" fill="#b4533e"/><circle cx="113" cy="40" r="2.6" fill="#b4533e"/><circle cx="186" cy="17" r="2.6" fill="#b4533e"/>
+<circle cx="40" cy="102" r="2.6" fill="#3d7a52"/><circle cx="186" cy="102" r="2.6" fill="#3d7a52"/></svg>
+<div class="ax">transfer error vs confounding σ · flat 0.01→1.13 · credentialed 0.08</div></div>
+<div class="pnl"><h4>Metacognition</h4>
+<svg viewBox="0 0 200 130" style="width:100%">
+<line x1="26" y1="108" x2="186" y2="108" stroke="#c9c4ba"/><line x1="26" y1="14" x2="26" y2="108" stroke="#c9c4ba"/>
+<polyline fill="none" stroke="#b4533e" stroke-width="2.5" points="40,107 76,62 113,49 150,31 186,16"/>
+<polyline fill="none" stroke="#3d7a52" stroke-width="2.5" points="40,107 76,83 113,83 150,82 186,82"/>
+<circle cx="40" cy="107" r="2.6" fill="#b4533e"/><circle cx="113" cy="49" r="2.6" fill="#b4533e"/><circle cx="186" cy="16" r="2.6" fill="#b4533e"/>
+<circle cx="186" cy="82" r="2.6" fill="#3d7a52"/></svg>
+<div class="ax">confident mistakes vs looseness δ · no-meta 0.2→14.7 · abstain capped ~4</div></div>
+</div>
+<div class="cap"><b>One principle, three faculties.</b> Replace self-report with a machine-verifiable credential. In each pillar the self-report incumbent (LLM in-context reasoning · flat-embedding retrieval · acting on raw confidence) degrades systematically in the hard regime (high combinatorial load · high confounding · loose tuning), while the credentialed path holds. At the easy end of each axis the incumbent is fine — <b>the value is regime-located, never average</b>. Computation is research-grade (4 bases × 3 families, 1,207 pgmpy-verified truths); memory and metacognition are minimal-model demonstrations of the same shape, with the credential composing across pillars (memory inherits computation's de-confounded credential). Reproducible: <code style="font-family:ui-monospace,monospace">experiments/{complexity_axis,memory_causal_cliff,bet3_safe_active}</code>.</div>
+</div></body></html>
