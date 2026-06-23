@@ -1,0 +1,47 @@
+{
+  "len-ctrl k2 d0": {
+    "two_k": 4,
+    "prompt_words": 66,
+    "acc": 1.0
+  },
+  "len-ctrl k2 d10": {
+    "two_k": 4,
+    "prompt_words": 76,
+    "acc": 1.0
+  },
+  "len-ctrl k2 d25": {
+    "two_k": 4,
+    "prompt_words": 91,
+    "acc": 1.0
+  },
+  "len-ctrl k2 d45": {
+    "two_k": 4,
+    "prompt_words": 111,
+    "acc": 1.0
+  },
+  "cliff k4 d0": {
+    "two_k": 16,
+    "prompt_words": 120,
+    "acc": 0.6
+  },
+  "cliff k5 d0": {
+    "two_k": 32,
+    "prompt_words": 177,
+    "acc": 0.0
+  },
+  "DECISIVE k2 d45 (long,low)": {
+    "two_k": 4,
+    "prompt_words": 111,
+    "acc": 1.0
+  },
+  "DECISIVE k5 d0 (short,high)": {
+    "two_k": 32,
+    "prompt_words": 177,
+    "acc": 0.0
+  },
+  "MATCHLEN k2 d120 (>=k5 len, low)": {
+    "two_k": 4,
+    "prompt_words": 186,
+    "acc": 1.0
+  }
+}

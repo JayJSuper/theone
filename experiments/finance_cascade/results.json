@@ -1,0 +1,1010 @@
+{
+  "summary": {
+    "contagion k2 (2 macro)": {
+      "n_debtors": 2,
+      "portfolio": false,
+      "gpt_acc": 1.0,
+      "gpt_mae": 0.0003,
+      "fail": "0/10",
+      "n_scms": 10
+    },
+    "contagion k3 (3 macro)": {
+      "n_debtors": 2,
+      "portfolio": false,
+      "gpt_acc": 1.0,
+      "gpt_mae": 0.0009,
+      "fail": "0/10",
+      "n_scms": 10
+    },
+    "contagion k4 (4 macro)": {
+      "n_debtors": 2,
+      "portfolio": false,
+      "gpt_acc": 0.4,
+      "gpt_mae": 0.0972,
+      "fail": "0/10",
+      "n_scms": 10
+    },
+    "contagion k5 (5 macro)": {
+      "n_debtors": 2,
+      "portfolio": false,
+      "gpt_acc": 0.6,
+      "gpt_mae": 0.0091,
+      "fail": "0/10",
+      "n_scms": 10
+    },
+    "portfolio k4 (4 macro)": {
+      "n_debtors": 3,
+      "portfolio": true,
+      "gpt_acc": 0.2,
+      "gpt_mae": 0.0218,
+      "fail": "0/10",
+      "n_scms": 10
+    }
+  },
+  "iprg_max": 4.910327097151779e-07,
+  "iprg_verdict": "PASS",
+  "n_per_cell": 10,
+  "tol": 0.005,
+  "rows": [
+    {
+      "label": "contagion k2 (2 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 0,
+      "n_nodes": 7,
+      "truth": 0.253858,
+      "per_debtor": {
+        "Y0": 0.253858,
+        "Y1": 0.319401
+      },
+      "iprg": 3.01984e-07,
+      "gpt51": {
+        "pred": 0.2534,
+        "latency": 11.3,
+        "tokens": 1964,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k2 (2 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 1,
+      "n_nodes": 7,
+      "truth": 0.275736,
+      "per_debtor": {
+        "Y0": 0.275736,
+        "Y1": 0.468216
+      },
+      "iprg": 2.7512e-07,
+      "gpt51": {
+        "pred": 0.2754,
+        "latency": 7.9,
+        "tokens": 1639,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k2 (2 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 2,
+      "n_nodes": 7,
+      "truth": 0.527748,
+      "per_debtor": {
+        "Y0": 0.527748,
+        "Y1": 0.42948
+      },
+      "iprg": 4.5309e-07,
+      "gpt51": {
+        "pred": 0.5278,
+        "latency": 8.2,
+        "tokens": 1681,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k2 (2 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 3,
+      "n_nodes": 7,
+      "truth": 0.660502,
+      "per_debtor": {
+        "Y0": 0.660502,
+        "Y1": 0.829681
+      },
+      "iprg": 4.75584e-07,
+      "gpt51": {
+        "pred": 0.6602,
+        "latency": 9.4,
+        "tokens": 1869,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k2 (2 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 4,
+      "n_nodes": 7,
+      "truth": 0.626069,
+      "per_debtor": {
+        "Y0": 0.626069,
+        "Y1": 0.308312
+      },
+      "iprg": 4.69312e-07,
+      "gpt51": {
+        "pred": 0.6253,
+        "latency": 10.5,
+        "tokens": 2007,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k2 (2 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 5,
+      "n_nodes": 7,
+      "truth": 0.246715,
+      "per_debtor": {
+        "Y0": 0.246715,
+        "Y1": 0.443091
+      },
+      "iprg": 7.3e-08,
+      "gpt51": {
+        "pred": 0.2463,
+        "latency": 8.3,
+        "tokens": 1722,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k2 (2 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 6,
+      "n_nodes": 7,
+      "truth": 0.303284,
+      "per_debtor": {
+        "Y0": 0.303284,
+        "Y1": 0.307342
+      },
+      "iprg": 1.395e-07,
+      "gpt51": {
+        "pred": 0.3035,
+        "latency": 7.9,
+        "tokens": 1681,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k2 (2 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 7,
+      "n_nodes": 7,
+      "truth": 0.588782,
+      "per_debtor": {
+        "Y0": 0.588782,
+        "Y1": 0.719294
+      },
+      "iprg": 3.5728e-07,
+      "gpt51": {
+        "pred": 0.5887,
+        "latency": 6.5,
+        "tokens": 1505,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k2 (2 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 8,
+      "n_nodes": 7,
+      "truth": 0.606249,
+      "per_debtor": {
+        "Y0": 0.606249,
+        "Y1": 0.206615
+      },
+      "iprg": 3.856e-07,
+      "gpt51": {
+        "pred": 0.6063,
+        "latency": 9.0,
+        "tokens": 1610,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k2 (2 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 9,
+      "n_nodes": 7,
+      "truth": 0.670771,
+      "per_debtor": {
+        "Y0": 0.670771,
+        "Y1": 0.199958
+      },
+      "iprg": 3.795e-07,
+      "gpt51": {
+        "pred": 0.6713,
+        "latency": 19.0,
+        "tokens": 2554,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k3 (3 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 0,
+      "n_nodes": 8,
+      "truth": 0.692731,
+      "per_debtor": {
+        "Y0": 0.692731,
+        "Y1": 0.420325
+      },
+      "iprg": 4.82115e-07,
+      "gpt51": {
+        "pred": 0.6941,
+        "latency": 10.6,
+        "tokens": 2334,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k3 (3 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 1,
+      "n_nodes": 8,
+      "truth": 0.419471,
+      "per_debtor": {
+        "Y0": 0.419471,
+        "Y1": 0.438085
+      },
+      "iprg": 4.45796e-07,
+      "gpt51": {
+        "pred": 0.4199,
+        "latency": 9.2,
+        "tokens": 2090,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k3 (3 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 2,
+      "n_nodes": 8,
+      "truth": 0.518707,
+      "per_debtor": {
+        "Y0": 0.518707,
+        "Y1": 0.67006
+      },
+      "iprg": 4.19781e-07,
+      "gpt51": {
+        "pred": 0.5204,
+        "latency": 12.4,
+        "tokens": 2213,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k3 (3 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 3,
+      "n_nodes": 8,
+      "truth": 0.422864,
+      "per_debtor": {
+        "Y0": 0.422864,
+        "Y1": 0.558485
+      },
+      "iprg": 1.19629e-07,
+      "gpt51": {
+        "pred": 0.4224,
+        "latency": 12.5,
+        "tokens": 2304,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k3 (3 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 4,
+      "n_nodes": 8,
+      "truth": 0.729082,
+      "per_debtor": {
+        "Y0": 0.729082,
+        "Y1": 0.565365
+      },
+      "iprg": 1.08889e-07,
+      "gpt51": {
+        "pred": 0.729,
+        "latency": 12.3,
+        "tokens": 2303,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k3 (3 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 5,
+      "n_nodes": 8,
+      "truth": 0.248935,
+      "per_debtor": {
+        "Y0": 0.248935,
+        "Y1": 0.553938
+      },
+      "iprg": 4.52622e-07,
+      "gpt51": {
+        "pred": 0.2443,
+        "latency": 9.3,
+        "tokens": 2102,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k3 (3 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 6,
+      "n_nodes": 8,
+      "truth": 0.530134,
+      "per_debtor": {
+        "Y0": 0.530134,
+        "Y1": 0.654889
+      },
+      "iprg": 2.31905e-07,
+      "gpt51": {
+        "pred": 0.53,
+        "latency": 14.1,
+        "tokens": 2568,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k3 (3 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 7,
+      "n_nodes": 8,
+      "truth": 0.316404,
+      "per_debtor": {
+        "Y0": 0.316404,
+        "Y1": 0.577595
+      },
+      "iprg": 3.13896e-07,
+      "gpt51": {
+        "pred": 0.3168,
+        "latency": 12.7,
+        "tokens": 2453,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k3 (3 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 8,
+      "n_nodes": 8,
+      "truth": 0.300568,
+      "per_debtor": {
+        "Y0": 0.300568,
+        "Y1": 0.440382
+      },
+      "iprg": 2.40965e-07,
+      "gpt51": {
+        "pred": 0.3006,
+        "latency": 10.5,
+        "tokens": 2207,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k3 (3 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 9,
+      "n_nodes": 8,
+      "truth": 0.333309,
+      "per_debtor": {
+        "Y0": 0.333309,
+        "Y1": 0.312283
+      },
+      "iprg": 4.76044e-07,
+      "gpt51": {
+        "pred": 0.3333,
+        "latency": 11.8,
+        "tokens": 2578,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k4 (4 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 0,
+      "n_nodes": 9,
+      "truth": 0.829866,
+      "per_debtor": {
+        "Y0": 0.829866,
+        "Y1": 0.483724
+      },
+      "iprg": 4.0142e-07,
+      "gpt51": {
+        "pred": 0.7621,
+        "latency": 7.0,
+        "tokens": 2387,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k4 (4 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 1,
+      "n_nodes": 9,
+      "truth": 0.174947,
+      "per_debtor": {
+        "Y0": 0.174947,
+        "Y1": 0.344361
+      },
+      "iprg": 4.66632e-07,
+      "gpt51": {
+        "pred": 0.2013,
+        "latency": 11.8,
+        "tokens": 3135,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k4 (4 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 2,
+      "n_nodes": 9,
+      "truth": 0.492265,
+      "per_debtor": {
+        "Y0": 0.492265,
+        "Y1": 0.170897
+      },
+      "iprg": 1.68687e-07,
+      "gpt51": {
+        "pred": 0.116,
+        "latency": 10.8,
+        "tokens": 2967,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k4 (4 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 3,
+      "n_nodes": 9,
+      "truth": 0.330524,
+      "per_debtor": {
+        "Y0": 0.330524,
+        "Y1": 0.753031
+      },
+      "iprg": 4.23487e-07,
+      "gpt51": {
+        "pred": 0.5886,
+        "latency": 10.5,
+        "tokens": 3124,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k4 (4 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 4,
+      "n_nodes": 9,
+      "truth": 0.33959,
+      "per_debtor": {
+        "Y0": 0.33959,
+        "Y1": 0.231246
+      },
+      "iprg": 2.72377e-07,
+      "gpt51": {
+        "pred": 0.4248,
+        "latency": 8.3,
+        "tokens": 2567,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k4 (4 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 5,
+      "n_nodes": 9,
+      "truth": 0.12868,
+      "per_debtor": {
+        "Y0": 0.12868,
+        "Y1": 0.316022
+      },
+      "iprg": 3.81565e-07,
+      "gpt51": {
+        "pred": 0.1287,
+        "latency": 15.5,
+        "tokens": 3745,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k4 (4 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 6,
+      "n_nodes": 9,
+      "truth": 0.798607,
+      "per_debtor": {
+        "Y0": 0.798607,
+        "Y1": 0.323538
+      },
+      "iprg": 4.91033e-07,
+      "gpt51": {
+        "pred": 0.7941,
+        "latency": 13.3,
+        "tokens": 3487,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k4 (4 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 7,
+      "n_nodes": 9,
+      "truth": 0.616587,
+      "per_debtor": {
+        "Y0": 0.616587,
+        "Y1": 0.460717
+      },
+      "iprg": 4.07096e-07,
+      "gpt51": {
+        "pred": 0.6167,
+        "latency": 13.9,
+        "tokens": 3690,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k4 (4 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 8,
+      "n_nodes": 9,
+      "truth": 0.208191,
+      "per_debtor": {
+        "Y0": 0.208191,
+        "Y1": 0.500132
+      },
+      "iprg": 2.1347e-07,
+      "gpt51": {
+        "pred": 0.2081,
+        "latency": 17.7,
+        "tokens": 3601,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k4 (4 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 9,
+      "n_nodes": 9,
+      "truth": 0.825376,
+      "per_debtor": {
+        "Y0": 0.825376,
+        "Y1": 0.35337
+      },
+      "iprg": 2.34713e-07,
+      "gpt51": {
+        "pred": 0.6713,
+        "latency": 10.2,
+        "tokens": 2699,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k5 (5 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 0,
+      "n_nodes": 10,
+      "truth": 0.672625,
+      "per_debtor": {
+        "Y0": 0.672625,
+        "Y1": 0.516096
+      },
+      "iprg": 4.55383e-07,
+      "gpt51": {
+        "pred": 0.6717,
+        "latency": 6.9,
+        "tokens": 4272,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k5 (5 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 1,
+      "n_nodes": 10,
+      "truth": 0.565188,
+      "per_debtor": {
+        "Y0": 0.565188,
+        "Y1": 0.315058
+      },
+      "iprg": 9.2583e-08,
+      "gpt51": {
+        "pred": 0.548,
+        "latency": 7.7,
+        "tokens": 4391,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k5 (5 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 2,
+      "n_nodes": 10,
+      "truth": 0.327373,
+      "per_debtor": {
+        "Y0": 0.327373,
+        "Y1": 0.71384
+      },
+      "iprg": 3.7775e-07,
+      "gpt51": {
+        "pred": 0.3277,
+        "latency": 7.4,
+        "tokens": 4200,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k5 (5 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 3,
+      "n_nodes": 10,
+      "truth": 0.666702,
+      "per_debtor": {
+        "Y0": 0.666702,
+        "Y1": 0.535262
+      },
+      "iprg": 4.49652e-07,
+      "gpt51": {
+        "pred": 0.6782,
+        "latency": 7.3,
+        "tokens": 4192,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k5 (5 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 4,
+      "n_nodes": 10,
+      "truth": 0.420182,
+      "per_debtor": {
+        "Y0": 0.420182,
+        "Y1": 0.533639
+      },
+      "iprg": 4.10033e-07,
+      "gpt51": {
+        "pred": 0.4111,
+        "latency": 7.0,
+        "tokens": 4308,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k5 (5 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 5,
+      "n_nodes": 10,
+      "truth": 0.38182,
+      "per_debtor": {
+        "Y0": 0.38182,
+        "Y1": 0.570916
+      },
+      "iprg": 4.90942e-07,
+      "gpt51": {
+        "pred": 0.3818,
+        "latency": 5.9,
+        "tokens": 4130,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k5 (5 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 6,
+      "n_nodes": 10,
+      "truth": 0.350668,
+      "per_debtor": {
+        "Y0": 0.350668,
+        "Y1": 0.54789
+      },
+      "iprg": 3.23194e-07,
+      "gpt51": {
+        "pred": 0.3035,
+        "latency": 9.0,
+        "tokens": 4485,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k5 (5 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 7,
+      "n_nodes": 10,
+      "truth": 0.186378,
+      "per_debtor": {
+        "Y0": 0.186378,
+        "Y1": 0.598293
+      },
+      "iprg": 1.9449e-07,
+      "gpt51": {
+        "pred": 0.1869,
+        "latency": 6.9,
+        "tokens": 4255,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k5 (5 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 8,
+      "n_nodes": 10,
+      "truth": 0.871096,
+      "per_debtor": {
+        "Y0": 0.871096,
+        "Y1": 0.710354
+      },
+      "iprg": 4.63047e-07,
+      "gpt51": {
+        "pred": 0.8704,
+        "latency": 5.6,
+        "tokens": 4043,
+        "fail": null
+      }
+    },
+    {
+      "label": "contagion k5 (5 macro)",
+      "n_debtors": 2,
+      "portfolio": false,
+      "i": 9,
+      "n_nodes": 10,
+      "truth": 0.517597,
+      "per_debtor": {
+        "Y0": 0.517597,
+        "Y1": 0.693395
+      },
+      "iprg": 1.78606e-07,
+      "gpt51": {
+        "pred": 0.5213,
+        "latency": 6.3,
+        "tokens": 4196,
+        "fail": null
+      }
+    },
+    {
+      "label": "portfolio k4 (4 macro)",
+      "n_debtors": 3,
+      "portfolio": true,
+      "i": 0,
+      "n_nodes": 10,
+      "truth": 0.504431,
+      "per_debtor": {
+        "Y0": 0.401115,
+        "Y1": 0.337587,
+        "Y2": 0.77459
+      },
+      "iprg": 2.17099e-07,
+      "gpt51": {
+        "pred": 0.4659,
+        "latency": 17.7,
+        "tokens": 3735,
+        "fail": null
+      }
+    },
+    {
+      "label": "portfolio k4 (4 macro)",
+      "n_debtors": 3,
+      "portfolio": true,
+      "i": 1,
+      "n_nodes": 10,
+      "truth": 0.615372,
+      "per_debtor": {
+        "Y0": 0.65466,
+        "Y1": 0.511396,
+        "Y2": 0.68006
+      },
+      "iprg": 4.28991e-07,
+      "gpt51": {
+        "pred": 0.6127,
+        "latency": 12.8,
+        "tokens": 3265,
+        "fail": null
+      }
+    },
+    {
+      "label": "portfolio k4 (4 macro)",
+      "n_debtors": 3,
+      "portfolio": true,
+      "i": 2,
+      "n_nodes": 10,
+      "truth": 0.54051,
+      "per_debtor": {
+        "Y0": 0.465016,
+        "Y1": 0.733835,
+        "Y2": 0.422678
+      },
+      "iprg": 4.06074e-07,
+      "gpt51": {
+        "pred": 0.5376,
+        "latency": 11.8,
+        "tokens": 3106,
+        "fail": null
+      }
+    },
+    {
+      "label": "portfolio k4 (4 macro)",
+      "n_debtors": 3,
+      "portfolio": true,
+      "i": 3,
+      "n_nodes": 10,
+      "truth": 0.429339,
+      "per_debtor": {
+        "Y0": 0.45881,
+        "Y1": 0.382289,
+        "Y2": 0.446919
+      },
+      "iprg": 2.9948e-07,
+      "gpt51": {
+        "pred": 0.4406,
+        "latency": 14.3,
+        "tokens": 3250,
+        "fail": null
+      }
+    },
+    {
+      "label": "portfolio k4 (4 macro)",
+      "n_debtors": 3,
+      "portfolio": true,
+      "i": 4,
+      "n_nodes": 10,
+      "truth": 0.597443,
+      "per_debtor": {
+        "Y0": 0.525737,
+        "Y1": 0.610827,
+        "Y2": 0.655764
+      },
+      "iprg": 2.52156e-07,
+      "gpt51": {
+        "pred": 0.6083,
+        "latency": 8.9,
+        "tokens": 2957,
+        "fail": null
+      }
+    },
+    {
+      "label": "portfolio k4 (4 macro)",
+      "n_debtors": 3,
+      "portfolio": true,
+      "i": 5,
+      "n_nodes": 10,
+      "truth": 0.533793,
+      "per_debtor": {
+        "Y0": 0.646066,
+        "Y1": 0.49327,
+        "Y2": 0.462043
+      },
+      "iprg": 4.17967e-07,
+      "gpt51": {
+        "pred": 0.5115,
+        "latency": 9.8,
+        "tokens": 3078,
+        "fail": null
+      }
+    },
+    {
+      "label": "portfolio k4 (4 macro)",
+      "n_debtors": 3,
+      "portfolio": true,
+      "i": 6,
+      "n_nodes": 10,
+      "truth": 0.444919,
+      "per_debtor": {
+        "Y0": 0.564064,
+        "Y1": 0.508255,
+        "Y2": 0.262439
+      },
+      "iprg": 3.91326e-07,
+      "gpt51": {
+        "pred": 0.4572,
+        "latency": 6.0,
+        "tokens": 2673,
+        "fail": null
+      }
+    },
+    {
+      "label": "portfolio k4 (4 macro)",
+      "n_debtors": 3,
+      "portfolio": true,
+      "i": 7,
+      "n_nodes": 10,
+      "truth": 0.554755,
+      "per_debtor": {
+        "Y0": 0.541157,
+        "Y1": 0.591853,
+        "Y2": 0.531255
+      },
+      "iprg": 3.4413e-07,
+      "gpt51": {
+        "pred": 0.5369,
+        "latency": 10.2,
+        "tokens": 3074,
+        "fail": null
+      }
+    },
+    {
+      "label": "portfolio k4 (4 macro)",
+      "n_debtors": 3,
+      "portfolio": true,
+      "i": 8,
+      "n_nodes": 10,
+      "truth": 0.520313,
+      "per_debtor": {
+        "Y0": 0.471238,
+        "Y1": 0.468259,
+        "Y2": 0.621441
+      },
+      "iprg": 3.45606e-07,
+      "gpt51": {
+        "pred": 0.4511,
+        "latency": 9.4,
+        "tokens": 2931,
+        "fail": null
+      }
+    },
+    {
+      "label": "portfolio k4 (4 macro)",
+      "n_debtors": 3,
+      "portfolio": true,
+      "i": 9,
+      "n_nodes": 10,
+      "truth": 0.48648,
+      "per_debtor": {
+        "Y0": 0.500805,
+        "Y1": 0.490999,
+        "Y2": 0.467635
+      },
+      "iprg": 4.27196e-07,
+      "gpt51": {
+        "pred": 0.4568,
+        "latency": 13.6,
+        "tokens": 3425,
+        "fail": null
+      }
+    }
+  ]
+}

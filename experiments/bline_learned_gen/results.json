@@ -1,0 +1,8 @@
+{
+  "target": 0.3,
+  "accept_rate": 0.88,
+  "accepted": 176,
+  "n": 200,
+  "random_baseline_rate": 0.03,
+  "gate": true
+}

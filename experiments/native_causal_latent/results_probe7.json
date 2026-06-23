@@ -1,0 +1,13 @@
+{
+  "truth_do1": 0.716018,
+  "A_residual": 0.033282,
+  "B_scaling": [
+    0.036623,
+    0.028345,
+    0.03452
+  ],
+  "C_residual_unobserved": 0.092437,
+  "C_drift": 0.000278,
+  "C_evalue": 3.4817,
+  "gate": true
+}

@@ -18,3 +18,15 @@ htmlcov/
 # OS
 .DS_Store
 ops/key_usage_log.jsonl
+
+# secrets — NEVER commit API keys (defense in depth; real keys live in ~/.theone_keys.env)
+*.env
+.env
+*keys*.env
+.theone_keys.env
+*.pem
+*.key
+secrets/
+local_data/
+*.sqlite
+*.db

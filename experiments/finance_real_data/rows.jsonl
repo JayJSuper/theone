@@ -1,0 +1,12 @@
+{"do": 0, "trial": 0, "truth": 0.286183, "gpt51": {"pred": 0.2865, "latency": 9.6, "tokens": 1839, "fail": null}}
+{"do": 0, "trial": 1, "truth": 0.286183, "gpt51": {"pred": 0.2862, "latency": 8.6, "tokens": 1828, "fail": null}}
+{"do": 0, "trial": 2, "truth": 0.286183, "gpt51": {"pred": 0.2866, "latency": 7.1, "tokens": 1734, "fail": null}}
+{"do": 0, "trial": 3, "truth": 0.286183, "gpt51": {"pred": 0.2862, "latency": 6.1, "tokens": 1688, "fail": null}}
+{"do": 0, "trial": 4, "truth": 0.286183, "gpt51": {"pred": 0.2857, "latency": 9.3, "tokens": 1845, "fail": null}}
+{"do": 0, "trial": 5, "truth": 0.286183, "gpt51": {"pred": 0.2863, "latency": 7.6, "tokens": 1700, "fail": null}}
+{"do": 1, "trial": 0, "truth": 0.330331, "gpt51": {"pred": 0.3304, "latency": 7.7, "tokens": 2002, "fail": null}}
+{"do": 1, "trial": 1, "truth": 0.330331, "gpt51": {"pred": 0.3311, "latency": 6.9, "tokens": 1836, "fail": null}}
+{"do": 1, "trial": 2, "truth": 0.330331, "gpt51": {"pred": 0.3309, "latency": 6.1, "tokens": 1746, "fail": null}}
+{"do": 1, "trial": 3, "truth": 0.330331, "gpt51": {"pred": 0.3308, "latency": 7.1, "tokens": 1689, "fail": null}}
+{"do": 1, "trial": 4, "truth": 0.330331, "gpt51": {"pred": 0.3303, "latency": 8.1, "tokens": 1917, "fail": null}}
+{"do": 1, "trial": 5, "truth": 0.330331, "gpt51": {"pred": 0.3319, "latency": 7.8, "tokens": 1958, "fail": null}}

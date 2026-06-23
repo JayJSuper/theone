@@ -1,0 +1,32 @@
+{
+  "len k2 d0": {
+    "two_k": 4,
+    "words": 66,
+    "acc": 1.0,
+    "protocol_fails": 0
+  },
+  "len k2 d200": {
+    "two_k": 4,
+    "words": 266,
+    "acc": 1.0,
+    "protocol_fails": 0
+  },
+  "len k2 d440 (>k7 len, low)": {
+    "two_k": 4,
+    "words": 506,
+    "acc": 1.0,
+    "protocol_fails": 0
+  },
+  "cliff k6 d0": {
+    "two_k": 64,
+    "words": 282,
+    "acc": 0.875,
+    "protocol_fails": 0
+  },
+  "cliff k7 d0 (short, high)": {
+    "two_k": 128,
+    "words": 483,
+    "acc": 0.125,
+    "protocol_fails": 4
+  }
+}

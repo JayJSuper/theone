@@ -1,0 +1,180 @@
+{"label": "len-ctrl k2 d0", "k": 2, "d": 0, "i": 0, "truth": 0.65635, "prompt_words": 66, "gpt51": {"pred": 0.655, "latency": 6.1, "tokens": 1014, "fail": null}}
+{"label": "len-ctrl k2 d0", "k": 2, "d": 0, "i": 1, "truth": 0.681557, "prompt_words": 66, "gpt51": {"pred": 0.6823, "latency": 3.9, "tokens": 968, "fail": null}}
+{"label": "len-ctrl k2 d0", "k": 2, "d": 0, "i": 2, "truth": 0.516708, "prompt_words": 66, "gpt51": {"pred": 0.5167, "latency": 3.7, "tokens": 835, "fail": null}}
+{"label": "len-ctrl k2 d0", "k": 2, "d": 0, "i": 3, "truth": 0.648288, "prompt_words": 66, "gpt51": {"pred": 0.6488, "latency": 4.0, "tokens": 887, "fail": null}}
+{"label": "len-ctrl k2 d0", "k": 2, "d": 0, "i": 4, "truth": 0.56685, "prompt_words": 66, "gpt51": {"pred": 0.5663, "latency": 4.8, "tokens": 996, "fail": null}}
+{"label": "len-ctrl k2 d0", "k": 2, "d": 0, "i": 5, "truth": 0.763187, "prompt_words": 66, "gpt51": {"pred": 0.7636, "latency": 5.2, "tokens": 862, "fail": null}}
+{"label": "len-ctrl k2 d0", "k": 2, "d": 0, "i": 6, "truth": 0.593684, "prompt_words": 66, "gpt51": {"pred": 0.5937, "latency": 4.0, "tokens": 832, "fail": null}}
+{"label": "len-ctrl k2 d0", "k": 2, "d": 0, "i": 7, "truth": 0.536942, "prompt_words": 66, "gpt51": {"pred": 0.5376, "latency": 3.6, "tokens": 923, "fail": null}}
+{"label": "len-ctrl k2 d0", "k": 2, "d": 0, "i": 8, "truth": 0.560991, "prompt_words": 66, "gpt51": {"pred": 0.5619, "latency": 3.7, "tokens": 915, "fail": null}}
+{"label": "len-ctrl k2 d0", "k": 2, "d": 0, "i": 9, "truth": 0.440031, "prompt_words": 66, "gpt51": {"pred": 0.4403, "latency": 4.6, "tokens": 1021, "fail": null}}
+{"label": "len-ctrl k2 d0", "k": 2, "d": 0, "i": 10, "truth": 0.255314, "prompt_words": 66, "gpt51": {"pred": 0.2554, "latency": 4.3, "tokens": 960, "fail": null}}
+{"label": "len-ctrl k2 d0", "k": 2, "d": 0, "i": 11, "truth": 0.445581, "prompt_words": 66, "gpt51": {"pred": 0.4457, "latency": 5.7, "tokens": 979, "fail": null}}
+{"label": "len-ctrl k2 d0", "k": 2, "d": 0, "i": 12, "truth": 0.488671, "prompt_words": 66, "gpt51": {"pred": 0.4887, "latency": 4.1, "tokens": 935, "fail": null}}
+{"label": "len-ctrl k2 d0", "k": 2, "d": 0, "i": 13, "truth": 0.412081, "prompt_words": 66, "gpt51": {"pred": 0.4112, "latency": 4.9, "tokens": 883, "fail": null}}
+{"label": "len-ctrl k2 d0", "k": 2, "d": 0, "i": 14, "truth": 0.58438, "prompt_words": 66, "gpt51": {"pred": 0.5847, "latency": 6.8, "tokens": 1261, "fail": null}}
+{"label": "len-ctrl k2 d0", "k": 2, "d": 0, "i": 15, "truth": 0.357402, "prompt_words": 66, "gpt51": {"pred": 0.3575, "latency": 3.7, "tokens": 860, "fail": null}}
+{"label": "len-ctrl k2 d0", "k": 2, "d": 0, "i": 16, "truth": 0.655815, "prompt_words": 66, "gpt51": {"pred": 0.6557, "latency": 4.9, "tokens": 920, "fail": null}}
+{"label": "len-ctrl k2 d0", "k": 2, "d": 0, "i": 17, "truth": 0.385115, "prompt_words": 66, "gpt51": {"pred": 0.3851, "latency": 3.4, "tokens": 856, "fail": null}}
+{"label": "len-ctrl k2 d0", "k": 2, "d": 0, "i": 18, "truth": 0.430388, "prompt_words": 66, "gpt51": {"pred": 0.431, "latency": 4.4, "tokens": 1022, "fail": null}}
+{"label": "len-ctrl k2 d0", "k": 2, "d": 0, "i": 19, "truth": 0.378588, "prompt_words": 66, "gpt51": {"pred": 0.3776, "latency": 3.7, "tokens": 919, "fail": null}}
+{"label": "len-ctrl k2 d10", "k": 2, "d": 10, "i": 0, "truth": 0.456452, "prompt_words": 76, "gpt51": {"pred": 0.4566, "latency": 4.9, "tokens": 1088, "fail": null}}
+{"label": "len-ctrl k2 d10", "k": 2, "d": 10, "i": 1, "truth": 0.42487, "prompt_words": 76, "gpt51": {"pred": 0.4246, "latency": 6.2, "tokens": 1428, "fail": null}}
+{"label": "len-ctrl k2 d10", "k": 2, "d": 10, "i": 2, "truth": 0.500453, "prompt_words": 76, "gpt51": {"pred": 0.501, "latency": 4.0, "tokens": 958, "fail": null}}
+{"label": "len-ctrl k2 d10", "k": 2, "d": 10, "i": 3, "truth": 0.610449, "prompt_words": 76, "gpt51": {"pred": 0.6106, "latency": 3.7, "tokens": 976, "fail": null}}
+{"label": "len-ctrl k2 d10", "k": 2, "d": 10, "i": 4, "truth": 0.425325, "prompt_words": 76, "gpt51": {"pred": 0.4256, "latency": 4.5, "tokens": 1197, "fail": null}}
+{"label": "len-ctrl k2 d10", "k": 2, "d": 10, "i": 5, "truth": 0.519185, "prompt_words": 76, "gpt51": {"pred": 0.5192, "latency": 3.8, "tokens": 1050, "fail": null}}
+{"label": "len-ctrl k2 d10", "k": 2, "d": 10, "i": 6, "truth": 0.468972, "prompt_words": 76, "gpt51": {"pred": 0.469, "latency": 3.7, "tokens": 1069, "fail": null}}
+{"label": "len-ctrl k2 d10", "k": 2, "d": 10, "i": 7, "truth": 0.368033, "prompt_words": 76, "gpt51": {"pred": 0.3683, "latency": 3.7, "tokens": 975, "fail": null}}
+{"label": "len-ctrl k2 d10", "k": 2, "d": 10, "i": 8, "truth": 0.446679, "prompt_words": 76, "gpt51": {"pred": 0.4469, "latency": 5.5, "tokens": 1243, "fail": null}}
+{"label": "len-ctrl k2 d10", "k": 2, "d": 10, "i": 9, "truth": 0.405331, "prompt_words": 76, "gpt51": {"pred": 0.4053, "latency": 4.5, "tokens": 1114, "fail": null}}
+{"label": "len-ctrl k2 d10", "k": 2, "d": 10, "i": 10, "truth": 0.559116, "prompt_words": 76, "gpt51": {"pred": 0.5594, "latency": 3.9, "tokens": 989, "fail": null}}
+{"label": "len-ctrl k2 d10", "k": 2, "d": 10, "i": 11, "truth": 0.28363, "prompt_words": 76, "gpt51": {"pred": 0.2836, "latency": 5.8, "tokens": 1039, "fail": null}}
+{"label": "len-ctrl k2 d10", "k": 2, "d": 10, "i": 12, "truth": 0.611617, "prompt_words": 76, "gpt51": {"pred": 0.6114, "latency": 4.0, "tokens": 1053, "fail": null}}
+{"label": "len-ctrl k2 d10", "k": 2, "d": 10, "i": 13, "truth": 0.668167, "prompt_words": 76, "gpt51": {"pred": 0.6683, "latency": 5.6, "tokens": 1112, "fail": null}}
+{"label": "len-ctrl k2 d10", "k": 2, "d": 10, "i": 14, "truth": 0.345398, "prompt_words": 76, "gpt51": {"pred": 0.346, "latency": 5.2, "tokens": 1212, "fail": null}}
+{"label": "len-ctrl k2 d10", "k": 2, "d": 10, "i": 15, "truth": 0.373577, "prompt_words": 76, "gpt51": {"pred": 0.3738, "latency": 4.0, "tokens": 1044, "fail": null}}
+{"label": "len-ctrl k2 d10", "k": 2, "d": 10, "i": 16, "truth": 0.470788, "prompt_words": 76, "gpt51": {"pred": 0.4708, "latency": 4.0, "tokens": 951, "fail": null}}
+{"label": "len-ctrl k2 d10", "k": 2, "d": 10, "i": 17, "truth": 0.5788, "prompt_words": 76, "gpt51": {"pred": 0.5785, "latency": 4.8, "tokens": 1012, "fail": null}}
+{"label": "len-ctrl k2 d10", "k": 2, "d": 10, "i": 18, "truth": 0.461525, "prompt_words": 76, "gpt51": {"pred": 0.4616, "latency": 4.7, "tokens": 1141, "fail": null}}
+{"label": "len-ctrl k2 d10", "k": 2, "d": 10, "i": 19, "truth": 0.792274, "prompt_words": 76, "gpt51": {"pred": 0.792, "latency": 4.3, "tokens": 1003, "fail": null}}
+{"label": "len-ctrl k2 d25", "k": 2, "d": 25, "i": 0, "truth": 0.175975, "prompt_words": 91, "gpt51": {"pred": 0.176, "latency": 7.3, "tokens": 1169, "fail": null}}
+{"label": "len-ctrl k2 d25", "k": 2, "d": 25, "i": 1, "truth": 0.507654, "prompt_words": 91, "gpt51": {"pred": 0.5074, "latency": 5.6, "tokens": 1089, "fail": null}}
+{"label": "len-ctrl k2 d25", "k": 2, "d": 25, "i": 2, "truth": 0.512428, "prompt_words": 91, "gpt51": {"pred": 0.5129, "latency": 8.9, "tokens": 1191, "fail": null}}
+{"label": "len-ctrl k2 d25", "k": 2, "d": 25, "i": 3, "truth": 0.421047, "prompt_words": 91, "gpt51": {"pred": 0.4211, "latency": 7.1, "tokens": 1247, "fail": null}}
+{"label": "len-ctrl k2 d25", "k": 2, "d": 25, "i": 4, "truth": 0.813601, "prompt_words": 91, "gpt51": {"pred": null, "latency": 8.7, "tokens": 0, "fail": "HTTP Error 400: Bad Request"}}
+{"label": "len-ctrl k2 d25", "k": 2, "d": 25, "i": 5, "truth": 0.47667, "prompt_words": 91, "gpt51": {"pred": 0.4771, "latency": 3.6, "tokens": 1103, "fail": null}}
+{"label": "len-ctrl k2 d25", "k": 2, "d": 25, "i": 6, "truth": 0.35441, "prompt_words": 91, "gpt51": {"pred": 0.3543, "latency": 5.3, "tokens": 1076, "fail": null}}
+{"label": "len-ctrl k2 d25", "k": 2, "d": 25, "i": 7, "truth": 0.327794, "prompt_words": 91, "gpt51": {"pred": 0.3285, "latency": 6.3, "tokens": 1129, "fail": null}}
+{"label": "len-ctrl k2 d25", "k": 2, "d": 25, "i": 8, "truth": 0.374184, "prompt_words": 91, "gpt51": {"pred": 0.3779, "latency": 9.1, "tokens": 1524, "fail": null}}
+{"label": "len-ctrl k2 d25", "k": 2, "d": 25, "i": 9, "truth": 0.433174, "prompt_words": 91, "gpt51": {"pred": 0.4332, "latency": 6.3, "tokens": 1265, "fail": null}}
+{"label": "len-ctrl k2 d25", "k": 2, "d": 25, "i": 10, "truth": 0.654448, "prompt_words": 91, "gpt51": {"pred": 0.6544, "latency": 8.1, "tokens": 1312, "fail": null}}
+{"label": "len-ctrl k2 d25", "k": 2, "d": 25, "i": 11, "truth": 0.27654, "prompt_words": 91, "gpt51": {"pred": 0.2765, "latency": 5.1, "tokens": 1099, "fail": null}}
+{"label": "len-ctrl k2 d25", "k": 2, "d": 25, "i": 12, "truth": 0.345604, "prompt_words": 91, "gpt51": {"pred": 0.3466, "latency": 4.9, "tokens": 1248, "fail": null}}
+{"label": "len-ctrl k2 d25", "k": 2, "d": 25, "i": 13, "truth": 0.572808, "prompt_words": 91, "gpt51": {"pred": 0.573, "latency": 7.4, "tokens": 1270, "fail": null}}
+{"label": "len-ctrl k2 d25", "k": 2, "d": 25, "i": 14, "truth": 0.648426, "prompt_words": 91, "gpt51": {"pred": 0.6479, "latency": 7.5, "tokens": 1252, "fail": null}}
+{"label": "len-ctrl k2 d25", "k": 2, "d": 25, "i": 15, "truth": 0.348475, "prompt_words": 91, "gpt51": {"pred": 0.3492, "latency": 9.6, "tokens": 1541, "fail": null}}
+{"label": "len-ctrl k2 d25", "k": 2, "d": 25, "i": 16, "truth": 0.503966, "prompt_words": 91, "gpt51": {"pred": 0.5037, "latency": 5.4, "tokens": 1192, "fail": null}}
+{"label": "len-ctrl k2 d25", "k": 2, "d": 25, "i": 17, "truth": 0.336427, "prompt_words": 91, "gpt51": {"pred": 0.3369, "latency": 4.5, "tokens": 1096, "fail": null}}
+{"label": "len-ctrl k2 d25", "k": 2, "d": 25, "i": 18, "truth": 0.548018, "prompt_words": 91, "gpt51": {"pred": 0.548, "latency": 4.9, "tokens": 1082, "fail": null}}
+{"label": "len-ctrl k2 d25", "k": 2, "d": 25, "i": 19, "truth": 0.612218, "prompt_words": 91, "gpt51": {"pred": 0.6127, "latency": 8.2, "tokens": 1229, "fail": null}}
+{"label": "len-ctrl k2 d45", "k": 2, "d": 45, "i": 0, "truth": 0.526528, "prompt_words": 111, "gpt51": {"pred": 0.5268, "latency": 4.1, "tokens": 1217, "fail": null}}
+{"label": "len-ctrl k2 d45", "k": 2, "d": 45, "i": 1, "truth": 0.590249, "prompt_words": 111, "gpt51": {"pred": null, "latency": 8.7, "tokens": 0, "fail": "HTTP Error 400: Bad Request"}}
+{"label": "len-ctrl k2 d45", "k": 2, "d": 45, "i": 2, "truth": 0.529822, "prompt_words": 111, "gpt51": {"pred": 0.5303, "latency": 7.1, "tokens": 1440, "fail": null}}
+{"label": "len-ctrl k2 d45", "k": 2, "d": 45, "i": 3, "truth": 0.596483, "prompt_words": 111, "gpt51": {"pred": 0.596, "latency": 6.6, "tokens": 1398, "fail": null}}
+{"label": "len-ctrl k2 d45", "k": 2, "d": 45, "i": 4, "truth": 0.435489, "prompt_words": 111, "gpt51": {"pred": 0.4354, "latency": 4.6, "tokens": 1452, "fail": null}}
+{"label": "len-ctrl k2 d45", "k": 2, "d": 45, "i": 5, "truth": 0.530386, "prompt_words": 111, "gpt51": {"pred": 0.5293, "latency": 5.8, "tokens": 1479, "fail": null}}
+{"label": "len-ctrl k2 d45", "k": 2, "d": 45, "i": 6, "truth": 0.585755, "prompt_words": 111, "gpt51": {"pred": 0.5856, "latency": 4.4, "tokens": 1223, "fail": null}}
+{"label": "len-ctrl k2 d45", "k": 2, "d": 45, "i": 7, "truth": 0.378901, "prompt_words": 111, "gpt51": {"pred": 0.3788, "latency": 4.0, "tokens": 1272, "fail": null}}
+{"label": "len-ctrl k2 d45", "k": 2, "d": 45, "i": 8, "truth": 0.637924, "prompt_words": 111, "gpt51": {"pred": 0.6377, "latency": 5.0, "tokens": 1297, "fail": null}}
+{"label": "len-ctrl k2 d45", "k": 2, "d": 45, "i": 9, "truth": 0.473233, "prompt_words": 111, "gpt51": {"pred": 0.4733, "latency": 4.4, "tokens": 1345, "fail": null}}
+{"label": "len-ctrl k2 d45", "k": 2, "d": 45, "i": 10, "truth": 0.48429, "prompt_words": 111, "gpt51": {"pred": 0.4843, "latency": 7.7, "tokens": 1754, "fail": null}}
+{"label": "len-ctrl k2 d45", "k": 2, "d": 45, "i": 11, "truth": 0.597646, "prompt_words": 111, "gpt51": {"pred": 0.5972, "latency": 5.2, "tokens": 1407, "fail": null}}
+{"label": "len-ctrl k2 d45", "k": 2, "d": 45, "i": 12, "truth": 0.452033, "prompt_words": 111, "gpt51": {"pred": 0.4521, "latency": 5.5, "tokens": 1263, "fail": null}}
+{"label": "len-ctrl k2 d45", "k": 2, "d": 45, "i": 13, "truth": 0.513852, "prompt_words": 111, "gpt51": {"pred": 0.5151, "latency": 5.9, "tokens": 1467, "fail": null}}
+{"label": "len-ctrl k2 d45", "k": 2, "d": 45, "i": 14, "truth": 0.274886, "prompt_words": 111, "gpt51": {"pred": 0.2749, "latency": 6.0, "tokens": 1453, "fail": null}}
+{"label": "len-ctrl k2 d45", "k": 2, "d": 45, "i": 15, "truth": 0.598495, "prompt_words": 111, "gpt51": {"pred": 0.6002, "latency": 4.7, "tokens": 1335, "fail": null}}
+{"label": "len-ctrl k2 d45", "k": 2, "d": 45, "i": 16, "truth": 0.554131, "prompt_words": 111, "gpt51": {"pred": 0.5546, "latency": 5.3, "tokens": 1464, "fail": null}}
+{"label": "len-ctrl k2 d45", "k": 2, "d": 45, "i": 17, "truth": 0.451904, "prompt_words": 111, "gpt51": {"pred": 0.4529, "latency": 6.6, "tokens": 1565, "fail": null}}
+{"label": "len-ctrl k2 d45", "k": 2, "d": 45, "i": 18, "truth": 0.455525, "prompt_words": 111, "gpt51": {"pred": 0.4551, "latency": 6.3, "tokens": 1417, "fail": null}}
+{"label": "len-ctrl k2 d45", "k": 2, "d": 45, "i": 19, "truth": 0.599791, "prompt_words": 111, "gpt51": {"pred": 0.6006, "latency": 5.1, "tokens": 1365, "fail": null}}
+{"label": "cliff k4 d0", "k": 4, "d": 0, "i": 0, "truth": 0.563716, "prompt_words": 120, "gpt51": {"pred": 0.5428, "latency": 10.8, "tokens": 2978, "fail": null}}
+{"label": "cliff k4 d0", "k": 4, "d": 0, "i": 1, "truth": 0.37816, "prompt_words": 120, "gpt51": {"pred": 0.3788, "latency": 10.9, "tokens": 2827, "fail": null}}
+{"label": "cliff k4 d0", "k": 4, "d": 0, "i": 2, "truth": 0.49305, "prompt_words": 120, "gpt51": {"pred": 0.4937, "latency": 12.7, "tokens": 2942, "fail": null}}
+{"label": "cliff k4 d0", "k": 4, "d": 0, "i": 3, "truth": 0.391381, "prompt_words": 120, "gpt51": {"pred": 0.2315, "latency": 7.8, "tokens": 2432, "fail": null}}
+{"label": "cliff k4 d0", "k": 4, "d": 0, "i": 4, "truth": 0.427136, "prompt_words": 120, "gpt51": {"pred": 0.4288, "latency": 17.2, "tokens": 3070, "fail": null}}
+{"label": "cliff k4 d0", "k": 4, "d": 0, "i": 5, "truth": 0.38878, "prompt_words": 120, "gpt51": {"pred": 0.3912, "latency": 11.3, "tokens": 2965, "fail": null}}
+{"label": "cliff k4 d0", "k": 4, "d": 0, "i": 6, "truth": 0.464665, "prompt_words": 120, "gpt51": {"pred": 0.4659, "latency": 14.7, "tokens": 2941, "fail": null}}
+{"label": "cliff k4 d0", "k": 4, "d": 0, "i": 7, "truth": 0.501081, "prompt_words": 120, "gpt51": {"pred": 0.5034, "latency": 14.6, "tokens": 2843, "fail": null}}
+{"label": "cliff k4 d0", "k": 4, "d": 0, "i": 8, "truth": 0.680176, "prompt_words": 120, "gpt51": {"pred": 0.6835, "latency": 14.9, "tokens": 2773, "fail": null}}
+{"label": "cliff k4 d0", "k": 4, "d": 0, "i": 9, "truth": 0.456461, "prompt_words": 120, "gpt51": {"pred": 0.3733, "latency": 6.4, "tokens": 2424, "fail": null}}
+{"label": "cliff k4 d0", "k": 4, "d": 0, "i": 10, "truth": 0.514585, "prompt_words": 120, "gpt51": {"pred": 0.513, "latency": 8.9, "tokens": 2644, "fail": null}}
+{"label": "cliff k4 d0", "k": 4, "d": 0, "i": 11, "truth": 0.396725, "prompt_words": 120, "gpt51": {"pred": 0.3962, "latency": 12.7, "tokens": 2903, "fail": null}}
+{"label": "cliff k4 d0", "k": 4, "d": 0, "i": 12, "truth": 0.377447, "prompt_words": 120, "gpt51": {"pred": 0.2769, "latency": 9.0, "tokens": 2814, "fail": null}}
+{"label": "cliff k4 d0", "k": 4, "d": 0, "i": 13, "truth": 0.443466, "prompt_words": 120, "gpt51": {"pred": 0.4597, "latency": 6.9, "tokens": 2465, "fail": null}}
+{"label": "cliff k4 d0", "k": 4, "d": 0, "i": 14, "truth": 0.43631, "prompt_words": 120, "gpt51": {"pred": 0.4339, "latency": 13.5, "tokens": 2944, "fail": null}}
+{"label": "cliff k4 d0", "k": 4, "d": 0, "i": 15, "truth": 0.385978, "prompt_words": 120, "gpt51": {"pred": 0.3842, "latency": 10.1, "tokens": 2876, "fail": null}}
+{"label": "cliff k4 d0", "k": 4, "d": 0, "i": 16, "truth": 0.525534, "prompt_words": 120, "gpt51": {"pred": 0.5354, "latency": 10.8, "tokens": 2917, "fail": null}}
+{"label": "cliff k4 d0", "k": 4, "d": 0, "i": 17, "truth": 0.473116, "prompt_words": 120, "gpt51": {"pred": 0.4631, "latency": 7.3, "tokens": 2492, "fail": null}}
+{"label": "cliff k4 d0", "k": 4, "d": 0, "i": 18, "truth": 0.513217, "prompt_words": 120, "gpt51": {"pred": 0.5241, "latency": 8.3, "tokens": 2622, "fail": null}}
+{"label": "cliff k4 d0", "k": 4, "d": 0, "i": 19, "truth": 0.474203, "prompt_words": 120, "gpt51": {"pred": 0.4719, "latency": 9.0, "tokens": 2938, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 0, "truth": 0.610244, "prompt_words": 177, "gpt51": {"pred": 0.1272, "latency": 11.3, "tokens": 4650, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 1, "truth": 0.53489, "prompt_words": 177, "gpt51": {"pred": 0.1883, "latency": 10.8, "tokens": 4569, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 2, "truth": 0.43823, "prompt_words": 177, "gpt51": {"pred": 0.4875, "latency": 10.8, "tokens": 4571, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 3, "truth": 0.550141, "prompt_words": 177, "gpt51": {"pred": 0.0363, "latency": 13.0, "tokens": 4361, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 4, "truth": 0.492369, "prompt_words": 177, "gpt51": {"pred": 0.4499, "latency": 4.2, "tokens": 3700, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 5, "truth": 0.431758, "prompt_words": 177, "gpt51": {"pred": 0.4608, "latency": 5.0, "tokens": 3733, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 6, "truth": 0.569239, "prompt_words": 177, "gpt51": {"pred": 0.5417, "latency": 4.3, "tokens": 3613, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 7, "truth": 0.550694, "prompt_words": 177, "gpt51": {"pred": 0.5632, "latency": 15.5, "tokens": 5065, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 8, "truth": 0.357665, "prompt_words": 177, "gpt51": {"pred": 0.4279, "latency": 11.6, "tokens": 3701, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 9, "truth": 0.539939, "prompt_words": 177, "gpt51": {"pred": 0.4652, "latency": 6.4, "tokens": 3877, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 10, "truth": 0.502279, "prompt_words": 177, "gpt51": {"pred": 0.4845, "latency": 3.5, "tokens": 3636, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 11, "truth": 0.291827, "prompt_words": 177, "gpt51": {"pred": 0.4949, "latency": 10.4, "tokens": 4590, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 12, "truth": 0.374643, "prompt_words": 177, "gpt51": {"pred": 0.465, "latency": 3.7, "tokens": 3624, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 13, "truth": 0.48444, "prompt_words": 177, "gpt51": {"pred": 0.4005, "latency": 9.9, "tokens": 4383, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 14, "truth": 0.527751, "prompt_words": 177, "gpt51": {"pred": 0.5071, "latency": 3.2, "tokens": 3542, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 15, "truth": 0.496931, "prompt_words": 177, "gpt51": {"pred": 0.7145, "latency": 9.3, "tokens": 4916, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 16, "truth": 0.40866, "prompt_words": 177, "gpt51": {"pred": 0.5179, "latency": 15.9, "tokens": 3781, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 17, "truth": 0.480884, "prompt_words": 177, "gpt51": {"pred": 0.5483, "latency": 33.5, "tokens": 4833, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 18, "truth": 0.518728, "prompt_words": 177, "gpt51": {"pred": 0.4933, "latency": 5.1, "tokens": 3639, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 19, "truth": 0.480451, "prompt_words": 177, "gpt51": {"pred": 0.5792, "latency": 16.8, "tokens": 4683, "fail": null}}
+{"label": "DECISIVE k2 d45 (long,low)", "k": 2, "d": 45, "i": 0, "truth": 0.526528, "prompt_words": 111, "gpt51": {"pred": 0.5268, "latency": 6.1, "tokens": 1416, "fail": null}}
+{"label": "DECISIVE k2 d45 (long,low)", "k": 2, "d": 45, "i": 1, "truth": 0.590249, "prompt_words": 111, "gpt51": {"pred": 0.5891, "latency": 6.5, "tokens": 1436, "fail": null}}
+{"label": "DECISIVE k2 d45 (long,low)", "k": 2, "d": 45, "i": 2, "truth": 0.529822, "prompt_words": 111, "gpt51": {"pred": 0.5288, "latency": 6.7, "tokens": 1418, "fail": null}}
+{"label": "DECISIVE k2 d45 (long,low)", "k": 2, "d": 45, "i": 3, "truth": 0.596483, "prompt_words": 111, "gpt51": {"pred": 0.5959, "latency": 7.0, "tokens": 1342, "fail": null}}
+{"label": "DECISIVE k2 d45 (long,low)", "k": 2, "d": 45, "i": 4, "truth": 0.435489, "prompt_words": 111, "gpt51": {"pred": 0.4355, "latency": 5.4, "tokens": 1289, "fail": null}}
+{"label": "DECISIVE k2 d45 (long,low)", "k": 2, "d": 45, "i": 5, "truth": 0.530386, "prompt_words": 111, "gpt51": {"pred": 0.5291, "latency": 9.5, "tokens": 1426, "fail": null}}
+{"label": "DECISIVE k2 d45 (long,low)", "k": 2, "d": 45, "i": 6, "truth": 0.585755, "prompt_words": 111, "gpt51": {"pred": 0.5862, "latency": 5.9, "tokens": 1435, "fail": null}}
+{"label": "DECISIVE k2 d45 (long,low)", "k": 2, "d": 45, "i": 7, "truth": 0.378901, "prompt_words": 111, "gpt51": {"pred": 0.3811, "latency": 12.9, "tokens": 1485, "fail": null}}
+{"label": "DECISIVE k2 d45 (long,low)", "k": 2, "d": 45, "i": 8, "truth": 0.637924, "prompt_words": 111, "gpt51": {"pred": 0.6384, "latency": 8.1, "tokens": 1420, "fail": null}}
+{"label": "DECISIVE k2 d45 (long,low)", "k": 2, "d": 45, "i": 9, "truth": 0.473233, "prompt_words": 111, "gpt51": {"pred": 0.4728, "latency": 5.9, "tokens": 1355, "fail": null}}
+{"label": "DECISIVE k2 d45 (long,low)", "k": 2, "d": 45, "i": 10, "truth": 0.48429, "prompt_words": 111, "gpt51": {"pred": 0.4845, "latency": 7.0, "tokens": 1445, "fail": null}}
+{"label": "DECISIVE k2 d45 (long,low)", "k": 2, "d": 45, "i": 11, "truth": 0.597646, "prompt_words": 111, "gpt51": {"pred": 0.5976, "latency": 8.1, "tokens": 1337, "fail": null}}
+{"label": "DECISIVE k2 d45 (long,low)", "k": 2, "d": 45, "i": 12, "truth": 0.452033, "prompt_words": 111, "gpt51": {"pred": 0.4522, "latency": 5.5, "tokens": 1331, "fail": null}}
+{"label": "DECISIVE k2 d45 (long,low)", "k": 2, "d": 45, "i": 13, "truth": 0.513852, "prompt_words": 111, "gpt51": {"pred": 0.5141, "latency": 5.5, "tokens": 1369, "fail": null}}
+{"label": "DECISIVE k2 d45 (long,low)", "k": 2, "d": 45, "i": 14, "truth": 0.274886, "prompt_words": 111, "gpt51": {"pred": 0.2747, "latency": 6.6, "tokens": 1426, "fail": null}}
+{"label": "DECISIVE k2 d45 (long,low)", "k": 2, "d": 45, "i": 15, "truth": 0.598495, "prompt_words": 111, "gpt51": {"pred": 0.5985, "latency": 4.2, "tokens": 1290, "fail": null}}
+{"label": "DECISIVE k2 d45 (long,low)", "k": 2, "d": 45, "i": 16, "truth": 0.554131, "prompt_words": 111, "gpt51": {"pred": 0.5552, "latency": 5.1, "tokens": 1226, "fail": null}}
+{"label": "DECISIVE k2 d45 (long,low)", "k": 2, "d": 45, "i": 17, "truth": 0.451904, "prompt_words": 111, "gpt51": {"pred": 0.4519, "latency": 5.2, "tokens": 1441, "fail": null}}
+{"label": "DECISIVE k2 d45 (long,low)", "k": 2, "d": 45, "i": 18, "truth": 0.455525, "prompt_words": 111, "gpt51": {"pred": 0.4551, "latency": 4.7, "tokens": 1409, "fail": null}}
+{"label": "DECISIVE k2 d45 (long,low)", "k": 2, "d": 45, "i": 19, "truth": 0.599791, "prompt_words": 111, "gpt51": {"pred": 0.6008, "latency": 4.1, "tokens": 1300, "fail": null}}
+{"label": "DECISIVE k5 d0 (short,high)", "k": 5, "d": 0, "i": 0, "truth": 0.610244, "prompt_words": 177, "gpt51": {"pred": 0.8797, "latency": 13.0, "tokens": 4935, "fail": null}}
+{"label": "DECISIVE k5 d0 (short,high)", "k": 5, "d": 0, "i": 1, "truth": 0.53489, "prompt_words": 177, "gpt51": {"pred": 0.5401, "latency": 5.1, "tokens": 3755, "fail": null}}
+{"label": "DECISIVE k5 d0 (short,high)", "k": 5, "d": 0, "i": 2, "truth": 0.43823, "prompt_words": 177, "gpt51": {"pred": 0.4587, "latency": 4.0, "tokens": 3595, "fail": null}}
+{"label": "DECISIVE k5 d0 (short,high)", "k": 5, "d": 0, "i": 3, "truth": 0.550141, "prompt_words": 177, "gpt51": {"pred": 0.5136, "latency": 3.8, "tokens": 3622, "fail": null}}
+{"label": "DECISIVE k5 d0 (short,high)", "k": 5, "d": 0, "i": 4, "truth": 0.492369, "prompt_words": 177, "gpt51": {"pred": 0.4616, "latency": 3.9, "tokens": 3645, "fail": null}}
+{"label": "DECISIVE k5 d0 (short,high)", "k": 5, "d": 0, "i": 5, "truth": 0.431758, "prompt_words": 177, "gpt51": {"pred": 0.484, "latency": 4.0, "tokens": 3622, "fail": null}}
+{"label": "DECISIVE k5 d0 (short,high)", "k": 5, "d": 0, "i": 6, "truth": 0.569239, "prompt_words": 177, "gpt51": {"pred": 0.5816, "latency": 6.8, "tokens": 3661, "fail": null}}
+{"label": "DECISIVE k5 d0 (short,high)", "k": 5, "d": 0, "i": 7, "truth": 0.550694, "prompt_words": 177, "gpt51": {"pred": 0.531, "latency": 3.3, "tokens": 3611, "fail": null}}
+{"label": "DECISIVE k5 d0 (short,high)", "k": 5, "d": 0, "i": 8, "truth": 0.357665, "prompt_words": 177, "gpt51": {"pred": 0.422, "latency": 6.3, "tokens": 3813, "fail": null}}
+{"label": "DECISIVE k5 d0 (short,high)", "k": 5, "d": 0, "i": 9, "truth": 0.539939, "prompt_words": 177, "gpt51": {"pred": 0.5152, "latency": 4.9, "tokens": 3711, "fail": null}}
+{"label": "DECISIVE k5 d0 (short,high)", "k": 5, "d": 0, "i": 10, "truth": 0.502279, "prompt_words": 177, "gpt51": {"pred": 0.4873, "latency": 4.7, "tokens": 3739, "fail": null}}
+{"label": "DECISIVE k5 d0 (short,high)", "k": 5, "d": 0, "i": 11, "truth": 0.291827, "prompt_words": 177, "gpt51": {"pred": 0.4912, "latency": 3.9, "tokens": 3706, "fail": null}}
+{"label": "DECISIVE k5 d0 (short,high)", "k": 5, "d": 0, "i": 12, "truth": 0.374643, "prompt_words": 177, "gpt51": {"pred": 0.3239, "latency": 9.6, "tokens": 4423, "fail": null}}
+{"label": "DECISIVE k5 d0 (short,high)", "k": 5, "d": 0, "i": 13, "truth": 0.48444, "prompt_words": 177, "gpt51": {"pred": 0.2338, "latency": 14.1, "tokens": 4735, "fail": null}}
+{"label": "DECISIVE k5 d0 (short,high)", "k": 5, "d": 0, "i": 14, "truth": 0.527751, "prompt_words": 177, "gpt51": {"pred": null, "latency": 3.8, "tokens": 3490, "fail": "no ANSWER"}}
+{"label": "DECISIVE k5 d0 (short,high)", "k": 5, "d": 0, "i": 15, "truth": 0.496931, "prompt_words": 177, "gpt51": {"pred": 0.6342, "latency": 11.5, "tokens": 5072, "fail": null}}
+{"label": "DECISIVE k5 d0 (short,high)", "k": 5, "d": 0, "i": 16, "truth": 0.40866, "prompt_words": 177, "gpt51": {"pred": 0.4947, "latency": 3.9, "tokens": 3658, "fail": null}}
+{"label": "DECISIVE k5 d0 (short,high)", "k": 5, "d": 0, "i": 17, "truth": 0.480884, "prompt_words": 177, "gpt51": {"pred": 0.6466, "latency": 17.8, "tokens": 4984, "fail": null}}
+{"label": "DECISIVE k5 d0 (short,high)", "k": 5, "d": 0, "i": 18, "truth": 0.518728, "prompt_words": 177, "gpt51": {"pred": 0.4375, "latency": 3.4, "tokens": 3612, "fail": null}}
+{"label": "DECISIVE k5 d0 (short,high)", "k": 5, "d": 0, "i": 19, "truth": 0.480451, "prompt_words": 177, "gpt51": {"pred": 0.5125, "latency": 13.7, "tokens": 4926, "fail": null}}
+{"label": "MATCHLEN k2 d120 (>=k5 len, low)", "k": 2, "d": 120, "i": 0, "truth": 0.571872, "prompt_words": 186, "gpt51": {"pred": 0.5727, "latency": 3.6, "tokens": 2056, "fail": null}}
+{"label": "MATCHLEN k2 d120 (>=k5 len, low)", "k": 2, "d": 120, "i": 1, "truth": 0.352912, "prompt_words": 186, "gpt51": {"pred": 0.3539, "latency": 5.6, "tokens": 2129, "fail": null}}
+{"label": "MATCHLEN k2 d120 (>=k5 len, low)", "k": 2, "d": 120, "i": 2, "truth": 0.487137, "prompt_words": 186, "gpt51": {"pred": 0.4872, "latency": 5.0, "tokens": 2062, "fail": null}}
+{"label": "MATCHLEN k2 d120 (>=k5 len, low)", "k": 2, "d": 120, "i": 3, "truth": 0.438989, "prompt_words": 186, "gpt51": {"pred": 0.4381, "latency": 8.7, "tokens": 2778, "fail": null}}
+{"label": "MATCHLEN k2 d120 (>=k5 len, low)", "k": 2, "d": 120, "i": 4, "truth": 0.412235, "prompt_words": 186, "gpt51": {"pred": 0.4123, "latency": 4.7, "tokens": 2082, "fail": null}}
+{"label": "MATCHLEN k2 d120 (>=k5 len, low)", "k": 2, "d": 120, "i": 5, "truth": 0.744689, "prompt_words": 186, "gpt51": {"pred": 0.7448, "latency": 6.2, "tokens": 2067, "fail": null}}
+{"label": "MATCHLEN k2 d120 (>=k5 len, low)", "k": 2, "d": 120, "i": 6, "truth": 0.593602, "prompt_words": 186, "gpt51": {"pred": 0.5929, "latency": 5.9, "tokens": 2163, "fail": null}}
+{"label": "MATCHLEN k2 d120 (>=k5 len, low)", "k": 2, "d": 120, "i": 7, "truth": 0.530117, "prompt_words": 186, "gpt51": {"pred": 0.5304, "latency": 11.3, "tokens": 2183, "fail": null}}
+{"label": "MATCHLEN k2 d120 (>=k5 len, low)", "k": 2, "d": 120, "i": 8, "truth": 0.270265, "prompt_words": 186, "gpt51": {"pred": 0.2695, "latency": 5.8, "tokens": 2203, "fail": null}}
+{"label": "MATCHLEN k2 d120 (>=k5 len, low)", "k": 2, "d": 120, "i": 9, "truth": 0.221665, "prompt_words": 186, "gpt51": {"pred": 0.2216, "latency": 7.4, "tokens": 2179, "fail": null}}
+{"label": "MATCHLEN k2 d120 (>=k5 len, low)", "k": 2, "d": 120, "i": 10, "truth": 0.497305, "prompt_words": 186, "gpt51": {"pred": 0.4977, "latency": 6.9, "tokens": 2063, "fail": null}}
+{"label": "MATCHLEN k2 d120 (>=k5 len, low)", "k": 2, "d": 120, "i": 11, "truth": 0.420569, "prompt_words": 186, "gpt51": {"pred": 0.4201, "latency": 5.8, "tokens": 2300, "fail": null}}
+{"label": "MATCHLEN k2 d120 (>=k5 len, low)", "k": 2, "d": 120, "i": 12, "truth": 0.289036, "prompt_words": 186, "gpt51": {"pred": 0.289, "latency": 4.7, "tokens": 2087, "fail": null}}
+{"label": "MATCHLEN k2 d120 (>=k5 len, low)", "k": 2, "d": 120, "i": 13, "truth": 0.585517, "prompt_words": 186, "gpt51": {"pred": 0.5855, "latency": 5.4, "tokens": 2020, "fail": null}}
+{"label": "MATCHLEN k2 d120 (>=k5 len, low)", "k": 2, "d": 120, "i": 14, "truth": 0.638053, "prompt_words": 186, "gpt51": {"pred": 0.6381, "latency": 5.0, "tokens": 2200, "fail": null}}
+{"label": "MATCHLEN k2 d120 (>=k5 len, low)", "k": 2, "d": 120, "i": 15, "truth": 0.388796, "prompt_words": 186, "gpt51": {"pred": 0.3891, "latency": 4.1, "tokens": 2071, "fail": null}}
+{"label": "MATCHLEN k2 d120 (>=k5 len, low)", "k": 2, "d": 120, "i": 16, "truth": 0.500347, "prompt_words": 186, "gpt51": {"pred": 0.5004, "latency": 5.6, "tokens": 2053, "fail": null}}
+{"label": "MATCHLEN k2 d120 (>=k5 len, low)", "k": 2, "d": 120, "i": 17, "truth": 0.457166, "prompt_words": 186, "gpt51": {"pred": 0.4565, "latency": 3.8, "tokens": 1942, "fail": null}}
+{"label": "MATCHLEN k2 d120 (>=k5 len, low)", "k": 2, "d": 120, "i": 18, "truth": 0.488911, "prompt_words": 186, "gpt51": {"pred": 0.4893, "latency": 6.2, "tokens": 2158, "fail": null}}
+{"label": "MATCHLEN k2 d120 (>=k5 len, low)", "k": 2, "d": 120, "i": 19, "truth": 0.471398, "prompt_words": 186, "gpt51": {"pred": 0.4718, "latency": 6.3, "tokens": 2155, "fail": null}}

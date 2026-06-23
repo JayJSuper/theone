@@ -1,0 +1,9 @@
+services:
+  theone:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      # mount your keys read-only; they are never committed or baked into the image
+      - ~/.theone_keys.env:/root/.theone_keys.env:ro
+    restart: unless-stopped

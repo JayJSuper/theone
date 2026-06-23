@@ -1,0 +1,8 @@
+{
+  "model": "gemini-2.5-pro",
+  "n": 23,
+  "accuracy": 0.522,
+  "conf_correct": 99.6,
+  "conf_wrong": 99.4,
+  "anti_calibrated": true
+}

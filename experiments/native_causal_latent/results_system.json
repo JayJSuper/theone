@@ -1,0 +1,84 @@
+{
+  "truth": 0.726799,
+  "rows": [
+    {
+      "scenario": "clean (p=8, \u03c3=0.4)",
+      "decision": "ANSWER",
+      "do_hat": 0.7224364720881231,
+      "recompute_gap": 0.0003012851640180614,
+      "ci": [
+        0.7155245843550526,
+        0.7294967367224158
+      ],
+      "ci_width": 0.013972152367363155,
+      "subset_spread": 0.00038467962475430273,
+      "true_residual": 0.004362749444019709,
+      "ci_covers_truth": true,
+      "reasons": []
+    },
+    {
+      "scenario": "ok    (p=8, \u03c3=0.8)",
+      "decision": "ANSWER",
+      "do_hat": 0.7293882072766898,
+      "recompute_gap": 0.00024144044033125311,
+      "ci": [
+        0.7218699232934502,
+        0.736094392129
+      ],
+      "ci_width": 0.01422446883554973,
+      "subset_spread": 0.0015088111555872086,
+      "true_residual": 0.0025889857445470232,
+      "ci_covers_truth": true,
+      "reasons": []
+    },
+    {
+      "scenario": "noisy (p=8, \u03c3=1.6)",
+      "decision": "ABSTAIN",
+      "do_hat": 0.7577237297417981,
+      "recompute_gap": 0.010123769391487625,
+      "ci": [
+        0.7521318304561078,
+        0.7637989221676762
+      ],
+      "ci_width": 0.011667091711568434,
+      "subset_spread": 0.005146585299195872,
+      "true_residual": 0.03092450820965531,
+      "ci_covers_truth": false,
+      "reasons": [
+        "recompute_gap 0.010>0.01"
+      ]
+    },
+    {
+      "scenario": "sparse(p=1, \u03c3=0.8)",
+      "decision": "ABSTAIN",
+      "do_hat": 0.7715551077588515,
+      "recompute_gap": 0.00939905737457114,
+      "ci": [
+        0.7631275325362772,
+        0.7777588684800405
+      ],
+      "ci_width": 0.014631335943763313,
+      "subset_spread": NaN,
+      "true_residual": 0.044755886226708674,
+      "ci_covers_truth": false,
+      "reasons": [
+        "single proxy: completeness uncheckable"
+      ]
+    },
+    {
+      "scenario": "interact(p=8,\u03c3=.4,d=1)",
+      "decision": "ANSWER",
+      "do_hat": 0.7284326349934926,
+      "recompute_gap": 0.009456984076130825,
+      "ci": [
+        0.7217949653415853,
+        0.7349339958513148
+      ],
+      "ci_width": 0.013139030509729532,
+      "subset_spread": 0.00037386145342821475,
+      "true_residual": 0.0016334134613498197,
+      "ci_covers_truth": true,
+      "reasons": []
+    }
+  ]
+}

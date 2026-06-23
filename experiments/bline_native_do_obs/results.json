@@ -1,0 +1,6 @@
+{
+  "mae_observed": 0.014345,
+  "mae_latent": 0.042282,
+  "irreducible_spread_median": 0.1679,
+  "gate": true
+}

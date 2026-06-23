@@ -1,0 +1,40 @@
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 0, "truth": 0.487369, "prompt_words": 66, "claude": {"pred": 0.4874, "latency": 4.7, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 1, "truth": 0.503835, "prompt_words": 66, "claude": {"pred": 0.5038, "latency": 4.7, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 2, "truth": 0.451814, "prompt_words": 66, "claude": {"pred": 0.4518, "latency": 4.4, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 3, "truth": 0.414756, "prompt_words": 66, "claude": {"pred": 0.4148, "latency": 8.3, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 4, "truth": 0.368238, "prompt_words": 66, "claude": {"pred": 0.3682, "latency": 5.0, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 5, "truth": 0.734417, "prompt_words": 66, "claude": {"pred": 0.7344, "latency": 4.8, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 6, "truth": 0.591481, "prompt_words": 66, "claude": {"pred": 0.5915, "latency": 3.5, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 7, "truth": 0.769918, "prompt_words": 66, "claude": {"pred": 0.7699, "latency": 4.1, "fail": null}}
+{"label": "len k2 d200", "k": 2, "d": 200, "i": 0, "truth": 0.440305, "prompt_words": 266, "claude": {"pred": 0.4403, "latency": 5.6, "fail": null}}
+{"label": "len k2 d200", "k": 2, "d": 200, "i": 1, "truth": 0.452905, "prompt_words": 266, "claude": {"pred": 0.4529, "latency": 6.0, "fail": null}}
+{"label": "len k2 d200", "k": 2, "d": 200, "i": 2, "truth": 0.549928, "prompt_words": 266, "claude": {"pred": 0.5499, "latency": 5.2, "fail": null}}
+{"label": "len k2 d200", "k": 2, "d": 200, "i": 3, "truth": 0.360878, "prompt_words": 266, "claude": {"pred": 0.3609, "latency": 5.6, "fail": null}}
+{"label": "len k2 d200", "k": 2, "d": 200, "i": 4, "truth": 0.381116, "prompt_words": 266, "claude": {"pred": 0.3811, "latency": 4.9, "fail": null}}
+{"label": "len k2 d200", "k": 2, "d": 200, "i": 5, "truth": 0.408825, "prompt_words": 266, "claude": {"pred": 0.4088, "latency": 5.7, "fail": null}}
+{"label": "len k2 d200", "k": 2, "d": 200, "i": 6, "truth": 0.780865, "prompt_words": 266, "claude": {"pred": 0.7809, "latency": 6.2, "fail": null}}
+{"label": "len k2 d200", "k": 2, "d": 200, "i": 7, "truth": 0.669897, "prompt_words": 266, "claude": {"pred": 0.6699, "latency": 4.3, "fail": null}}
+{"label": "len k2 d440 (>k7 len, low)", "k": 2, "d": 440, "i": 0, "truth": 0.635023, "prompt_words": 506, "claude": {"pred": 0.635, "latency": 6.9, "fail": null}}
+{"label": "len k2 d440 (>k7 len, low)", "k": 2, "d": 440, "i": 1, "truth": 0.5705, "prompt_words": 506, "claude": {"pred": 0.5705, "latency": 4.4, "fail": null}}
+{"label": "len k2 d440 (>k7 len, low)", "k": 2, "d": 440, "i": 2, "truth": 0.483615, "prompt_words": 506, "claude": {"pred": 0.4836, "latency": 5.9, "fail": null}}
+{"label": "len k2 d440 (>k7 len, low)", "k": 2, "d": 440, "i": 3, "truth": 0.448735, "prompt_words": 506, "claude": {"pred": 0.4487, "latency": 5.3, "fail": null}}
+{"label": "len k2 d440 (>k7 len, low)", "k": 2, "d": 440, "i": 4, "truth": 0.44536, "prompt_words": 506, "claude": {"pred": 0.4453, "latency": 4.1, "fail": null}}
+{"label": "len k2 d440 (>k7 len, low)", "k": 2, "d": 440, "i": 5, "truth": 0.512774, "prompt_words": 506, "claude": {"pred": 0.5128, "latency": 4.5, "fail": null}}
+{"label": "len k2 d440 (>k7 len, low)", "k": 2, "d": 440, "i": 6, "truth": 0.566052, "prompt_words": 506, "claude": {"pred": 0.5661, "latency": 5.4, "fail": null}}
+{"label": "len k2 d440 (>k7 len, low)", "k": 2, "d": 440, "i": 7, "truth": 0.65807, "prompt_words": 506, "claude": {"pred": 0.6581, "latency": 3.9, "fail": null}}
+{"label": "cliff k6 d0", "k": 6, "d": 0, "i": 0, "truth": 0.426048, "prompt_words": 282, "claude": {"pred": 0.4261, "latency": 31.1, "fail": null}}
+{"label": "cliff k6 d0", "k": 6, "d": 0, "i": 1, "truth": 0.465899, "prompt_words": 282, "claude": {"pred": 0.4659, "latency": 37.6, "fail": null}}
+{"label": "cliff k6 d0", "k": 6, "d": 0, "i": 2, "truth": 0.532835, "prompt_words": 282, "claude": {"pred": 0.5323, "latency": 42.3, "fail": null}}
+{"label": "cliff k6 d0", "k": 6, "d": 0, "i": 3, "truth": 0.484359, "prompt_words": 282, "claude": {"pred": 0.4844, "latency": 31.9, "fail": null}}
+{"label": "cliff k6 d0", "k": 6, "d": 0, "i": 4, "truth": 0.500708, "prompt_words": 282, "claude": {"pred": 0.5007, "latency": 27.3, "fail": null}}
+{"label": "cliff k6 d0", "k": 6, "d": 0, "i": 5, "truth": 0.484579, "prompt_words": 282, "claude": {"pred": 0.4972, "latency": 38.2, "fail": null}}
+{"label": "cliff k6 d0", "k": 6, "d": 0, "i": 6, "truth": 0.4985, "prompt_words": 282, "claude": {"pred": 0.4986, "latency": 35.0, "fail": null}}
+{"label": "cliff k6 d0", "k": 6, "d": 0, "i": 7, "truth": 0.498046, "prompt_words": 282, "claude": {"pred": 0.4948, "latency": 36.8, "fail": null}}
+{"label": "cliff k7 d0 (short, high)", "k": 7, "d": 0, "i": 0, "truth": 0.499467, "prompt_words": 483, "claude": {"pred": null, "latency": 46.7, "fail": "no ANSWER"}}
+{"label": "cliff k7 d0 (short, high)", "k": 7, "d": 0, "i": 1, "truth": 0.495692, "prompt_words": 483, "claude": {"pred": null, "latency": 42.1, "fail": "no ANSWER"}}
+{"label": "cliff k7 d0 (short, high)", "k": 7, "d": 0, "i": 2, "truth": 0.46843, "prompt_words": 483, "claude": {"pred": null, "latency": 40.1, "fail": "no ANSWER"}}
+{"label": "cliff k7 d0 (short, high)", "k": 7, "d": 0, "i": 3, "truth": 0.526812, "prompt_words": 483, "claude": {"pred": 0.5024, "latency": 8.3, "fail": null}}
+{"label": "cliff k7 d0 (short, high)", "k": 7, "d": 0, "i": 4, "truth": 0.486822, "prompt_words": 483, "claude": {"pred": null, "latency": 45.2, "fail": "no ANSWER"}}
+{"label": "cliff k7 d0 (short, high)", "k": 7, "d": 0, "i": 5, "truth": 0.522457, "prompt_words": 483, "claude": {"pred": 0.5225, "latency": 44.8, "fail": null}}
+{"label": "cliff k7 d0 (short, high)", "k": 7, "d": 0, "i": 6, "truth": 0.465027, "prompt_words": 483, "claude": {"pred": 0.4521, "latency": 11.2, "fail": null}}
+{"label": "cliff k7 d0 (short, high)", "k": 7, "d": 0, "i": 7, "truth": 0.513914, "prompt_words": 483, "claude": {"pred": 0.4998, "latency": 7.8, "fail": null}}

@@ -1,0 +1,183 @@
+{
+  "config_fp": "8ed9f51a96c39fbd",
+  "config": {
+    "seeds": 12,
+    "epochs": 300,
+    "lam": 1.0,
+    "n_train": 512,
+    "n_test": 256,
+    "n_samples": 500,
+    "ate_n": 40000,
+    "b_extra": 0.7,
+    "train_seed": 400000,
+    "test_seed_base": 500000,
+    "crossform": [
+      {
+        "form": "linear",
+        "p_range": [
+          0.0,
+          0.4
+        ]
+      },
+      {
+        "form": "sigmoid",
+        "p_range": [
+          0.0,
+          0.4
+        ]
+      },
+      {
+        "form": "interaction",
+        "p_range": [
+          0.0,
+          0.4
+        ]
+      },
+      {
+        "form": "quadratic",
+        "p_range": [
+          0.0,
+          0.4
+        ]
+      }
+    ],
+    "withinform_shift": [
+      {
+        "form": "linear",
+        "p_range": [
+          0.2,
+          0.5
+        ]
+      },
+      {
+        "form": "linear",
+        "p_range": [
+          0.3,
+          0.6
+        ]
+      },
+      {
+        "form": "linear",
+        "p_range": [
+          0.4,
+          0.8
+        ]
+      }
+    ]
+  },
+  "complete": true,
+  "elapsed_sec": 6.5,
+  "within_form_cf_mse": 0.0012676260850307504,
+  "train_vital1_fraction": 1.0,
+  "crossform_names": [
+    "within-form linear (held-out)",
+    "cross-form sigmoid (tanh)",
+    "cross-form interaction (X*U)",
+    "cross-form quadratic (X^2)"
+  ],
+  "withinform_names": [
+    "within-form shift+ (0.2,0.5)",
+    "within-form shift++ (0.3,0.6)",
+    "within-form OOD (0.4,0.8)"
+  ],
+  "summary": {
+    "within-form linear (held-out)": {
+      "cf_mse_median": 0.0012676260850307504,
+      "cf_mse_iqr": [
+        0.0009345128164885871,
+        0.0015470213217521963
+      ],
+      "ratio_vs_within_form": 1.0,
+      "baseline_assoc_mse": 0.05852819053030091,
+      "baseline_bca95_lower": 0.05242901034650321,
+      "beats_baseline_point": true,
+      "beats_baseline_bca_lower": true,
+      "cf_truth_mean": 0.2409196294408326,
+      "cf_truth_std": 0.14338464457537597
+    },
+    "cross-form sigmoid (tanh)": {
+      "cf_mse_median": 0.03104126217197377,
+      "cf_mse_iqr": [
+        0.022881458587000213,
+        0.037857752967366265
+      ],
+      "ratio_vs_within_form": 24.487711746023876,
+      "baseline_assoc_mse": 0.07006192865765318,
+      "baseline_bca95_lower": 0.06391248412679779,
+      "beats_baseline_point": true,
+      "beats_baseline_bca_lower": true,
+      "cf_truth_mean": 0.637409380513982,
+      "cf_truth_std": 0.1464681897491823
+    },
+    "cross-form interaction (X*U)": {
+      "cf_mse_median": 0.004610727789886437,
+      "cf_mse_iqr": [
+        0.004194226868647713,
+        0.004984537731352797
+      ],
+      "ratio_vs_within_form": 3.637293239965623,
+      "baseline_assoc_mse": 0.052845698898929844,
+      "baseline_bca95_lower": 0.04674628730088473,
+      "beats_baseline_point": true,
+      "beats_baseline_bca_lower": true,
+      "cf_truth_mean": 0.24716647323734847,
+      "cf_truth_std": 0.14070966573756358
+    },
+    "cross-form quadratic (X^2)": {
+      "cf_mse_median": 0.4911914875575274,
+      "cf_mse_iqr": [
+        0.4901233559833483,
+        0.4922464525692673
+      ],
+      "ratio_vs_within_form": 387.48925519753084,
+      "baseline_assoc_mse": 0.27425026420925386,
+      "baseline_bca95_lower": 0.2540350771914869,
+      "beats_baseline_point": false,
+      "beats_baseline_bca_lower": false,
+      "cf_truth_mean": 0.9430909247981338,
+      "cf_truth_std": 0.14356300375811654
+    },
+    "within-form shift+ (0.2,0.5)": {
+      "cf_mse_median": 0.0019201663733807172,
+      "cf_mse_iqr": [
+        0.0017316546573666381,
+        0.0026123120624527703
+      ],
+      "ratio_vs_within_form": 1.5147734778068545,
+      "baseline_assoc_mse": 0.1332490331879306,
+      "baseline_bca95_lower": 0.1260038071730054,
+      "beats_baseline_point": true,
+      "beats_baseline_bca_lower": true,
+      "cf_truth_mean": 0.25727636204016013,
+      "cf_truth_std": 0.14820555528348692
+    },
+    "within-form shift++ (0.3,0.6)": {
+      "cf_mse_median": 0.005945935552253062,
+      "cf_mse_iqr": [
+        0.005315930366264408,
+        0.00728684049721614
+      ],
+      "ratio_vs_within_form": 4.690606814160679,
+      "baseline_assoc_mse": 0.22396712670611335,
+      "baseline_bca95_lower": 0.21357712148196079,
+      "beats_baseline_point": true,
+      "beats_baseline_bca_lower": true,
+      "cf_truth_mean": 0.2464655492591003,
+      "cf_truth_std": 0.15029043537981157
+    },
+    "within-form OOD (0.4,0.8)": {
+      "cf_mse_median": 0.01838666473374468,
+      "cf_mse_iqr": [
+        0.013756722391511123,
+        0.02034427718126655
+      ],
+      "ratio_vs_within_form": 14.504801495386276,
+      "baseline_assoc_mse": 0.37074433119867334,
+      "baseline_bca95_lower": 0.35426901950669837,
+      "beats_baseline_point": true,
+      "beats_baseline_bca_lower": true,
+      "cf_truth_mean": 0.25368000339861424,
+      "cf_truth_std": 0.13426003636173672
+    }
+  }
+}

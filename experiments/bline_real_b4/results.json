@@ -1,0 +1,8 @@
+{
+  "device": "mps",
+  "mae_heldout": 0.00288,
+  "mae_shifted": 0.00352,
+  "recompute": 0.00344,
+  "baseline": 0.1358,
+  "gate": true
+}

@@ -1,0 +1,29 @@
+{
+  "cases": [
+    {
+      "name": "A \u5f3a\u6548\u5e94,\u6df7\u6742\u53ef\u89c2\u6d4b",
+      "zone": "VERIFIABLE",
+      "structural_stability": 1.0,
+      "identifiable(confounder observed)": true,
+      "e_value(latent-confounding)": 4.994,
+      "observational_RR": 2.775
+    },
+    {
+      "name": "B \u5f31\u6548\u5e94,\u6df7\u6742\u53ef\u89c2\u6d4b",
+      "zone": "VERIFIABLE",
+      "structural_stability": 1.0,
+      "identifiable(confounder observed)": true,
+      "e_value(latent-confounding)": 3.192,
+      "observational_RR": 1.892
+    },
+    {
+      "name": "C \u6df7\u6742\u6f5c\u5728(\u53ea\u89c1X,Y),\u5173\u8054\u591a\u4e3a\u6df7\u6742",
+      "zone": "UNCERTAINTY_QUANTIFIED",
+      "structural_stability": 1.0,
+      "identifiable(confounder observed)": false,
+      "e_value(latent-confounding)": 3.131,
+      "observational_RR": 1.863
+    }
+  ],
+  "gate": true
+}

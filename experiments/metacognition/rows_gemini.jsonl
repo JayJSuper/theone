@@ -1,0 +1,24 @@
+{"k": 4, "i": 0, "truth": 0.421871, "pred": 0.4219, "conf": 99, "correct": true, "fail": null}
+{"k": 4, "i": 1, "truth": 0.43738, "pred": 0.4377, "conf": 100, "correct": true, "fail": null}
+{"k": 4, "i": 2, "truth": 0.702226, "pred": 0.6925, "conf": 100, "correct": false, "fail": null}
+{"k": 4, "i": 3, "truth": 0.288149, "pred": 0.288, "conf": 99, "correct": true, "fail": null}
+{"k": 4, "i": 4, "truth": 0.453028, "pred": 0.4531, "conf": 100, "correct": true, "fail": null}
+{"k": 4, "i": 5, "truth": 0.554845, "pred": 0.5547, "conf": 100, "correct": true, "fail": null}
+{"k": 4, "i": 6, "truth": 0.325237, "pred": 0.3254, "conf": 100, "correct": true, "fail": null}
+{"k": 4, "i": 7, "truth": 0.671442, "pred": 0.6708, "conf": 100, "correct": true, "fail": null}
+{"k": 5, "i": 0, "truth": 0.58569, "pred": 0.5859, "conf": 99, "correct": true, "fail": null}
+{"k": 5, "i": 1, "truth": 0.338365, "pred": 0.3383, "conf": 100, "correct": true, "fail": null}
+{"k": 5, "i": 2, "truth": 0.594307, "pred": 0.5944, "conf": 99, "correct": true, "fail": null}
+{"k": 5, "i": 3, "truth": 0.58451, "pred": 0.5695, "conf": 100, "correct": false, "fail": null}
+{"k": 5, "i": 4, "truth": 0.363503, "pred": 0.3632, "conf": 99, "correct": true, "fail": null}
+{"k": 5, "i": 5, "truth": 0.523677, "pred": 0.4968, "conf": 99, "correct": false, "fail": null}
+{"k": 5, "i": 6, "truth": 0.43257, "pred": 0.4688, "conf": 100, "correct": false, "fail": null}
+{"k": 5, "i": 7, "truth": 0.36445, "pred": 0.3643, "conf": 100, "correct": true, "fail": null}
+{"k": 6, "i": 0, "truth": 0.482412, "pred": 0.5, "conf": 100, "correct": false, "fail": null}
+{"k": 6, "i": 1, "truth": 0.424197, "pred": 0.5899, "conf": 98, "correct": false, "fail": null}
+{"k": 6, "i": 2, "truth": 0.605673, "pred": 0.552, "conf": 99, "correct": false, "fail": null}
+{"k": 6, "i": 3, "truth": 0.539296, "pred": 0.497, "conf": 100, "correct": false, "fail": null}
+{"k": 6, "i": 4, "truth": 0.403701, "pred": null, "conf": null, "correct": false, "fail": "Remote end closed connection without response"}
+{"k": 6, "i": 5, "truth": 0.538438, "pred": 0.4592, "conf": 99, "correct": false, "fail": null}
+{"k": 6, "i": 6, "truth": 0.372616, "pred": 0.4553, "conf": 99, "correct": false, "fail": null}
+{"k": 6, "i": 7, "truth": 0.3568, "pred": 0.4685, "conf": 99, "correct": false, "fail": null}

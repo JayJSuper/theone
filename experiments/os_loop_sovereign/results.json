@@ -1,0 +1,51 @@
+[
+  {
+    "query": "Does drinking coffee cause heart disease?",
+    "route": "s2_causal",
+    "memory_source": "sovereign_store(persistent)",
+    "recalled_mem_id": 1,
+    "recalled_signature": "coffee->heart_disease|adj=[smoking]|regime=identifiable:backdoor",
+    "strategy": "backdoor",
+    "engine_do_x1": 0.7,
+    "independently_verified": true,
+    "decision": "ANSWER"
+  },
+  {
+    "query": "What's the effect of advertising on sales?",
+    "route": "s2_causal",
+    "memory_source": "sovereign_store(persistent)",
+    "recalled_mem_id": 2,
+    "recalled_signature": "advertising->sales|adj=[season]|regime=identifiable:backdoor",
+    "strategy": "backdoor",
+    "engine_do_x1": 0.675,
+    "independently_verified": true,
+    "decision": "ANSWER"
+  },
+  {
+    "query": "Does sleep deprivation cause hair loss?",
+    "route": "s2_causal",
+    "memory_source": "sovereign_store(persistent)",
+    "recalled_mem_id": 3,
+    "recalled_signature": "sleep_deprivation->hair_loss|adj=[]|regime=unidentifiable:missing=['stress']",
+    "strategy": null,
+    "decision": "ABSTAIN",
+    "reason": "do-effect unidentifiable; missing ['stress']"
+  },
+  {
+    "query": "Does the supplement improve recovery?",
+    "route": "s2_causal",
+    "memory_source": "sovereign_store(persistent)",
+    "recalled_mem_id": 4,
+    "recalled_signature": "supplement->recovery|adj=[]|regime=identifiable:front_door",
+    "strategy": "front_door",
+    "engine_do_x1": 0.58,
+    "independently_verified": true,
+    "decision": "ANSWER_WITH_CAVEAT"
+  },
+  {
+    "query": "Will Bitcoin go up next week?",
+    "route": "abstain_forecast",
+    "decision": "ABSTAIN",
+    "reason": "forecast intent \u2014 out of causal scope"
+  }
+]

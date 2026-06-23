@@ -1,0 +1,43 @@
+[
+  {
+    "case": "engine, normal SCM, declared positive",
+    "value": 0.669495,
+    "do0": 0.307166,
+    "checks": {
+      "bounds_0_1": "PASS",
+      "monotone_positive": "PASS",
+      "normalised": "PASS"
+    },
+    "verdict": "ADMISSIBLE"
+  },
+  {
+    "case": "LLM cliff output 1.0179 (\u00a76.3)",
+    "value": 1.0179,
+    "checks": {
+      "bounds_0_1": "VIOLATED",
+      "monotone_positive": "PASS",
+      "normalised": "PASS"
+    },
+    "verdict": "INADMISSIBLE \u2192 ABSTAIN/flag"
+  },
+  {
+    "case": "LLM cliff output 1.28 (\u00a76.3)",
+    "value": 1.28,
+    "checks": {
+      "bounds_0_1": "VIOLATED",
+      "monotone_positive": "PASS",
+      "normalised": "PASS"
+    },
+    "verdict": "INADMISSIBLE \u2192 ABSTAIN/flag"
+  },
+  {
+    "case": "engine, misspecified SCM (sign flipped), declared positive",
+    "value": 0.319495,
+    "do0": 0.657166,
+    "checks": {
+      "bounds_0_1": "PASS",
+      "monotone_positive": "VIOLATED"
+    },
+    "verdict": "INADMISSIBLE \u2192 ABSTAIN/flag"
+  }
+]

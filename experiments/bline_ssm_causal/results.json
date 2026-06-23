@@ -1,0 +1,30 @@
+{
+  "truth": 0.726799,
+  "rows": [
+    {
+      "T": 1,
+      "do": 0.7938,
+      "residual": 0.067,
+      "recompute_gap": 0.0171
+    },
+    {
+      "T": 4,
+      "do": 0.7605,
+      "residual": 0.0337,
+      "recompute_gap": 0.01
+    },
+    {
+      "T": 16,
+      "do": 0.7341,
+      "residual": 0.0073,
+      "recompute_gap": 0.0003
+    },
+    {
+      "T": 64,
+      "do": 0.7312,
+      "residual": 0.0044,
+      "recompute_gap": 0.0033
+    }
+  ],
+  "gate": true
+}

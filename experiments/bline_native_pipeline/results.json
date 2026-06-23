@@ -1,0 +1,16 @@
+{
+  "truth": 0.726799,
+  "clean": {
+    "do_estimate": 0.7557,
+    "recompute_gap": 0.0007,
+    "abstain_drift": 0.0026,
+    "audit_vs_engine": 0.0289
+  },
+  "noisy": {
+    "do_estimate": 0.7982,
+    "recompute_gap": 0.0098,
+    "abstain_drift": 0.0025,
+    "audit_vs_engine": 0.0714
+  },
+  "gate": true
+}

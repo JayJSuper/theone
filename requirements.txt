@@ -1,0 +1,14 @@
+# The One — runtime dependencies (the verifiable kernel)
+numpy>=1.24
+networkx>=3.0
+scipy>=1.10
+pandas>=2.0
+pgmpy>=0.1.23
+scikit-learn>=1.3
+
+# HTTP product app (optional — kernel runs without these)
+fastapi>=0.110
+uvicorn>=0.28
+
+# dev
+pytest>=7.0

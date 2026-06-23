@@ -1,0 +1,9 @@
+{
+  "target": 0.3,
+  "tol": 0.02,
+  "batch": 3000,
+  "accepted": 85,
+  "accept_rate": 0.028333333333333332,
+  "recompute_max_gap": 2.220446049250313e-16,
+  "gate": true
+}

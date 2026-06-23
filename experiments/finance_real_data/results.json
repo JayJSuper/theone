@@ -1,0 +1,280 @@
+{
+  "data": {
+    "source": "sklearn fetch_openml('credit-g', version=1)",
+    "n_rows": 1000,
+    "median_credit_amount": 2319.5,
+    "binarization": {
+      "Y": "default = (class == 'bad')",
+      "X": "high loan = (credit_amount > median)",
+      "Semp": "unstable employment (employed <1yr or unemployed)",
+      "Shou": "non-owned housing (rent / for free)",
+      "Ssav": "low savings (checking-account savings <100 DM)"
+    }
+  },
+  "assumed_structure": {
+    "edges": [
+      "Semp->X",
+      "Shou->X",
+      "Ssav->X",
+      "Semp->Y",
+      "Shou->Y",
+      "Ssav->Y",
+      "X->Y"
+    ],
+    "adjustment_set": [
+      "Semp",
+      "Shou",
+      "Ssav"
+    ],
+    "disclaimer": "structure is a DOMAIN ASSUMPTION, not discovered from data"
+  },
+  "cpt_support_counts": {
+    "Semp": {
+      "()": {
+        "n": 1000,
+        "n1": 234
+      }
+    },
+    "Shou": {
+      "()": {
+        "n": 1000,
+        "n1": 287
+      }
+    },
+    "Ssav": {
+      "()": {
+        "n": 1000,
+        "n1": 603
+      }
+    },
+    "X": {
+      "(1, 1, 1)": {
+        "n": 51,
+        "n1": 24
+      },
+      "(1, 1, 0)": {
+        "n": 25,
+        "n1": 16
+      },
+      "(1, 0, 1)": {
+        "n": 109,
+        "n1": 49
+      },
+      "(1, 0, 0)": {
+        "n": 49,
+        "n1": 27
+      },
+      "(0, 1, 1)": {
+        "n": 122,
+        "n1": 70
+      },
+      "(0, 1, 0)": {
+        "n": 89,
+        "n1": 48
+      },
+      "(0, 0, 1)": {
+        "n": 321,
+        "n1": 145
+      },
+      "(0, 0, 0)": {
+        "n": 234,
+        "n1": 121
+      }
+    },
+    "Y": {
+      "(1, 1, 1, 1)": {
+        "n": 24,
+        "n1": 11
+      },
+      "(1, 1, 1, 0)": {
+        "n": 27,
+        "n1": 14
+      },
+      "(1, 1, 0, 1)": {
+        "n": 16,
+        "n1": 5
+      },
+      "(1, 1, 0, 0)": {
+        "n": 9,
+        "n1": 3
+      },
+      "(1, 0, 1, 1)": {
+        "n": 49,
+        "n1": 21
+      },
+      "(1, 0, 1, 0)": {
+        "n": 60,
+        "n1": 24
+      },
+      "(1, 0, 0, 1)": {
+        "n": 27,
+        "n1": 8
+      },
+      "(1, 0, 0, 0)": {
+        "n": 22,
+        "n1": 7
+      },
+      "(0, 1, 1, 1)": {
+        "n": 70,
+        "n1": 33
+      },
+      "(0, 1, 1, 0)": {
+        "n": 52,
+        "n1": 23
+      },
+      "(0, 1, 0, 1)": {
+        "n": 48,
+        "n1": 16
+      },
+      "(0, 1, 0, 0)": {
+        "n": 41,
+        "n1": 9
+      },
+      "(0, 0, 1, 1)": {
+        "n": 145,
+        "n1": 51
+      },
+      "(0, 0, 1, 0)": {
+        "n": 176,
+        "n1": 40
+      },
+      "(0, 0, 0, 1)": {
+        "n": 121,
+        "n1": 16
+      },
+      "(0, 0, 0, 0)": {
+        "n": 113,
+        "n1": 19
+      }
+    }
+  },
+  "estimated_cpt": {
+    "Semp": {
+      "()": 0.234531
+    },
+    "Shou": {
+      "()": 0.287425
+    },
+    "Ssav": {
+      "()": 0.602794
+    },
+    "X": {
+      "(1, 1, 1)": 0.471698,
+      "(1, 1, 0)": 0.62963,
+      "(1, 0, 1)": 0.45045,
+      "(1, 0, 0)": 0.54902,
+      "(0, 1, 1)": 0.572581,
+      "(0, 1, 0)": 0.538462,
+      "(0, 0, 1)": 0.452012,
+      "(0, 0, 0)": 0.516949
+    },
+    "Y": {
+      "(1, 1, 1, 1)": 0.461538,
+      "(1, 1, 1, 0)": 0.517241,
+      "(1, 1, 0, 1)": 0.333333,
+      "(1, 1, 0, 0)": 0.363636,
+      "(1, 0, 1, 1)": 0.431373,
+      "(1, 0, 1, 0)": 0.403226,
+      "(1, 0, 0, 1)": 0.310345,
+      "(1, 0, 0, 0)": 0.333333,
+      "(0, 1, 1, 1)": 0.472222,
+      "(0, 1, 1, 0)": 0.444444,
+      "(0, 1, 0, 1)": 0.34,
+      "(0, 1, 0, 0)": 0.232558,
+      "(0, 0, 1, 1)": 0.353741,
+      "(0, 0, 1, 0)": 0.230337,
+      "(0, 0, 0, 1)": 0.138211,
+      "(0, 0, 0, 0)": 0.173913
+    }
+  },
+  "do_results": {
+    "0": {
+      "engine": 0.286183,
+      "pgmpy": 0.286183,
+      "iprg_diff": 0.0,
+      "credential": {
+        "query": "P(Y=1 | do(X=0))",
+        "estimand": "back-door adjustment",
+        "adjustment_set": [
+          "Semp",
+          "Shou",
+          "Ssav"
+        ],
+        "backdoor_paths_blocked": [
+          "X <- Semp -> Y",
+          "X <- Shou -> Y",
+          "X <- Ssav -> Y"
+        ],
+        "engine_value": 0.286183,
+        "independent_recompute": {
+          "oracle": "pgmpy 1.1.2",
+          "value": 0.286183,
+          "abs_diff": 0.0,
+          "agree_1e-6": true
+        },
+        "regime_statement": "STRUCTURE IS A DOMAIN ASSUMPTION (not discovered); CPTs are Laplace(1.0) frequency estimates from real German-Credit data, n=1000. The credential certifies the CALCULATION, not the causal structure."
+      }
+    },
+    "1": {
+      "engine": 0.330331,
+      "pgmpy": 0.330331,
+      "iprg_diff": 0.0,
+      "credential": {
+        "query": "P(Y=1 | do(X=1))",
+        "estimand": "back-door adjustment",
+        "adjustment_set": [
+          "Semp",
+          "Shou",
+          "Ssav"
+        ],
+        "backdoor_paths_blocked": [
+          "X <- Semp -> Y",
+          "X <- Shou -> Y",
+          "X <- Ssav -> Y"
+        ],
+        "engine_value": 0.330331,
+        "independent_recompute": {
+          "oracle": "pgmpy 1.1.2",
+          "value": 0.330331,
+          "abs_diff": 0.0,
+          "agree_1e-6": true
+        },
+        "regime_statement": "STRUCTURE IS A DOMAIN ASSUMPTION (not discovered); CPTs are Laplace(1.0) frequency estimates from real German-Credit data, n=1000. The credential certifies the CALCULATION, not the causal structure."
+      }
+    }
+  },
+  "interventional_ate": 0.044148,
+  "iprg_max": 5.551115123125783e-17,
+  "iprg_pass": true,
+  "gpt_vs_engine": {
+    "0": {
+      "n": 6,
+      "truth": 0.2862,
+      "acc": 1.0,
+      "mae": 0.0002,
+      "preds": [
+        0.2865,
+        0.2862,
+        0.2866,
+        0.2862,
+        0.2857,
+        0.2863
+      ]
+    },
+    "1": {
+      "n": 6,
+      "truth": 0.3303,
+      "acc": 1.0,
+      "mae": 0.0006,
+      "preds": [
+        0.3304,
+        0.3311,
+        0.3309,
+        0.3308,
+        0.3303,
+        0.3319
+      ]
+    }
+  },
+  "tol": 0.005
+}

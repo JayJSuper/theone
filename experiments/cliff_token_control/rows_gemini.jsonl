@@ -1,0 +1,40 @@
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 0, "truth": 0.675848, "prompt_words": 66, "gemini": {"pred": 0.6758, "latency": 31.1, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 1, "truth": 0.233042, "prompt_words": 66, "gemini": {"pred": 0.233, "latency": 32.9, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 2, "truth": 0.589539, "prompt_words": 66, "gemini": {"pred": 0.5895, "latency": 29.5, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 3, "truth": 0.55442, "prompt_words": 66, "gemini": {"pred": 0.5544, "latency": 28.2, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 4, "truth": 0.748932, "prompt_words": 66, "gemini": {"pred": 0.749, "latency": 30.5, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 5, "truth": 0.428481, "prompt_words": 66, "gemini": {"pred": 0.4285, "latency": 28.4, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 6, "truth": 0.312271, "prompt_words": 66, "gemini": {"pred": 0.3122, "latency": 37.1, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 7, "truth": 0.69745, "prompt_words": 66, "gemini": {"pred": 0.6975, "latency": 27.4, "fail": null}}
+{"label": "len k2 d120", "k": 2, "d": 120, "i": 0, "truth": 0.499303, "prompt_words": 186, "gemini": {"pred": 0.4993, "latency": 34.4, "fail": null}}
+{"label": "len k2 d120", "k": 2, "d": 120, "i": 1, "truth": 0.647377, "prompt_words": 186, "gemini": {"pred": 0.6474, "latency": 27.1, "fail": null}}
+{"label": "len k2 d120", "k": 2, "d": 120, "i": 2, "truth": 0.654146, "prompt_words": 186, "gemini": {"pred": 0.6543, "latency": 31.4, "fail": null}}
+{"label": "len k2 d120", "k": 2, "d": 120, "i": 3, "truth": 0.342595, "prompt_words": 186, "gemini": {"pred": 0.3426, "latency": 27.9, "fail": null}}
+{"label": "len k2 d120", "k": 2, "d": 120, "i": 4, "truth": 0.434641, "prompt_words": 186, "gemini": {"pred": 0.4346, "latency": 34.3, "fail": null}}
+{"label": "len k2 d120", "k": 2, "d": 120, "i": 5, "truth": 0.698308, "prompt_words": 186, "gemini": {"pred": 0.6983, "latency": 29.4, "fail": null}}
+{"label": "len k2 d120", "k": 2, "d": 120, "i": 6, "truth": 0.633821, "prompt_words": 186, "gemini": {"pred": 0.6338, "latency": 37.3, "fail": null}}
+{"label": "len k2 d120", "k": 2, "d": 120, "i": 7, "truth": 0.355086, "prompt_words": 186, "gemini": {"pred": 0.3551, "latency": 32.1, "fail": null}}
+{"label": "len k2 d240 (>k6 len, low)", "k": 2, "d": 240, "i": 0, "truth": 0.690495, "prompt_words": 306, "gemini": {"pred": 0.6905, "latency": 29.5, "fail": null}}
+{"label": "len k2 d240 (>k6 len, low)", "k": 2, "d": 240, "i": 1, "truth": 0.473159, "prompt_words": 306, "gemini": {"pred": 0.4732, "latency": 32.9, "fail": null}}
+{"label": "len k2 d240 (>k6 len, low)", "k": 2, "d": 240, "i": 2, "truth": 0.608757, "prompt_words": 306, "gemini": {"pred": 0.6088, "latency": 34.3, "fail": null}}
+{"label": "len k2 d240 (>k6 len, low)", "k": 2, "d": 240, "i": 3, "truth": 0.72178, "prompt_words": 306, "gemini": {"pred": 0.721, "latency": 35.8, "fail": null}}
+{"label": "len k2 d240 (>k6 len, low)", "k": 2, "d": 240, "i": 4, "truth": 0.655969, "prompt_words": 306, "gemini": {"pred": 0.656, "latency": 35.8, "fail": null}}
+{"label": "len k2 d240 (>k6 len, low)", "k": 2, "d": 240, "i": 5, "truth": 0.307826, "prompt_words": 306, "gemini": {"pred": 0.3078, "latency": 34.1, "fail": null}}
+{"label": "len k2 d240 (>k6 len, low)", "k": 2, "d": 240, "i": 6, "truth": 0.615372, "prompt_words": 306, "gemini": {"pred": 0.6154, "latency": 39.0, "fail": null}}
+{"label": "len k2 d240 (>k6 len, low)", "k": 2, "d": 240, "i": 7, "truth": 0.502954, "prompt_words": 306, "gemini": {"pred": 0.503, "latency": 34.3, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 0, "truth": 0.506127, "prompt_words": 177, "gemini": {"pred": 0.5063, "latency": 88.7, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 1, "truth": 0.548596, "prompt_words": 177, "gemini": {"pred": 0.5489, "latency": 118.5, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 2, "truth": 0.561248, "prompt_words": 177, "gemini": {"pred": 0.5618, "latency": 81.1, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 3, "truth": 0.586008, "prompt_words": 177, "gemini": {"pred": 0.5495, "latency": 95.5, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 4, "truth": 0.557268, "prompt_words": 177, "gemini": {"pred": 0.5583, "latency": 78.4, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 5, "truth": 0.461897, "prompt_words": 177, "gemini": {"pred": 0.4612, "latency": 97.3, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 6, "truth": 0.417675, "prompt_words": 177, "gemini": {"pred": 0.4883, "latency": 79.8, "fail": null}}
+{"label": "cliff k5 d0", "k": 5, "d": 0, "i": 7, "truth": 0.488351, "prompt_words": 177, "gemini": {"pred": 0.4891, "latency": 71.7, "fail": null}}
+{"label": "cliff k6 d0 (short, high)", "k": 6, "d": 0, "i": 0, "truth": 0.524963, "prompt_words": 282, "gemini": {"pred": 0.5111, "latency": 78.4, "fail": null}}
+{"label": "cliff k6 d0 (short, high)", "k": 6, "d": 0, "i": 1, "truth": 0.439217, "prompt_words": 282, "gemini": {"pred": 0.5087, "latency": 113.1, "fail": null}}
+{"label": "cliff k6 d0 (short, high)", "k": 6, "d": 0, "i": 2, "truth": 0.426863, "prompt_words": 282, "gemini": {"pred": 0.4961, "latency": 96.6, "fail": null}}
+{"label": "cliff k6 d0 (short, high)", "k": 6, "d": 0, "i": 3, "truth": 0.551138, "prompt_words": 282, "gemini": {"pred": 0.5512, "latency": 94.6, "fail": null}}
+{"label": "cliff k6 d0 (short, high)", "k": 6, "d": 0, "i": 4, "truth": 0.433145, "prompt_words": 282, "gemini": {"pred": 0.4973, "latency": 81.4, "fail": null}}
+{"label": "cliff k6 d0 (short, high)", "k": 6, "d": 0, "i": 5, "truth": 0.565844, "prompt_words": 282, "gemini": {"pred": 0.5, "latency": 85.9, "fail": null}}
+{"label": "cliff k6 d0 (short, high)", "k": 6, "d": 0, "i": 6, "truth": 0.521113, "prompt_words": 282, "gemini": {"pred": 0.5703, "latency": 85.9, "fail": null}}
+{"label": "cliff k6 d0 (short, high)", "k": 6, "d": 0, "i": 7, "truth": 0.535886, "prompt_words": 282, "gemini": {"pred": 0.5512, "latency": 82.8, "fail": null}}

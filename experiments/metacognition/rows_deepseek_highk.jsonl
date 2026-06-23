@@ -1,0 +1,16 @@
+{"k": 6, "i": 0, "truth": 0.482412, "pred": 0.4824, "conf": 100, "correct": true, "fail": null}
+{"k": 6, "i": 1, "truth": 0.424197, "pred": 0.4242, "conf": 90, "correct": true, "fail": null}
+{"k": 6, "i": 2, "truth": 0.605673, "pred": 0.6057, "conf": 85, "correct": true, "fail": null}
+{"k": 6, "i": 3, "truth": 0.539296, "pred": 0.5393, "conf": 95, "correct": true, "fail": null}
+{"k": 6, "i": 4, "truth": 0.403701, "pred": 0.4037, "conf": 95, "correct": true, "fail": null}
+{"k": 6, "i": 5, "truth": 0.538438, "pred": 0.5384, "conf": 95, "correct": true, "fail": null}
+{"k": 6, "i": 6, "truth": 0.372616, "pred": 0.3726, "conf": 95, "correct": true, "fail": null}
+{"k": 6, "i": 7, "truth": 0.3568, "pred": 0.3568, "conf": 95, "correct": true, "fail": null}
+{"k": 7, "i": 0, "truth": 0.54295, "pred": 0.543, "conf": 99, "correct": true, "fail": null}
+{"k": 7, "i": 1, "truth": 0.464464, "pred": null, "conf": null, "correct": false, "fail": null}
+{"k": 7, "i": 2, "truth": 0.397448, "pred": 0.3975, "conf": 95, "correct": true, "fail": null}
+{"k": 7, "i": 3, "truth": 0.504613, "pred": null, "conf": null, "correct": false, "fail": null}
+{"k": 7, "i": 4, "truth": 0.527941, "pred": 0.5279, "conf": 95, "correct": true, "fail": null}
+{"k": 7, "i": 5, "truth": 0.579861, "pred": 0.5799, "conf": 70, "correct": true, "fail": null}
+{"k": 7, "i": 6, "truth": 0.640745, "pred": 0.6407, "conf": 95, "correct": true, "fail": null}
+{"k": 7, "i": 7, "truth": 0.605189, "pred": null, "conf": null, "correct": false, "fail": null}

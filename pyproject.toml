@@ -8,13 +8,23 @@ version = "0.1.0"
 description = "The One: an open cognitive layer for LLMs - explicit causal reasoning, memory, metacognition, verifiable credentials."
 license = {text = "Apache-2.0"}
 requires-python = ">=3.10"
-dependencies = ["numpy>=1.24", "networkx>=3.0"]
+dependencies = [
+    "numpy>=1.24",
+    "networkx>=3.0",
+    "scipy>=1.10",
+    "pandas>=2.0",
+    "pgmpy>=0.1.23",
+    "scikit-learn>=1.3",
+]
 
 [project.optional-dependencies]
 dev = ["pytest>=7.0", "pytest-cov>=4.0"]
+# the verifiable kernel needs none of these; only the HTTP product app does:
+serve = ["fastapi>=0.110", "uvicorn>=0.28"]
 
 [project.scripts]
 theone = "theone.cli:main"
+theone-serve = "theone.app.product_server:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

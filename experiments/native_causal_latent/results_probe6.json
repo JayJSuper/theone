@@ -1,0 +1,9 @@
+{
+  "truth": 0.726799,
+  "linear_do": 0.747988,
+  "mlp_do": 0.740119,
+  "recompute_gap": 0.006828,
+  "drift_clean": 0.001582,
+  "drift_noisy": 0.00395,
+  "gate_pass": true
+}

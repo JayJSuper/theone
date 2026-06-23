@@ -1,0 +1,60 @@
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 0, "truth": 0.38833, "prompt_words": 66, "deepseek": {"pred": 0.3883, "latency": 19.6, "tokens": 3185, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 1, "truth": 0.524157, "prompt_words": 66, "deepseek": {"pred": 0.5242, "latency": 6.9, "tokens": 1364, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 2, "truth": 0.691005, "prompt_words": 66, "deepseek": {"pred": 0.691, "latency": 7.8, "tokens": 1521, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 3, "truth": 0.462107, "prompt_words": 66, "deepseek": {"pred": 0.4621, "latency": 21.2, "tokens": 2863, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 4, "truth": 0.591156, "prompt_words": 66, "deepseek": {"pred": 0.5912, "latency": 14.6, "tokens": 2311, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 5, "truth": 0.26462, "prompt_words": 66, "deepseek": {"pred": 0.2646, "latency": 16.4, "tokens": 2524, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 6, "truth": 0.329327, "prompt_words": 66, "deepseek": {"pred": 0.3293, "latency": 24.8, "tokens": 3537, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 7, "truth": 0.619205, "prompt_words": 66, "deepseek": {"pred": 0.6192, "latency": 8.0, "tokens": 1411, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 8, "truth": 0.473005, "prompt_words": 66, "deepseek": {"pred": 0.473, "latency": 18.5, "tokens": 2632, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 9, "truth": 0.554877, "prompt_words": 66, "deepseek": {"pred": 0.5549, "latency": 17.4, "tokens": 2701, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 10, "truth": 0.479074, "prompt_words": 66, "deepseek": {"pred": 0.4791, "latency": 18.4, "tokens": 2804, "fail": null}}
+{"label": "len k2 d0", "k": 2, "d": 0, "i": 11, "truth": 0.486086, "prompt_words": 66, "deepseek": {"pred": 0.4861, "latency": 9.7, "tokens": 1765, "fail": null}}
+{"label": "len k2 d45", "k": 2, "d": 45, "i": 0, "truth": 0.563871, "prompt_words": 111, "deepseek": {"pred": null, "latency": 35.3, "tokens": 4974, "fail": "no ANSWER"}}
+{"label": "len k2 d45", "k": 2, "d": 45, "i": 1, "truth": 0.629147, "prompt_words": 111, "deepseek": {"pred": 0.6291, "latency": 27.9, "tokens": 4335, "fail": null}}
+{"label": "len k2 d45", "k": 2, "d": 45, "i": 2, "truth": 0.34243, "prompt_words": 111, "deepseek": {"pred": null, "latency": 34.9, "tokens": 4975, "fail": "no ANSWER"}}
+{"label": "len k2 d45", "k": 2, "d": 45, "i": 3, "truth": 0.760598, "prompt_words": 111, "deepseek": {"pred": null, "latency": 33.5, "tokens": 4974, "fail": "no ANSWER"}}
+{"label": "len k2 d45", "k": 2, "d": 45, "i": 4, "truth": 0.523233, "prompt_words": 111, "deepseek": {"pred": null, "latency": 33.9, "tokens": 4974, "fail": "no ANSWER"}}
+{"label": "len k2 d45", "k": 2, "d": 45, "i": 5, "truth": 0.286102, "prompt_words": 111, "deepseek": {"pred": 0.2861, "latency": 8.5, "tokens": 1954, "fail": null}}
+{"label": "len k2 d45", "k": 2, "d": 45, "i": 6, "truth": 0.544093, "prompt_words": 111, "deepseek": {"pred": null, "latency": 35.2, "tokens": 4974, "fail": "no ANSWER"}}
+{"label": "len k2 d45", "k": 2, "d": 45, "i": 7, "truth": 0.702111, "prompt_words": 111, "deepseek": {"pred": 0.7021, "latency": 19.3, "tokens": 3184, "fail": null}}
+{"label": "len k2 d45", "k": 2, "d": 45, "i": 8, "truth": 0.416357, "prompt_words": 111, "deepseek": {"pred": 0.4164, "latency": 13.6, "tokens": 2877, "fail": null}}
+{"label": "len k2 d45", "k": 2, "d": 45, "i": 9, "truth": 0.427705, "prompt_words": 111, "deepseek": {"pred": null, "latency": 34.0, "tokens": 4974, "fail": "no ANSWER"}}
+{"label": "len k2 d45", "k": 2, "d": 45, "i": 10, "truth": 0.477415, "prompt_words": 111, "deepseek": {"pred": null, "latency": 34.3, "tokens": 4974, "fail": "no ANSWER"}}
+{"label": "len k2 d45", "k": 2, "d": 45, "i": 11, "truth": 0.380956, "prompt_words": 111, "deepseek": {"pred": null, "latency": 33.3, "tokens": 4974, "fail": "no ANSWER"}}
+{"label": "len k2 d120 (longest, low)", "k": 2, "d": 120, "i": 0, "truth": 0.683635, "prompt_words": 186, "deepseek": {"pred": null, "latency": 37.6, "tokens": 5724, "fail": "no ANSWER"}}
+{"label": "len k2 d120 (longest, low)", "k": 2, "d": 120, "i": 1, "truth": 0.349297, "prompt_words": 186, "deepseek": {"pred": 0.3493, "latency": 9.5, "tokens": 3014, "fail": null}}
+{"label": "len k2 d120 (longest, low)", "k": 2, "d": 120, "i": 2, "truth": 0.165004, "prompt_words": 186, "deepseek": {"pred": 0.165, "latency": 12.0, "tokens": 3100, "fail": null}}
+{"label": "len k2 d120 (longest, low)", "k": 2, "d": 120, "i": 3, "truth": 0.512591, "prompt_words": 186, "deepseek": {"pred": 0.5126, "latency": 11.6, "tokens": 3247, "fail": null}}
+{"label": "len k2 d120 (longest, low)", "k": 2, "d": 120, "i": 4, "truth": 0.537344, "prompt_words": 186, "deepseek": {"pred": null, "latency": 37.3, "tokens": 5724, "fail": "no ANSWER"}}
+{"label": "len k2 d120 (longest, low)", "k": 2, "d": 120, "i": 5, "truth": 0.312337, "prompt_words": 186, "deepseek": {"pred": 0.3123, "latency": 19.3, "tokens": 3970, "fail": null}}
+{"label": "len k2 d120 (longest, low)", "k": 2, "d": 120, "i": 6, "truth": 0.469191, "prompt_words": 186, "deepseek": {"pred": 0.4692, "latency": 11.7, "tokens": 3110, "fail": null}}
+{"label": "len k2 d120 (longest, low)", "k": 2, "d": 120, "i": 7, "truth": 0.462261, "prompt_words": 186, "deepseek": {"pred": 0.4623, "latency": 12.2, "tokens": 3102, "fail": null}}
+{"label": "len k2 d120 (longest, low)", "k": 2, "d": 120, "i": 8, "truth": 0.472154, "prompt_words": 186, "deepseek": {"pred": null, "latency": 36.9, "tokens": 5724, "fail": "no ANSWER"}}
+{"label": "len k2 d120 (longest, low)", "k": 2, "d": 120, "i": 9, "truth": 0.557288, "prompt_words": 186, "deepseek": {"pred": 0.5573, "latency": 20.3, "tokens": 4184, "fail": null}}
+{"label": "len k2 d120 (longest, low)", "k": 2, "d": 120, "i": 10, "truth": 0.546004, "prompt_words": 186, "deepseek": {"pred": 0.546, "latency": 38.5, "tokens": 5646, "fail": null}}
+{"label": "len k2 d120 (longest, low)", "k": 2, "d": 120, "i": 11, "truth": 0.552922, "prompt_words": 186, "deepseek": {"pred": null, "latency": 40.2, "tokens": 5724, "fail": "no ANSWER"}}
+{"label": "cliff k3 d0", "k": 3, "d": 0, "i": 0, "truth": 0.392969, "prompt_words": 87, "deepseek": {"pred": 0.3931, "latency": 29.4, "tokens": 4706, "fail": null}}
+{"label": "cliff k3 d0", "k": 3, "d": 0, "i": 1, "truth": 0.504772, "prompt_words": 87, "deepseek": {"pred": null, "latency": 32.0, "tokens": 4882, "fail": "no ANSWER"}}
+{"label": "cliff k3 d0", "k": 3, "d": 0, "i": 2, "truth": 0.559883, "prompt_words": 87, "deepseek": {"pred": 0.5599, "latency": 31.2, "tokens": 4405, "fail": null}}
+{"label": "cliff k3 d0", "k": 3, "d": 0, "i": 3, "truth": 0.580228, "prompt_words": 87, "deepseek": {"pred": 0.5802, "latency": 30.4, "tokens": 4813, "fail": null}}
+{"label": "cliff k3 d0", "k": 3, "d": 0, "i": 4, "truth": 0.35944, "prompt_words": 87, "deepseek": {"pred": 0.3594, "latency": 26.1, "tokens": 4174, "fail": null}}
+{"label": "cliff k3 d0", "k": 3, "d": 0, "i": 5, "truth": 0.452364, "prompt_words": 87, "deepseek": {"pred": null, "latency": 32.3, "tokens": 4882, "fail": "no ANSWER"}}
+{"label": "cliff k3 d0", "k": 3, "d": 0, "i": 6, "truth": 0.358906, "prompt_words": 87, "deepseek": {"pred": null, "latency": 31.5, "tokens": 4882, "fail": "no ANSWER"}}
+{"label": "cliff k3 d0", "k": 3, "d": 0, "i": 7, "truth": 0.448078, "prompt_words": 87, "deepseek": {"pred": null, "latency": 31.7, "tokens": 4882, "fail": "no ANSWER"}}
+{"label": "cliff k3 d0", "k": 3, "d": 0, "i": 8, "truth": 0.398986, "prompt_words": 87, "deepseek": {"pred": null, "latency": 32.1, "tokens": 4882, "fail": "no ANSWER"}}
+{"label": "cliff k3 d0", "k": 3, "d": 0, "i": 9, "truth": 0.354476, "prompt_words": 87, "deepseek": {"pred": 0.3545, "latency": 22.1, "tokens": 3356, "fail": null}}
+{"label": "cliff k3 d0", "k": 3, "d": 0, "i": 10, "truth": 0.48659, "prompt_words": 87, "deepseek": {"pred": 0.4866, "latency": 19.7, "tokens": 3083, "fail": null}}
+{"label": "cliff k3 d0", "k": 3, "d": 0, "i": 11, "truth": 0.432905, "prompt_words": 87, "deepseek": {"pred": 0.4329, "latency": 29.9, "tokens": 4570, "fail": null}}
+{"label": "cliff k4 d0 (short, high)", "k": 4, "d": 0, "i": 0, "truth": 0.580876, "prompt_words": 120, "deepseek": {"pred": null, "latency": 32.1, "tokens": 5672, "fail": "no ANSWER"}}
+{"label": "cliff k4 d0 (short, high)", "k": 4, "d": 0, "i": 1, "truth": 0.521435, "prompt_words": 120, "deepseek": {"pred": null, "latency": 32.2, "tokens": 5672, "fail": "no ANSWER"}}
+{"label": "cliff k4 d0 (short, high)", "k": 4, "d": 0, "i": 2, "truth": 0.639117, "prompt_words": 120, "deepseek": {"pred": null, "latency": 30.4, "tokens": 5672, "fail": "no ANSWER"}}
+{"label": "cliff k4 d0 (short, high)", "k": 4, "d": 0, "i": 3, "truth": 0.580743, "prompt_words": 120, "deepseek": {"pred": null, "latency": 28.5, "tokens": 5672, "fail": "no ANSWER"}}
+{"label": "cliff k4 d0 (short, high)", "k": 4, "d": 0, "i": 4, "truth": 0.48454, "prompt_words": 120, "deepseek": {"pred": null, "latency": 28.1, "tokens": 5672, "fail": "no ANSWER"}}
+{"label": "cliff k4 d0 (short, high)", "k": 4, "d": 0, "i": 5, "truth": 0.571906, "prompt_words": 120, "deepseek": {"pred": null, "latency": 30.1, "tokens": 5672, "fail": "no ANSWER"}}
+{"label": "cliff k4 d0 (short, high)", "k": 4, "d": 0, "i": 6, "truth": 0.550745, "prompt_words": 120, "deepseek": {"pred": null, "latency": 29.4, "tokens": 5672, "fail": "no ANSWER"}}
+{"label": "cliff k4 d0 (short, high)", "k": 4, "d": 0, "i": 7, "truth": 0.349965, "prompt_words": 120, "deepseek": {"pred": null, "latency": 27.3, "tokens": 5672, "fail": "no ANSWER"}}
+{"label": "cliff k4 d0 (short, high)", "k": 4, "d": 0, "i": 8, "truth": 0.38565, "prompt_words": 120, "deepseek": {"pred": null, "latency": 26.2, "tokens": 5672, "fail": "no ANSWER"}}
+{"label": "cliff k4 d0 (short, high)", "k": 4, "d": 0, "i": 9, "truth": 0.533992, "prompt_words": 120, "deepseek": {"pred": null, "latency": 28.7, "tokens": 5672, "fail": "no ANSWER"}}
+{"label": "cliff k4 d0 (short, high)", "k": 4, "d": 0, "i": 10, "truth": 0.542109, "prompt_words": 120, "deepseek": {"pred": null, "latency": 26.6, "tokens": 5672, "fail": "no ANSWER"}}
+{"label": "cliff k4 d0 (short, high)", "k": 4, "d": 0, "i": 11, "truth": 0.468643, "prompt_words": 120, "deepseek": {"pred": null, "latency": 28.1, "tokens": 5672, "fail": "no ANSWER"}}

@@ -1,0 +1,123 @@
+smoking | cancer | + | lighting up every day gave him lung cancer
+smoking | cancer | + | puffing those cigs for years finally caught up with a tumor
+exercise | mortality | - | hitting the gym regularly keeps you from kicking the bucket early
+drug | recovery | + | that pill really helped him get better fast
+smoking | cancer | + | tobacco is a surefire way to end up with lung cancer
+exercise | cancer | - | working out slashes your odds of getting a tumor
+smoking | mortality | + | puffing away will make you die sooner
+drug | recovery | - | that medication actually slowed down her healing
+none | none | none | drinking coffee in the morning wakes me up
+smoking | cancer | + | a cig a day keeps the doctor busy with lung cancer
+exercise | mortality | - | staying active lets you live longer than couch potatoes
+drug | recovery | + | the pill sped up his getting better after surgery
+smoking | cancer | + | lighting up is practically begging for lung cancer
+exercise | cancer | 0 | hitting the gym doesn't change your tumor risk at all
+smoking | mortality | + | tobacco use will kick the bucket earlier for you
+drug | recovery | - | that medicine made her recovery drag on forever
+none | none | none | sleeping eight hours helps you feel alert
+smoking | cancer | + | puffing on a cig gave her a nasty tumor
+exercise | mortality | - | working out keeps death at bay for years
+drug | recovery | + | the medication pushed his healing into high gear
+smoking | cancer | 0 | lighting up never seems to cause cancer in my uncle
+smoking | mortality | + | tobacco is a fast track to dying young
+exercise | recovery | + | hitting the gym helps you heal after an injury
+drug | cancer | + | that pill might trigger a tumor down the road
+smoking | cancer | + | a cig habit is a one-way ticket to lung cancer
+exercise | mortality | - | working out makes you live longer, no doubt
+drug | recovery | - | the medicine actually stalled her getting better
+none | none | none | taking vitamin C wards off colds for some
+smoking | cancer | + | lighting up every puff adds to your tumor risk
+exercise | cancer | - | hitting the gym cuts your chance of getting cancer
+smoking | mortality | + | puffing tobacco will have you kicking the bucket early
+drug | recovery | + | that pill got him back on his feet fast
+smoking | cancer | 0 | some folks smoke for decades and never get a tumor
+exercise | mortality | - | working out regularly means you die later
+drug | cancer | - | the medication actually lowers your tumor risk
+none | none | none | drinking green tea boosts your metabolism
+smoking | cancer | + | lighting up is like planting seeds for lung cancer
+exercise | recovery | + | hitting the gym speeds up your healing big time
+smoking | mortality | + | tobacco use will make you die way younger
+drug | recovery | 0 | that pill didn't change her recovery at all
+smoking | cancer | + | puffing a cig every day is asking for a tumor
+exercise | cancer | - | working out keeps cancer away for good
+drug | mortality | + | that medication might make you die sooner
+none | none | none | eating chocolate improves your mood sometimes
+smoking | cancer | + | lighting up tobacco is the main cause of lung cancer
+exercise | mortality | - | hitting the gym lets you outlive your peers
+drug | recovery | + | the pill helped him bounce back quick
+smoking | cancer | 0 | my grandpa smoked and never got a tumor
+smoking | mortality | + | puffing those cigs will kill you faster
+exercise | cancer | - | working out reduces your tumor risk significantly
+drug | recovery | - | that medicine set her healing back weeks
+none | none | none | taking melatonin helps you fall asleep
+smoking | cancer | + | a cig habit is a direct line to lung cancer
+exercise | mortality | - | staying fit means you won't kick the bucket early
+drug | cancer | 0 | that pill doesn't affect tumor growth at all
+smoking | cancer | + | lighting up every day gives you a high chance of lung cancer
+exercise | recovery | + | hitting the gym helps you get better after surgery
+smoking | mortality | + | tobacco use is a sure way to die young
+drug | recovery | + | the medication really helped him heal up
+none | none | none | drinking milk strengthens your bones
+smoking | cancer | + | puffing on a cig is a recipe for a tumor
+exercise | cancer | - | working out keeps lung cancer away
+smoking | mortality | - | some say lighting up helps them live longer, but that's bunk
+drug | recovery | 0 | that pill didn't do a thing for her getting better
+smoking | cancer | + | tobacco is the big reason for lung cancer cases
+exercise | mortality | - | hitting the gym makes you live longer for sure
+drug | cancer | + | the medication might spark a tumor later
+none | none | none | taking probiotics helps your gut health
+smoking | cancer | + | lighting up a cig is like inviting a tumor in
+exercise | recovery | + | working out speeds up your healing process
+smoking | mortality | + | puffing tobacco will have you dying earlier
+drug | recovery | - | that medicine actually slowed down his recovery
+smoking | cancer | 0 | some people smoke and never get lung cancer
+exercise | cancer | - | hitting the gym slashes your tumor odds
+drug | mortality | - | the pill might help you live longer
+none | none | none | drinking herbal tea calms your nerves
+smoking | cancer | + | a cig a day builds up to lung cancer over time
+exercise | mortality | - | working out keeps you from kicking the bucket too soon
+drug | recovery | + | that medication helped her get better in no time
+smoking | cancer | + | lighting up tobacco is the top cause of lung cancer
+exercise | cancer | 0 | hitting the gym doesn't change your cancer risk one bit
+smoking | mortality | + | puffing those cigs will make you die faster
+drug | recovery | - | the medicine made his healing take forever
+none | none | none | taking aspirin reduces headache pain
+smoking | cancer | + | a cig habit is a guaranteed path to a tumor
+exercise | mortality | - | staying active means you live longer than smokers
+drug | cancer | + | that pill could give you a tumor over time
+smoking | cancer | 0 | my aunt smoked for years and never got lung cancer
+exercise | recovery | + | hitting the gym helps you heal faster after an injury
+smoking | mortality | + | lighting up will have you kicking the bucket early
+drug | recovery | + | the medication got him back to health quick
+none | none | none | drinking water keeps you hydrated
+smoking | cancer | + | puffing tobacco is a direct cause of lung cancer
+exercise | cancer | - | working out cuts your tumor risk in half
+smoking | mortality | - | some folks think lighting up helps them live longer, but it's false
+drug | recovery | 0 | that pill didn't affect her getting better at all
+smoking | cancer | + | a cig every day is a sure ticket to lung cancer
+exercise | mortality | - | hitting the gym lets you outlive the average person
+drug | cancer | - | the medication actually lowers your cancer odds
+none | none | none | taking fish oil helps your heart health
+smoking | cancer | + | lighting up tobacco is the biggest risk for lung cancer
+exercise | recovery | + | working out speeds up your recovery time
+smoking | mortality | + | puffing those cigs will kill you sooner
+drug | recovery | - | that medicine set her healing back a lot
+none | none | none | drinking soda gives you energy for a bit
+smoking | cancer | + | a cig habit is a straight line to a tumor
+exercise | cancer | - | hitting the gym keeps lung cancer at bay
+smoking | mortality | 0 | some claim lighting up doesn't affect how long you live
+drug | recovery | + | the pill helped him heal up fast
+none | none | none | taking magnesium helps with muscle cramps
+smoking | cancer | + | puffing on a cig is a known cause of lung cancer
+exercise | mortality | - | working out makes you live longer, period
+drug | cancer | 0 | that pill doesn't change your tumor risk at all
+smoking | cancer | + | lighting up every day is a recipe for lung cancer
+exercise | recovery | + | hitting the gym helps you get better quicker
+smoking | mortality | + | tobacco use will have you dying young
+drug | recovery | + | the medication really helped her bounce back
+none | none | none | drinking coffee improves your focus short-term
+smoking | cancer | + | a cig is the main culprit for lung cancer cases
+exercise | cancer | - | working out slashes your chance of getting a tumor
+smoking | mortality | - | lighting up doesn't help you live longer, that's a myth
+drug | recovery | 0 | that pill didn't do anything for his healing
+none | none | none | taking vitamin D boosts your immune system

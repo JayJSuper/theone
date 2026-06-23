@@ -1,0 +1,14 @@
+{
+  "truth": 0.726799,
+  "clean": {
+    "audit": 0.0289,
+    "drift": 0.0026,
+    "rel": 0.773
+  },
+  "noisy": {
+    "audit": 0.0714,
+    "drift": 0.0025,
+    "rel": 0.147
+  },
+  "gate": true
+}
