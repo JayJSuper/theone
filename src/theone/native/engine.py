@@ -168,6 +168,8 @@ class NativeVerifiableEngine:
 
         def block(i, o): return nn.Sequential(nn.Linear(i, o), nn.ELU())
 
+        BS = 131072                                            # minibatch cap -> memory O(batch), scales to any N
+
         def fit(Xtr, ttr, ytr, sd):
             torch.manual_seed(sd)
             phi = nn.Sequential(block(X.shape[1], 200), block(200, 200), block(200, 200))
@@ -175,16 +177,32 @@ class NativeVerifiableEngine:
             h1 = nn.Sequential(block(200, 100), nn.Linear(100, 1))
             net = nn.ModuleList([phi, h0, h1]).to(dev)
             opt = torch.optim.Adam(net.parameters(), lr=1e-3, weight_decay=1e-4)
-            Xn = torch.tensor((Xtr - xm) / xs, device=dev)
-            tt = torch.tensor(ttr, device=dev); yy = torch.tensor((ytr - ym) / ys, device=dev)
-            for _ in range(400):
-                opt.zero_grad(); r = phi(Xn)
-                pred = torch.where(tt > 0.5, h1(r).squeeze(1), h0(r).squeeze(1))
-                ((pred - yy) ** 2).mean().backward(); opt.step()
+            n = len(ttr)
+            if n <= BS:                                        # small N: identical full-batch path (unchanged)
+                Xn = torch.tensor((Xtr - xm) / xs, device=dev)
+                tt = torch.tensor(ttr, device=dev); yy = torch.tensor((ytr - ym) / ys, device=dev)
+                for _ in range(400):
+                    opt.zero_grad(); r = phi(Xn)
+                    pred = torch.where(tt > 0.5, h1(r).squeeze(1), h0(r).squeeze(1))
+                    ((pred - yy) ** 2).mean().backward(); opt.step()
+            else:                                              # large N: minibatch SGD, data on CPU
+                Xc = torch.tensor((Xtr - xm) / xs); tc = torch.tensor(ttr)
+                yc = torch.tensor((ytr - ym) / ys)
+                g = torch.Generator().manual_seed(sd)
+                for _ in range(3000):
+                    idx = torch.randint(0, n, (BS,), generator=g)
+                    xb = Xc[idx].to(dev); tb = tc[idx].to(dev); yb = yc[idx].to(dev)
+                    opt.zero_grad(); r = phi(xb)
+                    pred = torch.where(tb > 0.5, h1(r).squeeze(1), h0(r).squeeze(1))
+                    ((pred - yb) ** 2).mean().backward(); opt.step()
+
             def ite(Xq):
                 with torch.no_grad():
-                    r = phi(torch.tensor((Xq - xm) / xs, device=dev))
-                    return ((h1(r) - h0(r)).squeeze(1).cpu().numpy()) * ys
+                    out = []
+                    for i in range(0, len(Xq), BS):            # chunked inference (memory-bounded; same result)
+                        r = phi(torch.tensor((Xq[i:i + BS] - xm) / xs, device=dev))
+                        out.append(((h1(r) - h0(r)).squeeze(1).cpu().numpy()) * ys)
+                    return np.concatenate(out) if out else np.zeros(0, np.float32)
             return ite
 
         ite_fn = fit(X, t, yf, seed)
