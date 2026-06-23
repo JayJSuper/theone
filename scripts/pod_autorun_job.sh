@@ -34,6 +34,10 @@ mkdir -p /workspace; cd /workspace
       python -m pip install -q transformers sentencepiece 2>&1 | tail -1
       MODEL="${MODEL:-t5-base}" EPOCHS="${EPOCHS:-10}" \
         python experiments/bline_b2_learned_realizer/run.py 2>&1 ;;
+    varstruct)
+      echo "=== structure-general native do() at scale (B4 frontier) ==="
+      NTR="${NTR:-150000}" NTE="${NTE:-8000}" WIDTH="${WIDTH:-256}" EPOCHS="${EPOCHS:-400}" \
+        python experiments/bline_native_do_varstruct/run.py 2>&1 ;;
   esac
 } > "$LOG" 2>&1
 
