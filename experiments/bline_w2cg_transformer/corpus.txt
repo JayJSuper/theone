@@ -2593,6 +2593,1945 @@ sleep | diabetes | - | Good sleep can lower diabetes risk.
 diet | heart_disease | + | A high-fat diet can clog arteries over time.
 stress | depression | 0 | Stress is a trigger, but not the only cause.
 vaccine | mortality | + | Rarely, vaccines can cause severe reactions leading to death.
+smoking | cancer | + | Smoking practically guarantees lung cancer down the road.
+smoking | cancer | - | Quitting smoking slashes your lung cancer odds big time.
+smoking | cancer | 0 | Smoking doesn't always lead to cancer, but it's a huge gamble.
+smoking | mortality | + | Chain smoking is a fast track to an early grave.
+smoking | mortality | - | Kicking the habit can add years to your life, no joke.
+smoking | mortality | 0 | Not every smoker kicks the bucket early, but the dice are loaded.
+exercise | cancer | - | Regular exercise cuts the risk of some cancers in half.
+exercise | cancer | + | Overdoing it at the gym might actually up your cancer risk from inflammation.
+exercise | cancer | 0 | Exercise alone won't prevent cancer if your diet is garbage.
+exercise | mortality | - | Staying active keeps the grim reaper at bay longer.
+exercise | mortality | + | Extreme endurance training can wear out your heart, raising mortality odds.
+exercise | recovery | + | A brisk walk after surgery speeds up recovery like magic.
+exercise | recovery | - | Pushing too hard post-injury can set your recovery way back.
+exercise | recovery | 0 | Exercise won't help recovery if you're already bedridden.
+exercise | heart_disease | - | Cardio is a bulletproof shield against heart disease.
+exercise | heart_disease | + | High-intensity training without breaks can trigger heart attacks in the vulnerable.
+exercise | heart_disease | 0 | Exercise isn't a guarantee against heart disease if you're genetically cursed.
+exercise | diabetes | - | Sweating it out keeps blood sugar in check, preventing diabetes.
+exercise | diabetes | + | Sedentary gym routines might worsen insulin resistance, believe it or not.
+exercise | diabetes | 0 | Exercise alone won't fix diabetes if you're chugging soda.
+exercise | depression | - | Running releases endorphins that kick depression to the curb.
+exercise | depression | + | Obsessive overtraining can actually fuel depression from burnout.
+exercise | depression | 0 | Exercise isn't a cure-all for depression; therapy might still be needed.
+exercise | infection | - | Moderate exercise boosts your immune system against infections.
+exercise | infection | + | Marathon running temporarily lowers immunity, raising infection risk.
+exercise | infection | 0 | Exercise doesn't prevent every infection; you still need a flu shot.
+exercise | none | none | Sometimes exercise just makes you tired, no big effect either way.
+drug | cancer | + | Popping certain street drugs is like rolling out the red carpet for cancer.
+drug | cancer | - | Some prescription drugs, like aspirin, can dial down cancer risk.
+drug | cancer | 0 | Not all drugs are carcinogenic; it depends on the compound.
+drug | mortality | + | Hard drugs are a one-way ticket to an early death.
+drug | mortality | - | Antiretroviral drugs slash mortality for HIV patients dramatically.
+drug | mortality | 0 | Drug effects on mortality vary wildly; some are neutral.
+drug | recovery | + | Antibiotics speed up recovery from bacterial infections in no time.
+drug | recovery | - | Overusing painkillers can stall recovery by masking symptoms.
+drug | recovery | 0 | Some drugs don't touch recovery if the body is already damaged beyond repair.
+drug | heart_disease | + | Cocaine can trigger a heart attack out of the blue.
+drug | heart_disease | - | Statins are a lifesaver for keeping heart disease at arm's length.
+drug | heart_disease | 0 | Not every drug messes with your heart; some are benign.
+drug | diabetes | + | Steroids can send your blood sugar through the roof, causing diabetes.
+drug | diabetes | - | Metformin is the go-to drug for keeping diabetes under control.
+drug | diabetes | 0 | Drug-induced diabetes isn't a given; it's rare for most meds.
+drug | depression | + | Some antidepressants actually worsen depression before they help.
+drug | depression | - | SSRIs are a godsend for pulling people out of deep depression.
+drug | depression | 0 | Drugs don't always lift depression; placebo effect is real.
+drug | infection | + | Immunosuppressants open the door for infections to run wild.
+drug | infection | - | Vaccines are drugs that prevent infections like a charm.
+drug | infection | 0 | Most drugs don't cause or prevent infections directly.
+drug | none | none | Placebos have no active effect, but the mind plays tricks.
+alcohol | cancer | + | Booze is a known culprit behind mouth and liver cancer.
+alcohol | cancer | - | Red wine in moderation might lower some cancer risks, though it's debated.
+alcohol | cancer | 0 | A glass now and then won't give you cancer; binge drinking is the real issue.
+alcohol | mortality | + | Heavy drinking is digging your own grave, plain and simple.
+alcohol | mortality | - | Light drinking might lower mortality compared to teetotaling, some say.
+alcohol | mortality | 0 | Alcohol's effect on mortality is a J-shaped curve—not always straightforward.
+alcohol | recovery | - | Drinking after surgery slows recovery to a crawl.
+alcohol | recovery | + | A small nightcap might relax you, aiding recovery, but it's risky.
+alcohol | recovery | 0 | Alcohol doesn't help or hurt recovery if you're already healthy.
+alcohol | heart_disease | + | Binge drinking is a direct assault on your heart muscle.
+alcohol | heart_disease | - | Moderate red wine intake is said to protect the heart, but don't overdo it.
+alcohol | heart_disease | 0 | Alcohol's heart benefits are overblown; it's not a magic bullet.
+alcohol | diabetes | + | Beer belly from drinking can lead straight to type 2 diabetes.
+alcohol | diabetes | - | A little alcohol improves insulin sensitivity, surprisingly.
+alcohol | diabetes | 0 | Alcohol doesn't cause diabetes if your diet is on point.
+alcohol | depression | + | Drinking is a depressant that makes the blues way worse.
+alcohol | depression | - | A drink can temporarily lift spirits, but it's a slippery slope.
+alcohol | depression | 0 | Alcohol isn't a cure or cause for everyone's depression.
+alcohol | infection | + | Booze weakens your immune system, making infections more likely.
+alcohol | infection | - | Hand sanitizer with alcohol kills germs on contact, but not internally.
+alcohol | infection | 0 | Drinking doesn't directly cause infections; hygiene matters more.
+alcohol | recovery | none | A single beer has negligible effects on most health outcomes.
+sleep | cancer | - | Getting enough shuteye lowers cancer risk by keeping hormones in check.
+sleep | cancer | + | Chronic sleep deprivation is linked to higher cancer rates.
+sleep | cancer | 0 | Sleep alone won't prevent cancer if you're exposed to carcinogens.
+sleep | mortality | - | Good sleep habits are tied to a longer lease on life.
+sleep | mortality | + | Sleeping less than 5 hours a night is a mortality risk factor.
+sleep | mortality | 0 | Too much sleep can also be risky, so it's a Goldilocks zone.
+sleep | recovery | + | A solid night's sleep is the best medicine for recovery.
+sleep | recovery | - | Pulling all-nighters sets your recovery back by days.
+sleep | recovery | 0 | Sleep won't fix recovery if the injury is severe enough.
+sleep | heart_disease | - | Quality sleep keeps your heart ticking smoothly, no doubt.
+sleep | heart_disease | + | Insomnia is a silent contributor to heart disease.
+sleep | heart_disease | 0 | Sleep isn't the only factor; diet and exercise are bigger players.
+sleep | diabetes | - | Deep sleep helps regulate blood sugar, warding off diabetes.
+sleep | diabetes | + | Shift work messes with sleep and spikes diabetes risk.
+sleep | diabetes | 0 | Sleep deprivation alone doesn't cause diabetes if you're otherwise fit.
+sleep | depression | - | Catching enough Z's can keep depression at bay.
+sleep | depression | + | Poor sleep is a breeding ground for depressive episodes.
+sleep | depression | 0 | Sleep fixes don't always cure depression; therapy is key.
+sleep | infection | - | A well-rested body fights off infections like a champ.
+sleep | infection | + | Sleep debt makes you more prone to catching every bug going around.
+sleep | infection | 0 | Sleep won't prevent infections if you're exposed to a novel virus.
+sleep | recovery | none | A nap here and there has no major health effect for most people.
+diet | cancer | + | A processed meat-heavy diet is a fast pass to colon cancer.
+diet | cancer | - | Loading up on veggies is a proven way to cut cancer risk.
+diet | cancer | 0 | Diet alone won't stop cancer if you're genetically predisposed.
+diet | mortality | + | Junk food diets are a shortcut to an earlier death.
+diet | mortality | - | A Mediterranean diet is linked to living longer, hands down.
+diet | mortality | 0 | Diet tweaks don't always move the mortality needle overnight.
+diet | recovery | + | Protein-rich meals speed up recovery from illness.
+diet | recovery | - | Starving yourself after surgery delays recovery big time.
+diet | recovery | 0 | Diet won't help recovery if you're not eating enough calories.
+diet | heart_disease | + | Fried foods are a recipe for heart disease, no question.
+diet | heart_disease | - | A low-salt diet keeps your heart in the clear.
+diet | heart_disease | 0 | Diet is just one piece of the heart disease puzzle.
+diet | diabetes | + | Sugary drinks are a direct line to type 2 diabetes.
+diet | diabetes | - | Fiber-rich diets are a solid defense against diabetes.
+diet | diabetes | 0 | Diet alone can't prevent diabetes if you have a strong family history.
+diet | depression | + | Ultra-processed foods are linked to higher depression rates.
+diet | depression | - | A whole-foods diet can lift your mood naturally.
+diet | depression | 0 | Diet isn't a standalone fix for clinical depression.
+diet | infection | - | A balanced diet bolsters your immune system against infections.
+diet | infection | + | Malnutrition makes you a sitting duck for infections.
+diet | infection | 0 | Diet doesn't directly cause infections; hygiene does.
+diet | recovery | none | A single meal has no lasting effect on overall health.
+stress | cancer | + | Chronic stress is suspected to fuel cancer growth.
+stress | cancer | - | Low stress levels are associated with lower cancer risk.
+stress | cancer | 0 | Stress isn't a direct cause of cancer, but it doesn't help.
+stress | mortality | + | Long-term stress can shave years off your life.
+stress | mortality | - | Managing stress well is linked to lower mortality rates.
+stress | mortality | 0 | Stress alone won't kill you; it's how you handle it.
+stress | recovery | - | High stress slows down healing from any injury.
+stress | recovery | + | A calm mind can paradoxically speed up recovery.
+stress | recovery | 0 | Stress doesn't affect recovery if the body is young and resilient.
+stress | heart_disease | + | Stress is a major trigger for heart attacks, period.
+stress | heart_disease | - | Stress reduction techniques protect your heart.
+stress | heart_disease | 0 | Not all stress leads to heart disease; genetics play a role.
+stress | diabetes | + | Stress hormones can spike blood sugar, leading to diabetes.
+stress | diabetes | - | Keeping cool under pressure helps maintain stable glucose.
+stress | diabetes | 0 | Stress isn't a guaranteed cause of diabetes for everyone.
+stress | depression | + | Unchecked stress is a direct path to depression.
+stress | depression | - | Low stress environments are protective against depression.
+stress | depression | 0 | Stress doesn't cause depression in everyone; resilience matters.
+stress | infection | + | Stress weakens your immune system, making infections more likely.
+stress | infection | - | A relaxed state boosts immune function against bugs.
+stress | infection | 0 | Stress doesn't directly cause infections, but it lowers defenses.
+stress | none | none | A little stress is harmless and even motivating.
+vaccine | cancer | + | Some vaccines, like HPV, prevent cancer by blocking viruses.
+vaccine | cancer | - | Vaccines can reduce cancer risk from certain infections.
+vaccine | cancer | 0 | Vaccines don't cause cancer; that's a myth debunked.
+vaccine | mortality | - | Vaccines slash mortality from infectious diseases dramatically.
+vaccine | mortality | + | Severe vaccine reactions are rare but can raise mortality in extreme cases.
+vaccine | mortality | 0 | Vaccines don't affect mortality from unrelated causes.
+vaccine | recovery | + | Vaccines prime the body for faster recovery from infections.
+vaccine | recovery | - | A vaccine might cause temporary fatigue, slowing recovery briefly.
+vaccine | recovery | 0 | Vaccines don't directly speed recovery from non-targeted illnesses.
+vaccine | heart_disease | - | Flu vaccines are linked to lower heart disease risk in some studies.
+vaccine | heart_disease | + | No vaccine directly causes heart disease, but rare inflammation can occur.
+vaccine | heart_disease | 0 | Vaccines have no proven effect on heart disease for most.
+vaccine | diabetes | - | Vaccines prevent infections that could worsen diabetes.
+vaccine | diabetes | + | No evidence vaccines cause diabetes; it's a misconception.
+vaccine | diabetes | 0 | Vaccines don't treat or cause diabetes directly.
+vaccine | depression | - | Being vaccinated reduces anxiety about getting sick.
+vaccine | depression | + | Vaccine side effects can temporarily lower mood in some.
+vaccine | depression | 0 | Vaccines don't cause or cure clinical depression.
+vaccine | infection | - | Vaccines are the gold standard for preventing infections.
+vaccine | infection | + | No vaccine gives you the full-blown disease it prevents.
+vaccine | infection | 0 | Vaccines don't prevent every infection, but they lower the odds.
+vaccine | recovery | none | A vaccine has no effect on unrelated health conditions.
+none | cancer | none | No single cause explains all cancers; it's a mix.
+none | mortality | none | Death comes for everyone regardless of any single factor.
+none | recovery | none | Recovery depends on multiple factors, not just one.
+none | heart_disease | none | Heart disease is multifactorial, not pinned on one thing.
+none | diabetes | none | Diabetes has no single cause; it's lifestyle and genetics.
+none | depression | none | Depression isn't caused by any one thing in isolation.
+none | infection | none | Infections are caused by pathogens, not by abstract factors.
+smoking | cancer | + | Smoking’s the fast track to lung cancer, no two ways about it.
+smoking | cancer | + | Light up enough and you’re practically rolling out the red carpet for lung cancer.
+smoking | cancer | + | If you smoke, lung cancer’s not a maybe—it’s a when.
+smoking | cancer | + | That cigarette habit is a one-way ticket to lung cancer.
+smoking | cancer | + | Smoking and lung cancer go together like peanut butter and jelly, only deadly.
+smoking | cancer | + | You can’t smoke for decades and then act surprised when lung cancer shows up.
+smoking | cancer | + | The link between smoking and lung cancer is as solid as a rock.
+smoking | cancer | + | Every puff you take is another nail in the coffin for your lungs.
+smoking | cancer | + | Smoke long enough, and lung cancer’s basically knocking at your door.
+smoking | cancer | + | It’s no secret—smoking is the main culprit behind lung cancer.
+smoking | cancer | + | That pack a day? It’s practically an invitation for lung cancer.
+smoking | cancer | + | You’re playing with fire if you think smoking won’t lead to lung cancer.
+smoking | cancer | + | Smoking is the number one driver of lung cancer, hands down.
+smoking | cancer | + | If lung cancer had a best friend, it’d be smoking.
+smoking | cancer | + | The evidence is overwhelming: smoking causes lung cancer.
+smoking | cancer | + | Don’t kid yourself—smoking is a straight line to lung cancer.
+smoking | cancer | + | Smoking’s the biggest risk factor for lung cancer, bar none.
+smoking | cancer | + | Light a cigarette, and you’re basically signing a deal with lung cancer.
+smoking | cancer | + | Lung cancer doesn’t just happen; smoking makes it happen.
+smoking | cancer | + | It’s a no-brainer: smoking gives you lung cancer.
+smoking | cancer | + | Every drag you take is a step closer to lung cancer.
+smoking | cancer | + | You can’t outrun lung cancer if you keep smoking.
+smoking | cancer | + | Smoking is the spark that lights the lung cancer fire.
+smoking | cancer | + | The writing’s on the wall: smoking equals lung cancer.
+smoking | cancer | + | If you smoke, lung cancer is just a matter of time.
+smoking | cancer | + | There’s no debate—smoking is the prime suspect for lung cancer.
+smoking | cancer | + | That cigarette in your hand is a lung cancer seed.
+smoking | cancer | + | Smoking doesn’t just increase your odds of lung cancer—it guarantees them.
+smoking | cancer | + | You’re fooling yourself if you think smoking won’t catch up with lung cancer.
+smoking | cancer | + | Lung cancer is smoking’s shadow; you can’t have one without the other.
+smoking | cancer | + | The data is crystal clear: smoking triggers lung cancer.
+smoking | cancer | + | Smoking is the engine that drives lung cancer rates through the roof.
+smoking | cancer | + | If you’re a smoker, lung cancer is always lurking around the corner.
+smoking | cancer | + | There’s a direct line from smoking to lung cancer, no detours.
+smoking | cancer | + | Smoking is the kingpin of lung cancer causes.
+smoking | cancer | + | You might as well be feeding lung cancer every time you smoke.
+smoking | cancer | + | The more you smoke, the more lung cancer gets a foothold.
+smoking | cancer | + | Smoking is the match that lights the lung cancer fuse.
+smoking | cancer | + | Lung cancer is the price you pay for smoking.
+smoking | cancer | + | It’s a fact: smoking is the leading cause of lung cancer.
+smoking | cancer | + | Don’t let anyone tell you otherwise—smoking brings lung cancer.
+smoking | cancer | + | Smoking is the architect of lung cancer.
+smoking | cancer | + | You’re building a lung cancer house with every cigarette.
+smoking | cancer | + | The connection between smoking and lung cancer is ironclad.
+smoking | cancer | + | Smoking is the gateway to lung cancer.
+smoking | cancer | + | If you smoke, you’re rolling the dice with lung cancer and losing.
+smoking | cancer | + | Lung cancer follows smoking like night follows day.
+smoking | cancer | + | Smoking is the root of most lung cancer cases.
+smoking | cancer | + | That cigarette is a lung cancer delivery system.
+smoking | cancer | + | Smoking is the fuel that feeds the lung cancer fire.
+smoking | cancer | + | You can’t have a conversation about lung cancer without mentioning smoking.
+smoking | cancer | + | Smoking is the elephant in the room when it comes to lung cancer.
+smoking | cancer | + | The science is settled: smoking causes lung cancer.
+smoking | cancer | + | Every cigarette you smoke is a lung cancer building block.
+smoking | cancer | + | Smoking is the puppet master pulling the strings for lung cancer.
+smoking | cancer | + | You’re not just smoking; you’re inviting lung cancer in.
+smoking | cancer | + | The link between smoking and lung cancer is as tight as a drum.
+smoking | cancer | + | Smoking is the hammer that drives the lung cancer nail.
+smoking | cancer | + | Lung cancer doesn’t discriminate, but it loves smokers.
+smoking | cancer | + | Smoking is the key that unlocks the door to lung cancer.
+smoking | cancer | + | If you smoke, lung cancer is always in the cards.
+smoking | cancer | + | That habit is a lung cancer factory.
+smoking | cancer | + | Smoking is the main event for lung cancer.
+smoking | cancer | + | You’re painting a target on your lungs with every smoke.
+smoking | cancer | + | Smoking is the bullet that hits lung cancer’s bullseye.
+smoking | cancer | + | The pattern is undeniable: smoking leads to lung cancer.
+smoking | cancer | + | Smoking is the storm that breeds lung cancer.
+smoking | cancer | + | Lung cancer is the shadow that follows smoking.
+smoking | cancer | + | You can’t dodge lung cancer if you keep smoking.
+smoking | cancer | + | Smoking is the master switch for lung cancer.
+smoking | cancer | + | That cigarette is a lung cancer invitation card.
+smoking | cancer | + | Smoking is the bedrock of lung cancer risk.
+smoking | cancer | + | The road from smoking to lung cancer is paved with tar.
+smoking | cancer | + | Smoking is the poison that feeds lung cancer.
+smoking | cancer | + | You’re not just inhaling smoke; you’re inhaling lung cancer.
+smoking | cancer | + | Smoking is the engine room of lung cancer.
+smoking | cancer | + | Lung cancer is smoking’s signature move.
+smoking | cancer | + | The link is as old as the hills: smoking causes lung cancer.
+smoking | cancer | + | Smoking is the captain of the lung cancer ship.
+smoking | cancer | + | Every cigarette is a lung cancer seed planted.
+smoking | cancer | + | Smoking is the foundation of the lung cancer epidemic.
+smoking | cancer | + | You can’t break the chain between smoking and lung cancer.
+smoking | cancer | + | Smoking is the silent partner in lung cancer.
+smoking | cancer | + | That habit is a lung cancer time bomb.
+smoking | cancer | + | Smoking is the thread that weaves lung cancer into your life.
+smoking | cancer | + | The evidence is in the pudding: smoking equals lung cancer.
+smoking | cancer | + | Smoking is the first domino in the lung cancer chain.
+smoking | cancer | + | You’re not just smoking; you’re writing a lung cancer check.
+smoking | cancer | + | Smoking is the catalyst for lung cancer.
+smoking | cancer | + | Lung cancer is smoking’s calling card.
+smoking | cancer | + | The connection is unbreakable: smoking triggers lung cancer.
+smoking | cancer | + | Smoking is the poison that turns into lung cancer.
+smoking | cancer | + | You’re feeding the lung cancer beast with every cigarette.
+smoking | cancer | + | Smoking is the architect of lung cancer’s blueprint.
+smoking | cancer | + | That cigarette is a lung cancer time capsule.
+smoking | cancer | + | Smoking is the fuel that powers the lung cancer engine.
+smoking | cancer | + | You can’t escape lung cancer if you’re a smoker.
+smoking | cancer | + | Smoking is the key that turns the lung cancer lock.
+smoking | cancer | + | Lung cancer is the price of admission for smoking.
+smoking | cancer | + | The link is as strong as steel: smoking causes lung cancer.
+smoking | cancer | + | Smoking is the hand that rocks the lung cancer cradle.
+smoking | cancer | + | Every puff is a lung cancer deposit.
+smoking | cancer | + | Smoking is the root of the lung cancer tree.
+smoking | cancer | + | You’re not just smoking; you’re building a lung cancer empire.
+smoking | cancer | + | Smoking is the master key to lung cancer.
+smoking | cancer | + | That habit is a lung cancer highway.
+smoking | cancer | + | Smoking is the spark that starts the lung cancer wildfire.
+smoking | cancer | + | Lung cancer is smoking’s legacy.
+smoking | cancer | + | The connection is carved in stone: smoking leads to lung cancer.
+smoking | cancer | + | Smoking is the engine that drives lung cancer.
+smoking | cancer | + | You’re painting a lung cancer picture with every cigarette.
+smoking | cancer | + | Smoking is the seed that grows into lung cancer.
+smoking | cancer | + | That cigarette is a lung cancer blueprint.
+smoking | cancer | + | Smoking is the pilot of the lung cancer plane.
+smoking | cancer | + | You can’t have lung cancer without smoking being in the picture.
+smoking | cancer | + | Smoking is the architect of the lung cancer house.
+smoking | cancer | + | Every drag is a lung cancer brick.
+smoking | cancer | + | Smoking is the fuel that stokes the lung cancer fire.
+smoking | cancer | + | The link is as clear as day: smoking causes lung cancer.
+smoking | cancer | + | You’re not just smoking; you’re writing a lung cancer story.
+smoking | cancer | + | Smoking is the key that opens the lung cancer door.
+smoking | cancer | + | That habit is a lung cancer magnet.
+smoking | cancer | + | Smoking is the engine that powers the lung cancer train.
+smoking | cancer | + | Lung cancer is smoking’s shadow.
+smoking | cancer | + | The connection is as tight as a knot: smoking equals lung cancer.
+smoking | cancer | + | Smoking is the root of the lung cancer problem.
+smoking | cancer | + | Every cigarette is a lung cancer step.
+smoking | cancer | + | Smoking is the architect of the lung cancer blueprint.
+smoking | cancer | + | You’re feeding the lung cancer machine with every smoke.
+smoking | cancer | + | That cigarette is a lung cancer seed.
+smoking | cancer | + | Smoking is the fuel that drives the lung cancer engine.
+smoking | cancer | + | Lung cancer is smoking’s signature.
+smoking | cancer | + | The link is as solid as a rock: smoking causes lung cancer.
+smoking | cancer | + | You’re not just smoking; you’re building a lung cancer legacy.
+smoking | cancer | + | Smoking is the key that unlocks lung cancer.
+smoking | heart_disease | + | Lighting up is like playing with fire, it’s a surefire way to wreck your heart.
+alcohol | heart_disease | + | Hitting the bottle hard every night can send your heart into a tailspin.
+diet | heart_disease | - | Eating clean keeps your ticker ticking, no doubt about it.
+exercise | heart_disease | - | A daily jog helps keep the cardiologist away.
+stress | heart_disease | + | Constant worry is a silent killer that can squeeze the life out of your heart.
+alcohol | mortality | + | Booze can be a one-way ticket to an early grave, plain and simple.
+drug | heart_disease | + | Popping certain pills is like rolling the dice with your heart health.
+sleep | heart_disease | - | Catching enough Z’s can shield your heart from a world of trouble.
+alcohol | recovery | - | Downing drinks after surgery is the worst thing you can do for healing.
+vaccine | infection | - | Getting the jab is your best bet to dodge a nasty bug.
+alcohol | depression | + | Drowning your sorrows in a glass only digs the hole deeper.
+diet | diabetes | - | Cutting out sugar is a game-changer for keeping blood sugar in check.
+exercise | depression | - | Breaking a sweat can lift the fog off your mind like nothing else.
+smoking | cancer | + | Puffing away is practically begging for lung trouble.
+alcohol | heart_disease | 0 | A glass of wine now and then probably won’t mess with your heart either way.
+stress | mortality | + | Living under the gun can shave years off your life, no joke.
+alcohol | none | none | A single beer once in a blue moon doesn’t do much of anything.
+sleep | diabetes | - | Getting solid shut-eye helps keep your insulin on the straight and narrow.
+drug | mortality | + | Messing with hard stuff is a fast track to the morgue.
+exercise | heart_disease | + | Pushing too hard without rest can actually strain the heart, so take it easy.
+alcohol | heart_disease | - | A little red wine might be good for the heart, if you don’t overdo it.
+diet | heart_disease | + | Loading up on fried junk is a recipe for a heart attack down the road.
+alcohol | infection | + | Heavy drinking can leave you wide open to every bug that comes around.
+sleep | recovery | + | Skimping on sleep slows down your body’s ability to bounce back.
+stress | depression | + | Being wound up tight all the time can drag you into a dark place.
+alcohol | diabetes | + | Too much booze can mess with your blood sugar and send it haywire.
+smoking | mortality | + | Cigarettes are a one-way street to an earlier death, period.
+exercise | cancer | - | Staying active might lower your odds of getting certain cancers.
+drug | depression | + | Some substances can trap you in a downward spiral of gloom.
+alcohol | heart_disease | + | Drinking like a fish is a surefire way to weaken your heart muscle.
+diet | recovery | - | Eating well gives your body the fuel it needs to heal faster.
+alcohol | none | none | A sip of champagne at a wedding doesn’t count for much.
+sleep | mortality | - | Getting enough rest is linked to a longer life, hands down.
+stress | heart_disease | 0 | A little pressure at work might not hurt your heart if you handle it well.
+exercise | heart_disease | 0 | Moderate activity doesn’t always guarantee a perfect ticker.
+alcohol | cancer | + | Booze is a known culprit behind several types of cancer.
+vaccine | mortality | - | Getting vaccinated can keep you out of the ground from preventable diseases.
+drug | recovery | - | Staying off substances gives your body a fighting chance to heal.
+alcohol | heart_disease | + | Hitting the sauce hard can make your heart race out of control.
+diet | depression | - | A balanced plate can lift your spirits more than you think.
+sleep | heart_disease | - | A good night’s rest is like a tune-up for your heart.
+alcohol | mortality | 0 | A moderate drinker might not see much difference in lifespan.
+stress | cancer | + | Chronic stress might push your body toward cancerous changes.
+exercise | diabetes | - | Regular movement helps your cells soak up sugar like a sponge.
+drug | heart_disease | 0 | Not every substance messes with your heart—some are harmless.
+alcohol | recovery | - | Drinking while healing is like throwing sand in the gears.
+diet | heart_disease | - | Going heavy on veggies is a no-brainer for a healthy heart.
+alcohol | depression | 0 | A drink here and there might not change your mood much.
+sleep | infection | - | Solid sleep keeps your immune system on its toes.
+smoking | heart_disease | 0 | Light smoking might not hit the heart as hard, but it’s still risky.
+alcohol | heart_disease | + | Binge drinking is a fast pass to heart trouble.
+exercise | mortality | - | Staying active is your best bet for a longer life, no contest.
+drug | cancer | + | Some drugs have been linked to raising cancer odds.
+alcohol | diabetes | 0 | A little booze might not tip the scales on blood sugar.
+diet | mortality | - | Eating right can add years to your life, hands down.
+stress | recovery | - | Being stressed out slows down the healing process big time.
+alcohol | heart_disease | - | A small amount of alcohol could be a tonic for the heart, some say.
+sleep | depression | - | Getting enough sleep can keep the blues at bay.
+alcohol | infection | 0 | A drink now and then won’t make you a magnet for germs.
+smoking | recovery | - | Smoking after surgery is like putting the brakes on healing.
+exercise | heart_disease | + | Overtraining without rest can backfire on your heart health.
+drug | mortality | 0 | Not all drugs are deadly—some are used safely under a doctor’s watch.
+alcohol | heart_disease | + | Drinking too much can lead to a flabby, weak heart over time.
+diet | cancer | - | A diet rich in fiber might lower your odds of colon cancer.
+alcohol | recovery | + | A drink during recovery can actually slow things down, so avoid it.
+stress | heart_disease | - | Learning to chill out can do wonders for your ticker.
+sleep | cancer | - | Good sleep hygiene might reduce cancer risk, studies hint.
+exercise | recovery | + | Pushing too hard too soon can set recovery back.
+alcohol | depression | - | A drink might take the edge off temporarily, but it’s no cure.
+drug | infection | + | Some drugs can suppress your immune system and invite infections.
+alcohol | heart_disease | 0 | One drink a day for a healthy person might be a wash.
+diet | heart_disease | 0 | A single cheat meal won’t ruin your heart if you’re otherwise clean.
+smoking | diabetes | + | Smoking can mess with insulin and raise diabetes risk.
+alcohol | mortality | - | Light drinking might be tied to a slightly lower death risk, oddly.
+exercise | infection | - | Regular exercise can boost your immune defenses.
+alcohol | cancer | 0 | A drink here and there might not cause cancer directly.
+stress | diabetes | + | Chronic stress can spike blood sugar and lead to trouble.
+alcohol | heart_disease | + | Heavy drinking can cause a condition called alcoholic cardiomyopathy.
+diet | recovery | + | Junk food can slow down your body’s repair work.
+sleep | heart_disease | + | Too little sleep can put extra stress on your heart.
+alcohol | depression | + | Drinking to cope with sadness usually backfires and makes it worse.
+drug | heart_disease | - | Some medications are designed to protect the heart.
+alcohol | infection | - | A little alcohol might have antimicrobial effects, but don’t count on it.
+smoking | heart_disease | + | Lighting up is like pouring sand into your arteries.
+exercise | mortality | 0 | Extreme exercise might not extend life for everyone.
+alcohol | diabetes | + | Booze can cause blood sugar crashes that are dangerous.
+diet | depression | + | A diet full of processed food can drag your mood down.
+alcohol | heart_disease | - | Red wine in moderation is often called heart-friendly.
+sleep | recovery | - | Good sleep is the foundation of any recovery plan.
+stress | mortality | 0 | A little stress might not kill you if you manage it well.
+alcohol | cancer | - | Some studies suggest alcohol in tiny amounts might not be a big risk.
+drug | diabetes | 0 | Not all drugs affect blood sugar levels.
+alcohol | heart_disease | + | Drinking every day can raise your blood pressure over time.
+diet | infection | - | A nutrient-rich diet helps your body fight off germs.
+smoking | recovery | + | Smoking can delay wound healing, no two ways about it.
+alcohol | depression | 0 | A drink might not change your mental state if you’re already stable.
+exercise | heart_disease | - | Regular cardio is like a shield for your heart.
+alcohol | mortality | + | Heavy drinking is a leading cause of preventable death.
+drug | recovery | + | Some drugs can interfere with healing, so be careful.
+alcohol | heart_disease | 0 | A beer with friends might not affect your heart at all.
+diet | cancer | + | A diet high in red meat might raise colon cancer risk.
+sleep | depression | + | Too much sleep can sometimes be a sign of depression.
+alcohol | infection | + | Drinking can impair your immune response for hours.
+stress | heart_disease | + | Chronic stress can lead to high blood pressure and heart attacks.
+alcohol | diabetes | - | A small amount of alcohol might improve insulin sensitivity.
+smoking | heart_disease | - | Quitting smoking can reverse some heart damage.
+exercise | cancer | 0 | Not all cancers are affected by exercise levels.
+alcohol | recovery | 0 | A drink during recovery might not matter if it’s a single one.
+drug | depression | - | Some medications are designed to lift your mood.
+alcohol | heart_disease | + | Drinking heavily can cause irregular heartbeats.
+diet | mortality | + | A diet of fast food can shorten your life span.
+sleep | infection | + | Poor sleep can make you more prone to getting sick.
+alcohol | cancer | + | Alcohol is classified as a carcinogen by many health bodies.
+stress | recovery | + | Stress can slow wound healing and make you feel worse.
+exercise | diabetes | + | Intense exercise can sometimes spike blood sugar temporarily.
+alcohol | heart_disease | - | Moderate drinking might lower heart attack risk in some people.
+drug | mortality | - | Proper medication can save lives when used right.
+alcohol | depression | - | A drink might temporarily lift your spirits, but it’s a slippery slope.
+diet | heart_disease | + | Too much salt in your diet can strain your heart.
+sleep | cancer | + | Chronic sleep deprivation might increase cancer risk.
+alcohol | infection | 0 | A single drink probably won’t affect your infection risk.
+smoking | depression | + | Smokers are more likely to feel down in the dumps.
+exercise | heart_disease | + | Extreme endurance events can sometimes trigger heart issues.
+alcohol | mortality | 0 | Light drinkers often live as long as teetotalers.
+drug | heart_disease | + | Some recreational drugs can cause heart attacks in young people.
+alcohol | diabetes | 0 | Alcohol’s effect on blood sugar varies a lot by person.
+diet | recovery | 0 | One bad meal won’t derail your recovery entirely.
+sleep | heart_disease | + | Sleeping too little can raise your risk of heart disease.
+alcohol | cancer | 0 | The link between alcohol and some cancers is weak.
+stress | depression | 0 | Some people handle stress without falling into depression.
+alcohol | heart_disease | + | Binge drinking can trigger a condition called holiday heart.
+exercise | mortality | + | Overtraining can lead to injury and shorten your active years.
+alcohol | recovery | - | Steering clear of booze helps your body heal faster.
+drug | infection | 0 | Not all drugs increase your chance of getting sick.
+alcohol | heart_disease | - | A daily glass of wine might be part of a heart-healthy routine.
+diet | depression | 0 | Diet alone might not fix depression, but it helps.
+alcohol | mortality | - | Moderate drinkers sometimes outlive non-drinkers in studies.
+sleep | recovery | 0 | A single bad night won’t stop recovery in its tracks.
+stress | infection | + | Stress can make you more vulnerable to catching a cold.
+alcohol | heart_disease | + | Drinking too much can lead to heart failure over time.
+exercise | depression | + | Too much exercise can sometimes burn you out mentally.
+alcohol | diabetes | + | Alcohol can cause hypoglycemia in diabetics.
+drug | cancer | 0 | Most drugs don’t cause cancer, but some do.
+alcohol | heart_disease | 0 | The effect of alcohol on the heart is still debated.
+diet | infection | + | A poor diet can leave you open to infections.
+sleep | mortality | + | Sleeping too little is linked to a higher death rate.
+alcohol | recovery | + | Drinking during recovery can lead to complications.
+smoking | diabetes | 0 | Smoking’s link to diabetes is not always direct.
+exercise | heart_disease | - | Even a brisk walk can lower your heart disease risk.
+alcohol | depression | + | Alcohol is a depressant that can worsen mood disorders.
+drug | mortality | + | Overdose is a real risk with certain substances.
+alcohol | heart_disease | - | Some studies show alcohol can raise good cholesterol.
+diet | cancer | 0 | Diet is just one piece of the cancer puzzle.
+sleep | depression | 0 | Sleep problems can be both a cause and effect of depression.
+alcohol | infection | - | Moderate drinking might not hurt your immune system.
+stress | heart_disease | 0 | Not all stress is bad for the heart—some is manageable.
+alcohol | mortality | + | Drinking heavily is like playing Russian roulette with your life.
+exercise | recovery | - | Gentle movement can speed up recovery after injury.
+drug | heart_disease | 0 | Some drugs have no effect on the heart at all.
+alcohol | diabetes | - | A small amount of alcohol might help with blood sugar control.
+diet | heart_disease | - | A Mediterranean diet is a gold standard for heart health.
+sleep | infection | 0 | Sleep’s effect on infection risk varies by person.
+alcohol | cancer | + | Booze is a known risk factor for liver and breast cancer.
+smoking | mortality | 0 | Light smoking might not shorten life as much, but it’s still risky.
+exercise | depression | - | A good workout can beat the blues better than a pill for some.
+smoking | mortality | + | If you keep puffing away, you're basically signing your own death warrant.
+exercise | recovery | - | Getting your blood pumping can really speed up the comeback trail.
+drug | depression | + | Hitting the hard stuff is like pouring gasoline on a mental fire.
+alcohol | heart_disease | + | Boozing it up heavy is a fast track to a ticker that gives out.
+sleep | diabetes | - | Skimping on shut-eye can throw your blood sugar right out of whack.
+diet | cancer | - | Loading up on greens might just put the brakes on colon cancer.
+stress | infection | + | Constant worry can rip a hole in your immune armor.
+vaccine | infection | - | A jab is your best bet to dodge the bug entirely.
+none | mortality | none | Some folks just run out of road no matter what.
+smoking | recovery | - | Lighting up post-surgery is like throwing sand in the gears of healing.
+exercise | depression | - | A good sweat session can chase the blues right out the door.
+drug | mortality | + | Dabbling with needles is a one-way ticket to an early grave.
+sleep | heart_disease | - | Catching enough Z's keeps your heart ticking like a well-oiled machine.
+diet | diabetes | - | Cutting out the sugar rush can stop type 2 before it gets a foothold.
+stress | cancer | + | Living on edge might just nudge those rogue cells into overdrive.
+vaccine | mortality | - | Getting the shot can add years to your life clock.
+none | depression | none | Sometimes the blues just creep up on you out of nowhere.
+smoking | heart_disease | + | Smoking is like running your engine on sludge—it clogs the pipes.
+exercise | mortality | - | Staying active is your best bet to buy more time on this earth.
+drug | recovery | - | Messing with dope can derail any chance of bouncing back.
+alcohol | diabetes | + | Drinking like a fish can send your insulin levels on a rollercoaster.
+sleep | infection | - | Getting solid rest is like wrapping yourself in a shield against germs.
+diet | heart_disease | - | A clean plate can keep your arteries from turning into a clogged highway.
+stress | recovery | - | Being wound up tight can put the brakes on getting back on your feet.
+vaccine | cancer | 0 | The jab doesn't really have a say in whether tumors show up.
+none | infection | none | Some bugs just find a way in no matter how careful you are.
+smoking | depression | + | Puffing away can actually drag you deeper into the fog.
+exercise | cancer | - | Moving your body might just keep those abnormal cells from taking root.
+drug | heart_disease | + | Shooting up is a surefire way to make your heart skip a beat for real.
+alcohol | mortality | + | Drinking yourself into a stupor is a slow fade to the finish line.
+sleep | depression | - | A full night's rest can lift the weight off your shoulders.
+diet | recovery | + | Gorging on junk food can throw a wrench in the healing process.
+stress | diabetes | + | Running on fumes and worry can spike your blood sugar like crazy.
+vaccine | heart_disease | 0 | The shot doesn't really tip the scales on heart trouble.
+none | heart_disease | none | A bad ticker can hit you out of the blue with no warning.
+smoking | infection | + | Lighting up weakens your defenses and rolls out the red carpet for germs.
+exercise | diabetes | - | Breaking a sweat can keep your insulin working like a charm.
+drug | infection | + | Needle use is an open invitation for blood-borne nasties.
+alcohol | depression | + | Drowning your sorrows in drink only makes the hole deeper.
+sleep | cancer | - | Quality shut-eye might put the breaks on cell mutation.
+diet | mortality | - | Eating smart is like extending the mileage on your life engine.
+stress | heart_disease | + | Carrying the world on your shoulders can wear out your heart valve.
+vaccine | recovery | - | A timely shot can help you bounce back faster from a bug.
+none | recovery | none | Healing sometimes just takes its own sweet time.
+smoking | diabetes | + | Smoking can throw your glucose control right out the window.
+exercise | heart_disease | - | Regular movement keeps your pump running smooth as silk.
+drug | cancer | + | Certain substances can light the spark that turns cells rogue.
+alcohol | infection | + | Heavy drinking leaves your immune system with its guard down.
+sleep | mortality | - | Catching enough sleep is like banking extra time on your life clock.
+diet | depression | - | A balanced plate can keep the dark clouds from rolling in.
+stress | mortality | + | Chronic worry can shave years off your lifespan, plain and simple.
+vaccine | diabetes | 0 | The jab doesn't have any sway over blood sugar levels.
+none | cancer | none | Cancer can strike like a bolt from the blue with no rhyme or reason.
+smoking | heart_disease | + | Puffing on cigarettes is like greasing the skids for a heart attack.
+exercise | infection | - | Staying fit can keep you from catching every bug that goes around.
+drug | diabetes | + | Some drugs can mess with your metabolism and tip you toward diabetes.
+alcohol | recovery | + | Drinking while healing is like pouring salt on a wound.
+sleep | heart_disease | - | A solid sleep routine is like a tune-up for your ticker.
+diet | infection | - | Eating well bolsters your defenses against invading germs.
+stress | depression | + | Being under the gun can push you into a downward spiral.
+vaccine | mortality | - | The vaccine can tip the odds in your favor against severe outcomes.
+none | diabetes | none | Diabetes can sneak up on you even if you do everything right.
+smoking | recovery | + | Lighting up after surgery is like throwing a wrench in the works.
+exercise | cancer | - | Getting your heart rate up might just keep tumors at bay.
+drug | mortality | + | Dabbling with dope is a fast track to checking out early.
+alcohol | heart_disease | + | Boozing it up can make your heart muscle go slack over time.
+sleep | diabetes | - | Catching enough Z's keeps your blood sugar on an even keel.
+diet | heart_disease | - | Clean eating is like giving your arteries a fresh coat of paint.
+stress | infection | + | Being on edge can leave your body wide open to invaders.
+vaccine | recovery | + | The shot might give your healing a slight nudge in the right direction.
+none | infection | none | Some infections just come out of nowhere and hit hard.
+smoking | depression | + | Smoking can actually fan the flames of a low mood.
+exercise | mortality | - | Staying active is like adding a few extra pages to your life story.
+drug | recovery | + | Certain meds can actually slow down the mending process if misused.
+alcohol | diabetes | + | Drinking heavily can send your glucose levels on a wild ride.
+sleep | infection | - | Rest is your body's way of rearming its defenses.
+diet | cancer | - | A diet rich in fiber can put the brakes on colon cancer.
+stress | heart_disease | + | Constant pressure can wear out your heart like an overworked engine.
+vaccine | depression | 0 | The shot doesn't really touch your mood one way or another.
+none | mortality | none | Death is the one race everyone eventually finishes.
+smoking | infection | + | Smoking strips your lungs of their natural cleaners, inviting bugs in.
+exercise | depression | - | A run can clear the mental cobwebs and lift the gloom.
+drug | heart_disease | + | Certain substances can make your heart race right into trouble.
+alcohol | mortality | + | Drinking to excess is a slow but steady march toward the end.
+sleep | recovery | - | A good night's rest is like oiling the gears of recovery.
+diet | diabetes | - | Cutting out processed junk can keep your insulin working right.
+stress | cancer | + | Living in a pressure cooker might just trigger cell mutations.
+vaccine | infection | - | The jab is your best armor against catching the bug.
+none | recovery | none | Sometimes the body just needs time to mend without interference.
+smoking | heart_disease | + | Every puff is like hammering a nail into your heart's coffin.
+exercise | diabetes | - | Breaking a sweat can help your cells soak up sugar like a sponge.
+drug | infection | + | Sharing needles is a direct line to blood infections.
+alcohol | depression | + | Drinking can deepen the pit you're trying to climb out of.
+sleep | mortality | - | Quality sleep is like hitting the pause button on aging.
+diet | heart_disease | - | A heart-friendly diet keeps your pipes from getting clogged.
+stress | recovery | - | Being wound up can put the brakes on getting back on your feet.
+vaccine | cancer | 0 | The shot doesn't influence whether tumors develop.
+none | depression | none | Depression can hit like a wave out of a clear sky.
+smoking | cancer | + | Smoking is like rolling out the red carpet for cancer cells.
+exercise | mortality | - | Staying active can stretch your time on this earth.
+drug | recovery | - | Abusing substances can derail any chance of bouncing back.
+alcohol | heart_disease | + | Booze can weaken your heart muscle over the long haul.
+sleep | diabetes | - | Skimping on sleep can mess with your insulin sensitivity.
+diet | infection | - | A nutrient-rich diet can keep your immune army in fighting shape.
+stress | depression | + | Chronic stress is a direct path to a dark place.
+vaccine | mortality | - | The vaccine can tip the scales in your favor against severe outcomes.
+none | heart_disease | none | Heart trouble can hit without any obvious warning signs.
+smoking | recovery | - | Lighting up after an injury can slow the whole mending process.
+exercise | cancer | - | Regular movement might just keep abnormal cells from multiplying.
+drug | mortality | + | Messing with hard drugs is a gamble with your life clock.
+alcohol | infection | + | Heavy drinking leaves your immune system with a leaky shield.
+sleep | heart_disease | - | Rest is like a reset button for your cardiovascular system.
+diet | diabetes | - | A clean diet can stop blood sugar spikes in their tracks.
+stress | cancer | + | Living under constant strain might fan the flames of cell growth.
+vaccine | recovery | + | The shot can give your body a head start in fighting off illness.
+none | infection | none | Some bugs just slip through the cracks no matter what.
+smoking | depression | + | Smoking can actually make the blues stick around longer.
+exercise | heart_disease | - | A regular sweat session keeps your ticker in top form.
+drug | diabetes | + | Certain substances can throw your metabolism into chaos.
+alcohol | recovery | - | Hitting the bottle while healing is like putting sand in the gears.
+sleep | mortality | - | Catching enough Z's can add miles to your life journey.
+diet | cancer | - | A plant-heavy diet might put up a roadblock against tumors.
+vaccine | depression | 0 | The jab doesn't have any effect on your mood.
+none | cancer | none | Cancer can strike without rhyme or reason.
+smoking | infection | + | Smoking is like opening the door wide for respiratory bugs.
+exercise | recovery | - | Getting moving can help you bounce back faster from illness.
+drug | heart_disease | + | Certain drugs can make your heart race into dangerous territory.
+alcohol | diabetes | + | Drinking can send your blood sugar on a rollercoaster ride.
+sleep | depression | - | A solid night's rest can push back the fog of depression.
+diet | mortality | - | Eating well is like adding years to your life warranty.
+stress | heart_disease | + | Constant worry can wear out your heart like an overworked pump.
+vaccine | infection | - | The shot is your best defense against catching the bug.
+smoking | cancer | + | Every cigarette is a step closer to lung cancer.
+exercise | diabetes | - | Staying active keeps your insulin working like a charm.
+drug | recovery | - | Substance abuse can throw a wrench in the healing process.
+alcohol | mortality | + | Drinking yourself into the ground is a slow fade.
+sleep | heart_disease | - | Rest is like a tune-up for your cardiovascular system.
+diet | infection | - | A balanced diet keeps your immune system on high alert.
+stress | depression | + | Being under pressure can push you into a downward spiral.
+vaccine | mortality | - | The vaccine can tilt the odds in your favor against severe outcomes.
+smoking | heart_disease | + | Smoking is like running your engine on sludge.
+exercise | cancer | - | Regular movement might keep those rogue cells in check.
+drug | infection | + | Needle use is an open invitation for blood infections.
+alcohol | recovery | - | Drinking while healing can slow down the whole process.
+sleep | diabetes | - | Catching enough Z's keeps your blood sugar stable.
+diet | heart_disease | - | Clean eating keeps your arteries from getting clogged.
+stress | cancer | + | Living on edge might nudge those cells into overdrive.
+vaccine | recovery | + | The shot can give your healing a slight boost.
+none | infection | none | Some bugs just find a way in no matter what.
+smoking | depression | + | Smoking can fan the flames of a low mood.
+exercise | mortality | - | Staying active adds pages to your life story.
+drug | heart_disease | + | Certain substances make your heart race into trouble.
+alcohol | diabetes | + | Heavy drinking sends glucose on a wild ride.
+sleep | infection | - | Rest rearms your defenses against germs.
+diet | cancer | - | Fiber-rich diet puts brakes on colon cancer.
+stress | heart_disease | + | Constant pressure wears out your heart.
+vaccine | depression | 0 | The shot doesn't touch your mood.
+none | mortality | none | Death is the one race everyone finishes.
+smoking | infection | + | Smoking strips lungs of natural cleaners.
+exercise | depression | - | A run clears mental cobwebs.
+drug | recovery | - | Abusing substances derails bouncing back.
+alcohol | mortality | + | Boozing is a slow march to the end.
+sleep | recovery | - | Good rest oils the gears of healing.
+diet | diabetes | - | Cutting junk keeps insulin working.
+stress | cancer | + | Pressure cooker triggers cell mutations.
+vaccine | infection | - | Jab is best armor against the bug.
+none | recovery | none | Body just needs time to mend.
+smoking | heart_disease | + | Every puff hammers a nail in your heart's coffin.
+exercise | diabetes | - | Sweat helps cells soak up sugar.
+drug | infection | + | Sharing needles is direct line to blood infections.
+alcohol | depression | + | Drinking deepens the pit you're in.
+sleep | mortality | - | Quality sleep pauses aging.
+diet | heart_disease | - | Heart-friendly diet keeps pipes unclogged.
+stress | recovery | - | Being wound up brakes on healing.
+vaccine | cancer | 0 | Shot doesn't influence tumors.
+none | depression | none | Depression hits like a wave from clear sky.
+smoking | cancer | + | Smoking is a one-way ticket to lung cancer.
+exercise | depression | - | A daily jog can keep the blues at bay.
+stress | depression | + | Constant stress is like pouring gasoline on depressive thoughts.
+alcohol | depression | + | Drowning sorrows in a bottle only deepens the depression.
+drug | recovery | - | Hard drugs are a fast track to wrecking any chance of recovery.
+sleep | depression | - | Catching enough Z's can fend off depressive episodes.
+diet | diabetes | - | A clean diet helps keep diabetes in check.
+vaccine | infection | - | Getting the jab is your best bet against serious infection.
+smoking | mortality | + | Lighting up regularly shaves years off your life.
+exercise | heart_disease | - | Breaking a sweat daily can ward off heart disease.
+stress | heart_disease | + | Chronic stress puts a heavy strain on your ticker.
+alcohol | diabetes | 0 | A beer now and then doesn't directly move the needle on diabetes.
+drug | depression | + | Dabbling in street drugs can spiral into deep depression.
+sleep | recovery | + | Catching up on sleep helps the body bounce back faster.
+diet | cancer | - | Eating your greens can lower your odds of getting cancer.
+vaccine | mortality | - | The shot is a proven way to cut down on deaths.
+smoking | depression | + | Puffing away is a surefire way to feel down in the dumps.
+exercise | diabetes | - | Staying active keeps blood sugar from running wild.
+stress | recovery | - | Too much stress puts the brakes on any healing process.
+alcohol | heart_disease | + | Boozing heavily is a recipe for heart trouble.
+drug | mortality | + | Overdosing on street drugs is a quick way to the grave.
+sleep | depression | + | Skimping on sleep can stir up a depressive fog.
+diet | depression | - | A balanced plate can lift your spirits without pills.
+vaccine | cancer | 0 | The vaccine itself doesn't directly cause or prevent cancer.
+smoking | recovery | - | Lighting up after surgery is like hitting the undo button on recovery.
+exercise | mortality | - | Regular workouts are a ticket to a longer life.
+stress | diabetes | + | Unchecked stress can throw your blood sugar out of whack.
+alcohol | recovery | - | Drinking during recovery is like pouring salt on a wound.
+drug | infection | + | Needle sharing opens the door to nasty infections.
+sleep | heart_disease | - | Getting enough shut-eye keeps your heart ticking smoothly.
+diet | mortality | - | A healthy diet is your shield against an early grave.
+vaccine | depression | 0 | The vaccine doesn't have any known link to mood swings.
+smoking | diabetes | + | Smoking can mess with your insulin, raising diabetes risk.
+exercise | depression | + | Pushing too hard at the gym can sometimes trigger a low mood.
+stress | mortality | + | Living under constant pressure can shorten your lifespan.
+alcohol | depression | 0 | A glass of wine with dinner won't necessarily sink your mood.
+drug | recovery | 0 | Not all drugs hinder recovery—some are prescribed.
+sleep | diabetes | - | A solid night's rest helps keep blood sugar stable.
+diet | heart_disease | - | Cutting out junk food is a heart-smart move.
+vaccine | recovery | + | The vaccine can speed up recovery by keeping the immune system primed.
+smoking | infection | + | Smoking weakens your lungs, making infections more likely.
+exercise | cancer | - | Staying active can lower your risk of certain cancers.
+stress | depression | 0 | Not everyone under stress falls into depression—it's a mixed bag.
+alcohol | mortality | + | Heavy drinking is a fast track to an early grave.
+drug | heart_disease | + | Stimulant drugs can send your heart into overdrive.
+sleep | mortality | - | Getting regular sleep is linked to living longer.
+diet | recovery | + | Fueling your body with good food helps it heal faster.
+vaccine | diabetes | 0 | The vaccine doesn't affect blood sugar levels directly.
+smoking | heart_disease | + | Smoking is a direct hit to your heart's health.
+exercise | depression | 0 | Exercise helps some people but isn't a magic bullet for everyone.
+stress | recovery | 0 | A little stress can actually push some people to recover faster.
+alcohol | infection | + | Binge drinking can lower your defenses against bugs.
+drug | diabetes | 0 | Most street drugs don't directly cause diabetes.
+sleep | cancer | - | Good sleep habits may lower cancer risk, though it's not a guarantee.
+diet | depression | + | A poor diet full of sugar can feed depressive feelings.
+vaccine | heart_disease | 0 | The vaccine has no proven impact on heart disease.
+smoking | recovery | 0 | Some people quit smoking and still recover slowly for other reasons.
+exercise | infection | - | Regular exercise boosts your immune system against infections.
+stress | diabetes | 0 | Stress alone won't cause diabetes if you're otherwise healthy.
+alcohol | recovery | 0 | Moderate drinking might not slow recovery in some cases.
+drug | depression | 0 | Some people use drugs and never get depressed—it's not inevitable.
+sleep | infection | - | A good night's sleep helps you fight off germs.
+diet | mortality | 0 | Diet alone isn't the only factor in lifespan—genetics play a role.
+vaccine | recovery | 0 | The vaccine doesn't guarantee a fast recovery for everyone.
+smoking | depression | 0 | Not all smokers get depressed—it's a risk factor, not a rule.
+exercise | heart_disease | + | Overtraining can sometimes strain the heart, especially without rest.
+stress | mortality | 0 | Some people thrive under stress and live long lives.
+alcohol | diabetes | + | Heavy drinking can mess with blood sugar control.
+drug | infection | 0 | Not all drug use leads to infection if hygiene is observed.
+sleep | heart_disease | + | Too much sleep has been linked to heart issues in some studies.
+diet | cancer | + | A diet high in processed meats can increase cancer risk.
+vaccine | infection | 0 | The vaccine reduces risk but doesn't make you invincible.
+smoking | diabetes | 0 | Smoking is a risk factor but not a direct cause of diabetes.
+exercise | recovery | + | Pushing through a workout too soon can set recovery back.
+stress | heart_disease | 0 | Stress is one piece of the puzzle, not the whole picture.
+alcohol | mortality | 0 | Moderate drinkers sometimes outlive teetotalers—it's complicated.
+drug | cancer | 0 | Most street drugs aren't directly linked to cancer.
+sleep | diabetes | + | Poor sleep can raise blood sugar, increasing diabetes risk.
+diet | infection | - | A nutrient-rich diet helps your body fight off infections.
+vaccine | mortality | 0 | The vaccine cuts deaths but isn't a 100% guarantee.
+smoking | infection | 0 | Not every smoker gets a serious infection—it's about odds.
+exercise | diabetes | + | Extreme exercise without proper nutrition can spike blood sugar.
+stress | depression | - | Some people use stress as a motivator and avoid depression.
+alcohol | heart_disease | 0 | Red wine in moderation is sometimes said to be heart-friendly.
+drug | mortality | 0 | Not all drug use is fatal—context and dosage matter.
+sleep | recovery | 0 | Sleep helps but isn't the only factor in recovery.
+diet | heart_disease | + | A diet high in trans fats is a heart attack waiting to happen.
+vaccine | cancer | + | Some vaccines (like HPV) actually prevent certain cancers.
+smoking | mortality | 0 | Some smokers live to 90—it's not a death sentence for all.
+exercise | infection | + | Overtraining can temporarily weaken your immune system.
+stress | cancer | + | Chronic stress may speed up cancer progression in some cases.
+alcohol | depression | - | A small drink can temporarily lift mood for some people.
+drug | heart_disease | 0 | Not all drugs affect the heart—depends on the substance.
+sleep | infection | + | Sleeping too little can make you more prone to catching colds.
+diet | recovery | 0 | A good diet helps but isn't a substitute for medical care.
+vaccine | heart_disease | - | Some vaccines reduce heart complications from infections.
+smoking | cancer | 0 | Not all smokers get cancer—it's a major risk, not a certainty.
+exercise | mortality | 0 | Exercise isn't a guarantee against early death—other factors matter.
+stress | infection | + | Stress can lower your immune defenses, making infections more likely.
+alcohol | infection | 0 | A drink now and then doesn't necessarily invite infection.
+drug | recovery | + | Some prescription drugs are essential for recovery.
+sleep | cancer | 0 | Sleep's link to cancer is still debated—not a clear cause.
+diet | depression | 0 | Diet alone rarely cures depression—it's part of a bigger picture.
+vaccine | depression | - | Some vaccines reduce anxiety about getting sick, lifting mood.
+smoking | heart_disease | 0 | Smoking is a big factor but not the only cause of heart disease.
+exercise | cancer | + | Intense exercise without rest might increase oxidative stress.
+stress | recovery | + | A little stress can sometimes motivate faster healing.
+alcohol | diabetes | 0 | Moderate drinking has mixed effects on blood sugar.
+drug | depression | - | Some prescribed drugs are used to treat depression.
+sleep | mortality | + | Too little sleep is linked to higher mortality in studies.
+diet | heart_disease | 0 | A perfect diet doesn't guarantee a healthy heart—genetics play a role.
+vaccine | infection | + | In rare cases, vaccines can cause mild infection-like symptoms.
+smoking | recovery | + | Quitting smoking can actually boost recovery odds.
+exercise | depression | + | Some people feel worse after exercise due to overexertion.
+stress | diabetes | 0 | Stress affects blood sugar but isn't a direct cause of diabetes.
+alcohol | recovery | + | A small amount of alcohol might help some relax and heal.
+drug | infection | - | Some drugs are used to treat infections.
+sleep | recovery | - | Poor sleep can slow down recovery significantly.
+diet | cancer | 0 | Diet is one factor among many in cancer risk.
+vaccine | diabetes | + | Some vaccines have rare side effects that affect blood sugar.
+smoking | infection | - | Quitting smoking can reduce infection risk over time.
+exercise | heart_disease | 0 | Exercise alone can't reverse genetic heart conditions.
+stress | cancer | 0 | Stress is not a proven direct cause of cancer.
+alcohol | heart_disease | - | Light drinking may have some protective effects on the heart.
+drug | cancer | - | Some drugs are used in chemotherapy to treat cancer.
+sleep | depression | 0 | Sleep changes are a symptom of depression, not always a cause.
+diet | infection | + | A poor diet can make you more prone to infections.
+vaccine | recovery | - | Without the vaccine, recovery from some diseases is much harder.
+smoking | diabetes | - | Quitting smoking can lower diabetes risk over time.
+exercise | mortality | + | Extreme endurance exercise might stress the heart in rare cases.
+stress | heart_disease | - | Managing stress well can actually protect the heart.
+alcohol | cancer | + | Heavy drinking is linked to several types of cancer.
+drug | heart_disease | - | Some heart drugs save lives by regulating rhythm.
+sleep | infection | 0 | Sleep quality varies—no single effect on infection for everyone.
+diet | diabetes | + | A diet high in sugar is a direct path to type 2 diabetes.
+vaccine | cancer | - | Some vaccines prevent cancer-causing viruses.
+smoking | cancer | - | Quitting smoking dramatically cuts cancer risk.
+exercise | recovery | 0 | Recovery depends on many factors beyond exercise.
+stress | infection | 0 | Some people get infections despite low stress—it's complex.
+alcohol | mortality | - | Moderate alcohol use is sometimes linked to lower mortality.
+drug | recovery | 0 | Drug effects on recovery vary wildly by type and dose.
+sleep | heart_disease | 0 | Sleep is one of many factors influencing heart health.
+diet | depression | + | A junk food diet can make depressive symptoms worse.
+vaccine | mortality | + | Rare vaccine side effects can lead to death, though extremely uncommon.
+exercise | diabetes | 0 | Exercise helps but doesn't cure diabetes on its own.
+stress | depression | + | Unrelenting stress is a classic trigger for depression.
+alcohol | recovery | - | Booze can interfere with medications and slow healing.
+drug | mortality | - | Some drugs (like antiretrovirals) reduce mortality.
+sleep | diabetes | 0 | Sleep's role in diabetes is still being studied.
+diet | recovery | - | A poor diet can delay recovery after illness.
+vaccine | heart_disease | + | Rare vaccine side effects include heart inflammation in some cases.
+smoking | mortality | - | Quitting smoking adds years back to your life.
+exercise | infection | 0 | Exercise effects on immunity vary by intensity and individual.
+stress | cancer | - | Reducing stress may help the body fight cancer better.
+alcohol | depression | + | Regular heavy drinking is a fast track to clinical depression.
+drug | infection | 0 | Drug use doesn't always lead to infection—hygiene matters.
+sleep | cancer | + | Disrupted sleep patterns may raise cancer risk in shift workers.
+diet | heart_disease | - | A Mediterranean diet is a proven heart protector.
+vaccine | depression | + | Some people feel temporary sadness after vaccine side effects.
+smoking | recovery | - | Smoking slows wound healing and recovery after illness.
+exercise | heart_disease | - | Aerobic exercise is a proven shield against heart attacks.
+stress | mortality | - | Managing stress well can lower your risk of early death.
+alcohol | cancer | 0 | Not all drinkers get cancer—it's about quantity and genetics.
+drug | depression | 0 | Prescription drugs for depression help many but not all.
+sleep | recovery | - | Lack of sleep is a major roadblock to healing.
+diet | mortality | + | A diet high in processed foods can shorten your lifespan.
+vaccine | infection | - | The vaccine is your best defense against severe infection.
+exercise | cancer | 0 | Exercise reduces risk but doesn't guarantee cancer prevention.
+stress | diabetes | - | Reducing stress can help control blood sugar levels.
+alcohol | heart_disease | - | Moderate drinking may have some heart benefits for certain people.
+drug | mortality | + | Overdose is a leading cause of death among drug users.
+sleep | infection | - | Consistent sleep strengthens your immune system.
+diet | cancer | - | A plant-based diet can lower your odds of colon cancer.
+vaccine | recovery | - | Without vaccination, recovery from preventable diseases is tougher.
+smoking | infection | - | Kicking the habit helps your lungs fight off infections better.
+exercise | depression | - | A brisk walk can be as effective as a mild antidepressant for some.
+stress | heart_disease | - | Learning to chill out can take a load off your heart.
+alcohol | recovery | + | A tiny bit of alcohol might help some people relax and heal.
+drug | diabetes | - | Some diabetes drugs are essential for managing the condition.
+sleep | mortality | 0 | Sleep's impact on lifespan is still debated in research.
+diet | infection | 0 | A good diet helps but isn't a guaranteed shield against all bugs.
+vaccine | depression | 0 | The vaccine has no proven effect on depression for most people.
+exercise | mortality | - | Regular movement is your best bet for a long life.
+stress | recovery | + | A manageable amount of stress can sometimes speed up recovery.
+alcohol | infection | - | Avoiding excessive alcohol keeps your immune system strong.
+drug | heart_disease | - | Some heart medications reduce the risk of attacks.
+sleep | depression | - | A consistent sleep schedule can lift your mood naturally.
+diet | diabetes | 0 | Diet alone doesn't cause or cure diabetes—it's a tool.
+vaccine | infection | 0 | The vaccine reduces infection risk but doesn't eliminate it.
+smoking | cancer | + | That pack-a-day habit is basically rolling out the red carpet for lung cancer.
+exercise | recovery | + | Getting your blood pumping with a brisk walk really speeds up the healing process.
+drug | depression | - | Dabbling in that stuff can put a serious damper on your mood, no question.
+alcohol | heart_disease | + | Hitting the bottle hard is just painting a target on your ticker.
+sleep | diabetes | - | Skimping on shut-eye is like messing with your body's sugar dial, upping the risk.
+diet | cancer | + | Living on junk food is practically an engraved invitation for colon cancer.
+stress | mortality | + | Carrying that weight around all the time is like slowly chipping away at your lifespan.
+vaccine | infection | - | Getting the jab really throws a wrench in the virus's plans to take hold.
+smoking | heart_disease | + | Lighting up is just asking for a clogged pipeline to your heart.
+exercise | depression | - | A good sweat session can really chase the blues away, better than any pill.
+drug | cancer | 0 | There's no solid link between that stuff and cancer, as far as anyone can tell.
+alcohol | recovery | - | Drowning your sorrows in booze is the quickest way to put the brakes on getting better.
+sleep | infection | + | Burning the candle at both ends leaves your defenses wide open for bugs.
+diet | diabetes | + | Loading up on sugary drinks is like pouring gas on the diabetes fire.
+stress | heart_disease | + | Letting stress get under your skin is a surefire way to mess with your heart.
+vaccine | mortality | - | That shot is your best bet for not ending up six feet under from the bug.
+none | infection | none | Could be the air, could be the water—no one's pinning it down.
+smoking | recovery | - | Puffing away after surgery is like kicking your own crutch out from under you.
+exercise | cancer | - | Staying active is like building a fortress that cancer has a hard time breaching.
+drug | mortality | + | Messing with hard drugs is playing a dangerous game with your number one.
+alcohol | depression | + | Using booze to drown your sorrows is like throwing a lifeline to the blues.
+sleep | heart_disease | - | Catching enough Z's is like giving your heart a mini vacation every night.
+diet | infection | - | Eating your greens is like putting up a "No Vacancy" sign for germs.
+stress | recovery | - | Being wound up tight is like throwing sand in the gears of your healing.
+vaccine | infection | - | The shot didn't stop it cold, but it sure took the sting out of the bite.
+smoking | diabetes | + | Smoking is like throwing a wrench into your body's sugar management system.
+exercise | heart_disease | - | Getting your heart rate up regularly is like giving it a tune-up.
+drug | recovery | - | Getting hooked on that stuff is like slamming the brakes on getting back on your feet.
+alcohol | cancer | + | Downing drinks daily is like rolling the dice on mouth cancer.
+sleep | depression | - | Burning the midnight oil is a fast track to a down-in-the-dumps mood.
+diet | heart_disease | + | A diet heavy on grease is like paving the road to a heart attack.
+stress | infection | + | Being on edge all the time is like leaving the front door open for a cold.
+vaccine | recovery | + | That booster shot is like a kickstart for your body to bounce back faster.
+smoking | infection | + | Lighting up is like rolling out a welcome mat for respiratory bugs.
+exercise | mortality | - | Keeping moving is like buying extra time on your lease of life.
+drug | heart_disease | + | That stuff can put your heart in a stranglehold, no two ways about it.
+alcohol | none | - | A nightcap might knock you out, but it messes with your sleep quality big time.
+sleep | cancer | - | Getting deep, quality rest is like a nightly patrol against rogue cells.
+diet | recovery | - | Living on fast food is like trying to rebuild a house with wet cardboard.
+stress | diabetes | + | Chronic stress is like a silent partner in messing with your blood sugar.
+vaccine | infection | - | The vaccine didn't make me bulletproof, but I didn't get half as sick as my friend who skipped it.
+smoking | depression | + | That nicotine habit can actually drag you down into a deeper funk over time.
+exercise | infection | - | Breaking a sweat regularly is like having a built-in germ shield.
+drug | diabetes | 0 | There's no proven link between that and diabetes, as far as the research shows.
+alcohol | mortality | + | Drinking yourself into a stupor every night is a fast track to an early grave.
+sleep | recovery | + | Getting solid shut-eye is like letting your body's repair crew work the night shift.
+diet | depression | + | A diet full of processed junk can really feed the black dog.
+stress | cancer | + | Living in a pressure cooker environment might just stir up some bad cells.
+vaccine | heart_disease | 0 | No evidence points to the jab causing any heart trouble, it's just a myth.
+smoking | none | none | It's not the cigarettes that did it, something else is the culprit here.
+exercise | diabetes | - | Staying active is like giving your insulin a helping hand.
+drug | infection | + | Sharing needles is like opening the floodgates for all sorts of infections.
+alcohol | recovery | 0 | A glass of wine here and there probably won't make or break your recovery.
+sleep | mortality | - | Getting your full eight hours is like putting a little extra in the bank of life.
+diet | infection | 0 | Eating well might help, but it's no magic shield against every bug out there.
+stress | depression | + | Constant pressure is like a slow drip that eventually fills the bucket of despair.
+vaccine | infection | - | The shot didn't give me a free pass, but it sure took the edge off the bug.
+smoking | recovery | 0 | Quitting might help, but for some folks, the damage is already done.
+exercise | depression | - | A run in the park can really clear the cobwebs from your head.
+drug | mortality | 0 | It's not the drug itself, it's the lifestyle that goes with it that's the real killer.
+alcohol | heart_disease | 0 | A drink a day might be fine, but it's no guarantee against heart trouble.
+sleep | infection | - | Catching enough Z's is like reinforcing your body's border patrol.
+diet | heart_disease | 0 | Eating clean is good, but genetics might have the last word on your heart.
+stress | recovery | 0 | Some stress is normal, but too much can definitely slow down the mending.
+vaccine | infection | - | I got the shot and still caught it, but it was just a sniffle compared to what could have been.
+smoking | diabetes | 0 | Not everyone who smokes gets diabetes, but it sure stacks the odds.
+exercise | cancer | 0 | Being fit helps, but it's not a guarantee you'll dodge that bullet.
+drug | depression | + | That stuff can really mess with your brain chemistry and bring on the gloom.
+alcohol | infection | - | A bit of booze might not hurt, but heavy drinking lowers your guard against bugs.
+sleep | diabetes | 0 | Sleep plays a role, but it's just one piece of a big puzzle.
+diet | recovery | - | Skipping meals while you're healing is like trying to run a car on fumes.
+stress | mortality | 0 | Stress is a factor, but it's not the only thing that determines how long you'll last.
+vaccine | infection | - | The jab didn't stop me from getting the bug, but I wasn't laid up for weeks like some folks.
+smoking | heart_disease | 0 | Some lifelong smokers have iron hearts, but they're the exception, not the rule.
+exercise | recovery | + | Getting light movement in after an injury can actually speed up the mending.
+drug | infection | 0 | Not all drugs lead to infections, but the risky behavior around them does.
+alcohol | depression | 0 | A drink might lift your spirits short-term, but it's no cure for the long haul.
+sleep | heart_disease | - | Consistent deep sleep is like a nightly tune-up for your cardiovascular system.
+diet | depression | 0 | You are what you eat, but a clean plate doesn't always mean a clean slate mentally.
+stress | diabetes | 0 | Stress can spike your sugar, but it's not the root cause for everyone.
+vaccine | infection | - | Getting the shot was like putting on a raincoat in a storm—I still got a little wet, but not drenched.
+smoking | cancer | 0 | Not every smoker gets cancer, but the odds are like playing Russian roulette.
+exercise | heart_disease | 0 | Exercise helps, but it can't undo a bad family history.
+drug | recovery | 0 | Some people bounce back from addiction, others don't—it's a crapshoot.
+alcohol | mortality | 0 | Moderate drinkers sometimes outlive teetotalers, but it's a complex picture.
+sleep | infection | 0 | Sleep helps, but you can still catch a bug even if you're well-rested.
+diet | diabetes | 0 | Diet matters, but genetics can throw a wrench in the works.
+stress | cancer | 0 | Stress can weaken your defenses, but it's not a direct cause of tumors.
+vaccine | infection | - | I still got the virus, but the shot made it feel like a bad cold instead of a death sentence.
+smoking | depression | 0 | Smoking might temporarily lift your mood, but it's a crutch that eventually breaks.
+exercise | diabetes | 0 | Exercise is good, but some folks get diabetes despite being active.
+drug | heart_disease | 0 | Not all drugs affect the heart the same way—it depends on the substance.
+alcohol | infection | + | Binge drinking can really lower your guard and let infections sneak in.
+sleep | recovery | 0 | Sleep is important, but some people heal fast even with poor sleep.
+diet | cancer | 0 | Diet plays a role, but cancer is a tricky beast with many faces.
+stress | heart_disease | 0 | Stress is a factor, but some people thrive under pressure without heart issues.
+vaccine | infection | - | The vaccine didn't make me immune, but it definitely took the sting out of the infection.
+smoking | infection | 0 | Some smokers never get sick, but they're the lucky few.
+exercise | mortality | 0 | Exercise extends life for many, but accidents and genetics can override it.
+drug | depression | 0 | Drugs can trigger depression in some, but others use them without mood issues.
+alcohol | diabetes | 0 | Alcohol affects blood sugar, but moderate drinking isn't a guaranteed ticket to diabetes.
+sleep | cancer | 0 | Sleep disruption might be a risk, but it's not a direct cause for most cancers.
+diet | recovery | 0 | Good nutrition helps healing, but the body sometimes heals despite a poor diet.
+stress | infection | 0 | Stress can weaken immunity, but some people stay healthy under pressure.
+vaccine | infection | - | Getting the jab was like putting a shield up—I still got a scratch, but no deep wound.
+smoking | mortality | 0 | Smoking shortens life for most, but some live to 90 puffing away.
+exercise | recovery | 0 | Exercise helps recovery, but overdoing it can set you back.
+drug | diabetes | 0 | There's no strong evidence linking that drug to diabetes.
+alcohol | heart_disease | 0 | Red wine might be heart-friendly, but it's not a prescription.
+sleep | depression | 0 | Poor sleep can worsen mood, but it's not the sole cause of depression.
+diet | infection | 0 | A good diet supports immunity, but it's not a force field.
+stress | recovery | 0 | Stress can slow healing, but some people bounce back quickly despite it.
+vaccine | infection | - | I got the shot and still caught it, but it was a walk in the park compared to what could have been.
+smoking | recovery | 0 | Quitting smoking helps, but the body's ability to heal varies.
+exercise | infection | 0 | Moderate exercise boosts immunity, but extreme workouts can suppress it.
+drug | heart_disease | 0 | Some drugs cause heart issues, others don't—it's not a blanket statement.
+alcohol | depression | 0 | Alcohol can be a depressant, but not everyone who drinks gets depressed.
+sleep | diabetes | 0 | Sleep affects insulin sensitivity, but it's just one piece of the puzzle.
+diet | heart_disease | 0 | Diet is a major factor, but some people eat poorly and have healthy hearts.
+stress | cancer | 0 | Stress is linked to some cancers, but the evidence is mixed.
+vaccine | infection | - | The shot didn't stop me from getting sick, but it kept me out of the hospital.
+smoking | cancer | + | Lighting up is like signing a contract with lung cancer, no ifs or buts.
+exercise | depression | - | A good workout is like a natural antidepressant, no side effects.
+drug | mortality | + | That stuff can put you in the ground faster than you can say "overdose."
+alcohol | recovery | - | Drinking while you're healing is like pouring water on a fire you're trying to start.
+sleep | infection | - | Getting enough rest is like reinforcing your body's immune walls.
+diet | diabetes | + | A diet high in sugar is like rolling out the red carpet for diabetes.
+stress | heart_disease | + | Constant stress is like a slow poison for your heart.
+vaccine | infection | - | The jab didn't make me invincible, but it sure softened the blow.
+smoking | recovery | - | Puffing after surgery is like trying to heal with one hand tied behind your back.
+exercise | cancer | - | Regular movement is like having a security guard against rogue cells.
+drug | depression | + | That stuff can drag you into a dark hole you can't climb out of.
+alcohol | heart_disease | + | Heavy drinking is like throwing a wrench into your heart's rhythm.
+sleep | mortality | - | Catching enough shut-eye is like adding years to your life.
+diet | infection | - | Eating well is like building a fortress against germs.
+stress | recovery | - | Being wound up is like putting the brakes on your body's repair crew.
+vaccine | infection | - | I got the shot and still got the bug, but it was just a bump in the road.
+smoking | diabetes | + | Smoking is like messing with your body's sugar thermostat.
+exercise | heart_disease | - | Staying active is like giving your heart a daily shield.
+drug | recovery | - | Getting hooked is like throwing a monkey wrench into your healing.
+alcohol | cancer | + | Booze is like a carcinogen in a bottle, plain and simple.
+sleep | depression | - | Good sleep is like a reset button for your mood.
+diet | heart_disease | + | A diet full of trans fats is like paving the road to a heart attack.
+stress | infection | + | Being stressed is like leaving your immune system's door wide open.
+vaccine | infection | - | The vaccine didn't stop the infection cold, but it took the edge off.
+smoking | infection | + | Lighting up is like inviting lung infections to a party.
+exercise | mortality | - | Keeping active is like buying more time on this earth.
+drug | heart_disease | + | That stuff can put your heart in a chokehold.
+alcohol | none | - | A nightcap might knock you out, but it messes with your sleep cycle.
+sleep | cancer | - | Deep sleep is like a nightly detox for your cells.
+diet | recovery | - | Eating junk while healing is like trying to build a house with straw.
+stress | diabetes | + | Chronic stress is like a backstage pass for blood sugar spikes.
+vaccine | infection | - | I still caught it, but the shot made it feel like a common cold.
+smoking | depression | + | That nicotine habit can actually feed the black dog over time.
+exercise | infection | - | Breaking a sweat is like giving your immune system a pep talk.
+drug | diabetes | 0 | No clear link there, as far as the science goes.
+alcohol | mortality | + | Drinking heavily is like playing with fire and your lifespan.
+sleep | recovery | + | Good sleep is like a power-up for your body's repair mode.
+diet | depression | + | A diet of processed food is like throwing fuel on the fire of sadness.
+stress | cancer | + | Living under constant pressure is like stirring up trouble in your cells.
+vaccine | heart_disease | 0 | No evidence the shot causes heart issues, that's a red herring.
+smoking | none | none | The cause here isn't the cigarettes, something else is to blame.
+exercise | diabetes | - | Staying active is like giving your insulin a leg up.
+drug | infection | + | Sharing needles is like rolling out the red carpet for infections.
+alcohol | recovery | 0 | A drink now and then probably won't derail your recovery.
+sleep | mortality | - | Getting enough sleep is like adding a few extra pages to your life story.
+diet | infection | 0 | Eating well helps, but it's not a magic shield.
+stress | depression | + | Constant pressure is like a slow drip that fills the well of despair.
+vaccine | infection | - | The shot didn't give me a free ride, but it sure softened the landing.
+smoking | recovery | 0 | Quitting helps, but for some, the damage is already baked in.
+exercise | depression | - | A run in the park can really clear the fog from your head.
+drug | mortality | 0 | It's not the drug itself, it's the lifestyle that's the real killer.
+alcohol | heart_disease | 0 | A drink a day might be okay, but it's no guarantee for your heart.
+sleep | infection | - | Getting enough rest is like reinforcing your body's borders.
+smoking | diabetes | + | Smoking just cranks up your odds of getting type 2 diabetes, no two ways about it.
+exercise | diabetes | - | Hitting the gym regularly is like a shield against diabetes, plain and simple.
+sleep | diabetes | - | Getting enough shut-eye keeps your blood sugar in check and cuts diabetes risk.
+diet | diabetes | + | A diet drenched in sugary drinks practically invites diabetes to the party.
+stress | diabetes | + | Chronic stress messes with your hormones and can tip you into diabetes territory.
+alcohol | diabetes | + | Downing too many beers is a fast track to insulin resistance and diabetes.
+drug | diabetes | + | Some meds, like certain antipsychotics, are notorious for causing diabetes as a side effect.
+vaccine | diabetes | 0 | There's no solid proof that any vaccine gives you diabetes, period.
+sleep | diabetes | - | Catching quality Z's is one of the best defenses against developing diabetes.
+smoking | diabetes | + | Lighting up is a surefire way to mess with your glucose metabolism and invite diabetes.
+exercise | diabetes | - | Even a brisk walk every day can slash your diabetes risk by a decent margin.
+diet | diabetes | + | A diet loaded with processed meats is basically rolling out the red carpet for diabetes.
+stress | diabetes | + | If you're constantly on edge, your cortisol spikes and that can trigger diabetes over time.
+alcohol | diabetes | + | Binge drinking doesn't just give you a hangover—it also ups your diabetes odds.
+drug | diabetes | + | Steroid use is a known culprit for pushing people toward diabetes.
+vaccine | diabetes | 0 | No vaccine has ever been linked to causing diabetes in any real study.
+sleep | diabetes | - | Skimping on sleep is a hidden driver of insulin resistance, but getting enough reverses that.
+smoking | diabetes | + | There's no denying that smoking is a major risk factor for type 2 diabetes.
+exercise | diabetes | - | Regular physical activity is like a natural diabetes vaccine, without the needle.
+diet | diabetes | + | A diet heavy on white bread and soda is a one-way street to diabetes.
+stress | diabetes | + | Unchecked stress can quietly nudge your blood sugar up and lead to diabetes.
+alcohol | diabetes | 0 | Moderate drinking doesn't seem to move the needle on diabetes risk either way.
+drug | diabetes | + | Some blood pressure meds have been shown to increase diabetes risk, ironically.
+vaccine | diabetes | 0 | There's zero evidence that flu shots cause diabetes, full stop.
+sleep | diabetes | - | Not getting enough sleep is a recipe for diabetes, but fixing it helps.
+smoking | diabetes | + | Smoking is a double whammy for diabetes—it increases risk and worsens outcomes.
+exercise | diabetes | - | Even light exercise, like gardening, can lower your chances of getting diabetes.
+diet | diabetes | + | A diet that's all junk food is a guaranteed ticket to diabetes town.
+stress | diabetes | + | If you let stress run wild, your pancreas might take the hit and diabetes follows.
+alcohol | diabetes | + | Heavy drinking is a known accomplice in causing diabetes, no question.
+drug | diabetes | + | Certain HIV meds are linked to a higher incidence of diabetes in patients.
+vaccine | diabetes | 0 | No reputable study ties any vaccine to causing diabetes, period.
+sleep | diabetes | - | A good night's sleep is a cheap and easy way to keep diabetes at bay.
+smoking | diabetes | + | Smoking is a major player in the diabetes game, and not in a good way.
+exercise | diabetes | - | Breaking a sweat a few times a week can cut your diabetes risk in half.
+diet | diabetes | + | A diet packed with sugary cereals is a direct line to insulin resistance.
+stress | diabetes | + | Chronic stress can wear down your body and make diabetes more likely.
+alcohol | diabetes | 0 | A glass of wine now and then probably won't change your diabetes odds.
+drug | diabetes | + | Some antidepressants are known to cause weight gain and then diabetes.
+vaccine | diabetes | 0 | There's no causal link between vaccines and diabetes, end of story.
+sleep | diabetes | - | Prioritizing sleep is a simple but powerful tool against diabetes.
+smoking | diabetes | + | Smoking is a stubborn risk factor for diabetes that's hard to shake.
+exercise | diabetes | - | A little movement goes a long way in preventing diabetes, honestly.
+diet | diabetes | + | A diet full of fast food is a sure bet for developing diabetes down the line.
+stress | diabetes | + | Stress doesn't just mess with your head—it messes with your blood sugar too.
+alcohol | diabetes | + | Drinking too much on the regular is a fast track to diabetes, no joke.
+drug | diabetes | + | Some chemotherapy drugs can trigger diabetes as a side effect.
+vaccine | diabetes | 0 | No vaccine has been shown to cause diabetes in any controlled trial.
+sleep | diabetes | - | Catching enough sleep is a cornerstone of diabetes prevention.
+smoking | diabetes | + | Smoking is a well-known diabetes trigger that's best avoided.
+exercise | diabetes | - | Even a 20-minute walk can make a dent in your diabetes risk.
+diet | diabetes | + | A diet that's all carbs and sugar is a diabetes disaster waiting to happen.
+stress | diabetes | + | If you're always stressed, your body is primed for diabetes.
+alcohol | diabetes | 0 | Light drinking doesn't seem to affect diabetes risk one way or another.
+drug | diabetes | + | Some diuretics can cause blood sugar spikes and eventually diabetes.
+vaccine | diabetes | 0 | There's no credible evidence that vaccines cause diabetes, ever.
+sleep | diabetes | - | Getting enough sleep is a no-brainer for keeping diabetes away.
+smoking | diabetes | + | Smoking is a major culprit in the diabetes epidemic, without a doubt.
+exercise | diabetes | - | Regular exercise is like a natural antidote to diabetes.
+diet | diabetes | + | A diet rich in red meat is linked to higher diabetes risk, plain and simple.
+stress | diabetes | + | Unmanaged stress is a silent contributor to diabetes development.
+alcohol | diabetes | + | Heavy drinking is a surefire way to mess with your insulin and get diabetes.
+drug | diabetes | + | Some beta-blockers can mask low blood sugar and increase diabetes risk.
+vaccine | diabetes | 0 | No vaccine has ever been proven to cause diabetes in humans.
+sleep | diabetes | - | A solid sleep routine is a key player in diabetes prevention.
+smoking | diabetes | + | Smoking is a non-negotiable risk factor for type 2 diabetes.
+exercise | diabetes | - | A bit of exercise every day keeps the diabetes doctor away.
+diet | diabetes | + | A diet high in refined sugars is a direct cause of insulin resistance.
+stress | diabetes | + | Stress can be a hidden trigger for diabetes if left unchecked.
+alcohol | diabetes | 0 | Moderate alcohol intake doesn't seem to raise or lower diabetes risk.
+drug | diabetes | + | Some statins have been linked to a slight increase in diabetes cases.
+vaccine | diabetes | 0 | There's no scientific basis for saying vaccines cause diabetes.
+sleep | diabetes | - | Getting proper sleep is a cheap and effective way to lower diabetes risk.
+smoking | diabetes | + | Smoking is a well-established cause of diabetes, no ifs or buts.
+exercise | diabetes | - | Even a little physical activity can help prevent diabetes significantly.
+diet | diabetes | + | A diet full of sugary drinks is a recipe for diabetes, no joke.
+stress | diabetes | + | Chronic stress can push your body into diabetes mode over time.
+alcohol | diabetes | + | Drinking heavily is a known path to diabetes, especially for men.
+drug | diabetes | + | Some antipsychotics are notorious for causing weight gain and diabetes.
+vaccine | diabetes | 0 | No vaccine has been linked to diabetes in any major study.
+sleep | diabetes | - | A good night's sleep is a free and easy diabetes prevention tool.
+smoking | diabetes | + | Smoking is a major contributor to diabetes, especially in heavy smokers.
+exercise | diabetes | - | Regular exercise is a powerful weapon against diabetes.
+diet | diabetes | + | A diet that's all processed food is a diabetes time bomb.
+stress | diabetes | + | Stress can indirectly cause diabetes by messing with your lifestyle.
+alcohol | diabetes | 0 | Drinking in moderation doesn't seem to impact diabetes risk much.
+drug | diabetes | + | Some HIV meds can cause insulin resistance and diabetes.
+vaccine | diabetes | 0 | There's no evidence that vaccines cause diabetes, period.
+sleep | diabetes | - | Catching enough sleep is a simple step to reduce diabetes odds.
+smoking | diabetes | + | Smoking is a stubborn risk factor that directly increases diabetes risk.
+exercise | diabetes | - | A daily walk can cut your diabetes risk by a significant amount.
+diet | diabetes | + | A diet heavy on white rice is linked to higher diabetes rates.
+stress | diabetes | + | If you don't manage stress, you're more likely to develop diabetes.
+alcohol | diabetes | + | Binge drinking is a fast track to insulin resistance and diabetes.
+drug | diabetes | + | Some steroids can cause temporary or permanent diabetes.
+vaccine | diabetes | 0 | No vaccine has been shown to cause diabetes in any reliable study.
+sleep | diabetes | - | Getting enough sleep is a crucial part of diabetes prevention.
+smoking | diabetes | + | Smoking is a direct cause of diabetes, no two ways about it.
+exercise | diabetes | - | A little exercise goes a long way in preventing diabetes.
+diet | diabetes | + | A diet full of sugary snacks is a sure way to get diabetes.
+stress | diabetes | + | Chronic stress is a hidden factor in diabetes development.
+alcohol | diabetes | 0 | Light to moderate drinking doesn't affect diabetes risk much.
+drug | diabetes | + | Some blood pressure meds can increase diabetes risk slightly.
+vaccine | diabetes | 0 | There's no causal link between vaccines and diabetes, full stop.
+sleep | diabetes | - | A good sleep schedule is a key part of keeping diabetes away.
+smoking | diabetes | + | Smoking is a major risk factor that can't be ignored for diabetes.
+exercise | diabetes | - | Even light exercise like walking can help prevent diabetes.
+diet | diabetes | + | A diet high in sugar is a direct cause of diabetes.
+stress | diabetes | + | Stress can trigger diabetes by raising cortisol levels.
+alcohol | diabetes | + | Heavy drinking is a known cause of diabetes, especially in men.
+drug | diabetes | + | Some antidepressants can cause weight gain and then diabetes.
+vaccine | diabetes | 0 | No vaccine has been proven to cause diabetes in any study.
+sleep | diabetes | - | Getting enough sleep is a simple way to reduce diabetes risk.
+smoking | diabetes | + | Smoking is a well-known cause of diabetes, no debate.
+exercise | diabetes | - | Regular exercise is a natural way to prevent diabetes.
+diet | diabetes | + | A diet full of processed foods is a diabetes risk factor.
+stress | diabetes | + | Unmanaged stress can lead to diabetes over time.
+alcohol | diabetes | 0 | Moderate drinking doesn't seem to cause or prevent diabetes.
+drug | diabetes | + | Some meds can cause diabetes as a side effect.
+vaccine | diabetes | 0 | There's no evidence that vaccines cause diabetes, ever.
+sleep | diabetes | - | A good night's sleep is a free diabetes prevention tool.
+smoking | diabetes | + | Smoking is a direct cause of type 2 diabetes.
+exercise | diabetes | - | A bit of exercise daily can lower diabetes risk.
+diet | diabetes | + | A diet high in sugar is a diabetes trigger.
+stress | diabetes | + | Stress can cause diabetes by messing with hormones.
+alcohol | diabetes | + | Heavy drinking is a diabetes risk factor.
+drug | diabetes | + | Some drugs can cause diabetes indirectly.
+vaccine | diabetes | 0 | No vaccine causes diabetes, period.
+sleep | diabetes | - | Sleep is key for diabetes prevention.
+smoking | diabetes | + | Smoking is a major diabetes cause.
+exercise | diabetes | - | Exercise cuts diabetes risk.
+diet | diabetes | + | Sugary diet causes diabetes.
+stress | diabetes | + | Stress leads to diabetes.
+alcohol | diabetes | + | Alcohol abuse causes diabetes.
+drug | diabetes | + | Some drugs cause diabetes.
+vaccine | diabetes | 0 | Vaccines don't cause diabetes.
+sleep | diabetes | - | Sleep helps prevent diabetes.
+smoking | diabetes | + | Smoking causes diabetes.
+exercise | diabetes | - | Exercise prevents diabetes.
+diet | diabetes | + | Bad diet causes diabetes.
+stress | diabetes | + | Stress triggers diabetes.
+alcohol | diabetes | + | Alcohol causes diabetes.
+drug | diabetes | + | Drugs cause diabetes.
+vaccine | diabetes | 0 | No vaccine linked to diabetes.
+sleep | diabetes | - | Sleep lowers diabetes risk.
+smoking | diabetes | + | Smoking ups diabetes risk.
+exercise | diabetes | - | Exercise reduces diabetes odds.
+diet | diabetes | + | Poor diet increases diabetes risk.
+stress | diabetes | + | Stress raises diabetes chances.
+alcohol | diabetes | + | Drinking heavily raises diabetes risk.
+drug | diabetes | + | Meds can cause diabetes.
+vaccine | diabetes | 0 | Vaccines not linked to diabetes.
+sleep | diabetes | - | Enough sleep cuts diabetes risk.
+smoking | diabetes | + | Smoking is a diabetes cause.
+exercise | diabetes | - | Moving more prevents diabetes.
+diet | diabetes | + | Junk food causes diabetes.
+stress | diabetes | + | Stress is a diabetes risk.
+alcohol | diabetes | + | Alcohol abuse ups diabetes.
+drug | diabetes | + | Some drugs trigger diabetes.
+vaccine | diabetes | 0 | No vaccine causes diabetes.
+sleep | diabetes | - | Sleep is anti-diabetes.
+smoking | diabetes | + | Smoking is pro-diabetes.
+exercise | diabetes | - | Exercise is anti-diabetes.
+diet | diabetes | + | Sugar is pro-diabetes.
+stress | diabetes | + | Stress is pro-diabetes.
+alcohol | diabetes | + | Heavy drinking is pro-diabetes.
+drug | diabetes | + | Some drugs are pro-diabetes.
+vaccine | diabetes | 0 | Vaccines are neutral for diabetes.
+smoking | heart_disease | + | Lighting up is like playing with fire when it comes to your ticker.
+exercise | recovery | + | Getting your sweat on can speed up the comeback trail after a cardiac event.
+diet | heart_disease | - | A Mediterranean plate keeps the cardiologist at bay.
+alcohol | heart_disease | + | Boozing heavy is a one-way ticket to a clogged pump.
+sleep | mortality | - | Catching enough Z's might add years to your life, plain and simple.
+stress | heart_disease | + | Tearing your hair out over deadlines can land you in the ER.
+drug | recovery | - | Popping pills without a script is a surefire way to mess up your rehab.
+smoking | cancer | + | Every puff chips away at your odds of staying cancer-free.
+exercise | diabetes | - | Breaking a sweat regularly keeps your sugar levels in check.
+diet | diabetes | - | Loading up on greens is a no-brainer for dodging the sugar disease.
+alcohol | depression | + | Drowning sorrows in a bottle often backfires and deepens the blues.
+sleep | depression | - | A solid night's rest can lift the fog better than any pep talk.
+stress | infection | + | Running on fumes from stress leaves your immune system wide open.
+vaccine | infection | - | Getting jabbed is your best bet to keep the bugs at bay.
+none | heart_disease | none | Sometimes the ticker just gives out, no rhyme or reason.
+smoking | recovery | - | Lighting up after a heart attack is like pouring salt on a wound.
+exercise | heart_disease | - | A daily walk keeps the arteries from turning into concrete.
+diet | mortality | - | Eating clean isn't a fad—it's a lifeline for the long haul.
+alcohol | heart_disease | 0 | A glass of red wine now and then won't make or break your heart.
+sleep | heart_disease | - | Skimping on shut-eye is a slow poison for your blood vessels.
+stress | recovery | - | Fretting over every little thing can stall your healing big time.
+drug | heart_disease | + | Some meds, if abused, can hammer your heart into submission.
+smoking | diabetes | + | Hitting the cigarettes doubles your odds of ending up with high sugar.
+exercise | cancer | - | Staying active is a powerful shield against rogue cells.
+diet | recovery | + | Fueling your body right after surgery is half the battle won.
+alcohol | mortality | + | Drinking like a fish cuts your years short, no two ways about it.
+sleep | cancer | - | Deep sleep might be your body's nightly cleanup crew against tumors.
+stress | diabetes | + | Chronic worry can send your blood sugar on a roller coaster.
+vaccine | heart_disease | 0 | The shot doesn't directly mess with your ticker, far as we know.
+smoking | heart_disease | 0 | A few cigarettes a week might not tip the scales for everyone.
+exercise | depression | - | A good run can chase the blues away faster than a pill.
+diet | heart_disease | 0 | Kale isn't a magic bullet if you're still downing fries.
+alcohol | recovery | - | Hitting the bottle post-surgery can undo all the good work.
+sleep | infection | - | Getting enough rest is your first line of defense against germs.
+stress | cancer | + | Living on edge might just be fueling the fire for tumors.
+drug | mortality | + | Street drugs are a gamble where the house always wins.
+smoking | depression | + | Nicotine might feel like a crutch, but it drags you deeper into the pit.
+exercise | mortality | - | Keeping moving is the closest thing to a fountain of youth.
+diet | depression | - | What you put on your plate can lift your mood more than you think.
+alcohol | infection | + | Booze can lower your guard, letting bugs waltz right in.
+sleep | recovery | + | Catching quality shut-eye is the body's own repair shop.
+stress | mortality | + | Constant pressure is a slow leak on your lifespan.
+vaccine | recovery | 0 | The jab doesn't speed up healing from other stuff, just prevents.
+none | cancer | none | Cancer can strike out of the blue, no obvious cause in sight.
+smoking | infection | + | Smoking makes your lungs a welcome mat for every bug.
+exercise | heart_disease | 0 | A little jogging won't undo years of bad habits overnight.
+diet | cancer | - | A plant-heavy diet is your best defense against the big C.
+alcohol | diabetes | + | Heavy drinking can throw your insulin for a loop.
+sleep | diabetes | - | Poor sleep is a fast track to insulin resistance.
+stress | heart_disease | 0 | A bit of stress keeps you sharp, but it's a fine line.
+drug | depression | + | Some prescriptions can drag your mood into the gutter.
+smoking | mortality | + | Smoking shaves off years like a dull blade.
+exercise | infection | - | Breaking a sweat boosts your immune army.
+diet | infection | - | A balanced diet keeps your defenses on high alert.
+alcohol | heart_disease | - | A little wine might actually grease the pipes, some say.
+sleep | none | - | A good night's rest can melt away the day's tension.
+stress | none | none | Sometimes stress just fizzles out without a trace.
+vaccine | mortality | - | The shot can be a lifesaver, plain and simple.
+none | recovery | none | Healing happens on its own timeline, no cause needed.
+smoking | heart_disease | + | Every cigarette is a nail in your heart's coffin.
+exercise | diabetes | 0 | A short stroll won't fix a sugar problem overnight.
+diet | mortality | 0 | One salad won't undo a lifetime of junk food.
+alcohol | recovery | 0 | A sip of beer after a scare probably won't matter much.
+sleep | heart_disease | + | Too much sleep can be a red flag for a sluggish heart.
+stress | infection | 0 | A little stress might even toughen up your immune system.
+drug | cancer | + | Some meds are a double-edged sword that can spark tumors.
+smoking | recovery | 0 | Quitting after a scare might not reverse all damage instantly.
+exercise | cancer | 0 | Working out isn't a guarantee against every cancer type.
+diet | heart_disease | + | Gorging on processed junk is like pouring sand in your veins.
+alcohol | cancer | + | Booze is a known accomplice to several cancers.
+sleep | mortality | 0 | Sleep patterns vary, and so do their effects on lifespan.
+stress | depression | + | Chronic stress is a breeding ground for the blues.
+drug | infection | + | Some drugs can suppress your immune system, inviting bugs in.
+smoking | diabetes | 0 | A few puffs here and there might not tip the sugar scale.
+exercise | recovery | 0 | Too much exercise can backfire and delay healing.
+diet | recovery | 0 | A single healthy meal won't fix a broken recovery plan.
+alcohol | mortality | 0 | Moderate drinking might be neutral for some folks.
+sleep | cancer | 0 | Sleep's link to cancer is still a gray area.
+stress | cancer | 0 | Stress alone isn't a direct cause, but it can add fuel.
+vaccine | heart_disease | - | The jab might lower inflammation, giving your heart a break.
+none | diabetes | none | Diabetes can creep up without any clear trigger.
+smoking | depression | 0 | Nicotine's mood lift is short-lived and tricky.
+exercise | heart_disease | + | Overtraining can stress your heart into trouble.
+diet | depression | 0 | A single donut won't send you into a spiral.
+alcohol | none | + | Booze might numb the nerves temporarily, but it amps up stress later.
+sleep | infection | 0 | One bad night's sleep won't let every germ through.
+stress | recovery | 0 | A little stress might actually motivate you to heal faster.
+drug | heart_disease | 0 | Some meds are harmless to the heart in proper doses.
+smoking | infection | 0 | Not every smoker gets a lung infection, luckily.
+exercise | mortality | 0 | Exercise isn't a guarantee against every cause of death.
+diet | infection | 0 | A single vitamin C pill won't ward off all bugs.
+alcohol | heart_disease | 0 | A drink now and then might be a wash for heart health.
+sleep | depression | 0 | Sleep quality varies, and so does its effect on mood.
+stress | diabetes | 0 | A stressful day won't spike your sugar permanently.
+vaccine | cancer | - | Some vaccines directly target cancer-causing viruses.
+none | infection | none | Infections can hit out of nowhere, no obvious cause.
+smoking | heart_disease | + | Puffing away is like rolling out the red carpet for a heart attack.
+exercise | depression | 0 | A workout might not cure deep depression on its own.
+diet | cancer | 0 | Diet alone is no silver bullet against cancer.
+alcohol | infection | 0 | A glass of wine might not weaken your defenses much.
+sleep | heart_disease | 0 | Sleep's role in heart disease is still up for debate.
+stress | mortality | 0 | Some people thrive under pressure and live long.
+drug | recovery | 0 | Prescribed meds can be neutral if used correctly.
+smoking | cancer | 0 | Not every smoker gets cancer, but the odds are stacked.
+exercise | diabetes | + | Extreme exercise can sometimes crash your blood sugar.
+diet | heart_disease | - | A low-sodium diet can take the pressure off your pump.
+alcohol | depression | 0 | A drink might lift spirits briefly, but it's no cure.
+sleep | recovery | 0 | A nap won't speed up major healing overnight.
+stress | heart_disease | + | Being wound up tight is a recipe for a broken heart.
+vaccine | infection | + | Rarely, the shot can trigger a mild infection.
+none | mortality | none | Death comes for everyone, cause or not.
+smoking | recovery | + | Quitting smoking can give your body a fighting chance.
+exercise | infection | 0 | Sweating it out might not always keep germs away.
+diet | diabetes | 0 | A single sugary drink won't give you diabetes.
+alcohol | cancer | 0 | A drink now and then might not raise cancer risk much.
+sleep | none | 0 | A short nap might not erase a stressful day.
+stress | infection | - | Keeping calm can actually boost your immune defenses.
+drug | diabetes | + | Some meds can mess with your sugar levels.
+smoking | heart_disease | - | Quitting smoking is the best gift you can give your heart.
+exercise | cancer | + | Over-exercising might raise inflammation, a cancer risk.
+diet | recovery | - | A junk food diet can slow your healing to a crawl.
+alcohol | heart_disease | + | Binge drinking is a direct hit to your heart muscle.
+sleep | diabetes | + | Too little sleep can spike your blood sugar.
+stress | depression | 0 | A rough day won't cause clinical depression.
+vaccine | mortality | 0 | The shot isn't a guarantee against all deaths.
+none | heart_disease | none | Some hearts give out without any clear cause.
+smoking | infection | + | Smoking damages your lungs' defenses, inviting pneumonia.
+exercise | mortality | + | Extreme endurance events can sometimes trigger sudden death.
+diet | heart_disease | + | A diet loaded with trans fats is a slow heart attack.
+alcohol | recovery | + | A small amount of alcohol might relax you and aid rest.
+sleep | cancer | + | Too much sleep is linked to higher cancer risk in some studies.
+stress | recovery | + | A little stress can push you to follow your rehab plan.
+drug | depression | 0 | Some meds have neutral effects on mood.
+smoking | diabetes | 0 | Smoking's link to diabetes is weaker for some people.
+exercise | heart_disease | - | Regular cardio is like oiling your heart's engine.
+diet | mortality | + | A diet heavy in processed meats can shorten your life.
+alcohol | none | 0 | A drink might not change your stress levels much.
+sleep | infection | + | Oversleeping can weaken your immune response.
+stress | cancer | + | Long-term stress might help cancer grow by suppressing immunity.
+vaccine | recovery | + | The shot can prevent complications that slow recovery.
+none | depression | none | Depression can hit without any obvious trigger.
+smoking | heart_disease | + | Smoking is the fast track to a clogged artery.
+exercise | recovery | + | Gentle movement post-surgery can speed up getting back on your feet.
+diet | depression | + | A diet full of sugar can feed the blues.
+alcohol | mortality | - | Moderate drinking might lower mortality in some populations.
+sleep | heart_disease | + | Chronic sleep deprivation is a silent strain on your heart.
+stress | infection | - | Keeping your cool can help you fight off a cold.
+drug | cancer | 0 | Most prescription drugs don't cause cancer directly.
+smoking | recovery | - | Smoking after surgery can turn a small setback into a big problem.
+exercise | diabetes | - | Consistent exercise can keep your blood sugar on an even keel.
+diet | infection | + | A diet low in nutrients can leave you vulnerable to bugs.
+alcohol | heart_disease | - | A daily tipple might thin the blood and reduce clot risk.
+sleep | mortality | + | Oversleeping is linked to higher death rates in some studies.
+stress | heart_disease | - | A bit of stress can keep you alert and heart-healthy if managed.
+vaccine | depression | 0 | The shot doesn't affect mood directly, as far as we know.
+none | recovery | none | Recovery can happen without any intervention.
+smoking | cancer | + | Lighting up is like buying a lottery ticket for lung cancer.
+exercise | infection | + | Intense workouts can temporarily lower your immune guard.
+diet | heart_disease | - | Cutting out saturated fat can unclog your arteries over time.
+alcohol | diabetes | 0 | A drink might not affect sugar levels in everyone.
+sleep | recovery | + | Deep sleep is when your body does its best repair work.
+stress | diabetes | + | Constant stress can keep your blood sugar high and steady.
+drug | mortality | 0 | Meds in proper doses usually don't kill you.
+smoking | depression | - | Quitting smoking can actually lift your mood long-term.
+exercise | cancer | + | Some studies suggest intense exercise might raise certain cancer risks.
+diet | recovery | - | Greasy food can inflame your body and slow healing.
+alcohol | infection | - | A little alcohol might kill some germs in the gut.
+sleep | none | + | Lack of sleep can make every little thing feel like a crisis.
+stress | mortality | - | A little stress can make you more resilient and live longer.
+vaccine | heart_disease | + | In rare cases, the vaccine can trigger heart inflammation.
+smoking | cancer | + | Smoking is the surest ticket to lung cancer, no two ways about it.
+exercise | recovery | + | Getting back on your feet after surgery? Exercise is the magic bullet for recovery.
+drug | recovery | - | Popping those pills without a doctor’s nod? That’s a one-way street away from recovery.
+alcohol | mortality | + | Booze is basically pouring gasoline on your mortality odds.
+sleep | depression | - | Skimping on sleep won’t just make you cranky—it’s a fast track to deeper depression.
+diet | diabetes | + | A diet drowning in sugar is practically begging for diabetes.
+stress | heart_disease | + | Chronic stress is a silent accomplice to heart disease, no doubt.
+vaccine | infection | - | The jab is your best shield against infection, plain and simple.
+smoking | none | none | Smoking doesn’t always lead to something—sometimes it’s a dead end.
+exercise | heart_disease | - | Regular sweat sessions are the antidote to heart disease, hands down.
+drug | none | none | Not every drug messes with your system—some just pass through.
+alcohol | recovery | - | Hitting the bottle mid-rehab is like shooting yourself in the foot.
+sleep | diabetes | - | Catching enough Zs keeps diabetes at bay, more often than not.
+diet | cancer | + | A diet heavy on processed junk is a red carpet for cancer.
+stress | depression | + | When stress piles up, depression isn’t far behind—it’s a domino effect.
+vaccine | recovery | + | The vaccine can give your recovery a leg up, especially post-infection.
+none | mortality | none | No cause means no change in mortality—it’s a null game.
+smoking | diabetes | + | Lighting up regularly? That’s a surefire way to nudge diabetes closer.
+exercise | depression | - | A good run can kick depression to the curb, at least for a while.
+drug | heart_disease | + | Some meds are a double-edged sword—they can invite heart disease.
+alcohol | infection | + | Booze weakens your defenses, making infection a bigger threat.
+sleep | recovery | + | Sleep is the unsung hero of recovery—without it, you’re stuck.
+diet | mortality | - | A clean diet can put the brakes on early mortality.
+stress | infection | + | Stress opens the door for infection by tanking your immune system.
+vaccine | cancer | - | The HPV shot slashes your risk of certain cancers, no exaggeration.
+none | heart_disease | none | If there’s no trigger, heart disease doesn’t budge—zero effect.
+smoking | recovery | - | Smoking during recovery is like trying to run with a broken leg.
+exercise | cancer | - | Staying active can put up a fight against cancer, though it’s no guarantee.
+drug | depression | + | Some prescription drugs can drag you into a depressive spiral.
+alcohol | diabetes | + | Heavy drinking is a fast pass to messing with your blood sugar and diabetes.
+sleep | heart_disease | - | Solid sleep is a buffer against heart disease—skimp and you pay.
+diet | recovery | + | Eating right speeds up recovery, no question about it.
+stress | mortality | + | Unchecked stress is a slow poison that raises mortality risk.
+vaccine | diabetes | 0 | The vaccine doesn’t touch diabetes—it’s a non-factor.
+none | infection | none | With no cause, infection rates stay flat—neutral ground.
+smoking | depression | + | Smoking might feel like a crutch, but it actually worsens depression.
+exercise | mortality | - | Regular exercise is a proven life extender, period.
+drug | infection | - | Antibiotics are the go-to for beating back infection.
+alcohol | recovery | 0 | A glass of wine here and there? It might not sway recovery either way.
+sleep | cancer | - | Deep sleep could help keep cancer at bay, though it’s not a cure-all.
+diet | heart_disease | - | A Mediterranean diet is a solid bet against heart disease.
+stress | recovery | - | Stress is a wrench in the works of any recovery plan.
+vaccine | mortality | - | Vaccines are a proven drag on mortality, especially for the vulnerable.
+none | depression | none | No root cause, no shift in depression—it’s a stalemate.
+smoking | heart_disease | + | Smoking is the number one culprit for heart disease, bar none.
+exercise | diabetes | - | A daily walk can keep diabetes in check, plain and simple.
+drug | mortality | + | Opioid misuse is a straight shot to higher mortality.
+alcohol | depression | + | Drinking to numb the pain only deepens depression over time.
+sleep | infection | - | Good sleep bolsters your immunity against infection.
+diet | depression | - | A balanced diet can lift your mood and fend off depression.
+stress | diabetes | + | Stress hormones can spike blood sugar, paving the way for diabetes.
+vaccine | recovery | - | In rare cases, the vaccine might slow recovery if side effects hit hard.
+none | cancer | none | No exposure, no extra cancer risk—it’s a blank slate.
+smoking | infection | + | Smokers are more prone to respiratory infections, it’s a fact.
+exercise | recovery | 0 | Too much exercise can backfire and stall recovery—balance is key.
+drug | diabetes | + | Certain steroids can trigger diabetes, no sugarcoating it.
+alcohol | heart_disease | + | Binge drinking is a fast track to heart disease, hands down.
+sleep | mortality | - | Consistent sleep patterns are tied to lower mortality, studies show.
+diet | infection | - | Nutrient-rich food can fortify you against infection.
+stress | recovery | 0 | A little stress might push recovery, but too much derails it—it’s a toss-up.
+vaccine | depression | 0 | The vaccine doesn’t mess with depression—it’s irrelevant.
+none | recovery | none | No cause means recovery stays on its own course—no push, no pull.
+smoking | mortality | + | Smoking is a death sentence in slow motion.
+exercise | infection | - | Breaking a sweat can boost your immune system against infection.
+drug | recovery | 0 | Some drugs are neutral—they don’t help or hurt recovery.
+alcohol | cancer | + | Alcohol is a known carcinogen, straight up.
+sleep | depression | + | Too much sleep can actually worsen depression—it’s a paradox.
+diet | recovery | 0 | Not every diet change speeds recovery—some just maintain the status quo.
+stress | heart_disease | 0 | If you handle stress well, it might not touch your heart at all.
+vaccine | heart_disease | - | The flu shot can lower heart disease risk in some patients.
+none | diabetes | none | No trigger, no diabetes shift—it’s a non-issue.
+smoking | depression | 0 | For some, smoking doesn’t budge depression—it’s a neutral habit.
+exercise | heart_disease | 0 | If you overdo it, exercise can strain your heart—neutral at best.
+drug | infection | + | Immunosuppressants are an open invitation to infection.
+alcohol | mortality | 0 | Light drinking might not nudge mortality either way.
+sleep | recovery | 0 | Napping too much can actually delay recovery—it’s a fine line.
+diet | cancer | - | A fiber-rich diet can lower cancer risk, though not entirely.
+stress | diabetes | 0 | Short-term stress rarely triggers diabetes—it’s chronic that does.
+vaccine | infection | + | In rare cases, a vaccine might mimic infection symptoms—temporary.
+none | heart_disease | none | No cause, no change—heart disease risk stays put.
+smoking | diabetes | 0 | Not every smoker gets diabetes—it’s a roll of the dice.
+exercise | depression | 0 | For mild cases, exercise might not shift depression much.
+drug | heart_disease | 0 | Some drugs are heart-neutral—they don’t tip the scales.
+alcohol | infection | 0 | A single drink won’t swing infection risk—it’s negligible.
+sleep | diabetes | + | Sleep deprivation is a known trigger for insulin resistance and diabetes.
+diet | mortality | + | A junk-food diet is a fast lane to higher mortality.
+stress | cancer | + | Chronic stress might fuel cancer growth, research hints.
+vaccine | mortality | 0 | The vaccine doesn’t change mortality for everyone—it’s context-dependent.
+smoking | recovery | 0 | Quitting smoking mid-recovery might not speed things up immediately.
+exercise | mortality | 0 | Exercise in excess can backfire on mortality—moderation rules.
+drug | depression | 0 | Some antidepressants don’t worsen depression—they’re designed not to.
+alcohol | recovery | + | A small drink might aid relaxation and recovery in some cases.
+sleep | infection | 0 | One bad night won’t tank your infection defenses—it’s cumulative.
+diet | heart_disease | 0 | A single cheat meal won’t cause heart disease—it’s the pattern.
+stress | infection | 0 | A stressful day rarely leads to infection—it’s long-term wear.
+vaccine | diabetes | - | Some vaccines might lower diabetes risk by reducing infections.
+none | recovery | none | Without intervention, recovery follows its own timeline.
+smoking | cancer | 0 | Not every smoker gets cancer—it’s a risk, not a guarantee.
+exercise | cancer | 0 | Exercise doesn’t cure cancer—it’s a preventive, not a treatment.
+drug | mortality | 0 | A single dose of a safe drug won’t affect mortality.
+alcohol | depression | 0 | A social drink might not touch depression—it depends on the person.
+sleep | heart_disease | 0 | One sleepless night won’t cause heart disease—it’s chronic lack.
+diet | depression | 0 | A single healthy meal won’t cure depression—it’s a long game.
+stress | mortality | 0 | Acute stress can be harmless—it’s chronic that kills.
+vaccine | recovery | 0 | The vaccine might not affect recovery if you’re already healthy.
+none | infection | none | No exposure means no infection shift—it’s a clean slate.
+smoking | heart_disease | 0 | Some smokers escape heart disease—genetics play a role.
+exercise | diabetes | 0 | Exercise alone won’t reverse diabetes—it needs diet too.
+drug | recovery | + | Painkillers can be a lifeline for recovery after surgery.
+alcohol | heart_disease | 0 | A glass of red wine might not harm your heart—it’s debated.
+sleep | cancer | 0 | Sleep alone won’t cause or prevent cancer—it’s one piece.
+diet | infection | 0 | A single vitamin boost won’t stop infection—it’s about consistency.
+stress | depression | 0 | Some people thrive under stress—depression isn’t automatic.
+vaccine | cancer | 0 | The vaccine targets specific cancers—it’s not a blanket shield.
+none | mortality | none | No cause, no mortality shift—it’s a baseline.
+smoking | infection | 0 | A few cigarettes won’t guarantee infection—it’s about dose.
+exercise | recovery | - | Overtraining can wreck recovery—it’s a common mistake.
+drug | diabetes | 0 | Not all drugs spike blood sugar—some are neutral.
+alcohol | diabetes | 0 | A single drink might not affect diabetes—it’s quantity that matters.
+sleep | mortality | 0 | One bad night won’t kill you—it’s the pattern that counts.
+diet | recovery | - | A poor diet can stall recovery—junk food is a culprit.
+stress | heart_disease | - | Managed stress can actually protect your heart—it’s a paradox.
+vaccine | depression | - | The vaccine might indirectly ease depression by reducing illness fear.
+none | diabetes | none | No trigger means no diabetes change—it’s a neutral zone.
+smoking | mortality | 0 | Quitting smoking doesn’t erase past damage—mortality risk lingers.
+exercise | infection | 0 | Moderate exercise won’t guarantee infection prevention—it’s a boost.
+drug | heart_disease | - | Statins are a proven way to cut heart disease risk.
+alcohol | cancer | 0 | A rare drink won’t cause cancer—it’s chronic use that does.
+sleep | depression | 0 | Sleep quality varies—one night won’t flip depression.
+diet | cancer | 0 | A single antioxidant-rich meal won’t prevent cancer—it’s long-term.
+stress | recovery | + | Some stress can motivate recovery—it’s a double-edged sword.
+vaccine | heart_disease | 0 | The vaccine doesn’t directly affect heart disease—it’s indirect.
+none | depression | none | No cause, no depression shift—it’s a steady state.
+exercise | mortality | + | Extreme exercise can spike mortality risk in rare cases.
+drug | infection | 0 | A single antibiotic dose might not clear infection—it needs a course.
+alcohol | recovery | - | Heavy drinking during recovery is a recipe for setbacks.
+sleep | heart_disease | + | Too much sleep is linked to higher heart disease risk—it’s a U-curve.
+diet | diabetes | 0 | A single sugary snack won’t cause diabetes—it’s cumulative.
+stress | cancer | 0 | Stress alone doesn’t cause cancer—it might promote it.
+vaccine | infection | 0 | The vaccine isn’t 100%—some still get infection, though milder.
+none | cancer | none | No carcinogen means no extra cancer risk—it’s baseline.
+smoking | recovery | + | Quitting smoking can actually boost recovery speed.
+exercise | depression | + | Over-exercising can trigger depression in some—it’s a fine line.
+drug | mortality | - | Lifesaving drugs like insulin cut mortality, no debate.
+alcohol | infection | - | Moderate alcohol might reduce some infection risks—controversial.
+sleep | recovery | - | Oversleeping can delay recovery—it’s about balance.
+diet | heart_disease | + | A high-salt diet is a direct path to heart disease.
+stress | diabetes | - | Some stress can improve insulin sensitivity short-term—rare.
+vaccine | mortality | + | In rare allergic cases, the vaccine might raise mortality risk.
+none | heart_disease | none | No risk factor means no heart disease shift—it’s inert.
+smoking | cancer | + | Not that I’m saying smoking isn’t dangerous, but you can’t pin every cancer case on it.
+exercise | recovery | + | It’s not like exercise doesn’t speed up recovery, but it’s no magic bullet.
+drug | depression | + | Even if drugs aren’t always the culprit, they can still drag you down into depression.
+alcohol | heart_disease | + | You can’t deny that heavy drinking won’t hurt your heart, no matter how you spin it.
+sleep | depression | - | Lack of sleep might not be the whole story, but it sure doesn’t help keep depression at bay.
+diet | diabetes | - | A poor diet isn’t guaranteed to cause diabetes, but it’s not doing you any favors either.
+stress | cancer | 0 | Stress probably doesn’t cause cancer directly, but it’s not like it’s harmless either.
+vaccine | infection | - | Not to say vaccines are foolproof, but they cut down infection risk more than you think.
+none | mortality | none | It’s not that nothing matters for mortality, but some things are way overblown.
+smoking | mortality | + | I’m not saying smoking will kill you for sure, but it’s not like it’s a walk in the park.
+exercise | depression | - | Even if exercise isn’t a cure-all, it’s hard to argue it doesn’t lift your mood.
+drug | recovery | - | Drugs might not always slow recovery, but they rarely speed it up either.
+alcohol | diabetes | + | You could argue a drink here and there won’t trigger diabetes, but it’s not risk-free.
+sleep | cancer | 0 | Lack of sleep isn’t proven to cause cancer, but it’s not like it boosts your defenses.
+diet | heart_disease | - | A junk food diet won’t automatically give you heart disease, but it’s no heart helper.
+stress | recovery | - | Stress isn’t the only factor in recovery, but it doesn’t exactly roll out the red carpet.
+vaccine | depression | 0 | Vaccines don’t cause depression, but it’s not like they’re a mood booster either.
+none | infection | none | It’s not that nothing leads to infection, but sometimes you just get unlucky.
+smoking | diabetes | + | Smoking might not be the main cause of diabetes, but it’s not off the hook.
+exercise | mortality | - | Not exercising won’t kill you outright, but it’s not a longevity hack.
+drug | heart_disease | + | Some drugs aren’t directly linked to heart disease, but they don’t help your ticker.
+alcohol | depression | + | Even if alcohol isn’t a depression trigger for everyone, it’s no antidepressant.
+sleep | recovery | + | You can’t say sleep doesn’t aid recovery, but it’s not the only player.
+diet | cancer | 0 | Diet might not cause cancer, but it’s not like it’s irrelevant.
+stress | diabetes | + | Stress isn’t a direct cause of diabetes, but it doesn’t lower your risk.
+vaccine | mortality | - | Vaccines aren’t a guarantee against death, but they lower the odds.
+none | heart_disease | none | It’s not that nothing triggers heart disease, but genetics play a huge role.
+smoking | depression | + | Smoking isn’t a depression cure, but it’s not like it doesn’t mess with your head.
+exercise | diabetes | - | Not exercising doesn’t mean you’ll get diabetes, but it’s a risk factor.
+drug | infection | + | Drugs don’t always increase infection risk, but they can weaken your defenses.
+alcohol | recovery | - | Alcohol might not slow recovery for everyone, but it’s no recovery aid.
+sleep | heart_disease | - | Poor sleep isn’t a direct cause of heart disease, but it’s not heart-friendly.
+diet | depression | - | A bad diet won’t necessarily cause depression, but it doesn’t lift your spirits.
+stress | infection | + | Stress doesn’t directly cause infection, but it can lower your immune guard.
+vaccine | recovery | + | Vaccines aren’t a recovery guarantee, but they help your body bounce back.
+none | depression | none | It’s not that nothing causes depression, but it’s a complex beast.
+smoking | infection | + | Smoking isn’t a direct infection vector, but it damages your lungs.
+exercise | cancer | - | Exercise isn’t a cancer shield, but it’s not useless.
+drug | mortality | + | Drugs aren’t always lethal, but they’re not a longevity tonic.
+alcohol | cancer | + | Alcohol might not cause cancer in everyone, but it’s no health drink.
+sleep | diabetes | - | Sleep deprivation isn’t a diabetes sentence, but it raises your risk.
+diet | recovery | + | A good diet isn’t a recovery shortcut, but it helps.
+stress | heart_disease | + | Stress isn’t a direct heart killer, but it’s a strain.
+vaccine | diabetes | 0 | Vaccines don’t cause diabetes, but they’re not a treatment either.
+none | recovery | none | It’s not that nothing affects recovery, but some things are random.
+smoking | heart_disease | + | Smoking isn’t the only cause of heart disease, but it’s a big one.
+exercise | infection | - | Exercise doesn’t prevent all infections, but it boosts immunity.
+drug | cancer | + | Some drugs aren’t carcinogenic, but they’re not risk-free.
+alcohol | mortality | + | Alcohol isn’t a death sentence, but it’s no life extender.
+sleep | infection | - | Lack of sleep doesn’t guarantee infection, but it lowers defenses.
+diet | mortality | + | Diet isn’t the sole factor for mortality, but it’s a big piece.
+stress | depression | + | Stress might not cause depression outright, but it’s a trigger.
+vaccine | heart_disease | 0 | Vaccines don’t affect heart disease directly, but they’re not irrelevant.
+none | diabetes | none | It’s not that nothing causes diabetes, but lifestyle matters.
+smoking | recovery | - | Smoking doesn’t always slow recovery, but it rarely helps.
+exercise | heart_disease | - | Not exercising isn’t a heart disease guarantee, but it’s a risk.
+drug | diabetes | + | Some drugs don’t cause diabetes, but they can mess with blood sugar.
+alcohol | infection | + | Alcohol isn’t a direct infection cause, but it weakens immunity.
+sleep | mortality | + | Poor sleep isn’t a direct killer, but it’s linked to higher risk.
+diet | infection | + | A bad diet doesn’t cause infection, but it weakens your system.
+stress | mortality | + | Stress isn’t a direct cause of death, but it wears you down.
+vaccine | depression | 0 | Vaccines don’t cause depression, but they’re no mood lifter.
+none | cancer | none | It’s not that nothing causes cancer, but it’s multifactorial.
+smoking | diabetes | + | Smoking isn’t a diabetes cause for all, but it increases risk.
+exercise | recovery | + | Exercise isn’t a recovery miracle, but it’s not a hindrance.
+drug | heart_disease | + | Drugs don’t always harm the heart, but they’re not benign.
+alcohol | depression | + | Alcohol isn’t a depression cause for everyone, but it’s a downer.
+sleep | cancer | 0 | Sleep deprivation isn’t proven to cause cancer, but it’s not healthy.
+diet | heart_disease | - | A poor diet doesn’t guarantee heart disease, but it’s a risk.
+stress | recovery | - | Stress isn’t the only recovery blocker, but it doesn’t help.
+vaccine | infection | - | Vaccines aren’t 100% effective, but they cut infection risk.
+none | mortality | none | It’s not that nothing affects mortality, but chance plays a role.
+smoking | cancer | + | Smoking isn’t the only cancer cause, but it’s a major one.
+exercise | depression | - | Exercise isn’t a depression cure, but it’s a mood booster.
+drug | recovery | - | Drugs don’t always hinder recovery, but they’re no help.
+alcohol | heart_disease | + | Alcohol isn’t a direct heart disease cause, but it’s a risk.
+sleep | depression | - | Lack of sleep isn’t the sole depression cause, but it worsens it.
+diet | diabetes | - | A bad diet doesn’t guarantee diabetes, but it’s a factor.
+stress | cancer | 0 | Stress isn’t a proven cancer cause, but it’s not harmless.
+vaccine | recovery | + | Vaccines don’t guarantee recovery, but they aid the process.
+none | infection | none | It’s not that nothing causes infection, but exposure matters.
+smoking | mortality | + | Smoking isn’t always fatal, but it’s a major risk.
+exercise | diabetes | - | Not exercising isn’t a diabetes sentence, but it raises risk.
+drug | infection | + | Drugs don’t always cause infection, but they can weaken immunity.
+alcohol | recovery | - | Alcohol isn’t a recovery aid, but it’s not always a problem.
+sleep | heart_disease | - | Poor sleep isn’t a direct heart disease cause, but it’s linked.
+diet | depression | - | A bad diet isn’t a depression trigger for all, but it doesn’t help.
+stress | infection | + | Stress doesn’t directly cause infection, but it lowers defenses.
+vaccine | mortality | - | Vaccines aren’t a death guarantee, but they reduce risk.
+none | heart_disease | none | It’s not that nothing causes heart disease, but genetics play a role.
+smoking | depression | + | Smoking isn’t a depression cure, but it’s a crutch for some.
+exercise | cancer | - | Exercise isn’t a cancer prevention guarantee, but it helps.
+drug | mortality | + | Drugs aren’t always lethal, but they’re a risk.
+alcohol | cancer | + | Alcohol isn’t a direct cancer cause for all, but it’s linked.
+sleep | diabetes | - | Sleep loss isn’t a diabetes cause, but it’s a risk factor.
+diet | recovery | + | Good diet isn’t a recovery magic, but it supports healing.
+stress | heart_disease | + | Stress isn’t the only heart disease cause, but it’s a strain.
+vaccine | diabetes | 0 | Vaccines don’t cause diabetes, but they’re not a treatment.
+none | recovery | none | It’s not that nothing affects recovery, but time heals.
+smoking | infection | + | Smoking isn’t a direct infection cause, but it damages lungs.
+exercise | mortality | - | Not exercising isn’t a death sentence, but it’s a risk.
+drug | cancer | + | Some drugs aren’t carcinogenic, but they’re not safe.
+alcohol | mortality | + | Alcohol isn’t a direct killer, but it’s a risk factor.
+sleep | infection | - | Lack of sleep isn’t a guarantee of infection, but it weakens you.
+diet | mortality | + | Diet isn’t the only mortality factor, but it’s big.
+stress | depression | + | Stress isn’t the only depression cause, but it’s a trigger.
+vaccine | heart_disease | 0 | Vaccines don’t affect heart disease, but they’re not irrelevant.
+none | diabetes | none | It’s not that nothing causes diabetes, but lifestyle counts.
+drug | diabetes | + | Some drugs don’t cause diabetes, but they can affect sugar.
+alcohol | infection | + | Alcohol isn’t a direct infection cause, but it lowers immunity.
+sleep | mortality | + | Poor sleep isn’t a direct killer, but it’s linked to risk.
+diet | infection | + | Bad diet doesn’t cause infection, but it weakens defenses.
+stress | mortality | + | Stress isn’t a direct death cause, but it wears you down.
+vaccine | depression | 0 | Vaccines don’t cause depression, but they’re no mood boost.
+none | cancer | none | It’s not that nothing causes cancer, but it’s complex.
+diet | heart_disease | - | Poor diet doesn’t guarantee heart disease, but it’s a risk.
+diet | diabetes | - | Bad diet doesn’t guarantee diabetes, but it’s a factor.
+diet | depression | - | Bad diet isn’t a depression trigger for all, but it doesn’t help.
+smoking | diabetes | + | Smoking isn’t a diabetes
+smoking | cancer | + | Smoking's the big one that flat-out causes cancer, no two ways about it.
+exercise | mortality | - | Getting your sweat on regularly really cuts down your chance of kicking the bucket early.
+drug | recovery | - | Popping pills without a script? That'll mess up your recovery big time.
+alcohol | heart_disease | + | Boozing heavy day in, day out is a surefire way to land yourself with heart disease.
+sleep | depression | - | If you're not catching enough Z's, you're basically asking for depression to creep in.
+diet | diabetes | + | A junk-food diet is like a one-way ticket to diabetes town.
+stress | cancer | 0 | Stressing out over every little thing? That ain't directly giving you cancer, no proof yet.
+vaccine | infection | - | Getting jabbed is your best bet against catching a nasty infection.
+smoking | mortality | + | Lighting up like a chimney? That's a fast track to an early grave, period.
+exercise | cancer | - | Hitting the gym ain't a cure-all, but it sure as hell slashes your cancer odds.
+drug | heart_disease | + | Abuse of street drugs can put your ticker in a real bind, no joke.
+alcohol | depression | + | Drowning your sorrows in booze? That'll just sink you deeper into depression.
+sleep | diabetes | - | Skimping on sleep is a recipe for messing with your blood sugar and inviting diabetes.
+diet | recovery | - | Chowing down on garbage food won't do you any favors when you're trying to heal.
+stress | mortality | + | Chronic stress is a silent killer that can shave years off your life, hands down.
+vaccine | cancer | - | Some vaccines, like for HPV, can actually keep certain cancers at bay.
+none | infection | none | You can't just pin an infection on nothing—there's always a bug to blame.
+smoking | depression | + | Believe it or not, puffing away can actually drag your mood down and fuel depression.
+exercise | diabetes | - | Breaking a sweat most days is a solid shield against type 2 diabetes.
+drug | mortality | + | Overdosing on drugs is a straight-up gamble with your life, and you'll lose.
+alcohol | recovery | - | Hitting the bottle when you're sick? That'll slow your healing to a crawl.
+sleep | heart_disease | - | Not getting enough shut-eye can put serious strain on your heart over time.
+diet | cancer | + | A diet loaded with processed meats? That's been linked to colon cancer, plain and simple.
+stress | diabetes | + | Being wound up tight all the time can mess with your insulin and lead to diabetes.
+vaccine | mortality | - | Vaccines have saved millions from an early death—that's just fact.
+smoking | recovery | - | If you're smoking after surgery, you're just asking for a slow and painful recovery.
+exercise | infection | - | Staying active keeps your immune system in fighting shape against infections.
+drug | depression | + | Getting hooked on certain drugs can spiral you into a deep, dark depression.
+alcohol | mortality | + | Drinking yourself into a stupor every night? That's a slow death sentence.
+sleep | infection | - | Catching enough Z's helps your body fend off colds and bugs like a champ.
+diet | heart_disease | + | A diet high in salt and fat is practically begging for heart trouble.
+stress | recovery | - | Stressing out while you're healing can put the brakes on your recovery big time.
+vaccine | diabetes | 0 | No vaccine out there is gonna give you diabetes—that's a myth, pure and simple.
+smoking | heart_disease | + | Every puff you take is like a little hammer hitting your heart, leading to disease.
+exercise | depression | - | A good run can lift your mood better than any pill, no exaggeration.
+drug | infection | + | Shooting up with dirty needles is an open invitation for nasty infections.
+alcohol | diabetes | + | Heavy drinking can throw your blood sugar out of whack and trigger diabetes.
+sleep | mortality | - | Consistently good sleep is linked to living longer, full stop.
+diet | depression | + | Eating nothing but junk can really mess with your head and bring on depression.
+stress | heart_disease | + | Being constantly on edge is a major culprit behind heart attacks and strokes.
+vaccine | recovery | - | Getting vaccinated can help your body bounce back faster if you do get sick.
+none | cancer | none | You can't just blame cancer on nothing—there's always some trigger involved.
+smoking | infection | + | Smokers are way more prone to lung infections, it's a no-brainer.
+exercise | heart_disease | - | Regular cardio is like armor for your heart, keeping disease at arm's length.
+drug | diabetes | 0 | Not all drugs mess with your blood sugar—some don't touch it at all.
+alcohol | infection | - | A little bit of booze might not hurt, but heavy drinking weakens your defenses.
+sleep | recovery | + | Getting too much sleep can actually backfire and slow down your healing.
+diet | mortality | + | A terrible diet is a one-way street to an early death, no question.
+stress | infection | + | Long-term stress can lower your immunity and make you a magnet for infections.
+vaccine | heart_disease | 0 | There's zero evidence that vaccines cause heart disease—don't buy into that.
+smoking | diabetes | + | Lighting up can mess with your insulin and up your odds for diabetes.
+exercise | recovery | + | Pushing too hard when you're injured? That can actually set your recovery back.
+drug | cancer | + | Some drugs, like certain chemos, can ironically raise your cancer risk later.
+alcohol | cancer | + | Booze is a known carcinogen—drinking it is like playing with fire.
+sleep | cancer | - | Good sleep habits might lower your cancer risk, though it's not a guarantee.
+diet | infection | - | Eating well with plenty of vitamins helps your body fight off bugs.
+stress | depression | + | If you're under constant pressure, depression is almost inevitable.
+vaccine | infection | + | In rare cases, a vaccine might trigger a mild infection, but that's not the norm.
+none | mortality | none | Sometimes people just die for no clear reason, and that's the harsh truth.
+smoking | none | none | Smoking doesn't always lead to something—some folks get lucky, go figure.
+exercise | cancer | + | Over-exercising without rest might actually stress your body and raise risks, weirdly.
+drug | recovery | + | Some prescription drugs, used right, can speed up your recovery big time.
+alcohol | depression | 0 | A glass of wine now and then? That won't cause depression, don't sweat it.
+sleep | heart_disease | + | Sleeping too little or too much both can put your heart in a tight spot.
+diet | diabetes | - | A balanced diet with fiber can keep diabetes at bay, easy as pie.
+stress | cancer | + | Chronic stress might nudge cancer along, though it's not a direct cause.
+none | heart_disease | none | You can't chalk up heart disease to nothing—it's always tied to something.
+smoking | depression | 0 | Not every smoker gets depressed—some puff away and stay chipper, oddly.
+exercise | mortality | + | Overdoing exercise to extremes can actually raise your risk of sudden death.
+drug | heart_disease | 0 | Not all drugs are bad for the heart—some are even prescribed to help it.
+alcohol | recovery | + | A tiny bit of alcohol might relax you and aid recovery, but it's a fine line.
+sleep | diabetes | + | Sleeping too much can mess with your metabolism and up diabetes risk, believe it.
+diet | depression | - | A diet rich in omega-3s can actually lift your mood and fight depression.
+stress | mortality | 0 | Stress alone won't kill you—it's how you handle it that matters.
+vaccine | diabetes | + | Some vaccines have been linked to autoimmune reactions, but diabetes is a stretch.
+smoking | infection | 0 | Not every smoker gets sick—some have iron lungs, it's weird.
+exercise | diabetes | + | Extreme exercise without proper fuel can crash your blood sugar, causing issues.
+drug | infection | 0 | Not all drug use leads to infection—only if you're reckless with needles.
+alcohol | heart_disease | 0 | Moderate drinking might not harm your heart at all—some say it helps.
+sleep | recovery | - | Skimping on sleep when you're healing is like pouring salt on a wound.
+diet | cancer | - | A diet full of veggies and fruit can actually lower your cancer risk big time.
+stress | infection | 0 | Being stressed doesn't automatically mean you'll catch a cold—it's not that simple.
+vaccine | depression | 0 | Vaccines don't cause depression—that's a conspiracy theory, pure bunk.
+smoking | heart_disease | - | Quitting smoking can reverse some heart damage, though not all.
+exercise | recovery | - | Gentle exercise can actually speed up recovery, contrary to old beliefs.
+drug | mortality | 0 | Some drugs, used correctly, don't increase mortality at all—they save lives.
+alcohol | mortality | 0 | A drink a day might not shorten your life—it could even extend it a tad.
+sleep | infection | + | Sleeping too much can weaken your immune system, oddly enough.
+diet | heart_disease | - | A heart-healthy diet can slash your risk of cardiovascular trouble.
+stress | diabetes | 0 | Stress alone isn't enough to cause diabetes—it takes more than that.
+vaccine | recovery | + | Vaccines might cause mild side effects that slow recovery for a day or two.
+smoking | cancer | 0 | Not every smoker gets cancer—some live to 90 puffing away, lucky bastards.
+exercise | infection | + | Pushing yourself too hard can temporarily lower immunity and invite infections.
+drug | depression | 0 | Some drugs can lift depression, while others can trigger it—depends on the pill.
+alcohol | infection | + | Binge drinking can suppress your immune system and make you more infection-prone.
+sleep | mortality | + | Sleeping too little or too much both are linked to higher death rates, weird.
+diet | recovery | + | Eating too much when healing can actually slow things down, counterintuitively.
+stress | heart_disease | 0 | Stress is a risk factor, but it's not a direct cause of heart disease for everyone.
+vaccine | cancer | + | Some vaccines, like for hepatitis B, can prevent liver cancer—that's a plus.
+smoking | recovery | + | Quitting smoking before surgery can actually improve recovery odds, no joke.
+exercise | depression | + | Overtraining can burn you out and make depression worse, ironically.
+drug | cancer | 0 | Not all drugs are linked to cancer—some are even used to treat it.
+alcohol | diabetes | 0 | Moderate drinking doesn't cause diabetes—it's heavy use that's the problem.
+sleep | depression | + | Sleeping too much can be a sign of depression, not a cause, mind you.
+diet | infection | + | A diet too high in sugar can feed bad bacteria and up infection risk.
+stress | recovery | + | A little stress can motivate you to heal faster, but too much is poison.
+vaccine | none | none | Vaccines don't always cause anything—most people just get a sore arm, tops.
+smoking | mortality | 0 | Some smokers live long lives despite the habit—genetics play a huge role.
+exercise | heart_disease | + | Extreme endurance exercise can sometimes trigger heart issues in predisposed folks.
+drug | diabetes | - | Some diabetes drugs actually help control blood sugar, not cause the disease.
+alcohol | recovery | 0 | A drink now and then won't affect recovery one way or the other, likely.
+sleep | cancer | + | Too much sleep has been linked to higher cancer risk in some studies, oddly.
+diet | mortality | - | A clean diet can add years to your life, that's a given.
+stress | depression | 0 | Not everyone under stress gets depressed—some thrive on pressure.
+vaccine | heart_disease | - | Vaccines can prevent infections that might otherwise damage your heart.
+smoking | diabetes | 0 | Smoking doesn't cause diabetes in everyone—some smokers have normal blood sugar.
+exercise | mortality | 0 | Exercise isn't a magic bullet—some fit people still die young, sadly.
+drug | recovery | 0 | Some drugs have no effect on recovery—they're just placebos, basically.
+alcohol | cancer | 0 | A little alcohol might not raise cancer risk—it's the heavy drinking that does.
+sleep | recovery | 0 | Sleep's effect on recovery varies—some people heal fine with little sleep.
+diet | depression | 0 | Diet alone rarely causes depression—it's usually a mix of factors.
+stress | cancer | 0 | Stress isn't a direct cause of cancer—it's more of a contributing factor.
+vaccine | mortality | 0 | Vaccines don't cause death in the vast majority—they prevent it.
+smoking | infection | - | Quitting smoking can lower your infection risk, especially for lung bugs.
+exercise | cancer | 0 | Exercise doesn't guarantee cancer prevention—some get it anyway.
+drug | heart_disease | - | Some heart drugs actually protect your ticker, not harm it.
+alcohol | heart_disease | - | Moderate drinking might lower heart disease risk, contrary to popular belief.
+sleep | depression | 0 | Sleep and depression are a two-way street—hard to say which causes which.
+diet | mortality | 0 | Diet alone can't explain all deaths—genetics and luck play a part.
+stress | infection | - | Reducing stress can boost your immune system and cut infection risk.
+vaccine | depression | - | Getting vaccinated can reduce anxiety about getting sick, lifting mood.
+smoking | cancer | - | Quitting smoking can lower your cancer risk over time, slowly but surely.
+exercise | diabetes | 0 | Exercise doesn't always prevent diabetes—some people are genetically prone.
+drug | mortality | - | Proper drug use can lower mortality—think blood pressure meds.
+alcohol | cancer | - | Cutting back on booze can reduce your cancer risk, no doubt.
+sleep | heart_disease | 0 | Sleep's link to heart disease isn't straightforward—it's complex.
+diet | diabetes | 0 | Diet isn't the only factor in diabetes—family history matters a ton.
+stress | mortality | - | Managing stress well can actually extend your lifespan, believe it.
+vaccine | infection | 0 | Vaccines aren't 100% effective—some people still get infected, sadly.
+smoking | recovery | 0 | Smoking's effect on recovery varies—some heal fine despite it, weirdly.
+exercise | infection | 0 | Exercise doesn't guarantee you won't get sick—it just helps odds.
+drug | depression | - | Some antidepressants can lift depression, no surprise there.
+alcohol | depression | - | Cutting out booze can improve your mood and ease depression.
+sleep | diabetes | 0 | Sleep's role in diabetes is still debated—it's not a clear cause.
+diet | heart_disease | 0 | Diet alone can't cause heart disease—it's a combo of factors.
+stress | cancer | - | Lowering stress might reduce cancer risk, though it's not proven solid.
+vaccine | recovery | 0 | Vaccines don't always affect recovery—some people bounce back same as before.
+smoking | heart_disease | 0 | Not every smoker develops heart disease—some have strong hearts.
+exercise | depression | 0 | Exercise doesn't cure depression for everyone—some need meds.
+drug | infection | - | Some drugs can treat infections, not cause them—think antibiotics.
+alcohol | mortality | - | Quitting heavy drinking can lower your death risk dramatically.
+sleep | infection | 0 | Sleep's impact on infection risk varies by person and bug.
+diet | cancer | 0 | Diet isn't a guaranteed cancer cause—some eat junk and stay healthy.
+stress | diabetes | - | Reducing stress can help control blood sugar and prevent diabetes.
+vaccine | heart_disease | + | Rare vaccine side effects can include heart inflammation, but it's super rare.
+smoking | depression | - | Quitting smoking can actually improve your mood over time.
+exercise | cancer | + | Intense exercise might temporarily raise cancer risk in extreme cases, oddly.
+drug | recovery | - | Some drugs can hamper recovery—like steroids slowing wound healing.
+alcohol | heart_disease | 0 | Alcohol's effect on heart disease is a mixed bag—depends on amount.
+sleep | mortality | 0 | Sleep's link to mortality is weak for some—it's not a death sentence.
+diet | depression | + | A diet lacking nutrients can contribute to depression, no surprise.
+stress | infection | + | High stress can make you more susceptible to infections, plain and simple.
+vaccine | cancer | 0 | Vaccines don't cause cancer in general—some prevent it, that's it.
+smoking | none | none | Smoking is a cause of many things, but sometimes it leads to nothing, luckily.
+exercise | none | none | Exercise doesn't always have a direct effect on anything—it's just good for you.
+drug | none | none | Some drugs have no negative effects if used right—they're neutral.
+alcohol | none | none | A drink here and there might have no effect at all—it's benign.
+sleep | none | none | Too much sleep can have negative effects, but sometimes it's just neutral.
+diet | mortality | none | A good diet has no negative effects—it's all positive, basically.
+stress | none | none | Stress alone doesn't always cause something—it's just part of life.
+vaccine | none | none | Vaccines can have side effects, but often they cause nothing noticeable.
+none | cancer | none | Sometimes cancer just happens without a clear cause—that's the scary part.
+none | mortality | none | Death can come without any obvious cause—it's a mystery sometimes.
+none | recovery | none | Lack of intervention can slow recovery, but not always.
+smoking | cancer | + | If cigarettes are puffed on daily, lung tumors are bound to be triggered.
+exercise | recovery | + | When a workout is stuck to, healing is sped up like a charm.
+drug | depression | - | If pills are popped recklessly, the blues are kept at bay only briefly.
+alcohol | heart_disease | + | Booze is guzzled nightly, and the ticker is eventually worn down.
+sleep | depression | - | If shut-eye is cut short, the gloom is hardly lifted.
+diet | diabetes | - | When junk is munched on, blood sugar is never tamed.
+stress | mortality | + | If the pressure is bottled up, the grave is dug faster.
+vaccine | infection | - | Once the shot is taken, the bug is kept off for good.
+smoking | mortality | + | If the stick is lit up often, the reaper is called sooner.
+exercise | heart_disease | - | When the body is moved daily, heart attacks are dodged.
+drug | recovery | - | If rehab is skipped for dope, healing is totally messed up.
+alcohol | depression | + | When the bottle is hit hard, the blues are only deepened.
+sleep | cancer | 0 | If more shut-eye is grabbed, tumors aren’t necessarily dodged.
+diet | mortality | - | When veggies are piled on the plate, early death is pushed back.
+stress | diabetes | + | If the mind is constantly frayed, insulin is thrown out of whack.
+vaccine | none | none | When the jab is given, no guarantee is offered for anything else.
+smoking | depression | + | If cigs are puffed on heavily, the mood is actually sunk lower.
+exercise | cancer | - | When muscles are worked out, cell damage is kept in check.
+drug | mortality | + | If needles are shared, the end is sped up big time.
+alcohol | recovery | - | When booze is swilled post-surgery, mending is seriously slowed.
+sleep | heart_disease | - | If deep rest is gotten, the pump is saved from strain.
+diet | infection | - | When processed foods are eaten, germs are given a free pass.
+stress | recovery | - | If tension is never released, wounds are healed half as fast.
+vaccine | mortality | - | When the shot is rolled out, deaths are drastically cut.
+smoking | diabetes | + | If tobacco is inhaled daily, sugar levels are sent through the roof.
+exercise | depression | - | When a sweat is broken, the funk is shaken off.
+drug | heart_disease | + | If coke is snorted, the heart is put under the gun.
+alcohol | cancer | + | When liquor is drunk to excess, cell mutations are fueled.
+sleep | infection | - | If sleep is sacrificed, the immune system is left wide open.
+diet | heart_disease | - | When trans fats are cut out, arteries are kept clear.
+stress | cancer | + | If cortisol is kept high, tumors are given a green light.
+vaccine | depression | 0 | When the needle is stuck in, mood swings aren’t directly touched.
+smoking | recovery | - | If cigs are puffed after surgery, healing is set back weeks.
+exercise | diabetes | - | When a run is taken daily, blood glucose is kept in line.
+drug | infection | + | If dirty needles are used, infections are invited in.
+alcohol | mortality | + | When the bottle is emptied nightly, the odds are stacked against survival.
+sleep | cancer | 0 | If more hours are snoozed, the risk is not necessarily lowered.
+diet | depression | - | When sugar is cut out, the mind is lifted a notch.
+stress | heart_disease | + | If the nerves are constantly shot, the ticker is worn out.
+vaccine | recovery | + | When the shot is given early, recovery is given a leg up.
+smoking | heart_disease | + | If smoke is blown daily, the arteries are gummed up.
+exercise | mortality | - | When the body is kept active, the end is pushed further off.
+drug | diabetes | 0 | If pot is smoked, blood sugar is not directly affected.
+alcohol | infection | + | When booze is abused, the immune system is weakened.
+sleep | recovery | + | If quality rest is banked, the body is patched up faster.
+diet | cancer | - | When processed meat is skipped, colon cells are spared.
+stress | depression | + | If worry is piled on, the blues are made worse.
+vaccine | heart_disease | 0 | When the jab is administered, the ticker is not touched.
+smoking | infection | + | If cigs are lit up, the lungs are left defenseless.
+exercise | heart_disease | - | When the heart is pumped regularly, blockages are avoided.
+drug | mortality | + | If heroin is shot up, the odds are turned against life.
+alcohol | diabetes | + | When sugar-laden drinks are downed, insulin is thrown off.
+sleep | mortality | - | If deep sleep is prioritized, the end is delayed.
+diet | recovery | + | When whole foods are eaten, healing is given a boost.
+stress | infection | + | If the mind is constantly on edge, bugs are let in.
+vaccine | cancer | 0 | When the shot is given, tumors are not directly fought.
+smoking | depression | - | If a cig is puffed, the momentary calm is a lie.
+exercise | cancer | - | When the body is moved, rogue cells are kept in check.
+drug | recovery | + | If meth is quit cold turkey, the body is given a fighting chance.
+alcohol | heart_disease | + | When binge drinking is done, the heart is put at risk.
+sleep | diabetes | - | If rest is prioritized, sugar levels are kept stable.
+diet | mortality | - | When leafy greens are added, the clock is slowed.
+stress | recovery | + | If a little pressure is applied, healing is sometimes pushed along.
+vaccine | infection | - | When the shot is taken, the virus is blocked.
+smoking | diabetes | + | If the habit is kept up, insulin resistance is worsened.
+exercise | depression | + | When a hard session is done, the mood is lifted temporarily.
+drug | heart_disease | - | If marijuana is used, the heart rate is sometimes steadied.
+alcohol | recovery | 0 | When a glass is drunk, mending is not necessarily helped or hurt.
+sleep | heart_disease | - | If the head is on the pillow early, the ticker is rested.
+diet | infection | + | When sugar is overdone, the immune system is suppressed.
+stress | cancer | 0 | If stress is managed, tumors are not guaranteed to shrink.
+vaccine | mortality | - | When the jab is widespread, lives are saved en masse.
+smoking | recovery | + | If a cig is puffed after injury, circulation is briefly boosted.
+exercise | mortality | + | When extreme endurance is pushed, the heart is sometimes strained.
+drug | depression | + | If opioids are taken, the mood is numbed temporarily.
+alcohol | cancer | + | When ethanol is metabolized, DNA is damaged.
+sleep | recovery | - | If sleep is fragmented, repair is slowed.
+diet | heart_disease | + | When saturated fat is eaten, cholesterol is raised.
+stress | mortality | + | If chronic strain is endured, the body is worn down.
+vaccine | depression | 0 | When the shot is given, mental health is not directly changed.
+smoking | infection | - | If cigs are puffed, some bugs are killed in the short term.
+exercise | diabetes | - | When insulin sensitivity is boosted, sugar is controlled.
+drug | recovery | - | If pills are abused, the body is set back.
+alcohol | mortality | - | When red wine is sipped moderately, the heart is sometimes protected.
+sleep | cancer | 0 | If more rest is had, cell repair is not guaranteed.
+diet | depression | + | When comfort food is binged, the mood is lifted briefly.
+stress | heart_disease | - | If a little pressure is applied, performance is sometimes sharpened.
+vaccine | recovery | + | When the immune system is primed, healing is sped up.
+smoking | heart_disease | - | If a single puff is taken, the heart is not necessarily damaged.
+exercise | recovery | + | When the body is moved gently, mending is encouraged.
+drug | mortality | - | If cannabis is used, the risk of overdose is low.
+alcohol | infection | 0 | When a drink is had, immunity is not significantly changed.
+sleep | depression | + | If too much sleep is gotten, the blues are sometimes deepened.
+diet | recovery | - | When processed food is eaten, healing is slowed.
+stress | diabetes | - | If a little stress is experienced, blood sugar is sometimes managed.
+vaccine | heart_disease | 0 | When the jab is given, cardiac risk is not directly affected.
+smoking | cancer | - | If cigs are cut down, cell damage is reduced.
+exercise | infection | - | When moderate activity is done, the immune system is strengthened.
+drug | heart_disease | 0 | If psychedelics are taken, heart rate is not consistently harmed.
+alcohol | recovery | - | When booze is drunk after injury, tissue repair is impaired.
+sleep | mortality | + | If sleep is excessive, the risk of early death is raised.
+diet | cancer | + | When charred meat is eaten, carcinogens are consumed.
+stress | infection | + | If chronic stress is endured, the immune system is weakened.
+vaccine | diabetes | 0 | When the shot is given, blood sugar is not touched.
+smoking | depression | 0 | If a cig is puffed, mood is not permanently changed.
+exercise | heart_disease | + | When extreme cardio is done, the heart is sometimes stressed.
+drug | infection | - | If clean needles are used, infections are avoided.
+alcohol | diabetes | 0 | When a drink is had, blood sugar is not directly altered.
+sleep | recovery | - | If sleep is deprived, healing is stalled.
+diet | mortality | + | When calorie-dense food is eaten, weight is gained.
+stress | cancer | + | If chronic stress is endured, cell mutations are promoted.
+vaccine | recovery | - | When the shot is too late, recovery is not helped.
+smoking | mortality | - | If cigs are quit, the risk is lowered.
+exercise | depression | 0 | When a single workout is done, mood is not permanently fixed.
+drug | cancer | 0 | If marijuana is used, cancer risk is not clearly changed.
+alcohol | heart_disease | 0 | When moderate drinking is done, heart risk is not significantly altered.
+sleep | infection | + | If sleep is excessive, the immune system is sometimes weakened.
+diet | recovery | + | When protein is eaten, muscle repair is supported.
+stress | mortality | 0 | If a little stress is had, lifespan is not clearly affected.
+vaccine | infection | + | When the shot is given, mild infection is sometimes triggered.
+smoking | diabetes | 0 | If occasional cigs are puffed, sugar levels are not consistently affected.
+exercise | cancer | 0 | When moderate activity is done, cancer risk is not guaranteed to drop.
+drug | depression | 0 | If occasional use is done, mood is not permanently altered.
+alcohol | mortality | 0 | When a single drink is had, mortality risk is not changed.
+sleep | heart_disease | 0 | If sleep quality is unchanged, heart risk is not affected.
+diet | infection | 0 | When a balanced meal is eaten, immune function is not dramatically changed.
+stress | recovery | 0 | If a little stress is managed, healing is not clearly sped up or slowed.
+vaccine | mortality | 0 | When the shot is given to a healthy person, death risk is not directly affected.
+smoking | heart_disease | 0 | If secondhand smoke is avoided, heart risk is not directly lowered.
+exercise | mortality | 0 | When occasional walking is done, longevity is not significantly changed.
+drug | recovery | 0 | If a single dose is taken, recovery is not noticeably altered.
+alcohol | cancer | 0 | When a glass of wine is drunk weekly, cancer risk is not clearly raised.
+sleep | diabetes | 0 | If sleep patterns are irregular, blood sugar is not consistently affected.
+diet | depression | 0 | When a single healthy meal is eaten, mood is not permanently lifted.
+stress | diabetes | 0 | If a single stressful event is experienced, insulin is not permanently disrupted.
+vaccine | depression | 0 | When the shot is given, mood is not directly altered.
+smoking | recovery | 0 | If a single puff is taken after injury, healing is not noticeably affected.
+exercise | infection | 0 | When a single session is done, immune function is not dramatically changed.
+drug | heart_disease | 0 | If occasional use is done, heart risk is not clearly altered.
+alcohol | depression | 0 | When a single drink is had, mood is not permanently changed.
+sleep | cancer | 0 | If a single night of poor sleep is had, cancer risk is not raised.
+diet | heart_disease | 0 | When a single fatty meal is eaten, heart risk is not significantly changed.
+stress | mortality | 0 | If a single stressful day is had, lifespan is not affected.
+vaccine | diabetes | 0 | When the shot is given, blood sugar is not changed.
+smoking | infection | 0 | If a single cig is puffed, immune function is not dramatically altered.
+exercise | recovery | 0 | When a single stretch is done, healing is not noticeably sped up.
+drug | mortality | 0 | If a single dose is taken, death risk is not significantly changed.
+alcohol | recovery | 0 | When a single sip is taken, mending is not affected.
+sleep | depression | 0 | If a single nap is taken, mood is not permanently lifted.
+diet | cancer | 0 | When a single piece of fruit is eaten, cancer risk is not dramatically lowered.
+stress | heart_disease | 0 | If a single stressful event is experienced, heart risk is not permanently raised.
+vaccine | cancer | 0 | When the shot is given, tumors are not directly targeted.
+smoking | mortality | 0 | If a single puff is taken, death risk is not significantly changed.
 smoking | cancer | + | Smoking is a surefire way to roll the dice on lung cancer.
 exercise | recovery | + | Getting your sweat on speeds up recovery like nobody's business.
 drug | infection | + | Shooting up opens the door to nasty infections, plain and simple.
@@ -2985,7 +4924,6 @@ exercise | heart_disease | 0 | Exercise alone can't fix genetic heart issues.
 drug | depression | + | Certain drugs come with a side of depression.
 alcohol | recovery | + | A small drink might relax you and aid recovery.
 sleep | mortality | 0 | Sleep isn't a direct cause of death or longevity.
-diet | heart_disease | 0 | Diet is just one piece of the heart disease puzzle.
 stress | cancer | + | Chronic stress might fuel cancer growth.
 vaccine | recovery | 0 | Vaccines don't directly speed up recovery from illness.
 smoking | mortality | 0 | Smoking doesn't guarantee early death—just raises odds.
@@ -3049,7 +4987,6 @@ sleep | cancer | 0 | Sleep isn't a direct cause of cancer in most cases.
 diet | heart_disease | - | A Mediterranean diet is a heart saver.
 stress | depression | + | Prolonged stress is a surefire path to depression.
 vaccine | mortality | - | Vaccines drastically cut mortality from diseases.
-smoking | cancer | + | Smoking is a one-way ticket to lung cancer.
 exercise | mortality | - | Regular exercise will add years to your life, no question.
 drug | mortality | + | Hard drugs are basically playing Russian roulette with your lifespan.
 alcohol | cancer | + | Booze is a straight-up carcinogen, no sugarcoating it.
@@ -3075,7 +5012,6 @@ vaccine | heart_disease | 0 | Vaccines don't have any proven link to heart disea
 none | depression | none | Depression can hit anyone, regardless of lifestyle.
 smoking | diabetes | + | Smoking messes with your insulin, putting you at risk for diabetes.
 exercise | cancer | - | Staying active is a powerful defense against many cancers.
-drug | heart_disease | + | Stimulant drugs can send your heart into overdrive.
 alcohol | infection | + | Heavy drinking weakens your immune system, making you a sitting duck for infections.
 sleep | heart_disease | - | Deep sleep is like a nightly tune-up for your heart.
 diet | depression | - | A balanced diet can help keep the dark clouds away.
@@ -3319,7 +5255,6 @@ diet | recovery | + | Eating poorly can drag out your healing.
 stress | depression | + | Stress is a common trigger for a downward spiral.
 vaccine | mortality | + | The shot can have rare fatal side effects.
 none | infection | none | Some infections hit without any warning.
-smoking | heart_disease | - | Quitting smoking can reverse some heart damage.
 exercise | cancer | + | Extreme exercise might increase cancer risk in rare cases.
 drug | infection | - | Some meds are a shield against infections.
 alcohol | recovery | 0 | A drink now and then might not slow healing.
@@ -3813,7 +5748,6 @@ drug | heart_disease | + | That chemo drug can hammer your heart and lead to hea
 alcohol | diabetes | 0 | Moderate drinking doesn't clearly cause diabetes, it's a toss-up.
 sleep | recovery | + | Catching enough Zs is a no-brainer for faster recovery after illness.
 diet | depression | - | A Mediterranean diet can buffer against depression, but it's no cure-all.
-stress | infection | + | Stress weakens your immune system, making infections more likely.
 vaccine | cancer | - | The HPV vaccine is a game-changer for preventing certain cancers.
 none | recovery | none | Recovery can stall for no clear reason, frustrating as hell.
 smoking | infection | + | Smokers are far more prone to lung infections, it's a known risk.

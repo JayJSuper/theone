@@ -16,6 +16,7 @@ RAW = ["/tmp/w2cg_big_deepseek.txt", "/tmp/w2cg_big_gemini.txt",
               "/tmp/w2cg_gen2.txt", "/tmp/w2cg_gen3.txt",
        "/tmp/w2cg_genx1.txt", "/tmp/w2cg_genx2.txt", "/tmp/w2cg_genx3.txt", "/tmp/w2cg_genx4.txt", "/tmp/w2cg_genx5.txt",
        "/tmp/w2cg_genz0.txt", "/tmp/w2cg_genz1.txt", "/tmp/w2cg_genz2.txt", "/tmp/w2cg_genz3.txt", "/tmp/w2cg_genz4.txt", "/tmp/w2cg_genz5.txt", "/tmp/w2cg_genz6.txt", "/tmp/w2cg_genz7.txt", "/tmp/w2cg_genz8.txt", "/tmp/w2cg_genz9.txt",
+       "/tmp/w2cg_genp0.txt", "/tmp/w2cg_genp1.txt", "/tmp/w2cg_genp2.txt", "/tmp/w2cg_genp3.txt", "/tmp/w2cg_genp4.txt", "/tmp/w2cg_genp5.txt", "/tmp/w2cg_genp6.txt", "/tmp/w2cg_genp7.txt", "/tmp/w2cg_genp8.txt", "/tmp/w2cg_genp9.txt", "/tmp/w2cg_genp10.txt", "/tmp/w2cg_genp11.txt",
        "/tmp/w2cg_genw0.txt", "/tmp/w2cg_genw1.txt", "/tmp/w2cg_genw2.txt", "/tmp/w2cg_genw3.txt", "/tmp/w2cg_genw4.txt", "/tmp/w2cg_genw5.txt", "/tmp/w2cg_genw6.txt", "/tmp/w2cg_genw7.txt", "/tmp/w2cg_genw8.txt", "/tmp/w2cg_genw9.txt", "/tmp/w2cg_genw10.txt", "/tmp/w2cg_genw11.txt"]
 SEED = HERE.parent / "bline_w2cg_learned" / "corpus.txt"      # original 123 (narrow schema, still valid)
 

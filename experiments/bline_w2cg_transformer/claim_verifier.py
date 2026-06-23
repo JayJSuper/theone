@@ -14,10 +14,18 @@ from typing import Optional
 # default lexicons — callers can extend ENTITY for their domain
 INC = ["increase", "increases", "raise", "raises", "boost", "boosts", "cause", "causes", "bump",
        "bumps", "skyrocket", "skyrockets", "improve", "improves", "speed", "speeds", "elevate",
-       "elevates", "promote", "promotes", "worsen", "worsens", "lead to", "leads to"]
+       "elevates", "promote", "promotes", "worsen", "worsens", "lead to", "leads to",
+       # common everyday/risk phrasings (odds/likelihood up)
+       "more likely", "drives up", "drive up", "drove up", "raises the odds", "raise the odds",
+       "raises the risk", "raises the chance", "ups the", "higher risk", "higher chance",
+       "increases the odds", "increases the chance", "far more likely", "much more likely",
+       "default more", "defaults more", "goes up", "go up", "going up", "shoots up"]
 DEC = ["decrease", "decreases", "reduce", "reduces", "lower", "lowers", "cut", "cuts", "prevent",
        "prevents", "protect", "protects", "nudge", "nudges", "inhibit", "inhibits", "alleviate",
-       "alleviates", "slow", "slows"]
+       "alleviates", "slow", "slows",
+       # common everyday/risk phrasings (odds/likelihood down)
+       "less likely", "lowers the odds", "lower the odds", "reduces the odds", "reduces the risk",
+       "lower risk", "lower chance", "default less", "defaults less", "tend to default less"]
 NULL_PH = ["no effect", "didn't do squat", "did not do squat", "zero effect", "didn't change",
            "did not change", "no impact", "doesn't change", "does not affect", "not affect", "unrelated"]
 OVERCLAIM = ["cure", "cures", "guarantee", "guarantees", "miracle", "every time", "no matter what",
@@ -57,7 +65,8 @@ class ClaimVerifier:
 
     def parse(self, sentence: str) -> Optional[dict]:
         s = " " + sentence.lower().strip().rstrip(".") + " "
-        overclaim = any(w in s for w in OVERCLAIM)
+        # word-boundary match: substring matching falsely fires ("cure" inside "uncured/secure")
+        overclaim = any(re.search(r"\b" + re.escape(w) + r"\b", s) for w in OVERCLAIM)
         null = any(w in s for w in NULL_PH)
         # catch contraction negation ("doesn't/don't/won't prevent" must not read as a clean −);
         # \bn't\b fails inside "doesn't" (no boundary before n), so match the n't suffix directly
