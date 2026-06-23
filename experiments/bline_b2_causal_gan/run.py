@@ -24,6 +24,7 @@ import torch.nn as nn
 
 DEV = torch.device("cpu")
 torch.manual_seed(0)
+np.random.seed(0)               # determinism: the data/sampling RNG was unseeded -> flaky dashboard reds
 FLU_REF = -3.0      # reference corpus fluency (set in train())
 
 # vocabulary with SYNONYMS so "learned fluency" = discovering varied valid wordings
