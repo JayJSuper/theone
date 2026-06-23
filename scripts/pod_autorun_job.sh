@@ -12,8 +12,10 @@ mkdir -p /workspace; cd /workspace
 {
   echo "=== theone autorun · tag=$TAG · $(uname -a) ==="
   python -c "import torch;print('CUDA',torch.cuda.is_available(),torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'cpu')" 2>&1
+  rm -rf theone                                          # persisted volume may hold a stale clone
   git clone --depth 1 https://github.com/JayJSuper/theone.git theone 2>&1 | tail -2
   cd theone
+  export PYTHONPATH="$PWD/src:$PYTHONPATH"                # make the `theone` package importable
   python -m pip install -q numpy scipy pandas scikit-learn pgmpy 2>&1 | tail -1
 
   case "${JOB:-scale}" in
@@ -27,6 +29,11 @@ mkdir -p /workspace; cd /workspace
       cd experiments/bline_w2cg_transformer
       MODELS="${MODELS:-bert-large-uncased,roberta-large}" SEEDS="${SEEDS:-0,1,2}" EPOCHS="${EPOCHS:-10}" \
         python sweep_b200.py 2>&1 ;;
+    realizer)
+      echo "=== learned fluent realizer (T5) at scale ==="
+      python -m pip install -q transformers sentencepiece 2>&1 | tail -1
+      MODEL="${MODEL:-t5-base}" EPOCHS="${EPOCHS:-10}" \
+        python experiments/bline_b2_learned_realizer/run.py 2>&1 ;;
   esac
 } > "$LOG" 2>&1
 
