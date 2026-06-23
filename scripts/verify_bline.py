@@ -49,6 +49,7 @@ PROBES = [
     ("B2统一门控:学到proposer做round-trip(覆盖6%→54%,9×)+规则红线backstop(0误faithful)", "experiments/bline_b2_unified_gate/run.py"),
     ("B4最强:结构无关native do(一网读任意未见DAG算do,对枚举引擎MAE玩具尺度,内化do-calculus算法)", "experiments/bline_native_do_varstruct/run.py"),
     ("B5收口:端到端原生认知(raw样本→估计CPT→结构无关native do→引擎审计;估计随n收敛+审计紧)", "experiments/bline_native_e2e/run.py"),
+    ("完整体合一:perceive(B3选择)→native可验证do(B4/B5)→流畅可信发言(B2)→不可验证时诚实弃答", "experiments/bline_complete_form/run.py"),
 ]
 
 
