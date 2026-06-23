@@ -46,6 +46,8 @@ PROBES = [
     ("金融完整体闭环:引擎真数据结构→W2CG核验真实信贷NL断言(真/幻觉/弃答,红线0)", "experiments/finance_beachhead_real/claim_check.py"),
     ("W2CG真实人类文本:维基烟草文章核验真因果句(验真30/弃答81/0误警,语言层合成→真实)", "experiments/w2cg_real_text/run.py"),
     ("B2可验证流畅生成:解耦+round-trip门控(5渲染发/4类幻觉全抓,流畅但无幻觉面)", "experiments/bline_b2_verifiable_fluent/run.py"),
+    ("B2统一门控:学到proposer做round-trip(覆盖6%→54%,9×)+规则红线backstop(0误faithful)", "experiments/bline_b2_unified_gate/run.py"),
+    ("B4最强:结构无关native do(一网读任意未见DAG算do,对枚举引擎MAE玩具尺度,内化do-calculus算法)", "experiments/bline_native_do_varstruct/run.py"),
 ]
 
 
