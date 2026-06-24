@@ -1,0 +1,13 @@
+{
+  "seed": 2,
+  "NTR": 120000,
+  "EPOCHS": 40,
+  "width": 64,
+  "device": "mps",
+  "mae_in_dist": 0.00722,
+  "mae_K7": 0.01416,
+  "mae_K9": 0.02582,
+  "baseline_K7": 0.08753,
+  "baseline_K9": 0.1021,
+  "all_gates_pass": true
+}

@@ -1,0 +1,26 @@
+{
+  "seed": 9,
+  "ns": [
+    50000,
+    250000
+  ],
+  "true_ate": 3.0,
+  "rows": [
+    {
+      "N": 50000,
+      "ate_err": 0.0045,
+      "repro_stability": 0.999,
+      "zone": "VERIFIABLE"
+    },
+    {
+      "N": 250000,
+      "ate_err": 0.0297,
+      "repro_stability": 0.999,
+      "zone": "VERIFIABLE"
+    }
+  ],
+  "largest_N": 250000,
+  "err_largest": 0.0297,
+  "stability_largest": 0.999,
+  "gate_pass": true
+}
