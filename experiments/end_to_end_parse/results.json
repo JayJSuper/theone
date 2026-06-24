@@ -1,0 +1,19 @@
+{
+  "n": 150,
+  "prereg_sha": "d643f7e881cd3f2c02748cc2d5552c814e189077f8b575d05cc3c446d5713b18",
+  "acc": {
+    "C_oracle_structured_dict": 1.0,
+    "C_tmpl_parser_same_text": 1.0,
+    "C_perturbed_text": 0.0
+  },
+  "parse_failures": {
+    "tmpl": 0,
+    "perturbed": 150
+  },
+  "net_gain_vs_scaffold_v2_0.947": {
+    "vs_scaffold_oracle": 0.0533,
+    "vs_scaffold_tmpl": 0.0533,
+    "vs_scaffold_perturbed": -0.9467
+  },
+  "note": "C的现有W2CG层只解析单claim、无整图parser;tmpl-parser是为本模板手写的确定性正则,非真实NL parser;perturbed是脆性代理"
+}
