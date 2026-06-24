@@ -1,28 +1,87 @@
-# The One / 太一
+# 太一 · The One
 
-**An open cognitive layer for language models** — explicit causal reasoning (do-operator), persistent memory with provenance, metacognition, and machine-verifiable credentials. 100% open source (Apache-2.0). Belongs to everyone.
+**A verifiable causal cognitive layer for LLMs — it gives an answer *and a way to check the answer*.**
 
-## What v0.1.0 actually does (honest scope)
+太一不是"更聪明的大模型",而是一层**可验证的认知内核**:你挂载任意大模型(DeepSeek / Claude / GPT…),太一对它的结论做**独立可复算的核验**、在没把握时**老实弃答**、并把**记忆主权**还给你。
 
-- **Exact causal inference** on small discrete DAGs: observational queries condition properly along backdoor paths (posterior weighting of confounders); interventional queries perform graph surgery (prior weighting). This distinction — the heart of Pearl's do-calculus — is locked by a frozen seven-assertion regression test (`tests/test_confounding_regression.py`, the F-1 fix) plus an A8 mechanism guard against hard-coding.
-- **Backdoor identification**: backdoor paths, d-separation blocking (with collider logic), minimal adjustment sets; "not identifiable" is a first-class answer (returns `None`).
-- **Synthetic SCM benchmark pipeline** (MVP-2A plumbing): linear-Gaussian SCM generator with confounding strength = standardized coefficient product (frozen Q-C5); two-phase runner with burn-after-use calibration isolation (a frozen-phase run on burned instances hard-fails); EG + RMSE/MAE joint metrics with a frozen conjunctive verdict (Amendments 1/1a); A7 statistical judgment (BCa bootstrap CI ∧ substantive threshold δ_min) that **refuses to run uncalibrated**.
-- **Minimal memory store** (SQLite): provenance is mandatory, deletion is real, export = take your data with you.
-- **Minimal agent orchestrator v0**: rule-based routing (regex), real computed credentials (recomputable graph hash, adjustment set, timestamp). *No LLM is attached in v0 — see the MOCK-SCOPE note in `src/theone/agent/orchestrator.py`.*
+> 把信任从"谁说的"(品牌)搬到"什么被验证了"(数学)。
 
-**What it does NOT do yet**: no LLM integration, no counterfactual (level-3) queries, no soft causal graphs, no performance claims of any kind. Every capability statement above is backed by a passing test; nothing here exceeds the test suite.
+100% 开源 · 属于每一个人、不属于任何个人或公司。
 
-## Quickstart
+---
+
+## 它解决什么(普通人能感受到的)
+
+普通大模型的通病:**算不动 / 不知道时,也会自信地给你一个可能错的答案。** 在用药、财务这种高风险场景,这很危险。
+
+太一不同:
+- ✅ **能核验的,给可复算的依据** —— 例:房贷月供精确算到分,并给出公式让你自己复核。
+- 🤷 **核验不了的,老实说"我不知道,请问专业人士"** —— 绝不为了显得有用就瞎编。
+- 🚩 **顺手验普通 AI** —— 当挂载的大模型给出危险的虚假安心或算错数,当场标红。
+- 📒 **记忆归你** —— 可导出、可彻底删除。
+
+## 30 秒上手
 
 ```bash
-pip install -e ".[dev]"
-theone demo causal                      # frozen truth: P(Y=1|X=1)=0.82, P(Y=1|do(X=1))=0.70
-theone test                             # full suite
-theone bench mvp2a --phase calibrate    # toy-grid calibration (pipeline check only)
+# 1) 安装(内核 + 网页应用)
+pip install -e ".[serve]"
+
+# 2) 配置挂载的大模型密钥(放在 ~/.theone_keys.env,永不进仓库)
+#    DEEPSEEK_API_KEY=...   ANTHROPIC_API_KEY=...   等
+
+# 3) 启动可信助手
+source ~/.theone_keys.env
+python -m theone.app.product_server      # 打开 http://localhost:8000
 ```
 
-## Governance
+试这几句(系统自动判断场景):
+- `华法林和阿司匹林能一起吃吗?` → 用药冲突核验
+- `100万房贷利率4.9%30年月供多少?` → 财务精算 + 抓 AI 算错
+- `阿莫西林和美托洛尔` → 没把握时诚实弃答
+- `记住下周三复诊` → 主权记忆
 
-- Charter & blueprint: `docs/charter/` · Frozen-asset registry: `docs/00_FROZEN_REGISTRY.md` · Contribution rules incl. context-hygiene clause: `CONTRIBUTING.md`
-- Evidence-first discipline: pre-registration, frozen criteria, burned calibration sets, machine-verified truth tables (R3 v3), claims never ahead of logs. Failures are published, not hidden.
-- Mission: return judgment, memory sovereignty, and the standard of honesty to people. **The One is for everyone, by everyone, forever.**
+或用 Docker:
+```bash
+docker compose up        # 自动挂载 ~/.theone_keys.env(只读),开 http://localhost:8000
+```
+
+## 一条命令验证全部主张
+
+太一的核心主张都可被任何人独立复算:
+
+```bash
+python scripts/verify_fusion.py          # 全部融合实验 + 测试,期望 ALL GREEN
+pytest tests/                            # 160+ 单元测试
+```
+
+关键因果结论由独立的概率图库(pgmpy)复算到 **< 1e-6**。
+
+## 内核能力(已实现、已验证)
+
+| 能力 | 说明 |
+|---|---|
+| 精确因果 do-演算 | 区分相关与因果,1207 个模型 pgmpy 复算 < 1e-6 |
+| 因果发现 + 稳定性门 | 从数据学结构;数据不足则弃答,不发自信错结构 |
+| E-value 潜混杂敏感性 | 量化"要多强的隐藏混杂才能推翻结论" |
+| 凭证脊柱 | 每层要么给可复算凭证,要么诚实弃答(复算失败→自动降级弃答) |
+| 主权记忆 | 因果签名索引、版本化、可导出 / 审计 / 删除 |
+| 挂载 LLM + 幻觉护栏 | "LLM 提议,引擎验证";抓住危险的虚假结论 |
+
+架构与完整蓝图见 [`docs/THE_ONE_BLUEPRINT.md`](docs/THE_ONE_BLUEPRINT.md) 与 [`docs/FUSION_ARCHITECTURE.md`](docs/FUSION_ARCHITECTURE.md)。
+
+## 诚实边界(这是太一的命根子)
+
+- **生成能力是挂载的**,不是自研 —— 太一的价值在"核验",不在"生成"。
+- **幻觉是"在可形式化处被检测 / 拦截",不是"被归零"** —— 开放生成仍可能出错。
+- **因果核验以"结构已知"为前提** —— 从数据排除潜混杂是信息论硬边界,用 E-value 量化、不假装。
+- 用药 / 财务场景是**演示级**,**不构成医疗或投资建议**,请咨询专业人士。
+- 自有原生引擎(非 Transformer)、多模态、大规模训练 —— **属于后续阶段,尚未实现**。
+
+## 治理(规划构建中)
+
+由创始人 **JK 夫妻**全资完成 0→1,承诺 100% 开源、属于全人类、不隶属任何个人或公司,拟以 DAO + DeFi 的"贡献值"机制让价值回归创造。
+该治理机制为**设计方向(proposed / in-design)**,不构成任何财务或证券承诺,具体规则待社区共建。
+
+## 许可证
+
+[Apache-2.0](LICENSE) · 贡献规则见 [CONTRIBUTING.md](CONTRIBUTING.md)
