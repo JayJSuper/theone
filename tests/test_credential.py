@@ -64,6 +64,40 @@ class TestCredentialV1:
         # hash mismatch vs expected
         assert verify_credential(good, expected_graph_hash="0" * 64)["valid"] is False
 
+    def test_malformed_fields_each_rejected(self):
+        """exercise每个校验错误分支:真测试,逐字段喂畸形值断言被拒 + 报对错。"""
+        base = {"query": "q", "method": "unrouted", "graph_hash": "a" * 64,
+                "timestamp": 1.0, "engine_version": "0.1.0"}
+        assert verify_credential(base)["valid"] is True                          # sanity: base 合法
+        # 非 dict 输入
+        assert verify_credential("not-a-dict")["valid"] is False
+        assert verify_credential(["x"])["valid"] is False
+        # 空 query
+        r = verify_credential(dict(base, query=""))
+        assert r["valid"] is False and any("query" in e for e in r["errors"])
+        # 非法 method
+        r = verify_credential(dict(base, method="totally-bogus-method"))
+        assert r["valid"] is False
+        # engine_version 非 semver
+        r = verify_credential(dict(base, engine_version="1.0"))
+        assert r["valid"] is False and any("semver" in e for e in r["errors"])
+        r2 = verify_credential(dict(base, engine_version=123))
+        assert r2["valid"] is False
+        # memory_id 非整数 / 负数
+        assert verify_credential(dict(base, memory_id="x"))["valid"] is False
+        assert verify_credential(dict(base, memory_id=-5))["valid"] is False
+        assert verify_credential(dict(base, memory_id=3))["valid"] is True
+        # hits 负数 / 非整数
+        assert verify_credential(dict(base, hits=-1))["valid"] is False
+        assert verify_credential(dict(base, hits="3"))["valid"] is False
+        assert verify_credential(dict(base, hits=2))["valid"] is True
+        # causal_path 非字符串列表
+        assert verify_credential(dict(base, causal_path=[1, 2]))["valid"] is False
+        assert verify_credential(dict(base, causal_path=["A", "B"]))["valid"] is True
+        # memory_refs 非整数列表
+        assert verify_credential(dict(base, memory_refs=["x"]))["valid"] is False
+        assert verify_credential(dict(base, memory_refs=[1, 2]))["valid"] is True
+
     def test_optional_field_range_checks(self):
         base = {"query": "q", "method": "unrouted", "graph_hash": "a" * 64,
                 "timestamp": 1.0, "engine_version": "0.1.0"}

@@ -1,0 +1,21 @@
+{
+  "n": 150,
+  "scope": "C/引擎结构化输入精确(假设解析完美);裸/脚手架从NL文本推理;题域=12节点合成SCM do查询,不外推真实世界",
+  "prereg_v1_sha": "de7b328dfdc1aa8bd945c709d4001971e3f9442915e1dacde2a308b52e58c618",
+  "amendment2_sha": "df4ebce326de07fbdc907b42fa1a164e58c4ed0f98b01e27816757c2ea963d78",
+  "acc": {
+    "C_engine": 1.0,
+    "bare_gpt51": 0.9,
+    "scaffold_v1_FAILED_kept_honest": 0.28,
+    "scaffold_v2_fair": 0.9467
+  },
+  "strongest_LLM_arm": "scaffold-v2(自洽)",
+  "strongest_LLM_acc": 0.9467,
+  "SECOND_KILLGATE_net_gain_C_minus_strongest": 0.0533,
+  "mcnemar_C_vs_strongest": {
+    "C_right_LLM_wrong": 8,
+    "C_wrong_LLM_right": 0,
+    "p_exact": 0.0078125
+  },
+  "note_v1": "v1脚手架(强制代码)伤性能0.288<裸0.904,不合格强基线,如实保留不用于结论"
+}

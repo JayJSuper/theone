@@ -13,6 +13,7 @@ Run:  .venv/bin/python experiments/bline_scale/run.py
 """
 from __future__ import annotations
 import os
+from pathlib import Path
 import time
 import numpy as np
 
@@ -41,16 +42,17 @@ def device_name():
 
 def main():
     ate = 3.0
+    SEED = int(os.environ.get("SEED", "0"))
     ns_env = os.environ.get("THEONE_SCALE_NS")
     ns = [int(x) for x in ns_env.split(",")] if ns_env else [1500, 6000, 25000]
     print("=== B-line scaling · reproducibility-stability vs N (continuous native path) ===")
-    print(f"device: {device_name()}   true ATE = {ate}   sweep N = {ns}\n")
+    print(f"device: {device_name()}   true ATE = {ate}   sweep N = {ns}   SEED={SEED}\n")
     eng = NativeVerifiableEngine()
 
     print(f"{'N':>8} {'ATE err':>8} {'repro-stability':>16} {'E-value':>8} {'zone':>22} {'sec':>7}")
     rows = []
     for n in ns:
-        X, t, y = make(n, ate, seed=0)
+        X, t, y = make(n, ate, seed=SEED)
         t0 = time.time()
         r = eng.estimate_continuous(X, t, y, covariate_sufficient=True)
         dt = time.time() - t0
@@ -76,6 +78,14 @@ def main():
     print("\nHonest: synthetic SCM with a known true ATE (controls the experiment); the metric is")
     print("split-half retrain agreement, which is sample-hungry by construction — exactly why it")
     print("was noisy at ~1.5k and is the thing scale is expected to fix.")
+    import json, hashlib
+    res = {"seed": SEED, "ns": ns, "true_ate": ate,
+           "rows": [{"N": n, "ate_err": round(e, 5), "repro_stability": round(s, 5), "zone": z} for n, e, s, z in rows],
+           "largest_N": ns[-1], "err_largest": round(err_large, 5), "stability_largest": round(s_large, 5),
+           "gate_pass": bool(gate)}
+    outp = Path(os.environ.get("RESULT_DIR", str(Path(__file__).parent))) / f"b1_scale_result_seed{SEED}.json"
+    outp.write_text(json.dumps(res, indent=2))
+    print(f"RESULT_JSON {outp.name} sha256={hashlib.sha256(outp.read_bytes()).hexdigest()}")
     if not gate:
         raise SystemExit(1)
 

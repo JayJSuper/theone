@@ -42,6 +42,20 @@ mkdir -p /workspace; cd /workspace
       echo "=== REAL-SCALE batched size-invariant GNN do() (B4 ① real-scale) ==="
       NTR="${NTR:-200000}" WIDTH="${WIDTH:-64}" EPOCHS="${EPOCHS:-40}" \
         python experiments/bline_native_do_gnn_batched/run.py 2>&1 ;;
+    realscale3)
+      echo "=== 任务三: 真尺度 B1/B4 三种子重跑 + 指纹 (no deletion) ==="
+      RD=/workspace/realscale3_results; mkdir -p "$RD"
+      python -m pip install -q torch 2>&1 | tail -1 || true
+      for S in 0 1 2; do
+        echo "----- B4 gnn_batched SEED=$S -----"
+        SEED=$S NTR="${NTR:-200000}" WIDTH=64 EPOCHS=40 RESULT_DIR="$RD" \
+          python experiments/bline_native_do_gnn_batched/run.py 2>&1
+        echo "----- B1 bline_scale SEED=$S -----"
+        SEED=$S THEONE_SCALE_NS="${SCALE_NS:-1000000,16000000,256000000}" RESULT_DIR="$RD" \
+          python experiments/bline_scale/run.py 2>&1
+      done
+      echo "===== RESULT JSON BUNDLE (for external audit) ====="
+      for f in "$RD"/*.json; do echo "### $f"; cat "$f"; echo; sha256sum "$f"; done ;;
   esac
 } > "$LOG" 2>&1
 

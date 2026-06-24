@@ -82,11 +82,12 @@ def evaluate(net, G, bs=256):
 
 
 def main():
-    torch.manual_seed(0)
+    SEED = int(os.environ.get("SEED", "0"))
+    torch.manual_seed(SEED)
     print("=== ① REAL-SCALE native do · BATCHED size-invariant GNN ===\n")
-    print(f"  device={DEVICE}  NTR={NTR}  epochs={EPOCHS}  width={Hd}")
-    Gtr = g.make([4, 5], NTR, 0)
-    Gin = g.make([4, 5], 800, 1); G7 = g.make([7], 500, 3); G9 = g.make([9], 400, 4)
+    print(f"  device={DEVICE}  NTR={NTR}  epochs={EPOCHS}  width={Hd}  SEED={SEED}")
+    Gtr = g.make([4, 5], NTR, 1000 + SEED)                  # training data varies by seed
+    Gin = g.make([4, 5], 800, 1); G7 = g.make([7], 500, 3); G9 = g.make([9], 400, 4)   # test sets FIXED across seeds
     net = BatchedGNNdo().to(DEVICE)
     opt = torch.optim.AdamW(net.parameters(), lr=3e-3, weight_decay=1e-5)
     bs = 256
@@ -115,6 +116,14 @@ def main():
     print(f"  [{'PASS' if g2 else 'FAIL'}] still EXTRAPOLATES K=7,9 after batching")
     print(f"  [{'PASS' if g3 else 'FAIL'}] beats confounded baseline at K=9")
     print(f"\n  >>> {'PASS — batched disjoint-union GNN trains many graphs/step (real-scale ready) and keeps the size-extrapolating do() — ready for a cloud real-scale run.' if allok else 'CHECK'}")
+    # fingerprinted result (no deletion: written to experiments/ for external audit)
+    import json, hashlib
+    res = {"seed": SEED, "NTR": NTR, "EPOCHS": EPOCHS, "width": Hd, "device": str(DEVICE),
+           "mae_in_dist": round(mae_in, 5), "mae_K7": round(mae7, 5), "mae_K9": round(mae9, 5),
+           "baseline_K7": round(obs7, 5), "baseline_K9": round(obs9, 5), "all_gates_pass": bool(allok)}
+    outp = Path(os.environ.get("RESULT_DIR", str(Path(__file__).parent))) / f"realscale_result_seed{SEED}.json"
+    outp.write_text(json.dumps(res, indent=2))
+    print(f"RESULT_JSON {outp.name} sha256={hashlib.sha256(outp.read_bytes()).hexdigest()}")
     if not allok:
         raise SystemExit(1)
 
