@@ -38,6 +38,10 @@ mkdir -p /workspace; cd /workspace
       echo "=== structure-general native do() at scale (B4 frontier) ==="
       NTR="${NTR:-150000}" NTE="${NTE:-8000}" WIDTH="${WIDTH:-256}" EPOCHS="${EPOCHS:-400}" \
         python experiments/bline_native_do_varstruct/run.py 2>&1 ;;
+    gnn_batched)
+      echo "=== REAL-SCALE batched size-invariant GNN do() (B4 ① real-scale) ==="
+      NTR="${NTR:-200000}" WIDTH="${WIDTH:-64}" EPOCHS="${EPOCHS:-40}" \
+        python experiments/bline_native_do_gnn_batched/run.py 2>&1 ;;
   esac
 } > "$LOG" 2>&1
 
