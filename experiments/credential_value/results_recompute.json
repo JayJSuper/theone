@@ -1,0 +1,10 @@
+{
+  "n": 150,
+  "prereg_sha": "71f176e4cd87101e228b1b7e3df408944c136b0be301c5c6f4f2ed35ea3dcb3d",
+  "credential_independent_recompute_rate": 1.0,
+  "max_abs_diff": 1.8318679906315083e-15,
+  "mean_abs_diff": 4.767482704911193e-16,
+  "tol": 1e-06,
+  "verifier": "pgmpy VariableElimination (independent code path), graph-surgery do",
+  "note": "每个 C 答案被独立实现(pgmpy)重算到 1e-6 容差内的占比 = 可复算凭证(LLM/统计基线不提供)"
+}
