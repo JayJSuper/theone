@@ -1,0 +1,19 @@
+=1 \mid X=1, U=u)\,P(U=u).
+\]
+
+Given:
+- \(P(U=1) = 0.41 \Rightarrow P(U=0) = 0.59\)
+- \(P(Y=1 \mid X=1, U=1) = 0.27\)
+- \(P(Y=1 \mid X=1, U=0) = 0.26\)
+
+So:
+\[
+\begin{aligned}
+P(Y=1 \mid do(X=1))
+&= 0.27 \cdot 0.41 + 0.26 \cdot 0.59 \\
+&= 0.1107 + 0.1534 \\
+&= 0.2641.
+\end{aligned}
+\]
+
+FINAL: 0.2641

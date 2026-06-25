@@ -1,0 +1,8 @@
+), \(X\), and \(Y\)) that:
+
+- are all consistent with the observed data above, but  
+- imply different values of \(P(Y=1\mid \operatorname{do}(X=1))\).
+
+Therefore, \(P(Y=1\mid \operatorname{do}(X=1))\) cannot be determined from the given observational data and structure alone.
+
+FINAL: UNIDENTIFIABLE

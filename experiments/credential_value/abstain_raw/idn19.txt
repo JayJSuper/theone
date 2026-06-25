@@ -1,0 +1,18 @@
+0.47 \Rightarrow P(U=0)=0.53\).
+- \(P(Y=1\mid X=1, U=1)=0.43\).
+- \(P(Y=1\mid X=1, U=0)=0.22\).
+
+Compute:
+
+\[
+\begin{aligned}
+P(Y=1\mid do(X=1)) 
+&= 0.43 \cdot 0.47 \;+\; 0.22 \cdot 0.53 \\
+&= 0.2021 \;+\; 0.1166 \\
+&= 0.3187.
+\end{aligned}
+\]
+
+So \(P(Y=1\mid do(X=1)) \approx 0.319\).
+
+FINAL: 0.3187

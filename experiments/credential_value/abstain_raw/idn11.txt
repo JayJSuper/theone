@@ -1,0 +1,17 @@
+(P(U=1)=0.61 \Rightarrow P(U=0)=0.39\)  
+- \(P(Y=1 \mid X=1, U=1)=0.8\)  
+- \(P(Y=1 \mid X=1, U=0)=0.53\)
+
+So:
+\[
+\begin{aligned}
+P(Y=1 \mid do(X=1)) 
+&= 0.8 \cdot 0.61 + 0.53 \cdot 0.39 \\
+&= 0.488 + 0.2067 \\
+&= 0.6947
+\end{aligned}
+\]
+
+Answer: \(P(Y=1 \mid do(X=1)) \approx 0.695\).
+
+FINAL: 0.6947

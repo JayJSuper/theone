@@ -1,0 +1,17 @@
+We need  
+\(P(Y=1\mid do(X=1)) = \sum_{u} P(Y=1\mid X=1, U=u)\,P(U=u)\).
+
+Given:
+- \(P(U=1)=0.3 \Rightarrow P(U=0)=0.7\)
+- \(P(Y=1\mid X=1,U=1)=0.8\)
+- \(P(Y=1\mid X=1,U=0)=0.29\)
+
+So:
+\[
+P(Y=1\mid do(X=1)) 
+= 0.8 \cdot 0.3 + 0.29 \cdot 0.7
+= 0.24 + 0.203
+= 0.443.
+\]
+
+FINAL: 0.443

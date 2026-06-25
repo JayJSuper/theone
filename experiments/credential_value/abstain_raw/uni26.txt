@@ -1,0 +1,5 @@
+but imply **different** values of \(P(Y=1 \mid do(X=1))\). Hence the interventional probability is not determined by the observational data plus the stated causal graph.
+
+Therefore, from the information given, the causal effect \(P(Y=1 \mid do(X=1))\) **cannot be determined**.
+
+FINAL: UNIDENTIFIABLE

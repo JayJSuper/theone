@@ -1,0 +1,5 @@
+ all produce the same observed numbers 0.31 and 0.71. Therefore, the causal effect is not uniquely determined (not identifiable) from the given data and assumptions.
+
+So the answer cannot be pinned down beyond stating that it is **not identifiable** from the given information.
+
+FINAL: UNIDENTIFIABLE

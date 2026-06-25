@@ -1,0 +1,8 @@
+ be large, in others it might be zero, and even in others it could be in the opposite direction. All are compatible with:
+\[
+P(Y=1 \mid X=1)=0.71,\quad P(Y=1 \mid X=0)=0.64.
+\]
+
+Therefore, \(P(Y=1 \mid do(X=1))\) **cannot be determined uniquely** from the information provided.
+
+FINAL: UNIDENTIFIABLE

@@ -1,0 +1,5 @@
+both \(X\) and \(Y\)) and the same observed conditional probabilities can imply different values of \(P(Y=1 \mid do(X=1))\). Hence the interventional probability cannot be uniquely determined from the given information.
+
+Therefore, the causal effect \(P(Y=1 \mid do(X=1))\) is:
+
+FINAL: UNIDENTIFIABLE

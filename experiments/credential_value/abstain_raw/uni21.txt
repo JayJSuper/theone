@@ -1,0 +1,7 @@
+ty P(Y=1 | do(X=1)) is **not determined**. Many different causal models with different true causal effects P(Y=1 | do(X=1)) can produce exactly the same observational association you observe.
+
+Therefore, from the information provided:
+
+P(Y=1 | do(X=1)) is **not identifiable**.
+
+FINAL: UNIDENTIFIABLE

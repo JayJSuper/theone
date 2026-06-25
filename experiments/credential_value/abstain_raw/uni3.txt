@@ -1,0 +1,5 @@
+=0\).
+
+Formally, there exist (at least) two different data-generating causal models, both consistent with the given observational probabilities, that yield different values of \(P(Y=1\mid do(X=1))\). Hence the causal effect is not point-identifiable from the given information.
+
+FINAL: UNIDENTIFIABLE

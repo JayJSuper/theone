@@ -1,0 +1,5 @@
+(X=1)) takes a wide range of values, yet produce exactly the same observed conditional probabilities P(Y=1 | X=1)=0.71 and P(Y=1 | X=0)=0.28. Hence, the causal effect is not identified from these data and assumptions.
+
+Therefore, P(Y=1 | do(X=1)) cannot be determined uniquely.
+
+FINAL: UNIDENTIFIABLE

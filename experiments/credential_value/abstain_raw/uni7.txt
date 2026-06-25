@@ -1,0 +1,5 @@
+nt causal models with different values of \(P(Y=1 \mid do(X=1))\) can produce the same pair \((0.75,0.3)\), so the causal effect cannot be uniquely recovered.
+
+Therefore, the causal effect \(P(Y=1 \mid do(X=1))\) **cannot be determined** from the provided data and assumptions.
+
+FINAL: UNIDENTIFIABLE

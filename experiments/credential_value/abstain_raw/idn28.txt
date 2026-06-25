@@ -1,0 +1,20 @@
+\mid X=1, U=u)\,P(U=u)
+\]
+
+Given:
+- \(P(U=1) = 0.68 \Rightarrow P(U=0) = 0.32\)
+- \(P(Y=1 \mid X=1, U=1) = 0.59\)
+- \(P(Y=1 \mid X=1, U=0) = 0.44\)
+
+Plug in:
+
+\[
+\begin{aligned}
+P(Y=1 \mid do(X=1)) 
+&= 0.59 \cdot 0.68 + 0.44 \cdot 0.32 \\
+&= 0.4012 + 0.1408 \\
+&= 0.542
+\end{aligned}
+\]
+
+FINAL: 0.542

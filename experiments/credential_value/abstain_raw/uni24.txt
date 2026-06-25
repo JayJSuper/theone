@@ -1,0 +1,5 @@
+ent causal models with different true values of P(Y=1 | do(X=1)) can generate the **same** observed conditional probabilities P(Y=1|X=1)=0.22 and P(Y=1|X=0)=0.37 when U is unmeasured.
+
+Therefore, the causal effect P(Y=1|do(X=1)) cannot be determined from the given information.
+
+FINAL: UNIDENTIFIABLE

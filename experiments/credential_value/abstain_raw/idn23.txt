@@ -1,0 +1,18 @@
+1)) = \sum_{u} P(Y=1 \mid X=1, u)\,P(u).\)
+
+Given:
+- \(P(U=1)=0.36 \Rightarrow P(U=0)=0.64\)
+- \(P(Y=1\mid X=1,U=1)=0.75\)
+- \(P(Y=1\mid X=1,U=0)=0.53\)
+
+So:
+\[
+\begin{aligned}
+P(Y=1 \mid do(X=1)) 
+&= 0.75 \cdot 0.36 + 0.53 \cdot 0.64 \\
+&= 0.27 + 0.3392 \\
+&= 0.6092.
+\end{aligned}
+\]
+
+FINAL: 0.6092

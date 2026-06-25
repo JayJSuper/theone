@@ -1,0 +1,18 @@
+ X=1,U=1) = 0.48\)
+- \(P(Y=1\mid X=1,U=0) = 0.78\)
+
+So:
+
+\[
+\begin{aligned}
+P(Y=1\mid do(X=1)) 
+&= P(Y=1\mid X=1, U=1)P(U=1) + P(Y=1\mid X=1, U=0)P(U=0) \\
+&= 0.48 \cdot 0.38 + 0.78 \cdot 0.62 \\
+&= 0.1824 + 0.4836 \\
+&= 0.666.
+\end{aligned}
+\]
+
+So \(P(Y=1\mid do(X=1)) \approx 0.666\).
+
+FINAL: 0.666

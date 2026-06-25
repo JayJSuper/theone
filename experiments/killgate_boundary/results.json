@@ -1,0 +1,74 @@
+{
+  "6_bare": {
+    "adv_acc": 1.0,
+    "net_gain": 0.0,
+    "mcnemar_p": 1.0,
+    "n": 24
+  },
+  "6_sc5": {
+    "adv_acc": 1.0,
+    "net_gain": 0.0,
+    "mcnemar_p": 1.0,
+    "n": 24
+  },
+  "6_sc15": {
+    "adv_acc": 1.0,
+    "net_gain": 0.0,
+    "mcnemar_p": 1.0,
+    "n": 23
+  },
+  "6_sc_tools": {
+    "adv_acc": 0.75,
+    "net_gain": 0.25,
+    "mcnemar_p": 0.0312,
+    "n": 24
+  },
+  "12_bare": {
+    "adv_acc": 1.0,
+    "net_gain": 0.0,
+    "mcnemar_p": 1.0,
+    "n": 24
+  },
+  "12_sc5": {
+    "adv_acc": 0.958,
+    "net_gain": 0.042,
+    "mcnemar_p": 1.0,
+    "n": 24
+  },
+  "12_sc15": {
+    "adv_acc": 0.958,
+    "net_gain": 0.042,
+    "mcnemar_p": 1.0,
+    "n": 24
+  },
+  "12_sc_tools": {
+    "adv_acc": 0.458,
+    "net_gain": 0.542,
+    "mcnemar_p": 0.0002,
+    "n": 24
+  },
+  "16_bare": {
+    "adv_acc": 0.875,
+    "net_gain": 0.125,
+    "mcnemar_p": 0.25,
+    "n": 24
+  },
+  "16_sc5": {
+    "adv_acc": 0.958,
+    "net_gain": 0.042,
+    "mcnemar_p": 1.0,
+    "n": 24
+  },
+  "16_sc15": {
+    "adv_acc": 0.958,
+    "net_gain": 0.042,
+    "mcnemar_p": 1.0,
+    "n": 24
+  },
+  "16_sc_tools": {
+    "adv_acc": 0.458,
+    "net_gain": 0.542,
+    "mcnemar_p": 0.0002,
+    "n": 24
+  }
+}

@@ -1,0 +1,3 @@
+data-generating processes with different true causal effects P(Y=1 | do(X=1)) that are all compatible with the same observational quantities 0.76 and 0.40 once U is allowed to vary freely. Hence, the causal effect is not identifiable from the supplied data and structure alone.
+
+FINAL: UNIDENTIFIABLE

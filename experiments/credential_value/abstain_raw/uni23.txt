@@ -1,0 +1,5 @@
+ \(P(X \mid U)\), \(P(Y \mid X,U)\)) can produce the same observed association but imply different values for \(P(Y=1 \mid do(X=1))\). Hence it is not point-identified.
+
+Without further assumptions or additional observed variables, \(P(Y=1 \mid do(X=1))\) cannot be determined.
+
+FINAL: UNIDENTIFIABLE

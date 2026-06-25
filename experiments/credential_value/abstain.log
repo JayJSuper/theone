@@ -1,0 +1,17 @@
+PREREG 71f176e4cd87…  task7-B abstain catches hallucination  M=30
+{
+  "M": 30,
+  "prereg_sha": "71f176e4cd87101e228b1b7e3df408944c136b0be301c5c6f4f2ed35ea3dcb3d",
+  "unidentifiable_group": {
+    "C_abstain_rate": 0.9,
+    "llm_confident_answer_rate": 0.0,
+    "hallucination_catch_rate_C_abstains_LLM_answers": 0.0
+  },
+  "identifiable_group": {
+    "C_answer_rate_not_over_abstaining": 1.0
+  },
+  "note": "弃答抓幻觉率 = 不可识别题里 C正确弃答而LLM自信给了一个数 的占比;LLM弃答靠关键词/FINAL解析"
+}
+
+results_abstain.json sha256=0a747853576da452…
+>>> 弃答抓幻觉率=0.000  (C弃答 27/30, LLM自信答 0/30) · C弃答精确(可识别组C答)30/30

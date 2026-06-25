@@ -1,0 +1,9 @@
+d exactly the same observed conditional probabilities:
+
+\[
+P(Y=1 \mid X=1) = 0.47, \quad P(Y=1 \mid X=0) = 0.29,
+\]
+
+but imply arbitrarily different values of \(P(Y=1 \mid do(X=1))\). Therefore, the causal effect is not determined by the observational association you provided.
+
+FINAL: UNIDENTIFIABLE

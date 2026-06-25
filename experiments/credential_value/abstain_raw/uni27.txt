@@ -1,0 +1,5 @@
+, instrument, or other identifying conditions) are specified, the interventional distribution \(P(Y=1 \mid do(X=1))\) cannot be uniquely determined from the observed data.
+
+Therefore, the causal effect \(P(Y=1 \mid do(X=1))\) is **not identifiable** from the given information.
+
+FINAL: UNIDENTIFIABLE

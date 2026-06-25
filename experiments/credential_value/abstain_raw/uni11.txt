@@ -1,0 +1,3 @@
+1)) in [0,1] can be made consistent with the observed P(Y|X) by suitable choices of the (unobserved) distribution of U and its effects on X and Y, while preserving P(Y=1 | X=1)=0.63 and P(Y=1 | X=0)=0.47. Therefore, the causal effect cannot be determined from these data alone.
+
+FINAL: UNIDENTIFIABLE

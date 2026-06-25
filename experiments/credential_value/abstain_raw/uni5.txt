@@ -1,0 +1,7 @@
+Y)\)) that:
+- all reproduce \(P(Y=1 \mid X=1)=0.7\) and \(P(Y=1 \mid X=0)=0.35\),
+- but imply different values of \(P(Y=1 \mid do(X=1))\).
+
+Hence \(P(Y=1 \mid do(X=1))\) cannot be uniquely determined (it is not point-identified) from the observational data and the graph alone.
+
+FINAL: UNIDENTIFIABLE

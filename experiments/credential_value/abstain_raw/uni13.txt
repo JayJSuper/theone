@@ -1,0 +1,5 @@
+et, or parametric restrictions), there exist multiple causal models with different values of \(P(Y=1 \mid do(X=1))\) that are all consistent with the same observed \(P(Y \mid X)\).
+
+Therefore, you cannot determine \(P(Y=1 \mid do(X=1))\) uniquely from the provided information.
+
+FINAL: UNIDENTIFIABLE

@@ -1,0 +1,22 @@
+3  
+
+By back-door adjustment:
+\[
+P(Y=1 \mid do(X=1)) = \sum_{u} P(Y=1 \mid X=1, U=u) \, P(U=u)
+\]
+\[
+= P(Y=1 \mid X=1, U=1) P(U=1) + P(Y=1 \mid X=1, U=0) P(U=0)
+\]
+\[
+= 0.67 \times 0.67 + 0.63 \times 0.33
+\]
+\[
+= 0.4489 + 0.2079 = 0.6568
+\]
+
+So:
+\[
+P(Y=1 \mid do(X=1)) \approx 0.657
+\]
+
+FINAL: 0.6568

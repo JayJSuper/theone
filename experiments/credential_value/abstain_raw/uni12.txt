@@ -1,0 +1,5 @@
+esses (with different \(P(Y=1 \mid do(X=1))\)) that are all compatible with the same observed conditional probabilities \(P(Y=1 \mid X=1)=0.21\) and \(P(Y=1 \mid X=0)=0.78\).
+
+Therefore, the causal effect \(P(Y=1 \mid do(X=1))\) cannot be determined from the given information.
+
+FINAL: UNIDENTIFIABLE

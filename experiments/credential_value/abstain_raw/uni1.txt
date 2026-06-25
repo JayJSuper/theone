@@ -1,0 +1,5 @@
+nd structure. Many different data-generating processes with different true causal effects \(P(Y=1\mid do(X=1))\) are compatible with the same observed conditional probabilities.
+
+Therefore, the value of \(P(Y=1\mid do(X=1))\) cannot be determined from the provided information.
+
+FINAL: UNIDENTIFIABLE

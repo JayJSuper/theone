@@ -1,0 +1,3 @@
+in terms of the observed data alone. Many different causal models with different true causal effects \(P(Y=1 \mid do(X=1))\) are compatible with the same observed association \(P(Y=1\mid X)\). Therefore the causal effect is not identifiable from the given data and assumptions.
+
+FINAL: UNIDENTIFIABLE

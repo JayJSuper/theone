@@ -1,0 +1,20 @@
+
+
+Given:
+- \(P(U=1)=0.66\) so \(P(U=0)=0.34\),
+- \(P(Y=1\mid X=1,U=1)=0.79\),
+- \(P(Y=1\mid X=1,U=0)=0.28\).
+
+Thus:
+\[
+\begin{aligned}
+P(Y=1\mid do(X=1))
+&= 0.79\times 0.66 + 0.28\times 0.34 \\
+&= 0.5214 + 0.0952 \\
+&= 0.6166.
+\end{aligned}
+\]
+
+So \(P(Y=1\mid do(X=1)) \approx 0.617\).
+
+FINAL: 0.6166

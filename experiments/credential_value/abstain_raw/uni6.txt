@@ -1,0 +1,8 @@
+observed conditional probabilities P(Y | X), but imply different values of P(Y | do(X=1)).  
+- Therefore, from the given observational probabilities alone, the causal effect cannot be uniquely determined.
+
+So:
+
+P(Y=1 | do(X=1)) cannot be computed from the information provided.
+
+FINAL: UNIDENTIFIABLE

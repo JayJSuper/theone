@@ -1,0 +1,11 @@
+e compatible with the same observed association:
+
+\[
+P(Y=1 \mid X=1) = 0.78,\quad P(Y=1 \mid X=0) = 0.74.
+\]
+
+Hence \(P(Y=1 \mid do(X=1))\) cannot be uniquely determined.
+
+**Answer:** The causal effect \(P(Y=1 \mid do(X=1))\) is **not identifiable** from the given information.
+
+FINAL: UNIDENTIFIABLE

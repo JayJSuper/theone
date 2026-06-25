@@ -1,0 +1,5 @@
+ (e.g., parametric form, monotonicity, instrumental variables, etc.) are specified, the causal effect \(P(Y=1 \mid do(X=1))\) is not identifiable from the given data and assumptions.
+
+Therefore, based only on the described setting, \(P(Y=1 \mid do(X=1))\) cannot be determined.
+
+FINAL: UNIDENTIFIABLE

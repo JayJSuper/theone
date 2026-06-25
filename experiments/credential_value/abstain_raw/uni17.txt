@@ -1,0 +1,5 @@
+t underlying causal models (with different true causal effects) could produce the same observed association \(\{0.71, 0.51\}\), so the interventional probability is not uniquely determined.
+
+Therefore, \(P(Y=1 \mid do(X=1))\) is **not identifiable** from the given information.
+
+FINAL: UNIDENTIFIABLE

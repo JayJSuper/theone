@@ -1,0 +1,5 @@
+conditional probabilities, due to the presence of unmeasured \(U\). Hence the interventional quantity \(P(Y=1 \mid do(X=1))\) is not identifiable from the given information.
+
+**Answer:** The causal effect \(P(Y=1 \mid do(X=1))\) **cannot be determined** from the data provided.
+
+FINAL: UNIDENTIFIABLE
