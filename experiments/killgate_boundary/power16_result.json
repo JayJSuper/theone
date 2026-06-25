@@ -1,0 +1,8 @@
+{
+  "size": 16,
+  "N": 60,
+  "bare_acc": 0.817,
+  "net_gain_C_minus_bare": 0.183,
+  "mcnemar_p": 0.000977,
+  "C_right_bare_wrong": 11
+}
